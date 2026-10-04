@@ -54,7 +54,7 @@ def substitution_cost(ref: str, hyp: str) -> float:
     if equivalent(ref, hyp):
         return 0.0
     if base(ref) == base(hyp):
-        return 0.4
+        return 0.15
     if any(base(ref) in g and base(hyp) in g for g in GROUPS):
         return 0.7
     if is_vowel(ref) != is_vowel(hyp):

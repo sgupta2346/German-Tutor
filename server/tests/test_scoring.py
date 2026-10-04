@@ -67,9 +67,10 @@ def test_dropped_final_schwa():
     assert rules(result) == ["schwa"]
 
 
-def test_vowel_length():
+def test_vowel_length_is_lenient_because_the_model_hears_it_unreliably():
     result = score_attempt(["Staat"], [["ʃ", "t", "aː", "t"]], ["ʃ", "t", "a", "t"], None)
-    assert rules(result) == ["length"]
+    assert rules(result) == []
+    assert result["phoneAccuracy"] > 0.95
 
 
 def test_errors_attach_to_the_right_word():

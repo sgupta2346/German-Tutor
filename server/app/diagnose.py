@@ -1,5 +1,5 @@
 from .align import Op
-from .phones import base, is_long, is_vowel
+from .phones import base
 
 U_LIKE = {"u", "ʊ", "i", "ɪ", "ju"}
 O_LIKE = {"o", "ɔ", "e", "ɛ", "ə", "ɜ", "oʊ", "ɚ", "ɝ"}
@@ -47,8 +47,6 @@ def _rule_for_sub(ref: str, hyp: str, prev_ref: str | None, next_ref: str | None
         return "au"
     if r == "pf" and h == "f":
         return "pf"
-    if is_vowel(ref) and base(ref) == base(hyp) and is_long(ref) != is_long(hyp):
-        return "length"
     return None
 
 

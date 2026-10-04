@@ -35,7 +35,6 @@ export function base(phone: string): string {
   return phone.replace(/[ːˑ]/g, "").replace(/ɑ/g, "a");
 }
 
-const isLong = (p: string) => p.includes("ː");
 const isVowel = (p: string) => p.length > 0 && VOWELS.has(p[0]);
 
 function equivalent(a: string, b: string): boolean {
@@ -44,7 +43,7 @@ function equivalent(a: string, b: string): boolean {
 
 export function substitutionCost(ref: string, hyp: string): number {
   if (equivalent(ref, hyp)) return 0;
-  if (base(ref) === base(hyp)) return 0.4;
+  if (base(ref) === base(hyp)) return 0.15;
   if (GROUPS.some((g) => g.has(base(ref)) && g.has(base(hyp)))) return 0.7;
   if (isVowel(ref) !== isVowel(hyp)) return 1.2;
   return 1;
@@ -148,7 +147,6 @@ function ruleForSub(ref: string, hyp: string, prev: string | null, next: string 
   if (r === "ɔʏ" && ["ju", "u", "juː"].includes(h)) return "eu";
   if (r === "aʊ" && (h === "ɔ" || h === "ɑ" || h === "a")) return "au";
   if (r === "pf" && h === "f") return "pf";
-  if (isVowel(ref) && base(ref) === base(hyp) && isLong(ref) !== isLong(hyp)) return "length";
   return null;
 }
 

@@ -38,6 +38,29 @@ on whether each word was understandable.
 
 The model is downloaded once (about 240 MB) and cached by the browser.
 
+### How well it works
+
+Measured in `kaggle/phoneme_eval/` on 120 clips (30 minutes) of real
+native German speech from Multilingual LibriSpeech, plus 60 course
+sentences read by a German Piper voice and by an English one reading the
+German text with English pronunciation rules:
+
+| | mean score | words flagged |
+|---|---|---|
+| Native German speakers | 91 | 9% |
+| German voice | 94 | 6% |
+| English voice reading German | 57 | 56% |
+
+The most common things caught in the English reading were the English r,
+dropping the final -e, w said as English w, -ig said as -ik, and missing
+final devoicing, which are the usual English-speaker mistakes.
+
+The 4-bit model (240 MB) scored within a point of the full 1.26 GB one,
+so the app uses the small one. The first version also flagged vowel length,
+but that caused most of the false alarms on native speech (the model doesn't
+hear length reliably), so length differences now count very little and
+aren't reported as mistakes.
+
 `server/` has the same scoring logic in Python, used by the Kaggle
 evaluation in `kaggle/phoneme_eval/`.
 
