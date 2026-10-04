@@ -17,7 +17,7 @@ interface Item {
 
 function buildItems(mode: Mode): Item[] {
   if (mode === "words") {
-    const pairs = sounds.flatMap((s) => s.pairs.flat().map((de) => ({ de, en: "minimal pair", tag: s.symbol })));
+    const pairs = sounds.flatMap((s) => s.pairs.flatMap(([a, b]) => [{ de: a, en: `contrast with ${b}`, tag: s.symbol }, { de: b, en: `contrast with ${a}`, tag: s.symbol }]));
     const words = cards.filter((c) => !c.de.includes(" ")).map((c) => ({ de: withArticle(c), en: c.en, tag: c.deckId.replace("a1-", "") }));
     const seen = new Set<string>();
     return [...pairs, ...words].filter((i) => (seen.has(i.de) ? false : (seen.add(i.de), true)));

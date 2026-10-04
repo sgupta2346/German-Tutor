@@ -123,7 +123,7 @@ export default function Listen() {
 
       {clip ? (
         <div className="grid gap-6 lg:grid-cols-[1fr_320px]">
-          <section className="space-y-5">
+          <section className="min-w-0 space-y-5">
             <div className="hero relative overflow-hidden rounded-[2rem] p-7 md:p-9">
               <div className="absolute -right-10 -top-16 h-56 w-56 rounded-full bg-der/30 blur-3xl" />
               <div className="relative flex items-center justify-between">
@@ -134,7 +134,7 @@ export default function Listen() {
                   <Shuffle size={14} /> Random
                 </button>
               </div>
-              <div className="relative mt-8 flex items-center gap-6">
+              <div className="relative mt-8 flex items-center gap-4 md:gap-6">
                 <motion.button
                   whileTap={{ scale: 0.92 }}
                   onClick={play}
@@ -143,11 +143,11 @@ export default function Listen() {
                 >
                   {speaking ? <Pause size={32} fill="currentColor" /> : <Play size={32} fill="currentColor" className="ml-1" />}
                 </motion.button>
-                <div className="flex h-14 flex-1 items-center gap-1" aria-hidden>
+                <div className="flex h-14 min-w-0 flex-1 items-center gap-1 overflow-hidden" aria-hidden>
                   {Array.from({ length: 36 }, (_, i) => (
                     <motion.span
                       key={i}
-                      className="w-1.5 flex-1 rounded-full bg-white/40"
+                      className="min-w-[3px] flex-1 rounded-full bg-white/40"
                       animate={speaking ? { height: [8, 12 + ((i * 37) % 40), 8] } : { height: 8 }}
                       transition={speaking ? { duration: 0.6 + (i % 5) * 0.12, repeat: Infinity, ease: "easeInOut" } : { duration: 0.2 }}
                     />
