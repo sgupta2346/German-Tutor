@@ -10,6 +10,7 @@ const Sounds = lazy(() => import("@/pages/Sounds"));
 const Cards = lazy(() => import("@/pages/Cards"));
 const CardSession = lazy(() => import("@/pages/CardSession"));
 const Speak = lazy(() => import("@/pages/Speak"));
+const Listen = lazy(() => import("@/pages/Listen"));
 const Settings = lazy(() => import("@/pages/Settings"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
 
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
       { path: "/cards", element: wrap(<Cards />) },
       { path: "/cards/:deckId", element: wrap(<CardSession />) },
       { path: "/speak", element: wrap(<Speak />) },
+      { path: "/listen", element: wrap(<Listen />) },
       { path: "/settings", element: wrap(<Settings />) },
       { path: "*", element: wrap(<NotFound />) },
     ],

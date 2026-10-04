@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "motion/react";
 import clsx from "clsx";
-import { BookOpen, Flame, Home, Layers, Mic, Settings, Type } from "lucide-react";
+import { BookOpen, Flame, Headphones, Home, Layers, Mic, Settings, Type } from "lucide-react";
 import { currentStreak, useStore } from "@/lib/store";
 
 const NAV = [
@@ -11,6 +11,7 @@ const NAV = [
   { to: "/sounds", label: "Sounds", icon: Type },
   { to: "/cards", label: "Cards", icon: Layers },
   { to: "/speak", label: "Speak", icon: Mic },
+  { to: "/listen", label: "Listen", icon: Headphones },
 ];
 
 function useTheme() {

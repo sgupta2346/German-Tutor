@@ -25,16 +25,28 @@ speak and tells you which sounds you got wrong and how to fix them.
 
 ## How the scoring works
 
-`server/` is a small FastAPI service. The recording goes through
-`wav2vec2-xlsr-53-espeak-cv-ft`, which outputs the phonemes it heard rather
-than words, so it doesn't auto-correct your mistakes the way normal speech
-recognition does. The target text is converted to its expected phonemes
-with espeak-ng, the two sequences are aligned, and the differences are
-matched against common English-speaker errors. Whisper also transcribes the
-attempt as a second check on whether the words were understandable.
+Everything runs in the browser, nothing gets uploaded. The recording goes
+through `wav2vec2-xlsr-53-espeak-cv-ft` (an ONNX export, run with
+transformers.js in a web worker), which outputs the phonemes it heard
+rather than words, so it doesn't auto-correct your mistakes the way normal
+speech recognition does. The expected phonemes for every German word in the
+course are generated ahead of time with espeak-ng
+(`scripts/build_phonemes.py`). The two sequences are aligned, and the
+differences are matched against common English-speaker errors. If the
+browser has speech recognition (Chrome, Edge), it's used as a second check
+on whether each word was understandable.
 
-If the scoring server isn't available, the app falls back to the browser's
-speech recognition and only checks whether each word was recognised.
+The model is downloaded once (about 240 MB) and cached by the browser.
+
+`server/` has the same scoring logic in Python, used by the Kaggle
+evaluation in `kaggle/phoneme_eval/`.
+
+## Audio
+
+German audio for every word and sentence is pre-generated with Piper
+(two voices, Thorsten and Kerstin) in `kaggle/audio_gen/` and served from a
+Hugging Face dataset. If a phrase has no recording, the browser's own German
+voice reads it.
 
 ## Where it's at
 
@@ -53,18 +65,14 @@ npm install
 npm run dev
 ```
 
-Scoring server (needs espeak-ng installed):
+After changing anything in `content/`, regenerate the reference phonemes:
 
 ```
-cd server
 python -m venv .venv
 .venv\Scripts\activate
-pip install torch --index-url https://download.pytorch.org/whl/cpu
-pip install -r requirements.txt
-uvicorn app.main:app --port 7860
+pip install phonemizer espeakng-loader
+python scripts/build_phonemes.py
 ```
-
-Then set `VITE_SCORER_URL=http://localhost:7860` in `frontend/.env.local`.
 
 Tests:
 

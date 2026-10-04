@@ -1,7 +1,8 @@
 import { useEffect, useState, useSyncExternalStore } from "react";
 import { useStore } from "./store";
 
-const AUDIO_BASE = (import.meta.env.VITE_AUDIO_BASE as string | undefined)?.replace(/\/$/, "");
+const DEFAULT_AUDIO_BASE = "https://huggingface.co/datasets/Sgupta02/german-tutor-audio/resolve/main";
+const AUDIO_BASE = ((import.meta.env.VITE_AUDIO_BASE as string | undefined) || DEFAULT_AUDIO_BASE).replace(/\/$/, "");
 
 let manifest: { voices: string[]; files: Record<string, string> } | null = null;
 let manifestPromise: Promise<void> | null = null;
@@ -92,8 +93,11 @@ function playSynth(text: string, rate: number, voiceURI: string | null, token: T
   });
 }
 
-export async function speak(text: string, opts: { slow?: boolean } = {}): Promise<void> {
-  const { rate, voiceURI, voice } = useStore.getState().settings;
+export async function speak(text: string, opts: { slow?: boolean; rate?: number; voice?: string } = {}): Promise<void> {
+  const settings = useStore.getState().settings;
+  const voiceURI = settings.voiceURI;
+  const voice = opts.voice ?? settings.voice;
+  const rate = opts.rate ?? settings.rate;
   const finalRate = opts.slow ? Math.max(0.5, rate * 0.65) : rate;
   stop();
   const token: Token = { text, stop: () => {} };
