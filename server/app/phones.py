@@ -18,8 +18,10 @@ GROUPS = [
 ]
 
 EQUIVALENT = [
-    {"ʁ", "ʀ", "χ", "r"},
+    {"ʁ", "ʀ", "χ", "r", "ɾ"},
     {"ɐ", "ɐ̯", "ɜ"},
+    {"a", "ɑ"},
+    {"aː", "ɑː"},
     {"ɡ", "g"},
     {"l", "ɫ"},
 ]
@@ -31,7 +33,7 @@ def clean(phone: str) -> str:
 
 
 def base(phone: str) -> str:
-    return phone.replace("ː", "").replace("ˑ", "")
+    return phone.replace("ː", "").replace("ˑ", "").replace("ɑ", "a")
 
 
 def is_long(phone: str) -> bool:

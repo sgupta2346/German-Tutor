@@ -98,3 +98,16 @@ def test_tokenize_keeps_umlauts_and_hyphens():
 def test_alignment_handles_empty_hypothesis():
     ops = align(["a", "b"], [])
     assert [o.kind for o in ops] == ["del", "del"]
+
+
+def test_espeak_r_notation_accepts_uvular_and_flags_english():
+    assert score_attempt(["Tür"], [["t", "yː", "ɾ"]], ["t", "yː", "ʁ"], None)["phoneAccuracy"] == 1.0
+    assert rules(score_attempt(["rot"], [["r", "oː", "t"]], ["ɹ", "oː", "t"], None)) == ["r"]
+
+
+def test_espeak_vocalic_r_with_english_r():
+    assert rules(score_attempt(["Mutter"], [["m", "ʊ", "t", "ɜ"]], ["m", "ʊ", "t", "ɚ"], None)) == ["er"]
+
+
+def test_long_a_variants_match():
+    assert score_attempt(["Tag"], [["t", "ɑː", "k"]], ["t", "aː", "k"], None)["phoneAccuracy"] == 1.0

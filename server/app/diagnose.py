@@ -3,7 +3,9 @@ from .phones import base, is_long, is_vowel
 
 U_LIKE = {"u", "ʊ", "i", "ɪ", "ju"}
 O_LIKE = {"o", "ɔ", "e", "ɛ", "ə", "ɜ", "oʊ"}
-ENGLISH_R = {"ɹ", "ɻ", "ɾ", "ɚ", "ɝ"}
+ENGLISH_R = {"ɹ", "ɻ", "ɚ", "ɝ"}
+GERMAN_R = {"ʁ", "r", "ɾ", "ʀ", "χ"}
+VOCALIC_R = {"ɐ", "ɐ̯", "ɜ"}
 VOICED = {"p": "b", "t": "d", "k": "ɡ"}
 
 
@@ -19,9 +21,9 @@ def _rule_for_sub(ref: str, hyp: str, prev_ref: str | None, next_ref: str | None
         return "ig" if h in {"k", "ɡ"} and prev_ref == "ɪ" and next_ref is None else "ich"
     if r == "x" and h in {"k", "h"}:
         return "ach"
-    if r == "ʁ" and h in ENGLISH_R:
+    if ref in GERMAN_R and hyp in ENGLISH_R:
         return "r"
-    if r == "ɐ" and h in ENGLISH_R:
+    if ref in VOCALIC_R and hyp in ENGLISH_R:
         return "er"
     if r == "ts" and h in {"z", "s", "dz"}:
         return "z"
@@ -84,7 +86,7 @@ def diagnose(ops: list[Op], word_of: list[int]) -> list[dict]:
                 word = word_of[anchor]
                 if op.hyp == "ɡ" and ref_seq[anchor] == "ŋ":
                     rule = "ng"
-                elif op.hyp in ENGLISH_R and ref_seq[anchor] in {"ɐ", "ɐ̯"}:
+                elif op.hyp in ENGLISH_R and ref_seq[anchor] in VOCALIC_R:
                     rule = "er"
         if op.cost < 0.5 and rule is None:
             continue
