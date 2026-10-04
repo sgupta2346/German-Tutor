@@ -11,6 +11,22 @@ export interface Attempt {
   focus: string[];
 }
 
+export interface SoundStat {
+  tries: number;
+  misses: number;
+  recent: number[];
+}
+
+export interface CustomWord {
+  id: string;
+  de: string;
+  en: string;
+  pos: string;
+  gender?: "m" | "f" | "n" | "pl";
+  ex: { de: string; en: string };
+  addedAt: number;
+}
+
 export interface LessonResult {
   stars: number;
   at: number;
@@ -36,8 +52,13 @@ interface State {
   srs: Record<string, CardInput>;
   newIntroduced: Record<string, number>;
   attempts: Attempt[];
+  soundStats: Record<string, SoundStat>;
+  customWords: CustomWord[];
   settings: Settings;
   onboarded: boolean;
+  recordSounds: (present: string[], missed: string[]) => void;
+  addCustomWord: (word: Omit<CustomWord, "id" | "addedAt">) => boolean;
+  removeCustomWord: (id: string) => void;
   addXp: (amount: number) => void;
   completeLesson: (id: string, stars: number) => void;
   saveCard: (id: string, card: CardInput, wasNew: boolean) => void;
@@ -70,6 +91,8 @@ const initial = {
   srs: {} as Record<string, CardInput>,
   newIntroduced: {} as Record<string, number>,
   attempts: [] as Attempt[],
+  soundStats: {} as Record<string, SoundStat>,
+  customWords: [] as CustomWord[],
   onboarded: false,
   settings: { theme: "system", rate: 1, voice: "thorsten", voiceURI: null, autoplay: true, dailyGoal: 50, newPerDay: 15 } as Settings,
 };
@@ -103,6 +126,23 @@ export const useStore = create<State>()(
           newIntroduced: wasNew ? { ...get().newIntroduced, [day]: (get().newIntroduced[day] ?? 0) + 1 } : get().newIntroduced,
         });
       },
+      recordSounds: (present, missed) => {
+        if (!present.length) return;
+        const stats = { ...get().soundStats };
+        for (const rule of present) {
+          const prev = stats[rule] ?? { tries: 0, misses: 0, recent: [] };
+          const miss = missed.includes(rule);
+          stats[rule] = { tries: prev.tries + 1, misses: prev.misses + (miss ? 1 : 0), recent: [...prev.recent, miss ? 0 : 1].slice(-12) };
+        }
+        set({ soundStats: stats });
+      },
+      addCustomWord: (word) => {
+        const key = word.de.trim().toLowerCase();
+        if (!key || get().customWords.some((w) => w.de.toLowerCase() === key)) return false;
+        set({ customWords: [...get().customWords, { ...word, id: `tutor:${key.replace(/\s+/g, "-")}`, addedAt: Date.now() }] });
+        return true;
+      },
+      removeCustomWord: (id) => set({ customWords: get().customWords.filter((w) => w.id !== id) }),
       logAttempt: (attempt) => set({ attempts: [attempt, ...get().attempts].slice(0, 300) }),
       updateSettings: (patch) => set({ settings: { ...get().settings, ...patch } }),
       setName: (name) => set({ name }),
@@ -134,6 +174,8 @@ export const useStore = create<State>()(
         srs: s.srs,
         newIntroduced: s.newIntroduced,
         attempts: s.attempts,
+        soundStats: s.soundStats,
+        customWords: s.customWords,
         settings: s.settings,
         onboarded: s.onboarded,
       }),

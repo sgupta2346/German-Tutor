@@ -6,8 +6,10 @@ import { cards, lessons, paragraphs, sounds, withArticle } from "@/data/content"
 import { useStore } from "@/lib/store";
 import { PageHeader, PlayButton, scoreColor } from "@/components/ui";
 import { SpeakPanel } from "@/components/SpeakPanel";
+import { WeakSoundPractice } from "@/components/WeakSoundPractice";
 
-type Mode = "words" | "sentences" | "paragraphs";
+type Mode = "foryou" | "words" | "sentences" | "paragraphs";
+const MODE_LABEL: Record<Mode, string> = { foryou: "For you", words: "Words", sentences: "Sentences", paragraphs: "Paragraphs" };
 
 interface Item {
   de: string;
@@ -15,7 +17,7 @@ interface Item {
   tag: string;
 }
 
-function buildItems(mode: Mode): Item[] {
+function buildItems(mode: Exclude<Mode, "foryou">): Item[] {
   if (mode === "words") {
     const pairs = sounds.flatMap((s) => s.pairs.flatMap(([a, b]) => [{ de: a, en: `contrast with ${b}`, tag: s.symbol }, { de: b, en: `contrast with ${a}`, tag: s.symbol }]));
     const words = cards.filter((c) => !c.de.includes(" ")).map((c) => ({ de: withArticle(c), en: c.en, tag: c.deckId.replace("a1-", "") }));
@@ -32,8 +34,8 @@ function buildItems(mode: Mode): Item[] {
 }
 
 export default function Speak() {
-  const [mode, setMode] = useState<Mode>("words");
-  const items = useMemo(() => buildItems(mode), [mode]);
+  const [mode, setMode] = useState<Mode>("foryou");
+  const items = useMemo(() => buildItems(mode === "foryou" ? "words" : mode), [mode]);
   const [index, setIndex] = useState(0);
   const attempts = useStore((s) => s.attempts);
   const item = items[Math.min(index, items.length - 1)];
@@ -49,22 +51,27 @@ export default function Speak() {
         Record yourself and every sound is compared against standard German pronunciation. You see exactly which sounds slipped into an English accent, and how to fix them.
       </PageHeader>
 
-      <div className="mb-6 inline-flex rounded-full bg-raised p-1">
-        {(["words", "sentences", "paragraphs"] as const).map((m) => (
+      <div className="scrollbar-none mb-6 flex max-w-full overflow-x-auto">
+        <div className="inline-flex shrink-0 rounded-full bg-raised p-1">
+        {(["foryou", "words", "sentences", "paragraphs"] as const).map((m) => (
           <button
             key={m}
             onClick={() => {
               setMode(m);
               setIndex(0);
             }}
-            className={clsx("relative rounded-full px-5 py-2 text-sm font-semibold capitalize", mode === m ? "text-bg" : "text-muted")}
+            className={clsx("relative shrink-0 rounded-full px-4 py-2 text-sm font-semibold md:px-5", mode === m ? "text-bg" : "text-muted")}
           >
             {mode === m && <motion.span layoutId="speak-tab" className="absolute inset-0 rounded-full bg-ink" />}
-            <span className="relative">{m}</span>
+            <span className="relative">{MODE_LABEL[m]}</span>
           </button>
         ))}
+        </div>
       </div>
 
+      {mode === "foryou" ? (
+        <WeakSoundPractice />
+      ) : (
       <div className="grid gap-6 lg:grid-cols-[300px_1fr]">
         <aside className="card order-2 max-h-[70vh] overflow-y-auto p-2 lg:order-1">
           {items.map((it, i) => {
@@ -111,6 +118,7 @@ export default function Speak() {
           </div>
         </section>
       </div>
+      )}
     </div>
   );
 }

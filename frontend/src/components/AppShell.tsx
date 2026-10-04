@@ -2,12 +2,13 @@ import { useEffect } from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "motion/react";
 import clsx from "clsx";
-import { BookOpen, Flame, Headphones, Home, Layers, Mic, Settings, Type } from "lucide-react";
+import { BookOpen, Flame, Headphones, Home, Layers, MessageCircle, Mic, Settings, Type } from "lucide-react";
 import { currentStreak, useStore } from "@/lib/store";
 
 const NAV = [
   { to: "/", label: "Home", icon: Home, end: true },
   { to: "/learn", label: "Learn", icon: BookOpen },
+  { to: "/tutor", label: "Tutor", icon: MessageCircle },
   { to: "/sounds", label: "Sounds", icon: Type },
   { to: "/cards", label: "Cards", icon: Layers },
   { to: "/speak", label: "Speak", icon: Mic },
@@ -134,12 +135,12 @@ export function AppShell() {
                 to={to}
                 end={end}
                 className={({ isActive }) =>
-                  clsx("relative flex flex-1 flex-col items-center gap-1 py-1.5 text-[11px] font-semibold", isActive ? "text-ink" : "text-muted")
+                  clsx("relative flex min-w-0 flex-1 flex-col items-center gap-1 py-1.5 text-[10px] font-semibold", isActive ? "text-ink" : "text-muted")
                 }
               >
                 {({ isActive }) => (
                   <>
-                    {isActive && <motion.span layoutId="tab-pill" className="absolute top-0 h-8 w-14 rounded-full bg-gold/30" />}
+                    {isActive && <motion.span layoutId="tab-pill" className="absolute top-0 h-8 w-11 rounded-full bg-gold/30" />}
                     <Icon size={21} className="relative mt-1" />
                     <span className="relative">{label}</span>
                   </>

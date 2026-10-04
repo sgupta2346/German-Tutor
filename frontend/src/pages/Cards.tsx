@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 import { ArrowRight, Layers } from "lucide-react";
 import { decks } from "@/data/content";
 import { today, useStore } from "@/lib/store";
-import { buildQueue, deckStats } from "@/lib/srs";
+import { buildQueue, deckStats, TUTOR_DECK } from "@/lib/srs";
 import { DECK_ICONS, PageHeader, ProgressBar } from "@/components/ui";
 
 const TINTS = ["#ffcc33", "#ff5a3c", "#3b82f6", "#10b981", "#a855f7", "#f43f5e"];
@@ -14,7 +14,8 @@ export default function Cards() {
   const settings = useStore((s) => s.settings);
   const introduced = useStore((s) => s.newIntroduced[today()] ?? 0);
   const newLeft = Math.max(0, settings.newPerDay - introduced);
-  const queue = useMemo(() => buildQueue(srs, { newLimit: newLeft }), [srs, newLeft]);
+  const customCount = useStore((s) => s.customWords.length);
+  const queue = useMemo(() => buildQueue(srs, { newLimit: newLeft }), [srs, newLeft, customCount]);
 
   return (
     <div>
@@ -45,7 +46,7 @@ export default function Cards() {
       </Link>
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {decks.map((deck, i) => {
+        {[...(customCount ? [{ id: TUTOR_DECK, level: "Tutor", title: "Saved from your tutor chats", titleDe: "Meine Wörter", icon: "sparkles", words: [] }] : []), ...decks].map((deck, i) => {
           const s = deckStats(srs, deck.id);
           const Icon = DECK_ICONS[deck.icon] ?? Layers;
           const tint = TINTS[i % TINTS.length];

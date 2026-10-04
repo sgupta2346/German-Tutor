@@ -5,6 +5,7 @@ import { AlertCircle, Headphones, Loader2, Mic, RotateCcw, Square, X } from "luc
 import { Recorder, type Recording } from "@/lib/recorder";
 import { BrowserTranscriber, scoreLocally, ScorerError, words as splitWords, type ScoreResult, type WordResult } from "@/lib/scorer";
 import { loadRecognizer, MODEL_SIZE_MB, useRecognizer } from "@/lib/recognizer";
+import { rulesInText } from "@/lib/practice";
 import { soundById } from "@/data/content";
 import { useStore } from "@/lib/store";
 import { PlayButton, Ring, scoreColor } from "./ui";
@@ -39,6 +40,7 @@ export function SpeakPanel({
   const startedAt = useRef(0);
   const logAttempt = useStore((s) => s.logAttempt);
   const addXp = useStore((s) => s.addXp);
+  const recordSounds = useStore((s) => s.recordSounds);
 
   const model = useRecognizer();
 
@@ -108,6 +110,7 @@ export function SpeakPanel({
       setResult(scored);
       setPhase("result");
       logAttempt({ text, score: scored.score, at: Date.now(), focus: scored.focus.map((f) => f.rule) });
+      if (scored.mode === "full") recordSounds(rulesInText(text), scored.focus.map((f) => f.rule));
       addXp(scored.score >= 85 ? 5 : scored.score >= 60 ? 3 : 1);
       onResult?.(scored);
     } catch (e) {

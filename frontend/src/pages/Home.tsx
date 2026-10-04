@@ -39,7 +39,8 @@ export default function Home() {
   const done = lessonOrder.filter((id) => lessons[id]).length;
 
   const newLeft = Math.max(0, settings.newPerDay - (newIntroduced[today()] ?? 0));
-  const queue = useMemo(() => buildQueue(srs, { newLimit: newLeft }), [srs, newLeft]);
+  const customCount = useStore((s) => s.customWords.length);
+  const queue = useMemo(() => buildQueue(srs, { newLimit: newLeft }), [srs, newLeft, customCount]);
   const mastered = cards.filter((c) => isMastered(srs[c.id])).length;
   const learned = Object.keys(srs).length;
 

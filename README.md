@@ -22,6 +22,16 @@ speak and tells you which sounds you got wrong and how to fix them.
   phoneme recognition model works out which sounds you actually made,
   compares them against standard German, and shows you per word what was
   off, e.g. you said *oo* where *ü* should be, or used an English r.
+- **Practice built around your accent.** Every recording updates a score
+  for each German sound. The "For you" tab finds your weakest sounds and
+  builds drills from course words and sentences that contain them, moving
+  from single words to long sentences as each one improves.
+- **Live tutor.** Chat with Lena, a tutor running on Google's Gemini, in
+  situations like ordering at a café, seeing a doctor or a job interview.
+  She replies at your level, corrects your mistakes in English, and new
+  words go straight into your flashcards. You can talk instead of typing,
+  and your pronunciation gets scored along the way. It needs your own free
+  Gemini API key, which stays in your browser.
 
 ## How the scoring works
 

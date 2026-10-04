@@ -1,6 +1,13 @@
 import { createEmptyCard, fsrs, generatorParameters, Rating, State, type Card, type CardInput, type Grade } from "ts-fsrs";
 import { cards } from "@/data/content";
 import type { VocabCard } from "@/data/types";
+import { useStore } from "./store";
+
+export const TUTOR_DECK = "tutor";
+
+export function allCards(): VocabCard[] {
+  return [...cards, ...useStore.getState().customWords.map((w) => ({ ...w, deckId: TUTOR_DECK }))];
+}
 
 const scheduler = fsrs(generatorParameters({ enable_fuzz: true, enable_short_term: true, request_retention: 0.9 }));
 
@@ -63,7 +70,8 @@ export interface QueueOptions {
 }
 
 export function buildQueue(srs: Record<string, CardInput>, { deckId, newLimit, now = new Date() }: QueueOptions): VocabCard[] {
-  const pool = deckId ? cards.filter((c) => c.deckId === deckId) : cards;
+  const every = allCards();
+  const pool = deckId ? every.filter((c) => c.deckId === deckId) : every;
   const due = pool
     .filter((c) => isDue(srs[c.id], now))
     .sort((a, b) => new Date(srs[a.id].due).getTime() - new Date(srs[b.id].due).getTime());
@@ -80,7 +88,7 @@ export function buildQueue(srs: Record<string, CardInput>, { deckId, newLimit, n
 }
 
 export function deckStats(srs: Record<string, CardInput>, deckId: string, now = new Date()) {
-  const pool = cards.filter((c) => c.deckId === deckId);
+  const pool = allCards().filter((c) => c.deckId === deckId);
   return {
     total: pool.length,
     fresh: pool.filter((c) => isNew(srs[c.id])).length,

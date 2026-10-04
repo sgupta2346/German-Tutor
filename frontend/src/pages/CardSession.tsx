@@ -9,7 +9,7 @@ import { deckById, GENDER_COLOR, withArticle } from "@/data/content";
 import type { VocabCard } from "@/data/types";
 import { speak } from "@/lib/audio";
 import { today, useStore } from "@/lib/store";
-import { buildQueue, GRADES, isNew, preview, review } from "@/lib/srs";
+import { buildQueue, GRADES, isNew, preview, review, TUTOR_DECK } from "@/lib/srs";
 import { GenderTag, PlayButton, ProgressBar } from "@/components/ui";
 import { SpeakPanel } from "@/components/SpeakPanel";
 
@@ -18,7 +18,7 @@ const SWIPE = 110;
 export default function CardSession() {
   const { deckId = "review" } = useParams();
   const navigate = useNavigate();
-  const deck = deckId === "review" ? null : deckById.get(deckId);
+  const deck = deckId === "review" ? null : deckId === TUTOR_DECK ? { id: TUTOR_DECK, title: "Saved words", titleDe: "Meine Wörter" } : deckById.get(deckId);
   const srs = useStore((s) => s.srs);
   const saveCard = useStore((s) => s.saveCard);
   const addXp = useStore((s) => s.addXp);
