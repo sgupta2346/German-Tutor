@@ -43,7 +43,7 @@ def _rule_for_sub(ref: str, hyp: str, prev_ref: str | None, next_ref: str | None
         return "ei-ie"
     if r == "ɔʏ" and h in {"ju", "u", "juː"}:
         return "eu"
-    if r == "aʊ" and h in {"ɔ", "ɑ"}:
+    if r == "aʊ" and h in {"ɔ", "a"}:
         return "au"
     if r == "pf" and h == "f":
         return "pf"

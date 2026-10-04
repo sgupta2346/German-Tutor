@@ -40,7 +40,7 @@ def reference_phones(word: str) -> tuple[str, ...]:
         word,
         language="de",
         backend="espeak",
-        separator=Separator(phone=" ", word=" ", syllable=""),
+        separator=Separator(phone=" ", word="", syllable=""),
         strip=True,
         preserve_punctuation=False,
         with_stress=False,
