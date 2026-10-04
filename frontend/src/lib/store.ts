@@ -19,6 +19,7 @@ export interface LessonResult {
 export interface Settings {
   theme: Theme;
   rate: number;
+  voice: string;
   voiceURI: string | null;
   autoplay: boolean;
   dailyGoal: number;
@@ -70,7 +71,7 @@ const initial = {
   newIntroduced: {} as Record<string, number>,
   attempts: [] as Attempt[],
   onboarded: false,
-  settings: { theme: "system", rate: 1, voiceURI: null, autoplay: true, dailyGoal: 50, newPerDay: 15 } as Settings,
+  settings: { theme: "system", rate: 1, voice: "thorsten", voiceURI: null, autoplay: true, dailyGoal: 50, newPerDay: 15 } as Settings,
 };
 
 export const useStore = create<State>()(
@@ -118,6 +119,10 @@ export const useStore = create<State>()(
     {
       name: "klang-progress",
       version: 1,
+      merge: (persisted, current) => {
+        const p = (persisted ?? {}) as Partial<State>;
+        return { ...current, ...p, settings: { ...current.settings, ...(p.settings ?? {}) } };
+      },
       storage: createJSONStorage(() => localStorage),
       partialize: (s) => ({
         name: s.name,

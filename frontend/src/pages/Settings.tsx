@@ -1,8 +1,9 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import clsx from "clsx";
 import { Download, Monitor, Moon, Sun, Trash2, Upload } from "lucide-react";
-import { speak, useGermanVoices } from "@/lib/audio";
-import { scorerConfigured, scorerHealth, browserRecognitionAvailable } from "@/lib/scorer";
+import { speak, useGermanVoices, useNaturalVoices } from "@/lib/audio";
+import { browserRecognitionAvailable } from "@/lib/scorer";
+import { loadRecognizer, MODEL_SIZE_MB, useRecognizer } from "@/lib/recognizer";
 import { useStore, type Theme } from "@/lib/store";
 import { PageHeader } from "@/components/ui";
 
@@ -21,13 +22,10 @@ function Row({ title, hint, children }: { title: string; hint?: string; children
 export default function Settings() {
   const { settings, updateSettings, name, setName, reset, importState } = useStore();
   const voices = useGermanVoices();
-  const [scorer, setScorer] = useState<"checking" | "online" | "offline" | "none">(scorerConfigured ? "checking" : "none");
+  const natural = useNaturalVoices();
+  const model = useRecognizer();
   const [message, setMessage] = useState<string | null>(null);
   const file = useRef<HTMLInputElement>(null);
-
-  useEffect(() => {
-    if (scorerConfigured) scorerHealth().then((ok) => setScorer(ok ? "online" : "offline"));
-  }, []);
 
   function exportProgress() {
     const raw = localStorage.getItem("klang-progress") ?? "{}";
@@ -109,18 +107,25 @@ export default function Settings() {
           />
           <span className="ml-3 font-bold">{settings.rate.toFixed(2)}×</span>
         </Row>
-        <Row title="Voice" hint={voices.length ? "German voices installed in your browser." : "No German voice found in this browser."}>
+        <Row title="Voice" hint={natural.length ? "Natural recorded voices, or any German voice your browser has." : "German voices installed in your browser."}>
           <select
-            value={settings.voiceURI ?? ""}
+            value={settings.voice === "browser" ? `browser:${settings.voiceURI ?? ""}` : settings.voice}
             onChange={(e) => {
-              updateSettings({ voiceURI: e.target.value || null });
+              const v = e.target.value;
+              if (v.startsWith("browser:")) updateSettings({ voice: "browser", voiceURI: v.slice(8) || null });
+              else updateSettings({ voice: v });
               setTimeout(() => speak("Hallo, so klinge ich."), 50);
             }}
-            className="w-56 rounded-xl border-2 border-line bg-bg px-3 py-2"
+            className="w-64 rounded-xl border-2 border-line bg-bg px-3 py-2"
           >
-            <option value="">Automatic</option>
+            {natural.map((v) => (
+              <option key={v} value={v}>
+                {v[0].toUpperCase() + v.slice(1)} (natural)
+              </option>
+            ))}
+            <option value="browser:">Browser voice, automatic</option>
             {voices.map((v) => (
-              <option key={v.voiceURI} value={v.voiceURI}>
+              <option key={v.voiceURI} value={`browser:${v.voiceURI}`}>
                 {v.name} ({v.lang})
               </option>
             ))}
@@ -136,19 +141,19 @@ export default function Settings() {
             <span className={clsx("absolute top-1 h-6 w-6 rounded-full bg-white shadow transition-all", settings.autoplay ? "left-7" : "left-1")} />
           </button>
         </Row>
-        <Row title="Pronunciation scorer" hint="Full phoneme-level feedback needs the scoring server.">
-          <span
-            className={clsx(
-              "chip !text-sm",
-              scorer === "online" && "!bg-good/15 !text-good",
-              scorer === "offline" && "!bg-bad/15 !text-bad",
-            )}
-          >
-            {scorer === "checking" && "Checking…"}
-            {scorer === "online" && "Online"}
-            {scorer === "offline" && "Asleep or unreachable"}
-            {scorer === "none" && (browserRecognitionAvailable ? "Basic browser check" : "Not available")}
-          </span>
+        <Row
+          title="Pronunciation model"
+          hint={`Runs on your device, recordings never leave it. One-time download of about ${MODEL_SIZE_MB} MB.${browserRecognitionAvailable ? "" : " Word recognition needs Chrome or Edge."}`}
+        >
+          {model.status === "ready" ? (
+            <span className="chip !bg-good/15 !text-sm !text-good">Ready{model.device ? ` · ${model.device === "webgpu" ? "GPU" : "CPU"}` : ""}</span>
+          ) : model.status === "loading" ? (
+            <span className="chip !text-sm">Downloading {Math.round(model.progress * 100)}%</span>
+          ) : (
+            <button className="btn btn-ghost text-sm" onClick={() => loadRecognizer().catch(() => {})}>
+              <Download size={15} /> {model.status === "error" ? "Retry download" : "Download now"}
+            </button>
+          )}
         </Row>
         <Row title="Your progress" hint="Everything is stored in this browser. Export a backup to move it to another device.">
           <div className="flex gap-2">

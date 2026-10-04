@@ -111,3 +111,17 @@ def test_espeak_vocalic_r_with_english_r():
 
 def test_long_a_variants_match():
     assert score_attempt(["Tag"], [["t", "ɑː", "k"]], ["t", "aː", "k"], None)["phoneAccuracy"] == 1.0
+
+
+def test_native_schwa_elision_before_n_is_cheap():
+    result = score_attempt(["einen"], [["aɪ", "n", "ə", "n"]], ["aɪ", "n", "n"], None)
+    assert result["phoneAccuracy"] >= 0.9
+    assert rules(result) == []
+
+
+def test_ich_said_as_ick_is_ich_not_ig():
+    assert rules(score_attempt(["ich"], [["ɪ", "ç"]], ["ɪ", "k"], None)) == ["ich"]
+
+
+def test_english_ch_affricate_maps_to_ich():
+    assert rules(score_attempt(["Milch"], [["m", "ɪ", "l", "ç"]], ["m", "ɪ", "l", "tʃ"], None)) == ["ich"]

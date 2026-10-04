@@ -2,14 +2,14 @@ from .align import Op
 from .phones import base, is_long, is_vowel
 
 U_LIKE = {"u", "ʊ", "i", "ɪ", "ju"}
-O_LIKE = {"o", "ɔ", "e", "ɛ", "ə", "ɜ", "oʊ"}
+O_LIKE = {"o", "ɔ", "e", "ɛ", "ə", "ɜ", "oʊ", "ɚ", "ɝ"}
 ENGLISH_R = {"ɹ", "ɻ", "ɚ", "ɝ"}
 GERMAN_R = {"ʁ", "r", "ɾ", "ʀ", "χ"}
 VOCALIC_R = {"ɐ", "ɐ̯", "ɜ"}
 VOICED = {"p": "b", "t": "d", "k": "ɡ"}
 
 
-def _rule_for_sub(ref: str, hyp: str, prev_ref: str | None, next_ref: str | None) -> str | None:
+def _rule_for_sub(ref: str, hyp: str, prev_ref: str | None, next_ref: str | None, prev2_ref: str | None = None) -> str | None:
     r, h = base(ref), base(hyp)
     if r in {"y", "ʏ"} and h in U_LIKE:
         return "ue"
@@ -17,8 +17,8 @@ def _rule_for_sub(ref: str, hyp: str, prev_ref: str | None, next_ref: str | None
         return "oe"
     if r == "ɛ" and h in {"a", "æ", "eɪ"}:
         return "ae"
-    if r == "ç" and h in {"ʃ", "k", "ɡ", "h", "x"}:
-        return "ig" if h in {"k", "ɡ"} and prev_ref == "ɪ" and next_ref is None else "ich"
+    if r == "ç" and h in {"ʃ", "k", "ɡ", "h", "x", "tʃ", "dʒ", "ʒ"}:
+        return "ig" if h in {"k", "ɡ"} and prev_ref == "ɪ" and prev2_ref is not None and next_ref is None else "ich"
     if r == "x" and h in {"k", "h"}:
         return "ach"
     if ref in GERMAN_R and hyp in ENGLISH_R:
@@ -56,11 +56,12 @@ def diagnose(ops: list[Op], word_of: list[int]) -> list[dict]:
     issues: list[dict] = []
     ref_seq = [op.ref for op in ops if op.ref is not None]
 
-    def neighbours(index: int) -> tuple[str | None, str | None]:
+    def neighbours(index: int) -> tuple[str | None, str | None, str | None]:
         word = word_of[index]
         prev_ref = ref_seq[index - 1] if index > 0 and word_of[index - 1] == word else None
+        prev2_ref = ref_seq[index - 2] if index > 1 and word_of[index - 2] == word else None
         next_ref = ref_seq[index + 1] if index + 1 < len(ref_seq) and word_of[index + 1] == word else None
-        return prev_ref, next_ref
+        return prev_ref, next_ref, prev2_ref
 
     for k, op in enumerate(ops):
         if op.kind == "match":
@@ -68,11 +69,11 @@ def diagnose(ops: list[Op], word_of: list[int]) -> list[dict]:
         rule = None
         word = None
         if op.kind == "sub" and op.ref_index is not None:
-            prev_ref, next_ref = neighbours(op.ref_index)
-            rule = _rule_for_sub(op.ref, op.hyp, prev_ref, next_ref)
+            prev_ref, next_ref, prev2_ref = neighbours(op.ref_index)
+            rule = _rule_for_sub(op.ref, op.hyp, prev_ref, next_ref, prev2_ref)
             word = word_of[op.ref_index]
         elif op.kind == "del" and op.ref_index is not None:
-            prev_ref, next_ref = neighbours(op.ref_index)
+            prev_ref, next_ref, _ = neighbours(op.ref_index)
             word = word_of[op.ref_index]
             if op.ref == "ə" and next_ref is None:
                 rule = "schwa"

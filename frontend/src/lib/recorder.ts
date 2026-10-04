@@ -2,6 +2,7 @@ export const TARGET_RATE = 16000;
 
 export interface Recording {
   wav: Blob;
+  pcm: Float32Array;
   url: string;
   seconds: number;
 }
@@ -52,7 +53,7 @@ export class Recorder {
     this.cleanup();
     const pcm = await decodeTo16k(blob);
     const wav = encodeWav(pcm, TARGET_RATE);
-    return { wav, url: URL.createObjectURL(wav), seconds: pcm.length / TARGET_RATE };
+    return { wav, pcm, url: URL.createObjectURL(wav), seconds: pcm.length / TARGET_RATE };
   }
 
   cancel() {

@@ -1,16 +1,24 @@
 import alphabetJson from "@content/alphabet.json";
 import soundsJson from "@content/sounds.json";
-import vocabA1 from "@content/vocab_a1.json";
 import curriculumJson from "@content/curriculum.json";
-import lessonsA1 from "@content/lessons_a1.json";
 import paragraphsJson from "@content/paragraphs.json";
 import type { Deck, Gender, Lesson, Letter, Level, Paragraph, Sound, Unit, VocabCard } from "./types";
 
 export const alphabet = alphabetJson as Letter[];
 export const sounds = soundsJson as Sound[];
-export const decks = vocabA1 as Deck[];
+const LEVEL_ORDER = ["a1", "a2", "b1", "b2", "c1"];
+const byLevel = (path: string) => LEVEL_ORDER.indexOf(path.match(/_(\w\d)\.json$/)?.[1] ?? "");
+const vocabFiles = import.meta.glob<Deck[]>("../../../content/vocab_*.json", { eager: true, import: "default" });
+const lessonFiles = import.meta.glob<Lesson[]>("../../../content/lessons_*.json", { eager: true, import: "default" });
+const ordered = <T,>(files: Record<string, T[]>) =>
+  Object.entries(files)
+    .sort(([a], [b]) => byLevel(a) - byLevel(b))
+    .flatMap(([, v]) => v);
+
+export const decks = ordered(vocabFiles);
 export const levels = (curriculumJson as { levels: Level[] }).levels;
-export const lessons = lessonsA1 as Lesson[];
+const unitOrder = new Map(levels.flatMap((l) => l.units).map((u, i) => [u.id, i]));
+export const lessons = ordered(lessonFiles).sort((a, b) => (unitOrder.get(a.unit) ?? 0) - (unitOrder.get(b.unit) ?? 0) || a.id.localeCompare(b.id));
 export const paragraphs = paragraphsJson as Paragraph[];
 
 export const soundById = new Map(sounds.map((s) => [s.id, s]));

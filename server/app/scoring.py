@@ -4,6 +4,9 @@ from collections import Counter
 from .align import align
 from .diagnose import diagnose
 
+SYLLABIC = {"n", "l", "m"}
+ELISION_COST = 0.2
+
 WORD_RE = re.compile(r"[A-Za-zÄÖÜäöüß]+(?:-[A-Za-zÄÖÜäöüß]+)*")
 
 
@@ -35,7 +38,11 @@ def score_attempt(words: list[str], ref_phones: list[list[str]], hyp_phones: lis
         flat_ref.extend(phones)
         word_of.extend([w] * len(phones))
 
-    ops = align(flat_ref, hyp_phones)
+    delete_costs = []
+    for k, phone in enumerate(flat_ref):
+        nxt = flat_ref[k + 1] if k + 1 < len(flat_ref) and word_of[k + 1] == word_of[k] else None
+        delete_costs.append(ELISION_COST if phone == "ə" and nxt in SYLLABIC else 1.0)
+    ops = align(flat_ref, hyp_phones, delete_costs)
     issues = diagnose(ops, word_of)
 
     penalty = [0.0] * len(words)

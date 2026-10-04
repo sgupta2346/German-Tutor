@@ -3,17 +3,8 @@ import { AnimatePresence, motion } from "motion/react";
 import clsx from "clsx";
 import { AlertCircle, Headphones, Loader2, Mic, RotateCcw, Square, X } from "lucide-react";
 import { Recorder, type Recording } from "@/lib/recorder";
-import {
-  basicScore,
-  browserRecognitionAvailable,
-  BrowserTranscriber,
-  scoreRecording,
-  ScorerError,
-  scorerConfigured,
-  words as splitWords,
-  type ScoreResult,
-  type WordResult,
-} from "@/lib/scorer";
+import { BrowserTranscriber, scoreLocally, ScorerError, words as splitWords, type ScoreResult, type WordResult } from "@/lib/scorer";
+import { loadRecognizer, MODEL_SIZE_MB, useRecognizer } from "@/lib/recognizer";
 import { soundById } from "@/data/content";
 import { useStore } from "@/lib/store";
 import { PlayButton, Ring, scoreColor } from "./ui";
@@ -49,7 +40,11 @@ export function SpeakPanel({
   const logAttempt = useStore((s) => s.logAttempt);
   const addXp = useStore((s) => s.addXp);
 
-  const available = scorerConfigured || browserRecognitionAvailable;
+  const model = useRecognizer();
+
+  useEffect(() => {
+    if (model.status === "idle") loadRecognizer().catch(() => {});
+  }, [model.status]);
 
   useEffect(() => {
     setPhase("idle");
@@ -81,10 +76,8 @@ export function SpeakPanel({
       return;
     }
     rec.current = r;
-    if (!scorerConfigured) {
-      asr.current = new BrowserTranscriber();
-      asr.current.start();
-    }
+    asr.current = new BrowserTranscriber();
+    asr.current.start();
     startedAt.current = performance.now();
     setPhase("recording");
     const limit = maxSeconds(text);
@@ -109,15 +102,9 @@ export function SpeakPanel({
     rec.current = null;
     setPhase("processing");
     try {
-      const recorded = await r.stop();
+      const [recorded, heard] = await Promise.all([r.stop(), asr.current?.stop() ?? Promise.resolve(null)]);
       setRecording(recorded);
-      let scored: ScoreResult;
-      if (scorerConfigured) {
-        scored = await scoreRecording(recorded.wav, text);
-      } else {
-        const heard = (await asr.current?.stop()) ?? "";
-        scored = basicScore(text, heard);
-      }
+      const scored = await scoreLocally(recorded.pcm, text, heard?.trim() ? heard : null);
       setResult(scored);
       setPhase("result");
       logAttempt({ text, score: scored.score, at: Date.now(), focus: scored.focus.map((f) => f.rule) });
@@ -128,15 +115,6 @@ export function SpeakPanel({
       setError({ message: err.message, retry: err.retryable });
       setPhase("error");
     }
-  }
-
-  if (!available) {
-    return (
-      <div className="card flex items-start gap-3 p-5 text-sm text-muted">
-        <AlertCircle className="mt-0.5 shrink-0 text-ember" size={18} />
-        Pronunciation scoring needs either the scoring server or a browser with speech recognition, such as Chrome or Edge.
-      </div>
-    );
   }
 
   const remaining = Math.max(0, maxSeconds(text) - elapsed);
@@ -193,9 +171,9 @@ export function SpeakPanel({
         </div>
 
         <p className="h-5 text-sm text-muted">
-          {phase === "idle" && "Tap the mic and read the text aloud"}
+          {phase === "idle" && (model.status === "loading" ? `Preparing the pronunciation model (${Math.round(model.progress * 100)}% of ${MODEL_SIZE_MB} MB, first time only)` : "Tap the mic and read the text aloud")}
           {phase === "recording" && `Listening… tap to finish (${Math.ceil(remaining)}s)`}
-          {phase === "processing" && "Analysing your sounds…"}
+          {phase === "processing" && (model.status === "loading" ? `Downloading the pronunciation model, first time only (${Math.round(model.progress * 100)}%)` : "Analysing your sounds…")}
           {phase === "result" && result?.mode === "basic" && "Basic check: word recognition only"}
         </p>
       </div>
@@ -217,7 +195,7 @@ export function SpeakPanel({
                 onClick={async () => {
                   setPhase("processing");
                   try {
-                    const scored = await scoreRecording(recording.wav, text);
+                    const scored = await scoreLocally(recording.pcm, text, null);
                     setResult(scored);
                     setPhase("result");
                     onResult?.(scored);

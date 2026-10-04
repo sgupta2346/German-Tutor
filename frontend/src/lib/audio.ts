@@ -3,7 +3,7 @@ import { useStore } from "./store";
 
 const AUDIO_BASE = (import.meta.env.VITE_AUDIO_BASE as string | undefined)?.replace(/\/$/, "");
 
-let manifest: Record<string, string> | null = null;
+let manifest: { voices: string[]; files: Record<string, string> } | null = null;
 let manifestPromise: Promise<void> | null = null;
 let current: { text: string; stop: () => void } | null = null;
 const listeners = new Set<() => void>();
@@ -19,12 +19,13 @@ function normalizeKey(text: string): string {
 function loadManifest(): Promise<void> {
   if (!AUDIO_BASE) return Promise.resolve();
   manifestPromise ??= fetch(`${AUDIO_BASE}/manifest.json`)
-    .then((r) => (r.ok ? r.json() : {}))
-    .then((m) => {
-      manifest = m;
+    .then((r) => (r.ok ? r.json() : null))
+    .then((m: { voices?: string[]; files?: Record<string, string> } | null) => {
+      manifest = m?.files ? { voices: m.voices ?? [], files: m.files } : { voices: [], files: {} };
+      emit();
     })
     .catch(() => {
-      manifest = {};
+      manifest = { voices: [], files: {} };
     });
   return manifestPromise;
 }
@@ -92,7 +93,7 @@ function playSynth(text: string, rate: number, voiceURI: string | null, token: T
 }
 
 export async function speak(text: string, opts: { slow?: boolean } = {}): Promise<void> {
-  const { rate, voiceURI } = useStore.getState().settings;
+  const { rate, voiceURI, voice } = useStore.getState().settings;
   const finalRate = opts.slow ? Math.max(0.5, rate * 0.65) : rate;
   stop();
   const token: Token = { text, stop: () => {} };
@@ -101,10 +102,11 @@ export async function speak(text: string, opts: { slow?: boolean } = {}): Promis
   try {
     await loadManifest();
     if (current !== token) return;
-    const file = manifest?.[normalizeKey(text)];
+    const file = manifest?.files[normalizeKey(text)];
+    const folder = manifest?.voices.includes(voice) ? voice : manifest?.voices[0];
     let played = false;
-    if (file && AUDIO_BASE) {
-      played = await playFile(`${AUDIO_BASE}/${file}`, finalRate, token).then(
+    if (file && folder && voice !== "browser" && AUDIO_BASE) {
+      played = await playFile(`${AUDIO_BASE}/${folder}/${file}.mp3`, finalRate, token).then(
         () => true,
         () => false,
       );
@@ -136,6 +138,14 @@ export function useGermanVoices(): SpeechSynthesisVoice[] {
     speechSynthesis.addEventListener("voiceschanged", update);
     update();
     return () => speechSynthesis.removeEventListener("voiceschanged", update);
+  }, []);
+  return voices;
+}
+
+export function useNaturalVoices(): string[] {
+  const [voices, setVoices] = useState<string[]>(manifest?.voices ?? []);
+  useEffect(() => {
+    loadManifest().then(() => setVoices(manifest?.voices ?? []));
   }, []);
   return voices;
 }

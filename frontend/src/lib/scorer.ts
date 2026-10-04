@@ -1,32 +1,7 @@
-const SCORER_URL = (import.meta.env.VITE_SCORER_URL as string | undefined)?.replace(/\/$/, "");
+import { recognizePhones } from "./recognizer";
+import { referencePhones, scoreAttempt, splitSequence, tokenize, wordMatches, type ScoreResult, type WordResult } from "./phonetics";
 
-export interface Issue {
-  kind: "sub" | "del" | "ins";
-  expected: string | null;
-  heard: string | null;
-  word: number | null;
-  rule: string | null;
-}
-
-export interface WordResult {
-  word: string;
-  accuracy: number;
-  understood: boolean | null;
-  expected: string[];
-  issues: Issue[];
-}
-
-export interface ScoreResult {
-  score: number;
-  phoneAccuracy: number;
-  intelligibility: number | null;
-  transcript: string | null;
-  heardPhones: string[];
-  words: WordResult[];
-  focus: { rule: string; count: number }[];
-  processingMs?: number;
-  mode: "full" | "basic";
-}
+export type { Issue, ScoreResult, WordResult } from "./phonetics";
 
 export class ScorerError extends Error {
   constructor(
@@ -37,34 +12,36 @@ export class ScorerError extends Error {
   }
 }
 
-export const scorerConfigured = Boolean(SCORER_URL);
+export const words = tokenize;
 
-export async function scorerHealth(): Promise<boolean> {
-  if (!SCORER_URL) return false;
+export async function scoreLocally(pcm: Float32Array, text: string, transcript: string | null): Promise<ScoreResult> {
+  const ws = tokenize(text);
+  if (!ws.length) throw new ScorerError("Nothing to score in this text.", false);
+  const refs = ws.map(referencePhones);
+  if (refs.every((r) => r === null)) {
+    if (transcript === null) throw new ScorerError("This text isn't in the pronunciation dictionary yet.", false);
+    return basicScore(text, transcript);
+  }
+  let result: { phones: string[]; ms: number };
   try {
-    const r = await fetch(`${SCORER_URL}/api/health`, { signal: AbortSignal.timeout(8000) });
-    return r.ok;
-  } catch {
-    return false;
+    result = await recognizePhones(pcm);
+  } catch (e) {
+    throw new ScorerError(`The pronunciation model couldn't run: ${e instanceof Error ? e.message : e}`, true);
   }
-}
-
-export async function scoreRecording(wav: Blob, text: string): Promise<ScoreResult> {
-  if (!SCORER_URL) throw new ScorerError("The pronunciation scorer isn't configured.", false);
-  const form = new FormData();
-  form.append("audio", wav, "attempt.wav");
-  form.append("text", text);
-  let res: Response;
-  try {
-    res = await fetch(`${SCORER_URL}/api/score`, { method: "POST", body: form, signal: AbortSignal.timeout(120_000) });
-  } catch {
-    throw new ScorerError("Couldn't reach the scorer. It may be waking up, try again in a minute.", true);
-  }
-  if (!res.ok) {
-    const detail = await res.json().then((j) => j.detail as string).catch(() => res.statusText);
-    throw new ScorerError(detail || "Scoring failed", res.status >= 500);
-  }
-  return { ...(await res.json()), mode: "full" };
+  const keep = ws.map((_, i) => refs[i] !== null);
+  const scored = scoreAttempt(
+    ws.filter((_, i) => keep[i]),
+    refs.filter((r): r is string[] => r !== null),
+    splitSequence(result.phones.join(" ")),
+    transcript,
+  );
+  if (keep.every(Boolean)) return { ...scored, processingMs: result.ms };
+  const understood = transcript !== null ? wordMatches(ws, tokenize(transcript)) : ws.map(() => null);
+  let k = 0;
+  const merged: WordResult[] = ws.map((w, i) =>
+    keep[i] ? scored.words[k++] : { word: w, accuracy: understood[i] ? 1 : 0, understood: understood[i], expected: [], issues: [] },
+  );
+  return { ...scored, words: merged, processingMs: result.ms };
 }
 
 type SpeechRecognitionLike = {
@@ -74,18 +51,18 @@ type SpeechRecognitionLike = {
   continuous: boolean;
   start: () => void;
   stop: () => void;
-  abort: () => void;
   onresult: ((e: { results: ArrayLike<ArrayLike<{ transcript: string }>> }) => void) | null;
   onerror: ((e: { error: string }) => void) | null;
   onend: (() => void) | null;
 };
 
 function recognitionCtor(): (new () => SpeechRecognitionLike) | null {
+  if (typeof window === "undefined") return null;
   const w = window as unknown as Record<string, unknown>;
   return (w.SpeechRecognition ?? w.webkitSpeechRecognition ?? null) as (new () => SpeechRecognitionLike) | null;
 }
 
-export const browserRecognitionAvailable = typeof window !== "undefined" && recognitionCtor() !== null;
+export const browserRecognitionAvailable = recognitionCtor() !== null;
 
 export class BrowserTranscriber {
   private rec: SpeechRecognitionLike | null = null;
@@ -95,21 +72,26 @@ export class BrowserTranscriber {
   start() {
     const Ctor = recognitionCtor();
     if (!Ctor) return;
-    const rec = new Ctor();
-    rec.lang = "de-DE";
-    rec.interimResults = false;
-    rec.continuous = true;
-    rec.maxAlternatives = 1;
-    this.parts = [];
-    this.done = new Promise((resolve) => {
-      rec.onresult = (e) => {
-        this.parts = Array.from(e.results).map((r) => r[0].transcript);
-      };
-      rec.onerror = () => resolve(this.parts.join(" "));
-      rec.onend = () => resolve(this.parts.join(" "));
-    });
-    this.rec = rec;
-    rec.start();
+    try {
+      const rec = new Ctor();
+      rec.lang = "de-DE";
+      rec.interimResults = false;
+      rec.continuous = true;
+      rec.maxAlternatives = 1;
+      this.parts = [];
+      this.done = new Promise((resolve) => {
+        rec.onresult = (e) => {
+          this.parts = Array.from(e.results).map((r) => r[0].transcript);
+        };
+        rec.onerror = () => resolve(this.parts.join(" "));
+        rec.onend = () => resolve(this.parts.join(" "));
+      });
+      this.rec = rec;
+      rec.start();
+    } catch {
+      this.rec = null;
+      this.done = null;
+    }
   }
 
   async stop(): Promise<string | null> {
@@ -121,34 +103,17 @@ export class BrowserTranscriber {
   }
 }
 
-const WORD = /[A-Za-zÄÖÜäöüß]+(?:-[A-Za-zÄÖÜäöüß]+)*/g;
-
-export function words(text: string): string[] {
-  return text.match(WORD) ?? [];
-}
-
-function norm(w: string) {
-  return w.toLowerCase().replace(/ß/g, "ss");
-}
-
 export function basicScore(target: string, transcript: string): ScoreResult {
-  const expected = words(target);
-  const pool = new Map<string, number>();
-  for (const w of words(transcript)) pool.set(norm(w), (pool.get(norm(w)) ?? 0) + 1);
-  const results: WordResult[] = expected.map((w) => {
-    const k = norm(w);
-    const hit = (pool.get(k) ?? 0) > 0;
-    if (hit) pool.set(k, pool.get(k)! - 1);
-    return { word: w, accuracy: hit ? 1 : 0, understood: hit, expected: [], issues: [] };
-  });
-  const ratio = results.length ? results.filter((r) => r.understood).length / results.length : 0;
+  const expected = tokenize(target);
+  const hits = wordMatches(expected, tokenize(transcript));
+  const ratio = expected.length ? hits.filter(Boolean).length / expected.length : 0;
   return {
     score: Math.round(ratio * 100),
     phoneAccuracy: ratio,
     intelligibility: ratio,
     transcript,
     heardPhones: [],
-    words: results,
+    words: expected.map((w, i) => ({ word: w, accuracy: hits[i] ? 1 : 0, understood: hits[i], expected: [], issues: [] })),
     focus: [],
     mode: "basic",
   };

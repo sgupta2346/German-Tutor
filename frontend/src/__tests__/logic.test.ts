@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { Rating } from "ts-fsrs";
 import { buildQueue, formatInterval, isDue, isNew, review } from "@/lib/srs";
 import { basicScore, words } from "@/lib/scorer";
+import { scoreAttempt, referencePhones, tokenize as tok } from "@/lib/phonetics";
 import { encodeWav } from "@/lib/recorder";
 import { editDistance, normalizeAnswer } from "@/pages/LessonPlayer";
 import { cards, decks, lessons, soundById, unitById, lessonById } from "@/data/content";
@@ -96,5 +97,43 @@ describe("content integrity", () => {
         if (s.type === "choice") expect(s.answer).toBeLessThan(s.options.length);
         if (s.type === "match") expect(new Set(s.pairs.map((p) => p[0])).size).toBe(s.pairs.length);
       }
+  });
+});
+
+describe("in-browser phonetics", () => {
+  it("has reference phones for every German word used in the course", () => {
+    const texts = [
+      ...cards.flatMap((c) => [c.de, c.ex.de]),
+      ...lessons.flatMap((l) => l.steps.flatMap((s) => ("de" in s ? [s.de] : []))),
+    ];
+    const missing = texts.flatMap(tok).filter((w) => referencePhones(w) === null);
+    expect(missing).toEqual([]);
+  });
+
+  it("flags ü said as oo with the same rules as the server", () => {
+    const r = scoreAttempt(["Tür"], [["t", "yː", "ɾ"]], ["t", "uː", "ʁ"], null);
+    expect(r.words[0].issues.map((i) => i.rule)).toEqual(["ue"]);
+  });
+
+  it("accepts a native-like attempt", () => {
+    const ref = referencePhones("richtig")!;
+    expect(scoreAttempt(["richtig"], [ref], ref, "richtig").score).toBe(100);
+  });
+
+  it("detects English r and missing final devoicing", () => {
+    const r = scoreAttempt(["rund"], [["r", "ʊ", "n", "t"]], ["ɹ", "ʊ", "n", "d"], null);
+    expect(r.focus.map((f) => f.rule).sort()).toEqual(["devoicing", "r"]);
+  });
+});
+
+describe("scoring calibration", () => {
+  it("treats native schwa elision before n as nearly free", () => {
+    const r = scoreAttempt(["einen"], [["aɪ", "n", "ə", "n"]], ["aɪ", "n", "n"], null);
+    expect(r.phoneAccuracy).toBeGreaterThanOrEqual(0.9);
+    expect(r.focus).toEqual([]);
+  });
+
+  it("labels ich said as ick with the ich rule", () => {
+    expect(scoreAttempt(["ich"], [["ɪ", "ç"]], ["ɪ", "k"], null).focus.map((f) => f.rule)).toEqual(["ich"]);
   });
 });
