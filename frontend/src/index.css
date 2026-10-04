@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+@theme {
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-raised: var(--raised);
+  --color-line: var(--line);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-gold: #ffcc33;
+  --color-ember: #ff5a3c;
+  --color-plum: #8b5cf6;
+  --color-good: #22c55e;
+  --color-bad: #f43f5e;
+  --color-der: #3b82f6;
+  --color-die: #f43f5e;
+  --color-das: #10b981;
+  --color-plural: #a855f7;
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-ring: pulse-ring 1.6s cubic-bezier(0.2, 0.6, 0.4, 1) infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0) }
+    50% { transform: translateY(-8px) }
+  }
+  @keyframes pulse-ring {
+    0% { transform: scale(1); opacity: 0.55 }
+    100% { transform: scale(1.9); opacity: 0 }
+  }
+}
+
+:root {
+  --bg: #faf6ee;
+  --surface: #ffffff;
+  --raised: #f3eee4;
+  --line: #e7dfd1;
+  --ink: #17141f;
+  --muted: #6f6879;
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --bg: #0f0d14;
+  --surface: #17141f;
+  --raised: #211d2b;
+  --line: #2d2839;
+  --ink: #f6f2ea;
+  --muted: #a39cb0;
+  color-scheme: dark;
+}
+
+html, body, #root { height: 100%; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+}
+
+.glow-bg {
+  background:
+    radial-gradient(60rem 40rem at 110% -10%, color-mix(in oklab, var(--color-gold) 16%, transparent), transparent 60%),
+    radial-gradient(50rem 36rem at -20% 110%, color-mix(in oklab, var(--color-ember) 12%, transparent), transparent 60%),
+    var(--bg);
+}
+
+.grain::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  z-index: 60;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 1.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: transform 0.15s ease, background 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+  user-select: none;
+}
+.btn:active { transform: scale(0.96); }
+.btn:disabled { opacity: 0.45; pointer-events: none; }
+
+.btn-primary {
+  background: var(--ink);
+  color: var(--bg);
+  padding: 0.85rem 1.5rem;
+  box-shadow: 0 6px 0 0 color-mix(in oklab, var(--ink) 55%, transparent);
+}
+.btn-primary:active { box-shadow: 0 2px 0 0 color-mix(in oklab, var(--ink) 55%, transparent); transform: translateY(4px); }
+
+.btn-gold {
+  background: var(--color-gold);
+  color: #17141f;
+  padding: 0.85rem 1.5rem;
+  box-shadow: 0 6px 0 0 #c99a10;
+}
+.btn-gold:active { box-shadow: 0 2px 0 0 #c99a10; transform: translateY(4px); }
+
+.btn-ghost {
+  padding: 0.6rem 1rem;
+  color: var(--ink);
+  background: var(--raised);
+}
+.btn-ghost:hover { background: color-mix(in oklab, var(--raised) 70%, var(--line)); }
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 999px;
+  padding: 0.2rem 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: var(--raised);
+  color: var(--muted);
+}
+
+.text-balance { text-wrap: balance; }
+.preserve-3d { transform-style: preserve-3d; }
+.backface-hidden { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+
+::selection { background: color-mix(in oklab, var(--color-gold) 45%, transparent); }
+
+.scrollbar-none { scrollbar-width: none; }
+.scrollbar-none::-webkit-scrollbar { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+.hero {
+  background: linear-gradient(135deg, #1a1624 0%, #2a2140 100%);
+  color: #f6f2ea;
+}
+[data-theme="dark"] .hero {
+  background: linear-gradient(135deg, #221c33 0%, #33264f 100%);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
