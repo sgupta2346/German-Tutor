@@ -7,7 +7,7 @@ import { ArrowRight, Check, Flag, Mic, RotateCcw, X } from "lucide-react";
 import { Rating, type Grade } from "ts-fsrs";
 import { deckById, withArticle } from "@/data/content";
 import type { VocabCard } from "@/data/types";
-import { speak } from "@/lib/audio";
+import { preloadAudio, speak } from "@/lib/audio";
 import { today, useStore } from "@/lib/store";
 import { buildQueue, FLAGGED_DECK, GRADES, isNew, preview, review, TUTOR_DECK } from "@/lib/srs";
 import { PlayButton, ProgressBar } from "@/components/ui";
@@ -41,6 +41,11 @@ export default function CardSession() {
 
   const card = queue[0];
   const done = !card;
+
+  useEffect(() => {
+    const level = deck && "level" in deck ? String(deck.level).toLowerCase() : null;
+    preloadAudio(level && /^[abc]\d$/.test(level) ? [level] : ["a1", "a2"]);
+  }, [deckId]);
 
   useEffect(() => {
     if (card && autoplay) speak(card.gender ? withArticle(card) : card.de);

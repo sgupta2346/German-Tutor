@@ -72,8 +72,10 @@ def level_of_texts() -> dict[str, str]:
     return owner
 
 
-def main(src: Path, out: Path) -> None:
+def main(src: Path, out: Path, voices: list[str] | None = None) -> None:
     manifest = json.loads((src / "manifest.json").read_text(encoding="utf-8"))
+    if voices:
+        manifest["voices"] = [v for v in manifest["voices"] if v in voices]
     owner = level_of_texts()
     out.mkdir(parents=True, exist_ok=True)
     packs: dict[str, dict] = {}
@@ -100,4 +102,4 @@ def main(src: Path, out: Path) -> None:
 
 
 if __name__ == "__main__":
-    main(Path(sys.argv[1]), Path(sys.argv[2]))
+    main(Path(sys.argv[1]), Path(sys.argv[2]), sys.argv[3].split(",") if len(sys.argv) > 3 else None)

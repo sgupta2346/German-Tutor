@@ -6,7 +6,7 @@ import confetti from "canvas-confetti";
 import { Check, Flame, Star, X, Zap } from "lucide-react";
 import { lessonById, lessonOrder, unitById } from "@/data/content";
 import type { Step } from "@/data/types";
-import { speak } from "@/lib/audio";
+import { preloadAudio, speak } from "@/lib/audio";
 import { useStore } from "@/lib/store";
 import { PlayButton, ProgressBar } from "@/components/ui";
 import { SpeakPanel } from "@/components/SpeakPanel";
@@ -59,6 +59,11 @@ export default function LessonPlayer() {
   const [combo, setCombo] = useState(0);
   const [finished, setFinished] = useState(false);
   const [checkFn, setCheckFn] = useState<(() => Feedback) | null>(null);
+
+  useEffect(() => {
+    const level = lesson ? unitById.get(lesson.unit)?.level : undefined;
+    if (level) preloadAudio([level.toLowerCase()]);
+  }, [lesson]);
 
   useEffect(() => {
     setQueue(lesson?.steps ?? []);

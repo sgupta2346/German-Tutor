@@ -7,7 +7,7 @@ const AUDIO_BASE = ((import.meta.env.VITE_AUDIO_BASE as string | undefined) || D
 
 type Entry = [string, Record<string, [number, number]>];
 let manifest: { voices: string[]; files: Record<string, Entry> } | null = null;
-const PACK_CACHE = "klang-audio-v2";
+const PACK_CACHE = "klang-audio-v3";
 export const VOICE_GENDER: Record<string, SpeakerGender> = { thorsten: "male" };
 const RELIABLE_VOICES = Object.keys(VOICE_GENDER);
 const packs = new Map<string, Promise<ArrayBuffer>>();
@@ -81,6 +81,13 @@ function getPack(name: string): Promise<ArrayBuffer> {
 
 function withTimeout<T>(p: Promise<T>, ms: number): Promise<T | null> {
   return Promise.race([p, new Promise<null>((r) => setTimeout(() => r(null), ms))]);
+}
+
+export function forgetOldAudioCaches(): void {
+  caches
+    ?.keys()
+    .then((keys) => keys.filter((k) => k.startsWith("klang-audio-") && k !== PACK_CACHE).forEach((k) => caches.delete(k)))
+    .catch(() => undefined);
 }
 
 export async function preloadAudio(levels: string[] = ["core", "a1"]): Promise<void> {

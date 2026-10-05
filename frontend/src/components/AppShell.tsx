@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "motion/react";
 import clsx from "clsx";
 import { BookOpen, Flame, Headphones, Home, Layers, MessageCircle, Mic, Settings, Type } from "lucide-react";
 import { currentStreak, useStore } from "@/lib/store";
-import { preloadAudio } from "@/lib/audio";
+import { forgetOldAudioCaches, preloadAudio } from "@/lib/audio";
 import { LiveBackground } from "./LiveBackground";
 
 const NAV = [
@@ -60,6 +60,7 @@ export function Logo() {
 export function AppShell() {
   useTheme();
   useEffect(() => {
+    forgetOldAudioCaches();
     const t = window.setTimeout(() => preloadAudio(), 1500);
     return () => window.clearTimeout(t);
   }, []);
