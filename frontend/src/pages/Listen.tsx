@@ -7,6 +7,7 @@ import { speak, stop, useNaturalVoices, useSpeaking } from "@/lib/audio";
 import { useStore } from "@/lib/store";
 import { editDistance, normalizeAnswer } from "@/pages/LessonPlayer";
 import { PageHeader } from "@/components/ui";
+import { DictationHelp } from "@/components/DictationHelp";
 
 interface Clip {
   de: string;
@@ -65,6 +66,8 @@ export default function Listen() {
   const [typed, setTyped] = useState("");
   const [checked, setChecked] = useState(false);
   const [showText, setShowText] = useState(false);
+  const [hint, setHint] = useState(false);
+  const [revealed, setRevealed] = useState(false);
   const speaking = useSpeaking(clip?.de);
   const touchedVoice = useRef(false);
 
@@ -81,6 +84,8 @@ export default function Listen() {
     setTyped("");
     setChecked(false);
     setShowText(false);
+    setHint(false);
+    setRevealed(false);
   }
 
   function play() {
@@ -207,6 +212,7 @@ export default function Listen() {
                     <Check size={18} /> Check
                   </button>
                 </div>
+                {!result && <DictationHelp text={clip.de} en={clip.en} hint={hint} revealed={revealed} onHint={() => setHint(true)} onReveal={() => setRevealed(true)} />}
                 <AnimatePresence>
                   {result && (
                     <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="mt-6 space-y-3">
@@ -216,17 +222,20 @@ export default function Listen() {
                       </p>
                       <p className="text-lg leading-relaxed">
                         {result.marks.map((m, i) => (
-                          <span
+                          <button
                             key={i}
+                            type="button"
+                            title="Hear this word"
+                            onClick={() => speak(m.word.replace(/[.,!?;:„“"]/g, ""), { slow: true })}
                             className={clsx(
-                              "mr-1.5 inline-block rounded-md px-1",
+                              "mr-1.5 inline-block rounded-md px-1 hover:ring-2 hover:ring-gold",
                               m.state === "ok" && "bg-good/15 text-good",
                               m.state === "close" && "bg-gold/25",
                               m.state === "miss" && "bg-bad/15 text-bad underline decoration-dotted",
                             )}
                           >
                             {m.word}
-                          </span>
+                          </button>
                         ))}
                       </p>
                       <p className="text-sm text-muted">{clip.en}</p>

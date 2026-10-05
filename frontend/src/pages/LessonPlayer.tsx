@@ -10,8 +10,9 @@ import { speak } from "@/lib/audio";
 import { useStore } from "@/lib/store";
 import { PlayButton, ProgressBar } from "@/components/ui";
 import { SpeakPanel } from "@/components/SpeakPanel";
+import { DictationHelp } from "@/components/DictationHelp";
 
-type Feedback = { correct: boolean; answer?: string; explain?: string; close?: boolean } | null;
+type Feedback = { correct: boolean; answer?: string; explain?: string; close?: boolean; revealed?: boolean } | null;
 type SetCheck = React.Dispatch<React.SetStateAction<(() => Feedback) | null>>;
 
 export function normalizeAnswer(s: string): string {
@@ -90,7 +91,10 @@ export default function LessonPlayer() {
     const fb = checkFn();
     if (!fb) return;
     setFeedback(fb);
-    if (fb.correct) {
+    if (fb.revealed) {
+      setCombo(0);
+      setQueue((q) => [...q, step]);
+    } else if (fb.correct) {
       setCombo((c) => c + 1);
     } else {
       setCombo(0);
@@ -206,23 +210,23 @@ export default function LessonPlayer() {
       <footer
         className={clsx(
           "sticky bottom-0 border-t transition-colors",
-          feedback ? (feedback.correct ? "border-good/30 bg-good/10" : "border-bad/30 bg-bad/10") : "border-line bg-surface/70 backdrop-blur-xl",
+          feedback ? (feedback.revealed ? "border-gold/40 bg-gold/15" : feedback.correct ? "border-good/30 bg-good/10" : "border-bad/30 bg-bad/10") : "border-line bg-surface/70 backdrop-blur-xl",
         )}
       >
         <div className="mx-auto flex w-full max-w-3xl flex-col gap-4 px-4 py-5 pb-[max(env(safe-area-inset-bottom),1.25rem)] md:flex-row md:items-center">
           <AnimatePresence mode="wait">
             {feedback ? (
               <motion.div key="fb" initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="flex flex-1 items-start gap-3">
-                <span className={clsx("grid h-11 w-11 shrink-0 place-items-center rounded-full text-white", feedback.correct ? "bg-good" : "bg-bad")}>
-                  {feedback.correct ? <Check strokeWidth={3} /> : <X strokeWidth={3} />}
+                <span className={clsx("grid h-11 w-11 shrink-0 place-items-center rounded-full text-white", feedback.revealed ? "bg-gold" : feedback.correct ? "bg-good" : "bg-bad")}>
+                  {feedback.revealed ? <Check strokeWidth={3} /> : feedback.correct ? <Check strokeWidth={3} /> : <X strokeWidth={3} />}
                 </span>
                 <div>
-                  <p className={clsx("font-display text-xl font-bold", feedback.correct ? "text-good" : "text-bad")}>
-                    {feedback.correct ? (feedback.close ? "Almost perfect" : ["Correct!", "Nice!", "Great!", "Well done!"][index % 4]) : "Not quite"}
+                  <p className={clsx("font-display text-xl font-bold", feedback.revealed ? "text-ink" : feedback.correct ? "text-good" : "text-bad")}>
+                    {feedback.revealed ? "Good, now remember it" : feedback.correct ? (feedback.close ? "Almost perfect" : ["Correct!", "Nice!", "Great!", "Well done!"][index % 4]) : "Not quite"}
                   </p>
                   {feedback.answer && (
                     <p className="text-sm">
-                      {feedback.correct ? "Exact spelling:" : "Correct answer:"} <span className="font-semibold">{feedback.answer}</span>
+                      {feedback.revealed ? "Sentence:" : feedback.correct ? "Exact spelling:" : "Correct answer:"} <span className="font-semibold">{feedback.answer}</span>
                     </p>
                   )}
                   {feedback.explain && <p className="mt-1 text-sm text-muted">{feedback.explain}</p>}
@@ -239,7 +243,7 @@ export default function LessonPlayer() {
             )}
           </AnimatePresence>
           <button
-            className={clsx("btn w-full md:w-48", feedback && !feedback.correct ? "btn-primary !bg-bad !text-white" : "btn-gold")}
+            className={clsx("btn w-full md:w-48", feedback && !feedback.correct && !feedback.revealed ? "btn-primary !bg-bad !text-white" : "btn-gold")}
             disabled={!feedback && !ready}
             onClick={() => (feedback ? advance() : graded ? check() : advance())}
           >
@@ -476,13 +480,16 @@ function ListenStep({
   setCheck: SetCheck;
 }) {
   const [value, setValue] = useState("");
+  const [hint, setHint] = useState(false);
+  const [revealed, setRevealed] = useState(false);
   useEffect(() => {
     const t = setTimeout(() => speak(step.de), 350);
     return () => clearTimeout(t);
   }, [step.de]);
   useEffect(() => {
-    setReady(value.trim().length > 0);
+    setReady(revealed || value.trim().length > 0);
     setCheck(() => () => {
+      if (revealed) return { correct: false, revealed: true, answer: step.de, explain: `${step.en} You'll get this one again before the lesson ends.` };
       const a = normalizeAnswer(value);
       const b = normalizeAnswer(step.de);
       if (a === b) return { correct: true, explain: step.en };
@@ -490,7 +497,7 @@ function ListenStep({
       if (editDistance(a, b) <= tolerance) return { correct: true, close: true, answer: step.de, explain: step.en };
       return { correct: false, answer: step.de, explain: step.en };
     });
-  }, [value, step, setReady, setCheck]);
+  }, [value, step, revealed, setReady, setCheck]);
 
   const insert = (ch: string) => setValue((v) => v + ch);
 
@@ -520,6 +527,7 @@ function ListenStep({
           </button>
         ))}
       </div>
+      <DictationHelp text={step.de} en={step.en} hint={hint} revealed={revealed} onHint={() => setHint(true)} onReveal={() => setRevealed(true)} disabled={locked} />
     </div>
   );
 }
