@@ -1,0 +1,630 @@
+[
+  {
+    "id": "a2-u3-words",
+    "level": "A2",
+    "title": "Shopping and clothes",
+    "titleDe": "Einkaufen und Kleidung",
+    "icon": "home",
+    "words": [
+      {
+        "de": "Hemd",
+        "en": "shirt",
+        "pos": "noun",
+        "ex": {
+          "de": "Das Hemd ist zu teuer.",
+          "en": "The shirt is too expensive."
+        },
+        "gender": "n",
+        "plural": "Hemden"
+      },
+      {
+        "de": "Hose",
+        "en": "pants",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Hose passt mir nicht.",
+          "en": "The pants do not fit me."
+        },
+        "gender": "f",
+        "plural": "Hosen"
+      },
+      {
+        "de": "Kleid",
+        "en": "dress",
+        "pos": "noun",
+        "ex": {
+          "de": "Das Kleid gefällt mir sehr.",
+          "en": "I like the dress very much."
+        },
+        "gender": "n",
+        "plural": "Kleider"
+      },
+      {
+        "de": "Jacke",
+        "en": "jacket",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich suche eine warme Jacke.",
+          "en": "I am looking for a warm jacket."
+        },
+        "gender": "f",
+        "plural": "Jacken"
+      },
+      {
+        "de": "Schuh",
+        "en": "shoe",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Schuhe sind sehr bequem.",
+          "en": "The shoes are very comfortable."
+        },
+        "gender": "m",
+        "plural": "Schuhe"
+      },
+      {
+        "de": "Pullover",
+        "en": "sweater",
+        "pos": "noun",
+        "ex": {
+          "de": "Der Pullover ist sehr schön.",
+          "en": "The sweater is very beautiful."
+        },
+        "gender": "m",
+        "plural": "Pullover"
+      },
+      {
+        "de": "Größe",
+        "en": "size",
+        "pos": "noun",
+        "ex": {
+          "de": "Welche Größe haben Sie?",
+          "en": "What size do you have?"
+        },
+        "gender": "f",
+        "plural": "Größen"
+      },
+      {
+        "de": "Preis",
+        "en": "price",
+        "pos": "noun",
+        "ex": {
+          "de": "Der Preis ist zu hoch.",
+          "en": "The price is too high."
+        },
+        "gender": "m",
+        "plural": "Preise"
+      },
+      {
+        "de": "Umkleidekabine",
+        "en": "changing room",
+        "pos": "noun",
+        "ex": {
+          "de": "Wo ist die Umkleidekabine?",
+          "en": "Where is the changing room?"
+        },
+        "gender": "f",
+        "plural": "Umkleidekabinen"
+      },
+      {
+        "de": "Verkäufer",
+        "en": "salesman",
+        "pos": "noun",
+        "ex": {
+          "de": "Der Verkäufer hilft mir.",
+          "en": "The salesman is helping me."
+        },
+        "gender": "m",
+        "plural": "Verkäufer"
+      },
+      {
+        "de": "kaufen",
+        "en": "to buy",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich habe ein T-Shirt gekauft.",
+          "en": "I bought a T-shirt."
+        }
+      },
+      {
+        "de": "anprobieren",
+        "en": "to try on",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich möchte die Hose anprobieren.",
+          "en": "I want to try on the pants."
+        }
+      },
+      {
+        "de": "gefallen",
+        "en": "to please / to like",
+        "pos": "verb",
+        "ex": {
+          "de": "Die Farbe gefällt mir gut.",
+          "en": "I like the color."
+        }
+      },
+      {
+        "de": "passen",
+        "en": "to fit",
+        "pos": "verb",
+        "ex": {
+          "de": "Die Jeans passt mir perfekt.",
+          "en": "The jeans fit me perfectly."
+        }
+      },
+      {
+        "de": "stehen",
+        "en": "to suit (appearance)",
+        "pos": "verb",
+        "ex": {
+          "de": "Blau steht dir sehr gut.",
+          "en": "Blue looks very good on you."
+        }
+      },
+      {
+        "de": "suchen",
+        "en": "to look for",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich suche einen blauen Rock.",
+          "en": "I am looking for a blue skirt."
+        }
+      },
+      {
+        "de": "teuer",
+        "en": "expensive",
+        "pos": "adj",
+        "ex": {
+          "de": "Das ist mir zu teuer.",
+          "en": "That is too expensive for me."
+        }
+      },
+      {
+        "de": "billig",
+        "en": "cheap",
+        "pos": "adj",
+        "ex": {
+          "de": "Das T-Shirt ist sehr billig.",
+          "en": "The T-shirt is very cheap."
+        }
+      },
+      {
+        "de": "bequem",
+        "en": "comfortable",
+        "pos": "adj",
+        "ex": {
+          "de": "Die Schuhe sind sehr bequem.",
+          "en": "The shoes are very comfortable."
+        }
+      },
+      {
+        "de": "schön",
+        "en": "beautiful / nice",
+        "pos": "adj",
+        "ex": {
+          "de": "Das ist ein schönes Kleid.",
+          "en": "That is a beautiful dress."
+        }
+      }
+    ]
+  },
+  {
+    "id": "a2-u6-words",
+    "level": "A2",
+    "title": "Weather and seasons",
+    "titleDe": "Wetter und Jahreszeiten",
+    "icon": "heart",
+    "words": [
+      {
+        "de": "Frühling",
+        "en": "spring",
+        "pos": "noun",
+        "ex": {
+          "de": "Der Frühling ist schöner als der Winter.",
+          "en": "Spring is more beautiful than winter."
+        },
+        "gender": "m",
+        "plural": "Frühlinge"
+      },
+      {
+        "de": "Sommer",
+        "en": "summer",
+        "pos": "noun",
+        "ex": {
+          "de": "Der Sommer ist am heißesten.",
+          "en": "Summer is the hottest."
+        },
+        "gender": "m",
+        "plural": "Sommer"
+      },
+      {
+        "de": "Herbst",
+        "en": "autumn",
+        "pos": "noun",
+        "ex": {
+          "de": "Der Herbst ist windiger als der Sommer.",
+          "en": "Autumn is windier than summer."
+        },
+        "gender": "m",
+        "plural": "Herbste"
+      },
+      {
+        "de": "Winter",
+        "en": "winter",
+        "pos": "noun",
+        "ex": {
+          "de": "Der Winter ist kälter als der Herbst.",
+          "en": "Winter is colder than autumn."
+        },
+        "gender": "m",
+        "plural": "Winter"
+      },
+      {
+        "de": "Sonne",
+        "en": "sun",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Sonne scheint heute sehr hell.",
+          "en": "The sun is shining very brightly today."
+        },
+        "gender": "f",
+        "plural": "Sonnen"
+      },
+      {
+        "de": "Regen",
+        "en": "rain",
+        "pos": "noun",
+        "ex": {
+          "de": "Der Regen war gestern sehr stark.",
+          "en": "The rain was very heavy yesterday."
+        },
+        "gender": "m",
+        "plural": "Regen"
+      },
+      {
+        "de": "Schnee",
+        "en": "snow",
+        "pos": "noun",
+        "ex": {
+          "de": "Es hat im Winter viel geschneit.",
+          "en": "It snowed a lot in winter."
+        },
+        "gender": "m"
+      },
+      {
+        "de": "Wind",
+        "en": "wind",
+        "pos": "noun",
+        "ex": {
+          "de": "Der Wind weht heute sehr stark.",
+          "en": "The wind is blowing very strongly today."
+        },
+        "gender": "m",
+        "plural": "Winde"
+      },
+      {
+        "de": "Wolke",
+        "en": "cloud",
+        "pos": "noun",
+        "ex": {
+          "de": "Es gibt heute viele dunkle Wolken.",
+          "en": "There are many dark clouds today."
+        },
+        "gender": "f",
+        "plural": "Wolken"
+      },
+      {
+        "de": "Temperatur",
+        "en": "temperature",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Temperatur ist heute sehr hoch.",
+          "en": "The temperature is very high today."
+        },
+        "gender": "f",
+        "plural": "Temperaturen"
+      },
+      {
+        "de": "scheinen",
+        "en": "to shine",
+        "pos": "verb",
+        "ex": {
+          "de": "Die Sonne hat gestern geschienen.",
+          "en": "The sun shone yesterday."
+        }
+      },
+      {
+        "de": "regnen",
+        "en": "to rain",
+        "pos": "verb",
+        "ex": {
+          "de": "Es hat gestern viel geregnet.",
+          "en": "It rained a lot yesterday."
+        }
+      },
+      {
+        "de": "schneien",
+        "en": "to snow",
+        "pos": "verb",
+        "ex": {
+          "de": "Es hat im Januar geschneit.",
+          "en": "It snowed in January."
+        }
+      },
+      {
+        "de": "werden",
+        "en": "to become / to get",
+        "pos": "verb",
+        "ex": {
+          "de": "Es wird heute immer kälter.",
+          "en": "It is getting colder and colder today."
+        }
+      },
+      {
+        "de": "warm",
+        "en": "warm",
+        "pos": "adj",
+        "ex": {
+          "de": "Der Sommer ist wärmer als der Frühling.",
+          "en": "Summer is warmer than spring."
+        }
+      },
+      {
+        "de": "kalt",
+        "en": "cold",
+        "pos": "adj",
+        "ex": {
+          "de": "Der Winter ist am kältesten.",
+          "en": "Winter is the coldest."
+        }
+      },
+      {
+        "de": "heiß",
+        "en": "hot",
+        "pos": "adj",
+        "ex": {
+          "de": "Heute ist es heißer als gestern.",
+          "en": "Today it is hotter than yesterday."
+        }
+      },
+      {
+        "de": "schön",
+        "en": "beautiful / nice",
+        "pos": "adj",
+        "ex": {
+          "de": "Ich finde, dass das Wetter schön ist.",
+          "en": "I find that the weather is beautiful."
+        }
+      },
+      {
+        "de": "windig",
+        "en": "windy",
+        "pos": "adj",
+        "ex": {
+          "de": "Es ist heute sehr windig.",
+          "en": "It is very windy today."
+        }
+      },
+      {
+        "de": "sonnig",
+        "en": "sunny",
+        "pos": "adj",
+        "ex": {
+          "de": "Der Sonntag war sehr sonnig.",
+          "en": "Sunday was very sunny."
+        }
+      }
+    ]
+  },
+  {
+    "id": "a2-u7-words",
+    "level": "A2",
+    "title": "Celebrations",
+    "titleDe": "Feste",
+    "icon": "zap",
+    "words": [
+      {
+        "de": "Feier",
+        "en": "celebration",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Feier war sehr schön.",
+          "en": "The celebration was very nice."
+        },
+        "gender": "f",
+        "plural": "Feiern"
+      },
+      {
+        "de": "Geburtstag",
+        "en": "birthday",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich habe am ersten Mai Geburtstag.",
+          "en": "My birthday is on May 1st."
+        },
+        "gender": "m",
+        "plural": "Geburtstage"
+      },
+      {
+        "de": "Einladung",
+        "en": "invitation",
+        "pos": "noun",
+        "ex": {
+          "de": "Danke für die Einladung!",
+          "en": "Thanks for the invitation!"
+        },
+        "gender": "f",
+        "plural": "Einladungen"
+      },
+      {
+        "de": "Geschenk",
+        "en": "gift",
+        "pos": "noun",
+        "ex": {
+          "de": "Er hat mir ein Geschenk gegeben.",
+          "en": "He gave me a gift."
+        },
+        "gender": "n",
+        "plural": "Geschenke"
+      },
+      {
+        "de": "Gast",
+        "en": "guest",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Gäste kommen um acht Uhr.",
+          "en": "The guests are coming at eight o'clock."
+        },
+        "gender": "m",
+        "plural": "Gäste"
+      },
+      {
+        "de": "Feiertag",
+        "en": "public holiday",
+        "pos": "noun",
+        "ex": {
+          "de": "Morgen ist ein Feiertag.",
+          "en": "Tomorrow is a public holiday."
+        },
+        "gender": "m",
+        "plural": "Feiertage"
+      },
+      {
+        "de": "Hochzeit",
+        "en": "wedding",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Hochzeit war im Juni.",
+          "en": "The wedding was in June."
+        },
+        "gender": "f",
+        "plural": "Hochzeiten"
+      },
+      {
+        "de": "Weihnachten",
+        "en": "Christmas",
+        "pos": "noun",
+        "ex": {
+          "de": "Wir feiern Weihnachten zusammen.",
+          "en": "We celebrate Christmas together."
+        },
+        "gender": "n",
+        "plural": "Weihnachten"
+      },
+      {
+        "de": "Urlaub",
+        "en": "vacation",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich habe im Sommer Urlaub.",
+          "en": "I have vacation in the summer."
+        },
+        "gender": "m",
+        "plural": "Urlaube"
+      },
+      {
+        "de": "Termin",
+        "en": "appointment",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich habe einen Termin am zweiten Mai.",
+          "en": "I have an appointment on May 2nd."
+        },
+        "gender": "m",
+        "plural": "Termine"
+      },
+      {
+        "de": "Datum",
+        "en": "date",
+        "pos": "noun",
+        "ex": {
+          "de": "Welches Datum haben wir heute?",
+          "en": "What date is it today?"
+        },
+        "gender": "n",
+        "plural": "Daten"
+      },
+      {
+        "de": "feiern",
+        "en": "to celebrate",
+        "pos": "verb",
+        "ex": {
+          "de": "Wir feiern heute eine Party.",
+          "en": "We are celebrating a party today."
+        }
+      },
+      {
+        "de": "einladen",
+        "en": "to invite",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich lade dich zu meiner Party ein.",
+          "en": "I invite you to my party."
+        }
+      },
+      {
+        "de": "schenken",
+        "en": "to give (as a gift)",
+        "pos": "verb",
+        "ex": {
+          "de": "Sie schenkt ihrer Mutter Blumen.",
+          "en": "She gives her mother flowers."
+        }
+      },
+      {
+        "de": "besuchen",
+        "en": "to visit",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich besuche meine Familie.",
+          "en": "I am visiting my family."
+        }
+      },
+      {
+        "de": "stattfinden",
+        "en": "to take place",
+        "pos": "verb",
+        "ex": {
+          "de": "Das Fest findet am Samstag statt.",
+          "en": "The festival takes place on Saturday."
+        }
+      },
+      {
+        "de": "gratulieren",
+        "en": "to congratulate",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich gratuliere dir zum Geburtstag.",
+          "en": "I congratulate you on your birthday."
+        }
+      },
+      {
+        "de": "lustig",
+        "en": "funny / fun",
+        "pos": "adj",
+        "ex": {
+          "de": "Die Party war sehr lustig.",
+          "en": "The party was very fun."
+        }
+      },
+      {
+        "de": "wichtig",
+        "en": "important",
+        "pos": "adj",
+        "ex": {
+          "de": "Der Termin ist sehr wichtig.",
+          "en": "The appointment is very important."
+        }
+      },
+      {
+        "de": "schön",
+        "en": "beautiful / nice",
+        "pos": "adj",
+        "ex": {
+          "de": "Das Wetter war am Fest sehr schön.",
+          "en": "The weather was very nice at the festival."
+        }
+      }
+    ]
+  }
+]

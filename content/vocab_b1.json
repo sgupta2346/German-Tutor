@@ -1,0 +1,1491 @@
+[
+  {
+    "id": "b1-u1-words",
+    "level": "B1",
+    "title": "Opinions",
+    "titleDe": "Meinungen",
+    "icon": "users",
+    "words": [
+      {
+        "de": "Meinung",
+        "en": "opinion",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich bin der Meinung, dass wir dieses Projekt sofort starten sollten.",
+          "en": "I am of the opinion that we should start this project immediately."
+        },
+        "gender": "f",
+        "plural": "Meinungen"
+      },
+      {
+        "de": "Ansicht",
+        "en": "view/perspective",
+        "pos": "noun",
+        "ex": {
+          "de": "Meiner Ansicht nach ist das eine sehr gute Idee für uns.",
+          "en": "In my view, that is a very good idea for us."
+        },
+        "gender": "f",
+        "plural": "Ansichten"
+      },
+      {
+        "de": "Argument",
+        "en": "argument",
+        "pos": "noun",
+        "ex": {
+          "de": "Er hat ein starkes Argument, obwohl ich nicht ganz zustimme.",
+          "en": "He has a strong argument, although I don't quite agree."
+        },
+        "gender": "n",
+        "plural": "Argumente"
+      },
+      {
+        "de": "Grund",
+        "en": "reason",
+        "pos": "noun",
+        "ex": {
+          "de": "Das ist der Hauptgrund, warum ich diese Entscheidung kritisch sehe.",
+          "en": "That is the main reason why I view this decision critically."
+        },
+        "gender": "m",
+        "plural": "Gründe"
+      },
+      {
+        "de": "Vorteil",
+        "en": "advantage",
+        "pos": "noun",
+        "ex": {
+          "de": "Ein großer Vorteil ist, dass wir dadurch viel Zeit sparen können.",
+          "en": "A big advantage is that we can save a lot of time this way."
+        },
+        "gender": "m",
+        "plural": "Vorteile"
+      },
+      {
+        "de": "Nachteil",
+        "en": "disadvantage",
+        "pos": "noun",
+        "ex": {
+          "de": "Ein Nachteil ist, dass die Kosten viel zu hoch sind.",
+          "en": "A disadvantage is that the costs are much too high."
+        },
+        "gender": "m",
+        "plural": "Nachteile"
+      },
+      {
+        "de": "Zustimmung",
+        "en": "agreement/approval",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich kann dir voll und ganz zustimmen, obwohl es schwierig ist.",
+          "en": "I can agree with you completely, although it is difficult."
+        },
+        "gender": "f",
+        "plural": "Zustimmungen"
+      },
+      {
+        "de": "Widerspruch",
+        "en": "contradiction/disagreement",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich muss dir leider widersprechen, weil deine Fakten nicht stimmen.",
+          "en": "Unfortunately, I have to disagree with you because your facts are incorrect."
+        },
+        "gender": "m",
+        "plural": "Widersprüche"
+      },
+      {
+        "de": "Diskussion",
+        "en": "discussion",
+        "pos": "noun",
+        "ex": {
+          "de": "Wir führen eine lange Diskussion, trotzdem kommen wir zu keinem Ergebnis.",
+          "en": "We are having a long discussion, nevertheless we are reaching no result."
+        },
+        "gender": "f",
+        "plural": "Diskussionen"
+      },
+      {
+        "de": "Überzeugung",
+        "en": "conviction/belief",
+        "pos": "noun",
+        "ex": {
+          "de": "Es ist meine feste Überzeugung, dass wir mehr investieren müssen.",
+          "en": "It is my firm conviction that we must invest more."
+        },
+        "gender": "f",
+        "plural": "Überzeugungen"
+      },
+      {
+        "de": "glauben",
+        "en": "to believe",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich glaube, dass das eine sinnvolle Lösung für das Problem ist.",
+          "en": "I believe that this is a sensible solution to the problem."
+        }
+      },
+      {
+        "de": "denken",
+        "en": "to think",
+        "pos": "verb",
+        "ex": {
+          "de": "Was denkst du darüber, obwohl du bisher noch nichts gesagt hast?",
+          "en": "What do you think about it, although you haven't said anything yet?"
+        }
+      },
+      {
+        "de": "finden",
+        "en": "to find/think (opinion)",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich finde es wichtig, dass wir alle Meinungen hier hören.",
+          "en": "I find it important that we hear all opinions here."
+        }
+      },
+      {
+        "de": "zustimmen",
+        "en": "to agree",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich stimme dir zu, trotzdem sollten wir die Risiken bedenken.",
+          "en": "I agree with you, nevertheless we should consider the risks."
+        }
+      },
+      {
+        "de": "widersprechen",
+        "en": "to contradict/disagree",
+        "pos": "verb",
+        "ex": {
+          "de": "Er widerspricht mir oft, obwohl ich immer die Wahrheit sage.",
+          "en": "He often contradicts me, although I always tell the truth."
+        }
+      },
+      {
+        "de": "behaupten",
+        "en": "to claim",
+        "pos": "verb",
+        "ex": {
+          "de": "Manche Leute behaupten, dass das neue Gesetz sehr unfair ist.",
+          "en": "Some people claim that the new law is very unfair."
+        }
+      },
+      {
+        "de": "überzeugen",
+        "en": "to convince",
+        "pos": "verb",
+        "ex": {
+          "de": "Deine Argumente überzeugen mich nicht, obwohl sie logisch klingen.",
+          "en": "Your arguments do not convince me, although they sound logical."
+        }
+      },
+      {
+        "de": "sinnvoll",
+        "en": "sensible/meaningful",
+        "pos": "adj",
+        "ex": {
+          "de": "Es ist sinnvoll, vorher eine genaue Planung zu machen.",
+          "en": "It is sensible to make a precise plan beforehand."
+        }
+      },
+      {
+        "de": "überzeugend",
+        "en": "convincing",
+        "pos": "adj",
+        "ex": {
+          "de": "Das ist ein sehr überzeugendes Argument für unsere neue Strategie.",
+          "en": "That is a very convincing argument for our new strategy."
+        }
+      },
+      {
+        "de": "unterschiedlich",
+        "en": "different",
+        "pos": "adj",
+        "ex": {
+          "de": "Unsere Meinungen sind unterschiedlich, trotzdem können wir gut zusammenarbeiten.",
+          "en": "Our opinions are different, nevertheless we can work well together."
+        }
+      }
+    ]
+  },
+  {
+    "id": "b1-u2-words",
+    "level": "B1",
+    "title": "Media",
+    "titleDe": "Medien",
+    "icon": "coffee",
+    "words": [
+      {
+        "de": "Nachricht",
+        "en": "news",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich las die Nachricht, weil sie mich sehr interessierte.",
+          "en": "I read the news because it interested me very much."
+        },
+        "gender": "f",
+        "plural": "Nachrichten"
+      },
+      {
+        "de": "Artikel",
+        "en": "article",
+        "pos": "noun",
+        "ex": {
+          "de": "Der Artikel war sehr interessant, obwohl er ziemlich lang war.",
+          "en": "The article was very interesting, although it was quite long."
+        },
+        "gender": "m",
+        "plural": "Artikel"
+      },
+      {
+        "de": "Zeitung",
+        "en": "newspaper",
+        "pos": "noun",
+        "ex": {
+          "de": "Er kaufte die Zeitung, damit er über die Politik informiert blieb.",
+          "en": "He bought the newspaper so that he remained informed about politics."
+        },
+        "gender": "f",
+        "plural": "Zeitungen"
+      },
+      {
+        "de": "Zeitschrift",
+        "en": "magazine",
+        "pos": "noun",
+        "ex": {
+          "de": "Diese Zeitschrift war teuer, aber die Fotos waren wirklich wunderschön.",
+          "en": "This magazine was expensive, but the photos were really beautiful."
+        },
+        "gender": "f",
+        "plural": "Zeitschriften"
+      },
+      {
+        "de": "Bericht",
+        "en": "report",
+        "pos": "noun",
+        "ex": {
+          "de": "Der Bericht beschrieb genau, was gestern in der Stadt passiert war.",
+          "en": "The report described exactly what had happened in the city yesterday."
+        },
+        "gender": "m",
+        "plural": "Berichte"
+      },
+      {
+        "de": "Schlagzeile",
+        "en": "headline",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Schlagzeile war so spannend, dass ich sofort den Text las.",
+          "en": "The headline was so exciting that I read the text immediately."
+        },
+        "gender": "f",
+        "plural": "Schlagzeilen"
+      },
+      {
+        "de": "Quelle",
+        "en": "source",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Quelle war unklar, weshalb ich dem Text nicht glaubte.",
+          "en": "The source was unclear, which is why I did not believe the text."
+        },
+        "gender": "f",
+        "plural": "Quellen"
+      },
+      {
+        "de": "Meinung",
+        "en": "opinion",
+        "pos": "noun",
+        "ex": {
+          "de": "Er äußerte seine Meinung, weil er die Entscheidung kritisieren wollte.",
+          "en": "He expressed his opinion because he wanted to criticize the decision."
+        },
+        "gender": "f",
+        "plural": "Meinungen"
+      },
+      {
+        "de": "Unterhaltung",
+        "en": "entertainment",
+        "pos": "noun",
+        "ex": {
+          "de": "Das Programm bot viel Unterhaltung, obwohl es sehr teuer war.",
+          "en": "The program offered a lot of entertainment, although it was very expensive."
+        },
+        "gender": "f",
+        "plural": "Unterhaltungen"
+      },
+      {
+        "de": "Autor",
+        "en": "author",
+        "pos": "noun",
+        "ex": {
+          "de": "Der Autor schrieb den Text, weil er ein Experte auf diesem Gebiet war.",
+          "en": "The author wrote the text because he was an expert in this field."
+        },
+        "gender": "m",
+        "plural": "Autoren"
+      },
+      {
+        "de": "Leser",
+        "en": "reader",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Leser fanden die Geschichte toll, weil sie sehr emotional war.",
+          "en": "The readers thought the story was great because it was very emotional."
+        },
+        "gender": "m",
+        "plural": "Leser"
+      },
+      {
+        "de": "veröffentlichen",
+        "en": "to publish",
+        "pos": "verb",
+        "ex": {
+          "de": "Die Zeitung veröffentlichte den Artikel, nachdem die Fakten geprüft worden waren.",
+          "en": "The newspaper published the article after the facts had been checked."
+        }
+      },
+      {
+        "de": "zusammenfassen",
+        "en": "to summarize",
+        "pos": "verb",
+        "ex": {
+          "de": "Er fasste den Inhalt kurz zusammen, damit wir die Geschichte verstanden.",
+          "en": "He summarized the content briefly so that we understood the story."
+        }
+      },
+      {
+        "de": "berichten",
+        "en": "to report",
+        "pos": "verb",
+        "ex": {
+          "de": "Die Journalisten berichteten ausführlich über den Unfall, der gestern geschah.",
+          "en": "The journalists reported extensively on the accident that occurred yesterday."
+        }
+      },
+      {
+        "de": "informieren",
+        "en": "to inform",
+        "pos": "verb",
+        "ex": {
+          "de": "Das Internet informierte uns schnell, obwohl die Nachrichten oft unklar waren.",
+          "en": "The internet informed us quickly, although the news was often unclear."
+        }
+      },
+      {
+        "de": "aktuell",
+        "en": "current",
+        "pos": "adj",
+        "ex": {
+          "de": "Die Nachrichten waren sehr aktuell, weshalb alle Leute sie lasen.",
+          "en": "The news was very current, which is why everyone read it."
+        }
+      },
+      {
+        "de": "glaubwürdig",
+        "en": "credible",
+        "pos": "adj",
+        "ex": {
+          "de": "Die Information war nicht glaubwürdig, deshalb glaubte ich ihr nicht.",
+          "en": "The information was not credible, so I did not believe it."
+        }
+      },
+      {
+        "de": "ausführlich",
+        "en": "detailed",
+        "pos": "adj",
+        "ex": {
+          "de": "Der Bericht war sehr ausführlich, weshalb ich viel Neues lernte.",
+          "en": "The report was very detailed, which is why I learned a lot of new things."
+        }
+      },
+      {
+        "de": "Medium",
+        "en": "medium",
+        "pos": "noun",
+        "ex": {
+          "de": "Das Fernsehen war ein Medium, das viele Menschen damals nutzten.",
+          "en": "Television was a medium that many people used at that time."
+        },
+        "gender": "n",
+        "plural": "Medien"
+      },
+      {
+        "de": "Inhalt",
+        "en": "content",
+        "pos": "noun",
+        "ex": {
+          "de": "Der Inhalt des Buches war spannend, obwohl das Ende enttäuschend war.",
+          "en": "The content of the book was exciting, although the ending was disappointing."
+        },
+        "gender": "m",
+        "plural": "Inhalte"
+      }
+    ]
+  },
+  {
+    "id": "b1-u3-words",
+    "level": "B1",
+    "title": "Applying for jobs",
+    "titleDe": "Beruf und Bewerbung",
+    "icon": "home",
+    "words": [
+      {
+        "de": "Bewerbung",
+        "en": "application",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich würde mich gerne für diese interessante Stelle bewerben.",
+          "en": "I would like to apply for this interesting position."
+        },
+        "gender": "f",
+        "plural": "Bewerbungen"
+      },
+      {
+        "de": "Lebenslauf",
+        "en": "CV/resume",
+        "pos": "noun",
+        "ex": {
+          "de": "In meinem Lebenslauf finden Sie alle Details zu meinem Werdegang.",
+          "en": "In my CV, you will find all the details regarding my professional career."
+        },
+        "gender": "m",
+        "plural": "Lebensläufe"
+      },
+      {
+        "de": "Vorstellungsgespräch",
+        "en": "job interview",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich freue mich sehr, dass ich zum Vorstellungsgespräch eingeladen wurde.",
+          "en": "I am very pleased that I have been invited to the job interview."
+        },
+        "gender": "n",
+        "plural": "Vorstellungsgespräche"
+      },
+      {
+        "de": "Arbeitsplatz",
+        "en": "workplace/job",
+        "pos": "noun",
+        "ex": {
+          "de": "Ein flexibler Arbeitsplatz ist für mich heutzutage sehr wichtig.",
+          "en": "A flexible workplace is very important to me nowadays."
+        },
+        "gender": "m",
+        "plural": "Arbeitsplätze"
+      },
+      {
+        "de": "Erfahrung",
+        "en": "experience",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich verfüge über viel Erfahrung im Bereich des Kundenservice.",
+          "en": "I have a lot of experience in the field of customer service."
+        },
+        "gender": "f",
+        "plural": "Erfahrungen"
+      },
+      {
+        "de": "Kenntnisse",
+        "en": "skills/knowledge",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich besitze gute Kenntnisse in den gängigen Computerprogrammen.",
+          "en": "I possess good knowledge of the common computer programs."
+        },
+        "gender": "pl"
+      },
+      {
+        "de": "Stärke",
+        "en": "strength",
+        "pos": "noun",
+        "ex": {
+          "de": "Eine meiner größten Stärken ist meine strukturierte Arbeitsweise.",
+          "en": "One of my greatest strengths is my structured way of working."
+        },
+        "gender": "f",
+        "plural": "Stärken"
+      },
+      {
+        "de": "Schwäche",
+        "en": "weakness",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich arbeite daran, meine Schwächen durch Training zu verbessern.",
+          "en": "I am working on improving my weaknesses through training."
+        },
+        "gender": "f",
+        "plural": "Schwächen"
+      },
+      {
+        "de": "Herausforderung",
+        "en": "challenge",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich suche eine neue Herausforderung, um mich beruflich zu verändern.",
+          "en": "I am looking for a new challenge in order to change my career."
+        },
+        "gender": "f",
+        "plural": "Herausforderungen"
+      },
+      {
+        "de": "Gehaltsvorstellung",
+        "en": "salary expectation",
+        "pos": "noun",
+        "ex": {
+          "de": "Meine Gehaltsvorstellung liegt bei einem Bruttojahresgehalt von 45.000 Euro.",
+          "en": "My salary expectation is a gross annual salary of 45,000 euros."
+        },
+        "gender": "f",
+        "plural": "Gehaltsvorstellungen"
+      },
+      {
+        "de": "Zeugnis",
+        "en": "certificate/reference",
+        "pos": "noun",
+        "ex": {
+          "de": "Im Anhang finden Sie mein letztes Zeugnis als PDF-Datei.",
+          "en": "Attached, you will find my last certificate as a PDF file."
+        },
+        "gender": "n",
+        "plural": "Zeugnisse"
+      },
+      {
+        "de": "Aufgabenbereich",
+        "en": "area of responsibility",
+        "pos": "noun",
+        "ex": {
+          "de": "Mein Aufgabenbereich umfasst die Organisation von wichtigen Firmenevents.",
+          "en": "My area of responsibility includes the organization of important company events."
+        },
+        "gender": "m",
+        "plural": "Aufgabenbereiche"
+      },
+      {
+        "de": "Teamfähigkeit",
+        "en": "teamwork skills",
+        "pos": "noun",
+        "ex": {
+          "de": "Da ich gerne mit Menschen arbeite, ist Teamfähigkeit essenziell.",
+          "en": "Since I enjoy working with people, teamwork skills are essential."
+        },
+        "gender": "f",
+        "plural": "Teamfähigkeiten"
+      },
+      {
+        "de": "Zuverlässigkeit",
+        "en": "reliability",
+        "pos": "noun",
+        "ex": {
+          "de": "Zuverlässigkeit ist eine Eigenschaft, die ich in Kollegen schätze.",
+          "en": "Reliability is a quality that I value in colleagues."
+        },
+        "gender": "f"
+      },
+      {
+        "de": "sich bewerben",
+        "en": "to apply",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich würde mich gerne bei Ihrem Unternehmen bewerben.",
+          "en": "I would like to apply to your company."
+        }
+      },
+      {
+        "de": "verfügen über",
+        "en": "to possess/have at one's disposal",
+        "pos": "verb",
+        "ex": {
+          "de": "Sie sollten über sehr gute Englischkenntnisse verfügen.",
+          "en": "You should possess very good English skills."
+        }
+      },
+      {
+        "de": "überzeugen",
+        "en": "to convince",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich möchte Sie in einem Gespräch von mir überzeugen.",
+          "en": "I would like to convince you of my abilities in an interview."
+        }
+      },
+      {
+        "de": "motiviert",
+        "en": "motivated",
+        "pos": "adj",
+        "ex": {
+          "de": "Ich bin sehr motiviert, neue Aufgaben schnell zu lernen.",
+          "en": "I am very motivated to learn new tasks quickly."
+        }
+      },
+      {
+        "de": "belastbar",
+        "en": "resilient/able to work under pressure",
+        "pos": "adj",
+        "ex": {
+          "de": "Auch in stressigen Zeiten bleibe ich sehr belastbar.",
+          "en": "I remain very resilient even during stressful times."
+        }
+      },
+      {
+        "de": "engagiert",
+        "en": "committed/dedicated",
+        "pos": "adj",
+        "ex": {
+          "de": "Ein engagierter Mitarbeiter ist für jedes Team sehr wichtig.",
+          "en": "A committed employee is very important for every team."
+        }
+      }
+    ]
+  },
+  {
+    "id": "b1-u5-words",
+    "level": "B1",
+    "title": "Relationships",
+    "titleDe": "Beziehungen",
+    "icon": "train",
+    "words": [
+      {
+        "de": "Beziehung",
+        "en": "relationship",
+        "pos": "noun",
+        "ex": {
+          "de": "Eine Beziehung, die auf Vertrauen basiert, ist sehr wichtig.",
+          "en": "A relationship that is based on trust is very important."
+        },
+        "gender": "f",
+        "plural": "Beziehungen"
+      },
+      {
+        "de": "Partner",
+        "en": "partner",
+        "pos": "noun",
+        "ex": {
+          "de": "Er sucht einen Partner, der dieselben Hobbys wie er hat.",
+          "en": "He is looking for a partner who has the same hobbies as him."
+        },
+        "gender": "m",
+        "plural": "Partner"
+      },
+      {
+        "de": "Freundschaft",
+        "en": "friendship",
+        "pos": "noun",
+        "ex": {
+          "de": "Eine Freundschaft, die viele Jahre hält, ist ein echter Schatz.",
+          "en": "A friendship that lasts many years is a real treasure."
+        },
+        "gender": "f",
+        "plural": "Freundschaften"
+      },
+      {
+        "de": "Vertrauen",
+        "en": "trust",
+        "pos": "noun",
+        "ex": {
+          "de": "Ohne das Vertrauen, das man braucht, funktioniert nichts.",
+          "en": "Without the trust that one needs, nothing works."
+        },
+        "gender": "n"
+      },
+      {
+        "de": "Charakter",
+        "en": "character",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich mag Menschen, deren Charakter ehrlich und offen ist.",
+          "en": "I like people whose character is honest and open."
+        },
+        "gender": "m",
+        "plural": "Charaktere"
+      },
+      {
+        "de": "Gemeinsamkeit",
+        "en": "commonality",
+        "pos": "noun",
+        "ex": {
+          "de": "Wir haben viele Gemeinsamkeiten, die unsere Beziehung sehr einfach machen.",
+          "en": "We have many commonalities that make our relationship very easy."
+        },
+        "gender": "f",
+        "plural": "Gemeinsamkeiten"
+      },
+      {
+        "de": "Streit",
+        "en": "argument",
+        "pos": "noun",
+        "ex": {
+          "de": "Ein kleiner Streit, der schnell gelöst wird, ist ganz normal.",
+          "en": "A small argument that is solved quickly is quite normal."
+        },
+        "gender": "m",
+        "plural": "Streite"
+      },
+      {
+        "de": "Kompromiss",
+        "en": "compromise",
+        "pos": "noun",
+        "ex": {
+          "de": "Man braucht Kompromisse, die für beide Seiten fair sind.",
+          "en": "One needs compromises that are fair for both sides."
+        },
+        "gender": "m",
+        "plural": "Kompromisse"
+      },
+      {
+        "de": "Fernbeziehung",
+        "en": "long-distance relationship",
+        "pos": "noun",
+        "ex": {
+          "de": "Eine Fernbeziehung ist schwer, wenn man sich selten sieht.",
+          "en": "A long-distance relationship is difficult when you rarely see each other."
+        },
+        "gender": "f",
+        "plural": "Fernbeziehungen"
+      },
+      {
+        "de": "Ehe",
+        "en": "marriage",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Ehe ist eine Institution, die sich ständig verändert.",
+          "en": "Marriage is an institution that is constantly changing."
+        },
+        "gender": "f",
+        "plural": "Ehen"
+      },
+      {
+        "de": "sich verlassen auf",
+        "en": "to rely on",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich brauche jemanden, auf den ich mich verlassen kann.",
+          "en": "I need someone whom I can rely on."
+        }
+      },
+      {
+        "de": "sich streiten",
+        "en": "to argue",
+        "pos": "verb",
+        "ex": {
+          "de": "Es ist normal, dass sich Partner manchmal über Kleinigkeiten streiten.",
+          "en": "It is normal that partners sometimes argue about small things."
+        }
+      },
+      {
+        "de": "sich verstehen",
+        "en": "to get along",
+        "pos": "verb",
+        "ex": {
+          "de": "Sie verstehen sich gut, obwohl sie sehr verschieden sind.",
+          "en": "They get along well, although they are very different."
+        }
+      },
+      {
+        "de": "kennenlernen",
+        "en": "to get to know",
+        "pos": "verb",
+        "ex": {
+          "de": "Es ist schön, Leute kennenzulernen, die interessante Geschichten haben.",
+          "en": "It is nice to get to know people who have interesting stories."
+        }
+      },
+      {
+        "de": "vertrauen",
+        "en": "to trust",
+        "pos": "verb",
+        "ex": {
+          "de": "Man sollte Menschen vertrauen, die wirklich ehrlich zu einem sind.",
+          "en": "One should trust people who are truly honest with you."
+        }
+      },
+      {
+        "de": "treu",
+        "en": "faithful/loyal",
+        "pos": "adj",
+        "ex": {
+          "de": "Ein treuer Partner ist jemand, der niemals lügt.",
+          "en": "A faithful partner is someone who never lies."
+        }
+      },
+      {
+        "de": "ehrlich",
+        "en": "honest",
+        "pos": "adj",
+        "ex": {
+          "de": "Ich schätze Menschen, die immer ehrlich zu ihren Freunden sind.",
+          "en": "I appreciate people who are always honest with their friends."
+        }
+      },
+      {
+        "de": "zuverlässig",
+        "en": "reliable",
+        "pos": "adj",
+        "ex": {
+          "de": "Ein zuverlässiger Freund ist jemand, der immer für dich da ist.",
+          "en": "A reliable friend is someone who is always there for you."
+        }
+      },
+      {
+        "de": "verständnisvoll",
+        "en": "understanding",
+        "pos": "adj",
+        "ex": {
+          "de": "Ein verständnisvoller Partner ist jemand, der dir immer zuhört.",
+          "en": "An understanding partner is someone who always listens to you."
+        }
+      },
+      {
+        "de": "eng",
+        "en": "close",
+        "pos": "adj",
+        "ex": {
+          "de": "Sie haben eine enge Beziehung, die schon sehr alt ist.",
+          "en": "They have a close relationship that is already very old."
+        }
+      }
+    ]
+  },
+  {
+    "id": "b1-u6-words",
+    "level": "B1",
+    "title": "Education",
+    "titleDe": "Bildung",
+    "icon": "heart",
+    "words": [
+      {
+        "de": "Ausbildung",
+        "en": "training / apprenticeship",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich mache eine Ausbildung, um später einen guten Job zu finden.",
+          "en": "I am doing an apprenticeship in order to find a good job later."
+        },
+        "gender": "f",
+        "plural": "Ausbildungen"
+      },
+      {
+        "de": "Studium",
+        "en": "university studies",
+        "pos": "noun",
+        "ex": {
+          "de": "Ein Studium ist wichtig, um tiefere Fachkenntnisse zu erwerben.",
+          "en": "University studies are important in order to acquire deeper specialist knowledge."
+        },
+        "gender": "n",
+        "plural": "Studien"
+      },
+      {
+        "de": "Abschluss",
+        "en": "degree / graduation",
+        "pos": "noun",
+        "ex": {
+          "de": "Es ist mein Ziel, bald meinen ersten Abschluss zu machen.",
+          "en": "It is my goal to complete my first degree soon."
+        },
+        "gender": "m",
+        "plural": "Abschlüsse"
+      },
+      {
+        "de": "Prüfung",
+        "en": "exam",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich muss viel lernen, um die schwere Prüfung zu bestehen.",
+          "en": "I have to study a lot in order to pass the difficult exam."
+        },
+        "gender": "f",
+        "plural": "Prüfungen"
+      },
+      {
+        "de": "Ziel",
+        "en": "goal",
+        "pos": "noun",
+        "ex": {
+          "de": "Man braucht klare Ziele, um im Leben erfolgreich zu sein.",
+          "en": "One needs clear goals to be successful in life."
+        },
+        "gender": "n",
+        "plural": "Ziele"
+      },
+      {
+        "de": "Kenntnisse",
+        "en": "knowledge / skills",
+        "pos": "noun",
+        "ex": {
+          "de": "Es ist wichtig, gute Sprachkenntnisse für den Beruf zu haben.",
+          "en": "It is important to have good language skills for the profession."
+        },
+        "gender": "pl"
+      },
+      {
+        "de": "Beruf",
+        "en": "profession / job",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich habe mich entschieden, einen medizinischen Beruf zu wählen.",
+          "en": "I have decided to choose a medical profession."
+        },
+        "gender": "m",
+        "plural": "Berufe"
+      },
+      {
+        "de": "Fähigkeit",
+        "en": "ability / skill",
+        "pos": "noun",
+        "ex": {
+          "de": "Man muss die Fähigkeit besitzen, sich ständig weiterzubilden.",
+          "en": "One must possess the ability to constantly undergo further training."
+        },
+        "gender": "f",
+        "plural": "Fähigkeiten"
+      },
+      {
+        "de": "Voraussetzung",
+        "en": "requirement / prerequisite",
+        "pos": "noun",
+        "ex": {
+          "de": "Gute Noten sind oft eine Voraussetzung, um zu studieren.",
+          "en": "Good grades are often a requirement to study."
+        },
+        "gender": "f",
+        "plural": "Voraussetzungen"
+      },
+      {
+        "de": "Zeugnis",
+        "en": "certificate / report card",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich hoffe, ein sehr gutes Zeugnis zu bekommen.",
+          "en": "I hope to receive a very good certificate."
+        },
+        "gender": "n",
+        "plural": "Zeugnisse"
+      },
+      {
+        "de": "Universität",
+        "en": "university",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich plane, an einer großen Universität zu studieren.",
+          "en": "I plan to study at a large university."
+        },
+        "gender": "f",
+        "plural": "Universitäten"
+      },
+      {
+        "de": "Bereich",
+        "en": "field / area",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich möchte mich in diesem Bereich spezialisieren.",
+          "en": "I would like to specialize in this field."
+        },
+        "gender": "m",
+        "plural": "Bereiche"
+      },
+      {
+        "de": "Fortbildung",
+        "en": "further education / training",
+        "pos": "noun",
+        "ex": {
+          "de": "Er macht eine Fortbildung, um seine Karriere zu verbessern.",
+          "en": "He is doing further training in order to improve his career."
+        },
+        "gender": "f",
+        "plural": "Fortbildungen"
+      },
+      {
+        "de": "studieren",
+        "en": "to study (at university)",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich möchte Medizin studieren, um Menschen zu helfen.",
+          "en": "I want to study medicine in order to help people."
+        }
+      },
+      {
+        "de": "bestehen",
+        "en": "to pass",
+        "pos": "verb",
+        "ex": {
+          "de": "Es ist nicht leicht, diese schwierige Prüfung zu bestehen.",
+          "en": "It is not easy to pass this difficult exam."
+        }
+      },
+      {
+        "de": "erreichen",
+        "en": "to achieve",
+        "pos": "verb",
+        "ex": {
+          "de": "Du musst hart arbeiten, um deine Träume zu erreichen.",
+          "en": "You have to work hard to achieve your dreams."
+        }
+      },
+      {
+        "de": "sich bewerben",
+        "en": "to apply",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich werde mich bewerben, um neue Erfahrungen zu sammeln.",
+          "en": "I will apply in order to gain new experiences."
+        }
+      },
+      {
+        "de": "erfolgreich",
+        "en": "successful",
+        "pos": "adj",
+        "ex": {
+          "de": "Sie möchte eine erfolgreiche Karriere als Anwältin starten.",
+          "en": "She wants to start a successful career as a lawyer."
+        }
+      },
+      {
+        "de": "notwendig",
+        "en": "necessary",
+        "pos": "adj",
+        "ex": {
+          "de": "Es ist notwendig, regelmäßig zu lernen, um Fortschritte zu machen.",
+          "en": "It is necessary to study regularly in order to make progress."
+        }
+      },
+      {
+        "de": "anspruchsvoll",
+        "en": "demanding / challenging",
+        "pos": "adj",
+        "ex": {
+          "de": "Dieses Studium ist sehr anspruchsvoll, aber auch sehr interessant.",
+          "en": "This course of study is very demanding, but also very interesting."
+        }
+      }
+    ]
+  },
+  {
+    "id": "b1-u7-words",
+    "level": "B1",
+    "title": "Culture",
+    "titleDe": "Kultur",
+    "icon": "zap",
+    "words": [
+      {
+        "de": "Film",
+        "en": "film",
+        "pos": "noun",
+        "ex": {
+          "de": "Wegen des schlechten Wetters schauen wir heute einen spannenden Film.",
+          "en": "Because of the bad weather, we are watching an exciting film today."
+        },
+        "gender": "m",
+        "plural": "Filme"
+      },
+      {
+        "de": "Buch",
+        "en": "book",
+        "pos": "noun",
+        "ex": {
+          "de": "Trotz der langen Reise hat er das Buch endlich gelesen.",
+          "en": "Despite the long journey, he finally read the book."
+        },
+        "gender": "n",
+        "plural": "Bücher"
+      },
+      {
+        "de": "Regisseur",
+        "en": "director",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Meinung des Regisseurs ist für die Kritik sehr wichtig.",
+          "en": "The director's opinion is very important for the critics."
+        },
+        "gender": "m",
+        "plural": "Regisseure"
+      },
+      {
+        "de": "Schauspieler",
+        "en": "actor",
+        "pos": "noun",
+        "ex": {
+          "de": "Wegen des berühmten Schauspielers ist der neue Film sehr erfolgreich.",
+          "en": "Because of the famous actor, the new film is very successful."
+        },
+        "gender": "m",
+        "plural": "Schauspieler"
+      },
+      {
+        "de": "Handlung",
+        "en": "plot",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Handlung des Romans ist viel komplexer als im Film.",
+          "en": "The plot of the novel is much more complex than in the film."
+        },
+        "gender": "f",
+        "plural": "Handlungen"
+      },
+      {
+        "de": "spannend",
+        "en": "exciting",
+        "pos": "adj",
+        "ex": {
+          "de": "Ich finde diesen Krimi spannend, obwohl die Handlung etwas langsam ist.",
+          "en": "I find this thriller exciting, although the plot is a bit slow."
+        }
+      },
+      {
+        "de": "langweilig",
+        "en": "boring",
+        "pos": "adj",
+        "ex": {
+          "de": "Trotz der guten Schauspieler fand ich die Komödie ziemlich langweilig.",
+          "en": "Despite the good actors, I found the comedy quite boring."
+        }
+      },
+      {
+        "de": "Literatur",
+        "en": "literature",
+        "pos": "noun",
+        "ex": {
+          "de": "Die moderne Literatur bietet oft eine interessante Sicht auf die Welt.",
+          "en": "Modern literature often offers an interesting view of the world."
+        },
+        "gender": "f",
+        "plural": "Literaturen"
+      },
+      {
+        "de": "Autor",
+        "en": "author",
+        "pos": "noun",
+        "ex": {
+          "de": "Wegen des Erfolgs des Autors wurden viele neue Bücher gedruckt.",
+          "en": "Because of the author's success, many new books were printed."
+        },
+        "gender": "m",
+        "plural": "Autoren"
+      },
+      {
+        "de": "Charakter",
+        "en": "character",
+        "pos": "noun",
+        "ex": {
+          "de": "Der Charakter der Hauptfigur ist in diesem Buch sehr interessant.",
+          "en": "The character of the main figure is very interesting in this book."
+        },
+        "gender": "m",
+        "plural": "Charaktere"
+      },
+      {
+        "de": "Krimi",
+        "en": "thriller/crime novel",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich lese gerne Krimis, weil sie mich immer wieder überraschen.",
+          "en": "I like reading crime novels because they always surprise me."
+        },
+        "gender": "m",
+        "plural": "Krimis"
+      },
+      {
+        "de": "Komödie",
+        "en": "comedy",
+        "pos": "noun",
+        "ex": {
+          "de": "Trotz der Kritik am Skript war die Komödie sehr lustig.",
+          "en": "Despite the criticism of the script, the comedy was very funny."
+        },
+        "gender": "f",
+        "plural": "Komödien"
+      },
+      {
+        "de": "Dokumentation",
+        "en": "documentary",
+        "pos": "noun",
+        "ex": {
+          "de": "Wegen der interessanten Themen schauen wir oft eine Dokumentation.",
+          "en": "Because of the interesting topics, we often watch a documentary."
+        },
+        "gender": "f",
+        "plural": "Dokumentationen"
+      },
+      {
+        "de": "Tradition",
+        "en": "tradition",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Tradition der Region wird von den Menschen sehr geschätzt.",
+          "en": "The tradition of the region is highly valued by the people."
+        },
+        "gender": "f",
+        "plural": "Traditionen"
+      },
+      {
+        "de": "Brauch",
+        "en": "custom",
+        "pos": "noun",
+        "ex": {
+          "de": "Trotz des modernen Lebens halten viele Leute an alten Bräuchen fest.",
+          "en": "Despite modern life, many people hold on to old customs."
+        },
+        "gender": "m",
+        "plural": "Bräuche"
+      },
+      {
+        "de": "feiern",
+        "en": "to celebrate",
+        "pos": "verb",
+        "ex": {
+          "de": "Wir feiern das Fest wegen der langen Tradition in unserer Familie.",
+          "en": "We celebrate the festival because of the long tradition in our family."
+        }
+      },
+      {
+        "de": "kulturell",
+        "en": "cultural",
+        "pos": "adj",
+        "ex": {
+          "de": "Das Museum bietet viele kulturelle Aktivitäten für die ganze Familie an.",
+          "en": "The museum offers many cultural activities for the whole family."
+        }
+      },
+      {
+        "de": "regional",
+        "en": "regional",
+        "pos": "adj",
+        "ex": {
+          "de": "Trotz des hohen Preises kaufen wir gerne regionale Produkte.",
+          "en": "Despite the high price, we like to buy regional products."
+        }
+      },
+      {
+        "de": "Erbe",
+        "en": "heritage",
+        "pos": "noun",
+        "ex": {
+          "de": "Das kulturelle Erbe des Landes ist ein sehr wichtiges Thema.",
+          "en": "The cultural heritage of the country is a very important topic."
+        },
+        "gender": "n",
+        "plural": "Erben"
+      },
+      {
+        "de": "Verfilmung",
+        "en": "film adaptation",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Verfilmung des Buches war wegen der schlechten Kameraarbeit enttäuschend.",
+          "en": "The film adaptation of the book was disappointing because of the poor camerawork."
+        },
+        "gender": "f",
+        "plural": "Verfilmungen"
+      }
+    ]
+  },
+  {
+    "id": "b1-u8-words",
+    "level": "B1",
+    "title": "Plans and dreams",
+    "titleDe": "Pläne und Träume",
+    "icon": "palette",
+    "words": [
+      {
+        "de": "Traum",
+        "en": "dream",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich glaube, dass jeder Mensch einen großen Traum im Leben haben sollte.",
+          "en": "I believe that every person should have a big dream in life."
+        },
+        "gender": "m",
+        "plural": "Träume"
+      },
+      {
+        "de": "Ziel",
+        "en": "goal",
+        "pos": "noun",
+        "ex": {
+          "de": "Wenn ich hart arbeite, werde ich mein wichtigstes Ziel bald erreichen.",
+          "en": "If I work hard, I will achieve my most important goal soon."
+        },
+        "gender": "n",
+        "plural": "Ziele"
+      },
+      {
+        "de": "Plan",
+        "en": "plan",
+        "pos": "noun",
+        "ex": {
+          "de": "Hast du schon einen konkreten Plan für deinen nächsten Urlaub gemacht?",
+          "en": "Have you already made a concrete plan for your next vacation?"
+        },
+        "gender": "m",
+        "plural": "Pläne"
+      },
+      {
+        "de": "Möglichkeit",
+        "en": "possibility/opportunity",
+        "pos": "noun",
+        "ex": {
+          "de": "Es gibt viele Möglichkeiten, wenn man bereit ist, neue Wege zu gehen.",
+          "en": "There are many possibilities if one is ready to take new paths."
+        },
+        "gender": "f",
+        "plural": "Möglichkeiten"
+      },
+      {
+        "de": "Erfolg",
+        "en": "success",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich hoffe, dass mein neues Projekt viel Erfolg bei den Kunden haben wird.",
+          "en": "I hope that my new project will have a lot of success with customers."
+        },
+        "gender": "m",
+        "plural": "Erfolge"
+      },
+      {
+        "de": "Zukunft",
+        "en": "future",
+        "pos": "noun",
+        "ex": {
+          "de": "In der Zukunft werden wir wahrscheinlich viel mehr im Homeoffice arbeiten.",
+          "en": "In the future, we will probably work much more from home."
+        },
+        "gender": "f",
+        "plural": "Zukünfte"
+      },
+      {
+        "de": "Entscheidung",
+        "en": "decision",
+        "pos": "noun",
+        "ex": {
+          "de": "Es war eine schwierige Entscheidung, als ich mich für diesen Beruf entschied.",
+          "en": "It was a difficult decision when I decided on this profession."
+        },
+        "gender": "f",
+        "plural": "Entscheidungen"
+      },
+      {
+        "de": "Reise",
+        "en": "trip/journey",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich werde eine lange Reise nach Japan machen, wenn ich genug Geld habe.",
+          "en": "I will take a long trip to Japan if I have enough money."
+        },
+        "gender": "f",
+        "plural": "Reisen"
+      },
+      {
+        "de": "Abenteuer",
+        "en": "adventure",
+        "pos": "noun",
+        "ex": {
+          "de": "Ein neues Abenteuer zu beginnen, ist oft eine sehr spannende Erfahrung.",
+          "en": "Starting a new adventure is often a very exciting experience."
+        },
+        "gender": "n",
+        "plural": "Abenteuer"
+      },
+      {
+        "de": "Beruf",
+        "en": "profession/job",
+        "pos": "noun",
+        "ex": {
+          "de": "Welchen Beruf wirst du ausüben, wenn du mit dem Studium fertig bist?",
+          "en": "Which profession will you practice when you are finished with your studies?"
+        },
+        "gender": "m",
+        "plural": "Berufe"
+      },
+      {
+        "de": "träumen",
+        "en": "to dream",
+        "pos": "verb",
+        "ex": {
+          "de": "Viele Leute träumen davon, dass sie eines Tages ihr eigenes Café eröffnen.",
+          "en": "Many people dream of opening their own café one day."
+        }
+      },
+      {
+        "de": "planen",
+        "en": "to plan",
+        "pos": "verb",
+        "ex": {
+          "de": "Wir müssen genau planen, damit unsere Reise nicht im Chaos endet.",
+          "en": "We must plan carefully so that our trip doesn't end in chaos."
+        }
+      },
+      {
+        "de": "erreichen",
+        "en": "to achieve/reach",
+        "pos": "verb",
+        "ex": {
+          "de": "Man kann viel erreichen, wenn man diszipliniert und fleißig bleibt.",
+          "en": "One can achieve a lot if one remains disciplined and hardworking."
+        }
+      },
+      {
+        "de": "versuchen",
+        "en": "to try",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich werde versuchen, meine Träume bald in die Realität umzusetzen.",
+          "en": "I will try to turn my dreams into reality soon."
+        }
+      },
+      {
+        "de": "hoffen",
+        "en": "to hope",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich hoffe sehr, dass wir uns bald wiedersehen werden.",
+          "en": "I really hope that we will see each other again soon."
+        }
+      },
+      {
+        "de": "umsetzen",
+        "en": "to implement/realize",
+        "pos": "verb",
+        "ex": {
+          "de": "Es ist nicht immer einfach, große Ideen schnell umzusetzen.",
+          "en": "It is not always easy to implement big ideas quickly."
+        }
+      },
+      {
+        "de": "sich entscheiden",
+        "en": "to decide",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich kann mich nicht entscheiden, ob ich nach Berlin ziehen werde.",
+          "en": "I cannot decide whether I will move to Berlin."
+        }
+      },
+      {
+        "de": "spannend",
+        "en": "exciting",
+        "pos": "adj",
+        "ex": {
+          "de": "Ich finde es spannend, wie sich die Welt ständig verändert.",
+          "en": "I find it exciting how the world is constantly changing."
+        }
+      },
+      {
+        "de": "erfolgreich",
+        "en": "successful",
+        "pos": "adj",
+        "ex": {
+          "de": "Er möchte ein erfolgreicher Geschäftsmann werden, wenn er erwachsen ist.",
+          "en": "He wants to become a successful businessman when he is an adult."
+        }
+      },
+      {
+        "de": "mutig",
+        "en": "brave",
+        "pos": "adj",
+        "ex": {
+          "de": "Du musst mutig sein, wenn du etwas völlig Neues ausprobieren willst.",
+          "en": "You have to be brave if you want to try something completely new."
+        }
+      }
+    ]
+  }
+]

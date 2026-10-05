@@ -1,0 +1,1989 @@
+[
+  {
+    "id": "c1-u1-l1",
+    "unit": "c1-u1",
+    "title": "The Flavor of German: Mastering Modal Particles",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "The Secret Sauce of Native Speech",
+        "body": "Modal particles (Modalpartikeln) are the 'secret sauce' of native German speech. Unlike English, which relies heavily on intonation or specific adverbs like 'just' or 'really' to convey attitude, German uses these small, unstressed words to signal surprise, emphasis, or a sense of inevitability. They do not change the factual content of a sentence, but they completely alter the emotional subtext and social register.",
+        "table": [
+          [
+            "doch",
+            "adds emphasis, contradiction, or implies 'as you should know'"
+          ],
+          [
+            "mal",
+            "softens requests or implies 'briefly/for a moment'"
+          ],
+          [
+            "ja",
+            "expresses surprise or 'as is already known'"
+          ],
+          [
+            "halt / eben",
+            "expresses resignation or 'it is what it is'"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Könntest du mir vielleicht mal kurz bei dieser komplizierten Sache hier helfen, damit ich endlich fertig werde?",
+        "en": "Could you perhaps help me out briefly with this complicated thing here so that I can finally finish?",
+        "note": "'mal' softens the request, making it sound less demanding and more casual."
+      },
+      {
+        "type": "phrase",
+        "de": "Das ist jetzt halt einfach so, da kann man wohl leider überhaupt nichts dagegen machen.",
+        "en": "That's just the way it is; unfortunately, there is absolutely nothing one can do about it.",
+        "note": "'halt' conveys a sense of resignation or acceptance of an unchangeable fact."
+      },
+      {
+        "type": "phrase",
+        "de": "Ach, das wusstest du doch bestimmt schon längst, warum fragst du mich dann überhaupt noch einmal?",
+        "en": "Oh, you surely knew that long ago; why are you even asking me again?",
+        "note": "'doch' emphasizes that the information should have been obvious to the listener."
+      },
+      {
+        "type": "choice",
+        "prompt": "You want to ask a colleague to look at something without sounding like you're giving a stern order.",
+        "options": [
+          "Schau dir das mal kurz an.",
+          "Schau dir das doch an.",
+          "Schau dir das eben an."
+        ],
+        "answer": 0,
+        "explain": "'mal' softens the imperative, making it a casual suggestion rather than a command."
+      },
+      {
+        "type": "choice",
+        "prompt": "You are reacting to a piece of news that is completely unexpected and surprising.",
+        "options": [
+          "Das ist halt unglaublich!",
+          "Das ist ja unglaublich!",
+          "Das ist mal unglaublich!"
+        ],
+        "answer": 1,
+        "explain": "'ja' is used here to express sudden surprise or emphasis regarding a new realization."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "doch",
+            "emphasis or contradiction"
+          ],
+          [
+            "mal",
+            "softening a request"
+          ],
+          [
+            "ja",
+            "surprise or obviousness"
+          ],
+          [
+            "halt",
+            "resignation"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "That is simply the reality that we must now just accept, no matter how much we dislike it.",
+        "answer": [
+          "Das",
+          "ist",
+          "eben",
+          "die",
+          "Realität,",
+          "mit",
+          "der",
+          "wir",
+          "uns",
+          "jetzt",
+          "wohl",
+          "einfach",
+          "abfinden",
+          "müssen,",
+          "egal",
+          "wie",
+          "sehr",
+          "es",
+          "uns",
+          "missfällt."
+        ],
+        "extra": [
+          "Sache",
+          "Ach"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Das ist ja wohl der absolute Wahnsinn, was hier gerade in der Stadt abgeht!",
+        "en": "That is surely absolute madness, what is going on here in the city right now!"
+      },
+      {
+        "type": "speak",
+        "de": "Komm doch bitte mal kurz zu mir her, ich muss dir unbedingt etwas Wichtiges zeigen!",
+        "en": "Please come over to me for a second, I absolutely must show you something important!"
+      },
+      {
+        "type": "speak",
+        "de": "Es ist halt nicht immer alles perfekt, auch wenn wir uns eigentlich viel mehr erhofft hätten.",
+        "en": "It's just not always perfect, even if we had actually hoped for much more."
+      }
+    ]
+  },
+  {
+    "id": "c1-u1-l2",
+    "unit": "c1-u1",
+    "title": "Refining the Nuance: The Power of doch, ja, mal, eben, and halt",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mastering the Nuance",
+        "body": "While English relies heavily on tone and word order to convey attitude, German uses modal particles to signal the speaker's emotional stance toward a statement. These particles do not change the factual content of a sentence, but they fundamentally alter the 'flavor' or the perceived intent behind it. Mastering them is the difference between sounding like a textbook and sounding like a native speaker.",
+        "table": [
+          [
+            "Das ist ja wirklich eine unglaubliche Überraschung für uns alle in dieser Situation!",
+            "That is [truly] such an incredible surprise for all of us in this situation!"
+          ],
+          [
+            "Komm doch am besten einfach mal bei mir vorbei, wenn du in der Stadt bist!",
+            "Do just come by my place sometime when you are in town!"
+          ],
+          [
+            "Das ist halt leider die Realität, mit der wir uns jetzt wohl abfinden müssen.",
+            "That is [just] unfortunately the reality that we'll just have to accept."
+          ],
+          [
+            "Ich habe es dir doch schon mehrmals gesagt, aber du hast mir einfach nicht zugehört!",
+            "But I told you so many times already, but you simply didn't listen!"
+          ],
+          [
+            "Mach das bitte mal ganz schnell fertig, damit wir pünktlich mit der Arbeit beginnen können.",
+            "Please just finish that quickly so that we can start work on time."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Wenn du das alles vorher gewusst hättest, hättest du ja sicher nicht so heftig reagiert.",
+        "en": "If you had known all that beforehand, you certainly wouldn't have reacted so strongly."
+      },
+      {
+        "type": "phrase",
+        "de": "Das lässt sich jetzt eben nicht mehr ändern, da müssen wir wohl einfach gemeinsam durch.",
+        "en": "That simply cannot be changed now; we'll just have to get through it together."
+      },
+      {
+        "type": "phrase",
+        "de": "Könntest du mir vielleicht mal ganz kurz dabei helfen, dieses schwere Regal hier aufzubauen?",
+        "en": "Could you perhaps help me for a moment with putting this heavy shelf together?"
+      },
+      {
+        "type": "choice",
+        "prompt": "Which particle best expresses resignation or the feeling that something is unchangeable?",
+        "options": [
+          "doch",
+          "halt",
+          "mal"
+        ],
+        "answer": 1,
+        "explain": "'Halt' (and 'eben') is used to signal that a situation is an unchangeable fact, often implying a sense of resignation."
+      },
+      {
+        "type": "choice",
+        "prompt": "Complete the sentence to make the request sound friendly and less like a direct command: 'Schau ___ mal hierhin!'",
+        "options": [
+          "doch",
+          "eben",
+          "halt"
+        ],
+        "answer": 0,
+        "explain": "'Doch' can be used to soften a request or command, making it sound more like an invitation or a friendly suggestion."
+      },
+      {
+        "type": "choice",
+        "prompt": "Which particle adds a sense of surprise or emphasizes that something is obvious? 'Das ist ___ wirklich eine Überraschung!'",
+        "options": [
+          "mal",
+          "ja",
+          "eben"
+        ],
+        "answer": 1,
+        "explain": "'Ja' is used here to emphasize the speaker's surprise or to indicate that the fact is something the listener should find obvious."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "doch",
+            "emphasis or contradiction"
+          ],
+          [
+            "mal",
+            "softening a request"
+          ],
+          [
+            "halt/eben",
+            "resignation/inevitability"
+          ],
+          [
+            "ja",
+            "surprise or shared knowledge"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "That simply cannot be changed now, no matter how hard we try.",
+        "answer": [
+          "Das",
+          "ist",
+          "jetzt",
+          "halt",
+          "leider",
+          "nicht",
+          "mehr",
+          "zu",
+          "ändern,",
+          "egal",
+          "wie",
+          "sehr",
+          "wir",
+          "es",
+          "versuchen."
+        ],
+        "extra": [
+          "helfen",
+          "du"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Das hättest du doch eigentlich schon viel früher wissen müssen, wenn du aufgepasst hättest.",
+        "en": "You really should have known that much earlier if you had been paying attention."
+      },
+      {
+        "type": "speak",
+        "de": "Komm doch einfach mal bei uns vorbei, wenn du heute Abend wieder etwas Zeit hast!",
+        "en": "Do just come by our place if you have some time again this evening!"
+      },
+      {
+        "type": "speak",
+        "de": "Das ist ja wohl eine absolute Frechheit, wie er sich hier gegenüber den Kunden verhält!",
+        "en": "That is quite an absolute cheek, the way he behaves towards the customers here!"
+      }
+    ]
+  },
+  {
+    "id": "c1-u1-l3",
+    "unit": "c1-u1",
+    "title": "Advanced Nuance: The Emotional Subtext",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "The Emotional Subtext",
+        "body": "At the C1 level, modal particles are no longer just 'extra words'; they are the tools you use to signal your attitude toward the information being shared. The rule is that these particles do not change the factual truth of a sentence, but rather the speaker's relationship to that content. Unlike English, which relies on intonation or adverbs like 'actually' or 'just' to convey nuance, German uses these particles to embed emotion directly into the syntax. Mastering them allows you to move from mere communication to true conversational influence.",
+        "table": [
+          [
+            "Das ist ja unglaublich!",
+            "That is [just] unbelievable!"
+          ],
+          [
+            "Komm doch mal vorbei!",
+            "Do come by sometime!"
+          ],
+          [
+            "Das ist halt so.",
+            "That's just how it is."
+          ],
+          [
+            "Er hat es eben vergessen.",
+            "He simply forgot."
+          ],
+          [
+            "Hör doch mal zu!",
+            "Just listen!"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Wenn du wirklich vorhast, das Projekt zu ändern, dann solltest du das ja auch mal den Kollegen gegenüber deutlich ansprechen.",
+        "en": "If you really intend to change the project, then you should actually bring that up clearly with the colleagues sometime.",
+        "note": "Note how 'ja' and 'mal' work together to soften the advice while implying the listener should already be aware of the necessity."
+      },
+      {
+        "type": "phrase",
+        "de": "Es ist halt leider so, dass wir uns bei diesem speziellen Punkt eben nicht ganz einig werden konnten, egal wie oft wir diskutieren.",
+        "en": "It is unfortunately just the case that we simply couldn't agree on this specific point, no matter how often we discuss it."
+      },
+      {
+        "type": "choice",
+        "prompt": "Das ist ______ eine ganz andere Geschichte, als du sie gerade beschreibst.",
+        "options": [
+          "doch",
+          "mal",
+          "eben"
+        ],
+        "answer": 0,
+        "explain": "'Doch' is used here to emphasize a contradiction or a correction of a previous assumption."
+      },
+      {
+        "type": "choice",
+        "prompt": "Könntest du mir ______ kurz dabei helfen, die Kisten hier zu tragen?",
+        "options": [
+          "halt",
+          "mal",
+          "ja"
+        ],
+        "answer": 1,
+        "explain": "'Mal' softens a request, making it sound less like a heavy demand and more like a quick favor."
+      },
+      {
+        "type": "choice",
+        "prompt": "Es ist ______ leider so, dass wir das Budget nicht erweitern können.",
+        "options": [
+          "ja",
+          "mal",
+          "halt"
+        ],
+        "answer": 2,
+        "explain": "'Halt' signals resignation, indicating that the situation is unchangeable and must be accepted."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "eben",
+            "simply (stating a fact)"
+          ],
+          [
+            "doch",
+            "emphasis (correcting/contradicting)"
+          ],
+          [
+            "ja",
+            "obviousness (expressing something known)"
+          ],
+          [
+            "halt",
+            "resignation (accepting a situation)"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "One simply has to come to terms with the fact that some things just don't go the way one imagined them.",
+        "answer": [
+          "Man",
+          "muss",
+          "sich",
+          "halt",
+          "einfach",
+          "damit",
+          "abfinden,",
+          "dass",
+          "manche",
+          "Dinge",
+          "eben",
+          "nicht",
+          "so",
+          "laufen,",
+          "wie",
+          "man",
+          "sie",
+          "sich",
+          "vorgestellt",
+          "hat."
+        ],
+        "extra": [
+          "zu",
+          "du"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Das ist ja wohl eine absolute Frechheit, wie er sich hier gegenüber allen verhält!",
+        "en": "That is quite an absolute cheek, how he behaves here toward everyone!"
+      },
+      {
+        "type": "speak",
+        "de": "Komm doch mal vorbei, wenn du Zeit hast, dann können wir das ja in Ruhe besprechen.",
+        "en": "Do come by sometime when you have time, then we can discuss it in peace."
+      }
+    ]
+  },
+  {
+    "id": "c1-u2-l1",
+    "unit": "c1-u2",
+    "title": "Mastering Fixed Expressions",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Fixed Expressions: The Glue of Native Speech",
+        "body": "Fixed expressions in German, or *feste Wendungen*, function as single semantic units where the grammar is often 'frozen.' Unlike English, where you might slightly vary a phrase, German idioms often demand a specific grammatical case or a precise preposition that cannot be altered without breaking the idiomatic meaning. At a C1 level, mastery means recognizing that these expressions follow strict internal logic—such as a specific dative object—rather than just translating the individual words literally.",
+        "table": [
+          [
+            "Jemandem den Kopf verdrehen",
+            "To make someone fall head over heels"
+          ],
+          [
+            "Auf Nummer sicher gehen",
+            "To play it safe"
+          ],
+          [
+            "Ein Auge zudrücken",
+            "To turn a blind eye"
+          ],
+          [
+            "Den Faden verlieren",
+            "To lose one's train of thought"
+          ],
+          [
+            "Unter vier Augen",
+            "In private (literally: under four eyes)"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Eigentlich wollte ich ja gerade den Faden wieder aufnehmen, aber dann hat mich diese ganze Diskussion doch völlig aus dem Konzept gebracht.",
+        "en": "Actually, I was just about to pick up the thread again, but then this whole discussion completely threw me off track.",
+        "note": "Note the use of modal particles 'ja' and 'doch' to add nuance to the frustration."
+      },
+      {
+        "type": "phrase",
+        "de": "Man sollte bei so einer wichtigen Entscheidung wohl lieber auf Nummer sicher gehen, anstatt einfach blindlings ins Risiko zu laufen, oder?",
+        "en": "One should probably play it safe with such an important decision instead of just blindly running into risk, right?",
+        "note": "The particle 'wohl' expresses a degree of probability or suggestion."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich weiß zwar, dass er wieder einmal zu spät gekommen ist, aber ich werde diesmal wohl einfach mal ein Auge zudrücken.",
+        "en": "I know he's late once again, but I guess I'll just turn a blind eye this time.",
+        "note": "The particle 'mal' softens the intention, making it sound more casual."
+      },
+      {
+        "type": "choice",
+        "prompt": "Er hat ___ den Kopf verdreht.",
+        "options": [
+          "ihr",
+          "sie",
+          "ihr Kopf"
+        ],
+        "answer": 0,
+        "explain": "The idiom 'jemandem den Kopf verdrehen' requires the dative case for the person being affected."
+      },
+      {
+        "type": "choice",
+        "prompt": "Wir müssen das ___ vier Augen besprechen.",
+        "options": [
+          "unter",
+          "mit",
+          "in"
+        ],
+        "answer": 0,
+        "explain": "The fixed expression is 'unter vier Augen'; changing the preposition makes it no longer an idiom."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Den Faden verlieren",
+            "To lose one's train of thought"
+          ],
+          [
+            "Auf Nummer sicher gehen",
+            "To play it safe"
+          ],
+          [
+            "Ein Auge zudrücken",
+            "To turn a blind eye"
+          ],
+          [
+            "Unter vier Augen",
+            "In private"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "If one wants to play it safe, one should really examine the contracts very carefully before signing them.",
+        "answer": [
+          "Wenn",
+          "man",
+          "auf",
+          "Nummer",
+          "sicher",
+          "gehen",
+          "will,",
+          "sollte",
+          "man",
+          "die",
+          "Verträge",
+          "vor",
+          "der",
+          "Unterschrift",
+          "wirklich",
+          "ganz",
+          "genau",
+          "prüfen."
+        ],
+        "extra": [
+          "ja",
+          "wollte"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Es ist wohl besser, in dieser Angelegenheit einfach mal ein Auge zuzudrücken, anstatt sofort einen riesigen Aufstand zu machen.",
+        "en": "It is probably better to just turn a blind eye in this matter instead of immediately making a huge fuss."
+      },
+      {
+        "type": "speak",
+        "de": "Ich habe den Faden verloren, weil mich die vielen Details der Präsentation einfach völlig überfordert haben.",
+        "en": "I lost my train of thought because the many details of the presentation simply overwhelmed me completely."
+      },
+      {
+        "type": "speak",
+        "de": "Wir sollten dieses sensible Thema lieber unter vier Augen besprechen, damit niemand anderes davon erfährt.",
+        "en": "We should rather discuss this sensitive topic in private so that no one else finds out about it."
+      }
+    ]
+  },
+  {
+    "id": "c1-u2-l2",
+    "unit": "c1-u2",
+    "title": "Elevating Your Register: Noun-Verb Combinations",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Nomen-Verb-Verbindungen",
+        "body": "While English often relies on single, punchy verbs like 'to consider' or 'to decide,' high-level German frequently employs *Nomen-Verb-Verbindungen*. These are fixed pairings where a noun and a 'function verb' combine to express a single, specific concept. Using these expressions shifts your register from casual, everyday speech to a more professional and nuanced level, which is essential for C1 fluency.",
+        "table": [
+          [
+            "in Erwägung ziehen",
+            "to consider"
+          ],
+          [
+            "eine Entscheidung treffen",
+            "to make a decision"
+          ],
+          [
+            "zur Verfügung stehen",
+            "to be available"
+          ],
+          [
+            "zur Sprache bringen",
+            "to bring up / address"
+          ],
+          [
+            "in Kauf nehmen",
+            "to accept (something negative)"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Bevor wir eine endgültige Antwort geben, müssen wir alle verfügbaren Optionen ernsthaft in Erwägung ziehen.",
+        "en": "Before we give a final answer, we must seriously consider all available options."
+      },
+      {
+        "type": "phrase",
+        "de": "Nach einer langen Diskussion hat der Vorstand schließlich die Entscheidung getroffen, das Budget zu kürzen.",
+        "en": "After a long discussion, the board finally made the decision to cut the budget.",
+        "note": "Using 'eine Entscheidung treffen' sounds much more professional in a business context than simply saying 'entscheiden'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Um das aktuelle Problem endlich zu lösen, müssen wir die Angelegenheit zur Sprache ____.",
+        "options": [
+          "bringen",
+          "sagen",
+          "machen"
+        ],
+        "answer": 0,
+        "explain": "'Zur Sprache bringen' is a fixed idiom meaning 'to bring something up' or 'to address a topic'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Könnten Sie mir bitte alle notwendigen Dokumente für das Meeting ____?",
+        "options": [
+          "zur Verfügung stellen",
+          "zur Verfügung sein",
+          "zur Verfügung geben"
+        ],
+        "answer": 0,
+        "explain": "'Zur Verfügung stellen' means 'to provide/make available,' whereas 'sein' would mean 'to be available' (describing the person, not the action of providing)."
+      },
+      {
+        "type": "choice",
+        "prompt": "Wir müssen die unvermeidbaren Nachteile dieses neuen Plans leider ____.",
+        "options": [
+          "in Kauf nehmen",
+          "in Kauf machen",
+          "in Kauf sagen"
+        ],
+        "answer": 0,
+        "explain": "'In Kauf nehmen' is the standard idiomatic expression for accepting or putting up with something undesirable."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "in Kauf nehmen",
+            "to accept something negative"
+          ],
+          [
+            "zur Sprache bringen",
+            "to bring up a topic"
+          ],
+          [
+            "in Erwägung ziehen",
+            "to consider"
+          ],
+          [
+            "eine Entscheidung treffen",
+            "to make a decision"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "We should definitely consider this new possibility before making a decision.",
+        "answer": [
+          "Wir",
+          "sollten",
+          "diese",
+          "neue",
+          "Möglichkeit",
+          "unbedingt",
+          "in",
+          "Erwägung",
+          "ziehen,",
+          "bevor",
+          "wir",
+          "eine",
+          "Entscheidung",
+          "treffen."
+        ],
+        "extra": [
+          "der",
+          "das"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Wir müssen die Risiken dieses Projekts in Kauf nehmen.",
+        "en": "We have to accept the risks of this project."
+      },
+      {
+        "type": "speak",
+        "de": "Ich werde versuchen, dieses schwierige Thema bei der nächsten Sitzung zur Sprache zu bringen.",
+        "en": "I will try to bring up this difficult topic at the next meeting."
+      }
+    ]
+  },
+  {
+    "id": "c1-u2-l3",
+    "unit": "c1-u2",
+    "title": "Prepositional Fixed Expressions",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Prepositional Fixed Expressions",
+        "body": "Fixed prepositional expressions occur when a verb or noun is inextricably linked to a specific preposition that cannot be substituted without losing the idiomatic meaning. While English might use 'under' or 'in' based on spatial logic, German uses these prepositions as part of a rigid, non-negotiable structure. To master C1 German, you must stop translating the preposition and start learning the entire block as a single lexical unit.",
+        "table": [
+          [
+            "unter Druck stehen",
+            "to be under pressure"
+          ],
+          [
+            "in Kauf nehmen",
+            "to accept/tolerate (something negative)"
+          ],
+          [
+            "im Begriff sein",
+            "to be about to (do something)"
+          ],
+          [
+            "auf dem Laufenden bleiben",
+            "to stay up to date"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Obwohl er unter enormem Zeitdruck steht, versucht er, die unvermeidbaren Nachteile in Kauf zu nehmen.",
+        "en": "Even though he is under enormous time pressure, he tries to accept the unavoidable disadvantages."
+      },
+      {
+        "type": "phrase",
+        "de": "Um wettbewerbsfähig zu bleiben, müssen wir bei den neuesten Markttrends stets auf dem Laufenden bleiben.",
+        "en": "To remain competitive, we must always stay up to date with the latest market trends."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich war gerade im Begriff, die Präsentation zu starten, als die Technik plötzlich versagte.",
+        "en": "I was just about to start the presentation when the technology suddenly failed.",
+        "note": "The use of 'gerade' emphasizes the immediacy of the action."
+      },
+      {
+        "type": "choice",
+        "prompt": "Er steht beruflich ständig ___ großem Druck.",
+        "options": [
+          "unter",
+          "in",
+          "bei"
+        ],
+        "answer": 0,
+        "explain": "The fixed expression is 'unter Druck stehen'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich war gerade ___ Begriff, dich anzurufen.",
+        "options": [
+          "im",
+          "am",
+          "beim"
+        ],
+        "answer": 0,
+        "explain": "The fixed expression is 'im Begriff sein'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "unter Druck stehen",
+            "to be under pressure"
+          ],
+          [
+            "in Kauf nehmen",
+            "to accept/tolerate"
+          ],
+          [
+            "im Begriff sein",
+            "to be about to"
+          ],
+          [
+            "auf dem Laufenden bleiben",
+            "to stay up to date"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "It is unavoidable to accept the associated risks in order to be successful in the long term.",
+        "answer": [
+          "Es",
+          "ist",
+          "unumgänglich,",
+          "die",
+          "damit",
+          "verbundenen",
+          "Risiken",
+          "in",
+          "Kauf",
+          "zu",
+          "nehmen,",
+          "um",
+          "langfristig",
+          "erfolgreich",
+          "zu",
+          "sein."
+        ],
+        "extra": [
+          "gerade",
+          "steht"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Wir müssen unbedingt auf dem Laufenden bleiben.",
+        "en": "We absolutely must stay up to date."
+      },
+      {
+        "type": "speak",
+        "de": "Ich war gerade im Begriff, die Präsentation zu starten, als die Technik plötzlich versagte.",
+        "en": "I was just about to start the presentation when the technology suddenly failed."
+      }
+    ]
+  },
+  {
+    "id": "c1-u4-l1",
+    "unit": "c1-u4",
+    "title": "Mastering Emphasis through Word Order",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "The Power of Topicalization",
+        "body": "In English, emphasis is often achieved through vocal stress or cleft sentences like 'It is X that...'. In German, you can move almost any element—an adverb, an object, or a prepositional phrase—to the very first position to make it the focal point of your argument. However, you must respect the V2 rule: the conjugated verb must remain in the second position, which forces the subject to move immediately after it. This flexibility allows you to control the rhetorical flow and direct the listener's attention with precision.",
+        "table": [
+          [
+            "Dennoch müssen wir handeln.",
+            "Nevertheless, we must act."
+          ],
+          [
+            "Dieses Problem ist entscheidend.",
+            "This problem is crucial."
+          ],
+          [
+            "Nur so erreichen wir unser Ziel.",
+            "Only in this way will we reach our goal."
+          ],
+          [
+            "Niemals sollten wir diesen Fehler wiederholen.",
+            "Never should we repeat this mistake."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "„Gerade in solch schwierigen Zeiten gilt es, die Ruhe zu bewahren und nicht voreilig Entscheidungen zu treffen, die wir später bereuen könnten.“",
+        "en": "“Especially in such difficult times, it is important to keep calm and not make hasty decisions that we might regret later.”",
+        "note": "Using 'Gerade' at the start immediately signals that the following context is the most critical factor."
+      },
+      {
+        "type": "phrase",
+        "de": "„Es ist nicht bloß eine Option, sondern eine absolute Notwendigkeit, dass wir jetzt gemeinsam handeln, um den Wandel aktiv zu gestalten.“",
+        "en": "“It is not merely an option, but an absolute necessity that we act together now to actively shape the change.”",
+        "note": "The particle 'bloß' adds a nuanced, slightly more emphatic tone to the negation."
+      },
+      {
+        "type": "choice",
+        "prompt": "Which sentence correctly emphasizes the time element?",
+        "options": [
+          "Heute müssen wir über die Zukunft sprechen.",
+          "Heute wir müssen über die Zukunft sprechen.",
+          "Heute über die Zukunft müssen wir sprechen."
+        ],
+        "answer": 0,
+        "explain": "In German, when an adverb like 'Heute' occupies the first position, the conjugated verb must still take the second position, pushing the subject 'wir' to the third."
+      },
+      {
+        "type": "choice",
+        "prompt": "Which sentence correctly emphasizes the object?",
+        "options": [
+          "Diesen Plan er hat gestern vorgestellt.",
+          "Diesen Plan hat er gestern vorgestellt.",
+          "Diesen Plan gestern hat er vorgestellt."
+        ],
+        "answer": 1,
+        "explain": "To emphasize 'Diesen Plan', it is moved to the first position (Vorfeld), and the verb 'hat' must follow immediately in the second position."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Zusammenhalt",
+            "Cohesion"
+          ],
+          [
+            "Voraussetzung",
+            "Prerequisite"
+          ],
+          [
+            "Unverzichtbar",
+            "Indispensable"
+          ],
+          [
+            "Nachhaltig",
+            "Sustainable"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "“Only through consistent and decisive cooperation will we actually be able to master this enormous challenge successfully together.”",
+        "answer": [
+          "„Nur",
+          "durch",
+          "eine",
+          "konsequente",
+          "und",
+          "entschlossene",
+          "Zusammenarbeit",
+          "werden",
+          "wir",
+          "diese",
+          "enorme",
+          "Herausforderung",
+          "tatsächlich",
+          "gemeinsam",
+          "erfolgreich",
+          "meistern",
+          "können.“"
+        ],
+        "extra": [
+          "den",
+          "bewahren"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Nichts ist wichtiger als der Zusammenhalt in unserer Gemeinschaft.",
+        "en": "Nothing is more important than the cohesion in our community."
+      },
+      {
+        "type": "speak",
+        "de": "„Eines steht heute fest: Wir dürfen diese einmalige Chance auf keinen Fall ungenutzt lassen, sondern müssen sie unbedingt ergreifen!“",
+        "en": "“One thing is certain today: We must by no means let this unique opportunity go unused, but must absolutely seize it!”"
+      }
+    ]
+  },
+  {
+    "id": "c1-u4-l2",
+    "unit": "c1-u4",
+    "title": "Beyond Topicalization: Nuance through Particles and Clefts",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Nuance through Particles and Clefts",
+        "body": "While topicalization moves an element to the front of the sentence, C1 speakers use modal particles and cleft constructions to add rhetorical weight and attitude. In English, emphasis is often achieved through vocal stress or 'It is... that...' structures, but German uses particles like 'doch' or 'eben' to signal that a point is indisputable or inevitable. By using cleft sentences (starting with 'Was...' or 'Das ist...'), you can isolate the most important part of your argument to ensure it resonates with your audience.",
+        "table": [
+          [
+            "Das ist doch klar!",
+            "That is obvious (to everyone)!"
+          ],
+          [
+            "Wir müssen eben handeln.",
+            "We simply have to act (it's an unchangeable fact)."
+          ],
+          [
+            "Es geht ja nicht nur um Geld.",
+            "It's not just about money (as you should know)."
+          ],
+          [
+            "Was wir brauchen, ist Mut.",
+            "What we need is courage (cleft emphasis)."
+          ],
+          [
+            "Das ist eben die Realität.",
+            "That is simply the reality."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Es geht hier eben nicht bloß um abstrakte Theorie, sondern um die ganz konkrete Realität vor Ort.",
+        "en": "This isn't just about abstract theory, but about the very concrete reality on the ground."
+      },
+      {
+        "type": "phrase",
+        "de": "Wir müssen doch endlich die Initiative ergreifen, bevor die gesamte Situation vollkommen außer Kontrolle gerät.",
+        "en": "We really must finally take the initiative before the entire situation gets completely out of control."
+      },
+      {
+        "type": "phrase",
+        "de": "Das ist ja wohl ganz sicher nicht das, was wir uns alle gemeinsam für die Zukunft erhofft haben.",
+        "en": "That is certainly not what we all collectively hoped for regarding the future."
+      },
+      {
+        "type": "choice",
+        "prompt": "Which sentence uses a particle to signal that the necessity of an action is already established or should be obvious to the listener?",
+        "options": [
+          "Wir müssen handeln.",
+          "Wir müssen doch handeln.",
+          "Wir müssen halt handeln."
+        ],
+        "answer": 1,
+        "explain": "'Doch' acts as a rhetorical nudge, implying that the necessity is a shared understanding or should be obvious."
+      },
+      {
+        "type": "choice",
+        "prompt": "How do you create a cleft sentence to emphasize 'Mut' (courage) in the statement 'We need courage'?",
+        "options": [
+          "Mut brauchen wir.",
+          "Was wir brauchen, ist Mut.",
+          "Wir brauchen Mut, was."
+        ],
+        "answer": 1,
+        "explain": "Using a 'Was...' clause (a cleft construction) allows you to isolate the most important piece of information for maximum rhetorical impact."
+      },
+      {
+        "type": "choice",
+        "prompt": "Which sentence uses 'eben' to suggest that a situation is an unchangeable, resigned fact?",
+        "options": [
+          "Das ist eben so.",
+          "Das ist doch so.",
+          "Das ist ja so."
+        ],
+        "answer": 0,
+        "explain": "'Eben' conveys a sense of resignation or the acceptance of an unalterable reality, which can be used rhetorically to ground an argument."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "eben",
+            "simply/just (as a fact)"
+          ],
+          [
+            "doch",
+            "surely/after all"
+          ],
+          [
+            "ja",
+            "as you know/indeed"
+          ],
+          [
+            "bloß",
+            "merely/only"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "What we really need now is a clear and decisive decision.",
+        "answer": [
+          "Was",
+          "wir",
+          "jetzt",
+          "wirklich",
+          "brauchen,",
+          "ist",
+          "eine",
+          "klare",
+          "und",
+          "entschlossene",
+          "Entscheidung."
+        ],
+        "extra": [
+          "um",
+          "sondern"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Es kommt eben ganz entscheidend darauf an, wie wir auf diese neue Herausforderung reagieren werden.",
+        "en": "It simply depends decisively on how we will react to this new challenge."
+      },
+      {
+        "type": "speak",
+        "de": "Wir müssen doch endlich die Initiative ergreifen, um diesen wichtigen Prozess voranzutreiben.",
+        "en": "We really must finally take the initiative to drive this important process forward."
+      },
+      {
+        "type": "speak",
+        "de": "Das ist ja wohl die einzige Lösung, die uns in dieser schwierigen Lage bleibt.",
+        "en": "That is surely the only solution that remains to us in this difficult situation."
+      }
+    ]
+  },
+  {
+    "id": "c1-u4-l3",
+    "unit": "c1-u4",
+    "title": "The Rhetorical Crescendo: Strategic Word Order and Contrast",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "The Rhetorical Crescendo: Strategic Word Order and Contrast",
+        "body": "To master rhetoric, you must learn to control the 'rhythmic tension' of your speech. While English relies heavily on vocal stress to highlight contrast, German allows you to manipulate the sentence structure itself through correlative conjunctions and temporal inversions. By using structures like 'nicht nur... sondern auch' or starting with 'kaum,' you can build a logical crescendo that guides your audience toward your most important point.",
+        "table": [
+          [
+            "Nicht nur... sondern auch",
+            "Not only... but also"
+          ],
+          [
+            "Kaum hatte...",
+            "Hardly had... (creates dramatic timing)"
+          ],
+          [
+            "Anstatt... zu",
+            "Instead of... (sets up a contrastive alternative)"
+          ],
+          [
+            "Vielmehr",
+            "Rather / Instead (used to emphatically correct a point)"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Nicht nur die wirtschaftlichen Aspekte müssen wir berücksichtigen, sondern vor allem die moralische Verantwortung, die wir gegenüber der nächsten Generation tragen.",
+        "en": "Not only must we consider the economic aspects, but above all the moral responsibility we bear toward the next generation."
+      },
+      {
+        "type": "phrase",
+        "de": "Kaum hatten wir die ersten Erfolge erzielt, da sahen wir uns bereits mit völlig neuen, unvorhersehbaren Herausforderungen konfrontiert.",
+        "en": "Hardly had we achieved the first successes when we were already confronted with completely new, unpredictable challenges.",
+        "note": "Use 'kaum' to create a sense of immediate consequence or dramatic timing in a speech."
+      },
+      {
+        "type": "choice",
+        "prompt": "Which sentence correctly uses the 'nicht nur... sondern auch' structure to emphasize the subject?",
+        "options": [
+          "Nicht nur wir müssen handeln, sondern auch sie.",
+          "Nicht nur müssen wir handeln, sondern auch sie.",
+          "Nicht nur wir müssen handeln, sondern auch."
+        ],
+        "answer": 0,
+        "explain": "In a 'nicht nur... sondern auch' construction, the subject and verb follow standard word order in the first clause unless the conjunction itself is being topicalized."
+      },
+      {
+        "type": "choice",
+        "prompt": "Which sentence correctly uses inversion to create tension with 'kaum'?",
+        "options": [
+          "Kaum wir hatten die Entscheidung getroffen...",
+          "Kaum hatten wir die Entscheidung getroffen...",
+          "Kaum die Entscheidung hatten wir getroffen..."
+        ],
+        "answer": 1,
+        "explain": "Starting a sentence with 'kaum' requires an inversion where the verb moves to the second position, immediately after 'kaum'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Nicht nur... sondern auch",
+            "Not only... but also"
+          ],
+          [
+            "Kaum...",
+            "Hardly..."
+          ],
+          [
+            "Anstatt... zu",
+            "Instead of..."
+          ],
+          [
+            "Vielmehr",
+            "Rather"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "Not only is technology crucial, but also the way in which we use it together.",
+        "answer": [
+          "Nicht",
+          "nur",
+          "die",
+          "Technologie",
+          "ist",
+          "entscheidend,",
+          "sondern",
+          "auch",
+          "die",
+          "Art",
+          "und",
+          "Weise,",
+          "wie",
+          "wir",
+          "sie",
+          "gemeinsam",
+          "nutzen."
+        ],
+        "extra": [
+          "Erfolge",
+          "hatten"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Wir dürfen diese einmalige Gelegenheit nicht ungenutzt lassen, während die Zeit unaufhaltsam verstreicht.",
+        "en": "We must not let this unique opportunity go unused while time passes inexorably."
+      },
+      {
+        "type": "speak",
+        "de": "Wir sollten uns nicht auf alte Gewohnheiten verlassen, sondern mutig neue Wege in der Kommunikation beschreiten.",
+        "en": "We should not rely on old habits, but rather bravely tread new paths in communication."
+      }
+    ]
+  },
+  {
+    "id": "c1-u7-l1",
+    "unit": "c1-u7",
+    "title": "Mastering Sentence Stress",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Sentence Stress: The Art of Emphasis",
+        "body": "In German, sentence stress (Satzakzent) is the primary tool for signaling contrast or new information within a clause. While English uses stress similarly, German speakers often use it more strategically to highlight specific components like modal particles or adverbs to fine-tune the emotional tone. Shifting the stress doesn't just change the volume; it fundamentally alters the pragmatic meaning of the statement.",
+        "table": [
+          [
+            "Das habe ich **nicht** gesagt.",
+            "That's not what I said."
+          ],
+          [
+            "**Ich** habe das nicht gesagt.",
+            "**I** wasn't the one who said that."
+          ],
+          [
+            "Das habe ich **doch** gesagt!",
+            "But I *did* say that!"
+          ],
+          [
+            "Das habe ich **einfach** gesagt.",
+            "I just said it (and that's that)."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Eigentlich wollte ich ja nur kurz nachfragen, ob Sie vielleicht doch noch Zeit für ein kleines Gespräch hätten, aber das ist wohl eher unwahrscheinlich.",
+        "en": "Actually, I just wanted to briefly ask if you might still have time for a short conversation, but that's probably rather unlikely.",
+        "note": "Stress 'eigentlich' to sound hesitant, or 'unwahrscheinlich' to emphasize the doubt."
+      },
+      {
+        "type": "phrase",
+        "de": "Es ist ja schön und gut, dass du das meinst, aber man sollte die Sache doch mal etwas differenzierter betrachten, findest du nicht auch?",
+        "en": "It's all well and good that you think so, but one should look at the matter a bit more nuancedly, don't you think?",
+        "note": "Stress 'differenzierter' to highlight the critique of the previous speaker's view."
+      },
+      {
+        "type": "choice",
+        "prompt": "Where should the stress fall to indicate that the subject (and not someone else) performed the action?",
+        "options": [
+          "On the verb at the end",
+          "On the subject at the beginning",
+          "On the modal particle"
+        ],
+        "answer": 1,
+        "explain": "To indicate contrastive focus on the agent, the stress must be placed on the subject."
+      },
+      {
+        "type": "choice",
+        "prompt": "In the sentence 'Das habe ich **doch** gesagt!', what does the stress on 'doch' primarily signal?",
+        "options": [
+          "A simple question",
+          "A polite request",
+          "A contradiction of a previous assumption"
+        ],
+        "answer": 2,
+        "explain": "Stressing the particle 'doch' emphasizes the contradiction of what was previously thought or stated."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Eigentlich",
+            "Actually"
+          ],
+          [
+            "Doch",
+            "But / On the contrary"
+          ],
+          [
+            "Ja wohl",
+            "Surely / Indeed"
+          ],
+          [
+            "Vielleicht",
+            "Perhaps"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "One really shouldn't rely directly on the first piece of information without checking the details thoroughly once more.",
+        "answer": [
+          "Man",
+          "sollte",
+          "sich",
+          "ja",
+          "wohl",
+          "nicht",
+          "direkt",
+          "auf",
+          "die",
+          "erste",
+          "Information",
+          "verlassen,",
+          "ohne",
+          "die",
+          "Details",
+          "noch",
+          "einmal",
+          "gründlich",
+          "zu",
+          "prüfen."
+        ],
+        "extra": [
+          "doch",
+          "du"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Es wäre doch eigentlich ganz sinnvoll, wenn wir uns jetzt mal zusammensetzen würden.",
+        "en": "It would actually be quite sensible if we were to sit down together now."
+      },
+      {
+        "type": "speak",
+        "de": "Ich hätte ja wirklich gerne gewusst, warum diese ganze Angelegenheit eigentlich so unnötig kompliziert gemacht wurde!",
+        "en": "I would have really liked to know why this whole matter was actually made so unnecessarily complicated!"
+      },
+      {
+        "type": "speak",
+        "de": "Das ist ja wohl der absolute Gipfel der Unverschämtheit, wenn man die Situation mal ganz nüchtern betrachtet!",
+        "en": "That is surely the absolute height of insolence, when you look at the situation quite soberly!"
+      }
+    ]
+  },
+  {
+    "id": "c1-u7-l2",
+    "unit": "c1-u7",
+    "title": "Intonation Patterns: The Melody of Meaning",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Intonation Patterns",
+        "body": "In English, pitch jumps are often used to emphasize specific words, but in German, the overall melody (Satzmelodie) is essential for distinguishing between question types and emotional intent. While English speakers often use a rising tone to signal surprise, German relies on a strict distinction: 'W-Fragen' (Wh-questions) typically end with a falling pitch, whereas 'Ja-Fragen' (Yes/No questions) require a rising pitch. Furthermore, the interplay between pitch and modal particles like 'ja' or 'doch' allows Germans to convey nuance—such as sarcasm or insistence—without changing the word order. Mastering these contours prevents you from sounding like you are constantly asking questions when you are actually making statements.",
+        "table": [
+          [
+            "Kommst du heute Abend mit?",
+            "Are you coming along tonight? (Rising - Ja-Frage)"
+          ],
+          [
+            "Was machst du eigentlich da?",
+            "What are you actually doing there? (Falling - W-Frage)"
+          ],
+          [
+            "Das ist ja eine tolle Überraschung!",
+            "That is indeed a great surprise! (Exclamatory/Rising)"
+          ],
+          [
+            "Mach das bloß nicht noch einmal!",
+            "Just don't ever do that again! (Falling/Command)"
+          ],
+          [
+            "Echt jetzt?",
+            "Really? / For real? (Rising/Disbelief)"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Hättest du eigentlich gewusst, dass er sich schon längst dazu entschieden hat, den Job in Berlin anzunehmen?",
+        "en": "Did you actually know that he had already decided to take the job in Berlin a long time ago?",
+        "note": "Use a rising intonation at the end to signal this is a Yes/No question."
+      },
+      {
+        "type": "phrase",
+        "de": "Es ist ja wirklich erstaunlich, wie schnell sich die ganze Situation hier im Laufe der letzten Wochen verändert hat.",
+        "en": "It is indeed quite amazing how quickly the whole situation here has changed over the course of the last few weeks.",
+        "note": "The particle 'ja' combined with a steady melody emphasizes the speaker's realization."
+      },
+      {
+        "type": "phrase",
+        "de": "Wenn du das wirklich vorhast, dann solltest du das lieber noch einmal gründlich überdenken, bevor es zu spät ist.",
+        "en": "If you really intend to do that, then you should probably rethink it thoroughly before it is too late.",
+        "note": "Use a falling pitch at the end of the sentence to signal a serious, concluding statement."
+      },
+      {
+        "type": "choice",
+        "prompt": "In a standard 'W-Frage' (e.g., 'Warum gehst du?'), what is the typical intonation pattern at the end of the sentence?",
+        "options": [
+          "A rising pitch.",
+          "A falling pitch.",
+          "A constant, unchanging pitch."
+        ],
+        "answer": 1,
+        "explain": "Wh-questions in German typically end with a falling pitch, unlike Yes/No questions."
+      },
+      {
+        "type": "choice",
+        "prompt": "How do you transform a neutral statement into a 'Ja-Frage' (Yes/No question) using only intonation?",
+        "options": [
+          "By using a rising pitch at the end.",
+          "By using a falling pitch at the end.",
+          "By speaking much louder."
+        ],
+        "answer": 0,
+        "explain": "A rising pitch at the end of a sentence signals to the listener that a confirmation is required."
+      },
+      {
+        "type": "choice",
+        "prompt": "Which intonation pattern is most common when expressing a strong, certain command?",
+        "options": [
+          "A rising pitch on the final syllable.",
+          "A falling pitch on the final syllable.",
+          "A fluctuating pitch throughout the sentence."
+        ],
+        "answer": 1,
+        "explain": "A sharp, falling pitch conveys authority and finality in German commands."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "W-Frage",
+            "Wh-question"
+          ],
+          [
+            "Ja-Frage",
+            "Yes/No question"
+          ],
+          [
+            "Satzmelodie",
+            "Sentence melody"
+          ],
+          [
+            "Modalpartikel",
+            "Modal particle"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "If only I had known that sooner, I would be much better prepared for this difficult situation today.",
+        "answer": [
+          "Hätte",
+          "ich",
+          "das",
+          "bloß",
+          "früher",
+          "gewusst,",
+          "dann",
+          "wäre",
+          "ich",
+          "heute",
+          "viel",
+          "besser",
+          "auf",
+          "diese",
+          "schwierige",
+          "Situation",
+          "vorbereitet."
+        ],
+        "extra": [
+          "vorhast",
+          "solltest"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Das ist ja eine ganz andere Geschichte, als ich sie mir ursprünglich so vorgestellt habe.",
+        "en": "That is quite a different story than I originally imagined it to be."
+      },
+      {
+        "type": "speak",
+        "de": "Meinst du wirklich, dass das eine gute Idee ist, oder bist du einfach nur zu optimistisch?",
+        "en": "Do you really think that is a good idea, or are you just being too optimistic?"
+      },
+      {
+        "type": "speak",
+        "de": "Ach was, das kann doch gar nicht wahr sein, dass er das schon wieder vergessen hat!",
+        "en": "Oh come on, it can't possibly be true that he has forgotten that yet again!"
+      }
+    ]
+  },
+  {
+    "id": "c1-u7-l3",
+    "unit": "c1-u7",
+    "title": "Sentence Stress: Shifting the Focus",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Sentence Stress: The Weight of Information",
+        "body": "In German, sentence stress is less about the melodic pitch shifts used in English and more about the rhythmic 'weight' placed on the Rheme—the new or most important information. While English often uses a rising or falling tone to signal emphasis, German achieves this by increasing the duration and intensity of a specific syllable. To sound native, you must distinguish between the 'Theme' (the known context) and the 'Rheme' (the new news), ensuring the stress falls heavily on the latter to avoid sounding flat or monotonous.",
+        "table": [
+          [
+            "„Das habe ich dir doch schon tausendmal gesagt!“",
+            "I've told you that a thousand times already!"
+          ],
+          [
+            "„Es war ja eigentlich gar nicht so schlimm.“",
+            "It actually wasn't that bad at all."
+          ],
+          [
+            "„Hättest du das bloß früher gewusst!“",
+            "If only you had known that sooner!"
+          ],
+          [
+            "„Das ist ja wohl eine absolute Frechheit!“",
+            "That is quite an absolute cheek!"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "„Eigentlich hätte ich das ja längst erledigen sollen, aber dann kam mir etwas ganz anderes dazwischen.“",
+        "en": "Actually, I should have taken care of that long ago, but then something else entirely came up.",
+        "note": "Stress 'längst' to emphasize the time element, and 'anderes' to emphasize the unexpected nature of the interruption."
+      },
+      {
+        "type": "phrase",
+        "de": "„Das ist ja wohl die absolute Höhe der Unverschämtheit, dass er sich einfach so ungefragt reingestellt hat!“",
+        "en": "That is quite the height of insolence, that he just stepped in without being asked!",
+        "note": "Apply heavy, sustained stress on 'absolute' and 'Unverschämtheit' to convey genuine indignation."
+      },
+      {
+        "type": "choice",
+        "prompt": "If a speaker wants to emphasize that they performed an action *long ago* (rather than just recently) in the sentence: 'Ich habe das doch schon längst erledigt!', where should the primary stress fall?",
+        "options": [
+          "Ich habe das doch schon *längst* erledigt!",
+          "Ich habe *das* doch schon längst erledigt!",
+          "Ich habe das *doch* schon längst erledigt!"
+        ],
+        "answer": 0,
+        "explain": "To emphasize the specific timeframe (the 'new' information), the stress must fall on the adverb 'längst'."
+      },
+      {
+        "type": "choice",
+        "prompt": "In the sentence 'Das ist ja wohl eine absolute Frechheit!', which word would you stress to emphasize the *degree* of the outrage?",
+        "options": [
+          "Das ist *ja* wohl eine absolute Frechheit!",
+          "Das ist ja wohl eine *absolute* Frechheit!",
+          "Das ist ja wohl eine absolute *Frechheit*!"
+        ],
+        "answer": 1,
+        "explain": "Stressing the adjective 'absolute' intensifies the noun and highlights the extreme degree of the insolence."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "„Das ist ja wohl eine absolute Frechheit!“",
+            "That is quite an absolute cheek!"
+          ],
+          [
+            "„Hättest du das bloß gewusst!“",
+            "If only you had known that!"
+          ],
+          [
+            "„Es ist doch alles ganz anders gekommen.“",
+            "Everything turned out quite differently, after all."
+          ],
+          [
+            "„Das habe ich jetzt wirklich nicht so gemeint.“",
+            "I really didn't mean it that way."
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "If you had only let me know sooner, I certainly would have helped you immediately.",
+        "answer": [
+          "Hättest",
+          "du",
+          "mir",
+          "bloß",
+          "früher",
+          "Bescheid",
+          "gesagt,",
+          "dann",
+          "hätte",
+          "ich",
+          "dir",
+          "sicher",
+          "sofort",
+          "geholfen."
+        ],
+        "extra": [
+          "ja",
+          "wohl"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Ich hätte wirklich nicht gedacht, dass das Ganze so eine komplizierte Angelegenheit werden würde.",
+        "en": "I really wouldn't have thought that the whole thing would become such a complicated matter."
+      },
+      {
+        "type": "speak",
+        "de": "Jetzt mach doch nicht so ein unnötiges Theater, nur weil es mal nicht ganz nach deinem Plan gelaufen ist!",
+        "en": "Now don't make such an unnecessary fuss just because things didn't go quite according to your plan!"
+      }
+    ]
+  },
+  {
+    "id": "c1-u8-l1",
+    "unit": "c1-u8",
+    "title": "Softening the Blow: Hedging and Conceding",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "The Art of Nuance: Hedging and Conceding",
+        "body": "In high-level German debates, directness can often be perceived as aggressive or dogmatic. To maintain a sophisticated register, speakers use 'hedging' to qualify their claims and 'conceding' to acknowledge an opponent's valid point without surrendering the overall argument. While English often uses adverbs like 'perhaps,' German relies heavily on specific conjunctional structures like 'zwar... aber' and modal particles to navigate these social nuances.",
+        "table": [
+          [
+            "Das mag zwar stimmen, aber...",
+            "That may be true, but..."
+          ],
+          [
+            "Ich gebe Ihnen recht, dass...",
+            "I grant you that..."
+          ],
+          [
+            "Gewissermaßen",
+            "In a certain sense / So to speak"
+          ],
+          [
+            "Man könnte argumentieren, dass...",
+            "One could argue that..."
+          ],
+          [
+            "Es stimmt durchaus, dass...",
+            "It is certainly true that..."
+          ],
+          [
+            "Zugegeben",
+            "Admittedly"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Zugegeben, Ihr Argument ist durchaus stichhaltig, doch ich befürchte, dass Sie dabei die langfristigen sozioökonomischen Folgen völlig außer Acht lassen.",
+        "en": "Admittedly, your argument is quite valid, but I fear that you are completely disregarding the long-term socio-economic consequences.",
+        "note": "Uses 'doch' instead of 'aber' for a more formal, debating tone."
+      },
+      {
+        "type": "phrase",
+        "de": "Man könnte gewissermaßen sagen, dass die aktuelle Entwicklung zwar riskant ist, aber dennoch eine unverzichtbare Chance für unseren Fortschritt darstellt.",
+        "en": "One could say, in a sense, that the current development is indeed risky, but nevertheless represents an indispensable opportunity for our progress."
+      },
+      {
+        "type": "choice",
+        "prompt": "How do you acknowledge a point before countering it in a formal debate?",
+        "options": [
+          "Das ist falsch, aber...",
+          "Das mag zwar stimmen, aber...",
+          "Das stimmt nicht, weil..."
+        ],
+        "answer": 1,
+        "explain": "'Das mag zwar stimmen, aber...' is the classic concessive structure used to acknowledge a point before introducing a counter-argument."
+      },
+      {
+        "type": "choice",
+        "prompt": "Which term is used to hedge a statement, meaning 'in a certain sense'?",
+        "options": [
+          "gewissermaßen",
+          "unbedingt",
+          "sicherlich"
+        ],
+        "answer": 0,
+        "explain": "'Gewissermaßen' is a sophisticated way to hedge a statement, indicating that the description is not absolute."
+      },
+      {
+        "type": "choice",
+        "prompt": "Choose the most nuanced way to suggest a possibility without sounding too certain.",
+        "options": [
+          "Es ist so.",
+          "Man könnte argumentieren, dass...",
+          "Ich sage, dass..."
+        ],
+        "answer": 1,
+        "explain": "'Man könnte argumentieren, dass...' uses the subjunctive (Konjunktiv II) and an impersonal subject to hedge the claim."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Zugegeben",
+            "Admittedly"
+          ],
+          [
+            "Stichhaltig",
+            "Valid/Sound"
+          ],
+          [
+            "Außer Acht lassen",
+            "To disregard/ignore"
+          ],
+          [
+            "Dennoch",
+            "Nevertheless"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "One must admittedly concede that the costs are high, but the benefit far outweighs them.",
+        "answer": [
+          "Man",
+          "muss",
+          "zwar",
+          "zugeben,",
+          "dass",
+          "die",
+          "Kosten",
+          "hoch",
+          "sind,",
+          "aber",
+          "der",
+          "Nutzen",
+          "überwiegt",
+          "bei",
+          "weitem."
+        ],
+        "extra": [
+          "ist",
+          "könnte"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Es stimmt durchaus, dass die Lage schwierig ist, doch wir dürfen jetzt nicht den Mut verlieren.",
+        "en": "It is certainly true that the situation is difficult, but we must not lose courage now."
+      },
+      {
+        "type": "speak",
+        "de": "Ich gebe Ihnen recht, dass das Risiko besteht, aber wir müssen diese Chance dennoch ergreifen.",
+        "en": "I grant you that the risk exists, but we must nevertheless seize this opportunity."
+      }
+    ]
+  },
+  {
+    "id": "c1-u8-l2",
+    "unit": "c1-u8",
+    "title": "Advanced Concessions: The Art of the Pivot",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Advanced Concessions: The Art of the Pivot",
+        "body": "To master high-level debate, you must move beyond simple disagreement and learn to concede a point gracefully. Using structures like *zwar ... aber* allows you to acknowledge a valid truth before pivoting to your counter-argument. Unlike English, which often uses adverbial starters like \"Admittedly,\" German frequently employs these correlative conjunctions to frame the entire sentence structure. This creates a more sophisticated flow and signals to your opponent that you have understood their premise before you challenge it.",
+        "table": [
+          [
+            "Zwar ..., aber ...",
+            "It is true that ..., but ..."
+          ],
+          [
+            "Wenn auch ...",
+            "Even if / Albeit ..."
+          ],
+          [
+            "Das mag sein, aber ...",
+            "That may be so, but ..."
+          ],
+          [
+            "In gewisser Hinsicht ...",
+            "In a certain respect ..."
+          ],
+          [
+            "Es stimmt zwar, dass ...",
+            "It is true that ..."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich verstehe Ihren Punkt durchaus, aber man sollte nicht außer Acht lassen, dass die langfristigen Folgen weitaus komplexer sein könnten, als es hier dargestellt wird.",
+        "en": "I certainly understand your point, but one should not overlook the fact that the long-term consequences could be far more complex than presented here."
+      },
+      {
+        "type": "phrase",
+        "de": "Es mag zwar stimmen, dass die Kosten steigen, doch die Vorteile für die Gesellschaft überwiegen meiner Meinung nach bei weitem die kurzfristigen finanziellen Belastungen.",
+        "en": "It may indeed be true that costs are rising, but in my opinion, the benefits for society far outweigh the short-term financial burdens."
+      },
+      {
+        "type": "phrase",
+        "de": "Zwar ist das Argument durchaus nachvollziehbar, doch es greift in diesem speziellen Kontext etwas zu kurz, um die gesamte Problematik wirklich zu erfassen.",
+        "en": "While the argument is certainly understandable, it falls a bit short in this specific context to truly grasp the entire problem."
+      },
+      {
+        "type": "choice",
+        "prompt": "Which sentence correctly uses the 'zwar ... aber' structure?",
+        "options": [
+          "Zwar ist die Theorie interessant, aber...",
+          "Zwar die Theorie ist interessant, aber...",
+          "Zwar interessant ist die Theorie, aber..."
+        ],
+        "answer": 0,
+        "explain": "In German, when 'zwar' begins a clause, it occupies the first position, meaning the conjugated verb must follow immediately in the second position (V2 rule)."
+      },
+      {
+        "type": "choice",
+        "prompt": "How do you idiomatically say 'That may be so, but...' to concede a point?",
+        "options": [
+          "Das mag sein, aber...",
+          "Das mag, aber sein...",
+          "Das sein mag, aber..."
+        ],
+        "answer": 0,
+        "explain": "'Das mag sein' is a fixed idiomatic expression where 'mag' is the conjugated verb and 'sein' is the infinitive."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "In gewisser Weise",
+            "In a certain way"
+          ],
+          [
+            "Es kommt darauf an",
+            "It depends"
+          ],
+          [
+            "Ungeachtet dessen",
+            "Regardless of that"
+          ],
+          [
+            "Das ist zwar richtig",
+            "That is indeed correct"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "It is true that the current data is quite thin, but we must act immediately nonetheless.",
+        "answer": [
+          "Es",
+          "stimmt",
+          "zwar,",
+          "dass",
+          "die",
+          "aktuelle",
+          "Datenlage",
+          "recht",
+          "dünn",
+          "ist,",
+          "aber",
+          "wir",
+          "müssen",
+          "dennoch",
+          "sofort",
+          "handeln."
+        ],
+        "extra": [
+          "durchaus",
+          "außer"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Man muss zwar zugeben, dass die Umsetzung schwierig wird.",
+        "en": "One must admit that the implementation will be difficult."
+      },
+      {
+        "type": "speak",
+        "de": "Ich sehe das zwar ähnlich, möchte aber einen wichtigen Aspekt ergänzen.",
+        "en": "I see it similarly, but I would like to add an important aspect."
+      }
+    ]
+  },
+  {
+    "id": "c1-u8-l3",
+    "unit": "c1-u8",
+    "title": "Strategic Ambiguity: Conceding Without Committing",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Strategic Ambiguity: Conceding Without Committing",
+        "body": "To master high-level debate, you must learn to concede a point without surrendering your position. While English speakers often use 'admittedly' or 'granted,' German allows for more strategic ambiguity using structures like 'Mag sein, dass...' or 'Es stimmt zwar...'. By integrating modal particles like 'wohl' or 'ja,' you can signal that you acknowledge a fact while simultaneously preparing a counter-argument. This prevents your concession from sounding like a total agreement, allowing you to maintain intellectual control.",
+        "table": [
+          [
+            "Mag sein, dass...",
+            "It may be that..."
+          ],
+          [
+            "Es stimmt zwar, dass...",
+            "It is true that... (but...)"
+          ],
+          [
+            "Das mag wohl stimmen, doch...",
+            "That might well be true, but..."
+          ],
+          [
+            "Wenn man es so betrachtet...",
+            "If one looks at it that way..."
+          ],
+          [
+            "...zwar..., aber...",
+            "...admittedly..., but..."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Mag sein, dass die Kosten steigen, aber man darf dabei den langfristigen Nutzen keinesfalls außer Acht lassen.",
+        "en": "It may be that costs rise, but one must by no means overlook the long-term benefit."
+      },
+      {
+        "type": "phrase",
+        "de": "Es stimmt zwar, dass die Umsetzung schwierig ist, doch die Vorteile überwiegen die Risiken hier ganz eindeutig.",
+        "en": "It is true that implementation is difficult, but the advantages clearly outweigh the risks here."
+      },
+      {
+        "type": "phrase",
+        "de": "Wenn man es so betrachtet, könnte man argumentieren, dass die bisherigen Maßnahmen zwar hilfreich, aber nicht ausreichend waren.",
+        "en": "If one looks at it that way, one could argue that the previous measures were indeed helpful, but not sufficient.",
+        "note": "Use 'Wenn man es so betrachtet' to signal you are stepping into someone else's perspective before pivoting."
+      },
+      {
+        "type": "choice",
+        "prompt": "Which sentence uses a concession to pivot effectively in a formal debate?",
+        "options": [
+          "Es stimmt, dass das teuer ist, aber wir machen es.",
+          "Mag sein, dass die Kosten steigen, doch der langfristige Nutzen überwiegt diese Investition bei Weitem.",
+          "Es ist teuer, aber es ist gut."
+        ],
+        "answer": 1,
+        "explain": "This option uses the 'Mag sein, dass...' structure combined with a sophisticated contrast ('überwiegt... bei Weitem'), which is appropriate for C1 level debate."
+      },
+      {
+        "type": "choice",
+        "prompt": "In a high-level discussion, how would you use 'wohl' to soften a concession?",
+        "options": [
+          "Das mag wohl stimmen, allerdings müssen wir die Konsequenzen bedenken.",
+          "Das wohl mag stimmen, allerdings müssen wir die Konsequenzen bedenken.",
+          "Das mag stimmen wohl, allerdings müssen wir die Konsequenzen bedenken."
+        ],
+        "answer": 0,
+        "explain": "In German, the modal particle 'wohl' typically follows the conjugated verb in this type of construction, adding a layer of nuance and uncertainty to the concession."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Zwar... aber...",
+            "Admittedly... but..."
+          ],
+          [
+            "Mag sein, dass...",
+            "It may be that..."
+          ],
+          [
+            "Außer Acht lassen",
+            "To overlook"
+          ],
+          [
+            "Die Faktenlage",
+            "The factual situation"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "It may be that the arguments are coherent, but the factual situation is currently still completely unclear.",
+        "answer": [
+          "Mag",
+          "sein,",
+          "dass",
+          "die",
+          "Argumente",
+          "schlüssig",
+          "sind,",
+          "doch",
+          "die",
+          "Faktenlage",
+          "ist",
+          "momentan",
+          "noch",
+          "völlig",
+          "unklar."
+        ],
+        "extra": [
+          "betrachtet",
+          "Kosten"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Es mag zwar stimmen, dass die Zeit drängt, doch wir brauchen eine fundierte Entscheidung.",
+        "en": "It may be true that time is pressing, but we need a well-founded decision."
+      },
+      {
+        "type": "speak",
+        "de": "Wenn man es so betrachtet, ist die aktuelle Strategie zwar mutig, aber auch äußerst riskant.",
+        "en": "If one looks at it that way, the current strategy is indeed bold, but also extremely risky."
+      }
+    ]
+  }
+]

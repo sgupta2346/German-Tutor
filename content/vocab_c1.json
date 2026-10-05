@@ -1,0 +1,1054 @@
+[
+  {
+    "id": "c1-u1-words",
+    "level": "C1",
+    "title": "Modal particles",
+    "titleDe": "Modalpartikeln",
+    "icon": "users",
+    "words": [
+      {
+        "de": "Nuance",
+        "en": "nuance",
+        "pos": "noun",
+        "ex": {
+          "de": "Die feinen Nuancen in der Sprache entscheiden oft darüber, wie eine Aussage beim Gegenüber ankommt.",
+          "en": "The fine nuances in language often determine how a statement is received by the listener."
+        },
+        "gender": "f",
+        "plural": "Nuancen"
+      },
+      {
+        "de": "Ausdruck",
+        "en": "expression",
+        "pos": "noun",
+        "ex": {
+          "de": "Durch den gezielten Einsatz von Modalpartikeln kann man seinen persönlichen Ausdruck erheblich verfeinern.",
+          "en": "Through the targeted use of modal particles, one can significantly refine their personal expression."
+        },
+        "gender": "m",
+        "plural": "Ausdrücke"
+      },
+      {
+        "de": "Betonung",
+        "en": "emphasis/stress",
+        "pos": "noun",
+        "ex": {
+          "de": "Die richtige Betonung der Partikeln ist entscheidend, um die beabsichtigte Nuance im Satz korrekt zu vermitteln.",
+          "en": "The correct emphasis of the particles is crucial to convey the intended nuance in the sentence correctly."
+        },
+        "gender": "f",
+        "plural": "Betonungen"
+      },
+      {
+        "de": "Stimmung",
+        "en": "mood/atmosphere",
+        "pos": "noun",
+        "ex": {
+          "de": "Je nachdem, welche Partikeln man wählt, kann sich die gesamte Stimmung eines Gesprächs schlagartig ändern.",
+          "en": "Depending on which particles one chooses, the entire mood of a conversation can change abruptly."
+        },
+        "gender": "f",
+        "plural": "Stimmungen"
+      },
+      {
+        "de": "Bedeutung",
+        "en": "meaning",
+        "pos": "noun",
+        "ex": {
+          "de": "Manchmal verändern diese kleinen Wörter die Bedeutung eines Satzes nicht direkt, aber sie beeinflussen die Wahrnehmung.",
+          "en": "Sometimes these small words do not change the meaning of a sentence directly, but they influence perception."
+        },
+        "gender": "f",
+        "plural": "Bedeutungen"
+      },
+      {
+        "de": "Kontext",
+        "en": "context",
+        "pos": "noun",
+        "ex": {
+          "de": "Um die feinen Unterschiede zwischen „halt“ und „eben“ zu verstehen, muss man den sozialen Kontext genau betrachten.",
+          "en": "To understand the fine differences between 'halt' and 'eben', one must carefully consider the social context."
+        },
+        "gender": "m",
+        "plural": "Kontexte"
+      },
+      {
+        "de": "Gespräch",
+        "en": "conversation",
+        "pos": "noun",
+        "ex": {
+          "de": "In einem lockeren, privaten Gespräch wirken Modalpartikeln oft wesentlich natürlicher als in einer formellen Situation.",
+          "en": "In a casual, private conversation, modal particles often seem much more natural than in a formal situation."
+        },
+        "gender": "n",
+        "plural": "Gespräche"
+      },
+      {
+        "de": "Gefühl",
+        "en": "feeling",
+        "pos": "noun",
+        "ex": {
+          "de": "Mit dem Wort „doch“ kann man ein Gefühl der Überraschung oder auch der sanften Korrektur ausdrücken.",
+          "en": "With the word 'doch', one can express a feeling of surprise or even a gentle correction."
+        },
+        "gender": "n",
+        "plural": "Gefühle"
+      },
+      {
+        "de": "Einstellung",
+        "en": "attitude",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Verwendung von „ja“ kann die Einstellung des Sprechers zu einer bereits bekannten Tatsache deutlich unterstreichen.",
+          "en": "The use of 'ja' can clearly emphasize the speaker's attitude toward a fact that is already known."
+        },
+        "gender": "f",
+        "plural": "Einstellungen"
+      },
+      {
+        "de": "Überraschung",
+        "en": "surprise",
+        "pos": "noun",
+        "ex": {
+          "de": "Eine plötzliche Überraschung lässt sich im Deutschen oft durch die geschickte Platzierung von Partikeln hervorheben.",
+          "en": "A sudden surprise can often be highlighted in German through the skillful placement of particles."
+        },
+        "gender": "f",
+        "plural": "Überraschungen"
+      },
+      {
+        "de": "Ärger",
+        "en": "annoyance/anger",
+        "pos": "noun",
+        "ex": {
+          "de": "Wenn man leicht genervt ist, kann das Wort „halt“ oft einen unterschwelligen Ärger im Satz signalisieren.",
+          "en": "When one is slightly annoyed, the word 'halt' can often signal an underlying annoyance in the sentence."
+        },
+        "gender": "m"
+      },
+      {
+        "de": "Sprachgebrauch",
+        "en": "language usage",
+        "pos": "noun",
+        "ex": {
+          "de": "Ein fortgeschrittener Sprachgebrauch zeichnet sich dadurch aus, dass man Modalpartikeln intuitiv und ohne Zögern einsetzt.",
+          "en": "Advanced language usage is characterized by the intuitive and unhesitating use of modal particles."
+        },
+        "gender": "m",
+        "plural": "Sprachgebräuche"
+      },
+      {
+        "de": "Redewendung",
+        "en": "idiom/phrase",
+        "pos": "noun",
+        "ex": {
+          "de": "Viele feste Redewendungen enthalten Partikeln, die die emotionale Färbung der gesamten Phrase maßgeblich bestimmen.",
+          "en": "Many fixed idioms contain particles that significantly determine the emotional coloring of the entire phrase."
+        },
+        "gender": "f",
+        "plural": "Redewendungen"
+      },
+      {
+        "de": "ausdrucksstark",
+        "en": "expressive",
+        "pos": "adj",
+        "ex": {
+          "de": "Deutsche Sätze können durch den Einsatz von Modalpartikeln weitaus ausdrucksstarker und lebendiger gestaltet werden.",
+          "en": "German sentences can be made much more expressive and lively through the use of modal particles."
+        }
+      },
+      {
+        "de": "umgangssprachlich",
+        "en": "colloquial",
+        "pos": "adj",
+        "ex": {
+          "de": "Viele dieser kleinen Wörter werden vor allem im umgangssprachlichen Bereich sehr häufig und intensiv verwendet.",
+          "en": "Many of these small words are used very frequently and intensively, especially in colloquial speech."
+        }
+      },
+      {
+        "de": "förmlich",
+        "en": "formal",
+        "pos": "adj",
+        "ex": {
+          "de": "In einem sehr förmlichen geschäftlichen Schreiben sollte man den Einsatz von Modalpartikeln eher vorsichtig abwägen.",
+          "en": "In a very formal business letter, one should weigh the use of modal particles more carefully."
+        }
+      },
+      {
+        "de": "beiläufig",
+        "en": "casual/incidental",
+        "pos": "adj",
+        "ex": {
+          "de": "Er erwähnte die schwierige Entscheidung ganz beiläufig, als ob sie für ihn überhaupt keine große Rolle spielte.",
+          "en": "He mentioned the difficult decision quite casually, as if it didn't matter to him at all."
+        }
+      },
+      {
+        "de": "vermitteln",
+        "en": "to convey",
+        "pos": "verb",
+        "ex": {
+          "de": "Die Hauptaufgabe der Modalpartikeln besteht darin, die subjektive Einstellung des Sprechers an den Zuhörer zu vermitteln.",
+          "en": "The main task of modal particles is to convey the speaker's subjective attitude to the listener."
+        }
+      },
+      {
+        "de": "unterstreichen",
+        "en": "to emphasize/underline",
+        "pos": "verb",
+        "ex": {
+          "de": "Die Partikel „ja“ dient oft dazu, eine Information zu unterstreichen, die dem Gesprächspartner bereits bekannt ist.",
+          "en": "The particle 'ja' often serves to emphasize information that is already known to the conversation partner."
+        }
+      },
+      {
+        "de": "verdeutlichen",
+        "en": "to clarify/make clear",
+        "pos": "verb",
+        "ex": {
+          "de": "Es ist oft schwierig, die genaue Funktion dieser Wörter zu verdeutlichen, da sie rein emotional wirken.",
+          "en": "It is often difficult to clarify the exact function of these words, as they act purely emotionally."
+        }
+      }
+    ]
+  },
+  {
+    "id": "c1-u2-words",
+    "level": "C1",
+    "title": "Idioms",
+    "titleDe": "Redewendungen",
+    "icon": "coffee",
+    "words": [
+      {
+        "de": "Redewendung",
+        "en": "idiom",
+        "pos": "noun",
+        "ex": {
+          "de": "Wenn man eine Redewendung falsch verwendet, kann das im falschen Kontext schnell zu einem peinlichen Missverständnis führen.",
+          "en": "If you use an idiom incorrectly, it can quickly lead to an embarrassing misunderstanding in the wrong context."
+        },
+        "gender": "f",
+        "plural": "Redewendungen"
+      },
+      {
+        "de": "Ausdruck",
+        "en": "expression",
+        "pos": "noun",
+        "ex": {
+          "de": "Dieser spezielle Ausdruck klingt zwar etwas förmlich, passt aber eigentlich ganz hervorragend in unser heutiges Gespräch.",
+          "en": "This specific expression sounds a bit formal, but it actually fits our conversation today quite perfectly."
+        },
+        "gender": "m",
+        "plural": "Ausdrücke"
+      },
+      {
+        "de": "Bedeutung",
+        "en": "meaning",
+        "pos": "noun",
+        "ex": {
+          "de": "Es ist oft gar nicht so einfach, die genaue Bedeutung hinter einer so tief verwurzelten Redensart zu erfassen.",
+          "en": "It is often not that easy to grasp the exact meaning behind such a deeply rooted saying."
+        },
+        "gender": "f",
+        "plural": "Bedeutungen"
+      },
+      {
+        "de": "Zusammenhang",
+        "en": "context",
+        "pos": "noun",
+        "ex": {
+          "de": "Man sollte die Wendung unbedingt im richtigen Zusammenhang gebrauchen, damit die Botschaft nicht völlig missverstanden wird.",
+          "en": "One should definitely use the phrase in the right context so that the message is not completely misunderstood."
+        },
+        "gender": "m",
+        "plural": "Zusammenhänge"
+      },
+      {
+        "de": "Nuance",
+        "en": "nuance",
+        "pos": "noun",
+        "ex": {
+          "de": "In der deutschen Sprache macht jede kleine Nuance einen gewaltigen Unterschied in der Gesamtwirkung eines Satzes aus.",
+          "en": "In the German language, every tiny nuance makes a massive difference in the overall impact of a sentence."
+        },
+        "gender": "f",
+        "plural": "Nuancen"
+      },
+      {
+        "de": "Metapher",
+        "en": "metaphor",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Metapher, die er hier verwendet hat, verdeutlicht die komplizierte Lage eigentlich auf eine sehr eindrucksvolle Weise.",
+          "en": "The metaphor he used here actually clarifies the complicated situation in a very impressive way."
+        },
+        "gender": "f",
+        "plural": "Metaphern"
+      },
+      {
+        "de": "Sprachgebrauch",
+        "en": "language usage",
+        "pos": "noun",
+        "ex": {
+          "de": "Ein gehobener Sprachgebrauch ist zwar wichtig, aber man sollte dabei nicht den Bezug zur Realität verlieren.",
+          "en": "An elevated use of language is certainly important, but one shouldn't lose touch with reality in the process."
+        },
+        "gender": "m",
+        "plural": "Sprachgebräuche"
+      },
+      {
+        "de": "Umgangssprache",
+        "en": "colloquialism",
+        "pos": "noun",
+        "ex": {
+          "de": "In der Umgangssprache werden viele feste Wendungen genutzt, die man in einem offiziellen Brief eher vermeiden sollte.",
+          "en": "Many fixed phrases are used in colloquial speech that one should rather avoid in an official letter."
+        },
+        "gender": "f",
+        "plural": "Umgangssprachen"
+      },
+      {
+        "de": "bildhaft",
+        "en": "figurative",
+        "pos": "adj",
+        "ex": {
+          "de": "Er beschreibt die Situation sehr bildhaft, was es dem Zuhörer tatsächlich erleichtert, die ganze Geschichte nachzuvollziehen.",
+          "en": "He describes the situation very figuratively, which actually makes it easier for the listener to follow the whole story."
+        }
+      },
+      {
+        "de": "fest",
+        "en": "fixed",
+        "pos": "adj",
+        "ex": {
+          "de": "Es handelt sich hierbei um eine feste Wendung, die man so nicht einfach durch andere Wörter ersetzen kann.",
+          "en": "This is a fixed expression that cannot simply be replaced by other words."
+        }
+      },
+      {
+        "de": "übertreiben",
+        "en": "to exaggerate",
+        "pos": "verb",
+        "ex": {
+          "de": "Manchmal neigen wir dazu, die Dinge etwas maßlos zu übertreiben, wenn wir eine besonders dramatische Geschichte erzählen wollen.",
+          "en": "Sometimes we tend to exaggerate things excessively when we want to tell a particularly dramatic story."
+        }
+      },
+      {
+        "de": "umschreiben",
+        "en": "to paraphrase",
+        "pos": "verb",
+        "ex": {
+          "de": "Wenn mir das passende Wort nicht einfällt, versuche ich meistens, den Sachverhalt einfach etwas ausführlicher zu umschreiben.",
+          "en": "When I can't think of the right word, I usually try to simply paraphrase the matter in more detail."
+        }
+      },
+      {
+        "de": "verstehen",
+        "en": "to understand",
+        "pos": "verb",
+        "ex": {
+          "de": "Es ist gar nicht so leicht, den tieferen Sinn hinter dieser alten Redensart sofort intuitiv zu verstehen.",
+          "en": "It is not at all easy to immediately understand the deeper meaning behind this old saying intuitively."
+        }
+      },
+      {
+        "de": "vermitteln",
+        "en": "to convey",
+        "pos": "verb",
+        "ex": {
+          "de": "Durch die geschickte Wahl der Worte kann man eine ganz bestimmte Stimmung im Gespräch sehr effektiv vermitteln.",
+          "en": "Through the skillful choice of words, one can convey a very specific mood in a conversation quite effectively."
+        }
+      },
+      {
+        "de": "verwenden",
+        "en": "to use",
+        "pos": "verb",
+        "ex": {
+          "de": "Man sollte diese Wendung nur sehr vorsichtig verwenden, da sie in manchen Kreisen als etwas unhöflich gelten könnte.",
+          "en": "One should use this phrase very carefully, as it could be considered somewhat impolite in certain circles."
+        }
+      },
+      {
+        "de": "beziehen",
+        "en": "to refer",
+        "pos": "verb",
+        "ex": {
+          "de": "Auf wen genau bezieht sich diese Redewendung eigentlich, wenn man den aktuellen politischen Kontext einmal kurz betrachtet?",
+          "en": "Who exactly does this idiom refer to, if one briefly considers the current political context?"
+        }
+      },
+      {
+        "de": "deutlich",
+        "en": "clear",
+        "pos": "adj",
+        "ex": {
+          "de": "Es wurde deutlich, dass er die Nuancen der Sprache noch nicht ganz so sicher beherrscht, wie er vorgibt.",
+          "en": "It became clear that he does not master the nuances of the language as confidently as he pretends."
+        }
+      },
+      {
+        "de": "vielschichtig",
+        "en": "multilayered",
+        "pos": "adj",
+        "ex": {
+          "de": "Die Bedeutung dieses Begriffs ist extrem vielschichtig und lässt sich nicht mit einem einzigen Wort präzise erklären.",
+          "en": "The meaning of this term is extremely multilayered and cannot be explained precisely with a single word."
+        }
+      },
+      {
+        "de": "übertragend",
+        "en": "metaphorical",
+        "pos": "adj",
+        "ex": {
+          "de": "Man darf diesen Satz nicht wörtlich nehmen, sondern muss ihn eher im übertragenen Sinne als Kritik verstehen.",
+          "en": "One must not take this sentence literally, but rather understand it in a metaphorical sense as criticism."
+        }
+      },
+      {
+        "de": "Sprachgefühl",
+        "en": "linguistic intuition",
+        "pos": "noun",
+        "ex": {
+          "de": "Ein gutes Sprachgefühl hilft einem dabei, die feinen Unterschiede zwischen verschiedenen Synonymen im Alltag richtig zu erkennen.",
+          "en": "A good linguistic intuition helps one to correctly recognize the fine differences between various synonyms in everyday life."
+        },
+        "gender": "n",
+        "plural": "Sprachgefühle"
+      }
+    ]
+  },
+  {
+    "id": "c1-u4-words",
+    "level": "C1",
+    "title": "Rhetoric",
+    "titleDe": "Rhetorik",
+    "icon": "clock",
+    "words": [
+      {
+        "de": "Überzeugungskraft",
+        "en": "persuasiveness",
+        "pos": "noun",
+        "ex": {
+          "de": "Es kommt ja nicht nur auf die reinen Fakten an, sondern vor allem auf die Überzeugungskraft, mit der man diese präsentiert.",
+          "en": "It is not just about the raw facts, but above all about the persuasiveness with which one presents them."
+        },
+        "gender": "f",
+        "plural": "Überzeugungskräfte"
+      },
+      {
+        "de": "Stilmittel",
+        "en": "rhetorical device",
+        "pos": "noun",
+        "ex": {
+          "de": "Man sollte verschiedene Stilmittel nutzen, um die rhetorische Wirkung der Rede nicht bloß zu unterstützen, sondern erst richtig zur Geltung zu bringen.",
+          "en": "One should use various rhetorical devices not just to support the rhetorical effect of the speech, but to truly bring it to fruition."
+        },
+        "gender": "n",
+        "plural": "Stilmittel"
+      },
+      {
+        "de": "hervorheben",
+        "en": "to highlight",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich möchte an dieser Stelle noch einmal hervorheben, dass wir eigentlich gar keine andere Wahl haben, als jetzt sofort zu handeln.",
+          "en": "I would like to emphasize once again at this point that we actually have no other choice but to act immediately."
+        }
+      },
+      {
+        "de": "eindringlich",
+        "en": "emphatic / urgent",
+        "pos": "adj",
+        "ex": {
+          "de": "Er sprach so eindringlich zu dem Publikum, dass man die Ernsthaftigkeit der Lage förmlich im Raum spüren konnte.",
+          "en": "He spoke so emphatically to the audience that one could virtually feel the seriousness of the situation in the room."
+        }
+      },
+      {
+        "de": "appellieren",
+        "en": "to appeal",
+        "pos": "verb",
+        "ex": {
+          "de": "Man muss hierbei unbedingt an das Verantwortungsbewusstsein der Zuhörer appellieren, um eine echte Veränderung überhaupt erst in Gang zu setzen.",
+          "en": "One must absolutely appeal to the listeners' sense of responsibility in order to set a real change in motion in the first place."
+        }
+      },
+      {
+        "de": "Pointierung",
+        "en": "emphasis / sharpening a point",
+        "pos": "noun",
+        "ex": {
+          "de": "Durch eine gezielte Pointierung am Ende des Arguments kann man die Aufmerksamkeit der Zuhörer noch einmal so richtig einfangen.",
+          "en": "Through a targeted emphasis at the end of the argument, one can really capture the audience's attention once more."
+        },
+        "gender": "f",
+        "plural": "Pointierungen"
+      },
+      {
+        "de": "Spannungsbogen",
+        "en": "arc of tension",
+        "pos": "noun",
+        "ex": {
+          "de": "Ein guter Redner muss unbedingt einen Spannungsbogen aufbauen, damit das Publikum von der ersten bis zur letzten Sekunde bei der Stange bleibt.",
+          "en": "A good speaker must absolutely build an arc of tension so that the audience stays with them from the first to the last second."
+        },
+        "gender": "m",
+        "plural": "Spannungsbögen"
+      },
+      {
+        "de": "darlegen",
+        "en": "to present / to explain",
+        "pos": "verb",
+        "ex": {
+          "de": "Lassen Sie mich kurz darlegen, warum es eigentlich unumgänglich ist, dass wir unsere Strategie in diesem Punkt grundlegend ändern.",
+          "en": "Let me briefly explain why it is actually unavoidable that we fundamentally change our strategy on this point."
+        }
+      },
+      {
+        "de": "gewandt",
+        "en": "eloquent / deft",
+        "pos": "adj",
+        "ex": {
+          "de": "Sie trat rhetorisch so gewandt auf, dass es den Zuhörern gar nicht möglich war, ihr Argument auch nur im Geringsten zu bezweifeln.",
+          "en": "She presented herself so rhetorically eloquently that it was not at all possible for the listeners to doubt her argument in the slightest."
+        }
+      },
+      {
+        "de": "Beweisführung",
+        "en": "reasoning / proof",
+        "pos": "noun",
+        "ex": {
+          "de": "Die logische Beweisführung war zwar schlüssig, doch es fehlte der Rede letztlich die nötige emotionale Tiefe, um wirklich zu berühren.",
+          "en": "The logical reasoning was indeed coherent, but the speech ultimately lacked the necessary emotional depth to truly touch people."
+        },
+        "gender": "f",
+        "plural": "Beweisführungen"
+      },
+      {
+        "de": "überzeugend",
+        "en": "persuasive",
+        "pos": "adj",
+        "ex": {
+          "de": "Seine Argumente waren zwar theoretisch korrekt, aber er konnte sie leider nicht so überzeugend präsentieren, wie er es eigentlich wollte.",
+          "en": "His arguments were theoretically correct, but unfortunately, he couldn't present them as persuasively as he actually wanted to."
+        }
+      },
+      {
+        "de": "rhetorische Frage",
+        "en": "rhetorical question",
+        "pos": "noun",
+        "ex": {
+          "de": "Anstatt nur Fakten aufzuzählen, sollte man eine rhetorische Frage einbauen, um das Publikum direkt und auf subtile Weise einzubinden.",
+          "en": "Instead of just listing facts, one should include a rhetorical question to engage the audience directly and in a subtle way."
+        },
+        "gender": "f",
+        "plural": "rhetorische Fragen"
+      },
+      {
+        "de": "Wortwahl",
+        "en": "word choice",
+        "pos": "noun",
+        "ex": {
+          "de": "Die präzise Wortwahl ist entscheidend, wenn man die Zuhörer nicht nur informieren, sondern sie emotional wirklich erreichen möchte.",
+          "en": "Precise word choice is crucial if one wants to not only inform the listeners but also truly reach them emotionally."
+        },
+        "gender": "f",
+        "plural": "Wortwahlen"
+      },
+      {
+        "de": "Redemittel",
+        "en": "phrases / rhetorical tools",
+        "pos": "noun",
+        "ex": {
+          "de": "Es hilft enorm, sich vorab ein paar rhetorische Redemittel zurechtzulegen, damit man in der Hitze des Gefechts nicht den Faden verliert.",
+          "en": "It helps enormously to prepare a few rhetorical phrases in advance so that you don't lose your train of thought in the heat of the moment."
+        },
+        "gender": "f",
+        "plural": "Redemittel"
+      },
+      {
+        "de": "unterstreichen",
+        "en": "to underline / to emphasize",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich möchte noch einmal unterstreichen, dass es eben nicht nur um Geld geht, sondern um unsere gemeinsame Zukunft.",
+          "en": "I would like to emphasize once again that it is not just about money, but about our shared future."
+        }
+      },
+      {
+        "de": "rhetorisch versiert",
+        "en": "rhetorically skilled",
+        "pos": "adj",
+        "ex": {
+          "de": "Wer rhetorisch versiert ist, weiß genau, wann er eine Pause machen muss, um die Wirkung seiner Worte zu maximieren.",
+          "en": "Anyone who is rhetorically skilled knows exactly when they must pause to maximize the impact of their words."
+        }
+      },
+      {
+        "de": "Überzeugungsarbeit",
+        "en": "persuasion work",
+        "pos": "noun",
+        "ex": {
+          "de": "Hinter jedem erfolgreichen Projekt steckt meistens eine Menge Überzeugungsarbeit, die man im Hintergrund leisten muss, bevor man überhaupt auf die Bühne tritt.",
+          "en": "Behind every successful project, there is usually a lot of persuasion work that one has to do in the background before even stepping onto the stage."
+        },
+        "gender": "f",
+        "plural": "Überzeugungsarbeiten"
+      },
+      {
+        "de": "Wirkung",
+        "en": "effect / impact",
+        "pos": "noun",
+        "ex": {
+          "de": "Die rhetorische Wirkung der Rede war so enorm, dass die gesamte Versammlung am Ende geschlossen für den Vorschlag stimmte.",
+          "en": "The rhetorical impact of the speech was so enormous that the entire assembly eventually voted unanimously for the proposal."
+        },
+        "gender": "f",
+        "plural": "Wirkungen"
+      },
+      {
+        "de": "Nuance",
+        "en": "nuance",
+        "pos": "noun",
+        "ex": {
+          "de": "In der Rhetorik kommt es oft auf die kleinste Nuance an, um die beabsichtigte Botschaft präzise zu vermitteln.",
+          "en": "In rhetoric, it is often the smallest nuance that matters in order to convey the intended message precisely."
+        },
+        "gender": "f",
+        "plural": "Nuancen"
+      },
+      {
+        "de": "Argumentation",
+        "en": "argumentation",
+        "pos": "noun",
+        "ex": {
+          "de": "Eine schlüssige Argumentation ist das Fundament jeder guten Rede, denn ohne Logik bleibt selbst die beste Rhetorik wirkungslos.",
+          "en": "A coherent argumentation is the foundation of every good speech, because without logic, even the best rhetoric remains ineffective."
+        },
+        "gender": "f",
+        "plural": "Argumentationen"
+      }
+    ]
+  },
+  {
+    "id": "c1-u7-words",
+    "level": "C1",
+    "title": "Intonation and rhythm",
+    "titleDe": "Intonation und Rhythmus",
+    "icon": "zap",
+    "words": [
+      {
+        "de": "Betonung",
+        "en": "emphasis/stress",
+        "pos": "noun",
+        "ex": {
+          "de": "Es kommt ja nicht nur auf die Wörter an, sondern vor allem auf die richtige Betonung, um den Sinn zu verdeutlichen.",
+          "en": "It's not just about the words, but above all about the correct emphasis to clarify the meaning."
+        },
+        "gender": "f",
+        "plural": "Betonungen"
+      },
+      {
+        "de": "Satzakzent",
+        "en": "sentence stress",
+        "pos": "noun",
+        "ex": {
+          "de": "Wenn man den Satzakzent falsch setzt, kann sich die gesamte Bedeutung des Satzes leider völlig unvorhersehbar verändern.",
+          "en": "If you place the sentence stress incorrectly, the entire meaning of the sentence can unfortunately change quite unpredictably."
+        },
+        "gender": "m",
+        "plural": "Satzakzente"
+      },
+      {
+        "de": "Sprachmelodie",
+        "en": "speech melody/intonation",
+        "pos": "noun",
+        "ex": {
+          "de": "Eine lebendige Sprachmelodie hilft dabei, dass der Zuhörer den emotionalen Unterton deiner Aussage auch wirklich richtig versteht.",
+          "en": "A lively speech melody helps ensure that the listener truly understands the emotional undertone of your statement."
+        },
+        "gender": "f",
+        "plural": "Sprachmelodien"
+      },
+      {
+        "de": "Sprechtempo",
+        "en": "speaking pace",
+        "pos": "noun",
+        "ex": {
+          "de": "Man sollte sein Sprechtempo gelegentlich variieren, damit die Zuhörer nicht nach einer Weile den Faden verlieren.",
+          "en": "One should occasionally vary their speaking pace so that the listeners don't lose the thread after a while."
+        },
+        "gender": "n",
+        "plural": "Sprechtempi"
+      },
+      {
+        "de": "Ausdruckskraft",
+        "en": "expressiveness",
+        "pos": "noun",
+        "ex": {
+          "de": "Durch eine gezielte Modulation der Stimme gewinnt deine Rede eine ganz neue, beeindruckende Ausdruckskraft, das ist sicher.",
+          "en": "Through intentional modulation of the voice, your speech gains a completely new, impressive expressiveness, that is for sure."
+        },
+        "gender": "f",
+        "plural": "Ausdruckskräfte"
+      },
+      {
+        "de": "Nuance",
+        "en": "nuance",
+        "pos": "noun",
+        "ex": {
+          "de": "In der gehobenen Konversation spielen kleinste Nuancen in der Intonation eine entscheidende Rolle für die soziale Etikette.",
+          "en": "In sophisticated conversation, the smallest nuances in intonation play a decisive role in social etiquette."
+        },
+        "gender": "f",
+        "plural": "Nuancen"
+      },
+      {
+        "de": "Sprachgefühl",
+        "en": "linguistic intuition",
+        "pos": "noun",
+        "ex": {
+          "de": "Mit der Zeit entwickelt man hoffentlich ein feines Sprachgefühl dafür, wann eine Pause besonders wirkungsvoll eingesetzt werden sollte.",
+          "en": "With time, one hopefully develops a fine linguistic intuition for when a pause should be used particularly effectively."
+        },
+        "gender": "n",
+        "plural": "Sprachgefühle"
+      },
+      {
+        "de": "Tonfall",
+        "en": "tone of voice",
+        "pos": "noun",
+        "ex": {
+          "de": "Sei vorsichtig mit deinem Tonfall, denn er könnte sonst ungewollt herablassend oder gar etwas zu forsch wirken.",
+          "en": "Be careful with your tone of voice, as it could otherwise unintentionally sound condescending or even a bit too abrupt."
+        },
+        "gender": "m",
+        "plural": "Tonfälle"
+      },
+      {
+        "de": "Pause",
+        "en": "pause",
+        "pos": "noun",
+        "ex": {
+          "de": "Eine wohlgesetzte Pause kann die Spannung im Raum enorm steigern, bevor man schließlich die wichtigste Information preisgibt.",
+          "en": "A well-placed pause can enormously increase the tension in the room before one finally reveals the most important information."
+        },
+        "gender": "f",
+        "plural": "Pausen"
+      },
+      {
+        "de": "Artikulation",
+        "en": "articulation",
+        "pos": "noun",
+        "ex": {
+          "de": "Trotz eines schnellen Sprechtempos ist eine klare Artikulation unerlässlich, damit man dich in einer lauten Umgebung versteht.",
+          "en": "Despite a fast speaking pace, clear articulation is essential so that people can understand you in a noisy environment."
+        },
+        "gender": "f",
+        "plural": "Artikulationen"
+      },
+      {
+        "de": "betonen",
+        "en": "to emphasize",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich möchte an dieser Stelle noch einmal besonders betonen, dass wir diese Entscheidung keinesfalls überstürzt treffen sollten.",
+          "en": "I would like to emphasize once again at this point that we should by no means make this decision in a rush."
+        }
+      },
+      {
+        "de": "modulieren",
+        "en": "to modulate",
+        "pos": "verb",
+        "ex": {
+          "de": "Wer seine Stimme geschickt modulieren kann, wirkt in einer Präsentation wesentlich souveräner und weitaus interessanter auf das Publikum.",
+          "en": "Whoever can skillfully modulate their voice appears much more confident and far more interesting to the audience during a presentation."
+        }
+      },
+      {
+        "de": "klingen",
+        "en": "to sound",
+        "pos": "verb",
+        "ex": {
+          "de": "Es klingt zwar etwas seltsam, aber die Art, wie man etwas sagt, ist oft wichtiger als der Inhalt.",
+          "en": "It might sound a bit strange, but the way one says something is often more important than the content."
+        }
+      },
+      {
+        "de": "fließen",
+        "en": "to flow",
+        "pos": "verb",
+        "ex": {
+          "de": "Wenn die Sätze natürlich ineinander fließen, wirkt die gesamte Argumentation wesentlich überzeugender und weniger wie auswendig gelernt.",
+          "en": "When sentences flow naturally into one another, the entire argument seems much more convincing and less like it was memorized."
+        }
+      },
+      {
+        "de": "pausieren",
+        "en": "to pause",
+        "pos": "verb",
+        "ex": {
+          "de": "Es ist durchaus ratsam, nach einem komplexen Gedanken kurz zu pausieren, um den Zuhörern Zeit zum Nachdenken zu geben.",
+          "en": "It is quite advisable to pause briefly after a complex thought to give the listeners time to reflect."
+        }
+      },
+      {
+        "de": "monoton",
+        "en": "monotonous",
+        "pos": "adj",
+        "ex": {
+          "de": "Ein monotoner Vortrag ist leider der sicherste Weg, um das Interesse des Publikums innerhalb weniger Minuten zu verlieren.",
+          "en": "A monotonous presentation is unfortunately the surest way to lose the audience's interest within a few minutes."
+        }
+      },
+      {
+        "de": "flüssig",
+        "en": "fluent/smooth",
+        "pos": "adj",
+        "ex": {
+          "de": "Obwohl er noch nicht perfekt ist, spricht er schon erstaunlich flüssig, was ihn sehr sympathisch wirken lässt.",
+          "en": "Although he is not perfect yet, he already speaks surprisingly fluently, which makes him come across as very likable."
+        }
+      },
+      {
+        "de": "ausdrucksstark",
+        "en": "expressive",
+        "pos": "adj",
+        "ex": {
+          "de": "Deine Mimik und deine ausdrucksstarke Stimme ergänzen sich hervorragend, was deine Botschaft besonders lebendig macht.",
+          "en": "Your facial expressions and your expressive voice complement each other perfectly, making your message particularly lively."
+        }
+      },
+      {
+        "de": "natürlich",
+        "en": "natural",
+        "pos": "adj",
+        "ex": {
+          "de": "Es wirkt oft etwas hölzern, wenn man versucht, zu künstlich zu klingen, anstatt einfach ganz natürlich zu sprechen.",
+          "en": "It often sounds a bit wooden when one tries to sound too artificial instead of just speaking quite naturally."
+        }
+      },
+      {
+        "de": "nuanciert",
+        "en": "nuanced",
+        "pos": "adj",
+        "ex": {
+          "de": "Eine nuancierte Ausdrucksweise zeugt von einer hohen sprachlichen Kompetenz und einem tiefen Verständnis für die feinen Unterschiede.",
+          "en": "A nuanced way of expressing oneself testifies to a high level of linguistic competence and a deep understanding of fine distinctions."
+        }
+      }
+    ]
+  },
+  {
+    "id": "c1-u8-words",
+    "level": "C1",
+    "title": "Debate",
+    "titleDe": "Debatte",
+    "icon": "palette",
+    "words": [
+      {
+        "de": "Argument",
+        "en": "argument",
+        "pos": "noun",
+        "ex": {
+          "de": "Ein stichhaltiges Argument ist die Basis für jede sachliche Diskussion, auch wenn man sich nicht einig ist.",
+          "en": "A compelling argument is the basis for any factual discussion, even if one does not agree."
+        },
+        "gender": "n",
+        "plural": "Argumente"
+      },
+      {
+        "de": "Gegenargument",
+        "en": "counterargument",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich verstehe Ihren Punkt, aber man muss auch das entscheidende Gegenargument berücksichtigen, um ein vollständiges Bild zu erhalten.",
+          "en": "I understand your point, but one must also consider the decisive counterargument to get a complete picture."
+        },
+        "gender": "n",
+        "plural": "Gegenargumente"
+      },
+      {
+        "de": "Einwand",
+        "en": "objection",
+        "pos": "noun",
+        "ex": {
+          "de": "Darf ich dazu kurz einen Einwand erheben, da dieser Punkt meiner Meinung nach etwas zu kurz gegriffen ist?",
+          "en": "May I briefly raise an objection, as this point, in my opinion, is somewhat oversimplified?"
+        },
+        "gender": "m",
+        "plural": "Einwände"
+      },
+      {
+        "de": "Zustimmung",
+        "en": "agreement/approval",
+        "pos": "noun",
+        "ex": {
+          "de": "Trotz meiner grundsätzlichen Zustimmung habe ich gewisse Bedenken hinsichtlich der praktischen Umsetzung dieses Vorschlags.",
+          "en": "Despite my fundamental agreement, I have certain reservations regarding the practical implementation of this proposal."
+        },
+        "gender": "f",
+        "plural": "Zustimmungen"
+      },
+      {
+        "de": "Widerspruch",
+        "en": "contradiction",
+        "pos": "noun",
+        "ex": {
+          "de": "Es liegt mir fern, Ihnen direkt zu widersprechen, aber die vorliegenden Daten scheinen der Theorie doch zu widersprechen.",
+          "en": "It is not my intention to contradict you directly, but the available data does seem to contradict the theory."
+        },
+        "gender": "m",
+        "plural": "Widersprüche"
+      },
+      {
+        "de": "Standpunkt",
+        "en": "standpoint/point of view",
+        "pos": "noun",
+        "ex": {
+          "de": "Wir sollten versuchen, den Standpunkt der Gegenseite besser zu verstehen, anstatt ihn nur sofort abzutun.",
+          "en": "We should try to understand the opposing side's standpoint better, instead of just dismissing it immediately."
+        },
+        "gender": "m",
+        "plural": "Standpunkte"
+      },
+      {
+        "de": "Schlussfolgerung",
+        "en": "conclusion",
+        "pos": "noun",
+        "ex": {
+          "de": "Aus den bisherigen Argumenten lässt sich die Schlussfolgerung ziehen, dass wir dringend nach Alternativen suchen müssen.",
+          "en": "From the arguments presented so far, one can draw the conclusion that we urgently need to look for alternatives."
+        },
+        "gender": "f",
+        "plural": "Schlussfolgerungen"
+      },
+      {
+        "de": "Kompromiss",
+        "en": "compromise",
+        "pos": "noun",
+        "ex": {
+          "de": "In einer hitzigen Debatte ist es oft schwierig, einen Kompromiss zu finden, der alle Beteiligten wirklich zufriedenstellt.",
+          "en": "In a heated debate, it is often difficult to find a compromise that truly satisfies all parties involved."
+        },
+        "gender": "m",
+        "plural": "Kompromisse"
+      },
+      {
+        "de": "Vorbehalt",
+        "en": "reservation/doubt",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich sehe das Ganze mit einer gewissen Skepsis und habe diesbezüglich noch einige Vorbehalte, die wir klären sollten.",
+          "en": "I view the whole thing with a certain amount of skepticism and still have some reservations in this regard that we should clarify."
+        },
+        "gender": "m",
+        "plural": "Vorbehalte"
+      },
+      {
+        "de": "Nuance",
+        "en": "nuance",
+        "pos": "noun",
+        "ex": {
+          "de": "In dieser Diskussion geht es um feine Nuancen, die darüber entscheiden können, ob ein Plan tatsächlich funktioniert oder nicht.",
+          "en": "In this discussion, it is about fine nuances that can decide whether a plan actually works or not."
+        },
+        "gender": "f",
+        "plural": "Nuancen"
+      },
+      {
+        "de": "einräumen",
+        "en": "to admit/concede",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich muss Ihnen in diesem Punkt leider recht geben und einräumen, dass meine Einschätzung hier etwas zu optimistisch war.",
+          "en": "I unfortunately have to agree with you on this point and admit that my assessment here was a bit too optimistic."
+        }
+      },
+      {
+        "de": "entkräften",
+        "en": "to debunk/refute",
+        "pos": "verb",
+        "ex": {
+          "de": "Es ist nicht ganz einfach, dieses Argument zu entkräften, da es auf sehr soliden Fakten und Studien basiert.",
+          "en": "It is not quite easy to debunk this argument, as it is based on very solid facts and studies."
+        }
+      },
+      {
+        "de": "abwägen",
+        "en": "to weigh up",
+        "pos": "verb",
+        "ex": {
+          "de": "Man muss die Vor- und Nachteile sorgfältig gegeneinander abwägen, bevor man eine endgültige Entscheidung in dieser Sache trifft.",
+          "en": "One must carefully weigh the pros and cons against each other before making a final decision in this matter."
+        }
+      },
+      {
+        "de": "anführen",
+        "en": "to cite/bring forward",
+        "pos": "verb",
+        "ex": {
+          "de": "Sie haben da einen sehr wichtigen Punkt angeführt, den wir in unserer bisherigen Planung tatsächlich völlig vernachlässigt haben.",
+          "en": "You have raised a very important point that we have actually completely neglected in our previous planning."
+        }
+      },
+      {
+        "de": "bezweifeln",
+        "en": "to doubt",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich möchte Ihre Kompetenz nicht infrage stellen, aber ich bezweifle doch sehr, dass diese Lösung langfristig tragfähig ist.",
+          "en": "I do not want to question your competence, but I do greatly doubt that this solution is sustainable in the long run."
+        }
+      },
+      {
+        "de": "stichhaltig",
+        "en": "compelling/sound",
+        "pos": "adj",
+        "ex": {
+          "de": "Ohne ein wirklich stichhaltiges Argument wird es schwer sein, die Entscheidungsgewalt in dieser Angelegenheit tatsächlich zu beeinflussen.",
+          "en": "Without a truly compelling argument, it will be difficult to actually influence the decision-making power in this matter."
+        }
+      },
+      {
+        "de": "nachvollziehbar",
+        "en": "understandable/comprehensible",
+        "pos": "adj",
+        "ex": {
+          "de": "Ihre Argumentation ist zwar durchaus nachvollziehbar, dennoch halte ich die vorgeschlagenen Maßnahmen für etwas zu drastisch.",
+          "en": "Your reasoning is certainly understandable, yet I consider the proposed measures to be somewhat too drastic."
+        }
+      },
+      {
+        "de": "plausibel",
+        "en": "plausible",
+        "pos": "adj",
+        "ex": {
+          "de": "Es klingt zwar auf den ersten Blick plausibel, aber bei genauerer Betrachtung ergeben sich doch erhebliche logische Lücken.",
+          "en": "It sounds plausible at first glance, but upon closer inspection, significant logical gaps do emerge."
+        }
+      },
+      {
+        "de": "unumstritten",
+        "en": "indisputable/uncontroversial",
+        "pos": "adj",
+        "ex": {
+          "de": "Es ist zwar unumstritten, dass wir handeln müssen, aber die Frage ist eben, auf welche Weise wir das tun.",
+          "en": "It is indeed indisputable that we must act, but the question is simply how we go about doing it."
+        }
+      },
+      {
+        "de": "kontern",
+        "en": "to counter",
+        "pos": "verb",
+        "ex": {
+          "de": "Wenn man auf so eine aggressive Art kontert, führt das meistens nur dazu, dass die sachliche Ebene der Debatte verloren geht.",
+          "en": "When you counter in such an aggressive manner, it usually only leads to the factual level of the debate being lost."
+        }
+      }
+    ]
+  }
+]

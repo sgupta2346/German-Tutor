@@ -1,0 +1,2785 @@
+[
+  {
+    "id": "b1-u1-l1",
+    "unit": "b1-u1",
+    "title": "Although vs. Nevertheless: Mastering Concessions",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Obwohl vs. Trotzdem",
+        "body": "To express a contrast, German uses *obwohl* and *trotzdem*, but they change the sentence structure differently. *Obwohl* is a subordinating conjunction, which means it pushes the conjugated verb to the very end of its clause. In contrast, *trotzdem* is a connector that occupies the first position in its clause, requiring the verb to follow immediately in the second position. While English uses 'although' and 'nevertheless' similarly, you must pay close attention to where the verb lands in German.",
+        "table": [
+          [
+            "obwohl",
+            "although"
+          ],
+          [
+            "trotzdem",
+            "nevertheless / anyway"
+          ],
+          [
+            "obwohl ich müde bin",
+            "although I am tired"
+          ],
+          [
+            "Ich bin müde, trotzdem arbeite ich.",
+            "I am tired; nevertheless, I am working."
+          ],
+          [
+            "Obwohl es teuer ist, kaufe ich es.",
+            "Although it is expensive, I am buying it."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich finde das gut, obwohl es sehr teuer ist.",
+        "en": "I think that's good, although it is very expensive."
+      },
+      {
+        "type": "phrase",
+        "de": "Das Wetter ist schlecht, trotzdem gehen wir wandern.",
+        "en": "The weather is bad; nevertheless, we are going hiking."
+      },
+      {
+        "type": "phrase",
+        "de": "Obwohl er wenig Zeit hat, hilft er mir immer.",
+        "en": "Although he has little time, he always helps me."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich gehe heute spazieren, _______ es regnet.",
+        "options": [
+          "trotzdem",
+          "obwohl",
+          "aber"
+        ],
+        "answer": 1,
+        "explain": "Obwohl is a subordinating conjunction, so the verb 'regnet' must move to the end of the clause."
+      },
+      {
+        "type": "choice",
+        "prompt": "Es ist sehr spät. _______ gehe ich noch arbeiten.",
+        "options": [
+          "Obwohl",
+          "Trotzdem",
+          "Weil"
+        ],
+        "answer": 1,
+        "explain": "Trotzdem is a connector that occupies position one, so the verb 'gehe' must follow immediately in position two."
+      },
+      {
+        "type": "choice",
+        "prompt": "_______ ich keine Lust habe, lerne ich Deutsch.",
+        "options": [
+          "Trotzdem",
+          "Aber",
+          "Obwohl"
+        ],
+        "answer": 2,
+        "explain": "Obwohl introduces a subordinate clause, which means the conjugated verb 'habe' is pushed to the end."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "obwohl",
+            "although"
+          ],
+          [
+            "trotzdem",
+            "nevertheless"
+          ],
+          [
+            "die Meinung",
+            "the opinion"
+          ],
+          [
+            "meiner Meinung nach",
+            "in my opinion"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "Although the food is not perfect, it tastes very good.",
+        "answer": [
+          "Obwohl",
+          "das",
+          "Essen",
+          "nicht",
+          "perfekt",
+          "ist,",
+          "schmeckt",
+          "es",
+          "sehr",
+          "gut."
+        ],
+        "extra": [
+          "er",
+          "wenig"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Ich bin müde, trotzdem lese ich ein Buch.",
+        "en": "I am tired; nevertheless, I am reading a book."
+      },
+      {
+        "type": "speak",
+        "de": "Obwohl ich viel zu tun habe, mache ich eine Pause.",
+        "en": "Although I have a lot to do, I am taking a break."
+      }
+    ]
+  },
+  {
+    "id": "b1-u1-l2",
+    "unit": "b1-u1",
+    "title": "Expressing Your Opinion",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Expressing Your Opinion",
+        "body": "To express your thoughts, you can use a 'dass' clause or a prepositional phrase. When using 'dass', remember that the conjugated verb must move to the very end of the sentence. However, if you start with 'Meiner Meinung nach', the verb must follow immediately after that phrase. This is a major difference from English, where the word order remains standard after 'In my opinion'.",
+        "table": [
+          [
+            "Ich finde, dass...",
+            "I find/think that..."
+          ],
+          [
+            "Meiner Meinung nach...",
+            "In my opinion..."
+          ],
+          [
+            "Ich bin der Ansicht, dass...",
+            "I am of the view that..."
+          ],
+          [
+            "Ich bin davon überzeugt, dass...",
+            "I am convinced that..."
+          ],
+          [
+            "Das sehe ich anders.",
+            "I see that differently."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich finde, dass diese Entscheidung sehr wichtig ist.",
+        "en": "I think that this decision is very important."
+      },
+      {
+        "type": "phrase",
+        "de": "Meiner Meinung nach sollten wir heute früher gehen.",
+        "en": "In my opinion, we should leave earlier today."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich bin der Ansicht, dass das Projekt gut läuft.",
+        "en": "I am of the view that the project is going well."
+      },
+      {
+        "type": "choice",
+        "prompt": "Meiner Meinung nach ________ die Situation schwierig.",
+        "options": [
+          "ist",
+          "die Situation ist",
+          "es ist"
+        ],
+        "answer": 0,
+        "explain": "After 'Meiner Meinung nach', the verb must come in the second position (inversion)."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich finde, dass ________ sehr wichtig ist.",
+        "options": [
+          "das Training",
+          "das Training ist",
+          "ist das Training"
+        ],
+        "answer": 0,
+        "explain": "In a 'dass' clause, the conjugated verb ('ist') must go to the very end of the sentence."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich bin der Ansicht, dass ________ mehr Zeit brauchen.",
+        "options": [
+          "wir",
+          "wir werden",
+          "werden wir"
+        ],
+        "answer": 0,
+        "explain": "The 'dass' clause requires the subject followed by the rest of the clause, with the verb at the end."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Meiner Meinung nach",
+            "In my opinion"
+          ],
+          [
+            "Ich bin der Ansicht",
+            "I am of the view"
+          ],
+          [
+            "Ich bin überzeugt",
+            "I am convinced"
+          ],
+          [
+            "Das sehe ich anders",
+            "I see that differently"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I am of the opinion that we need more breaks.",
+        "answer": [
+          "Ich",
+          "bin",
+          "der",
+          "Meinung,",
+          "dass",
+          "wir",
+          "mehr",
+          "Pausen",
+          "brauchen."
+        ],
+        "extra": [
+          "läuft",
+          "früher"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Meiner Meinung nach ist das eine gute Idee.",
+        "en": "In my opinion, that is a good idea."
+      },
+      {
+        "type": "speak",
+        "de": "Ich finde, dass das Wetter heute toll ist.",
+        "en": "I think that the weather is great today."
+      },
+      {
+        "type": "speak",
+        "de": "Meiner Meinung nach sollten wir mehr lernen.",
+        "en": "In my opinion, we should study more."
+      }
+    ]
+  },
+  {
+    "id": "b1-u1-l3",
+    "unit": "b1-u1",
+    "title": "Mastering Concessions: Obwohl vs. Trotzdem",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Concession: Although vs. Nevertheless",
+        "body": "In English, 'although' and 'nevertheless' function similarly, but in German, they trigger different word orders. 'Obwohl' is a subordinating conjunction, which means it pushes the conjugated verb to the very end of its clause. In contrast, 'trotzdem' is an adverbial connector; when it starts a clause, the verb must follow it immediately in the second position. Think of 'obwohl' as a verb-pusher and 'trotzdem' as a verb-neighbor.",
+        "table": [
+          [
+            "Obwohl es regnet...",
+            "Although it is raining..."
+          ],
+          [
+            "...trotzdem gehe ich spazieren.",
+            "...nevertheless, I am going for a walk."
+          ],
+          [
+            "Ich esse das, obwohl es nicht schmeckt.",
+            "I am eating that, although it doesn't taste good."
+          ],
+          [
+            "Es schmeckt nicht, trotzdem esse ich es.",
+            "It doesn't taste good; nevertheless, I am eating it."
+          ],
+          [
+            "Obwohl er viel lernt, ...",
+            "Although he studies a lot, ..."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich finde das gut, obwohl es sehr teuer ist.",
+        "en": "I think that's good, although it is very expensive."
+      },
+      {
+        "type": "phrase",
+        "de": "Das ist ein Problem, aber ich finde trotzdem eine Lösung.",
+        "en": "That is a problem, but I am finding a solution anyway."
+      },
+      {
+        "type": "phrase",
+        "de": "Obwohl ich anderer Meinung bin, verstehe ich deinen Punkt.",
+        "en": "Although I have a different opinion, I understand your point."
+      },
+      {
+        "type": "choice",
+        "prompt": "___ ich keine Zeit habe, helfe ich dir.",
+        "options": [
+          "Trotzdem",
+          "Obwohl",
+          "Aber"
+        ],
+        "answer": 1,
+        "explain": "Obwohl is a subordinating conjunction, which is why the conjugated verb 'habe' is placed at the end of the clause."
+      },
+      {
+        "type": "choice",
+        "prompt": "Es ist sehr kalt. ___, gehen wir im Park spazieren.",
+        "options": [
+          "Obwohl",
+          "Trotzdem",
+          "Weil"
+        ],
+        "answer": 1,
+        "explain": "Trotzdem is an adverbial connector, so the verb 'gehen' must follow it immediately in the second position."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich mag den Film, ___ er sehr langweilig war.",
+        "options": [
+          "obwohl",
+          "trotzdem",
+          "deshalb"
+        ],
+        "answer": 0,
+        "explain": "The verb 'war' is at the end of the clause, which indicates the use of a subordinating conjunction like 'obwohl'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Obwohl",
+            "Although"
+          ],
+          [
+            "Trotzdem",
+            "Nevertheless"
+          ],
+          [
+            "Die Meinung",
+            "The opinion"
+          ],
+          [
+            "Zustimmen",
+            "To agree"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "Although the car is old, it still drives very well.",
+        "answer": [
+          "Obwohl",
+          "das",
+          "Auto",
+          "alt",
+          "ist,",
+          "fährt",
+          "es",
+          "noch",
+          "sehr",
+          "gut."
+        ],
+        "extra": [
+          "finde",
+          "teuer"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Ich stimme dir zu, obwohl ich skeptisch bin.",
+        "en": "I agree with you, although I am skeptical."
+      },
+      {
+        "type": "speak",
+        "de": "Obwohl ich müde bin, möchte ich heute Abend ausgehen.",
+        "en": "Although I am tired, I want to go out tonight."
+      },
+      {
+        "type": "speak",
+        "de": "Das Wetter ist schlecht, trotzdem machen wir ein Picknick.",
+        "en": "The weather is bad; nevertheless, we are having a picnic."
+      }
+    ]
+  },
+  {
+    "id": "b1-u2-l1",
+    "unit": "b1-u2",
+    "title": "Telling the Story: The Präteritum",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mastering the Narrative Past",
+        "body": "When you summarize a news article or tell a story, you use the Präteritum. While English speakers use the simple past for both speaking and writing, Germans prefer the Perfekt for conversation and the Präteritum for formal narration. Using this tense correctly helps you sound more professional when reporting facts or describing media content.",
+        "table": [
+          [
+            "war",
+            "was"
+          ],
+          [
+            "hatte",
+            "had"
+          ],
+          [
+            "sagte",
+            "said"
+          ],
+          [
+            "las",
+            "read"
+          ],
+          [
+            "wurde",
+            "became"
+          ],
+          [
+            "gab",
+            "gave/there was"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Der Journalist schrieb einen interessanten Artikel über die Krise.",
+        "en": "The journalist wrote an interesting article about the crisis."
+      },
+      {
+        "type": "phrase",
+        "de": "Zuerst las ich die Schlagzeile, aber dann suchte ich mehr Informationen.",
+        "en": "First I read the headline, but then I searched for more information.",
+        "note": "Use 'zuerst' (first) and 'dann' (then) to structure your narrative chronologically."
+      },
+      {
+        "type": "choice",
+        "prompt": "Der Bericht ______ sehr viele Informationen über das Thema.",
+        "options": [
+          "enthält",
+          "enthielt",
+          "hat enthalten"
+        ],
+        "answer": 1,
+        "explain": "Enthielt is the Präteritum form of 'enthalten' (to contain), which is used for reporting facts in a narrative."
+      },
+      {
+        "type": "choice",
+        "prompt": "Gestern ______ die Redakteurin den Text noch einmal.",
+        "options": [
+          "korrigierte",
+          "korrigiert",
+          "hat korrigiert"
+        ],
+        "answer": 0,
+        "explain": "Korrigierte is the Präteritum form used to describe a completed action in a story or report."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Die Schlagzeile",
+            "The headline"
+          ],
+          [
+            "Der Bericht",
+            "The report"
+          ],
+          [
+            "Die Quelle",
+            "The source"
+          ],
+          [
+            "Erzählen",
+            "To tell/narrate"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "Although the article was short, it contained many important details.",
+        "answer": [
+          "Obwohl",
+          "der",
+          "Artikel",
+          "kurz",
+          "war,",
+          "enthielt",
+          "er",
+          "viele",
+          "wichtige",
+          "Details."
+        ],
+        "extra": [
+          "Informationen",
+          "schrieb"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Der Autor beschrieb die Situation in seinem neuen Buch.",
+        "en": "The author described the situation in his new book."
+      },
+      {
+        "type": "speak",
+        "de": "Ich las die Nachricht und fand sie sehr überraschend.",
+        "en": "I read the news and found it very surprising."
+      }
+    ]
+  },
+  {
+    "id": "b1-u2-l2",
+    "unit": "b1-u2",
+    "title": "Reporting the Facts: Using Präteritum in News and Stories",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Narrative Flow in Media",
+        "body": "While you use the Perfekt for daily conversation, the Präteritum is the standard for written media and formal storytelling. When you summarize a news article or a documentary, the Präteritum helps create a clear timeline of events. Unlike English, where we often switch between 'did' and 'was,' German uses the Präteritum consistently in written reports to keep the narrative smooth and professional.",
+        "table": [
+          [
+            "Er berichtete über den Vorfall.",
+            "He reported on the incident."
+          ],
+          [
+            "Die Zeitung veröffentlichte den Artikel.",
+            "The newspaper published the article."
+          ],
+          [
+            "Der Journalist schrieb einen Bericht.",
+            "The journalist wrote a report."
+          ],
+          [
+            "Es gab viele Diskussionen darüber.",
+            "There were many discussions about it."
+          ],
+          [
+            "Die Nachricht verbreitete sich schnell.",
+            "The news spread quickly."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "In dem Artikel stand, dass die Situation schwierig war.",
+        "en": "In the article, it said that the situation was difficult."
+      },
+      {
+        "type": "phrase",
+        "de": "Der Bericht beschrieb detailliert, wie der Unfall passierte.",
+        "en": "The report described in detail how the accident happened."
+      },
+      {
+        "type": "phrase",
+        "de": "Die Nachricht verbreitete sich schnell durch das Internet.",
+        "en": "The news spread quickly through the internet."
+      },
+      {
+        "type": "choice",
+        "prompt": "Der Autor ____ die Geschichte in einem neuen Buch.",
+        "options": [
+          "erzählte",
+          "hat erzählt",
+          "erzählt"
+        ],
+        "answer": 0,
+        "explain": "When summarizing a book or article in a formal context, the Präteritum (erzählte) is the standard choice over the Perfekt."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die Zeitung ____ den Artikel erst gestern Abend.",
+        "options": [
+          "veröffentlichte",
+          "hat veröffentlicht",
+          "veröffentlicht"
+        ],
+        "answer": 0,
+        "explain": "To maintain a consistent narrative tone in written media summaries, use the Präteritum form."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "der Bericht",
+            "the report"
+          ],
+          [
+            "die Nachricht",
+            "the news"
+          ],
+          [
+            "veröffentlichten",
+            "published"
+          ],
+          [
+            "beschrieb",
+            "described"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "The journalist wrote the article and published it immediately.",
+        "answer": [
+          "Der",
+          "Journalist",
+          "schrieb",
+          "den",
+          "Artikel",
+          "und",
+          "veröffentlichte",
+          "ihn",
+          "sofort."
+        ],
+        "extra": [
+          "detailliert",
+          "verbreitete"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Der Bericht erklärte genau, warum die Preise stiegen.",
+        "en": "The report explained exactly why the prices rose."
+      },
+      {
+        "type": "speak",
+        "de": "Ich fand die Geschichte sehr interessant, weil sie spannend war.",
+        "en": "I found the story very interesting because it was exciting."
+      }
+    ]
+  },
+  {
+    "id": "b1-u2-l3",
+    "unit": "b1-u2",
+    "title": "Summarizing Media: Using Präteritum to Recount Stories",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Summarizing Media: Using Präteritum to Recount Stories",
+        "body": "When you summarize a book, a movie, or a news report, the Präteritum creates a professional, cohesive timeline. While English speakers often switch between the present (\"The book says...\") and the past (\"He went...\"), German narrative summaries use the Präteritum to maintain a consistent \"storytelling\" mode. This helps you move from simply stating facts to effectively condensing a whole narrative.",
+        "table": [
+          [
+            "Der Bericht beschrieb...",
+            "The report described..."
+          ],
+          [
+            "Die Handlung begann...",
+            "The plot began..."
+          ],
+          [
+            "Es gab viele Probleme.",
+            "There were many problems."
+          ],
+          [
+            "Der Autor schrieb...",
+            "The author wrote..."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "In dem Artikel stand, dass die Krise begann.",
+        "en": "In the article, it said that the crisis began."
+      },
+      {
+        "type": "phrase",
+        "de": "Der Film handelte von einer Reise durch Europa.",
+        "en": "The film was about a journey through Europe."
+      },
+      {
+        "type": "phrase",
+        "de": "Die Handlung entwickelte sich in dem Film sehr schnell.",
+        "en": "The plot developed very quickly in the film."
+      },
+      {
+        "type": "choice",
+        "prompt": "Der Artikel ______ die wichtigsten Fakten.",
+        "options": [
+          "nannte",
+          "nennt",
+          "genannt"
+        ],
+        "answer": 0,
+        "explain": "\"nannte\" is the Präteritum form of \"nennen,\" which is required for narrative summaries."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die Protagonistin ______ eine wichtige Entscheidung.",
+        "options": [
+          "traf",
+          "treffen",
+          "getroffen"
+        ],
+        "answer": 0,
+        "explain": "\"traf\" is the Präteritum form of \"treffen,\" used here to describe a past event in the story."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die Leser ______ die Nachricht sofort.",
+        "options": [
+          "lasen",
+          "lesen",
+          "gelesen"
+        ],
+        "answer": 0,
+        "explain": "\"lasen\" is the Präteritum form for the plural \"die Leser.\""
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "der Inhalt",
+            "the content"
+          ],
+          [
+            "die Handlung",
+            "the plot"
+          ],
+          [
+            "zusammenfassen",
+            "to summarize"
+          ],
+          [
+            "berichten",
+            "to report"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "The author described how the situation ended.",
+        "answer": [
+          "Der",
+          "Autor",
+          "beschrieb,",
+          "wie",
+          "die",
+          "Situation",
+          "endete."
+        ],
+        "extra": [
+          "Europa",
+          "in"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Die Geschichte endete für die Helden sehr überraschend.",
+        "en": "The story ended very surprisingly for the heroes."
+      },
+      {
+        "type": "speak",
+        "de": "Ich fasste den Inhalt des Artikels zusammen.",
+        "en": "I summarized the content of the article."
+      },
+      {
+        "type": "speak",
+        "de": "Der Bericht erklärte, warum das Problem entstand.",
+        "en": "The report explained why the problem arose."
+      }
+    ]
+  },
+  {
+    "id": "b1-u3-l1",
+    "unit": "b1-u3",
+    "title": "Politeness in Professional Settings",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Using Konjunktiv II for Politeness",
+        "body": "When applying for a job, being too direct can sound rude or demanding. In German, we use the Konjunktiv II to make requests or statements sound more polite and professional. While English uses 'would' or 'could,' German often uses 'würde' combined with an infinitive at the end of the sentence. However, for essential verbs like 'sein' (to be) or 'haben' (to have), we use special forms like 'wäre' or 'hätte' instead of using 'würde'.",
+        "table": [
+          [
+            "Ich würde mich freuen",
+            "I would be pleased"
+          ],
+          [
+            "Könnten Sie mir helfen?",
+            "Could you help me?"
+          ],
+          [
+            "Ich hätte eine Frage.",
+            "I would have a question."
+          ],
+          [
+            "Wäre das möglich?",
+            "Would that be possible?"
+          ],
+          [
+            "Ich würde gerne wissen...",
+            "I would like to know..."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich würde mich sehr über eine Einladung zum Vorstellungsgespräch freuen.",
+        "en": "I would be very pleased to receive an invitation to an interview."
+      },
+      {
+        "type": "phrase",
+        "de": "Könnten Sie mir bitte sagen, wann das Gespräch stattfindet?",
+        "en": "Could you please tell me when the interview takes place?"
+      },
+      {
+        "type": "phrase",
+        "de": "Ich hätte gerne mehr Informationen über die Arbeitszeiten.",
+        "en": "I would like to have more information about the working hours.",
+        "note": "Use 'hätte gerne' instead of 'will gerne' to sound much more professional."
+      },
+      {
+        "type": "choice",
+        "prompt": "___ es möglich sein, das Gespräch zu verschieben?",
+        "options": [
+          "Ist",
+          "Wäre",
+          "Wird"
+        ],
+        "answer": 1,
+        "explain": "'Wäre' is the Konjunktiv II form of 'sein,' used here to make a polite inquiry."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich ___ mich sehr über Ihre Rückmeldung freuen.",
+        "options": [
+          "würde",
+          "werde",
+          "bin"
+        ],
+        "answer": 0,
+        "explain": "'Würde' is used with the infinitive 'freuen' to express a polite wish or possibility."
+      },
+      {
+        "type": "choice",
+        "prompt": "___ Sie mir bitte die Details zur Stelle schicken?",
+        "options": [
+          "Können",
+          "Könnten",
+          "Werden"
+        ],
+        "answer": 1,
+        "explain": "'Könnten' is the polite Konjunktiv II form of 'können,' used for making requests."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "das Vorstellungsgespräch",
+            "the job interview"
+          ],
+          [
+            "die Bewerbung",
+            "the application"
+          ],
+          [
+            "höflich",
+            "polite"
+          ],
+          [
+            "die Unterlagen",
+            "the documents"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I would be pleased if you could answer me soon.",
+        "answer": [
+          "Ich",
+          "würde",
+          "mich",
+          "freuen,",
+          "wenn",
+          "Sie",
+          "mir",
+          "bald",
+          "antworten",
+          "könnten."
+        ],
+        "extra": [
+          "über",
+          "wann"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Könnten Sie mir bitte die Adresse der Firma schicken?",
+        "en": "Could you please send me the company's address?"
+      },
+      {
+        "type": "speak",
+        "de": "Ich hätte eine Frage zu den Aufgaben für diese Stelle.",
+        "en": "I would have a question about the tasks for this position."
+      },
+      {
+        "type": "speak",
+        "de": "Wäre es möglich, das Gespräch am Montag zu führen?",
+        "en": "Would it be possible to hold the interview on Monday?"
+      }
+    ]
+  },
+  {
+    "id": "b1-u3-l2",
+    "unit": "b1-u3",
+    "title": "Making Polite Requests and Inquiries",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mastering Politeness with Konjunktiv II",
+        "body": "In professional settings, using the indicative can often sound too demanding or blunt. Instead, we use Konjunktiv II to soften our requests and inquiries, much like how English uses 'would,' 'could,' or 'might.' While English relies heavily on modal verbs, German frequently uses the 'würde' + infinitive construction for most verbs. For specific essential verbs like 'haben' or 'sein,' we use their own unique Konjunktiv II forms like 'hätte' or 'wäre.'",
+        "table": [
+          [
+            "Ich würde mich freuen",
+            "I would be pleased"
+          ],
+          [
+            "Könnten Sie mir helfen?",
+            "Could you help me?"
+          ],
+          [
+            "Ich hätte eine Frage",
+            "I would have a question"
+          ],
+          [
+            "Wäre es möglich?",
+            "Would it be possible?"
+          ],
+          [
+            "Ich würde gerne wissen",
+            "I would like to know"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Könnten Sie mir bitte sagen, wann das Vorstellungsgespräch stattfindet?",
+        "en": "Could you please tell me when the interview takes place?"
+      },
+      {
+        "type": "phrase",
+        "de": "Ich würde mich sehr über eine positive Rückmeldung freuen.",
+        "en": "I would be very pleased to receive positive feedback."
+      },
+      {
+        "type": "phrase",
+        "de": "Hätten Sie vielleicht Zeit für ein kurzes Telefonat?",
+        "en": "Would you perhaps have time for a short phone call?"
+      },
+      {
+        "type": "choice",
+        "prompt": "___ Sie mir bitte die Details zum Gehalt schicken?",
+        "options": [
+          "Werden",
+          "Könnten",
+          "Können"
+        ],
+        "answer": 1,
+        "explain": "'Könnten' is the Konjunktiv II form of 'können,' making the request polite rather than a direct command."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich ___ mich sehr über eine Einladung freuen.",
+        "options": [
+          "werde",
+          "würde",
+          "will"
+        ],
+        "answer": 1,
+        "explain": "'Würde' is used here to express a polite wish or possibility in a professional context."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "die Rückmeldung",
+            "the feedback"
+          ],
+          [
+            "das Vorstellungsgespräch",
+            "the job interview"
+          ],
+          [
+            "die Stelle",
+            "the position"
+          ],
+          [
+            "die Gehaltsvorstellung",
+            "the salary expectation"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I would like to know if I can come tomorrow.",
+        "answer": [
+          "Ich",
+          "würde",
+          "gerne",
+          "wissen,",
+          "ob",
+          "ich",
+          "morgen",
+          "kommen",
+          "kann."
+        ],
+        "extra": [
+          "mir",
+          "sagen"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Wäre es vielleicht möglich, unser Gespräch zu verschieben?",
+        "en": "Would it perhaps be possible to postpone our conversation?"
+      },
+      {
+        "type": "speak",
+        "de": "Ich hätte eine Frage zu den Aufgaben in dieser Position.",
+        "en": "I would have a question regarding the tasks in this position."
+      },
+      {
+        "type": "speak",
+        "de": "Könnten wir vielleicht über die Arbeitszeiten sprechen?",
+        "en": "Could we perhaps speak about the working hours?"
+      }
+    ]
+  },
+  {
+    "id": "b1-u3-l3",
+    "unit": "b1-u3",
+    "title": "Polite Hypotheticals in Interviews",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Softening Your Language with Konjunktiv II",
+        "body": "In a professional interview, being too direct can sound blunt or even aggressive. While English uses 'would' or 'could' to soften statements, German uses the Konjunktiv II to express wishes or hypothetical scenarios politely. This allows you to express opinions or requests without sounding demanding, which is crucial for making a professional impression.",
+        "table": [
+          [
+            "Ich würde gerne...",
+            "I would like to..."
+          ],
+          [
+            "Wäre es möglich...",
+            "Would it be possible..."
+          ],
+          [
+            "Ich hätte eine Frage.",
+            "I would have a question."
+          ],
+          [
+            "Könnten Sie mir sagen...",
+            "Could you tell me..."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich würde mich freuen, wenn Sie mir bald antworten könnten.",
+        "en": "I would be happy if you could answer me soon."
+      },
+      {
+        "type": "phrase",
+        "de": "Wäre es möglich, das Vorstellungsgespräch auf nächste Woche zu verschieben?",
+        "en": "Would it be possible to reschedule the interview to next week?"
+      },
+      {
+        "type": "phrase",
+        "de": "Ich fände es toll, wenn ich in Ihrem Team arbeiten könnte.",
+        "en": "I would find it great if I could work in your team.",
+        "note": "Using 'fände' (from finden) instead of 'finde' makes your opinion sound much more professional."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich ____ gerne mehr über die täglichen Aufgaben erfahren.",
+        "options": [
+          "würde",
+          "werde",
+          "werde würden"
+        ],
+        "answer": 0,
+        "explain": "We use 'würde' + infinitive to express a polite wish or a hypothetical action."
+      },
+      {
+        "type": "choice",
+        "prompt": "____ Sie mir bitte sagen, wann das Gespräch beginnt?",
+        "options": [
+          "Könnten",
+          "Können",
+          "Würden können"
+        ],
+        "answer": 0,
+        "explain": "'Könnten' is the Konjunktiv II form of 'können' and is used to make a polite request."
+      },
+      {
+        "type": "choice",
+        "prompt": "Das ____ eine große Chance für meine berufliche Entwicklung.",
+        "options": [
+          "wäre",
+          "ist",
+          "wird"
+        ],
+        "answer": 0,
+        "explain": "'Wäre' is the Konjunktiv II form of 'sein' and is used here to describe a hypothetical situation."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Ich würde gerne",
+            "I would like to"
+          ],
+          [
+            "Wäre es möglich",
+            "Would it be possible"
+          ],
+          [
+            "Ich hätte",
+            "I would have"
+          ],
+          [
+            "Könnten Sie",
+            "Could you"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I would be happy if I could get the position.",
+        "answer": [
+          "Ich",
+          "würde",
+          "mich",
+          "freuen,",
+          "wenn",
+          "ich",
+          "die",
+          "Stelle",
+          "bekommen",
+          "könnte."
+        ],
+        "extra": [
+          "antworten",
+          "möglich"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Hätten Sie vielleicht einen Moment Zeit für mich?",
+        "en": "Would you perhaps have a moment for me?"
+      },
+      {
+        "type": "speak",
+        "de": "Ich fände es sehr wichtig, dass man im Team gut zusammenarbeitet.",
+        "en": "I would find it very important that people work well together in a team."
+      },
+      {
+        "type": "speak",
+        "de": "Könnten Sie mir bitte mehr über die Aufgaben sagen?",
+        "en": "Could you please tell me more about the tasks?"
+      }
+    ]
+  },
+  {
+    "id": "b1-u5-l1",
+    "unit": "b1-u5",
+    "title": "Describing People with Relative Clauses",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Describing People with Relative Clauses",
+        "body": "Relative clauses allow you to add descriptive details about a person or thing without starting a new sentence. In English, you usually use 'who' or 'that,' but in German, the relative pronoun must match the gender and the grammatical case of the noun it refers to. Crucially, the conjugated verb always shifts to the very end of the relative clause.",
+        "table": [
+          [
+            "Der Mann, der dort steht",
+            "The man who is standing there"
+          ],
+          [
+            "Die Frau, die ich kenne",
+            "The woman whom I know"
+          ],
+          [
+            "Das Kind, das dort spielt",
+            "The child that is playing there"
+          ],
+          [
+            "Die Freunde, die mich unterstützen",
+            "The friends who support me"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Mein bester Freund ist jemand, der immer für mich da ist.",
+        "en": "My best friend is someone who is always there for me."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich suche eine Partnerin, die meine Leidenschaft für Musik teilt.",
+        "en": "I am looking for a partner who shares my passion for music."
+      },
+      {
+        "type": "phrase",
+        "de": "Das ist der Mann, den ich gestern im Café gesehen habe.",
+        "en": "That is the man whom I saw in the café yesterday.",
+        "note": "Notice how 'gesehen habe' moves to the end of the clause."
+      },
+      {
+        "type": "choice",
+        "prompt": "Das ist die Person, _______ ich gestern getroffen habe.",
+        "options": [
+          "die",
+          "der",
+          "das"
+        ],
+        "answer": 0,
+        "explain": "'die' is the correct feminine accusative relative pronoun to match 'die Person'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich habe einen Bruder, _______ in Berlin wohnt.",
+        "options": [
+          "der",
+          "den",
+          "dem"
+        ],
+        "answer": 0,
+        "explain": "'der' is the correct masculine nominative relative pronoun because the brother is the subject of the relative clause."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "die Beziehung",
+            "the relationship"
+          ],
+          [
+            "jemand",
+            "someone"
+          ],
+          [
+            "verheiratet",
+            "married"
+          ],
+          [
+            "ehrlich",
+            "honest"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "A good partner is someone who is honest with you.",
+        "answer": [
+          "Ein",
+          "guter",
+          "Partner",
+          "ist",
+          "jemand,",
+          "der",
+          "ehrlich",
+          "zu",
+          "dir",
+          "ist."
+        ],
+        "extra": [
+          "im",
+          "Ich"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Die Frau, die ich suche, ist sehr sympathisch.",
+        "en": "The woman I am looking for is very likable."
+      },
+      {
+        "type": "speak",
+        "de": "Ich möchte Menschen treffen, die ähnliche Interessen haben.",
+        "en": "I want to meet people who have similar interests."
+      }
+    ]
+  },
+  {
+    "id": "b1-u5-l2",
+    "unit": "b1-u5",
+    "title": "Describing Relationships and Situations",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Relative Clauses with Prepositions",
+        "body": "In English, we often place prepositions at the end of a sentence, like 'The person I am talking to.' In German, the preposition must come directly before the relative pronoun. This pronoun must match the gender and number of the noun it describes, and its case is determined by the preposition used. For example, using 'mit' will always require the dative case for the pronoun.",
+        "table": [
+          [
+            "der Mann, mit dem...",
+            "the man with whom..."
+          ],
+          [
+            "die Frau, die...",
+            "the woman who..."
+          ],
+          [
+            "das Kind, das...",
+            "the child that..."
+          ],
+          [
+            "die Freunde, denen...",
+            "the friends whom..."
+          ],
+          [
+            "die Situation, in der...",
+            "the situation in which..."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Das ist die Person, mit der ich oft streite.",
+        "en": "That is the person with whom I often argue."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich suche einen Freund, der mich wirklich versteht.",
+        "en": "I am looking for a friend who really understands me."
+      },
+      {
+        "type": "phrase",
+        "de": "Es gibt viele Gründe, warum diese Beziehung schwierig ist.",
+        "en": "There are many reasons why this relationship is difficult.",
+        "note": "Note how 'warum' introduces a subordinate clause of reason."
+      },
+      {
+        "type": "choice",
+        "prompt": "Das ist der Kollege, ___ ich gestern geholfen habe.",
+        "options": [
+          "den",
+          "dem",
+          "der"
+        ],
+        "answer": 1,
+        "explain": "The verb 'helfen' requires the dative case, and 'Kollege' is masculine."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die Leute, ___ wir im Urlaub begegnet sind, waren freundlich.",
+        "options": [
+          "denen",
+          "die",
+          "der"
+        ],
+        "answer": 0,
+        "explain": "The verb 'begegnen' requires the dative case, and 'Leute' is plural."
+      },
+      {
+        "type": "choice",
+        "prompt": "Das ist das Haus, ___ ich seit Jahren wohne.",
+        "options": [
+          "das",
+          "in dem",
+          "in der"
+        ],
+        "answer": 1,
+        "explain": "To say 'in which', you must use the preposition 'in' followed by the dative neuter pronoun 'dem'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "die Beziehung",
+            "the relationship"
+          ],
+          [
+            "der Streit",
+            "the argument"
+          ],
+          [
+            "das Vertrauen",
+            "the trust"
+          ],
+          [
+            "die Enttäuschung",
+            "the disappointment"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "He is the best friend that I have ever had.",
+        "answer": [
+          "Er",
+          "ist",
+          "der",
+          "beste",
+          "Freund,",
+          "den",
+          "ich",
+          "jemals",
+          "hatte."
+        ],
+        "extra": [
+          "Person",
+          "Das"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Die Beziehung, die wir führen, ist sehr wichtig.",
+        "en": "The relationship that we have is very important."
+      },
+      {
+        "type": "speak",
+        "de": "Ich möchte Menschen treffen, die das gleiche Hobby haben.",
+        "en": "I want to meet people who have the same hobby."
+      },
+      {
+        "type": "speak",
+        "de": "Es ist schwer, jemanden zu finden, dem man vertrauen kann.",
+        "en": "It is hard to find someone whom one can trust."
+      }
+    ]
+  },
+  {
+    "id": "b1-u5-l3",
+    "unit": "b1-u5",
+    "title": "Mastering Relative Clause Cases",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "The Secret to Relative Pronouns",
+        "body": "In English, relative pronouns like 'who' or 'that' rarely change. In German, however, the relative pronoun must change its case based on its function within the relative clause. While the noun it refers to determines the gender (masculine, feminine, or neuter), you must look at the verb inside the relative clause to decide if you need Nominative, Accusative, or Dative. This is the key to sounding like a fluent speaker rather than a beginner.",
+        "table": [
+          [
+            "Der Mann, der dort steht...",
+            "The man who is standing there... (Nominative)"
+          ],
+          [
+            "Die Frau, die ich kenne...",
+            "The woman whom I know... (Accusative)"
+          ],
+          [
+            "Das Kind, das ich sehe...",
+            "The child that I see... (Accusative)"
+          ],
+          [
+            "Der Freund, dem ich helfe...",
+            "The friend whom I am helping... (Dative)"
+          ],
+          [
+            "Die Leute, denen ich vertraue...",
+            "The people whom I trust... (Dative)"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich suche eine Freundin, die mich wirklich versteht.",
+        "en": "I am looking for a girlfriend who really understands me."
+      },
+      {
+        "type": "phrase",
+        "de": "Das ist der Kollege, mit dem ich oft Mittag esse.",
+        "en": "That is the colleague with whom I often eat lunch."
+      },
+      {
+        "type": "phrase",
+        "de": "Die Menschen, denen ich am meisten vertraue, sind meine besten Freunde.",
+        "en": "The people whom I trust the most are my best friends.",
+        "note": "Note how 'denen' is used for the plural dative relative pronoun."
+      },
+      {
+        "type": "choice",
+        "prompt": "Das ist der Mann, ___ ich gestern im Park getroffen habe.",
+        "options": [
+          "der",
+          "den",
+          "dem"
+        ],
+        "answer": 1,
+        "explain": "The verb 'treffen' (to meet) takes a direct object, so you need the accusative form 'den'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Dort sitzt die Frau, ___ ich ein Geschenk gegeben habe.",
+        "options": [
+          "die",
+          "der",
+          "den"
+        ],
+        "answer": 1,
+        "explain": "The verb 'geben' (to give) requires a dative object for the person receiving the gift."
+      },
+      {
+        "type": "choice",
+        "prompt": "Das ist das Buch, ___ ich gerade lese.",
+        "options": [
+          "das",
+          "der",
+          "dem"
+        ],
+        "answer": 0,
+        "explain": "Since 'das Buch' is neuter and is the direct object of 'lesen', we use the accusative 'das'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "der/die/das",
+            "who/which/that"
+          ],
+          [
+            "jemand",
+            "someone"
+          ],
+          [
+            "vertrauen",
+            "to trust"
+          ],
+          [
+            "verstehen",
+            "to understand"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I want to be with people who are honest with me.",
+        "answer": [
+          "Ich",
+          "möchte",
+          "mit",
+          "Menschen",
+          "zusammen",
+          "sein,",
+          "die",
+          "ehrlich",
+          "zu",
+          "mir",
+          "sind."
+        ],
+        "extra": [
+          "Freundin",
+          "vertraue"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Die Person, die ich am liebsten mag, ist mein Bruder.",
+        "en": "The person whom I like best is my brother."
+      },
+      {
+        "type": "speak",
+        "de": "Ich brauche jemanden, der mir immer bei Problemen zuhört.",
+        "en": "I need someone who always listens to me during problems."
+      },
+      {
+        "type": "speak",
+        "de": "Das ist die beste Entscheidung, die ich je getroffen habe.",
+        "en": "That is the best decision I have ever made."
+      }
+    ]
+  },
+  {
+    "id": "b1-u6-l1",
+    "unit": "b1-u6",
+    "title": "Plans and Intentions: Using 'zu + infinitive'",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mastering the Infinitive Clause",
+        "body": "In English, you often use 'to' before a verb to express an intention, such as 'I hope to study.' In German, we use a similar structure with 'zu + infinitive,' but there is one crucial rule: you never use 'zu' with modal verbs like *können* or *müssen*. When using 'zu' with other verbs, the 'zu' plus the infinitive always moves to the very end of the clause. This allows you to connect your main thought to a secondary action smoothly.",
+        "table": [
+          [
+            "Ich hoffe, Medizin zu studieren.",
+            "I hope to study medicine."
+          ],
+          [
+            "Es ist schwer, Prüfungen zu bestehen.",
+            "It is hard to pass exams."
+          ],
+          [
+            "Er hat vergessen, seine Hausaufgaben zu machen.",
+            "He forgot to do his homework."
+          ],
+          [
+            "Wir versuchen, die Sprache zu lernen.",
+            "We are trying to learn the language."
+          ],
+          [
+            "Es macht Spaß, neue Dinge zu entdecken.",
+            "It is fun to discover new things."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich habe vor, nächstes Jahr in Berlin zu studieren.",
+        "en": "I plan to study in Berlin next year."
+      },
+      {
+        "type": "phrase",
+        "de": "Es ist mein Ziel, fließend Deutsch zu sprechen.",
+        "en": "It is my goal to speak German fluently."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich habe keine Lust, heute zu lernen.",
+        "en": "I don't feel like studying today.",
+        "note": "The phrase 'Lust haben' is a very common, natural way to express desire or mood."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich versuche, jeden Tag etwas Neues ____.",
+        "options": [
+          "zu lernen",
+          "lernen zu",
+          "zu lernen zu"
+        ],
+        "answer": 0,
+        "explain": "In a subordinate infinitive clause, 'zu' comes immediately before the infinitive verb at the end of the sentence."
+      },
+      {
+        "type": "choice",
+        "prompt": "Es ist wichtig, für die Prüfung ____.",
+        "options": [
+          "lernen",
+          "zu lernen",
+          "zu lernenen"
+        ],
+        "answer": 1,
+        "explain": "Adjectives like 'wichtig' often trigger an infinitive clause starting with 'zu'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Er hat vergessen, die Anmeldung ____.",
+        "options": [
+          "machen zu",
+          "zu machen zu",
+          "zu machen"
+        ],
+        "answer": 2,
+        "explain": "The 'zu + infinitive' construction must be placed at the end of the clause without any extra 'zu' particles."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "die Prüfung bestehen",
+            "to pass the exam"
+          ],
+          [
+            "das Ziel erreichen",
+            "to reach the goal"
+          ],
+          [
+            "sich anmelden",
+            "to register/apply"
+          ],
+          [
+            "die Hausaufgaben machen",
+            "to do homework"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "It is my dream to study at a large university.",
+        "answer": [
+          "Es",
+          "ist",
+          "mein",
+          "Traum,",
+          "an",
+          "einer",
+          "großen",
+          "Universität",
+          "zu",
+          "studieren."
+        ],
+        "extra": [
+          "heute",
+          "habe"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Ich plane, bald eine Ausbildung zu machen.",
+        "en": "I plan to do an apprenticeship soon."
+      },
+      {
+        "type": "speak",
+        "de": "Ich finde es wichtig, viel zu lesen.",
+        "en": "I find it important to read a lot."
+      },
+      {
+        "type": "speak",
+        "de": "Ich habe vor, bald eine Prüfung zu machen.",
+        "en": "I plan to take an exam soon."
+      }
+    ]
+  },
+  {
+    "id": "b1-u6-l2",
+    "unit": "b1-u6",
+    "title": "Purpose and Intentions: Using 'um ... zu'",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Purpose and Intentions: Using 'um ... zu'",
+        "body": "In the previous lesson, we looked at general infinitive clauses. Now, we focus on expressing *why* you do something. While English often uses a simple 'to' (e.g., 'I study to learn'), German requires 'um ... zu' to express specific purpose. This structure links your action to your goal, making your speech much more precise. Remember, the 'um' starts the subordinate clause, and the 'zu + infinitive' always goes at the very end.",
+        "table": [
+          [
+            "Ich lerne, um in Deutschland zu arbeiten.",
+            "I learn in order to work in Germany."
+          ],
+          [
+            "Er studiert, um Medizin zu lernen.",
+            "He studies in order to learn medicine."
+          ],
+          [
+            "Wir sparen, um nach Japan zu reisen.",
+            "We save in order to travel to Japan."
+          ],
+          [
+            "Sie geht zur Uni, um zu lernen.",
+            "She goes to university in order to study."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich mache ein Praktikum, um Berufserfahrung zu sammeln.",
+        "en": "I am doing an internship to gain work experience."
+      },
+      {
+        "type": "phrase",
+        "de": "Man muss viel lesen, um die Fachbegriffe zu verstehen.",
+        "en": "One must read a lot in order to understand the technical terms."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich möchte viel lernen, um später einen guten Job zu finden.",
+        "en": "I want to learn a lot in order to find a good job later.",
+        "note": "Use 'um ... zu' only when the subject of the main clause and the purpose clause are the same person."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich lerne fleißig, _______ die Prüfung zu bestehen.",
+        "options": [
+          "um",
+          "damit",
+          "um zu"
+        ],
+        "answer": 0,
+        "explain": "Use 'um' to introduce a purpose clause when the subject is the same and the 'zu + infinitive' is already provided."
+      },
+      {
+        "type": "choice",
+        "prompt": "Sie macht ein Praktikum, _______ praktische Erfahrungen zu sammeln.",
+        "options": [
+          "um",
+          "damit",
+          "dass"
+        ],
+        "answer": 0,
+        "explain": "'um ... zu' is the standard construction to express purpose when the subject of both clauses is identical."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "das Auslandssemester",
+            "semester abroad"
+          ],
+          [
+            "die Berufserfahrung",
+            "work experience"
+          ],
+          [
+            "die Prüfung bestehen",
+            "to pass the exam"
+          ],
+          [
+            "das Ziel erreichen",
+            "to achieve the goal"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I am attending a language course in order to speak German fluently.",
+        "answer": [
+          "Ich",
+          "besuche",
+          "einen",
+          "Sprachkurs,",
+          "um",
+          "fließend",
+          "Deutsch",
+          "zu",
+          "sprechen."
+        ],
+        "extra": [
+          "die",
+          "mache"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Sie spart viel Geld, um ein Studium zu finanzieren.",
+        "en": "She is saving a lot of money to finance a degree."
+      },
+      {
+        "type": "speak",
+        "de": "Ich möchte viel lernen, um später einen guten Job zu finden.",
+        "en": "I want to learn a lot in order to find a good job later."
+      }
+    ]
+  },
+  {
+    "id": "b1-u6-l3",
+    "unit": "b1-u6",
+    "title": "Mastering the Infinitive Clause",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Using 'zu + infinitive' with Verbs and Adjectives",
+        "body": "In German, many verbs, adjectives, and nouns require an infinitive clause to complete their meaning. While English uses 'to' similarly, German structure is more rigid, placing the 'zu + infinitive' at the very end of the sentence. This is especially common when expressing desires, plans, or feelings about an activity. Remember that for separable verbs, the 'zu' slips between the prefix and the base verb (e.g., einzukaufen).",
+        "table": [
+          [
+            "Ich plane, an der Universität zu studieren.",
+            "I plan to study at the university."
+          ],
+          [
+            "Es ist wichtig, jeden Tag zu lernen.",
+            "It is important to study every day."
+          ],
+          [
+            "Er hat vergessen, seine Hausaufgaben zu machen.",
+            "He forgot to do his homework."
+          ],
+          [
+            "Ich habe keine Lust, heute zu lesen.",
+            "I don't feel like reading today."
+          ],
+          [
+            "Es macht Spaß, neue Sprachen zu lernen.",
+            "It is fun to learn new languages."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich habe vor, nächstes Jahr ein Praktikum zu machen.",
+        "en": "I intend to do an internship next year."
+      },
+      {
+        "type": "phrase",
+        "de": "Es ist nicht einfach, immer eine gute Note zu bekommen.",
+        "en": "It isn't easy to always get a good grade."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich finde es wichtig, viel zu lesen.",
+        "en": "I find it important to read a lot."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich versuche, ...",
+        "options": [
+          "mehr zu lernen",
+          "mehr lernen",
+          "mehr zu lernen zu"
+        ],
+        "answer": 0,
+        "explain": "The infinitive clause with 'zu' must be placed at the end of the phrase."
+      },
+      {
+        "type": "choice",
+        "prompt": "Es ist schwierig, ...",
+        "options": [
+          "die Prüfung zu bestehen",
+          "die Prüfung bestehen",
+          "die Prüfung bestehen zu"
+        ],
+        "answer": 0,
+        "explain": "After an adjective like 'schwierig', we use 'zu + infinitive' at the end of the clause."
+      },
+      {
+        "type": "choice",
+        "prompt": "Er hat aufgehört, ...",
+        "options": [
+          "zu spielen",
+          "spielen zu",
+          "zu zu spielen"
+        ],
+        "answer": 0,
+        "explain": "'Aufhören' is a verb that triggers an infinitive clause with 'zu' at the end."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "das Studium",
+            "the studies/degree"
+          ],
+          [
+            "die Prüfung bestehen",
+            "to pass the exam"
+          ],
+          [
+            "sich entscheiden",
+            "to decide"
+          ],
+          [
+            "die Note",
+            "the grade"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I really hope to finish my studies successfully soon.",
+        "answer": [
+          "Ich",
+          "hoffe",
+          "wirklich,",
+          "bald",
+          "mein",
+          "Studium",
+          "erfolgreich",
+          "abzuschließen."
+        ],
+        "extra": [
+          "vor",
+          "wichtig"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Es ist mein Ziel, fließend Deutsch zu sprechen.",
+        "en": "It is my goal to speak German fluently."
+      },
+      {
+        "type": "speak",
+        "de": "Ich finde es wichtig, jeden Tag ein bisschen zu lernen.",
+        "en": "I find it important to study a little bit every day."
+      },
+      {
+        "type": "speak",
+        "de": "Hast du Lust, heute Abend zusammen zu lernen?",
+        "en": "Do you feel like studying together this evening?"
+      }
+    ]
+  },
+  {
+    "id": "b1-u7-l1",
+    "unit": "b1-u7",
+    "title": "Mastering Possession: The Genitive Case",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "The Genitive Case",
+        "body": "In English, we often use 'of' or an apostrophe-s to show possession, like 'the book of the author.' In German, we use the genitive case to express this relationship more elegantly. For masculine and neuter nouns, the article changes to *des* and the noun usually gets an *-s* or *-es* ending. Feminine and plural nouns use *der* without changing the noun itself.",
+        "table": [
+          [
+            "des Films",
+            "of the film"
+          ],
+          [
+            "der Autorin",
+            "of the female author"
+          ],
+          [
+            "des Buches",
+            "of the book"
+          ],
+          [
+            "der Traditionen",
+            "of the traditions"
+          ],
+          [
+            "des Regisseurs",
+            "of the director"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Die Handlung des Films ist wirklich sehr spannend.",
+        "en": "The plot of the film is really very exciting."
+      },
+      {
+        "type": "phrase",
+        "de": "Das Ende der Geschichte war für mich sehr traurig.",
+        "en": "The end of the story was very sad for me."
+      },
+      {
+        "type": "phrase",
+        "de": "Die Meinung des Kritikers ist für mich nicht wichtig.",
+        "en": "The critic's opinion is not important to me.",
+        "note": "While Germans sometimes use 'von' + Dative in casual speech, using the genitive is preferred for B1 level fluency."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die Hauptfigur ___ Romans ist sehr interessant.",
+        "options": [
+          "des",
+          "dem",
+          "den"
+        ],
+        "answer": 0,
+        "explain": "Masculine nouns like 'Roman' use the article 'des' in the genitive case."
+      },
+      {
+        "type": "choice",
+        "prompt": "Das ist das kleine Haus ___ Freundin.",
+        "options": [
+          "der",
+          "die",
+          "den"
+        ],
+        "answer": 0,
+        "explain": "Feminine nouns use 'der' in the genitive case."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich kenne den Namen ___ berühmten Autors.",
+        "options": [
+          "von dem",
+          "des",
+          "dem"
+        ],
+        "answer": 1,
+        "explain": "'Des' is the genitive masculine article, and the noun 'Autor' takes an '-s' ending."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "des Buches",
+            "of the book"
+          ],
+          [
+            "der Musik",
+            "of the music"
+          ],
+          [
+            "des Schauspielers",
+            "of the actor"
+          ],
+          [
+            "der Kultur",
+            "of the culture"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "The director's opinion is decisive for the audience.",
+        "answer": [
+          "Die",
+          "Meinung",
+          "des",
+          "Regisseurs",
+          "ist",
+          "für",
+          "das",
+          "Publikum",
+          "entscheidend."
+        ],
+        "extra": [
+          "wichtig",
+          "traurig"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Die Geschichte des alten Schlosses ist sehr faszinierend.",
+        "en": "The story of the old castle is very fascinating."
+      },
+      {
+        "type": "speak",
+        "de": "Ich finde die Atmosphäre des Films wirklich beeindruckend.",
+        "en": "I find the atmosphere of the film really impressive."
+      },
+      {
+        "type": "speak",
+        "de": "Das ist die tiefe Bedeutung der alten Tradition.",
+        "en": "That is the deep meaning of the old tradition."
+      }
+    ]
+  },
+  {
+    "id": "b1-u7-l2",
+    "unit": "b1-u7",
+    "title": "Reasons and Contradictions: Using wegen and trotz",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Reasons and Contradictions: wegen and trotz",
+        "body": "In English, we use 'because of' and 'despite' to explain reasons or unexpected outcomes. In standard German (Hochdeutsch), both *wegen* and *trotz* are prepositions that require the Genitive case. This means the article of the noun following them must change to show possession or relationship. While you might hear native speakers use the Dative in casual conversation, using the Genitive is essential for sounding fluent and professional at a B1 level.",
+        "table": [
+          [
+            "wegen des Films",
+            "because of the film"
+          ],
+          [
+            "trotz der Kälte",
+            "despite the cold"
+          ],
+          [
+            "wegen des Regens",
+            "because of the rain"
+          ],
+          [
+            "trotz der Kritik",
+            "despite the criticism"
+          ],
+          [
+            "wegen meiner Arbeit",
+            "because of my work"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Trotz der schlechten Kritik war der Film ein großer Erfolg.",
+        "en": "Despite the bad reviews, the film was a great success."
+      },
+      {
+        "type": "phrase",
+        "de": "Wegen des neuen Buches habe ich heute keine Zeit zum Lesen.",
+        "en": "Because of the new book, I don't have time to read today."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich besuche das Museum trotz des schlechten Wetters.",
+        "en": "I am visiting the museum despite the bad weather.",
+        "note": "Note how 'trotz' can be used to show determination."
+      },
+      {
+        "type": "choice",
+        "prompt": "Trotz ___ (the) alten Traditionen ist das Fest sehr modern.",
+        "options": [
+          "die alten Traditionen",
+          "der alten Traditionen",
+          "den alten Traditionen"
+        ],
+        "answer": 1,
+        "explain": "Trotz requires the Genitive case. Since 'Traditionen' is plural, the definite article changes from 'die' to 'der'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Wir konnten den Film nicht sehen, wegen ___ (the) schlechten Wetters.",
+        "options": [
+          "des schlechten Wetters",
+          "dem schlechten Wetter",
+          "das schlechte Wetter"
+        ],
+        "answer": 0,
+        "explain": "Wegen requires the Genitive case. 'Wetter' is a neuter noun (das Wetter), which becomes 'des Wetters' in the Genitive."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich bin trotz ___ (my) Müdigkeit zum Kino gegangen.",
+        "options": [
+          "meine Müdigkeit",
+          "meiner Müdigkeit",
+          "mich Müdigkeit"
+        ],
+        "answer": 1,
+        "explain": "Trotz triggers the Genitive. For feminine nouns like 'Müdigkeit', the possessive pronoun 'meine' changes to 'meiner'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "wegen",
+            "because of"
+          ],
+          [
+            "trotz",
+            "despite"
+          ],
+          [
+            "des Regens",
+            "of the rain"
+          ],
+          [
+            "der Tradition",
+            "of the tradition"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "Despite the bad weather, we are going to the cinema today.",
+        "answer": [
+          "Trotz",
+          "des",
+          "schlechten",
+          "Wetters",
+          "gehen",
+          "wir",
+          "heute",
+          "ins",
+          "Kino."
+        ],
+        "extra": [
+          "ein",
+          "war"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Wegen des neuen Buches lese ich jeden Abend.",
+        "en": "Because of the new book, I read every evening."
+      },
+      {
+        "type": "speak",
+        "de": "Ich mag diesen Autor wegen seines interessanten Schreibstils.",
+        "en": "I like this author because of his interesting writing style."
+      },
+      {
+        "type": "speak",
+        "de": "Trotz der langen Reise war das Konzert fantastisch.",
+        "en": "Despite the long journey, the concert was fantastic."
+      }
+    ]
+  },
+  {
+    "id": "b1-u7-l3",
+    "unit": "b1-u7",
+    "title": "Refining the Genitive in Culture",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mastering the Genitive Case",
+        "body": "While English often uses 'of' or an apostrophe-s to show possession, German uses the Genitive case to change the article itself. For masculine and neuter nouns, the article becomes 'des' and the noun typically adds an '-s' or '-es' ending. For feminine and plural nouns, the article changes to 'der'. Using the Genitive instead of 'von' + Dative will make your German sound much more sophisticated and professional when discussing art and literature.",
+        "table": [
+          [
+            "des Films",
+            "of the film"
+          ],
+          [
+            "der Autorin",
+            "of the female author"
+          ],
+          [
+            "des Kindes",
+            "of the child"
+          ],
+          [
+            "der Traditionen",
+            "of the traditions"
+          ],
+          [
+            "Goethes Werke",
+            "Goethe's works"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich finde die Handlung des Buches gut, obwohl das Ende traurig ist.",
+        "en": "I find the plot of the book good, although the ending is sad."
+      },
+      {
+        "type": "phrase",
+        "de": "Die Werke der berühmten Autorin sind weltweit sehr bekannt.",
+        "en": "The works of the famous female author are very well known worldwide."
+      },
+      {
+        "type": "phrase",
+        "de": "Das ist die Meinung des Kritikers über den neuen Film.",
+        "en": "That is the critic's opinion about the new film."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die Handlung ___ Romans ist sehr komplex.",
+        "options": [
+          "des",
+          "dem",
+          "den"
+        ],
+        "answer": 0,
+        "explain": "'Roman' is a masculine noun, and the genitive masculine article is 'des'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Wir bewundern die Schönheit ___ Natur.",
+        "options": [
+          "der",
+          "die",
+          "den"
+        ],
+        "answer": 0,
+        "explain": "'Natur' is a feminine noun, and the genitive feminine article is 'der'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "des Films",
+            "of the film"
+          ],
+          [
+            "der Musik",
+            "of the music"
+          ],
+          [
+            "des Autors",
+            "of the author"
+          ],
+          [
+            "der Tradition",
+            "of the tradition"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "The story of the old fairy tale is really very sad.",
+        "answer": [
+          "Die",
+          "Geschichte",
+          "des",
+          "alten",
+          "Märchens",
+          "ist",
+          "wirklich",
+          "sehr",
+          "traurig."
+        ],
+        "extra": [
+          "das",
+          "Autorin"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Der Stil des berühmten Malers ist weltweit bekannt.",
+        "en": "The style of the famous painter is known worldwide."
+      },
+      {
+        "type": "speak",
+        "de": "Ich finde die Atmosphäre des Theaters wirklich sehr beeindruckend.",
+        "en": "I find the atmosphere of the theater really very impressive."
+      }
+    ]
+  },
+  {
+    "id": "b1-u8-l1",
+    "unit": "b1-u8",
+    "title": "Talking About the Future",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mastering Futur I",
+        "body": "To express future plans or predictions, German uses the auxiliary verb *werden* combined with the infinitive of the main verb. Unlike English, where we often use \"going to\" for intentions, German speakers frequently use the present tense for near-future plans, reserving *werden* for more certain predictions or formal intentions. The most important rule is that the conjugated form of *werden* stays in the second position, while the main verb moves to the very end of the sentence.",
+        "table": [
+          [
+            "Ich werde reisen",
+            "I will travel"
+          ],
+          [
+            "Du wirst arbeiten",
+            "You will work"
+          ],
+          [
+            "Er wird kommen",
+            "He will come"
+          ],
+          [
+            "Wir werden sehen",
+            "We will see"
+          ],
+          [
+            "Sie werden gewinnen",
+            "They will win"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich werde nächstes Jahr eine große Reise durch Europa machen.",
+        "en": "I will take a big trip through Europe next year."
+      },
+      {
+        "type": "phrase",
+        "de": "Wir werden bestimmt viel Spaß auf der Party haben.",
+        "en": "We will certainly have a lot of fun at the party.",
+        "note": "Use 'bestimmt' (certainly) to sound more natural when making predictions."
+      },
+      {
+        "type": "choice",
+        "prompt": "Nächsten Sommer ________ ich nach Japan fliegen.",
+        "options": [
+          "werde",
+          "wird",
+          "werden"
+        ],
+        "answer": 0,
+        "explain": "The subject 'ich' requires the first-person singular conjugation of 'werden'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Glaubst du, dass es morgen ________?",
+        "options": [
+          "regnen wird",
+          "wird regnen",
+          "regnet wird"
+        ],
+        "answer": 0,
+        "explain": "In a subordinate clause starting with 'dass', the conjugated verb 'wird' must move to the very end."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich verspreche dir, dass ich dich morgen ________.",
+        "options": [
+          "anrufen werde",
+          "werde anrufen",
+          "anrufe werde"
+        ],
+        "answer": 0,
+        "explain": "In a subordinate clause with 'dass', the conjugated verb 'werde' goes to the end, following the infinitive."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "nächstes Jahr",
+            "next year"
+          ],
+          [
+            "versuchen",
+            "to try"
+          ],
+          [
+            "bestimmt",
+            "certainly"
+          ],
+          [
+            "die Zukunft",
+            "the future"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I will try to learn a new language next year.",
+        "answer": [
+          "Ich",
+          "werde",
+          "versuchen,",
+          "nächstes",
+          "Jahr",
+          "eine",
+          "neue",
+          "Sprache",
+          "zu",
+          "lernen."
+        ],
+        "extra": [
+          "durch",
+          "haben"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Wir werden bald ein neues Haus kaufen.",
+        "en": "We will buy a new house soon."
+      },
+      {
+        "type": "speak",
+        "de": "Ich werde in der Zukunft einen interessanten Job finden.",
+        "en": "I will find an interesting job in the future."
+      },
+      {
+        "type": "speak",
+        "de": "Vielleicht werden wir nächstes Jahr zusammen verreisen.",
+        "en": "Perhaps we will travel together next year."
+      }
+    ]
+  },
+  {
+    "id": "b1-u8-l2",
+    "unit": "b1-u8",
+    "title": "Wenn vs. Als: Navigating the Past and the Conditional",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "The 'When' Trap",
+        "body": "In English, we use 'when' for almost every situation, but German requires a specific choice. Use 'als' for a single, completed event or a specific period in the past. Use 'wenn' for repeated events in the past (meaning 'whenever'), or for any condition or event in the present and future. This distinction is vital for describing your past dreams versus your future plans.",
+        "table": [
+          [
+            "Als ich ein Kind war...",
+            "When I was a child..."
+          ],
+          [
+            "Wenn ich Zeit habe...",
+            "When/If I have time..."
+          ],
+          [
+            "Immer wenn es regnet...",
+            "Whenever it rains..."
+          ],
+          [
+            "Als ich gestern ankam...",
+            "When I arrived yesterday..."
+          ],
+          [
+            "Wenn ich im Lotto gewinne...",
+            "If I win the lottery..."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Als ich jung war, wollte ich unbedingt Pilot werden.",
+        "en": "When I was young, I really wanted to become a pilot."
+      },
+      {
+        "type": "phrase",
+        "de": "Wenn ich genug Geld gespart habe, werde ich eine Weltreise machen.",
+        "en": "When I have saved enough money, I will go on a world trip."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich war sehr glücklich, als ich meine erste Wohnung gefunden habe.",
+        "en": "I was very happy when I found my first apartment."
+      },
+      {
+        "type": "choice",
+        "prompt": "___ ich gestern nach Hause kam, war ich sehr müde.",
+        "options": [
+          "Wenn",
+          "Als",
+          "Wann"
+        ],
+        "answer": 1,
+        "explain": "Use 'als' because arriving home yesterday was a single, specific event in the past."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich besuche meine Großeltern immer, ___ ich im Urlaub bin.",
+        "options": [
+          "als",
+          "wenn",
+          "wann"
+        ],
+        "answer": 1,
+        "explain": "Use 'wenn' because this is a repeated situation in the present/future."
+      },
+      {
+        "type": "choice",
+        "prompt": "___ ich reich wäre, würde ich sofort kündigen.",
+        "options": [
+          "Als",
+          "Wann",
+          "Wenn"
+        ],
+        "answer": 2,
+        "explain": "Use 'wenn' because this is a hypothetical/conditional 'if' statement."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Als",
+            "When (single past event)"
+          ],
+          [
+            "Wenn",
+            "When/If (conditional or repeated)"
+          ],
+          [
+            "Immer wenn",
+            "Whenever"
+          ],
+          [
+            "Damals",
+            "Back then"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "When I lived in Berlin, I learned a lot of German.",
+        "answer": [
+          "Als",
+          "ich",
+          "in",
+          "Berlin",
+          "wohnte,",
+          "habe",
+          "ich",
+          "viel",
+          "Deutsch",
+          "gelernt."
+        ],
+        "extra": [
+          "werde",
+          "Ich"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Wenn ich Zeit habe, lese ich ein gutes Buch.",
+        "en": "When I have time, I read a good book."
+      },
+      {
+        "type": "speak",
+        "de": "Als ich klein war, hatte ich einen großen Traum.",
+        "en": "When I was little, I had a big dream."
+      },
+      {
+        "type": "speak",
+        "de": "Wenn ich die Chance bekomme, werde ich nach Japan reisen.",
+        "en": "If I get the chance, I will travel to Japan."
+      }
+    ]
+  },
+  {
+    "id": "b1-u8-l3",
+    "unit": "b1-u8",
+    "title": "Mastering Intentions and Predictions with Futur I",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "The Future Tense: Futur I",
+        "body": "To express the future in German, we use the auxiliary verb *werden* combined with an infinitive at the end of the sentence. While English speakers often use 'will' for almost everything, German speakers frequently use the present tense for future plans if a time indicator is present. However, *Futur I* is the essential choice when you want to express a firm intention, a promise, or a prediction. Unlike English, where 'will' is a single word, German requires you to conjugate *werden* and push the main action to the very end of the clause.",
+        "table": [
+          [
+            "Ich werde reisen.",
+            "I will travel."
+          ],
+          [
+            "Wir werden das schaffen.",
+            "We will manage it."
+          ],
+          [
+            "Er wird morgen kommen.",
+            "He will come tomorrow."
+          ],
+          [
+            "Sie werden viel lernen.",
+            "They will learn a lot."
+          ],
+          [
+            "Du wirst es verstehen.",
+            "You will understand it."
+          ],
+          [
+            "Es wird regnen.",
+            "It will rain."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich werde nächstes Jahr eine Weltreise machen, wenn ich genug Geld habe.",
+        "en": "I will go on a world trip next year if I have enough money."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich glaube, dass wir unsere Ziele bald erreichen werden.",
+        "en": "I believe that we will reach our goals soon."
+      },
+      {
+        "type": "phrase",
+        "de": "Wir werden sicher zusammen feiern, wenn wir das Ziel erreicht haben.",
+        "en": "We will surely celebrate together once we have reached the goal."
+      },
+      {
+        "type": "choice",
+        "prompt": "Nächste Woche ______ wir unsere Pläne endlich besprechen.",
+        "options": [
+          "werden",
+          "wird",
+          "werden besprechen"
+        ],
+        "answer": 0,
+        "explain": "In a standard sentence, the conjugated verb 'werden' takes the second position, and the infinitive 'besprechen' goes to the end."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich bin sicher, dass er die Prüfung ______.",
+        "options": [
+          "bestehen wird",
+          "wird bestehen",
+          "bestehen werden"
+        ],
+        "answer": 0,
+        "explain": "In a subordinate clause starting with 'dass,' the conjugated verb 'wird' moves to the very end, following the infinitive 'bestehen'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Du ______ bestimmt eine tolle Zeit in Berlin haben.",
+        "options": [
+          "wirst",
+          "wirst werden",
+          "werden"
+        ],
+        "answer": 0,
+        "explain": "The subject 'du' requires the conjugated form 'wirst,' and the infinitive 'haben' is placed at the end of the sentence."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Ich werde",
+            "I will"
+          ],
+          [
+            "Du wirst",
+            "You will"
+          ],
+          [
+            "Er wird",
+            "He will"
+          ],
+          [
+            "Wir werden",
+            "We will"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I will try to find a new job soon.",
+        "answer": [
+          "Ich",
+          "werde",
+          "versuchen,",
+          "dass",
+          "ich",
+          "bald",
+          "eine",
+          "neue",
+          "Stelle",
+          "finde."
+        ],
+        "extra": [
+          "zusammen",
+          "machen"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Wir werden nächstes Jahr nach Deutschland fliegen.",
+        "en": "We will fly to Germany next year."
+      },
+      {
+        "type": "speak",
+        "de": "Ich werde meine Träume verwirklichen, egal was passiert.",
+        "en": "I will realize my dreams, no matter what happens."
+      },
+      {
+        "type": "speak",
+        "de": "Was wirst du machen, wenn du im Lotto gewinnst?",
+        "en": "What will you do if you win the lottery?"
+      }
+    ]
+  }
+]

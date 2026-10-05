@@ -1,0 +1,2450 @@
+[
+  {
+    "id": "b2-u1-l1",
+    "unit": "b2-u1",
+    "title": "Mastering Argumentative Structure: Connectors and Two-Part Conjunctions",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Connectors and Two-Part Conjunctions",
+        "body": "To build a sophisticated argument in German, you must move beyond simple sentences by using connectors to link ideas logically. Two-part conjunctions (Doppelkonjunktionen) allow you to express nuances like addition, alternatives, or contradictions more precisely than in English. Unlike English, where word order remains relatively stable, German connectors often trigger specific word order changes, such as moving the verb to the end or affecting the position of the subject.",
+        "table": [
+          [
+            "sowohl ... als auch",
+            "both ... and"
+          ],
+          [
+            "nicht nur ... sondern auch",
+            "not only ... but also"
+          ],
+          [
+            "entweder ... oder",
+            "either ... or"
+          ],
+          [
+            "weder ... noch",
+            "neither ... nor"
+          ],
+          [
+            "zwar ... aber",
+            "indeed ... but"
+          ],
+          [
+            "einerseits ... andererseits",
+            "on the one hand ... on the other hand"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Es ist nicht nur wichtig, die Fakten zu prüfen, sondern auch die verschiedenen Perspektiven zu berücksichtigen.",
+        "en": "It is not only important to check the facts, but also to consider the different perspectives."
+      },
+      {
+        "type": "phrase",
+        "de": "Einerseits ist das Projekt kosteneffizient, andererseits erfordert es eine enorme Menge an Zeit.",
+        "en": "On the one hand, the project is cost-effective; on the other hand, it requires an enormous amount of time."
+      },
+      {
+        "type": "phrase",
+        "de": "Man sollte entweder die bestehenden Regeln ändern oder ein völlig neues System einführen.",
+        "en": "One should either change the existing rules or introduce a completely new system."
+      },
+      {
+        "type": "choice",
+        "prompt": "Wir sollten ___ die Qualität verbessern, ___ die Kosten senken.",
+        "options": [
+          "sowohl ... als auch",
+          "weder ... noch",
+          "entweder ... oder"
+        ],
+        "answer": 0,
+        "explain": "'Sowohl ... als auch' is used to express that both options are being applied or are true."
+      },
+      {
+        "type": "choice",
+        "prompt": "Das Argument ist ___ überzeugend, ___ es basiert auf unvollständigen Daten.",
+        "options": [
+          "nicht nur ... sondern auch",
+          "zwar ... aber",
+          "weder ... noch"
+        ],
+        "answer": 1,
+        "explain": "'Zwar ... aber' is used to acknowledge a valid point before introducing a contrasting limitation."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die Reform ist ___ sinnvoll, ___ sie ist auch notwendig.",
+        "options": [
+          "nicht nur ... sondern auch",
+          "zwar ... aber",
+          "entweder ... oder"
+        ],
+        "answer": 0,
+        "explain": "'Nicht nur ... sondern auch' emphasizes that two different qualities are both present."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "sowohl ... als auch",
+            "both ... and"
+          ],
+          [
+            "entweder ... oder",
+            "either ... or"
+          ],
+          [
+            "weder ... noch",
+            "neither ... nor"
+          ],
+          [
+            "zwar ... aber",
+            "indeed ... but"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "One should not only consider the economic advantages but also take the social consequences into account.",
+        "answer": [
+          "Man",
+          "sollte",
+          "nicht",
+          "nur",
+          "die",
+          "wirtschaftlichen",
+          "Vorteile",
+          "betrachten,",
+          "sondern",
+          "auch",
+          "die",
+          "sozialen",
+          "Folgen",
+          "berücksichtigen."
+        ],
+        "extra": [
+          "wichtig",
+          "Menge"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Die Entscheidung ist zwar sehr schwierig, aber sie muss heute getroffen werden.",
+        "en": "The decision is indeed very difficult, but it must be made today."
+      },
+      {
+        "type": "speak",
+        "de": "Man muss sowohl die Kosten senken als auch die Qualität verbessern.",
+        "en": "One must both reduce costs and improve quality."
+      },
+      {
+        "type": "speak",
+        "de": "Die Entscheidung ist zwar riskant, aber sie ist für uns absolut notwendig.",
+        "en": "The decision is indeed risky, but it is absolutely necessary for us."
+      }
+    ]
+  },
+  {
+    "id": "b2-u1-l2",
+    "unit": "b2-u1",
+    "title": "Advanced Connectors for Nuanced Arguments",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Two-Part Conjunctions (Doppelkonjunktionen)",
+        "body": "Two-part conjunctions allow you to connect two related parts of a sentence to show nuance, such as contradiction, addition, or alternatives. Unlike English, where these are often treated as simple conjunctions, German two-part conjunctions require specific pairing to maintain the logical flow of a debate. Mastering these is essential for B2-level argumentation, as they allow you to weigh pros and cons within a single, complex sentence structure.",
+        "table": [
+          [
+            "zwar ... aber",
+            "indeed ... but"
+          ],
+          [
+            "nicht nur ... sondern auch",
+            "not only ... but also"
+          ],
+          [
+            "entweder ... oder",
+            "either ... or"
+          ],
+          [
+            "weder ... noch",
+            "neither ... nor"
+          ],
+          [
+            "sowohl ... als auch",
+            "both ... and"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Es wäre zwar sinnvoll, die Kosten zu senken, aber die Qualität darf nicht leiden.",
+        "en": "It would indeed be sensible to reduce costs, but quality must not suffer.",
+        "note": "Use 'zwar ... aber' to acknowledge a valid point before introducing a counter-argument."
+      },
+      {
+        "type": "phrase",
+        "de": "Nicht nur die wirtschaftlichen Folgen, sondern auch die sozialen Auswirkungen müssen dringend berücksichtigt werden.",
+        "en": "Not only the economic consequences, but also the social impacts must be urgently considered."
+      },
+      {
+        "type": "choice",
+        "prompt": "Das neue Gesetz ist ________ effizient, ________ es bietet auch eine hohe soziale Gerechtigkeit.",
+        "options": [
+          "zwar ... aber",
+          "nicht nur ... sondern auch",
+          "weder ... noch"
+        ],
+        "answer": 1,
+        "explain": "\"nicht nur ... sondern auch\" is used to emphasize that two positive qualities apply to the subject."
+      },
+      {
+        "type": "choice",
+        "prompt": "Wir können ________ die Steuern erhöhen, ________ wir müssen die Staatsausgaben drastisch reduzieren.",
+        "options": [
+          "entweder ... oder",
+          "sowohl ... als auch",
+          "weder ... noch"
+        ],
+        "answer": 0,
+        "explain": "\"entweder ... oder\" is used to present two mutually exclusive options or consequences."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die Reform ist ________ teuer, ________ sie ist absolut notwendig für die Stabilität.",
+        "options": [
+          "nicht nur ... sondern auch",
+          "zwar ... aber",
+          "entweder ... oder"
+        ],
+        "answer": 1,
+        "explain": "\"zwar ... aber\" is used to concede a point (the cost) before emphasizing the necessity."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "nicht nur ... sondern auch",
+            "not only ... but also"
+          ],
+          [
+            "weder ... noch",
+            "neither ... nor"
+          ],
+          [
+            "entweder ... oder",
+            "either ... or"
+          ],
+          [
+            "sowohl ... als auch",
+            "both ... and"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "It is not only important to check the facts, but also to understand the arguments of the opposing side.",
+        "answer": [
+          "Es",
+          "ist",
+          "nicht",
+          "nur",
+          "wichtig,",
+          "die",
+          "Fakten",
+          "zu",
+          "prüfen,",
+          "sondern",
+          "auch",
+          "die",
+          "Argumente",
+          "der",
+          "Gegenseite",
+          "zu",
+          "verstehen."
+        ],
+        "extra": [
+          "leiden",
+          "sozialen"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Weder die Regierung noch die Opposition hat eine Lösung für dieses Problem präsentiert.",
+        "en": "Neither the government nor the opposition has presented a solution to this problem."
+      },
+      {
+        "type": "speak",
+        "de": "Einerseits ist die Technologie hilfreich, andererseits birgt sie große Risiken für unsere Gesellschaft.",
+        "en": "On one hand, the technology is helpful; on the other hand, it poses great risks to our society."
+      },
+      {
+        "type": "speak",
+        "de": "Je mehr wir diskutieren, desto klarer wird die eigentliche Problematik der aktuellen Reform.",
+        "en": "The more we discuss, the clearer the actual problem of the current reform becomes."
+      }
+    ]
+  },
+  {
+    "id": "b2-u1-l3",
+    "unit": "b2-u1",
+    "title": "Mastering Argumentative Nuance",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mastering Argumentative Nuance",
+        "body": "To debate effectively at a B2 level, you must move beyond simple causal links and use connectors that allow for concession and balance. German two-part conjunctions allow you to 'sandwich' an argument, acknowledging a valid point before presenting your counter-argument. Unlike English, which often uses 'although' at the start of a sentence, German connectors like 'zwar... aber' or 'einerseits... andererseits' act as structural anchors that balance two opposing clauses within a single complex sentence.",
+        "table": [
+          [
+            "zwar ... aber",
+            "it is true ... but"
+          ],
+          [
+            "einerseits ... andererseits",
+            "on the one hand ... on the other hand"
+          ],
+          [
+            "nicht nur ... sondern auch",
+            "not only ... but also"
+          ],
+          [
+            "weder ... noch",
+            "neither ... nor"
+          ],
+          [
+            "je ... desto",
+            "the [more] ... the [more]"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Zwar sind die Kosten hoch, aber die langfristigen Vorteile überwiegen bei weitem.",
+        "en": "It is true that the costs are high, but the long-term benefits far outweigh them."
+      },
+      {
+        "type": "phrase",
+        "de": "Einerseits müsste der Umweltschutz stärker beachtet werden, andererseits dürfte die Wirtschaft nicht gelähmt werden.",
+        "en": "On one hand, environmental protection would have to be considered more strongly; on the other hand, the economy must not be paralyzed."
+      },
+      {
+        "type": "phrase",
+        "de": "Nicht nur die Qualität muss stimmen, sondern auch die Geschwindigkeit der Lieferung muss garantiert sein.",
+        "en": "Not only must the quality be correct, but the speed of delivery must also be guaranteed.",
+        "note": "Use this phrase in formal business negotiations to emphasize multiple requirements."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die neue Reform ist _______ sinnvoll, _______ sie ist für die Bürger extrem kompliziert.",
+        "options": [
+          "zwar ... aber",
+          "entweder ... oder",
+          "weder ... noch"
+        ],
+        "answer": 0,
+        "explain": "The sentence structure requires a concession ('it is true that it is useful') followed by a contrast ('but it is complicated')."
+      },
+      {
+        "type": "choice",
+        "prompt": "Wir müssen _______ die Bildung fördern _______ die Infrastruktur massiv verbessern.",
+        "options": [
+          "sowohl ... als auch",
+          "je ... desto",
+          "zwar ... aber"
+        ],
+        "answer": 0,
+        "explain": "'Sowohl ... als auch' is used to connect two positive requirements that both must be fulfilled."
+      },
+      {
+        "type": "choice",
+        "prompt": "_______ moderner die Technik wird, _______ einfacher wird die Bedienung für alle Nutzer.",
+        "options": [
+          "Je ... desto",
+          "Nicht nur ... sondern auch",
+          "Einerseits ... andererseits"
+        ],
+        "answer": 0,
+        "explain": "'Je ... desto' is the correct proportional connector used to express 'the more... the more'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "zwar ... aber",
+            "it is true ... but"
+          ],
+          [
+            "weder ... noch",
+            "neither ... nor"
+          ],
+          [
+            "einerseits ... andererseits",
+            "on the one hand ... on the other hand"
+          ],
+          [
+            "nicht nur ... sondern auch",
+            "not only ... but also"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "Although the implementation is difficult, the benefits for society are undeniable.",
+        "answer": [
+          "Zwar",
+          "ist",
+          "die",
+          "Umsetzung",
+          "schwierig,",
+          "aber",
+          "die",
+          "Vorteile",
+          "für",
+          "die",
+          "Gesellschaft",
+          "sind",
+          "unbestreitbar."
+        ],
+        "extra": [
+          "langfristigen",
+          "der"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Einerseits ist das Projekt sehr teuer, andererseits ist es für uns absolut notwendig.",
+        "en": "On one hand the project is very expensive, on the other hand it is absolutely necessary for us."
+      },
+      {
+        "type": "speak",
+        "de": "Nicht nur die Qualität muss stimmen, sondern auch die Zuverlässigkeit der Partner.",
+        "en": "Not only must the quality be correct, but also the reliability of the partners."
+      },
+      {
+        "type": "speak",
+        "de": "Je mehr wir über dieses Thema diskutieren, desto klarer wird die eigentliche Problematik.",
+        "en": "The more we discuss this topic, the clearer the actual problem becomes."
+      }
+    ]
+  },
+  {
+    "id": "b2-u2-l1",
+    "unit": "b2-u2",
+    "title": "Mastering Passive with Modal Verbs",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Passive with Modal Verbs",
+        "body": "In professional German, the passive voice is used to focus on the action rather than the person performing it. When you add a modal verb like *müssen* (must) or *können* (can), the structure changes: the modal verb is conjugated in the second position, while the past participle and the infinitive *werden* move to the very end of the sentence. Unlike English, where 'be' stays near the modal, German places the entire verb complex at the end. This structure is essential for describing requirements, possibilities, or obligations in a business context.",
+        "table": [
+          [
+            "Das Dokument muss unterschrieben werden",
+            "The document must be signed"
+          ],
+          [
+            "Die E-Mail kann heute noch verschickt werden",
+            "The email can still be sent today"
+          ],
+          [
+            "Der Termin sollte verschoben werden",
+            "The appointment should be postponed"
+          ],
+          [
+            "Die Fehler müssen sofort korrigiert werden",
+            "The errors must be corrected immediately"
+          ],
+          [
+            "Die Sitzung kann jederzeit unterbrochen werden",
+            "The meeting can be interrupted at any time"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Die Agenda für die nächste Besprechung muss noch von der Geschäftsführung genehmigt werden.",
+        "en": "The agenda for the next meeting must still be approved by the management."
+      },
+      {
+        "type": "phrase",
+        "de": "Alle wichtigen Entscheidungen sollten während der Konferenz immer schriftlich von uns festgehalten werden.",
+        "en": "All important decisions should always be recorded in writing by us during the conference."
+      },
+      {
+        "type": "phrase",
+        "de": "Hinweis: Using 'sollten' (Konjunktiv II) adds a layer of professional politeness or recommendation.",
+        "en": "Note: Using 'sollten' (Konjunktiv II) adds a layer of professional politeness or recommendation."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die Ergebnisse der Analyse _______ bis zum Ende der Woche präsentiert werden.",
+        "options": [
+          "müssen",
+          "muss",
+          "müssen werden"
+        ],
+        "answer": 0,
+        "explain": "The subject 'Die Ergebnisse' is plural, so the modal verb must be conjugated as 'müssen'."
+      },
+      {
+        "type": "choice",
+        "prompt": "In diesem Meeting _______ die neuen Ziele für das nächste Jahr besprochen werden.",
+        "options": [
+          "können",
+          "können werden",
+          "können worden"
+        ],
+        "answer": 0,
+        "explain": "In the passive with a modal verb, the modal verb is conjugated and 'werden' is placed at the end as an infinitive; adding 'werden' after the modal is redundant."
+      },
+      {
+        "type": "choice",
+        "prompt": "Der Fehler _______ von der IT-Abteilung so schnell wie möglich behoben werden.",
+        "options": [
+          "muss",
+          "muss werden",
+          "muss gewesen"
+        ],
+        "answer": 0,
+        "explain": "The sentence already contains 'werden' at the end, so you only need the conjugated modal verb 'muss' in the second position."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Die gesetzliche Frist muss heute eingehalten werden",
+            "The legal deadline must be met today"
+          ],
+          [
+            "Die wichtige Datei muss unbedingt noch gespeichert werden",
+            "The important file must still be saved"
+          ],
+          [
+            "Das komplizierte Problem muss heute gelöst werden",
+            "The complicated problem must be solved today"
+          ],
+          [
+            "Der ausführliche Bericht muss endlich fertiggestellt werden",
+            "The detailed report must finally be completed"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "The new guidelines must be read by all employees in our team.",
+        "answer": [
+          "Die",
+          "neuen",
+          "Richtlinien",
+          "müssen",
+          "von",
+          "allen",
+          "Mitarbeitern",
+          "in",
+          "unserem",
+          "Team",
+          "gelesen",
+          "werden."
+        ],
+        "extra": [
+          "genehmigt",
+          "immer"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Die wichtige Entscheidung muss heute während der gesamten Sitzung gemeinsam getroffen werden.",
+        "en": "The important decision must be made together during the entire meeting today."
+      },
+      {
+        "type": "speak",
+        "de": "Diese wichtigen Aufgaben können erst nach der langen Mittagspause gemeinsam erledigt werden.",
+        "en": "These important tasks can only be completed together after the long lunch break."
+      }
+    ]
+  },
+  {
+    "id": "b2-u2-l2",
+    "unit": "b2-u2",
+    "title": "The Result: Using the Stative Passive",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Understanding the Zustandspassiv",
+        "body": "While the *Vorgangspassiv* (using *werden*) describes an action in progress, the *Zustandspassiv* (using *sein*) describes the resulting state after an action is completed. In English, we often use the same structure for both, but in German, you must distinguish between 'the door is being closed' (*wird geschlossen*) and 'the door is closed' (*ist geschlossen*). To form the stative passive, combine the auxiliary verb *sein* with the Partizip II of the main verb to emphasize the current status.",
+        "table": [
+          [
+            "Die Unterlagen sind vorbereitet",
+            "The documents are prepared"
+          ],
+          [
+            "Der Vertrag ist unterschrieben",
+            "The contract is signed"
+          ],
+          [
+            "Die Sitzung ist beendet",
+            "The meeting is finished"
+          ],
+          [
+            "Das Ziel ist erreicht",
+            "The goal is reached"
+          ],
+          [
+            "Die Nachricht ist gesendet",
+            "The message is sent"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Die Agenda für die heutige Sitzung ist bereits an alle Beteiligten verteilt.",
+        "en": "The agenda for today's meeting is already distributed to everyone involved."
+      },
+      {
+        "type": "phrase",
+        "de": "Nachdem die Verhandlungen abgeschlossen sind, werden wir das Ergebnis gemeinsam analysieren.",
+        "en": "After the negotiations are concluded, we will analyze the result together."
+      },
+      {
+        "type": "phrase",
+        "de": "Note: Use the *Zustandspassiv* when you want to emphasize the current status or result rather than the process of change.",
+        "en": ""
+      },
+      {
+        "type": "choice",
+        "prompt": "Die neue Strategie ______ bereits von der Geschäftsleitung offiziell bekannt gegeben.",
+        "options": [
+          "wird",
+          "ist",
+          "hat"
+        ],
+        "answer": 1,
+        "explain": "\"ist\" is the auxiliary verb used in the Zustandspassiv to describe a completed state."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die Präsentation ______ bereits auf dem Server gespeichert, sodass wir sie sofort nutzen können.",
+        "options": [
+          "wird",
+          "ist",
+          "hat"
+        ],
+        "answer": 1,
+        "explain": "\"ist\" is correct because the focus is on the current state of the presentation being available."
+      },
+      {
+        "type": "choice",
+        "prompt": "Der Raum für das Vorstellungsgespräch ______ bereits für den Kandidaten vorbereitet.",
+        "options": [
+          "ist",
+          "wird",
+          "hat"
+        ],
+        "answer": 0,
+        "explain": "\"ist\" describes the state of the room being ready, rather than the act of preparing it."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Die Entscheidung ist getroffen",
+            "The decision is made"
+          ],
+          [
+            "Das Dokument ist unterschrieben",
+            "The document is signed"
+          ],
+          [
+            "Der Termin ist vereinbart",
+            "The appointment is arranged"
+          ],
+          [
+            "Die Aufgaben sind erledigt",
+            "The tasks are completed"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "The agenda for the important meeting has already been prepared by the secretary.",
+        "answer": [
+          "Die",
+          "Agenda",
+          "für",
+          "die",
+          "wichtige",
+          "Besprechung",
+          "ist",
+          "bereits",
+          "von",
+          "der",
+          "Sekretärin",
+          "vorbereitet."
+        ],
+        "extra": [
+          "*Zustandspassiv*",
+          "of"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Das Protokoll der heutigen Sitzung ist bereits im internen System gespeichert.",
+        "en": "The minutes of today's meeting are already saved in the internal system."
+      },
+      {
+        "type": "speak",
+        "de": "Ist das Budget für das kommende Quartal bereits vollständig vom Vorstand freigegeben?",
+        "en": "Has the budget for the upcoming quarter already been fully released by the board?"
+      }
+    ]
+  },
+  {
+    "id": "b2-u2-l3",
+    "unit": "b2-u2",
+    "title": "Mastering Passive with Modal Verbs in Meetings",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Passive with Modal Verbs",
+        "body": "To express necessity, possibility, or permission regarding an action in the passive voice, we combine a modal verb with the Partizip II and the infinitive werden. Unlike English, where the auxiliary 'be' is used, German places the conjugated modal verb in the second position and pushes both the participle and werden to the very end of the clause. This structure is essential for professional communication when discussing tasks, rules, or requirements.",
+        "table": [
+          [
+            "Die Entscheidung muss getroffen werden",
+            "The decision must be made"
+          ],
+          [
+            "Die Unterlagen können heute verschickt werden",
+            "The documents can be sent today"
+          ],
+          [
+            "Der Fehler sollte sofort korrigiert werden",
+            "The error should be corrected immediately"
+          ],
+          [
+            "Die Agenda darf nicht geändert werden",
+            "The agenda must not be changed"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Die Ergebnisse der heutigen Präsentation müssen bis morgen Abend von der Fachabteilung gründlich analysiert werden.",
+        "en": "The results of today's presentation must be thoroughly analyzed by the specialist department by tomorrow evening."
+      },
+      {
+        "type": "phrase",
+        "de": "In diesem wichtigen Meeting sollte die neue Strategie für das nächste Quartal ausführlich besprochen werden.",
+        "en": "In this important meeting, the new strategy for the next quarter should be discussed in detail.",
+        "note": "Using 'sollte' (Konjunktiv II) instead of 'soll' makes the suggestion more polite and professional."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die E-Mail _______ heute noch von der Geschäftsleitung unterschrieben werden.",
+        "options": [
+          "muss",
+          "muss unterschrieben",
+          "wird müssen"
+        ],
+        "answer": 0,
+        "explain": "In a passive construction with a modal verb, the modal verb is conjugated in the second position, while the participle and 'werden' are placed at the end."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die neuen Richtlinien _______ bei der nächsten Sitzung ausführlich erläutert werden.",
+        "options": [
+          "können",
+          "können erläutert",
+          "werden können"
+        ],
+        "answer": 0,
+        "explain": "The modal verb 'können' is conjugated for the third person plural, while the passive components 'erläutert werden' complete the sentence at the end."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Die Frist muss unbedingt eingehalten werden",
+            "The deadline must be strictly met"
+          ],
+          [
+            "Das Problem kann schnell gelöst werden",
+            "The problem can be solved quickly"
+          ],
+          [
+            "Der Bericht sollte heute erstellt werden",
+            "The report should be created today"
+          ],
+          [
+            "Die Sitzung darf nicht unterbrochen werden",
+            "The meeting must not be interrupted"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "The costs for the new project must be discussed by all participants in the next meeting.",
+        "answer": [
+          "Die",
+          "Kosten",
+          "für",
+          "das",
+          "neue",
+          "Projekt",
+          "müssen",
+          "in",
+          "der",
+          "nächsten",
+          "Sitzung",
+          "von",
+          "allen",
+          "Beteiligten",
+          "besprochen",
+          "werden."
+        ],
+        "extra": [
+          "wichtigen",
+          "morgen"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Die Teilnehmer müssen vor dem offiziellen Beginn der Konferenz im System korrekt angemeldet werden.",
+        "en": "The participants must be correctly registered in the system before the official start of the conference."
+      },
+      {
+        "type": "speak",
+        "de": "Diese wichtige Information muss unbedingt an alle relevanten Abteilungen im gesamten Unternehmen weitergeleitet werden.",
+        "en": "This important information must certainly be forwarded to all relevant departments in the entire company."
+      }
+    ]
+  },
+  {
+    "id": "b2-u3-l1",
+    "unit": "b2-u3",
+    "title": "Nominalisation in Scientific Contexts",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mastering the Nominal Style (Nominalstil)",
+        "body": "In scientific German, verbs are frequently transformed into nouns to create a more formal and concise 'nominal style.' While English also uses nominalization to sound professional, German uses it to condense complex information into dense, prepositional phrases. This often involves replacing a subordinate clause, such as 'because the temperature rises,' with a noun phrase like 'due to the rise in temperature.' Mastering this transition is essential for reading academic papers and writing professional reports.",
+        "table": [
+          [
+            "die Untersuchung",
+            "the investigation"
+          ],
+          [
+            "die Entdeckung",
+            "the discovery"
+          ],
+          [
+            "die Entwicklung",
+            "the development"
+          ],
+          [
+            "die Anwendung",
+            "the application"
+          ],
+          [
+            "die Berechnung",
+            "the calculation"
+          ],
+          [
+            "die Schlussfolgerung",
+            "the conclusion"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Die genaue Untersuchung der Proben ist für das Endergebnis der gesamten Studie entscheidend.",
+        "en": "The precise examination of the samples is crucial for the final result of the entire study."
+      },
+      {
+        "type": "phrase",
+        "de": "Durch die Anwendung neuer Methoden konnten die Daten wesentlich präziser und schneller ausgewertet werden.",
+        "en": "Through the application of new methods, the data could be evaluated much more precisely and quickly."
+      },
+      {
+        "type": "phrase",
+        "de": "Eine schnelle Entwicklung der Technologie ist in diesem spezifischen wissenschaftlichen Bereich absolut unerlässlich.",
+        "en": "A rapid development of technology is absolutely essential in this specific scientific field."
+      },
+      {
+        "type": "choice",
+        "prompt": "Transform the verbal phrase 'Nachdem die Wissenschaftler die Theorie bewiesen haben...' into a nominal style: 'Nach [___] der Theorie durch die Wissenschaftler...'",
+        "options": [
+          "dem Beweis",
+          "den Beweis",
+          "der Beweis"
+        ],
+        "answer": 0,
+        "explain": "The preposition 'nach' requires the dative case, and 'Beweis' is a masculine noun, so 'dem Beweis' is the correct form."
+      },
+      {
+        "type": "choice",
+        "prompt": "Which noun correctly completes the sentence: 'Die [___] der Daten erfolgt durch einen Computer.'",
+        "options": [
+          "Verarbeitung",
+          "verarbeiten",
+          "verarbeitet"
+        ],
+        "answer": 0,
+        "explain": "'Verarbeitung' is the noun meaning 'processing,' which is required here to act as the subject of the sentence."
+      },
+      {
+        "type": "choice",
+        "prompt": "Complete the sentence: 'Durch die [___] der neuen Methode wurden viele Fehler vermieden.'",
+        "options": [
+          "Anwendung",
+          "angewendet",
+          "anwenden"
+        ],
+        "answer": 0,
+        "explain": "In the nominal style, the verb 'anwenden' is turned into the noun 'Anwendung' (application) following the preposition 'durch'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "die Forschung",
+            "research"
+          ],
+          [
+            "die Hypothese",
+            "hypothesis"
+          ],
+          [
+            "die Messung",
+            "measurement"
+          ],
+          [
+            "die Erkenntnis",
+            "finding/insight"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "The careful execution of the experiments enables an extremely precise measurement of the scientific results.",
+        "answer": [
+          "Die",
+          "sorgfältige",
+          "Durchführung",
+          "der",
+          "Experimente",
+          "ermöglicht",
+          "eine",
+          "äußerst",
+          "präzise",
+          "Messung",
+          "der",
+          "wissenschaftlichen",
+          "Ergebnisse."
+        ],
+        "extra": [
+          "schnelle",
+          "für"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Die detaillierte Analyse der chemischen Zusammensetzung erfordert wirklich sehr viel Zeit.",
+        "en": "The detailed analysis of the chemical composition really requires a lot of time."
+      },
+      {
+        "type": "speak",
+        "de": "Die ständige Entwicklung neuer Technologien verändert unsere gesamte moderne Gesellschaft grundlegend.",
+        "en": "The constant development of new technologies fundamentally changes our entire modern society."
+      },
+      {
+        "type": "speak",
+        "de": "Eine präzise Messung der chemischen Werte ist für die Forschung unerlässlich.",
+        "en": "A precise measurement of the chemical values is essential for research."
+      }
+    ]
+  },
+  {
+    "id": "b2-u3-l2",
+    "unit": "b2-u3",
+    "title": "Expanding Nominalisation: Prepositions and Nuance",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Beyond the Noun: Using Prepositions with Nominalised Forms",
+        "body": "While Lesson 1 focused on turning verbs into nouns, Lesson 2 teaches how to link these nouns to ideas using specific prepositions. In English, we often use conjunctions like 'because' or 'when' to start clauses, but in German scientific writing, we use specific prepositions like 'durch', 'nach', or 'bei' followed by a noun to create a more concise, professional tone. This shift from verbal clauses to prepositional phrases is essential for achieving a high-level academic register.",
+        "table": [
+          [
+            "Die Untersuchung der Daten",
+            "The investigation of the data"
+          ],
+          [
+            "Durch die Erhöhung der Temperatur",
+            "Through the increase in temperature"
+          ],
+          [
+            "Nach dem Abschluss der Studie",
+            "After the completion of the study"
+          ],
+          [
+            "Bei der Analyse der Proben",
+            "During the analysis of the samples"
+          ],
+          [
+            "Aufgrund der Ergebnisse",
+            "Due to the results"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Durch die Anwendung neuer Technologien konnte die Effizienz der Produktion signifikant gesteigert werden.",
+        "en": "Through the application of new technologies, the efficiency of production could be significantly increased."
+      },
+      {
+        "type": "phrase",
+        "de": "Bei der Durchführung der Experimente müssen alle Sicherheitsvorschriften strengstens eingehalten werden.",
+        "en": "During the execution of the experiments, all safety regulations must be strictly observed."
+      },
+      {
+        "type": "choice",
+        "prompt": "Wegen der unvorhersehbaren Wetterbedingungen musste das gesamte Experiment am heutigen Tage sofort abgebrochen werden.",
+        "options": [
+          "Wegen",
+          "Bei",
+          "Nach"
+        ],
+        "answer": 0,
+        "explain": "'Wegen' is used to express causality, which fits the context of an experiment being aborted due to weather."
+      },
+      {
+        "type": "choice",
+        "prompt": "______ der detaillierten Analyse der chemischen Zusammensetzung wurden mehrere kleine Unregelmäßigkeiten festgestellt.",
+        "options": [
+          "Nach",
+          "Durch",
+          "Bei"
+        ],
+        "answer": 2,
+        "explain": "'Bei' is used here to indicate that something happened during a specific process or event."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die wissenschaftliche Hypothese wurde ______ die systematische Beobachtung der Zellteilung endlich bestätigt.",
+        "options": [
+          "Durch",
+          "Nach",
+          "Bei"
+        ],
+        "answer": 0,
+        "explain": "'Durch' expresses the means or method used to achieve a result, such as systematic observation."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Die Auswertung",
+            "The evaluation"
+          ],
+          [
+            "Die Durchführung",
+            "The execution"
+          ],
+          [
+            "Die Steigerung",
+            "The increase"
+          ],
+          [
+            "Die Einhaltung",
+            "The compliance"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "Through the precise measurement of the parameters, the researchers were able to confirm the theory.",
+        "answer": [
+          "Durch",
+          "die",
+          "präzise",
+          "Messung",
+          "der",
+          "Parameter",
+          "konnten",
+          "die",
+          "Forscher",
+          "die",
+          "Theorie",
+          "bestätigen."
+        ],
+        "extra": [
+          "müssen",
+          "strengstens"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Nach der detaillierten Auswertung der Daten müssen die Ergebnisse zeitnah veröffentlicht werden.",
+        "en": "After the detailed evaluation of the data, the results must be published promptly."
+      },
+      {
+        "type": "speak",
+        "de": "Bei der genauen Untersuchung der Proben wurden sehr interessante chemische Reaktionen beobachtet.",
+        "en": "During the exact examination of the samples, very interesting chemical reactions were observed."
+      },
+      {
+        "type": "speak",
+        "de": "Durch die ständige Verbesserung der Methoden wird die Genauigkeit der Messungen erhöht.",
+        "en": "Through the constant improvement of the methods, the accuracy of the measurements is increased."
+      }
+    ]
+  },
+  {
+    "id": "b2-u3-l3",
+    "unit": "b2-u3",
+    "title": "Advanced Nominalisation: Synthesizing Complex Processes",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Syntactic Compression through Nominalisation",
+        "body": "In advanced scientific German, nominalisation is used to condense entire actions into single, information-dense noun phrases. While English often relies on relative clauses (e.g., 'when the temperature increases'), German prefers a noun-based structure (e.g., 'with the increase of the temperature'). This shift moves the focus from the actor to the process itself, creating the objective, impersonal tone required in academic writing.",
+        "table": [
+          [
+            "Die Untersuchung der Proben",
+            "The investigation of the samples"
+          ],
+          [
+            "Die Durchführung des Experiments",
+            "The execution of the experiment"
+          ],
+          [
+            "Die Erkenntnis aus den Daten",
+            "The insight from the data"
+          ],
+          [
+            "Die Entwicklung der Theorie",
+            "The development of the theory"
+          ],
+          [
+            "Die Veröffentlichung der Ergebnisse",
+            "The publication of the results"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Die Analyse der Daten ermöglicht eine wesentlich präzisere Schlussfolgerung für die Forschung.",
+        "en": "The analysis of the data enables a significantly more precise conclusion for research."
+      },
+      {
+        "type": "phrase",
+        "de": "Trotz der Komplexität der Fragestellung konnte eine schnelle Lösung gefunden werden.",
+        "en": "Despite the complexity of the question, a quick solution could be found."
+      },
+      {
+        "type": "phrase",
+        "de": "Die ständige Verbesserung der Technologie ist für den wissenschaftlichen Fortschritt entscheidend.",
+        "en": "The constant improvement of technology is crucial for scientific progress."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die _________ der Proben erforderte höchste Präzision.",
+        "options": [
+          "Analyse",
+          "analysieren",
+          "analysiert"
+        ],
+        "answer": 0,
+        "explain": "In this sentence, a noun is required to serve as the subject. 'Analyse' is the noun, whereas 'analysieren' is the infinitive verb and 'analysiert' is the past participle."
+      },
+      {
+        "type": "choice",
+        "prompt": "Wegen _________ der Temperatur sank der Druck im Behälter.",
+        "options": [
+          "der Senkung",
+          "die Senkung",
+          "senken"
+        ],
+        "answer": 0,
+        "explain": "The preposition 'wegen' requires the genitive case. Since 'Senkung' is feminine, the genitive article is 'der'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Nach _________ der Versuchsreihe wurden die Daten gespeichert.",
+        "options": [
+          "dem Abschluss",
+          "der Abschluss",
+          "abschließen"
+        ],
+        "answer": 0,
+        "explain": "The preposition 'nach' requires the dative case. 'Abschluss' is masculine, so the dative article is 'dem'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Die Entdeckung",
+            "The discovery"
+          ],
+          [
+            "Die Berechnung",
+            "The calculation"
+          ],
+          [
+            "Die Beobachtung",
+            "The observation"
+          ],
+          [
+            "Die Veränderung",
+            "The change"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "The systematic evaluation of the present results inevitably leads to new scientific insights.",
+        "answer": [
+          "Die",
+          "systematische",
+          "Auswertung",
+          "der",
+          "vorliegenden",
+          "Ergebnisse",
+          "führt",
+          "unweigerlich",
+          "zu",
+          "neuen",
+          "wissenschaftlichen",
+          "Erkenntnissen."
+        ],
+        "extra": [
+          "konnte",
+          "Fortschritt"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Die Anwendung neuer Methoden erfordert eine äußerst sorgfältige Planung.",
+        "en": "The application of new methods requires an extremely careful planning."
+      },
+      {
+        "type": "speak",
+        "de": "Die Verifizierung der Hypothese ist ein entscheidender Schritt im Forschungsprozess.",
+        "en": "The verification of the hypothesis is a crucial step in the research process."
+      },
+      {
+        "type": "speak",
+        "de": "Wir müssen die langfristigen Auswirkungen der Klimaveränderung in dieser Studie genau untersuchen.",
+        "en": "We must investigate the long-term effects of climate change closely in this study."
+      }
+    ]
+  },
+  {
+    "id": "b2-u4-l1",
+    "unit": "b2-u4",
+    "title": "Reporting News and Opinions",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Indirect Speech with Konjunktiv I",
+        "body": "In German, when you report what someone else said without personally vouching for its truth, you use Konjunktiv I. While English often relies on tense shifts (backshifting) or phrases like \"he claimed,\" German uses specific verb endings to signal that you are relaying information. This creates a formal, neutral, and journalistic tone that is essential when discussing societal issues or news reports.",
+        "table": [
+          [
+            "Er sagte, er habe Zeit.",
+            "He said he had time."
+          ],
+          [
+            "Sie meinte, sie sei müde.",
+            "She said she was tired."
+          ],
+          [
+            "Der Experte sagt, die Lage sei kritisch.",
+            "The expert says the situation is critical."
+          ],
+          [
+            "Er sagte, er gehe nach Hause.",
+            "He said he is going home."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Der Experte behauptet, dass die soziale Ungleichheit in unserer modernen Gesellschaft stetig zunimmt.",
+        "en": "The expert claims that social inequality is steadily increasing in our modern society."
+      },
+      {
+        "type": "phrase",
+        "de": "Die Zeitung berichtet, dass die Regierung neue Maßnahmen gegen den Klimawandel plane.",
+        "en": "The newspaper reports that the government is planning new measures against climate change."
+      },
+      {
+        "type": "phrase",
+        "de": "Man sagt, dass die fortschreitende Digitalisierung die gesamte Gesellschaft grundlegend verändert.",
+        "en": "It is said that advancing digitalization is fundamentally changing the entire society.",
+        "note": "Use Konjunktiv I to maintain a neutral, reporting distance from the statement."
+      },
+      {
+        "type": "choice",
+        "prompt": "Der Journalist berichtet, die Arbeitslosenquote ___ gesunken.",
+        "options": [
+          "sei",
+          "ist",
+          "wäre"
+        ],
+        "answer": 0,
+        "explain": "Konjunktiv I (sei) is used here to report a fact stated by a third party (the journalist) in a neutral way."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die Studie besagt, der Wohlstand ___ in vielen Regionen sinken.",
+        "options": [
+          "sinkt",
+          "sank",
+          "sinke"
+        ],
+        "answer": 2,
+        "explain": "When reporting the findings of a study, the Konjunktiv I form 'sinke' indicates indirect speech."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Die Ungleichheit",
+            "Inequality"
+          ],
+          [
+            "Die Maßnahme",
+            "Measure"
+          ],
+          [
+            "Die Behauptung",
+            "Claim"
+          ],
+          [
+            "Der Bericht",
+            "Report"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "The politician explained that social justice is becoming increasingly important in this country.",
+        "answer": [
+          "Die",
+          "Politikerin",
+          "erklärte,",
+          "dass",
+          "die",
+          "soziale",
+          "Gerechtigkeit",
+          "in",
+          "diesem",
+          "Land",
+          "immer",
+          "wichtiger",
+          "werde."
+        ],
+        "extra": [
+          "Zeitung",
+          "unserer"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Der Sprecher sagte, dass sich die Wirtschaft in diesem Jahr sehr stabil entwickle.",
+        "en": "The speaker said that the economy is developing very stably this year."
+      },
+      {
+        "type": "speak",
+        "de": "Man sagt, dass die fortschreitende Digitalisierung die gesamte Gesellschaft grundlegend verändert.",
+        "en": "It is said that advancing digitalization is fundamentally changing the entire society."
+      },
+      {
+        "type": "speak",
+        "de": "Die Presse berichtet, dass der Minister eine neue Reform der Bildung plane.",
+        "en": "The press reports that the minister is planning a new reform of education."
+      }
+    ]
+  },
+  {
+    "id": "b2-u4-l2",
+    "unit": "b2-u4",
+    "title": "Indirect Speech: Distinguishing Reality from Claims",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "The Replacement Rule: Konjunktiv I vs. Konjunktiv II",
+        "body": "In German, Konjunktiv I is the standard mood for reporting what others say. However, a crucial rule exists: if the Konjunktiv I form is identical to the indicative (the standard present tense), you must switch to Konjunktiv II to maintain the distinction between a fact and a report. This prevents the listener from thinking you are stating a fact yourself, a nuance that English lacks by relying on context.",
+        "table": [
+          [
+            "Er sagte, er sei krank.",
+            "He said he was sick."
+          ],
+          [
+            "Sie sagten, sie seien glücklich.",
+            "They said they were happy."
+          ],
+          [
+            "Sie sagten, sie kämen später.",
+            "They said they would come later."
+          ],
+          [
+            "Man behauptet, die Preise seien hoch.",
+            "It is claimed that prices are high."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Der Minister erklärte in der Pressekonferenz, die wirtschaftliche Lage sei stabiler als erwartet.",
+        "en": "The minister explained in the press conference that the economic situation is more stable than expected."
+      },
+      {
+        "type": "phrase",
+        "de": "Viele Experten behaupten, dass die soziale Ungleichheit in Europa weiter zunehmen würde.",
+        "en": "Many experts claim that social inequality in Europe would continue to increase."
+      },
+      {
+        "type": "phrase",
+        "de": "Ein Sprecher betonte, dass die neuen Maßnahmen die Gesellschaft positiv beeinflussen könnten.",
+        "en": "A spokesperson emphasized that the new measures could positively influence society.",
+        "note": "Note: 'könnten' is used here as Konjunktiv II because the Konjunktiv I form 'könnten' is identical to the indicative."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die Anwohner sagten, sie ___ (sehen) den Unfall nicht.",
+        "options": [
+          "sähen",
+          "sehen",
+          "gesehen"
+        ],
+        "answer": 0,
+        "explain": "Because the Konjunktiv I form 'sehen' is identical to the indicative 'sehen', we must use the Konjunktiv II 'sähen' to signal indirect speech."
+      },
+      {
+        "type": "choice",
+        "prompt": "Der Sprecher erklärte, die Situation ___ (sein) unter Kontrolle.",
+        "options": [
+          "sei",
+          "ist",
+          "wäre"
+        ],
+        "answer": 0,
+        "explain": "The Konjunktiv I form 'sei' is distinct from the indicative 'ist', so it is the correct choice for reporting the statement."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die Studenten meinten, sie ___ (haben) keine Zeit für das Projekt.",
+        "options": [
+          "hätten",
+          "haben",
+          "gehabt"
+        ],
+        "answer": 0,
+        "explain": "Since the Konjunktiv I form 'haben' is the same as the indicative, we use the Konjunktiv II 'hätten' instead."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "behaupten",
+            "to claim"
+          ],
+          [
+            "die Ungleichheit",
+            "inequality"
+          ],
+          [
+            "der Bericht",
+            "the report"
+          ],
+          [
+            "erklären",
+            "to explain"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "The scientist explained that the new technology could change society sustainably.",
+        "answer": [
+          "Die",
+          "Wissenschaftlerin",
+          "erklärte,",
+          "dass",
+          "die",
+          "neue",
+          "Technologie",
+          "die",
+          "Gesellschaft",
+          "nachhaltig",
+          "verändern",
+          "könne."
+        ],
+        "extra": [
+          "Pressekonferenz",
+          "Europa"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Der Bericht gibt an, dass die Arbeitslosigkeit in diesem Monat leicht gesunken sei.",
+        "en": "The report indicates that unemployment has fallen slightly this month."
+      },
+      {
+        "type": "speak",
+        "de": "Die Experten behaupten, dass die sozialen Unterschiede in der Gesellschaft wachsen würden.",
+        "en": "The experts claim that social differences in society would grow."
+      },
+      {
+        "type": "speak",
+        "de": "Der Politiker sagte, dass die neue Steuerreform bald erfolgreich umgesetzt werden könne.",
+        "en": "The politician said that the new tax reform could be successfully implemented soon."
+      }
+    ]
+  },
+  {
+    "id": "b2-u4-l3",
+    "unit": "b2-u4",
+    "title": "Mastering Indirect Speech in Formal Reporting",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Reporting with Precision",
+        "body": "In formal German reporting, Konjunktiv I is used to signal that you are relaying information without personally endorsing its truth. While English often uses 'that' followed by a standard indicative verb, German changes the verb's ending to create a 'distancing effect.' This is essential in journalism and academic writing to maintain professional objectivity. If the Konjunktiv I form looks identical to the indicative, you must switch to Konjunktiv II to ensure the listener recognizes the indirect speech.",
+        "table": [
+          [
+            "Er sagte, er sei bereit.",
+            "He said he is ready."
+          ],
+          [
+            "Sie meinte, sie habe Zeit.",
+            "She meant she has time."
+          ],
+          [
+            "Man sagt, es sei kalt.",
+            "It is said to be cold."
+          ],
+          [
+            "Sie behaupteten, sie hätten gewonnen.",
+            "They claimed they had won."
+          ],
+          [
+            "Er erklärte, er komme später.",
+            "He explained that he is coming later."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Der Sprecher betonte in seiner Rede, die soziale Ungleichheit nehme stetig zu.",
+        "en": "The spokesperson emphasized in his speech that social inequality is steadily increasing."
+      },
+      {
+        "type": "phrase",
+        "de": "Experten behaupten, die fortschreitende Digitalisierung verändere unsere gesamte Arbeitswelt auf eine grundlegende Weise.",
+        "en": "Experts claim that advancing digitalization is changing our entire working world in a fundamental way."
+      },
+      {
+        "type": "phrase",
+        "de": "Es sei laut den neuesten Berichten wichtig, dass die Regierung mehr in Bildung investiere.",
+        "en": "According to the latest reports, it is important that the government invests more in education."
+      },
+      {
+        "type": "choice",
+        "prompt": "Der Journalist berichtete, die Bürger ________ unzufrieden mit der aktuellen politischen Lage in dem Land.",
+        "options": [
+          "seien unzufrieden",
+          "sind unzufrieden",
+          "wären unzufrieden"
+        ],
+        "answer": 0,
+        "explain": "Konjunktiv I ('seien') is used for indirect speech to report what was said without stating it as an absolute fact."
+      },
+      {
+        "type": "choice",
+        "prompt": "Der Professor erklärte, die Ergebnisse ________ für die zukünftige Forschung von entscheidender Bedeutung.",
+        "options": [
+          "sind bedeutend",
+          "seien bedeutend",
+          "wären bedeutend"
+        ],
+        "answer": 1,
+        "explain": "To report the professor's statement objectively in a formal context, the Konjunktiv I 'seien' is the correct choice."
+      },
+      {
+        "type": "choice",
+        "prompt": "Sie behaupteten, sie ________ die schwierige Aufgabe bereits am frühen Morgen erfolgreich beendet.",
+        "options": [
+          "haben die Arbeit schon beendet",
+          "seien die Arbeit schon beendet",
+          "hätten die Arbeit schon beendet"
+        ],
+        "answer": 2,
+        "explain": "Since the Konjunktiv I form of 'haben' (sie haben) is identical to the indicative, the replacement rule requires using Konjunktiv II ('hätten')."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Der Sprecher erklärte",
+            "The spokesperson explained"
+          ],
+          [
+            "Es wird behauptet",
+            "It is claimed"
+          ],
+          [
+            "Die Presse berichtet",
+            "The press reports"
+          ],
+          [
+            "Man sagt",
+            "It is said"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "The report states that inflation will decrease significantly next year.",
+        "answer": [
+          "Der",
+          "Bericht",
+          "besagt,",
+          "dass",
+          "die",
+          "Inflation",
+          "im",
+          "nächsten",
+          "Jahr",
+          "deutlich",
+          "sinken",
+          "werde."
+        ],
+        "extra": [
+          "Es",
+          "laut"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Die Experten behaupten, die wirtschaftliche Lage verbessere sich in den kommenden Monaten langsam.",
+        "en": "The experts claim the economic situation is slowly improving in the coming months."
+      },
+      {
+        "type": "speak",
+        "de": "Man sagt, die Digitalisierung verändere die gesamte Gesellschaft auf eine sehr tiefgreifende Weise.",
+        "en": "It is said that digitalization changes the entire society in a very profound way."
+      }
+    ]
+  },
+  {
+    "id": "b2-u7-l1",
+    "unit": "b2-u7",
+    "title": "Mastering the Past Perfect: The 'Past of the Past'",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "The Plusquamperfekt",
+        "body": "The Plusquamperfekt is used to describe an action that was completed before another event in the past occurred. While English uses 'had' for all verbs, German distinguishes between 'haben' and 'sein' as auxiliary verbs, following the same rules as the Perfekt tense. This tense is essential for establishing a clear chronological sequence in historical narratives. To use it correctly, you must identify which event happened first and place it in the Plusquamperfekt, while the subsequent event remains in the Präteritum.",
+        "table": [
+          [
+            "Ich hatte gelesen",
+            "I had read"
+          ],
+          [
+            "Er war gegangen",
+            "He had gone"
+          ],
+          [
+            "Wir hatten das Haus gebaut",
+            "We had built the house"
+          ],
+          [
+            "Sie war angekommen",
+            "She had arrived"
+          ],
+          [
+            "Sie hatten die Entscheidung getroffen",
+            "They had made the decision"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Nachdem der alte König plötzlich gestorben war, übernahm sein Sohn sofort die Macht.",
+        "en": "After the old king had suddenly died, his son immediately took power."
+      },
+      {
+        "type": "phrase",
+        "de": "Bevor die Revolution ausbrach, hatten die sozialen Spannungen in der Bevölkerung bereits zugenommen.",
+        "en": "Before the revolution broke out, social tensions in the population had already increased."
+      },
+      {
+        "type": "phrase",
+        "de": "Die Geschichte wurde oft anders geschrieben, nachdem die Sieger die Kontrolle übernommen hatten.",
+        "en": "History was often written differently after the victors had taken control."
+      },
+      {
+        "type": "choice",
+        "prompt": "Bevor die Soldaten die Stadt erreichten, _______ die Bewohner bereits die Vorräte versteckt.",
+        "options": [
+          "haben",
+          "hatten",
+          "waren"
+        ],
+        "answer": 1,
+        "explain": "The sentence requires the Plusquamperfekt to show an action completed before another past action, and 'verstecken' uses 'haben' as its auxiliary."
+      },
+      {
+        "type": "choice",
+        "prompt": "Nachdem der Vertrag unterzeichnet worden war, _______ die diplomatische Krise endlich abgeklungen.",
+        "options": [
+          "war",
+          "hatte",
+          "ist"
+        ],
+        "answer": 0,
+        "explain": "'Abklingen' (to subside) indicates a process of change or disappearance, thus it requires 'sein' as the auxiliary verb in the past perfect."
+      },
+      {
+        "type": "choice",
+        "prompt": "Der Archäologe stellte fest, dass die Zivilisation bereits _______ war, als die ersten Siedler kamen.",
+        "options": [
+          "untergegangen ist",
+          "untergegangen war",
+          "untergegangen hatte"
+        ],
+        "answer": 1,
+        "explain": "'Untergehen' (to perish) uses 'sein' as an auxiliary, and the Plusquamperfekt is needed to describe the earlier event."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Die Vergangenheit",
+            "The past"
+          ],
+          [
+            "Die Ursache",
+            "The cause"
+          ],
+          [
+            "Die Entwicklung",
+            "The development"
+          ],
+          [
+            "Der Zeitverlauf",
+            "The course of time"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "After the Industrial Revolution had begun, the social structure of society changed fundamentally.",
+        "answer": [
+          "Nachdem",
+          "die",
+          "industrielle",
+          "Revolution",
+          "begonnen",
+          "hatte,",
+          "veränderte",
+          "sich",
+          "die",
+          "soziale",
+          "Struktur",
+          "der",
+          "Gesellschaft",
+          "grundlegend."
+        ],
+        "extra": [
+          "hatten",
+          "bereits"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Bevor die neue Regierung gewählt wurde, hatten die Proteste in der Hauptstadt bereits begonnen.",
+        "en": "Before the new government was elected, the protests in the capital had already begun."
+      },
+      {
+        "type": "speak",
+        "de": "Nachdem die Grenze geschlossen worden war, hatten viele Menschen ihre Heimat verlassen müssen.",
+        "en": "After the border had been closed, many people had had to leave their homeland."
+      },
+      {
+        "type": "speak",
+        "de": "Bevor die moderne Medizin entwickelt wurde, hatten viele Krankheiten tödliche Folgen gehabt.",
+        "en": "Before modern medicine was developed, many diseases had had fatal consequences."
+      }
+    ]
+  },
+  {
+    "id": "b2-u7-l2",
+    "unit": "b2-u7",
+    "title": "Sequencing the Past: Using nachdem and bevor",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Sequencing Historical Events",
+        "body": "To tell a coherent historical story, you must clearly distinguish which event happened first. While English often uses 'after' with the simple past, German requires the nachdem-clause to be in the Plusquamperfekt if the main event is in the Präteritum. Conversely, bevor describes an event that happens later, so both clauses usually stay in the Präteritum. This tense shift ensures your listener understands the exact chronological order of your narrative.",
+        "table": [
+          [
+            "Nachdem er den Vertrag unterschrieben hatte...",
+            "After he had signed the treaty..."
+          ],
+          [
+            "...bevor die Revolution ausbrach.",
+            "...before the revolution broke out."
+          ],
+          [
+            "Nachdem die Stadt gefallen war...",
+            "After the city had fallen..."
+          ],
+          [
+            "...bevor die Truppen abzogen.",
+            "...before the troops withdrew."
+          ],
+          [
+            "Nachdem die Forschung abgeschlossen worden war...",
+            "After the research had been completed..."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Nachdem die Verhandlungen abgeschlossen worden waren, wurde der Friedensvertrag endlich unterzeichnet.",
+        "en": "After the negotiations had been concluded, the peace treaty was finally signed."
+      },
+      {
+        "type": "phrase",
+        "de": "Bevor die neue Regierung die Macht übernahm, gab es erhebliche politische Unruhen.",
+        "en": "Before the new government took power, there was significant political unrest."
+      },
+      {
+        "type": "phrase",
+        "de": "Nachdem die Industrialisierung eingesetzt hatte, veränderte sich die soziale Struktur der Gesellschaft grundlegend.",
+        "en": "After industrialization had begun, the social structure of society changed fundamentally.",
+        "note": "Note how 'nachdem' triggers the Plusquamperfekt (eingesetzt hatte) to show the sequence."
+      },
+      {
+        "type": "choice",
+        "prompt": "Nachdem die Grenzen geschlossen worden ____, stieg die Zahl der Flüchtlinge sprunghaft an.",
+        "options": [
+          "waren",
+          "sind",
+          "wurden"
+        ],
+        "answer": 0,
+        "explain": "Since the main clause is in the Präteritum (stieg), the nachdem-clause must be in the Plusquamperfekt. In the passive voice, this is 'worden waren'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die Bevölkerung protestierte lautstark, ____ die Steuern drastisch erhöht wurden.",
+        "options": [
+          "nachdem",
+          "bevor",
+          "nachdem ... worden war"
+        ],
+        "answer": 1,
+        "explain": "The sentence describes an event (protesting) occurring before another event (tax increase), so 'bevor' is logically correct."
+      },
+      {
+        "type": "choice",
+        "prompt": "Nachdem die Armee den Hügel erobert ____, errichteten die Soldaten ein Lager.",
+        "options": [
+          "hatte",
+          "hat",
+          "wird"
+        ],
+        "answer": 0,
+        "explain": "The main clause 'errichteten' is in Präteritum, so the preceding action in the nachdem-clause must be in Plusquamperfekt (hatte erobert)."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Nachdem",
+            "After (having done something)"
+          ],
+          [
+            "Bevor",
+            "Before"
+          ],
+          [
+            "Der Vertrag",
+            "The treaty"
+          ],
+          [
+            "Die Verhandlung",
+            "The negotiation"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "After industrialization had begun, the social structure of society changed fundamentally.",
+        "answer": [
+          "Nachdem",
+          "die",
+          "Industrialisierung",
+          "eingesetzt",
+          "hatte,",
+          "veränderte",
+          "sich",
+          "die",
+          "soziale",
+          "Struktur",
+          "der",
+          "Gesellschaft",
+          "grundlegend."
+        ],
+        "extra": [
+          "es",
+          "Bevor"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Nachdem der große Krieg geendet hatte, begann der mühsame Wiederaufbau des Landes.",
+        "en": "After the great war had ended, the laborious reconstruction of the country began."
+      },
+      {
+        "type": "speak",
+        "de": "Bevor die moderne Medizin entwickelt wurde, starben viele Menschen an einfachen Krankheiten.",
+        "en": "Before modern medicine was developed, many people died of simple diseases."
+      }
+    ]
+  },
+  {
+    "id": "b2-u7-l3",
+    "unit": "b2-u7",
+    "title": "Advanced Historical Sequencing: Integrating the Plusquamperfekt",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Layering the Past",
+        "body": "To achieve B2 fluency, you must use the Plusquamperfekt to provide necessary background context for your main narrative. While English uses 'had' plus a past participle, German uses 'hatte' or 'war' depending on the verb type. In formal historical accounts, this tense allows you to layer events, showing exactly which action preceded another in a complex, multi-clause sentence.",
+        "table": [
+          [
+            "Er hatte das Gesetz bereits unterschrieben.",
+            "He had already signed the law."
+          ],
+          [
+            "Die Stadt war zuvor belagert worden.",
+            "The city had been besieged previously."
+          ],
+          [
+            "Wir hatten die Nachricht noch nicht erhalten.",
+            "We had not yet received the news."
+          ],
+          [
+            "Sie waren nach dem Krieg umgesiedelt worden.",
+            "They had been relocated after the war."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Nachdem die Revolution ausgebrochen war, veränderten sich die politischen Strukturen grundlegend.",
+        "en": "After the revolution had broken out, the political structures changed fundamentally."
+      },
+      {
+        "type": "phrase",
+        "de": "Bevor der Friedensvertrag unterzeichnet wurde, hatten die Verhandlungen monatelang gedauert.",
+        "en": "Before the peace treaty was signed, the negotiations had lasted for months."
+      },
+      {
+        "type": "phrase",
+        "de": "Die Bevölkerung hatte bereits auf die neuen Gesetze reagiert.",
+        "en": "The population had already reacted to the new laws.",
+        "note": "Use 'hatte' for active reactions and 'war' for changes of state."
+      },
+      {
+        "type": "choice",
+        "prompt": "Der König verlor seinen Thron, weil er zuvor seine Macht _______.",
+        "options": [
+          "verloren hatte",
+          "verloren hat",
+          "verloren hatte verloren"
+        ],
+        "answer": 0,
+        "explain": "The action of losing power happened before the king lost the throne (Präteritum), requiring the Plusquamperfekt."
+      },
+      {
+        "type": "choice",
+        "prompt": "Nachdem das Gebäude _______, wurde es im nächsten Jahr abgerissen.",
+        "options": [
+          "gebaut worden war",
+          "gebaut wurde",
+          "gebaut worden ist"
+        ],
+        "answer": 0,
+        "explain": "To express the passive voice in the past perfect, you must use the construction 'worden war'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Bevor die Soldaten eintrafen, _______ die Bewohner die Stadt bereits verlassen.",
+        "options": [
+          "hatten",
+          "waren",
+          "haben"
+        ],
+        "answer": 0,
+        "explain": "The verb 'verlassen' requires 'haben' as its auxiliary verb in all perfect tenses."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "die Verhandlungen",
+            "the negotiations"
+          ],
+          [
+            "unterzeichnet",
+            "signed"
+          ],
+          [
+            "zuvor",
+            "previously"
+          ],
+          [
+            "der Vertrag",
+            "the treaty"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "After the treaty had been signed, the borders were finally established.",
+        "answer": [
+          "Nachdem",
+          "der",
+          "Vertrag",
+          "unterzeichnet",
+          "worden",
+          "war,",
+          "wurden",
+          "die",
+          "Grenzen",
+          "endlich",
+          "festgelegt."
+        ],
+        "extra": [
+          "neuen",
+          "veränderten"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Die Geschichte war bereits geschrieben worden, bevor die Wahrheit ans Licht kam.",
+        "en": "The history had already been written before the truth came to light."
+      },
+      {
+        "type": "speak",
+        "de": "Bevor die Industrialisierung begann, hatten die meisten Menschen in kleinen Dörfern gelebt.",
+        "en": "Before industrialization began, most people had lived in small villages."
+      },
+      {
+        "type": "speak",
+        "de": "Nachdem die Forschungsergebnisse veröffentlicht worden waren, diskutierten die Wissenschaftler intensiv darüber.",
+        "en": "After the research results had been published, the scientists discussed them intensively."
+      }
+    ]
+  },
+  {
+    "id": "b2-u8-l1",
+    "unit": "b2-u8",
+    "title": "The More, The Better: Proportionality with Je ... Desto",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Using 'je ... desto' for Proportionality",
+        "body": "To express that one change leads to another in proportion, German uses the correlative conjunction 'je ... desto' (or 'je ... umso'). Unlike the English 'the [comparative], the [comparative]' structure, the 'je' clause is a subordinate clause, meaning the conjugated verb must move to the very end. The 'desto' clause functions as the main clause, where the verb follows immediately after the comparative adjective.",
+        "table": [
+          [
+            "Je mehr Informationen man hat, desto kritischer muss man die Argumente bewerten.",
+            "The more information one has, the more critically one must evaluate the arguments."
+          ],
+          [
+            "Je schneller die Nachrichten verbreitet werden, desto schwieriger ist die Verifizierung der Fakten.",
+            "The faster the news is spread, the more difficult the verification of the facts is."
+          ],
+          [
+            "Je gründlicher die Recherche ist, desto glaubwürdiger wirkt die Quelle auf den Leser.",
+            "The more thorough the research is, the more credible the source appears to the reader."
+          ],
+          [
+            "Je weniger Quellen vorliegen, desto skeptischer sollte man gegenüber der Nachricht sein.",
+            "The fewer sources are available, the more skeptical one should be towards the news."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Je vielfältiger die heutige Medienlandschaft ist, desto komplexer wird die ständige Prüfung der Quellen.",
+        "en": "The more diverse today's media landscape is, the more complex the constant verification of sources becomes."
+      },
+      {
+        "type": "phrase",
+        "de": "Je skeptischer man gegenüber reißerischen Schlagzeilen ist, desto besser schützt man sich vor Desinformation.",
+        "en": "The more skeptical one is towards sensationalist headlines, the better one protects oneself from disinformation.",
+        "note": "Note that 'je' and 'desto' are always followed by a comparative form (e.g., vielfältiger, skeptischer)."
+      },
+      {
+        "type": "choice",
+        "prompt": "Je kritischer man die Nachrichten liest, ...",
+        "options": [
+          "desto besser versteht man die Hintergründe.",
+          "desto besser man versteht die Hintergründe.",
+          "desto man versteht die Hintergründe besser."
+        ],
+        "answer": 0,
+        "explain": "In the 'desto' clause, the verb must follow immediately after the comparative adjective/adverb."
+      },
+      {
+        "type": "choice",
+        "prompt": "... desto zuverlässiger sind die Informationen.",
+        "options": [
+          "Je mehr Quellen man prüft.",
+          "Je mehr Quellen prüft man.",
+          "Je man mehr Quellen prüft."
+        ],
+        "answer": 0,
+        "explain": "The 'je' clause is a subordinate clause, so the conjugated verb 'prüft' must go to the end."
+      },
+      {
+        "type": "choice",
+        "prompt": "Je weniger Zeit wir für die Recherche haben, ...",
+        "options": [
+          "desto schwieriger wird die Analyse der Fakten.",
+          "desto die Analyse wird schwieriger.",
+          "desto schwieriger wird die Analyse der Fakten wird."
+        ],
+        "answer": 0,
+        "explain": "The correct structure for the main clause is 'desto' + comparative + verb + subject."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "je mehr",
+            "the more"
+          ],
+          [
+            "desto weniger",
+            "the less"
+          ],
+          [
+            "je gründlicher",
+            "the more thorough"
+          ],
+          [
+            "desto schneller",
+            "the faster"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "The more often one checks facts, the more secure one's own opinion about the topic becomes.",
+        "answer": [
+          "Je",
+          "öfter",
+          "man",
+          "Fakten",
+          "prüft,",
+          "desto",
+          "sicherer",
+          "wird",
+          "die",
+          "eigene",
+          "Meinung",
+          "über",
+          "das",
+          "Thema."
+        ],
+        "extra": [
+          "ist",
+          "skeptischer"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Je schneller Informationen geteilt werden, desto schwieriger ist die Verifizierung der Fakten.",
+        "en": "The faster information is shared, the more difficult the verification of the facts is."
+      },
+      {
+        "type": "speak",
+        "de": "Je kritischer ich die Quellen prüfe, desto besser fühle ich mich über das Thema informiert.",
+        "en": "The more critically I check the sources, the better informed I feel about the topic."
+      },
+      {
+        "type": "speak",
+        "de": "Je mehr Medien wir täglich konsumieren, desto wichtiger ist eine hohe Medienkompetenz.",
+        "en": "The more media we consume daily, the more important a high level of media literacy is."
+      }
+    ]
+  },
+  {
+    "id": "b2-u8-l2",
+    "unit": "b2-u8",
+    "title": "Making Assumptions: Modal Verbs of Probability",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Making Assumptions: Modal Verbs of Probability",
+        "body": "When evaluating media content, you rarely have absolute certainty. In German, we use modal verbs to express varying degrees of probability rather than relying solely on adverbs. While English uses 'might' or 'must,' German frequently employs the Konjunktiv II forms, such as *dürfte* or *könnte*, to indicate a nuanced level of assumption. This allows you to distinguish between a strong deduction and a mere possibility.",
+        "table": [
+          [
+            "Er muss die Wahrheit sagen.",
+            "He must be telling the truth."
+          ],
+          [
+            "Das dürfte ein Fake-News-Artikel sein.",
+            "That ought to be a fake news article."
+          ],
+          [
+            "Es könnte eine Manipulation sein.",
+            "It could be a manipulation."
+          ],
+          [
+            "Die Quelle soll sehr seriös sein.",
+            "The source is said to be very reliable."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Diese Schlagzeile dürfte auf einer groben Fehlinterpretation der vorliegenden Daten basieren.",
+        "en": "This headline ought to be based on a gross misinterpretation of the available data."
+      },
+      {
+        "type": "phrase",
+        "de": "Die Informationen könnten durch gezielte Desinformation in den sozialen Medien manipuliert worden sein.",
+        "en": "The information could have been manipulated through targeted disinformation in social media."
+      },
+      {
+        "type": "phrase",
+        "de": "Man muss die Absichten hinter jeder Nachricht stets kritisch und sachlich hinterfragen.",
+        "en": "One must always critically and objectively question the intentions behind every message.",
+        "note": "Use 'dürfte' for a logical conclusion based on evidence, and 'könnte' for a more tentative possibility."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die Schlagzeile ____ eine bewusste Täuschung des Lesers darstellen, da sie extrem emotional formuliert ist.",
+        "options": [
+          "muss",
+          "darf",
+          "soll"
+        ],
+        "answer": 0,
+        "explain": "The clause 'da sie extrem emotional formuliert ist' provides strong evidence, making 'must' (muss) the most logical deduction."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die Informationen ____ aus einer unzuverlässigen Quelle stammen, aber wir haben noch keine Beweise.",
+        "options": [
+          "müssen",
+          "könnten",
+          "sollen"
+        ],
+        "answer": 1,
+        "explain": "The phrase 'we have no evidence yet' indicates uncertainty, so the possibility 'could' (könnten) is the correct choice."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Die Behauptung",
+            "The claim"
+          ],
+          [
+            "Die Glaubwürdigkeit",
+            "The credibility"
+          ],
+          [
+            "Die Quelle prüfen",
+            "To check the source"
+          ],
+          [
+            "Die Desinformation",
+            "The disinformation"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "The present claim could be based on incomplete or even false information.",
+        "answer": [
+          "Die",
+          "vorliegende",
+          "Behauptung",
+          "könnte",
+          "auf",
+          "einer",
+          "unvollständigen",
+          "oder",
+          "sogar",
+          "falschen",
+          "Information",
+          "basieren."
+        ],
+        "extra": [
+          "hinterfragen",
+          "muss"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Die Verbreitung dieser Falschmeldungen dürfte absichtlich durch externe Akteure gesteuert werden.",
+        "en": "The spread of these fake news stories ought to be intentionally controlled by external actors."
+      },
+      {
+        "type": "speak",
+        "de": "Man muss die Absichten hinter jeder Nachricht stets kritisch und sachlich hinterfragen.",
+        "en": "One must always critically and objectively question the intentions behind every message."
+      }
+    ]
+  },
+  {
+    "id": "b2-u8-l3",
+    "unit": "b2-u8",
+    "title": "Mastering Proportionality: Je ... desto in Media Criticism",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Complex Proportionality in Argumentation",
+        "body": "To express a proportional relationship between two developments, German uses the correlative conjunction 'je ... desto' (or 'je ... umso'). While English uses a similar structure, German syntax requires a strict distinction: the 'je'-clause functions as a subordinate clause, meaning the conjugated verb must move to the very end. In contrast, the 'desto'-clause acts as the main clause, where the verb must follow immediately after the comparative adjective. Mastering this word order is essential for constructing sophisticated arguments when evaluating media content.",
+        "table": [
+          [
+            "Je kritischer die Quelle ist,",
+            "The more critical the source is,"
+          ],
+          [
+            "desto vorsichtiger muss man sein.",
+            "the more cautious one must be."
+          ],
+          [
+            "Je mehr Informationen vorliegen,",
+            "The more information is available,"
+          ],
+          [
+            "desto besser lässt sich die Wahrheit prüfen.",
+            "the better the truth can be verified."
+          ],
+          [
+            "Je schneller die Nachricht verbreitet wird,",
+            "The faster the news is spread,"
+          ],
+          [
+            "desto schwieriger ist eine Faktencheck-Prüfung.",
+            "the more difficult a fact-check is."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Je vielfältiger die Quellen sind, desto glaubwürdiger wirkt der gesamte journalistische Bericht.",
+        "en": "The more diverse the sources are, the more credible the entire journalistic report seems."
+      },
+      {
+        "type": "phrase",
+        "de": "Je weniger Fakten präsentiert werden, desto skeptischer sollte der Leser auf die Behauptungen reagieren.",
+        "en": "The fewer facts are presented, the more skeptical the reader should react to the claims."
+      },
+      {
+        "type": "phrase",
+        "de": "Je gründlicher die Recherche durchgeführt wird, desto verlässlicher sind die Ergebnisse.",
+        "en": "The more thoroughly the research is conducted, the more reliable the results are.",
+        "note": "Note the use of the passive voice ('durchgeführt wird') within the 'je' clause."
+      },
+      {
+        "type": "choice",
+        "prompt": "Je mehr Informationen man liest, ...",
+        "options": [
+          "desto man weiß mehr.",
+          "desto mehr weiß man.",
+          "desto mehr man weiß."
+        ],
+        "answer": 1,
+        "explain": "In the 'desto' clause, the verb must come immediately after the comparative phrase, following main clause word order."
+      },
+      {
+        "type": "choice",
+        "prompt": "Je komplexer die Argumentation ist, ...",
+        "options": [
+          "desto schwieriger ist sie zu verstehen.",
+          "desto sie ist schwieriger zu verstehen.",
+          "desto schwieriger sie ist zu verstehen."
+        ],
+        "answer": 0,
+        "explain": "The verb 'ist' must follow the comparative 'schwieriger' to satisfy the main clause structure."
+      },
+      {
+        "type": "choice",
+        "prompt": "Je schneller die Falschmeldung verbreitet wird, ...",
+        "options": [
+          "desto größer der Schaden ist.",
+          "desto der Schaden ist größer.",
+          "desto größer ist der Schaden."
+        ],
+        "answer": 2,
+        "explain": "The 'desto' clause requires the verb to be in the second position, directly after the comparative adjective."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "die Glaubwürdigkeit",
+            "credibility"
+          ],
+          [
+            "die Quellenprüfung",
+            "source verification"
+          ],
+          [
+            "die Fehlinformation",
+            "misinformation"
+          ],
+          [
+            "die Sachlichkeit",
+            "objectivity"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "The more thoroughly the research is conducted, the more reliable the scientific results are.",
+        "answer": [
+          "Je",
+          "gründlicher",
+          "die",
+          "Recherche",
+          "durchgeführt",
+          "wird,",
+          "desto",
+          "verlässlicher",
+          "sind",
+          "die",
+          "wissenschaftlichen",
+          "Ergebnisse."
+        ],
+        "extra": [
+          "journalistische",
+          "auf"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Je weniger Quellen angegeben werden, desto zweifelhafter ist die Aussage.",
+        "en": "The fewer sources are cited, the more doubtful the statement is."
+      },
+      {
+        "type": "speak",
+        "de": "Je kritischer ich die Nachrichten lese, desto bewusster treffe ich meine täglichen Entscheidungen.",
+        "en": "The more critically I read the news, the more consciously I make my daily decisions."
+      }
+    ]
+  }
+]

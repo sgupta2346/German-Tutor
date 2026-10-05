@@ -1,0 +1,1221 @@
+[
+  {
+    "id": "a2-u3-l1",
+    "unit": "a2-u3",
+    "title": "Shopping with Help: The Dative Case",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Understanding the Dative Case",
+        "body": "In English, we often use words like 'to' or 'for' to indicate the recipient of an action. In German, we use the dative case instead of adding extra prepositions. This means the articles (the) and pronouns (me, you) change their form to show who is receiving the action. When you help someone, suit someone, or show something to someone, that person is in the dative case.",
+        "table": [
+          [
+            "dem Mann",
+            "to the man"
+          ],
+          [
+            "der Frau",
+            "to the woman"
+          ],
+          [
+            "dem Kind",
+            "to the child"
+          ],
+          [
+            "den Kunden",
+            "to the customers"
+          ],
+          [
+            "mir",
+            "to me"
+          ],
+          [
+            "dir",
+            "to you"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Das Kleid steht der Frau sehr gut.",
+        "en": "The dress suits the woman very well."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich helfe dem Verkäufer gerne.",
+        "en": "I like helping the salesman."
+      },
+      {
+        "type": "phrase",
+        "de": "Kannst du mir die Hose zeigen?",
+        "en": "Can you show me the pants?"
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich helfe ___ Verkäufer.",
+        "options": [
+          "den",
+          "dem",
+          "der"
+        ],
+        "answer": 1,
+        "explain": "'helfen' always takes the dative case, and 'Verkäufer' is masculine (der becomes dem)."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die Hose passt ___ Frau.",
+        "options": [
+          "der",
+          "die",
+          "den"
+        ],
+        "answer": 0,
+        "explain": "'passen' takes the dative case, and 'Frau' is feminine (die becomes der)."
+      },
+      {
+        "type": "choice",
+        "prompt": "Das Hemd steht ___ Mann.",
+        "options": [
+          "den",
+          "dem",
+          "der"
+        ],
+        "answer": 1,
+        "explain": "'stehen' (to suit) takes the dative case, and 'Mann' is masculine (der becomes dem)."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "dem Mann",
+            "to the man"
+          ],
+          [
+            "der Frau",
+            "to the woman"
+          ],
+          [
+            "den Kunden",
+            "to the customers"
+          ],
+          [
+            "mir",
+            "to me"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I show the salesman the pants.",
+        "answer": [
+          "Ich",
+          "zeige",
+          "dem",
+          "Verkäufer",
+          "die",
+          "Hose."
+        ],
+        "extra": [
+          "helfe",
+          "Frau"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Das Kleid passt der Frau.",
+        "en": "The dress fits the woman."
+      },
+      {
+        "type": "speak",
+        "de": "Die Schuhe stehen mir gut.",
+        "en": "The shoes suit me well."
+      },
+      {
+        "type": "speak",
+        "de": "Ich helfe der Verkäuferin heute.",
+        "en": "I am helping the saleswoman today."
+      }
+    ]
+  },
+  {
+    "id": "a2-u3-l2",
+    "unit": "a2-u3",
+    "title": "Adjective Endings: A First Look",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Adjective Endings: A First Look",
+        "body": "In English, adjectives are static; they never change regardless of the noun. In German, adjectives are more active and change their endings to match the gender and the case of the noun. When using an indefinite article like 'ein' or 'eine', the adjective often carries the 'signal' for the gender. For example, a neuter noun like 'Hemd' requires an '-es' ending to show its gender.",
+        "table": [
+          [
+            "ein guter Hut",
+            "a good hat"
+          ],
+          [
+            "eine gute Hose",
+            "a good pair of pants"
+          ],
+          [
+            "ein gutes Hemd",
+            "a good shirt"
+          ],
+          [
+            "einen guten Hut",
+            "a good hat (accusative)"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich möchte einen blauen Rock kaufen.",
+        "en": "I want to buy a blue skirt."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich habe einen roten Hut gekauft.",
+        "en": "I bought a red hat."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich kaufe das, weil es schön ist.",
+        "en": "I am buying that because it is beautiful."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich suche ein ______ Hemd.",
+        "options": [
+          "weißes",
+          "weiß",
+          "weiße"
+        ],
+        "answer": 0,
+        "explain": "Because 'Hemd' is neuter and follows 'ein', the adjective needs the '-es' ending to signal the gender."
+      },
+      {
+        "type": "choice",
+        "prompt": "Er trägt einen ______ Mantel.",
+        "options": [
+          "warmer",
+          "warmen",
+          "warme"
+        ],
+        "answer": 1,
+        "explain": "Because 'Mantel' is masculine and is the direct object (accusative), the adjective takes the '-en' ending."
+      },
+      {
+        "type": "choice",
+        "prompt": "Das ist eine ______ Bluse.",
+        "options": [
+          "blau",
+          "blauen",
+          "blaue"
+        ],
+        "answer": 2,
+        "explain": "Because 'Bluse' is feminine, the adjective after 'eine' takes the '-e' ending."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "ein grünes T-Shirt",
+            "a green T-shirt"
+          ],
+          [
+            "eine schwarze Hose",
+            "black pants"
+          ],
+          [
+            "einen blauen Rock",
+            "a blue skirt"
+          ],
+          [
+            "ein teures Kleid",
+            "an expensive dress"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I am buying a black belt.",
+        "answer": [
+          "Ich",
+          "kaufe",
+          "einen",
+          "schwarzen",
+          "Gürtel."
+        ],
+        "extra": [
+          "roten",
+          "kaufen"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Ich suche ein neues Kleid.",
+        "en": "I am looking for a new dress."
+      },
+      {
+        "type": "speak",
+        "de": "Das ist ein schöner Pullover.",
+        "en": "That is a beautiful sweater."
+      },
+      {
+        "type": "speak",
+        "de": "Ich möchte eine rote Jacke.",
+        "en": "I want a red jacket."
+      }
+    ]
+  },
+  {
+    "id": "a2-u3-l3",
+    "unit": "a2-u3",
+    "title": "Using the Dative with Clothing Verbs",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "The Dative in Action",
+        "body": "In English, we say 'The shirt suits you.' In German, we use the dative case to indicate who is being suited or pleased. Verbs like *passen* (to fit), *stehen* (to look good on), and *gefallen* (to please/like) always trigger the dative case for the person. This means articles and pronouns change, such as *die Frau* becoming *der Frau*. Understanding this helps you describe how clothes look on others.",
+        "table": [
+          [
+            "dem Mann",
+            "the man (dative)"
+          ],
+          [
+            "der Frau",
+            "the woman (dative)"
+          ],
+          [
+            "mir",
+            "me (dative)"
+          ],
+          [
+            "dir",
+            "you (dative)"
+          ],
+          [
+            "ihm",
+            "him (dative)"
+          ],
+          [
+            "ihr",
+            "her (dative)"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Das Kleid steht dir sehr gut.",
+        "en": "The dress looks very good on you."
+      },
+      {
+        "type": "phrase",
+        "de": "Die Hose passt dem Mann nicht.",
+        "en": "The pants do not fit the man."
+      },
+      {
+        "type": "phrase",
+        "de": "Die Schuhe gefallen meiner Mutter.",
+        "en": "My mother likes the shoes."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die Bluse steht ___ (the woman).",
+        "options": [
+          "die Frau",
+          "der Frau",
+          "den Frau"
+        ],
+        "answer": 1,
+        "explain": "The verb 'stehen' requires the dative case, and the dative feminine article is 'der'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Das Hemd passt ___ (me) heute nicht.",
+        "options": [
+          "mich",
+          "mir",
+          "ich"
+        ],
+        "answer": 1,
+        "explain": "The verb 'passen' requires the dative case, so the pronoun 'ich' becomes 'mir'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die Jacke gefällt ___ (him) sehr gut.",
+        "options": [
+          "ihn",
+          "er",
+          "ihm"
+        ],
+        "answer": 2,
+        "explain": "The verb 'gefallen' requires the dative case, and the dative form of 'er' is 'ihm'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "der Mantel",
+            "the coat"
+          ],
+          [
+            "der Rock",
+            "the skirt"
+          ],
+          [
+            "dem Kind",
+            "the child (dative)"
+          ],
+          [
+            "der Freundin",
+            "the friend (dative, female)"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "The shoes fit the child very well.",
+        "answer": [
+          "Die",
+          "Schuhe",
+          "passen",
+          "dem",
+          "Kind",
+          "sehr",
+          "gut."
+        ],
+        "extra": [
+          "gefallen",
+          "passt"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Das T-Shirt steht dir ausgezeichnet.",
+        "en": "The T-shirt looks excellent on you."
+      },
+      {
+        "type": "speak",
+        "de": "Die Jeans passt mir perfekt.",
+        "en": "The jeans fit me perfectly."
+      },
+      {
+        "type": "speak",
+        "de": "Gefällt dir diese neue Farbe?",
+        "en": "Do you like this new color?"
+      }
+    ]
+  },
+  {
+    "id": "a2-u6-l1",
+    "unit": "a2-u6",
+    "title": "Comparing Weather and Seasons",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Comparing Weather and Seasons",
+        "body": "To compare two things, add \"-er\" to the adjective. For many short adjectives, you also add an umlaut (for example, \"warm\" becomes \"wärmer\"). To express the superlative, or the \"most,\" use the pattern \"am ...sten.\" Unlike English, which uses separate words like \"more\" or \"the most,\" German uses these specific suffixes to change the adjective itself.",
+        "table": [
+          [
+            "warm",
+            "warm"
+          ],
+          [
+            "wärmer",
+            "warmer"
+          ],
+          [
+            "am wärmsten",
+            "the warmest"
+          ],
+          [
+            "kalt",
+            "cold"
+          ],
+          [
+            "kälter",
+            "colder"
+          ],
+          [
+            "am kältesten",
+            "the coldest"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Der Sommer ist wärmer als der Frühling.",
+        "en": "Summer is warmer than spring."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich mag den Sommer, weil er wärmer ist.",
+        "en": "I like summer because it is warmer."
+      },
+      {
+        "type": "phrase",
+        "de": "Im Winter ist es am kältesten.",
+        "en": "In winter, it is the coldest."
+      },
+      {
+        "type": "choice",
+        "prompt": "Der Frühling ist ___ als der Winter.",
+        "options": [
+          "warm",
+          "wärmer",
+          "am wärmsten"
+        ],
+        "answer": 1,
+        "explain": "To compare two things, we add \"-er\" to the adjective."
+      },
+      {
+        "type": "choice",
+        "prompt": "Im August ist es ___ .",
+        "options": [
+          "heißer",
+          "am heißesten",
+          "heiß"
+        ],
+        "answer": 1,
+        "explain": "To express the superlative (the \"most\"), use the \"am ...sten\" construction."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "sonnig",
+            "sunny"
+          ],
+          [
+            "regnerisch",
+            "rainy"
+          ],
+          [
+            "der Frühling",
+            "spring"
+          ],
+          [
+            "der Sommer",
+            "summer"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I think that summer is the most beautiful.",
+        "answer": [
+          "Ich",
+          "finde,",
+          "dass",
+          "der",
+          "Sommer",
+          "am",
+          "schönsten",
+          "ist."
+        ],
+        "extra": [
+          "Frühling",
+          "es"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Der Herbst ist windiger als der Sommer.",
+        "en": "Autumn is windier than summer."
+      },
+      {
+        "type": "speak",
+        "de": "Es ist heute windiger als gestern.",
+        "en": "It is windier today than yesterday."
+      },
+      {
+        "type": "speak",
+        "de": "Der Frühling ist schöner als der Winter.",
+        "en": "Spring is more beautiful than winter."
+      }
+    ]
+  },
+  {
+    "id": "a2-u6-l2",
+    "unit": "a2-u6",
+    "title": "Making Comparisons",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Comparative and Superlative",
+        "body": "To compare two things in German, add the suffix '-er' to the adjective. To express the superlative (the 'most'), use the pattern 'am ... -sten'. Unlike English, which often uses 'more' or 'most,' German relies almost entirely on these suffixes. Note that many short adjectives gain an umlaut (ä, ö, ü) when they become comparative or superlative.",
+        "table": [
+          [
+            "wärmer",
+            "warmer"
+          ],
+          [
+            "am kältesten",
+            "the coldest"
+          ],
+          [
+            "besser",
+            "better"
+          ],
+          [
+            "am besten",
+            "the best"
+          ],
+          [
+            "größer",
+            "bigger"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Der Sommer ist wärmer als der Frühling.",
+        "en": "Summer is warmer than spring."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich mag den Herbst, weil er schön ist.",
+        "en": "I like autumn because it is beautiful."
+      },
+      {
+        "type": "phrase",
+        "de": "Der Winter ist am kältesten.",
+        "en": "Winter is the coldest."
+      },
+      {
+        "type": "choice",
+        "prompt": "Der Sommer ist ___ als der Frühling.",
+        "options": [
+          "warm",
+          "wärmer",
+          "am wärmsten"
+        ],
+        "answer": 1,
+        "explain": "To compare two things, add '-er' to the adjective."
+      },
+      {
+        "type": "choice",
+        "prompt": "Im August ist es ___ .",
+        "options": [
+          "heißer",
+          "heiß",
+          "am heißesten"
+        ],
+        "answer": 2,
+        "explain": "Use 'am ... -sten' for the superlative (the most)."
+      },
+      {
+        "type": "choice",
+        "prompt": "Der Herbst ist ___ als der Sommer.",
+        "options": [
+          "schlechter",
+          "schlecht",
+          "am schlechtesten"
+        ],
+        "answer": 0,
+        "explain": "'Schlechter' is the comparative form of 'schlecht'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "kälter",
+            "colder"
+          ],
+          [
+            "am besten",
+            "the best"
+          ],
+          [
+            "wärmer",
+            "warmer"
+          ],
+          [
+            "am windigsten",
+            "the windiest"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "Spring is more beautiful than winter.",
+        "answer": [
+          "Der",
+          "Frühling",
+          "ist",
+          "schöner",
+          "als",
+          "der",
+          "Winter."
+        ],
+        "extra": [
+          "Sommer",
+          "Herbst"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Der Winter ist am kältesten.",
+        "en": "Winter is the coldest."
+      },
+      {
+        "type": "speak",
+        "de": "Der Sommer ist wärmer als der Herbst.",
+        "en": "Summer is warmer than autumn."
+      },
+      {
+        "type": "speak",
+        "de": "Im Frühling ist es schöner.",
+        "en": "In spring it is more beautiful."
+      }
+    ]
+  },
+  {
+    "id": "a2-u6-l3",
+    "unit": "a2-u6",
+    "title": "Comparing Extremes and Differences",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Comparative and Superlative",
+        "body": "To compare two things in German, you usually add the suffix -er to the adjective. To express the 'most' of something (the superlative), use the pattern 'am ... -sten'. Unlike English, which uses separate words like 'more' or 'most,' German attaches these endings directly to the adjective. Be careful with irregular forms, such as 'gut' becoming 'besser'.",
+        "table": [
+          [
+            "warm $\\rightarrow$ wärmer",
+            "warm $\\rightarrow$ warmer"
+          ],
+          [
+            "kalt $\\rightarrow$ kälter",
+            "cold $\\rightarrow$ colder"
+          ],
+          [
+            "gut $\\rightarrow$ besser",
+            "good $\\rightarrow$ better"
+          ],
+          [
+            "viel $\\rightarrow$ mehr",
+            "much $\\rightarrow$ more"
+          ],
+          [
+            "am schönsten",
+            "the most beautiful"
+          ],
+          [
+            "am heißesten",
+            "the hottest"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Der Sommer ist heißer als der Frühling.",
+        "en": "Summer is hotter than spring."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich mag den Herbst lieber als den Winter.",
+        "en": "I like autumn more than winter."
+      },
+      {
+        "type": "phrase",
+        "de": "Der Winter ist am kältesten, weil es schneit.",
+        "en": "Winter is the coldest because it snows."
+      },
+      {
+        "type": "choice",
+        "prompt": "Der Frühling ist ___ als der Sommer.",
+        "options": [
+          "warm",
+          "wärmer",
+          "am wärmsten"
+        ],
+        "answer": 1,
+        "explain": "To compare two things, add the '-er' suffix and use 'als' (than)."
+      },
+      {
+        "type": "choice",
+        "prompt": "Im Juli ist es ___ .",
+        "options": [
+          "heißer",
+          "heiß",
+          "am heißesten"
+        ],
+        "answer": 2,
+        "explain": "Use 'am ... -sten' to describe the extreme state (the most/the hottest)."
+      },
+      {
+        "type": "choice",
+        "prompt": "Das Wetter ist heute ___ als gestern.",
+        "options": [
+          "gut",
+          "besser",
+          "am besten"
+        ],
+        "answer": 1,
+        "explain": "'Gut' is an irregular adjective; its comparative form is 'besser'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "kälter",
+            "colder"
+          ],
+          [
+            "am besten",
+            "the best"
+          ],
+          [
+            "mehr",
+            "more"
+          ],
+          [
+            "schöner",
+            "more beautiful"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "Autumn is windier than summer.",
+        "answer": [
+          "Der",
+          "Herbst",
+          "ist",
+          "windiger",
+          "als",
+          "der",
+          "Sommer."
+        ],
+        "extra": [
+          "schneit",
+          "Frühling"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Der Winter ist am kältesten.",
+        "en": "Winter is the coldest."
+      },
+      {
+        "type": "speak",
+        "de": "Ich finde den Frühling schöner.",
+        "en": "I find spring more beautiful."
+      },
+      {
+        "type": "speak",
+        "de": "Es ist heute besser als gestern.",
+        "en": "It is better today than yesterday."
+      }
+    ]
+  },
+  {
+    "id": "a2-u7-l1",
+    "unit": "a2-u7",
+    "title": "Past States: Was and Had",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Using *war* and *hatte*",
+        "body": "In spoken German, we usually use the *Perfekt* tense to talk about the past. However, for the verbs *sein* (to be) and *haben* (to have), we almost always use the *Präteritum* instead. Using *war* and *hatte* sounds much more natural than using their *Perfekt* forms. This is a helpful exception to remember when describing past events or celebrations.",
+        "table": [
+          [
+            "Ich war",
+            "I was"
+          ],
+          [
+            "Du warst",
+            "You were"
+          ],
+          [
+            "Wir waren",
+            "We were"
+          ],
+          [
+            "Ich hatte",
+            "I had"
+          ],
+          [
+            "Wir hatten",
+            "We had"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Die Party war wirklich toll.",
+        "en": "The party was really great."
+      },
+      {
+        "type": "phrase",
+        "de": "Wir hatten ein großes Fest.",
+        "en": "We had a big celebration."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich hatte gestern viel Glück.",
+        "en": "I was very lucky yesterday.",
+        "note": "In German, you 'have luck' (*Glück haben*) rather than 'being lucky'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Letztes Jahr ___ ich in Berlin.",
+        "options": [
+          "bin",
+          "war",
+          "hatte"
+        ],
+        "answer": 1,
+        "explain": "Use *war* to describe a past location or state."
+      },
+      {
+        "type": "choice",
+        "prompt": "Wir ___ viel Spaß auf der Feier.",
+        "options": [
+          "waren",
+          "hatten",
+          "haben"
+        ],
+        "answer": 1,
+        "explain": "In German, you 'have' fun (*Spaß haben*), so use the past of *haben*."
+      },
+      {
+        "type": "choice",
+        "prompt": "___ du gestern auf der Party?",
+        "options": [
+          "Hattest",
+          "Warst",
+          "Bist"
+        ],
+        "answer": 1,
+        "explain": "Use *warst* to ask if someone 'was' at a specific location."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Ich war",
+            "I was"
+          ],
+          [
+            "Wir hatten",
+            "We had"
+          ],
+          [
+            "Es war",
+            "It was"
+          ],
+          [
+            "Du hattest",
+            "You had"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "The celebration was very beautiful.",
+        "answer": [
+          "Das",
+          "Fest",
+          "war",
+          "sehr",
+          "schön."
+        ],
+        "extra": [
+          "hatten",
+          "Wir"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Die Party war gestern sehr schön.",
+        "en": "The party was very beautiful yesterday."
+      },
+      {
+        "type": "speak",
+        "de": "Die Hochzeit war sehr schön.",
+        "en": "The wedding was very beautiful."
+      },
+      {
+        "type": "speak",
+        "de": "Wir hatten gestern viel Spaß.",
+        "en": "We had a lot of fun yesterday."
+      }
+    ]
+  },
+  {
+    "id": "a2-u7-l2",
+    "unit": "a2-u7",
+    "title": "Dates and Ordinal Numbers",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Dates and Ordinal Numbers",
+        "body": "In English, we often say 'May fifth,' but in German, we use ordinal numbers like 'the fifth of May.' For numbers 1–19, you usually add '-te' to the number (e.g., *der vierte*). However, when you use the preposition *am* (on the) to state a date, the ending changes to '-ten' (e.g., *am vierten*). For numbers 20 and above, you add '-ste' (e.g., *der zwanzigste*), which also becomes '-sten' after *am*.",
+        "table": [
+          [
+            "der erste",
+            "the first"
+          ],
+          [
+            "der zweite",
+            "the second"
+          ],
+          [
+            "am dritten",
+            "on the third"
+          ],
+          [
+            "am zwanzigsten",
+            "on the twentieth"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Wann hast du deinen Geburtstag?",
+        "en": "When is your birthday?"
+      },
+      {
+        "type": "phrase",
+        "de": "Mein Geburtstag ist am zehnten Mai.",
+        "en": "My birthday is on May 10th."
+      },
+      {
+        "type": "phrase",
+        "de": "Die Party ist am ersten August.",
+        "en": "The party is on August 1st."
+      },
+      {
+        "type": "choice",
+        "prompt": "How do you say 'on the fourth'?",
+        "options": [
+          "am vier",
+          "am vierten",
+          "am vierte"
+        ],
+        "answer": 1,
+        "explain": "After the preposition 'am', ordinal numbers take the '-ten' ending."
+      },
+      {
+        "type": "choice",
+        "prompt": "How do you say 'the twentieth'?",
+        "options": [
+          "der zwanzigste",
+          "der zwanzigsten",
+          "der zwanzig"
+        ],
+        "answer": 0,
+        "explain": "When used as a subject (the twentieth), numbers 20+ use the '-ste' ending."
+      },
+      {
+        "type": "choice",
+        "prompt": "How do you say 'the first of January'?",
+        "options": [
+          "der eins Januar",
+          "der erste Januar",
+          "am ersten Januar"
+        ],
+        "answer": 1,
+        "explain": "To state the date as a noun phrase (the first...), use 'der erste'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "der dritte",
+            "the third"
+          ],
+          [
+            "am zwanzigsten",
+            "on the twentieth"
+          ],
+          [
+            "der erste",
+            "the first"
+          ],
+          [
+            "das Datum",
+            "the date"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "The party is on the seventh of August.",
+        "answer": [
+          "Die",
+          "Party",
+          "ist",
+          "am",
+          "siebten",
+          "August."
+        ],
+        "extra": [
+          "Geburtstag",
+          "ersten"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Die Party ist am zehnten Mai.",
+        "en": "The party is on May 10th."
+      },
+      {
+        "type": "speak",
+        "de": "Wann ist die große Feier?",
+        "en": "When is the big celebration?"
+      },
+      {
+        "type": "speak",
+        "de": "Sie ist am ersten Mai.",
+        "en": "It is on May 1st."
+      }
+    ]
+  },
+  {
+    "id": "a2-u7-l3",
+    "unit": "a2-u7",
+    "title": "Past States: Was and Had",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Past States: Was and Had",
+        "body": "In German, we usually use the *Perfekt* tense for most past actions. However, for the verbs *sein* (to be) and *haben* (to have), we almost always use the *Präteritum* instead. This is because these forms are shorter and more natural in spoken conversation. While English uses \"was/were\" and \"had,\" German uses *war/waren* and *hatte/hatten*.",
+        "table": [
+          [
+            "ich war",
+            "I was"
+          ],
+          [
+            "du warst",
+            "you were"
+          ],
+          [
+            "er/sie/es war",
+            "he/she/it was"
+          ],
+          [
+            "wir waren",
+            "we were"
+          ],
+          [
+            "ihr wart",
+            "you all were"
+          ],
+          [
+            "sie/Sie waren",
+            "they/You were"
+          ],
+          [
+            "ich hatte",
+            "I had"
+          ],
+          [
+            "wir hatten",
+            "we had"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich war letztes Jahr auf einer Hochzeit.",
+        "en": "I was at a wedding last year."
+      },
+      {
+        "type": "phrase",
+        "de": "Wir hatten gestern eine tolle Party.",
+        "en": "We had a great party yesterday."
+      },
+      {
+        "type": "phrase",
+        "de": "Warst du gestern auf dem Fest?",
+        "en": "Were you at the festival yesterday?"
+      },
+      {
+        "type": "choice",
+        "prompt": "Letztes Wochenende ___ ich sehr müde.",
+        "options": [
+          "bin",
+          "war",
+          "hatte"
+        ],
+        "answer": 1,
+        "explain": "'war' is the Präteritum form of 'sein' (to be) for the first person singular."
+      },
+      {
+        "type": "choice",
+        "prompt": "Wir ___ am Samstag viel Glück.",
+        "options": [
+          "hatten",
+          "waren",
+          "haben"
+        ],
+        "answer": 0,
+        "explain": "'hatten' is the Präteritum form of 'haben' (to have) for 'wir'."
+      },
+      {
+        "type": "choice",
+        "prompt": "___ du gestern auf dem Fest?",
+        "options": [
+          "Hattest",
+          "Warst",
+          "Bist"
+        ],
+        "answer": 1,
+        "explain": "'Warst' is the Präteritum form of 'sein' (to be) for 'du'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "die Einladung",
+            "the invitation"
+          ],
+          [
+            "letzte Woche",
+            "last week"
+          ],
+          [
+            "das Fest",
+            "the celebration"
+          ],
+          [
+            "glücklich",
+            "happy"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "He had a big surprise yesterday.",
+        "answer": [
+          "Er",
+          "hatte",
+          "gestern",
+          "eine",
+          "große",
+          "Überraschung."
+        ],
+        "extra": [
+          "du",
+          "letztes"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Die Party war wirklich super.",
+        "en": "The party was really great."
+      },
+      {
+        "type": "speak",
+        "de": "Ich war gestern zu Hause.",
+        "en": "I was at home yesterday."
+      },
+      {
+        "type": "speak",
+        "de": "Wir hatten viel Spaß beim Fest.",
+        "en": "We had a lot of fun at the celebration."
+      }
+    ]
+  }
+]

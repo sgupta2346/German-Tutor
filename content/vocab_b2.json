@@ -1,0 +1,1276 @@
+[
+  {
+    "id": "b2-u1-words",
+    "level": "B2",
+    "title": "Debating",
+    "titleDe": "Diskutieren",
+    "icon": "users",
+    "words": [
+      {
+        "de": "Argument",
+        "en": "argument",
+        "pos": "noun",
+        "ex": {
+          "de": "Es muss berücksichtigt werden, dass dieses Argument in der aktuellen Debatte sehr wichtig ist.",
+          "en": "It must be taken into account that this argument is very important in the current debate."
+        },
+        "gender": "n",
+        "plural": "Argumente"
+      },
+      {
+        "de": "Meinung",
+        "en": "opinion",
+        "pos": "noun",
+        "ex": {
+          "de": "Wenn ich meine Meinung äußern dürfte, würde ich eine andere Lösung vorschlagen.",
+          "en": "If I were allowed to express my opinion, I would suggest a different solution."
+        },
+        "gender": "f",
+        "plural": "Meinungen"
+      },
+      {
+        "de": "Standpunkt",
+        "en": "point of view",
+        "pos": "noun",
+        "ex": {
+          "de": "Aus meinem Standpunkt betrachtet, sollte die Entscheidung erst nach einer gründlichen Prüfung getroffen werden.",
+          "en": "From my point of view, the decision should only be made after a thorough examination."
+        },
+        "gender": "m",
+        "plural": "Standpunkte"
+      },
+      {
+        "de": "Widerspruch",
+        "en": "contradiction",
+        "pos": "noun",
+        "ex": {
+          "de": "Es besteht ein erheblicher Widerspruch zwischen den Aussagen der beiden Politiker während der Diskussion.",
+          "en": "There is a significant contradiction between the statements of the two politicians during the discussion."
+        },
+        "gender": "m",
+        "plural": "Widersprüche"
+      },
+      {
+        "de": "Zustimmung",
+        "en": "approval / agreement",
+        "pos": "noun",
+        "ex": {
+          "de": "Trotz der Bedenken wurde der Vorschlag von der Mehrheit der Teilnehmer mit Zustimmung aufgenommen.",
+          "en": "Despite the concerns, the proposal was received with approval by the majority of the participants."
+        },
+        "gender": "f",
+        "plural": "Zustimmungen"
+      },
+      {
+        "de": "Begründung",
+        "en": "justification / reason",
+        "pos": "noun",
+        "ex": {
+          "de": "Eine logische Begründung ist unerlässlich, um die Zuhörer von der eigenen Position zu überzeugen.",
+          "en": "A logical justification is essential in order to convince the listeners of one's own position."
+        },
+        "gender": "f",
+        "plural": "Begründungen"
+      },
+      {
+        "de": "Schlussfolgerung",
+        "en": "conclusion",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Schlussfolgerung kann aus den vorliegenden Daten sehr eindeutig gezogen werden.",
+          "en": "The conclusion can be drawn very clearly from the available data."
+        },
+        "gender": "f",
+        "plural": "Schlussfolgerungen"
+      },
+      {
+        "de": "Vorteil",
+        "en": "advantage",
+        "pos": "noun",
+        "ex": {
+          "de": "Ein wesentlicher Vorteil dieser Strategie wäre die langfristige Kosteneinsparung für das gesamte Unternehmen.",
+          "en": "A major advantage of this strategy would be long-term cost savings for the entire company."
+        },
+        "gender": "m",
+        "plural": "Vorteile"
+      },
+      {
+        "de": "Nachteil",
+        "en": "disadvantage",
+        "pos": "noun",
+        "ex": {
+          "de": "Es darf nicht ignoriert werden, dass dieser Plan auch erhebliche Nachteile für die Umwelt hat.",
+          "en": "It must not be ignored that this plan also has significant disadvantages for the environment."
+        },
+        "gender": "m",
+        "plural": "Nachteile"
+      },
+      {
+        "de": "Überzeugung",
+        "en": "conviction",
+        "pos": "noun",
+        "ex": {
+          "de": "Er vertritt die feste Überzeugung, dass die Digitalisierung alle Lebensbereiche grundlegend verändern wird.",
+          "en": "He holds the firm conviction that digitalization will fundamentally change all areas of life."
+        },
+        "gender": "f",
+        "plural": "Überzeugungen"
+      },
+      {
+        "de": "behaupten",
+        "en": "to claim",
+        "pos": "verb",
+        "ex": {
+          "de": "Man kann durchaus behaupten, dass die bisherigen Maßnahmen nicht den gewünschten Erfolg gebracht haben.",
+          "en": "One can certainly claim that the previous measures have not brought the desired success."
+        }
+      },
+      {
+        "de": "widersprechen",
+        "en": "to contradict / disagree",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich muss Ihnen in diesem Punkt entschieden widersprechen, da die Fakten ganz anders aussehen.",
+          "en": "I must strongly disagree with you on this point, as the facts look quite different."
+        }
+      },
+      {
+        "de": "zustimmen",
+        "en": "to agree",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich würde Ihnen gerne zustimmen, wenn Sie mir eine fundierte Begründung für Ihre These liefern.",
+          "en": "I would gladly agree with you if you were to provide me with a well-founded justification for your thesis."
+        }
+      },
+      {
+        "de": "begründen",
+        "en": "to justify / explain",
+        "pos": "verb",
+        "ex": {
+          "de": "Die Entscheidung muss ausführlich begründet werden, damit die Öffentlichkeit sie voll und ganz akzeptieren kann.",
+          "en": "The decision must be explained in detail so that the public can fully accept it."
+        }
+      },
+      {
+        "de": "überzeugen",
+        "en": "to convince",
+        "pos": "verb",
+        "ex": {
+          "de": "Es ist schwierig, die skeptischen Mitglieder der Kommission mit diesen schwachen Argumenten zu überzeugen.",
+          "en": "It is difficult to convince the skeptical members of the commission with these weak arguments."
+        }
+      },
+      {
+        "de": "anführen",
+        "en": "to cite / bring forward",
+        "pos": "verb",
+        "ex": {
+          "de": "Als wichtigstes Argument wurde die Notwendigkeit einer schnellen Reaktion von den Experten angeführt.",
+          "en": "The necessity of a rapid response was cited by the experts as the most important argument."
+        }
+      },
+      {
+        "de": "unterstreichen",
+        "en": "to underline / emphasize",
+        "pos": "verb",
+        "ex": {
+          "de": "Die aktuelle Studie unterstreicht die Bedeutung einer nachhaltigen Entwicklung für zukünftige Generationen.",
+          "en": "The current study underlines the importance of sustainable development for future generations."
+        }
+      },
+      {
+        "de": "bezweifeln",
+        "en": "to doubt",
+        "pos": "verb",
+        "ex": {
+          "de": "Viele Experten bezweifeln, dass die vorgeschlagenen Änderungen tatsächlich zu einer Verbesserung führen werden.",
+          "en": "Many experts doubt that the proposed changes will actually lead to an improvement."
+        }
+      },
+      {
+        "de": "überzeugend",
+        "en": "convincing",
+        "pos": "adj",
+        "ex": {
+          "de": "Seine Ausführungen waren so überzeugend, dass kaum jemand in der Runde eine Gegenposition einnahm.",
+          "en": "His explanations were so convincing that hardly anyone in the group took an opposing position."
+        }
+      },
+      {
+        "de": "schlüssig",
+        "en": "coherent / logical",
+        "pos": "adj",
+        "ex": {
+          "de": "Ohne eine schlüssige Argumentation wird es schwierig sein, die Zustimmung des Gremiums zu erhalten.",
+          "en": "Without a coherent argumentation, it will be difficult to obtain the approval of the committee."
+        }
+      }
+    ]
+  },
+  {
+    "id": "b2-u2-words",
+    "level": "B2",
+    "title": "The working world",
+    "titleDe": "Arbeitswelt",
+    "icon": "coffee",
+    "words": [
+      {
+        "de": "Besprechung",
+        "en": "meeting",
+        "pos": "noun",
+        "ex": {
+          "de": "Die heutige Besprechung muss unbedingt vorbereitet werden, damit alle wichtigen Punkte effizient diskutiert werden können.",
+          "en": "Today's meeting must definitely be prepared so that all important points can be discussed efficiently."
+        },
+        "gender": "f",
+        "plural": "Besprechungen"
+      },
+      {
+        "de": "Tagesordnung",
+        "en": "agenda",
+        "pos": "noun",
+        "ex": {
+          "de": "Bevor wir beginnen, sollten wir die Tagesordnung gemeinsam durchgehen, um den Zeitplan für das Meeting einzuhalten.",
+          "en": "Before we begin, we should go through the agenda together to stick to the schedule for the meeting."
+        },
+        "gender": "f",
+        "plural": "Tagesordnungen"
+      },
+      {
+        "de": "Protokoll",
+        "en": "minutes / protocol",
+        "pos": "noun",
+        "ex": {
+          "de": "Das Protokoll der letzten Sitzung muss bis morgen fertiggestellt sein, damit alle Teilnehmer über die Ergebnisse informiert werden.",
+          "en": "The minutes of the last meeting must be completed by tomorrow so that all participants are informed about the results."
+        },
+        "gender": "n",
+        "plural": "Protokolle"
+      },
+      {
+        "de": "Entscheidung",
+        "en": "decision",
+        "pos": "noun",
+        "ex": {
+          "de": "Eine endgültige Entscheidung über das neue Projekt kann erst getroffen werden, wenn alle Fakten vollständig vorliegen.",
+          "en": "A final decision regarding the new project can only be made once all facts are fully available."
+        },
+        "gender": "f",
+        "plural": "Entscheidungen"
+      },
+      {
+        "de": "Vorschlag",
+        "en": "proposal",
+        "pos": "noun",
+        "ex": {
+          "de": "Ihr Vorschlag zur Optimierung der Arbeitsabläufe wurde von der Geschäftsleitung sehr positiv aufgenommen und weiter diskutiert.",
+          "en": "Your proposal for optimizing work processes was received very positively by management and was discussed further."
+        },
+        "gender": "m",
+        "plural": "Vorschläge"
+      },
+      {
+        "de": "Verhandlung",
+        "en": "negotiation",
+        "pos": "noun",
+        "ex": {
+          "de": "In den kommenden Verhandlungen müssen wir versuchen, eine Lösung zu finden, die für beide Seiten akzeptabel ist.",
+          "en": "In the upcoming negotiations, we must try to find a solution that is acceptable to both sides."
+        },
+        "gender": "f",
+        "plural": "Verhandlungen"
+      },
+      {
+        "de": "Ergebnis",
+        "en": "result",
+        "pos": "noun",
+        "ex": {
+          "de": "Das Ergebnis der Abstimmung wurde sofort im Protokoll festgehalten, um spätere Missverständnisse in der Abteilung zu vermeiden.",
+          "en": "The result of the vote was immediately recorded in the minutes to avoid later misunderstandings in the department."
+        },
+        "gender": "n",
+        "plural": "Ergebnisse"
+      },
+      {
+        "de": "Teilnehmer",
+        "en": "participant",
+        "pos": "noun",
+        "ex": {
+          "de": "Alle Teilnehmer der Konferenz werden gebeten, ihre Präsentationen rechtzeitig auf den gemeinsam genutzten Servern hochzuladen.",
+          "en": "All participants of the conference are requested to upload their presentations to the shared servers in a timely manner."
+        },
+        "gender": "m",
+        "plural": "Teilnehmer"
+      },
+      {
+        "de": "Verantwortung",
+        "en": "responsibility",
+        "pos": "noun",
+        "ex": {
+          "de": "Für die Koordination der verschiedenen Projektphasen muss eine klare Verantwortung innerhalb des gesamten Teams festgelegt werden.",
+          "en": "A clear responsibility must be established within the entire team for the coordination of the various project phases."
+        },
+        "gender": "f",
+        "plural": "Verantwortungen"
+      },
+      {
+        "de": "Termin",
+        "en": "appointment / deadline",
+        "pos": "noun",
+        "ex": {
+          "de": "Der Termin für die nächste wichtige Projektbesprechung wurde bereits im Kalender aller Beteiligten fest eingetragen.",
+          "en": "The date for the next important project meeting has already been firmly entered into the calendars of all those involved."
+        },
+        "gender": "m",
+        "plural": "Termine"
+      },
+      {
+        "de": "Zusammenarbeit",
+        "en": "collaboration",
+        "pos": "noun",
+        "ex": {
+          "de": "Eine enge Zusammenarbeit zwischen den Abteilungen ist notwendig, um die gesteckten Ziele innerhalb des Zeitrahmens zu erreichen.",
+          "en": "Close collaboration between the departments is necessary to achieve the set goals within the timeframe."
+        },
+        "gender": "f",
+        "plural": "Zusammenarbeiten"
+      },
+      {
+        "de": "Zielsetzung",
+        "en": "objective / goal setting",
+        "pos": "noun",
+        "ex": {
+          "de": "Die langfristige Zielsetzung des Unternehmens muss in jeder einzelnen Besprechung als Orientierungshilfe für die Mitarbeiter dienen.",
+          "en": "The long-term objectives of the company must serve as a guide for employees in every single meeting."
+        },
+        "gender": "f",
+        "plural": "Zielsetzungen"
+      },
+      {
+        "de": "beschließen",
+        "en": "to decide",
+        "pos": "verb",
+        "ex": {
+          "de": "Nach einer langen Diskussion wurde schließlich beschlossen, dass das Budget für das nächste Quartal erhöht werden muss.",
+          "en": "After a long discussion, it was finally decided that the budget for the next quarter must be increased."
+        }
+      },
+      {
+        "de": "verhandeln",
+        "en": "to negotiate",
+        "pos": "verb",
+        "ex": {
+          "de": "Wir müssen über die Konditionen des neuen Vertrags sehr vorsichtig verhandeln, um unsere Interessen bestmöglich zu schützen.",
+          "en": "We must negotiate the terms of the new contract very carefully to protect our interests as best as possible."
+        }
+      },
+      {
+        "de": "abstimmen",
+        "en": "to vote / to coordinate",
+        "pos": "verb",
+        "ex": {
+          "de": "Über den neuen Entwurf des Leitfadens muss im nächsten Meeting offiziell abgestimmt werden, um Rechtskraft zu erlangen.",
+          "en": "The new draft of the guideline must be officially voted on in the next meeting to gain legal force."
+        }
+      },
+      {
+        "de": "festlegen",
+        "en": "to determine / to set",
+        "pos": "verb",
+        "ex": {
+          "de": "Die genauen Details der Implementierung müssen noch in einer separaten Sitzung mit den technischen Experten festgelegt werden.",
+          "en": "The exact details of the implementation must still be determined in a separate meeting with the technical experts."
+        }
+      },
+      {
+        "de": "vorbereiten",
+        "en": "to prepare",
+        "pos": "verb",
+        "ex": {
+          "de": "Damit die Präsentation gelingt, müssen die benötigten Daten und Grafiken gründlich von der Marketingabteilung vorbereitet werden.",
+          "en": "To ensure the presentation is successful, the required data and graphics must be thoroughly prepared by the marketing department."
+        }
+      },
+      {
+        "de": "verbindlich",
+        "en": "binding",
+        "pos": "adj",
+        "ex": {
+          "de": "Bitte beachten Sie, dass die heute getroffenen Vereinbarungen für alle beteiligten Parteien absolut verbindlich sind.",
+          "en": "Please note that the agreements made today are absolutely binding for all parties involved."
+        }
+      },
+      {
+        "de": "konstruktiv",
+        "en": "constructive",
+        "pos": "adj",
+        "ex": {
+          "de": "Wir sollten versuchen, auch bei Meinungsverschiedenheiten stets einen konstruktiven Beitrag zur Lösung des Problems zu leisten.",
+          "en": "We should try to always make a constructive contribution to solving the problem, even in the event of disagreements."
+        }
+      },
+      {
+        "de": "einstimmig",
+        "en": "unanimous",
+        "pos": "adj",
+        "ex": {
+          "de": "Der neue Vorstandsvorschlag wurde von allen anwesenden Mitgliedern einstimmig angenommen, was für die Zukunft sehr positiv ist.",
+          "en": "The new board proposal was unanimously accepted by all members present, which is very positive for the future."
+        }
+      }
+    ]
+  },
+  {
+    "id": "b2-u3-words",
+    "level": "B2",
+    "title": "Science",
+    "titleDe": "Wissenschaft",
+    "icon": "home",
+    "words": [
+      {
+        "de": "Untersuchung",
+        "en": "investigation",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Untersuchung der neuen Wirkstoffe wurde durch das Team über mehrere Monate hinweg intensiv durchgeführt.",
+          "en": "The investigation of the new active ingredients was carried out intensively by the team over several months."
+        },
+        "gender": "f",
+        "plural": "Untersuchungen"
+      },
+      {
+        "de": "Forschung",
+        "en": "research",
+        "pos": "noun",
+        "ex": {
+          "de": "Die aktuelle Forschung konzentriert sich vor allem auf die langfristigen Auswirkungen des Klimawandels auf die Biodiversität.",
+          "en": "Current research focuses primarily on the long-term effects of climate change on biodiversity."
+        },
+        "gender": "f",
+        "plural": "Forschungen"
+      },
+      {
+        "de": "Entdeckung",
+        "en": "discovery",
+        "pos": "noun",
+        "ex": {
+          "de": "Durch die Entdeckung des neuen Elements konnte die bisherige Theorie der chemischen Bindungen grundlegend infrage gestellt werden.",
+          "en": "Through the discovery of the new element, the previous theory of chemical bonding could be fundamentally challenged."
+        },
+        "gender": "f",
+        "plural": "Entdeckungen"
+      },
+      {
+        "de": "Beweis",
+        "en": "proof",
+        "pos": "noun",
+        "ex": {
+          "de": "Ein eindeutiger Beweis für diese Theorie liegt bisher nicht vor, obwohl viele Indizien stark darauf hindeuten.",
+          "en": "Clear proof for this theory is not yet available, although many clues strongly suggest it."
+        },
+        "gender": "m",
+        "plural": "Beweise"
+      },
+      {
+        "de": "Hypothese",
+        "en": "hypothesis",
+        "pos": "noun",
+        "ex": {
+          "de": "Wenn die Hypothese korrekt wäre, müssten die Ergebnisse der nächsten Testreihe deutlich anders ausfallen als erwartet.",
+          "en": "If the hypothesis were correct, the results of the next test series would have to be significantly different than expected."
+        },
+        "gender": "f",
+        "plural": "Hypothesen"
+      },
+      {
+        "de": "Experiment",
+        "en": "experiment",
+        "pos": "noun",
+        "ex": {
+          "de": "Das Experiment wurde unter streng kontrollierten Bedingungen durchgeführt, um die Validität der Daten sicherzustellen.",
+          "en": "The experiment was carried out under strictly controlled conditions to ensure the validity of the data."
+        },
+        "gender": "n",
+        "plural": "Experimente"
+      },
+      {
+        "de": "Analyse",
+        "en": "analysis",
+        "pos": "noun",
+        "ex": {
+          "de": "Eine detaillierte Analyse der Daten ist notwendig, um die Ursachen für die chemische Reaktion genau zu bestimmen.",
+          "en": "A detailed analysis of the data is necessary to determine the causes of the chemical reaction exactly."
+        },
+        "gender": "f",
+        "plural": "Analysen"
+      },
+      {
+        "de": "Erkenntnis",
+        "en": "finding/insight",
+        "pos": "noun",
+        "ex": {
+          "de": "Die wissenschaftliche Erkenntnis über die Funktionsweise des Gehirns hat die moderne Medizin in den letzten Jahren revolutioniert.",
+          "en": "The scientific insight into the functioning of the brain has revolutionized modern medicine in recent years."
+        },
+        "gender": "f",
+        "plural": "Erkenntnisse"
+      },
+      {
+        "de": "Zusammenhang",
+        "en": "connection/correlation",
+        "pos": "noun",
+        "ex": {
+          "de": "Es besteht ein enger Zusammenhang zwischen der genetischen Veranlagung und der Anfälligkeit für bestimmte Krankheiten.",
+          "en": "There is a close connection between genetic predisposition and susceptibility to certain diseases."
+        },
+        "gender": "m",
+        "plural": "Zusammenhänge"
+      },
+      {
+        "de": "Schlussfolgerung",
+        "en": "conclusion",
+        "pos": "noun",
+        "ex": {
+          "de": "Aus den vorliegenden Daten lässt sich die Schlussfolgerung ziehen, dass die bisherigen Annahmen nicht mehr haltbar sind.",
+          "en": "From the available data, the conclusion can be drawn that the previous assumptions are no longer tenable."
+        },
+        "gender": "f",
+        "plural": "Schlussfolgerungen"
+      },
+      {
+        "de": "Nachweis",
+        "en": "proof/evidence",
+        "pos": "noun",
+        "ex": {
+          "de": "Der Nachweis der Wirksamkeit des Medikaments muss durch umfangreiche klinische Studien an Menschen erbracht werden.",
+          "en": "Proof of the drug's effectiveness must be provided through extensive clinical trials on humans."
+        },
+        "gender": "m",
+        "plural": "Nachweise"
+      },
+      {
+        "de": "Anwendung",
+        "en": "application",
+        "pos": "noun",
+        "ex": {
+          "de": "Die praktische Anwendung dieser Technologie könnte in der Zukunft viele verschiedene Industriezweige nachhaltig verändern.",
+          "en": "The practical application of this technology could sustainably change many different industrial sectors in the future."
+        },
+        "gender": "f",
+        "plural": "Anwendungen"
+      },
+      {
+        "de": "Beobachtung",
+        "en": "observation",
+        "pos": "noun",
+        "ex": {
+          "de": "Während der Beobachtung der Planetenbewegungen stellten die Astronomen einige Unregelmäßigkeiten in den Umlaufbahnen fest.",
+          "en": "During the observation of planetary movements, the astronomers noted some irregularities in the orbits."
+        },
+        "gender": "f",
+        "plural": "Beobachtungen"
+      },
+      {
+        "de": "untersuchen",
+        "en": "to investigate",
+        "pos": "verb",
+        "ex": {
+          "de": "Die Wissenschaftler müssen die Ursachen der Zellveränderung genauer untersuchen, um eine Heilungsmethode zu entwickeln.",
+          "en": "Scientists must investigate the causes of the cell changes more closely in order to develop a healing method."
+        }
+      },
+      {
+        "de": "nachweisen",
+        "en": "to prove/demonstrate",
+        "pos": "verb",
+        "ex": {
+          "de": "Es muss nachgewiesen werden, dass die chemische Verbindung unter extremen Druckbedingungen stabil bleibt.",
+          "en": "It must be proven that the chemical compound remains stable under extreme pressure conditions."
+        }
+      },
+      {
+        "de": "belegen",
+        "en": "to substantiate/support",
+        "pos": "verb",
+        "ex": {
+          "de": "Die neuen Studienergebnisse belegen eindrucksvoll, dass die bisherigen Annahmen über das Verhalten der Teilchen falsch waren.",
+          "en": "The new study results impressively demonstrate that the previous assumptions about the behavior of particles were wrong."
+        }
+      },
+      {
+        "de": "wissenschaftlich",
+        "en": "scientific",
+        "pos": "adj",
+        "ex": {
+          "de": "Für eine wissenschaftliche Publikation müssen alle verwendeten Methoden präzise und für andere Forscher nachvollziehbar sein.",
+          "en": "For a scientific publication, all methods used must be precise and traceable for other researchers."
+        }
+      },
+      {
+        "de": "empirisch",
+        "en": "empirical",
+        "pos": "adj",
+        "ex": {
+          "de": "Die Theorie basiert nicht auf bloßen Vermutungen, sondern auf einer fundierten empirischen Untersuchung der Realität.",
+          "en": "The theory is not based on mere assumptions, but on a well-founded empirical investigation of reality."
+        }
+      },
+      {
+        "de": "fundiert",
+        "en": "well-founded/solid",
+        "pos": "adj",
+        "ex": {
+          "de": "Ohne eine fundierte Datenbasis können keine verlässlichen Aussagen über die langfristigen Folgen der Entscheidung getroffen werden.",
+          "en": "Without a well-founded data basis, no reliable statements about the long-term consequences of the decision can be made."
+        }
+      },
+      {
+        "de": "Variable",
+        "en": "variable",
+        "pos": "noun",
+        "ex": {
+          "de": "In diesem Modell müssen alle relevanten Variablen genau kontrolliert werden, um die Genauigkeit der Vorhersage zu erhöhen.",
+          "en": "In this model, all relevant variables must be precisely controlled to increase the accuracy of the prediction."
+        },
+        "gender": "f",
+        "plural": "Variablen"
+      }
+    ]
+  },
+  {
+    "id": "b2-u4-words",
+    "level": "B2",
+    "title": "Society",
+    "titleDe": "Gesellschaft",
+    "icon": "clock",
+    "words": [
+      {
+        "de": "Meinung",
+        "en": "opinion",
+        "pos": "noun",
+        "ex": {
+          "de": "Der Experte vertrat die Meinung, dass die sozialen Strukturen in Europa grundlegend reformiert werden müssten.",
+          "en": "The expert expressed the opinion that the social structures in Europe would have to be fundamentally reformed."
+        },
+        "gender": "f",
+        "plural": "Meinungen"
+      },
+      {
+        "de": "behaupten",
+        "en": "to claim",
+        "pos": "verb",
+        "ex": {
+          "de": "Viele Kritiker behaupten, dass die neuen Gesetze die Freiheit der Bürger massiv einschränken würden.",
+          "en": "Many critics claim that the new laws would massively restrict the freedom of citizens."
+        }
+      },
+      {
+        "de": "Bevölkerung",
+        "en": "population",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Regierung erklärte, dass die Bevölkerung zunehmend mit den steigenden Lebenshaltungskosten in den Städten kämpfe.",
+          "en": "The government explained that the population is increasingly struggling with the rising cost of living in cities."
+        },
+        "gender": "f",
+        "plural": "Bevölkerungen"
+      },
+      {
+        "de": "Regierung",
+        "en": "government",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Regierung betonte, dass die wirtschaftliche Stabilität für das gesamte Land von entscheidender Bedeutung sei.",
+          "en": "The government emphasized that economic stability is of decisive importance for the entire country."
+        },
+        "gender": "f",
+        "plural": "Regierungen"
+      },
+      {
+        "de": "Umfrage",
+        "en": "survey / poll",
+        "pos": "noun",
+        "ex": {
+          "de": "Laut einer aktuellen Umfrage sagen die meisten Menschen, dass sie mit der aktuellen Politik unzufrieden seien.",
+          "en": "According to a recent survey, most people say that they are dissatisfied with the current politics."
+        },
+        "gender": "f",
+        "plural": "Umfragen"
+      },
+      {
+        "de": "fordern",
+        "en": "to demand",
+        "pos": "verb",
+        "ex": {
+          "de": "Die Demonstranten forderten, dass die Regierung sofort Maßnahmen gegen den Klimawandel ergreifen müsse.",
+          "en": "The demonstrators demanded that the government must take immediate measures against climate change."
+        }
+      },
+      {
+        "de": "Herausforderung",
+        "en": "challenge",
+        "pos": "noun",
+        "ex": {
+          "de": "Experten sagen, dass die Integration von Migranten eine der größten gesellschaftlichen Herausforderungen unserer Zeit sei.",
+          "en": "Experts say that the integration of migrants is one of the greatest societal challenges of our time."
+        },
+        "gender": "f",
+        "plural": "Herausforderungen"
+      },
+      {
+        "de": "kontrovers",
+        "en": "controversial",
+        "pos": "adj",
+        "ex": {
+          "de": "Das Thema wurde kontrovers diskutiert, wobei viele Experten die Auswirkungen auf die Jugend kritisch sahen.",
+          "en": "The topic was discussed controversially, with many experts viewing the impact on youth critically."
+        }
+      },
+      {
+        "de": "berichten",
+        "en": "to report",
+        "pos": "verb",
+        "ex": {
+          "de": "Die Medien berichteten, dass die Arbeitslosenzahlen im letzten Quartal überraschend stark gesunken seien.",
+          "en": "The media reported that unemployment figures had dropped surprisingly sharply in the last quarter."
+        }
+      },
+      {
+        "de": "Gesellschaft",
+        "en": "society",
+        "pos": "noun",
+        "ex": {
+          "de": "In der modernen Gesellschaft wird oft darüber diskutiert, welche Werte für das Zusammenleben wichtig sind.",
+          "en": "In modern society, it is often discussed which values are important for living together."
+        },
+        "gender": "f",
+        "plural": "Gesellschaften"
+      },
+      {
+        "de": "Minderheit",
+        "en": "minority",
+        "pos": "noun",
+        "ex": {
+          "de": "Er erklärte, dass der Schutz von Minderheiten ein wesentlicher Bestandteil einer funktionierenden Demokratie sei.",
+          "en": "He explained that the protection of minorities is an essential part of a functioning democracy."
+        },
+        "gender": "f",
+        "plural": "Minderheiten"
+      },
+      {
+        "de": "erklären",
+        "en": "to explain / to state",
+        "pos": "verb",
+        "ex": {
+          "de": "Der Sprecher erklärte, dass die neuen Sicherheitsmaßnahmen notwendig seien, um die öffentliche Ordnung zu gewährleisten.",
+          "en": "The spokesperson explained that the new security measures are necessary to ensure public order."
+        }
+      },
+      {
+        "de": "vielfältig",
+        "en": "diverse",
+        "pos": "adj",
+        "ex": {
+          "de": "Die Kultur in dieser Stadt ist sehr vielfältig, was von vielen Bewohnern als Vorteil empfunden wird.",
+          "en": "The culture in this city is very diverse, which is perceived as an advantage by many residents."
+        }
+      },
+      {
+        "de": "Gesetz",
+        "en": "law",
+        "pos": "noun",
+        "ex": {
+          "de": "Der Anwalt sagte, dass das neue Gesetz gegen die Verfassung der Bundesrepublik verstoßen könne.",
+          "en": "The lawyer said that the new law could violate the constitution of the Federal Republic."
+        },
+        "gender": "n",
+        "plural": "Gesetze"
+      },
+      {
+        "de": "Verantwortung",
+        "en": "responsibility",
+        "pos": "noun",
+        "ex": {
+          "de": "Es wird oft gesagt, dass jeder Einzelne eine große Verantwortung für das soziale Klima trägt.",
+          "en": "It is often said that every individual bears a great responsibility for the social climate."
+        },
+        "gender": "f",
+        "plural": "Verantwortungen"
+      },
+      {
+        "de": "kritisieren",
+        "en": "to criticize",
+        "pos": "verb",
+        "ex": {
+          "de": "Oppositionspolitiker kritisieren, dass die aktuelle Sozialpolitik die ärmeren Schichten der Bevölkerung vernachlässige.",
+          "en": "Opposition politicians criticize that the current social policy neglects the poorer strata of the population."
+        }
+      },
+      {
+        "de": "sozial",
+        "en": "social",
+        "pos": "adj",
+        "ex": {
+          "de": "Die soziale Ungleichheit wird in den Nachrichten oft als ein Problem der modernen Welt thematisiert.",
+          "en": "Social inequality is often discussed in the news as a problem of the modern world."
+        }
+      },
+      {
+        "de": "Bürger",
+        "en": "citizen",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Bürger forderten, dass die Transparenz der politischen Entscheidungen deutlich erhöht werden müsse.",
+          "en": "The citizens demanded that the transparency of political decisions must be significantly increased."
+        },
+        "gender": "m",
+        "plural": "Bürger"
+      },
+      {
+        "de": "widersprechen",
+        "en": "to contradict",
+        "pos": "verb",
+        "ex": {
+          "de": "Er widersprach der Aussage, dass die wirtschaftliche Lage im Land bereits wieder stabilisiert sei.",
+          "en": "He contradicted the statement that the economic situation in the country had already stabilized again."
+        }
+      },
+      {
+        "de": "Entwicklung",
+        "en": "development",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Wissenschaftler berichteten, dass die technologische Entwicklung die Arbeitswelt in den nächsten Jahren verändern werde.",
+          "en": "The scientists reported that technological development will change the working world in the coming years."
+        },
+        "gender": "f",
+        "plural": "Entwicklungen"
+      }
+    ]
+  },
+  {
+    "id": "b2-u7-words",
+    "level": "B2",
+    "title": "History",
+    "titleDe": "Geschichte",
+    "icon": "zap",
+    "words": [
+      {
+        "de": "Epoche",
+        "en": "era/epoch",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Epoche wurde durch zahlreiche soziale Veränderungen in der Geschichte maßgeblich geprägt.",
+          "en": "The era was significantly shaped by numerous social changes in history."
+        },
+        "gender": "f",
+        "plural": "Epochen"
+      },
+      {
+        "de": "Ereignis",
+        "en": "event",
+        "pos": "noun",
+        "ex": {
+          "de": "Nachdem das entscheidende Ereignis eingetreten war, änderte sich die politische Lage der gesamten Region.",
+          "en": "After the decisive event had occurred, the political situation of the entire region changed."
+        },
+        "gender": "n",
+        "plural": "Ereignisse"
+      },
+      {
+        "de": "Herrschaft",
+        "en": "rule/reign",
+        "pos": "noun",
+        "ex": {
+          "de": "Bevor die neue Herrschaft an die Macht kam, hatten die Bürger bereits gegen die Ungerechtigkeit protestiert.",
+          "en": "Before the new rule came to power, the citizens had already protested against the injustice."
+        },
+        "gender": "f",
+        "plural": "Herrschaften"
+      },
+      {
+        "de": "Vertrag",
+        "en": "treaty/contract",
+        "pos": "noun",
+        "ex": {
+          "de": "Der Vertrag wurde unterzeichnet, nachdem die Verhandlungen zwischen den beiden Nationen monatelang geführt worden waren.",
+          "en": "The treaty was signed after negotiations between the two nations had been conducted for months."
+        },
+        "gender": "m",
+        "plural": "Verträge"
+      },
+      {
+        "de": "Revolution",
+        "en": "revolution",
+        "pos": "noun",
+        "ex": {
+          "de": "Eine Revolution begann, nachdem die Bevölkerung jahrelang unter extremem wirtschaftlichem Druck gelebt hatte.",
+          "en": "A revolution began after the population had lived under extreme economic pressure for years."
+        },
+        "gender": "f",
+        "plural": "Revolutionen"
+      },
+      {
+        "de": "Krise",
+        "en": "crisis",
+        "pos": "noun",
+        "ex": {
+          "de": "Bevor die wirtschaftliche Krise das Land destabilisierte, war die Inflation bereits stetig angestiegen.",
+          "en": "Before the economic crisis destabilized the country, inflation had already been steadily rising."
+        },
+        "gender": "f",
+        "plural": "Krisen"
+      },
+      {
+        "de": "Mauer",
+        "en": "wall",
+        "pos": "noun",
+        "ex": {
+          "de": "Nachdem die Mauer endlich gefallen war, konnte die Wiedervereinigung des Landes endlich eingeleitet werden.",
+          "en": "After the wall had finally fallen, the reunification of the country could finally be initiated."
+        },
+        "gender": "f",
+        "plural": "Mauern"
+      },
+      {
+        "de": "Konflikt",
+        "en": "conflict",
+        "pos": "noun",
+        "ex": {
+          "de": "Der Konflikt wurde durch diplomatische Bemühungen gelöst, nachdem die Spannungen monatelang eskaliert waren.",
+          "en": "The conflict was resolved through diplomatic efforts after tensions had escalated for months."
+        },
+        "gender": "m",
+        "plural": "Konflikte"
+      },
+      {
+        "de": "Entwicklung",
+        "en": "development",
+        "pos": "noun",
+        "ex": {
+          "de": "Die technologische Entwicklung wurde beschleunigt, nachdem neue wissenschaftliche Erkenntnisse gewonnen worden waren.",
+          "en": "Technological development was accelerated after new scientific findings had been obtained."
+        },
+        "gender": "f",
+        "plural": "Entwicklungen"
+      },
+      {
+        "de": "Gesetz",
+        "en": "law",
+        "pos": "noun",
+        "ex": {
+          "de": "Bevor das neue Gesetz verabschiedet wurde, hatten die Abgeordneten über viele Details intensiv debattiert.",
+          "en": "Before the new law was passed, the members of parliament had debated many details intensively."
+        },
+        "gender": "n",
+        "plural": "Gesetze"
+      },
+      {
+        "de": "stattfinden",
+        "en": "to take place",
+        "pos": "verb",
+        "ex": {
+          "de": "Nachdem das große Fest stattgefunden hatte, wurden die historischen Dokumente sorgfältig archiviert.",
+          "en": "After the big festival had taken place, the historical documents were carefully archived."
+        }
+      },
+      {
+        "de": "unterzeichnen",
+        "en": "to sign",
+        "pos": "verb",
+        "ex": {
+          "de": "Der Friedensvertrag wurde unterzeichnet, nachdem beide Seiten ihre Forderungen endlich zurückgezogen hatten.",
+          "en": "The peace treaty was signed after both sides had finally withdrawn their demands."
+        }
+      },
+      {
+        "de": "erleben",
+        "en": "to experience",
+        "pos": "verb",
+        "ex": {
+          "de": "Die Menschen hatten eine Zeit des Umbruchs erlebt, bevor die politische Stabilität wieder einkehrte.",
+          "en": "The people had experienced a time of upheaval before political stability returned."
+        }
+      },
+      {
+        "de": "führen",
+        "en": "to lead",
+        "pos": "verb",
+        "ex": {
+          "de": "Die politischen Entscheidungen führten zu einer Krise, nachdem die Regierung die Reformen vernachlässigt hatte.",
+          "en": "The political decisions led to a crisis after the government had neglected the reforms."
+        }
+      },
+      {
+        "de": "verändern",
+        "en": "to change",
+        "pos": "verb",
+        "ex": {
+          "de": "Die Gesellschaft wurde grundlegend verändert, nachdem die neuen sozialen Rechte gesetzlich verankert worden waren.",
+          "en": "Society was fundamentally changed after the new social rights had been legally anchored."
+        }
+      },
+      {
+        "de": "erobern",
+        "en": "to conquer",
+        "pos": "verb",
+        "ex": {
+          "de": "Nachdem die Armee die Stadt erobert hatte, wurde die lokale Verwaltung komplett umstrukturiert.",
+          "en": "After the army had conquered the city, the local administration was completely restructured."
+        }
+      },
+      {
+        "de": "vereinigen",
+        "en": "to unite",
+        "pos": "verb",
+        "ex": {
+          "de": "Die beiden Staaten wurden vereinigt, nachdem ein gemeinsamer Verfassungsentwurf erfolgreich verabschiedet worden war.",
+          "en": "The two states were united after a joint draft constitution had been successfully passed."
+        }
+      },
+      {
+        "de": "bedeutend",
+        "en": "significant",
+        "pos": "adj",
+        "ex": {
+          "de": "Nachdem die bedeutende Entdeckung gemacht worden war, veränderte sich das gesamte Weltbild der Wissenschaftler.",
+          "en": "After the significant discovery had been made, the entire worldview of the scientists changed."
+        }
+      },
+      {
+        "de": "entscheidend",
+        "en": "decisive",
+        "pos": "adj",
+        "ex": {
+          "de": "Bevor die entscheidende Schlacht stattfand, hatten die Strategen den Schlachtplan mehrfach überprüft.",
+          "en": "Before the decisive battle took place, the strategists had checked the battle plan several times."
+        }
+      },
+      {
+        "de": "gewaltsam",
+        "en": "violent",
+        "pos": "adj",
+        "ex": {
+          "de": "Nachdem der Konflikt gewaltsam eskaliert war, mussten internationale Vermittler eingreifen, um den Frieden zu sichern.",
+          "en": "After the conflict had escalated violently, international mediators had to intervene to ensure peace."
+        }
+      }
+    ]
+  },
+  {
+    "id": "b2-u8-words",
+    "level": "B2",
+    "title": "Media literacy",
+    "titleDe": "Medienkompetenz",
+    "icon": "palette",
+    "words": [
+      {
+        "de": "Quelle",
+        "en": "source",
+        "pos": "noun",
+        "ex": {
+          "de": "Je mehr Quellen geprüft werden, desto sicherer kann man sich der Wahrheit sein.",
+          "en": "The more sources that are checked, the more certain one can be of the truth."
+        },
+        "gender": "f",
+        "plural": "Quellen"
+      },
+      {
+        "de": "Glaubwürdigkeit",
+        "en": "credibility",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Glaubwürdigkeit eines Mediums dürfte durch die ständige Verbreitung von Fake News stark leiden.",
+          "en": "The credibility of a medium might suffer greatly due to the constant spread of fake news."
+        },
+        "gender": "f",
+        "plural": "Glaubwürdigkeiten"
+      },
+      {
+        "de": "Desinformation",
+        "en": "disinformation",
+        "pos": "noun",
+        "ex": {
+          "de": "Durch gezielte Desinformation könnten politische Meinungen in der Bevölkerung massiv beeinflusst werden.",
+          "en": "Through targeted disinformation, political opinions in the population could be massively influenced."
+        },
+        "gender": "f",
+        "plural": "Desinformationen"
+      },
+      {
+        "de": "Schlagzeile",
+        "en": "headline",
+        "pos": "noun",
+        "ex": {
+          "de": "Oft werden reißerische Schlagzeilen genutzt, um die Aufmerksamkeit der Leser schnell zu gewinnen.",
+          "en": "Sensationalist headlines are often used to quickly capture the attention of readers."
+        },
+        "gender": "f",
+        "plural": "Schlagzeilen"
+      },
+      {
+        "de": "Vorurteil",
+        "en": "prejudice",
+        "pos": "noun",
+        "ex": {
+          "de": "Es ist wichtig, dass Vorurteile durch objektive Informationen in den sozialen Medien abgebaut werden.",
+          "en": "It is important that prejudices are reduced through objective information on social media."
+        },
+        "gender": "n",
+        "plural": "Vorurteile"
+      },
+      {
+        "de": "Fakt",
+        "en": "fact",
+        "pos": "noun",
+        "ex": {
+          "de": "Ein Fakt sollte durch mehrere unabhängige Quellen zweifelsfrei belegt werden können.",
+          "en": "A fact should be able to be proven beyond doubt by several independent sources."
+        },
+        "gender": "m",
+        "plural": "Fakten"
+      },
+      {
+        "de": "Meinung",
+        "en": "opinion",
+        "pos": "noun",
+        "ex": {
+          "de": "Eine subjektive Meinung darf niemals mit einem nachweisbaren Fakt verwechselt werden.",
+          "en": "A subjective opinion must never be confused with a verifiable fact."
+        },
+        "gender": "f",
+        "plural": "Meinungen"
+      },
+      {
+        "de": "Filterblase",
+        "en": "filter bubble",
+        "pos": "noun",
+        "ex": {
+          "de": "Je tiefer man in einer Filterblase steckt, desto schwieriger wird der Zugang zu anderen Perspektiven.",
+          "en": "The deeper one is stuck in a filter bubble, the more difficult access to other perspectives becomes."
+        },
+        "gender": "f",
+        "plural": "Filterblasen"
+      },
+      {
+        "de": "Algorithmus",
+        "en": "algorithm",
+        "pos": "noun",
+        "ex": {
+          "de": "Der Algorithmus der sozialen Netzwerke müsste eigentlich für mehr Transparenz sorgen.",
+          "en": "The algorithm of social networks should actually ensure more transparency."
+        },
+        "gender": "m",
+        "plural": "Algorithmen"
+      },
+      {
+        "de": "Verifizierung",
+        "en": "verification",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Verifizierung von Informationen ist eine grundlegende Fähigkeit in der heutigen digitalen Welt.",
+          "en": "The verification of information is a fundamental skill in today's digital world."
+        },
+        "gender": "f",
+        "plural": "Verifizierungen"
+      },
+      {
+        "de": "Beweis",
+        "en": "proof",
+        "pos": "noun",
+        "ex": {
+          "de": "Ohne einen klaren Beweis dürfte die Behauptung in der wissenschaftlichen Diskussion nicht akzeptiert werden.",
+          "en": "Without clear proof, the claim might not be accepted in the scientific discussion."
+        },
+        "gender": "m",
+        "plural": "Beweise"
+      },
+      {
+        "de": "Fehlinformation",
+        "en": "misinformation",
+        "pos": "noun",
+        "ex": {
+          "de": "Fehlinformationen werden durch die schnelle Verbreitung in sozialen Netzwerken oft ungefiltert konsumiert.",
+          "en": "Misinformation is often consumed unfiltered due to its rapid spread on social networks."
+        },
+        "gender": "f",
+        "plural": "Fehlinformationen"
+      },
+      {
+        "de": "Einfluss",
+        "en": "influence",
+        "pos": "noun",
+        "ex": {
+          "de": "Der Einfluss der Massenmedien auf die öffentliche Meinung könnte weitaus größer sein als gedacht.",
+          "en": "The influence of mass media on public opinion could be far greater than thought."
+        },
+        "gender": "m",
+        "plural": "Einflüsse"
+      },
+      {
+        "de": "hinterfragen",
+        "en": "to question / scrutinize",
+        "pos": "verb",
+        "ex": {
+          "de": "Man sollte die Absichten hinter jeder Nachricht kritisch hinterfragen, bevor man sie teilt.",
+          "en": "One should critically question the intentions behind every news item before sharing it."
+        }
+      },
+      {
+        "de": "verbreiten",
+        "en": "to spread",
+        "pos": "verb",
+        "ex": {
+          "de": "Falsche Nachrichten werden oft innerhalb weniger Minuten über die ganze Welt verbreitet.",
+          "en": "False news is often spread across the whole world within a few minutes."
+        }
+      },
+      {
+        "de": "täuschen",
+        "en": "to deceive",
+        "pos": "verb",
+        "ex": {
+          "de": "Manipulierte Bilder könnten die Betrachter dazu täuschen, eine falsche Realität zu glauben.",
+          "en": "Manipulated images could deceive viewers into believing a false reality."
+        }
+      },
+      {
+        "de": "belegen",
+        "en": "to substantiate / prove",
+        "pos": "verb",
+        "ex": {
+          "de": "Die Behauptung des Journalisten müsste durch konkrete Daten und Fakten belegt werden.",
+          "en": "The journalist's claim would have to be substantiated by concrete data and facts."
+        }
+      },
+      {
+        "de": "glaubwürdig",
+        "en": "credible",
+        "pos": "adj",
+        "ex": {
+          "de": "Eine glaubwürdige Quelle zeichnet sich durch eine transparente und sachliche Berichterstattung aus.",
+          "en": "A credible source is characterized by transparent and objective reporting."
+        }
+      },
+      {
+        "de": "irreführend",
+        "en": "misleading",
+        "pos": "adj",
+        "ex": {
+          "de": "Je irreführender die Informationen sind, desto schneller verbreitet sich die Panik in der Gesellschaft.",
+          "en": "The more misleading the information is, the faster panic spreads in society."
+        }
+      },
+      {
+        "de": "verlässlich",
+        "en": "reliable",
+        "pos": "adj",
+        "ex": {
+          "de": "Es ist entscheidend, nur verlässliche Nachrichtenquellen für die eigene Recherche zu nutzen.",
+          "en": "It is crucial to use only reliable news sources for one's own research."
+        }
+      }
+    ]
+  }
+]

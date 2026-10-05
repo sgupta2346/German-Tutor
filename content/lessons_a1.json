@@ -1,125 +1,2227 @@
 [
-  {"id": "a1-u1-l1", "unit": "a1-u1", "title": "Greetings", "steps": [
-    {"type": "intro", "title": "Saying hello", "body": "German greetings change with the time of day and with how well you know someone. Hallo works almost anywhere with people your age. Guten Tag is the safe, neutral choice with strangers.", "points": ["Guten Morgen until about 10 or 11 am", "Guten Tag during the day", "Guten Abend from about 6 pm", "Gute Nacht only when someone is going to bed"]},
-    {"type": "phrase", "de": "Guten Morgen!", "en": "Good morning!"},
-    {"type": "phrase", "de": "Guten Tag!", "en": "Hello! (good day)", "note": "The g in Tag sounds like k at the end of the word."},
-    {"type": "phrase", "de": "Hallo!", "en": "Hi!"},
-    {"type": "match", "pairs": [["Guten Morgen", "Good morning"], ["Guten Abend", "Good evening"], ["Tschüss", "Bye"], ["Danke", "Thank you"]]},
-    {"type": "choice", "prompt": "It is 8 pm and you walk into a restaurant. What do you say?", "options": ["Guten Morgen", "Guten Abend", "Gute Nacht"], "answer": 1, "explain": "Gute Nacht is only used when someone is going to sleep."},
-    {"type": "listen", "de": "Auf Wiedersehen", "en": "Goodbye"},
-    {"type": "speak", "de": "Guten Tag!", "en": "Hello!"},
-    {"type": "speak", "de": "Danke schön!", "en": "Thank you very much!"}
-  ]},
-  {"id": "a1-u1-l2", "unit": "a1-u1", "title": "My name is...", "steps": [
-    {"type": "intro", "title": "sein and heißen", "body": "Two verbs get you through any introduction. sein means to be, heißen means to be called. Use du with friends, family and children, and Sie with everyone else.", "table": [["ich bin", "I am"], ["du bist", "you are (informal)"], ["Sie sind", "you are (formal)"], ["er / sie ist", "he / she is"], ["ich heiße", "my name is"], ["du heißt", "your name is"]]},
-    {"type": "phrase", "de": "Ich heiße Anna.", "en": "My name is Anna."},
-    {"type": "phrase", "de": "Wie heißt du?", "en": "What's your name? (informal)"},
-    {"type": "phrase", "de": "Wie heißen Sie?", "en": "What's your name? (formal)"},
-    {"type": "choice", "prompt": "You meet your new manager. Which question fits?", "options": ["Wie heißt du?", "Wie heißen Sie?"], "answer": 1, "explain": "Sie is the polite form for people you don't know well, especially at work."},
-    {"type": "choice", "prompt": "Ich ___ Lisa.", "options": ["bin", "bist", "ist"], "answer": 0, "explain": "ich always takes bin."},
-    {"type": "build", "en": "My name is Tom.", "answer": ["Ich", "heiße", "Tom."], "extra": ["bist", "du"]},
-    {"type": "listen", "de": "Ich bin Student.", "en": "I am a student."},
-    {"type": "speak", "de": "Hallo, ich bin Max.", "en": "Hi, I'm Max."}
-  ]},
-  {"id": "a1-u1-l3", "unit": "a1-u1", "title": "Where are you from?", "steps": [
-    {"type": "intro", "title": "kommen aus, wohnen in", "body": "Say where you are from with kommen aus and where you live with wohnen in. Most countries take no article, but a few do, and then aus changes the article.", "points": ["Ich komme aus England.", "Ich komme aus der Schweiz.", "Ich komme aus den USA.", "Ich wohne in Berlin."]},
-    {"type": "phrase", "de": "Woher kommst du?", "en": "Where are you from?"},
-    {"type": "phrase", "de": "Ich komme aus England.", "en": "I'm from England."},
-    {"type": "phrase", "de": "Ich wohne in Berlin.", "en": "I live in Berlin."},
-    {"type": "choice", "prompt": "Ich komme ___ Kanada.", "options": ["aus", "in", "von"], "answer": 0, "explain": "Origin is always aus."},
-    {"type": "build", "en": "Where do you live?", "answer": ["Wo", "wohnst", "du?"], "extra": ["woher", "kommst"]},
-    {"type": "choice", "prompt": "Sie kommt aus ___ Schweiz.", "options": ["der", "die", "das"], "answer": 0, "explain": "aus is followed by the dative, so die Schweiz becomes der Schweiz."},
-    {"type": "listen", "de": "Ich komme aus Indien und wohne in München.", "en": "I'm from India and live in Munich."},
-    {"type": "speak", "de": "Ich komme aus Amerika und wohne in Hamburg.", "en": "I'm from America and live in Hamburg."}
-  ]},
-  {"id": "a1-u2-l1", "unit": "a1-u2", "title": "Zero to twelve", "steps": [
-    {"type": "intro", "title": "The first numbers", "body": "These twelve are the building blocks for everything else. Watch the sounds: z in zwei and zehn is ts, ü in fünf needs rounded lips, and ch in acht is the throaty ach sound.", "table": [["null", "0"], ["eins", "1"], ["zwei", "2"], ["drei", "3"], ["vier", "4"], ["fünf", "5"], ["sechs", "6"], ["sieben", "7"], ["acht", "8"], ["neun", "9"], ["zehn", "10"], ["elf", "11"], ["zwölf", "12"]]},
-    {"type": "match", "pairs": [["drei", "3"], ["sieben", "7"], ["zwölf", "12"], ["fünf", "5"]]},
-    {"type": "choice", "prompt": "Which number is acht?", "options": ["6", "8", "18"], "answer": 1},
-    {"type": "listen", "de": "neun", "en": "nine"},
-    {"type": "listen", "de": "zwölf", "en": "twelve"},
-    {"type": "choice", "prompt": "How is z pronounced in zehn?", "options": ["Like z in zoo", "Like ts in cats", "Like s in sun"], "answer": 1},
-    {"type": "speak", "de": "eins, zwei, drei, vier, fünf", "en": "one, two, three, four, five"},
-    {"type": "speak", "de": "sechs, sieben, acht, neun, zehn", "en": "six, seven, eight, nine, ten"}
-  ]},
-  {"id": "a1-u2-l2", "unit": "a1-u2", "title": "Up to one hundred", "steps": [
-    {"type": "intro", "title": "Units before tens", "body": "From 21 on, German says the unit first: einundzwanzig is literally one-and-twenty. The tens mostly end in -zig, with dreißig (30) as the exception.", "table": [["dreizehn", "13"], ["zwanzig", "20"], ["einundzwanzig", "21"], ["dreißig", "30"], ["vierzig", "40"], ["fünfzig", "50"], ["sechzig", "60"], ["siebzig", "70"], ["achtzig", "80"], ["neunzig", "90"], ["hundert", "100"]]},
-    {"type": "phrase", "de": "einundzwanzig", "en": "twenty-one"},
-    {"type": "phrase", "de": "fünfunddreißig", "en": "thirty-five"},
-    {"type": "choice", "prompt": "siebenundvierzig is...", "options": ["74", "47", "17"], "answer": 1, "explain": "sieben (7) und vierzig (40) gives 47."},
-    {"type": "choice", "prompt": "How do you say 62?", "options": ["sechsundzwanzig", "zweiundsechzig", "sechzigzwei"], "answer": 1},
-    {"type": "listen", "de": "achtundneunzig", "en": "ninety-eight"},
-    {"type": "speak", "de": "dreiundzwanzig", "en": "twenty-three"},
-    {"type": "speak", "de": "Meine Nummer ist null, eins, sieben, sechs.", "en": "My number is zero, one, seven, six."}
-  ]},
-  {"id": "a1-u2-l3", "unit": "a1-u2", "title": "How old are you?", "steps": [
-    {"type": "intro", "title": "haben, and age with sein", "body": "haben means to have. Age, though, uses sein, like English: Ich bin 25 Jahre alt.", "table": [["ich habe", "I have"], ["du hast", "you have"], ["er / sie hat", "he / she has"], ["wir haben", "we have"], ["Sie haben", "you have (formal)"]]},
-    {"type": "phrase", "de": "Wie alt bist du?", "en": "How old are you?"},
-    {"type": "phrase", "de": "Ich bin dreißig Jahre alt.", "en": "I am thirty years old."},
-    {"type": "phrase", "de": "Ich habe zwei Kinder.", "en": "I have two children."},
-    {"type": "choice", "prompt": "Er ___ einen Bruder.", "options": ["hat", "habt", "haben"], "answer": 0},
-    {"type": "build", "en": "I am twenty years old.", "answer": ["Ich", "bin", "zwanzig", "Jahre", "alt."], "extra": ["habe"]},
-    {"type": "listen", "de": "Meine Tochter ist sieben Jahre alt.", "en": "My daughter is seven years old."},
-    {"type": "speak", "de": "Ich bin fünfundzwanzig Jahre alt.", "en": "I am twenty-five years old."}
-  ]},
-  {"id": "a1-u3-l1", "unit": "a1-u3", "title": "der, die, das", "steps": [
-    {"type": "intro", "title": "Every noun has a gender", "body": "German nouns are masculine (der), feminine (die) or neuter (das). The gender is often not logical, so always learn a noun together with its article. In this app der is blue, die is red and das is green.", "points": ["Words ending in -ung, -heit, -keit are die", "Words ending in -chen and -lein are das", "Male people are usually der, female people die"]},
-    {"type": "choice", "prompt": "___ Mutter", "options": ["der", "die", "das"], "answer": 1},
-    {"type": "choice", "prompt": "___ Vater", "options": ["der", "die", "das"], "answer": 0},
-    {"type": "choice", "prompt": "___ Kind", "options": ["der", "die", "das"], "answer": 2},
-    {"type": "choice", "prompt": "___ Zeitung (newspaper)", "options": ["der", "die", "das"], "answer": 1, "explain": "Words ending in -ung are always die."},
-    {"type": "choice", "prompt": "___ Mädchen (girl)", "options": ["der", "die", "das"], "answer": 2, "explain": "-chen always makes a word das, even when it means a girl."},
-    {"type": "listen", "de": "der Bruder und die Schwester", "en": "the brother and the sister"},
-    {"type": "speak", "de": "der Vater, die Mutter, das Kind", "en": "the father, the mother, the child"}
-  ]},
-  {"id": "a1-u3-l2", "unit": "a1-u3", "title": "My and your", "steps": [
-    {"type": "intro", "title": "mein and dein", "body": "mein (my) and dein (your) take an -e before feminine and plural nouns.", "table": [["mein Bruder", "der"], ["meine Schwester", "die"], ["mein Kind", "das"], ["meine Eltern", "plural"]]},
-    {"type": "phrase", "de": "Das ist mein Bruder.", "en": "This is my brother."},
-    {"type": "phrase", "de": "Das ist meine Schwester.", "en": "This is my sister."},
-    {"type": "choice", "prompt": "Das ist ___ Kind.", "options": ["mein", "meine"], "answer": 0, "explain": "das Kind is neuter, so no -e."},
-    {"type": "choice", "prompt": "Das sind ___ Eltern.", "options": ["mein", "meine"], "answer": 1, "explain": "Plural takes meine."},
-    {"type": "build", "en": "Is that your mother?", "answer": ["Ist", "das", "deine", "Mutter?"], "extra": ["dein", "mein"]},
-    {"type": "listen", "de": "Mein Vater heißt Peter und meine Mutter heißt Julia.", "en": "My father is called Peter and my mother is called Julia."},
-    {"type": "speak", "de": "Das ist meine Familie.", "en": "This is my family."}
-  ]},
-  {"id": "a1-u3-l3", "unit": "a1-u3", "title": "Describing people", "steps": [
-    {"type": "intro", "title": "Adjectives after sein", "body": "After sein an adjective needs no ending: Er ist groß. Sie ist nett. Endings only appear when the adjective comes before the noun, which you will meet later.", "points": ["sehr = very", "ziemlich = quite", "aber = but"]},
-    {"type": "phrase", "de": "Meine Schwester ist sehr nett.", "en": "My sister is very nice."},
-    {"type": "phrase", "de": "Mein Großvater ist alt, aber fit.", "en": "My grandfather is old but fit."},
-    {"type": "choice", "prompt": "The opposite of jung is...", "options": ["alt", "klein", "neu"], "answer": 0},
-    {"type": "choice", "prompt": "The plural of die Mutter is...", "options": ["die Mutters", "die Mütter", "die Muttern"], "answer": 1, "explain": "Many plurals add an umlaut. Muttern exists, but it means screw nuts."},
-    {"type": "build", "en": "My brother is tall.", "answer": ["Mein", "Bruder", "ist", "groß."], "extra": ["meine", "sind"]},
-    {"type": "listen", "de": "Meine Familie ist klein, aber sehr glücklich.", "en": "My family is small but very happy."},
-    {"type": "speak", "de": "Ich habe einen Bruder. Er heißt Jonas und er ist sehr groß.", "en": "I have a brother. His name is Jonas and he is very tall."}
-  ]},
-  {"id": "a1-u4-l1", "unit": "a1-u4", "title": "At the café", "steps": [
-    {"type": "intro", "title": "Ordering with möchten", "body": "möchten (would like) is the polite way to order. Ich hätte gern... is just as common and means the same.", "table": [["ich möchte", "I would like"], ["du möchtest", "you would like"], ["er / sie möchte", "he / she would like"], ["wir möchten", "we would like"], ["Sie möchten", "you would like (formal)"]]},
-    {"type": "phrase", "de": "Ich möchte einen Kaffee, bitte.", "en": "I'd like a coffee, please."},
-    {"type": "phrase", "de": "Was möchten Sie trinken?", "en": "What would you like to drink?"},
-    {"type": "phrase", "de": "Die Rechnung, bitte.", "en": "The bill, please."},
-    {"type": "choice", "prompt": "The waiter asks: Was möchten Sie? You answer:", "options": ["Ich möchte ein Wasser.", "Ich bin ein Wasser.", "Ich habe Wasser alt."], "answer": 0},
-    {"type": "build", "en": "I would like a tea, please.", "answer": ["Ich", "möchte", "einen", "Tee,", "bitte."], "extra": ["eine", "bin"]},
-    {"type": "listen", "de": "Zwei Kaffee und ein Stück Kuchen, bitte.", "en": "Two coffees and a piece of cake, please."},
-    {"type": "speak", "de": "Ich möchte einen Kaffee mit Milch, bitte.", "en": "I'd like a coffee with milk, please."}
-  ]},
-  {"id": "a1-u4-l2", "unit": "a1-u4", "title": "ein, eine, einen", "steps": [
-    {"type": "intro", "title": "The accusative, first look", "body": "The thing you want, buy or eat is the object of the sentence. In that position only masculine words change: der becomes den and ein becomes einen. Feminine and neuter stay the same.", "table": [["der Apfel", "einen Apfel"], ["die Kartoffel", "eine Kartoffel"], ["das Brot", "ein Brot"]]},
-    {"type": "choice", "prompt": "Ich möchte ___ Apfel.", "options": ["ein", "eine", "einen"], "answer": 2, "explain": "der Apfel is masculine, so ein becomes einen."},
-    {"type": "choice", "prompt": "Ich nehme ___ Brot.", "options": ["ein", "eine", "einen"], "answer": 0, "explain": "das Brot is neuter, no change."},
-    {"type": "choice", "prompt": "Ich kaufe ___ Kartoffel.", "options": ["ein", "eine", "einen"], "answer": 1},
-    {"type": "choice", "prompt": "Er trinkt ___ Wein.", "options": ["ein", "eine", "einen"], "answer": 2},
-    {"type": "build", "en": "I am buying a cheese.", "answer": ["Ich", "kaufe", "einen", "Käse."], "extra": ["ein", "eine"]},
-    {"type": "listen", "de": "Ich nehme einen Tee und ein Ei.", "en": "I'll have a tea and an egg."},
-    {"type": "speak", "de": "Ich esse einen Apfel und ein Ei.", "en": "I'm eating an apple and an egg."}
-  ]},
-  {"id": "a1-u4-l3", "unit": "a1-u4", "title": "Likes and dislikes", "steps": [
-    {"type": "intro", "title": "kein and gern", "body": "kein means no or not any, and takes the same endings as ein. Put gern after the verb to say you like doing something.", "points": ["Ich esse kein Fleisch.", "Ich trinke keinen Kaffee.", "Ich trinke gern Tee.", "Ich mag Käse."]},
-    {"type": "phrase", "de": "Ich esse kein Fleisch.", "en": "I don't eat meat."},
-    {"type": "phrase", "de": "Ich trinke gern Tee.", "en": "I like drinking tea."},
-    {"type": "phrase", "de": "Ich mag keinen Fisch.", "en": "I don't like fish."},
-    {"type": "choice", "prompt": "Ich habe ___ Zeit.", "options": ["nicht", "kein", "keine"], "answer": 2, "explain": "die Zeit is feminine, so keine."},
-    {"type": "choice", "prompt": "Er trinkt ___ Bier.", "options": ["kein", "keinen", "keine"], "answer": 0, "explain": "das Bier is neuter."},
-    {"type": "listen", "de": "Ich trinke keinen Kaffee, aber ich trinke gern Tee.", "en": "I don't drink coffee, but I like drinking tea."},
-    {"type": "speak", "de": "Ich esse gern Brot mit Käse.", "en": "I like eating bread with cheese."}
-  ]}
+  {
+    "id": "a1-u1-l1",
+    "unit": "a1-u1",
+    "title": "Greetings",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Saying hello",
+        "body": "German greetings change with the time of day and with how well you know someone. Hallo works almost anywhere with people your age. Guten Tag is the safe, neutral choice with strangers.",
+        "points": [
+          "Guten Morgen until about 10 or 11 am",
+          "Guten Tag during the day",
+          "Guten Abend from about 6 pm",
+          "Gute Nacht only when someone is going to bed"
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Guten Morgen!",
+        "en": "Good morning!"
+      },
+      {
+        "type": "phrase",
+        "de": "Guten Tag!",
+        "en": "Hello! (good day)",
+        "note": "The g in Tag sounds like k at the end of the word."
+      },
+      {
+        "type": "phrase",
+        "de": "Hallo!",
+        "en": "Hi!"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Guten Morgen",
+            "Good morning"
+          ],
+          [
+            "Guten Abend",
+            "Good evening"
+          ],
+          [
+            "Tschüss",
+            "Bye"
+          ],
+          [
+            "Danke",
+            "Thank you"
+          ]
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "It is 8 pm and you walk into a restaurant. What do you say?",
+        "options": [
+          "Guten Morgen",
+          "Guten Abend",
+          "Gute Nacht"
+        ],
+        "answer": 1,
+        "explain": "Gute Nacht is only used when someone is going to sleep."
+      },
+      {
+        "type": "listen",
+        "de": "Auf Wiedersehen",
+        "en": "Goodbye"
+      },
+      {
+        "type": "speak",
+        "de": "Guten Tag!",
+        "en": "Hello!"
+      },
+      {
+        "type": "speak",
+        "de": "Danke schön!",
+        "en": "Thank you very much!"
+      }
+    ]
+  },
+  {
+    "id": "a1-u1-l2",
+    "unit": "a1-u1",
+    "title": "My name is...",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "sein and heißen",
+        "body": "Two verbs get you through any introduction. sein means to be, heißen means to be called. Use du with friends, family and children, and Sie with everyone else.",
+        "table": [
+          [
+            "ich bin",
+            "I am"
+          ],
+          [
+            "du bist",
+            "you are (informal)"
+          ],
+          [
+            "Sie sind",
+            "you are (formal)"
+          ],
+          [
+            "er / sie ist",
+            "he / she is"
+          ],
+          [
+            "ich heiße",
+            "my name is"
+          ],
+          [
+            "du heißt",
+            "your name is"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich heiße Anna.",
+        "en": "My name is Anna."
+      },
+      {
+        "type": "phrase",
+        "de": "Wie heißt du?",
+        "en": "What's your name? (informal)"
+      },
+      {
+        "type": "phrase",
+        "de": "Wie heißen Sie?",
+        "en": "What's your name? (formal)"
+      },
+      {
+        "type": "choice",
+        "prompt": "You meet your new manager. Which question fits?",
+        "options": [
+          "Wie heißt du?",
+          "Wie heißen Sie?"
+        ],
+        "answer": 1,
+        "explain": "Sie is the polite form for people you don't know well, especially at work."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich ___ Lisa.",
+        "options": [
+          "bin",
+          "bist",
+          "ist"
+        ],
+        "answer": 0,
+        "explain": "ich always takes bin."
+      },
+      {
+        "type": "build",
+        "en": "My name is Tom.",
+        "answer": [
+          "Ich",
+          "heiße",
+          "Tom."
+        ],
+        "extra": [
+          "bist",
+          "du"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Ich bin Student.",
+        "en": "I am a student."
+      },
+      {
+        "type": "speak",
+        "de": "Hallo, ich bin Max.",
+        "en": "Hi, I'm Max."
+      }
+    ]
+  },
+  {
+    "id": "a1-u1-l3",
+    "unit": "a1-u1",
+    "title": "Where are you from?",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "kommen aus, wohnen in",
+        "body": "Say where you are from with kommen aus and where you live with wohnen in. Most countries take no article, but a few do, and then aus changes the article.",
+        "points": [
+          "Ich komme aus England.",
+          "Ich komme aus der Schweiz.",
+          "Ich komme aus den USA.",
+          "Ich wohne in Berlin."
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Woher kommst du?",
+        "en": "Where are you from?"
+      },
+      {
+        "type": "phrase",
+        "de": "Ich komme aus England.",
+        "en": "I'm from England."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich wohne in Berlin.",
+        "en": "I live in Berlin."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich komme ___ Kanada.",
+        "options": [
+          "aus",
+          "in",
+          "von"
+        ],
+        "answer": 0,
+        "explain": "Origin is always aus."
+      },
+      {
+        "type": "build",
+        "en": "Where do you live?",
+        "answer": [
+          "Wo",
+          "wohnst",
+          "du?"
+        ],
+        "extra": [
+          "woher",
+          "kommst"
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Sie kommt aus ___ Schweiz.",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ],
+        "answer": 0,
+        "explain": "aus is followed by the dative, so die Schweiz becomes der Schweiz."
+      },
+      {
+        "type": "listen",
+        "de": "Ich komme aus Indien und wohne in München.",
+        "en": "I'm from India and live in Munich."
+      },
+      {
+        "type": "speak",
+        "de": "Ich komme aus Amerika und wohne in Hamburg.",
+        "en": "I'm from America and live in Hamburg."
+      }
+    ]
+  },
+  {
+    "id": "a1-u2-l1",
+    "unit": "a1-u2",
+    "title": "Zero to twelve",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "The first numbers",
+        "body": "These twelve are the building blocks for everything else. Watch the sounds: z in zwei and zehn is ts, ü in fünf needs rounded lips, and ch in acht is the throaty ach sound.",
+        "table": [
+          [
+            "null",
+            "0"
+          ],
+          [
+            "eins",
+            "1"
+          ],
+          [
+            "zwei",
+            "2"
+          ],
+          [
+            "drei",
+            "3"
+          ],
+          [
+            "vier",
+            "4"
+          ],
+          [
+            "fünf",
+            "5"
+          ],
+          [
+            "sechs",
+            "6"
+          ],
+          [
+            "sieben",
+            "7"
+          ],
+          [
+            "acht",
+            "8"
+          ],
+          [
+            "neun",
+            "9"
+          ],
+          [
+            "zehn",
+            "10"
+          ],
+          [
+            "elf",
+            "11"
+          ],
+          [
+            "zwölf",
+            "12"
+          ]
+        ]
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "drei",
+            "3"
+          ],
+          [
+            "sieben",
+            "7"
+          ],
+          [
+            "zwölf",
+            "12"
+          ],
+          [
+            "fünf",
+            "5"
+          ]
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Which number is acht?",
+        "options": [
+          "6",
+          "8",
+          "18"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "listen",
+        "de": "neun",
+        "en": "nine"
+      },
+      {
+        "type": "listen",
+        "de": "zwölf",
+        "en": "twelve"
+      },
+      {
+        "type": "choice",
+        "prompt": "How is z pronounced in zehn?",
+        "options": [
+          "Like z in zoo",
+          "Like ts in cats",
+          "Like s in sun"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "speak",
+        "de": "eins, zwei, drei, vier, fünf",
+        "en": "one, two, three, four, five"
+      },
+      {
+        "type": "speak",
+        "de": "sechs, sieben, acht, neun, zehn",
+        "en": "six, seven, eight, nine, ten"
+      }
+    ]
+  },
+  {
+    "id": "a1-u2-l2",
+    "unit": "a1-u2",
+    "title": "Up to one hundred",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Units before tens",
+        "body": "From 21 on, German says the unit first: einundzwanzig is literally one-and-twenty. The tens mostly end in -zig, with dreißig (30) as the exception.",
+        "table": [
+          [
+            "dreizehn",
+            "13"
+          ],
+          [
+            "zwanzig",
+            "20"
+          ],
+          [
+            "einundzwanzig",
+            "21"
+          ],
+          [
+            "dreißig",
+            "30"
+          ],
+          [
+            "vierzig",
+            "40"
+          ],
+          [
+            "fünfzig",
+            "50"
+          ],
+          [
+            "sechzig",
+            "60"
+          ],
+          [
+            "siebzig",
+            "70"
+          ],
+          [
+            "achtzig",
+            "80"
+          ],
+          [
+            "neunzig",
+            "90"
+          ],
+          [
+            "hundert",
+            "100"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "einundzwanzig",
+        "en": "twenty-one"
+      },
+      {
+        "type": "phrase",
+        "de": "fünfunddreißig",
+        "en": "thirty-five"
+      },
+      {
+        "type": "choice",
+        "prompt": "siebenundvierzig is...",
+        "options": [
+          "74",
+          "47",
+          "17"
+        ],
+        "answer": 1,
+        "explain": "sieben (7) und vierzig (40) gives 47."
+      },
+      {
+        "type": "choice",
+        "prompt": "How do you say 62?",
+        "options": [
+          "sechsundzwanzig",
+          "zweiundsechzig",
+          "sechzigzwei"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "listen",
+        "de": "achtundneunzig",
+        "en": "ninety-eight"
+      },
+      {
+        "type": "speak",
+        "de": "dreiundzwanzig",
+        "en": "twenty-three"
+      },
+      {
+        "type": "speak",
+        "de": "Meine Nummer ist null, eins, sieben, sechs.",
+        "en": "My number is zero, one, seven, six."
+      }
+    ]
+  },
+  {
+    "id": "a1-u2-l3",
+    "unit": "a1-u2",
+    "title": "How old are you?",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "haben, and age with sein",
+        "body": "haben means to have. Age, though, uses sein, like English: Ich bin 25 Jahre alt.",
+        "table": [
+          [
+            "ich habe",
+            "I have"
+          ],
+          [
+            "du hast",
+            "you have"
+          ],
+          [
+            "er / sie hat",
+            "he / she has"
+          ],
+          [
+            "wir haben",
+            "we have"
+          ],
+          [
+            "Sie haben",
+            "you have (formal)"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Wie alt bist du?",
+        "en": "How old are you?"
+      },
+      {
+        "type": "phrase",
+        "de": "Ich bin dreißig Jahre alt.",
+        "en": "I am thirty years old."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich habe zwei Kinder.",
+        "en": "I have two children."
+      },
+      {
+        "type": "choice",
+        "prompt": "Er ___ einen Bruder.",
+        "options": [
+          "hat",
+          "habt",
+          "haben"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "build",
+        "en": "I am twenty years old.",
+        "answer": [
+          "Ich",
+          "bin",
+          "zwanzig",
+          "Jahre",
+          "alt."
+        ],
+        "extra": [
+          "habe"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Meine Tochter ist sieben Jahre alt.",
+        "en": "My daughter is seven years old."
+      },
+      {
+        "type": "speak",
+        "de": "Ich bin fünfundzwanzig Jahre alt.",
+        "en": "I am twenty-five years old."
+      }
+    ]
+  },
+  {
+    "id": "a1-u3-l1",
+    "unit": "a1-u3",
+    "title": "der, die, das",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Every noun has a gender",
+        "body": "German nouns are masculine (der), feminine (die) or neuter (das). The gender is often not logical, so always learn a noun together with its article. In this app der is blue, die is red and das is green.",
+        "points": [
+          "Words ending in -ung, -heit, -keit are die",
+          "Words ending in -chen and -lein are das",
+          "Male people are usually der, female people die"
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "___ Mutter",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "choice",
+        "prompt": "___ Vater",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "choice",
+        "prompt": "___ Kind",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "choice",
+        "prompt": "___ Zeitung (newspaper)",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ],
+        "answer": 1,
+        "explain": "Words ending in -ung are always die."
+      },
+      {
+        "type": "choice",
+        "prompt": "___ Mädchen (girl)",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ],
+        "answer": 2,
+        "explain": "-chen always makes a word das, even when it means a girl."
+      },
+      {
+        "type": "listen",
+        "de": "der Bruder und die Schwester",
+        "en": "the brother and the sister"
+      },
+      {
+        "type": "speak",
+        "de": "der Vater, die Mutter, das Kind",
+        "en": "the father, the mother, the child"
+      }
+    ]
+  },
+  {
+    "id": "a1-u3-l2",
+    "unit": "a1-u3",
+    "title": "My and your",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "mein and dein",
+        "body": "mein (my) and dein (your) take an -e before feminine and plural nouns.",
+        "table": [
+          [
+            "mein Bruder",
+            "der"
+          ],
+          [
+            "meine Schwester",
+            "die"
+          ],
+          [
+            "mein Kind",
+            "das"
+          ],
+          [
+            "meine Eltern",
+            "plural"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Das ist mein Bruder.",
+        "en": "This is my brother."
+      },
+      {
+        "type": "phrase",
+        "de": "Das ist meine Schwester.",
+        "en": "This is my sister."
+      },
+      {
+        "type": "choice",
+        "prompt": "Das ist ___ Kind.",
+        "options": [
+          "mein",
+          "meine"
+        ],
+        "answer": 0,
+        "explain": "das Kind is neuter, so no -e."
+      },
+      {
+        "type": "choice",
+        "prompt": "Das sind ___ Eltern.",
+        "options": [
+          "mein",
+          "meine"
+        ],
+        "answer": 1,
+        "explain": "Plural takes meine."
+      },
+      {
+        "type": "build",
+        "en": "Is that your mother?",
+        "answer": [
+          "Ist",
+          "das",
+          "deine",
+          "Mutter?"
+        ],
+        "extra": [
+          "dein",
+          "mein"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Mein Vater heißt Peter und meine Mutter heißt Julia.",
+        "en": "My father is called Peter and my mother is called Julia."
+      },
+      {
+        "type": "speak",
+        "de": "Das ist meine Familie.",
+        "en": "This is my family."
+      }
+    ]
+  },
+  {
+    "id": "a1-u3-l3",
+    "unit": "a1-u3",
+    "title": "Describing people",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Adjectives after sein",
+        "body": "After sein an adjective needs no ending: Er ist groß. Sie ist nett. Endings only appear when the adjective comes before the noun, which you will meet later.",
+        "points": [
+          "sehr = very",
+          "ziemlich = quite",
+          "aber = but"
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Meine Schwester ist sehr nett.",
+        "en": "My sister is very nice."
+      },
+      {
+        "type": "phrase",
+        "de": "Mein Großvater ist alt, aber fit.",
+        "en": "My grandfather is old but fit."
+      },
+      {
+        "type": "choice",
+        "prompt": "The opposite of jung is...",
+        "options": [
+          "alt",
+          "klein",
+          "neu"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "choice",
+        "prompt": "The plural of die Mutter is...",
+        "options": [
+          "die Mutters",
+          "die Mütter",
+          "die Muttern"
+        ],
+        "answer": 1,
+        "explain": "Many plurals add an umlaut. Muttern exists, but it means screw nuts."
+      },
+      {
+        "type": "build",
+        "en": "My brother is tall.",
+        "answer": [
+          "Mein",
+          "Bruder",
+          "ist",
+          "groß."
+        ],
+        "extra": [
+          "meine",
+          "sind"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Meine Familie ist klein, aber sehr glücklich.",
+        "en": "My family is small but very happy."
+      },
+      {
+        "type": "speak",
+        "de": "Ich habe einen Bruder. Er heißt Jonas und er ist sehr groß.",
+        "en": "I have a brother. His name is Jonas and he is very tall."
+      }
+    ]
+  },
+  {
+    "id": "a1-u4-l1",
+    "unit": "a1-u4",
+    "title": "At the café",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Ordering with möchten",
+        "body": "möchten (would like) is the polite way to order. Ich hätte gern... is just as common and means the same.",
+        "table": [
+          [
+            "ich möchte",
+            "I would like"
+          ],
+          [
+            "du möchtest",
+            "you would like"
+          ],
+          [
+            "er / sie möchte",
+            "he / she would like"
+          ],
+          [
+            "wir möchten",
+            "we would like"
+          ],
+          [
+            "Sie möchten",
+            "you would like (formal)"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich möchte einen Kaffee, bitte.",
+        "en": "I'd like a coffee, please."
+      },
+      {
+        "type": "phrase",
+        "de": "Was möchten Sie trinken?",
+        "en": "What would you like to drink?"
+      },
+      {
+        "type": "phrase",
+        "de": "Die Rechnung, bitte.",
+        "en": "The bill, please."
+      },
+      {
+        "type": "choice",
+        "prompt": "The waiter asks: Was möchten Sie? You answer:",
+        "options": [
+          "Ich möchte ein Wasser.",
+          "Ich bin ein Wasser.",
+          "Ich habe Wasser alt."
+        ],
+        "answer": 0
+      },
+      {
+        "type": "build",
+        "en": "I would like a tea, please.",
+        "answer": [
+          "Ich",
+          "möchte",
+          "einen",
+          "Tee,",
+          "bitte."
+        ],
+        "extra": [
+          "eine",
+          "bin"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Zwei Kaffee und ein Stück Kuchen, bitte.",
+        "en": "Two coffees and a piece of cake, please."
+      },
+      {
+        "type": "speak",
+        "de": "Ich möchte einen Kaffee mit Milch, bitte.",
+        "en": "I'd like a coffee with milk, please."
+      }
+    ]
+  },
+  {
+    "id": "a1-u4-l2",
+    "unit": "a1-u4",
+    "title": "ein, eine, einen",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "The accusative, first look",
+        "body": "The thing you want, buy or eat is the object of the sentence. In that position only masculine words change: der becomes den and ein becomes einen. Feminine and neuter stay the same.",
+        "table": [
+          [
+            "der Apfel",
+            "einen Apfel"
+          ],
+          [
+            "die Kartoffel",
+            "eine Kartoffel"
+          ],
+          [
+            "das Brot",
+            "ein Brot"
+          ]
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich möchte ___ Apfel.",
+        "options": [
+          "ein",
+          "eine",
+          "einen"
+        ],
+        "answer": 2,
+        "explain": "der Apfel is masculine, so ein becomes einen."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich nehme ___ Brot.",
+        "options": [
+          "ein",
+          "eine",
+          "einen"
+        ],
+        "answer": 0,
+        "explain": "das Brot is neuter, no change."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich kaufe ___ Kartoffel.",
+        "options": [
+          "ein",
+          "eine",
+          "einen"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "choice",
+        "prompt": "Er trinkt ___ Wein.",
+        "options": [
+          "ein",
+          "eine",
+          "einen"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "build",
+        "en": "I am buying a cheese.",
+        "answer": [
+          "Ich",
+          "kaufe",
+          "einen",
+          "Käse."
+        ],
+        "extra": [
+          "ein",
+          "eine"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Ich nehme einen Tee und ein Ei.",
+        "en": "I'll have a tea and an egg."
+      },
+      {
+        "type": "speak",
+        "de": "Ich esse einen Apfel und ein Ei.",
+        "en": "I'm eating an apple and an egg."
+      }
+    ]
+  },
+  {
+    "id": "a1-u4-l3",
+    "unit": "a1-u4",
+    "title": "Likes and dislikes",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "kein and gern",
+        "body": "kein means no or not any, and takes the same endings as ein. Put gern after the verb to say you like doing something.",
+        "points": [
+          "Ich esse kein Fleisch.",
+          "Ich trinke keinen Kaffee.",
+          "Ich trinke gern Tee.",
+          "Ich mag Käse."
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich esse kein Fleisch.",
+        "en": "I don't eat meat."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich trinke gern Tee.",
+        "en": "I like drinking tea."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich mag keinen Fisch.",
+        "en": "I don't like fish."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich habe ___ Zeit.",
+        "options": [
+          "nicht",
+          "kein",
+          "keine"
+        ],
+        "answer": 2,
+        "explain": "die Zeit is feminine, so keine."
+      },
+      {
+        "type": "choice",
+        "prompt": "Er trinkt ___ Bier.",
+        "options": [
+          "kein",
+          "keinen",
+          "keine"
+        ],
+        "answer": 0,
+        "explain": "das Bier is neuter."
+      },
+      {
+        "type": "listen",
+        "de": "Ich trinke keinen Kaffee, aber ich trinke gern Tee.",
+        "en": "I don't drink coffee, but I like drinking tea."
+      },
+      {
+        "type": "speak",
+        "de": "Ich esse gern Brot mit Käse.",
+        "en": "I like eating bread with cheese."
+      }
+    ]
+  },
+  {
+    "id": "a1-u5-l1",
+    "unit": "a1-u5",
+    "title": "Regular Verbs",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Regular Verbs",
+        "body": "In German, verbs change their endings to match the person speaking. To conjugate a regular verb, take the infinitive (like *machen*) and remove the *-en* to find the stem (*mach-*). Then, add the correct ending: *-e* for \"I\", *-st* for \"you\", and *-t* for \"he/she/it\". Unlike English, which mostly only changes for the third person, German uses different endings for almost every subject.",
+        "table": [
+          [
+            "ich mache",
+            "I do/make"
+          ],
+          [
+            "du machst",
+            "you do/make"
+          ],
+          [
+            "er macht",
+            "he does/makes"
+          ],
+          [
+            "wir machen",
+            "we do/make"
+          ],
+          [
+            "ihr macht",
+            "you (plural) do/make"
+          ],
+          [
+            "sie machen",
+            "they do/make"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich mache Kaffee.",
+        "en": "I make coffee."
+      },
+      {
+        "type": "phrase",
+        "de": "Du trinkst Wasser.",
+        "en": "You drink water."
+      },
+      {
+        "type": "phrase",
+        "de": "Er lernt Deutsch.",
+        "en": "He learns German."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich ___ Kaffee.",
+        "options": [
+          "mache",
+          "machst",
+          "macht"
+        ],
+        "answer": 0,
+        "explain": "For the first person singular 'ich', we add the ending '-e'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Du ___ Wasser.",
+        "options": [
+          "trinke",
+          "trinkst",
+          "trinkt"
+        ],
+        "answer": 1,
+        "explain": "For the second person singular 'du', we add the ending '-st'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Er ___ Deutsch.",
+        "options": [
+          "lerne",
+          "lernst",
+          "lernt"
+        ],
+        "answer": 2,
+        "explain": "For the third person singular 'er', we add the ending '-t'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "ich mache",
+            "I do"
+          ],
+          [
+            "du machst",
+            "you do"
+          ],
+          [
+            "er macht",
+            "he does"
+          ],
+          [
+            "sie machen",
+            "they do"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "We make coffee.",
+        "answer": [
+          "Wir",
+          "machen",
+          "Kaffee."
+        ],
+        "extra": [
+          "mache",
+          "Du"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Ich mache Kaffee.",
+        "en": "I make coffee."
+      },
+      {
+        "type": "speak",
+        "de": "Ich mache Kaffee.",
+        "en": "I make coffee."
+      },
+      {
+        "type": "speak",
+        "de": "Du trinkst Wasser.",
+        "en": "You drink water."
+      }
+    ]
+  },
+  {
+    "id": "a1-u5-l2",
+    "unit": "a1-u5",
+    "title": "The Verb is Second",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "The Verb is Second",
+        "body": "In German, the conjugated verb must always be the second element in a standard statement. In English, we often say \"Today I drink,\" but in German, the verb must stay in that second slot. If you start a sentence with a time expression, the subject must move to the third position to keep the verb in place.",
+        "table": [
+          [
+            "Ich trinke Kaffee.",
+            "I drink coffee."
+          ],
+          [
+            "Heute trinke ich.",
+            "Today I drink."
+          ],
+          [
+            "Um acht Uhr trinke ich.",
+            "At eight o'clock I drink."
+          ],
+          [
+            "Ich arbeite viel.",
+            "I work a lot."
+          ],
+          [
+            "Heute arbeite ich.",
+            "Today I work."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Heute arbeite ich.",
+        "en": "Today I work."
+      },
+      {
+        "type": "phrase",
+        "de": "Um acht Uhr trinke ich Kaffee.",
+        "en": "At eight o'clock I drink coffee."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich mache Frühstück.",
+        "en": "I make breakfast."
+      },
+      {
+        "type": "choice",
+        "prompt": "Heute ____ ich Kaffee.",
+        "options": [
+          "trinke",
+          "ich trinke",
+          "trinken"
+        ],
+        "answer": 0,
+        "explain": "The verb must be the second element in the sentence."
+      },
+      {
+        "type": "choice",
+        "prompt": "Um neun Uhr ____ er.",
+        "options": [
+          "arbeitet",
+          "er arbeitet",
+          "arbeiten"
+        ],
+        "answer": 0,
+        "explain": "The time expression is the first element, so the verb must come next."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich ____ Frühstück.",
+        "options": [
+          "mache",
+          "machen",
+          "mache ich"
+        ],
+        "answer": 0,
+        "explain": "In a standard sentence starting with the subject, the verb is the second element."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Heute",
+            "Today"
+          ],
+          [
+            "Um neun Uhr",
+            "At nine o'clock"
+          ],
+          [
+            "Ich arbeite",
+            "I work"
+          ],
+          [
+            "Ich trinke",
+            "I drink"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "At ten o'clock I work.",
+        "answer": [
+          "Um",
+          "zehn",
+          "Uhr",
+          "arbeite",
+          "ich."
+        ],
+        "extra": [
+          "trinke",
+          "Heute"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Heute trinke ich Tee.",
+        "en": "Today I drink tea."
+      },
+      {
+        "type": "speak",
+        "de": "Ich arbeite heute.",
+        "en": "I work today."
+      },
+      {
+        "type": "speak",
+        "de": "Um acht Uhr frühstücke ich.",
+        "en": "At eight o'clock I eat breakfast."
+      }
+    ]
+  },
+  {
+    "id": "a1-u5-l3",
+    "unit": "a1-u5",
+    "title": "Telling Time and Daily Patterns",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Time Expressions",
+        "body": "To express time in German, you must choose the correct preposition based on what you are describing. For specific clock times, use **um** (at). For parts of the day, use **am** (in the). For frequency, use **jeden** (every). This is more specific than English, which often uses 'at' or 'in' more broadly.",
+        "table": [
+          [
+            "um 8 Uhr",
+            "at 8 o'clock"
+          ],
+          [
+            "am Morgen",
+            "in the morning"
+          ],
+          [
+            "am Mittag",
+            "at noon"
+          ],
+          [
+            "am Abend",
+            "in the evening"
+          ],
+          [
+            "jeden Tag",
+            "every day"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich arbeite am Morgen.",
+        "en": "I work in the morning."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich esse um 12 Uhr.",
+        "en": "I eat at 12 o'clock."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich lerne jeden Tag.",
+        "en": "I learn every day."
+      },
+      {
+        "type": "choice",
+        "prompt": "How do you say 'at 10 o'clock'?",
+        "options": [
+          "am 10 Uhr",
+          "um 10 Uhr",
+          "in 10 Uhr"
+        ],
+        "answer": 1,
+        "explain": "We use 'um' for specific clock times."
+      },
+      {
+        "type": "choice",
+        "prompt": "How do you say 'in the morning'?",
+        "options": [
+          "am Morgen",
+          "um Morgen",
+          "jeden Morgen"
+        ],
+        "answer": 0,
+        "explain": "'Am' is used for parts of the day."
+      },
+      {
+        "type": "choice",
+        "prompt": "How do you say 'every day'?",
+        "options": [
+          "am Tag",
+          "um Tag",
+          "jeden Tag"
+        ],
+        "answer": 2,
+        "explain": "'Jeden' is the correct word for 'every'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "am Morgen",
+            "in the morning"
+          ],
+          [
+            "um 5 Uhr",
+            "at 5 o'clock"
+          ],
+          [
+            "jeden Tag",
+            "every day"
+          ],
+          [
+            "am Abend",
+            "in the evening"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I cook in the evening.",
+        "answer": [
+          "Ich",
+          "koche",
+          "am",
+          "Abend."
+        ],
+        "extra": [
+          "Tag",
+          "um"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Ich lerne jeden Tag.",
+        "en": "I learn every day."
+      },
+      {
+        "type": "speak",
+        "de": "Ich arbeite um neun.",
+        "en": "I work at nine."
+      },
+      {
+        "type": "speak",
+        "de": "Ich esse am Mittag.",
+        "en": "I eat at noon."
+      }
+    ]
+  },
+  {
+    "id": "a1-u6-l1",
+    "unit": "a1-u6",
+    "title": "There is / There are",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "The phrase 'es gibt'",
+        "body": "In English, we change between 'there is' and 'there are.' In German, we always use 'es gibt' for both singular and plural. It is a fixed expression that means 'there is' or 'there are.'",
+        "table": [
+          [
+            "Es gibt...",
+            "There is... / There are..."
+          ],
+          [
+            "Es gibt einen Tisch.",
+            "There is a table."
+          ],
+          [
+            "Es gibt eine Lampe.",
+            "There is a lamp."
+          ],
+          [
+            "Es gibt ein Bett.",
+            "There is a bed."
+          ],
+          [
+            "Es gibt Bücher.",
+            "There are books."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Es gibt ein Sofa.",
+        "en": "There is a sofa."
+      },
+      {
+        "type": "phrase",
+        "de": "Es gibt viele Bücher.",
+        "en": "There are many books."
+      },
+      {
+        "type": "phrase",
+        "de": "Es gibt keine Küche.",
+        "en": "There is no kitchen.",
+        "note": "Use 'keine' to say there is 'no' or 'not a' thing."
+      },
+      {
+        "type": "choice",
+        "prompt": "Es ___ einen Tisch.",
+        "options": [
+          "gibt",
+          "ist",
+          "sind"
+        ],
+        "answer": 0,
+        "explain": "'Es gibt' is the fixed phrase for 'there is' or 'there are.'"
+      },
+      {
+        "type": "choice",
+        "prompt": "Es gibt ___ Lampe.",
+        "options": [
+          "ein",
+          "einen",
+          "eine"
+        ],
+        "answer": 2,
+        "explain": "'Lampe' is feminine, so we use 'eine'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Es gibt",
+            "There is/are"
+          ],
+          [
+            "ein Bett",
+            "a bed"
+          ],
+          [
+            "eine Lampe",
+            "a lamp"
+          ],
+          [
+            "Bücher",
+            "books"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "There is a chair.",
+        "answer": [
+          "Es",
+          "gibt",
+          "einen",
+          "Stuhl."
+        ],
+        "extra": [
+          "Bücher",
+          "Sofa"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Es gibt ein Fenster.",
+        "en": "There is a window."
+      },
+      {
+        "type": "speak",
+        "de": "Es gibt ein Bett.",
+        "en": "There is a bed."
+      },
+      {
+        "type": "speak",
+        "de": "Es gibt viele Lampen.",
+        "en": "There are many lamps."
+      }
+    ]
+  },
+  {
+    "id": "a1-u6-l2",
+    "unit": "a1-u6",
+    "title": "Plural Forms",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Plural Forms",
+        "body": "In English, you usually just add \"-s\" to make a word plural. In German, nouns change in different ways: some add \"-e\", some add \"-en\", and some change their vowel. Most importantly, you cannot use \"a\" or \"an\" (ein/eine) when you are talking about more than one thing.",
+        "table": [
+          [
+            "die Tische",
+            "the tables"
+          ],
+          [
+            "die Lampen",
+            "the lamps"
+          ],
+          [
+            "die Bücher",
+            "the books"
+          ],
+          [
+            "die Regale",
+            "the shelves"
+          ],
+          [
+            "die Stühle",
+            "the chairs"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Hier sind zwei Stühle.",
+        "en": "Here are two chairs."
+      },
+      {
+        "type": "phrase",
+        "de": "Dort stehen viele Lampen.",
+        "en": "Many lamps are standing there."
+      },
+      {
+        "type": "phrase",
+        "de": "Note: In German, the verb must change to plural (sind/stehen) when the subject is plural.",
+        "en": ""
+      },
+      {
+        "type": "choice",
+        "prompt": "How do you say \"the tables\"?",
+        "options": [
+          "die Tischs",
+          "die Tische",
+          "die Tischen"
+        ],
+        "answer": 1,
+        "explain": "The plural of \"Tisch\" is formed by adding \"-e\"."
+      },
+      {
+        "type": "choice",
+        "prompt": "How do you say \"the books\"?",
+        "options": [
+          "die Bücher",
+          "die Buchs",
+          "die Bucher"
+        ],
+        "answer": 0,
+        "explain": "\"Buch\" changes its vowel to \"ü\" and adds \"-er\" in the plural."
+      },
+      {
+        "type": "choice",
+        "prompt": "How do you say \"two chairs\"?",
+        "options": [
+          "zwei Stühle",
+          "zwei Stuhls",
+          "zwei Stuhl"
+        ],
+        "answer": 0,
+        "explain": "The plural of \"Stuhl\" is \"Stühle\"."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "die Bücher",
+            "the books"
+          ],
+          [
+            "die Lampen",
+            "the lamps"
+          ],
+          [
+            "die Tische",
+            "the tables"
+          ],
+          [
+            "die Stühle",
+            "the chairs"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "Here are three shelves.",
+        "answer": [
+          "Hier",
+          "sind",
+          "drei",
+          "Regale."
+        ],
+        "extra": [
+          "(sind/stehen)",
+          "plural"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Die Lampen sind groß.",
+        "en": "The lamps are big."
+      },
+      {
+        "type": "speak",
+        "de": "Das sind zwei Tische.",
+        "en": "Those are two tables."
+      },
+      {
+        "type": "speak",
+        "de": "Dort sind viele Bücher.",
+        "en": "There are many books."
+      }
+    ]
+  },
+  {
+    "id": "a1-u6-l3",
+    "unit": "a1-u6",
+    "title": "Where is it?",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Where is it?",
+        "body": "To ask about the location of an object, use \"Wo ist...?\" for one item and \"Wo sind...?\" for multiple items. This follows the same logic as the English \"Where is...?\" and \"Where are...?\" patterns. The key is to match the verb to whether the object you are looking for is singular or plural.",
+        "table": [
+          [
+            "Wo ist der Tisch?",
+            "Where is the table?"
+          ],
+          [
+            "Wo ist die Lampe?",
+            "Where is the lamp?"
+          ],
+          [
+            "Wo ist das Buch?",
+            "Where is the book?"
+          ],
+          [
+            "Wo sind die Stühle?",
+            "Where are the chairs?"
+          ],
+          [
+            "Wo sind die Bücher?",
+            "Where are the books?"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Wo ist mein Handy?",
+        "en": "Where is my phone?"
+      },
+      {
+        "type": "phrase",
+        "de": "Wo sind die Schlüssel?",
+        "en": "Where are the keys?"
+      },
+      {
+        "type": "phrase",
+        "de": "Wo ist das Sofa?",
+        "en": "Where is the sofa?"
+      },
+      {
+        "type": "choice",
+        "prompt": "Wo ___ das Buch?",
+        "options": [
+          "ist",
+          "sind",
+          "bin"
+        ],
+        "answer": 0,
+        "explain": "\"Das Buch\" is singular, so we use \"ist.\""
+      },
+      {
+        "type": "choice",
+        "prompt": "Wo ___ die Bücher?",
+        "options": [
+          "ist",
+          "sind",
+          "ist sind"
+        ],
+        "answer": 1,
+        "explain": "\"Die Bücher\" is plural, so we use \"sind.\""
+      },
+      {
+        "type": "choice",
+        "prompt": "Wo ___ die Lampen?",
+        "options": [
+          "ist",
+          "sind",
+          "sindst"
+        ],
+        "answer": 1,
+        "explain": "\"Die Lampen\" is plural, so we use \"sind.\""
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Wo ist...?",
+            "Where is...?"
+          ],
+          [
+            "Wo sind...?",
+            "Where are...?"
+          ],
+          [
+            "die Lampe",
+            "the lamp"
+          ],
+          [
+            "die Lampen",
+            "the lamps"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "Where is the window?",
+        "answer": [
+          "Wo",
+          "ist",
+          "das",
+          "Fenster?"
+        ],
+        "extra": [
+          "die",
+          "Schlüssel"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Wo ist die Küche?",
+        "en": "Where is the kitchen?"
+      },
+      {
+        "type": "speak",
+        "de": "Wo sind meine Socken?",
+        "en": "Where are my socks?"
+      },
+      {
+        "type": "speak",
+        "de": "Wo ist der Fernseher?",
+        "en": "Where is the TV?"
+      }
+    ]
+  },
+  {
+    "id": "a1-u7-l1",
+    "unit": "a1-u7",
+    "title": "Polite Directions: The Imperative with Sie",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "The Polite Imperative (Sie)",
+        "body": "When giving directions to strangers, German uses the formal 'Sie' form to be polite. Unlike English, where we often just say 'Go left,' German requires you to use the verb followed by 'Sie.' It is very simple: use the standard verb form and add 'Sie' immediately after it. This turns a statement into a polite command.",
+        "table": [
+          [
+            "Gehen Sie!",
+            "Go!"
+          ],
+          [
+            "Warten Sie!",
+            "Wait!"
+          ],
+          [
+            "Nehmen Sie!",
+            "Take!"
+          ],
+          [
+            "Biegen Sie ab!",
+            "Turn!"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Gehen Sie geradeaus.",
+        "en": "Go straight ahead."
+      },
+      {
+        "type": "phrase",
+        "de": "Biegen Sie links ab.",
+        "en": "Turn left."
+      },
+      {
+        "type": "phrase",
+        "de": "Warten Sie hier.",
+        "en": "Wait here."
+      },
+      {
+        "type": "choice",
+        "prompt": "How do you say 'Wait!' politely?",
+        "options": [
+          "Warten Sie!",
+          "Sie warten!",
+          "Warten du!"
+        ],
+        "answer": 0,
+        "explain": "To give a polite command, use the verb followed by 'Sie'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Which is the correct way to say 'Go straight'?",
+        "options": [
+          "Gehen Sie geradeaus!",
+          "Gehen geradeaus!",
+          "Sie gehen geradeaus!"
+        ],
+        "answer": 0,
+        "explain": "A polite command requires both the verb and the word 'Sie'."
+      },
+      {
+        "type": "choice",
+        "prompt": "How do you say 'Take the bus' politely?",
+        "options": [
+          "Nehmen Sie den Bus!",
+          "Nehmen Sie Bus!",
+          "Du nimmst den Bus!"
+        ],
+        "answer": 0,
+        "explain": "Use the verb followed by 'Sie' and include the necessary article 'den'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Gehen Sie",
+            "Go"
+          ],
+          [
+            "Warten Sie",
+            "Wait"
+          ],
+          [
+            "Biegen Sie ab",
+            "Turn"
+          ],
+          [
+            "Nehmen Sie",
+            "Take"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "Turn right.",
+        "answer": [
+          "Biegen",
+          "Sie",
+          "rechts",
+          "ab."
+        ],
+        "extra": [
+          "links",
+          "Gehen"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Gehen Sie nach links.",
+        "en": "Go to the left."
+      },
+      {
+        "type": "speak",
+        "de": "Warten Sie hier, bitte.",
+        "en": "Wait here, please."
+      },
+      {
+        "type": "speak",
+        "de": "Nehmen Sie den Bus.",
+        "en": "Take the bus."
+      }
+    ]
+  },
+  {
+    "id": "a1-u7-l2",
+    "unit": "a1-u7",
+    "title": "Asking 'Can you?'",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Using können (can/to be able to)",
+        "body": "The verb *können* means 'can' or 'to be able to.' When you use *können* in a sentence, the second verb (the action) must move to the very end of the sentence in its infinitive form. In English, we say 'I can go,' but in German, the action verb stays at the end. This structure is essential for asking questions and making statements about ability.",
+        "table": [
+          [
+            "ich kann",
+            "I can"
+          ],
+          [
+            "Sie können",
+            "You can (polite)"
+          ],
+          [
+            "können Sie?",
+            "can you? (polite)"
+          ],
+          [
+            "wir können",
+            "we can"
+          ],
+          [
+            "man kann",
+            "one can / it is possible"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Können Sie mir helfen?",
+        "en": "Can you help me?"
+      },
+      {
+        "type": "phrase",
+        "de": "Ich kann mit dem Bus fahren.",
+        "en": "I can go by bus."
+      },
+      {
+        "type": "phrase",
+        "de": "Können wir zu Fuß gehen?",
+        "en": "Can we go on foot?"
+      },
+      {
+        "type": "choice",
+        "prompt": "How do you ask 'Can you help me?' (polite)?",
+        "options": [
+          "Sie können mir helfen?",
+          "Können Sie mir helfen?",
+          "Helfen Sie mir können?"
+        ],
+        "answer": 1,
+        "explain": "In a question, the conjugated verb (können) comes first, followed by the subject (Sie)."
+      },
+      {
+        "type": "choice",
+        "prompt": "Choose the correct form: 'Ich ___ mit dem Bus fahren.'",
+        "options": [
+          "kann",
+          "kannst",
+          "können"
+        ],
+        "answer": 0,
+        "explain": "The first-person singular form of können is 'ich kann'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Complete the sentence: 'Wir können zu Fuß ___.'",
+        "options": [
+          "gehen",
+          "geht",
+          "gehst"
+        ],
+        "answer": 0,
+        "explain": "When using a modal verb like können, the second verb must be in its infinitive form (ending in -en) at the end of the sentence."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "können",
+            "can"
+          ],
+          [
+            "helfen",
+            "to help"
+          ],
+          [
+            "fahren",
+            "to drive/go (by vehicle)"
+          ],
+          [
+            "gehen",
+            "to go (on foot)"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "Can you wait here?",
+        "answer": [
+          "Können",
+          "Sie",
+          "hier",
+          "warten?"
+        ],
+        "extra": [
+          "Bus",
+          "Fuß"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Ich kann mit dem Bus fahren.",
+        "en": "I can go by bus."
+      },
+      {
+        "type": "speak",
+        "de": "Können Sie mir helfen?",
+        "en": "Can you help me?"
+      },
+      {
+        "type": "speak",
+        "de": "Wir können zu Fuß gehen.",
+        "en": "We can go on foot."
+      }
+    ]
+  },
+  {
+    "id": "a1-u7-l3",
+    "unit": "a1-u7",
+    "title": "Getting Around: By Bus or On Foot",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "How to travel",
+        "body": "To describe how you travel, use 'mit' plus the vehicle. In German, 'mit' always triggers the dative case, so 'der Bus' becomes 'mit dem Bus.' For walking, use the fixed expression 'zu Fuß.' Unlike English, which uses 'by,' German uses 'with' (mit).",
+        "table": [
+          [
+            "mit dem Bus",
+            "by bus"
+          ],
+          [
+            "mit dem Zug",
+            "by train"
+          ],
+          [
+            "mit dem Auto",
+            "by car"
+          ],
+          [
+            "mit der Bahn",
+            "by train/rail"
+          ],
+          [
+            "zu Fuß",
+            "on foot"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich fahre mit dem Bus.",
+        "en": "I go by bus."
+      },
+      {
+        "type": "phrase",
+        "de": "Können Sie zu Fuß gehen?",
+        "en": "Can you walk on foot?"
+      },
+      {
+        "type": "phrase",
+        "de": "Note",
+        "en": "Use 'fahren' for vehicles and 'gehen' for walking."
+      },
+      {
+        "type": "choice",
+        "prompt": "How do you say 'by bus'?",
+        "options": [
+          "mit der Bus",
+          "mit dem Bus",
+          "zu dem Bus"
+        ],
+        "answer": 1,
+        "explain": "'Bus' is masculine, and 'mit' requires the dative case, changing 'der' to 'dem'."
+      },
+      {
+        "type": "choice",
+        "prompt": "How do you say 'on foot'?",
+        "options": [
+          "zu Fuß",
+          "mit Fuß",
+          "zu dem Fuß"
+        ],
+        "answer": 0,
+        "explain": "'Zu Fuß' is a fixed idiomatic expression in German."
+      },
+      {
+        "type": "choice",
+        "prompt": "Complete the sentence: 'Ich fahre ___.' (I go by train.)",
+        "options": [
+          "mit der Zug",
+          "mit dem Zug",
+          "zu Fuß"
+        ],
+        "answer": 1,
+        "explain": "'Zug' is masculine, so 'mit' changes 'der' to 'dem'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "mit dem Auto",
+            "by car"
+          ],
+          [
+            "mit dem Bus",
+            "by bus"
+          ],
+          [
+            "mit dem Zug",
+            "by train"
+          ],
+          [
+            "zu Fuß",
+            "on foot"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I go by bus.",
+        "answer": [
+          "Ich",
+          "fahre",
+          "mit",
+          "dem",
+          "Bus."
+        ],
+        "extra": [
+          "Sie",
+          "Fuß"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Gehen Sie zu Fuß?",
+        "en": "Are you walking?"
+      },
+      {
+        "type": "speak",
+        "de": "Ich fahre mit dem Bus.",
+        "en": "I go by bus."
+      },
+      {
+        "type": "speak",
+        "de": "Wir gehen zu Fuß.",
+        "en": "We are walking."
+      }
+    ]
+  }
 ]

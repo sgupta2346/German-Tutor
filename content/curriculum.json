@@ -1,54 +1,625 @@
 {
   "levels": [
-    {"id": "A1", "title": "Beginner", "summary": "Introduce yourself, handle everyday basics, read and pronounce any German word.", "units": [
-      {"id": "a1-u1", "title": "Hello!", "titleDe": "Hallo!", "goal": "Greet people, introduce yourself, say where you are from.", "grammar": ["Personal pronouns ich, du, Sie", "sein and heißen in the present", "du versus Sie"], "decks": ["a1-basics"], "sounds": ["ei-ie", "ich", "schwa"]},
-      {"id": "a1-u2", "title": "Numbers and age", "titleDe": "Zahlen und Alter", "goal": "Count, give phone numbers, ask and say ages.", "grammar": ["haben in the present", "Wie alt bist du?", "Numbers 0 to 100"], "decks": ["a1-numbers"], "sounds": ["z", "ue", "ach"]},
-      {"id": "a1-u3", "title": "My family", "titleDe": "Meine Familie", "goal": "Talk about family members and describe them.", "grammar": ["der, die, das", "mein and dein", "Plural forms"], "decks": ["a1-family", "a1-adjectives"], "sounds": ["er", "r", "oe"]},
-      {"id": "a1-u4", "title": "Food and drink", "titleDe": "Essen und Trinken", "goal": "Order in a café, say what you like and don't like.", "grammar": ["möchten", "Accusative ein, eine, einen", "kein"], "decks": ["a1-food"], "sounds": ["pf", "ae", "w"]},
-      {"id": "a1-u5", "title": "My day", "titleDe": "Mein Tag", "goal": "Tell the time and describe your daily routine.", "grammar": ["Regular verbs in the present", "Verb in second position", "Time expressions"], "decks": ["a1-time"], "sounds": ["length", "v"]},
-      {"id": "a1-u6", "title": "At home", "titleDe": "Zu Hause", "goal": "Describe your flat and where things are.", "grammar": ["es gibt", "Plural patterns", "Wo ist...?"], "decks": ["a1-home"], "sounds": ["devoicing", "eu"]},
-      {"id": "a1-u7", "title": "In the city", "titleDe": "In der Stadt", "goal": "Ask for and understand directions, use public transport.", "grammar": ["Imperative with Sie", "können", "mit dem Bus, zu Fuß"], "decks": ["a1-city", "a1-questions"], "sounds": ["sp-st", "s-voiced"]},
-      {"id": "a1-u8", "title": "Free time", "titleDe": "Freizeit", "goal": "Talk about hobbies and make plans.", "grammar": ["Separable verbs", "gern and lieber", "nicht versus kein"], "decks": ["a1-verbs", "a1-colors", "a1-body"], "sounds": ["glottal", "ng"]}
-    ]},
-    {"id": "A2", "title": "Elementary", "summary": "Talk about the past, travel, shop, and explain why.", "units": [
-      {"id": "a2-u1", "title": "What happened?", "titleDe": "Was ist passiert?", "goal": "Tell short stories about the past.", "grammar": ["Perfekt with haben", "Past participles"], "decks": [], "sounds": ["ig", "devoicing"]},
-      {"id": "a2-u2", "title": "Travel", "titleDe": "Reisen", "goal": "Plan a trip and talk about journeys.", "grammar": ["Perfekt with sein", "Two-way prepositions"], "decks": [], "sounds": ["r", "er"]},
-      {"id": "a2-u3", "title": "Shopping and clothes", "titleDe": "Einkaufen und Kleidung", "goal": "Shop for clothes, compare and give opinions.", "grammar": ["Dative case", "Adjective endings, first look"], "decks": [], "sounds": ["ue", "oe"]},
-      {"id": "a2-u4", "title": "Health", "titleDe": "Gesundheit", "goal": "Describe symptoms and understand advice.", "grammar": ["müssen, sollen, dürfen", "Body vocabulary"], "decks": [], "sounds": ["ach", "ich"]},
-      {"id": "a2-u5", "title": "Work", "titleDe": "Arbeit", "goal": "Describe your job and explain reasons.", "grammar": ["weil and dass", "Verb at the end"], "decks": [], "sounds": ["z", "sp-st"]},
-      {"id": "a2-u6", "title": "Weather and seasons", "titleDe": "Wetter und Jahreszeiten", "goal": "Talk about weather and compare things.", "grammar": ["Comparative and superlative"], "decks": [], "sounds": ["length", "ae"]},
-      {"id": "a2-u7", "title": "Celebrations", "titleDe": "Feste", "goal": "Talk about holidays, dates and invitations.", "grammar": ["Präteritum of sein and haben", "Ordinal numbers and dates"], "decks": [], "sounds": ["eu", "au"]},
-      {"id": "a2-u8", "title": "Living together", "titleDe": "Zusammen wohnen", "goal": "Discuss chores and neighbours.", "grammar": ["Reflexive verbs"], "decks": [], "sounds": ["glottal", "schwa"]}
-    ]},
-    {"id": "B1", "title": "Intermediate", "summary": "Hold real conversations, give opinions, follow the news.", "units": [
-      {"id": "b1-u1", "title": "Opinions", "titleDe": "Meinungen", "goal": "Agree, disagree and justify your view.", "grammar": ["obwohl and trotzdem", "Opinion phrases"], "decks": [], "sounds": []},
-      {"id": "b1-u2", "title": "Media", "titleDe": "Medien", "goal": "Summarise articles and stories.", "grammar": ["Präteritum for narration"], "decks": [], "sounds": []},
-      {"id": "b1-u3", "title": "Applying for jobs", "titleDe": "Beruf und Bewerbung", "goal": "Write a cover letter, handle an interview.", "grammar": ["Konjunktiv II for politeness"], "decks": [], "sounds": []},
-      {"id": "b1-u4", "title": "Environment", "titleDe": "Umwelt", "goal": "Discuss problems and solutions.", "grammar": ["Passive in the present"], "decks": [], "sounds": []},
-      {"id": "b1-u5", "title": "Relationships", "titleDe": "Beziehungen", "goal": "Describe people and relationships in detail.", "grammar": ["Relative clauses"], "decks": [], "sounds": []},
-      {"id": "b1-u6", "title": "Education", "titleDe": "Bildung", "goal": "Talk about school, university and goals.", "grammar": ["zu plus infinitive", "um ... zu"], "decks": [], "sounds": []},
-      {"id": "b1-u7", "title": "Culture", "titleDe": "Kultur", "goal": "Talk about films, books and traditions.", "grammar": ["Genitive", "wegen and trotz"], "decks": [], "sounds": []},
-      {"id": "b1-u8", "title": "Plans and dreams", "titleDe": "Pläne und Träume", "goal": "Talk about the future and hypotheticals.", "grammar": ["Futur I", "wenn versus als"], "decks": [], "sounds": []}
-    ]},
-    {"id": "B2", "title": "Upper intermediate", "summary": "Argue, understand native speed and regional accents.", "units": [
-      {"id": "b2-u1", "title": "Debating", "titleDe": "Diskutieren", "goal": "Build and structure an argument.", "grammar": ["Connectors and two-part conjunctions"], "decks": [], "sounds": []},
-      {"id": "b2-u2", "title": "The working world", "titleDe": "Arbeitswelt", "goal": "Handle meetings and formal situations.", "grammar": ["Passive with modal verbs", "Zustandspassiv"], "decks": [], "sounds": []},
-      {"id": "b2-u3", "title": "Science", "titleDe": "Wissenschaft", "goal": "Understand and explain technical topics.", "grammar": ["Nominalisation"], "decks": [], "sounds": []},
-      {"id": "b2-u4", "title": "Society", "titleDe": "Gesellschaft", "goal": "Report what others said.", "grammar": ["Konjunktiv I and indirect speech"], "decks": [], "sounds": []},
-      {"id": "b2-u5", "title": "Mind and health", "titleDe": "Psyche und Gesundheit", "goal": "Discuss wellbeing in depth.", "grammar": ["Participles as adjectives"], "decks": [], "sounds": []},
-      {"id": "b2-u6", "title": "Regions and dialects", "titleDe": "Regionen und Dialekte", "goal": "Understand Austrian, Swiss and regional German accents.", "grammar": ["Regional vocabulary", "Common colloquial reductions"], "decks": [], "sounds": []},
-      {"id": "b2-u7", "title": "History", "titleDe": "Geschichte", "goal": "Narrate events in sequence.", "grammar": ["Plusquamperfekt", "nachdem and bevor"], "decks": [], "sounds": []},
-      {"id": "b2-u8", "title": "Media literacy", "titleDe": "Medienkompetenz", "goal": "Evaluate sources and arguments.", "grammar": ["je ... desto", "Modal verbs for assumptions"], "decks": [], "sounds": []}
-    ]},
-    {"id": "C1", "title": "Advanced", "summary": "Sound natural: idioms, nuance, register and native rhythm.", "units": [
-      {"id": "c1-u1", "title": "Modal particles", "titleDe": "Modalpartikeln", "goal": "Use doch, mal, ja, eben, halt naturally.", "grammar": ["Modal particles"], "decks": [], "sounds": []},
-      {"id": "c1-u2", "title": "Idioms", "titleDe": "Redewendungen", "goal": "Understand and use common idioms.", "grammar": ["Fixed expressions"], "decks": [], "sounds": []},
-      {"id": "c1-u3", "title": "Register", "titleDe": "Stil und Register", "goal": "Switch between formal and casual German.", "grammar": ["Formal versus colloquial structures"], "decks": [], "sounds": []},
-      {"id": "c1-u4", "title": "Rhetoric", "titleDe": "Rhetorik", "goal": "Give a persuasive talk.", "grammar": ["Emphasis and word order"], "decks": [], "sounds": []},
-      {"id": "c1-u5", "title": "Academic German", "titleDe": "Wissenschaftssprache", "goal": "Read and write academic texts.", "grammar": ["Extended attributes", "Functional verb structures"], "decks": [], "sounds": []},
-      {"id": "c1-u6", "title": "Everyday speech", "titleDe": "Umgangssprache", "goal": "Follow fast, casual native conversation.", "grammar": ["Contractions and elisions"], "decks": [], "sounds": []},
-      {"id": "c1-u7", "title": "Intonation and rhythm", "titleDe": "Intonation und Rhythmus", "goal": "Sound native in stress, melody and pace.", "grammar": ["Sentence stress", "Intonation patterns"], "decks": [], "sounds": []},
-      {"id": "c1-u8", "title": "Debate", "titleDe": "Debatte", "goal": "Hold your own in a fast-moving discussion.", "grammar": ["Hedging and conceding"], "decks": [], "sounds": []}
-    ]}
+    {
+      "id": "A1",
+      "title": "Beginner",
+      "summary": "Introduce yourself, handle everyday basics, read and pronounce any German word.",
+      "units": [
+        {
+          "id": "a1-u1",
+          "title": "Hello!",
+          "titleDe": "Hallo!",
+          "goal": "Greet people, introduce yourself, say where you are from.",
+          "grammar": [
+            "Personal pronouns ich, du, Sie",
+            "sein and heißen in the present",
+            "du versus Sie"
+          ],
+          "decks": [
+            "a1-basics"
+          ],
+          "sounds": [
+            "ei-ie",
+            "ich",
+            "schwa"
+          ]
+        },
+        {
+          "id": "a1-u2",
+          "title": "Numbers and age",
+          "titleDe": "Zahlen und Alter",
+          "goal": "Count, give phone numbers, ask and say ages.",
+          "grammar": [
+            "haben in the present",
+            "Wie alt bist du?",
+            "Numbers 0 to 100"
+          ],
+          "decks": [
+            "a1-numbers"
+          ],
+          "sounds": [
+            "z",
+            "ue",
+            "ach"
+          ]
+        },
+        {
+          "id": "a1-u3",
+          "title": "My family",
+          "titleDe": "Meine Familie",
+          "goal": "Talk about family members and describe them.",
+          "grammar": [
+            "der, die, das",
+            "mein and dein",
+            "Plural forms"
+          ],
+          "decks": [
+            "a1-family",
+            "a1-adjectives"
+          ],
+          "sounds": [
+            "er",
+            "r",
+            "oe"
+          ]
+        },
+        {
+          "id": "a1-u4",
+          "title": "Food and drink",
+          "titleDe": "Essen und Trinken",
+          "goal": "Order in a café, say what you like and don't like.",
+          "grammar": [
+            "möchten",
+            "Accusative ein, eine, einen",
+            "kein"
+          ],
+          "decks": [
+            "a1-food"
+          ],
+          "sounds": [
+            "pf",
+            "ae",
+            "w"
+          ]
+        },
+        {
+          "id": "a1-u5",
+          "title": "My day",
+          "titleDe": "Mein Tag",
+          "goal": "Tell the time and describe your daily routine.",
+          "grammar": [
+            "Regular verbs in the present",
+            "Verb in second position",
+            "Time expressions"
+          ],
+          "decks": [
+            "a1-time"
+          ],
+          "sounds": [
+            "length",
+            "v"
+          ]
+        },
+        {
+          "id": "a1-u6",
+          "title": "At home",
+          "titleDe": "Zu Hause",
+          "goal": "Describe your flat and where things are.",
+          "grammar": [
+            "es gibt",
+            "Plural patterns",
+            "Wo ist...?"
+          ],
+          "decks": [
+            "a1-home"
+          ],
+          "sounds": [
+            "devoicing",
+            "eu"
+          ]
+        },
+        {
+          "id": "a1-u7",
+          "title": "In the city",
+          "titleDe": "In der Stadt",
+          "goal": "Ask for and understand directions, use public transport.",
+          "grammar": [
+            "Imperative with Sie",
+            "können",
+            "mit dem Bus, zu Fuß"
+          ],
+          "decks": [
+            "a1-city",
+            "a1-questions"
+          ],
+          "sounds": [
+            "sp-st",
+            "s-voiced"
+          ]
+        },
+        {
+          "id": "a1-u8",
+          "title": "Free time",
+          "titleDe": "Freizeit",
+          "goal": "Talk about hobbies and make plans.",
+          "grammar": [
+            "Separable verbs",
+            "gern and lieber",
+            "nicht versus kein"
+          ],
+          "decks": [
+            "a1-verbs",
+            "a1-colors",
+            "a1-body"
+          ],
+          "sounds": [
+            "glottal",
+            "ng"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "title": "Elementary",
+      "summary": "Talk about the past, travel, shop, and explain why.",
+      "units": [
+        {
+          "id": "a2-u1",
+          "title": "What happened?",
+          "titleDe": "Was ist passiert?",
+          "goal": "Tell short stories about the past.",
+          "grammar": [
+            "Perfekt with haben",
+            "Past participles"
+          ],
+          "decks": [],
+          "sounds": [
+            "ig",
+            "devoicing"
+          ]
+        },
+        {
+          "id": "a2-u2",
+          "title": "Travel",
+          "titleDe": "Reisen",
+          "goal": "Plan a trip and talk about journeys.",
+          "grammar": [
+            "Perfekt with sein",
+            "Two-way prepositions"
+          ],
+          "decks": [],
+          "sounds": [
+            "r",
+            "er"
+          ]
+        },
+        {
+          "id": "a2-u3",
+          "title": "Shopping and clothes",
+          "titleDe": "Einkaufen und Kleidung",
+          "goal": "Shop for clothes, compare and give opinions.",
+          "grammar": [
+            "Dative case",
+            "Adjective endings, first look"
+          ],
+          "decks": [
+            "a2-u3-words"
+          ],
+          "sounds": [
+            "ue",
+            "oe"
+          ]
+        },
+        {
+          "id": "a2-u4",
+          "title": "Health",
+          "titleDe": "Gesundheit",
+          "goal": "Describe symptoms and understand advice.",
+          "grammar": [
+            "müssen, sollen, dürfen",
+            "Body vocabulary"
+          ],
+          "decks": [],
+          "sounds": [
+            "ach",
+            "ich"
+          ]
+        },
+        {
+          "id": "a2-u5",
+          "title": "Work",
+          "titleDe": "Arbeit",
+          "goal": "Describe your job and explain reasons.",
+          "grammar": [
+            "weil and dass",
+            "Verb at the end"
+          ],
+          "decks": [],
+          "sounds": [
+            "z",
+            "sp-st"
+          ]
+        },
+        {
+          "id": "a2-u6",
+          "title": "Weather and seasons",
+          "titleDe": "Wetter und Jahreszeiten",
+          "goal": "Talk about weather and compare things.",
+          "grammar": [
+            "Comparative and superlative"
+          ],
+          "decks": [
+            "a2-u6-words"
+          ],
+          "sounds": [
+            "length",
+            "ae"
+          ]
+        },
+        {
+          "id": "a2-u7",
+          "title": "Celebrations",
+          "titleDe": "Feste",
+          "goal": "Talk about holidays, dates and invitations.",
+          "grammar": [
+            "Präteritum of sein and haben",
+            "Ordinal numbers and dates"
+          ],
+          "decks": [
+            "a2-u7-words"
+          ],
+          "sounds": [
+            "eu",
+            "au"
+          ]
+        },
+        {
+          "id": "a2-u8",
+          "title": "Living together",
+          "titleDe": "Zusammen wohnen",
+          "goal": "Discuss chores and neighbours.",
+          "grammar": [
+            "Reflexive verbs"
+          ],
+          "decks": [],
+          "sounds": [
+            "glottal",
+            "schwa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B1",
+      "title": "Intermediate",
+      "summary": "Hold real conversations, give opinions, follow the news.",
+      "units": [
+        {
+          "id": "b1-u1",
+          "title": "Opinions",
+          "titleDe": "Meinungen",
+          "goal": "Agree, disagree and justify your view.",
+          "grammar": [
+            "obwohl and trotzdem",
+            "Opinion phrases"
+          ],
+          "decks": [
+            "b1-u1-words"
+          ],
+          "sounds": []
+        },
+        {
+          "id": "b1-u2",
+          "title": "Media",
+          "titleDe": "Medien",
+          "goal": "Summarise articles and stories.",
+          "grammar": [
+            "Präteritum for narration"
+          ],
+          "decks": [
+            "b1-u2-words"
+          ],
+          "sounds": []
+        },
+        {
+          "id": "b1-u3",
+          "title": "Applying for jobs",
+          "titleDe": "Beruf und Bewerbung",
+          "goal": "Write a cover letter, handle an interview.",
+          "grammar": [
+            "Konjunktiv II for politeness"
+          ],
+          "decks": [
+            "b1-u3-words"
+          ],
+          "sounds": []
+        },
+        {
+          "id": "b1-u4",
+          "title": "Environment",
+          "titleDe": "Umwelt",
+          "goal": "Discuss problems and solutions.",
+          "grammar": [
+            "Passive in the present"
+          ],
+          "decks": [],
+          "sounds": []
+        },
+        {
+          "id": "b1-u5",
+          "title": "Relationships",
+          "titleDe": "Beziehungen",
+          "goal": "Describe people and relationships in detail.",
+          "grammar": [
+            "Relative clauses"
+          ],
+          "decks": [
+            "b1-u5-words"
+          ],
+          "sounds": []
+        },
+        {
+          "id": "b1-u6",
+          "title": "Education",
+          "titleDe": "Bildung",
+          "goal": "Talk about school, university and goals.",
+          "grammar": [
+            "zu plus infinitive",
+            "um ... zu"
+          ],
+          "decks": [
+            "b1-u6-words"
+          ],
+          "sounds": []
+        },
+        {
+          "id": "b1-u7",
+          "title": "Culture",
+          "titleDe": "Kultur",
+          "goal": "Talk about films, books and traditions.",
+          "grammar": [
+            "Genitive",
+            "wegen and trotz"
+          ],
+          "decks": [
+            "b1-u7-words"
+          ],
+          "sounds": []
+        },
+        {
+          "id": "b1-u8",
+          "title": "Plans and dreams",
+          "titleDe": "Pläne und Träume",
+          "goal": "Talk about the future and hypotheticals.",
+          "grammar": [
+            "Futur I",
+            "wenn versus als"
+          ],
+          "decks": [
+            "b1-u8-words"
+          ],
+          "sounds": []
+        }
+      ]
+    },
+    {
+      "id": "B2",
+      "title": "Upper intermediate",
+      "summary": "Argue, understand native speed and regional accents.",
+      "units": [
+        {
+          "id": "b2-u1",
+          "title": "Debating",
+          "titleDe": "Diskutieren",
+          "goal": "Build and structure an argument.",
+          "grammar": [
+            "Connectors and two-part conjunctions"
+          ],
+          "decks": [
+            "b2-u1-words"
+          ],
+          "sounds": []
+        },
+        {
+          "id": "b2-u2",
+          "title": "The working world",
+          "titleDe": "Arbeitswelt",
+          "goal": "Handle meetings and formal situations.",
+          "grammar": [
+            "Passive with modal verbs",
+            "Zustandspassiv"
+          ],
+          "decks": [
+            "b2-u2-words"
+          ],
+          "sounds": []
+        },
+        {
+          "id": "b2-u3",
+          "title": "Science",
+          "titleDe": "Wissenschaft",
+          "goal": "Understand and explain technical topics.",
+          "grammar": [
+            "Nominalisation"
+          ],
+          "decks": [
+            "b2-u3-words"
+          ],
+          "sounds": []
+        },
+        {
+          "id": "b2-u4",
+          "title": "Society",
+          "titleDe": "Gesellschaft",
+          "goal": "Report what others said.",
+          "grammar": [
+            "Konjunktiv I and indirect speech"
+          ],
+          "decks": [
+            "b2-u4-words"
+          ],
+          "sounds": []
+        },
+        {
+          "id": "b2-u5",
+          "title": "Mind and health",
+          "titleDe": "Psyche und Gesundheit",
+          "goal": "Discuss wellbeing in depth.",
+          "grammar": [
+            "Participles as adjectives"
+          ],
+          "decks": [],
+          "sounds": []
+        },
+        {
+          "id": "b2-u6",
+          "title": "Regions and dialects",
+          "titleDe": "Regionen und Dialekte",
+          "goal": "Understand Austrian, Swiss and regional German accents.",
+          "grammar": [
+            "Regional vocabulary",
+            "Common colloquial reductions"
+          ],
+          "decks": [],
+          "sounds": []
+        },
+        {
+          "id": "b2-u7",
+          "title": "History",
+          "titleDe": "Geschichte",
+          "goal": "Narrate events in sequence.",
+          "grammar": [
+            "Plusquamperfekt",
+            "nachdem and bevor"
+          ],
+          "decks": [
+            "b2-u7-words"
+          ],
+          "sounds": []
+        },
+        {
+          "id": "b2-u8",
+          "title": "Media literacy",
+          "titleDe": "Medienkompetenz",
+          "goal": "Evaluate sources and arguments.",
+          "grammar": [
+            "je ... desto",
+            "Modal verbs for assumptions"
+          ],
+          "decks": [
+            "b2-u8-words"
+          ],
+          "sounds": []
+        }
+      ]
+    },
+    {
+      "id": "C1",
+      "title": "Advanced",
+      "summary": "Sound natural: idioms, nuance, register and native rhythm.",
+      "units": [
+        {
+          "id": "c1-u1",
+          "title": "Modal particles",
+          "titleDe": "Modalpartikeln",
+          "goal": "Use doch, mal, ja, eben, halt naturally.",
+          "grammar": [
+            "Modal particles"
+          ],
+          "decks": [
+            "c1-u1-words"
+          ],
+          "sounds": []
+        },
+        {
+          "id": "c1-u2",
+          "title": "Idioms",
+          "titleDe": "Redewendungen",
+          "goal": "Understand and use common idioms.",
+          "grammar": [
+            "Fixed expressions"
+          ],
+          "decks": [
+            "c1-u2-words"
+          ],
+          "sounds": []
+        },
+        {
+          "id": "c1-u3",
+          "title": "Register",
+          "titleDe": "Stil und Register",
+          "goal": "Switch between formal and casual German.",
+          "grammar": [
+            "Formal versus colloquial structures"
+          ],
+          "decks": [],
+          "sounds": []
+        },
+        {
+          "id": "c1-u4",
+          "title": "Rhetoric",
+          "titleDe": "Rhetorik",
+          "goal": "Give a persuasive talk.",
+          "grammar": [
+            "Emphasis and word order"
+          ],
+          "decks": [
+            "c1-u4-words"
+          ],
+          "sounds": []
+        },
+        {
+          "id": "c1-u5",
+          "title": "Academic German",
+          "titleDe": "Wissenschaftssprache",
+          "goal": "Read and write academic texts.",
+          "grammar": [
+            "Extended attributes",
+            "Functional verb structures"
+          ],
+          "decks": [],
+          "sounds": []
+        },
+        {
+          "id": "c1-u6",
+          "title": "Everyday speech",
+          "titleDe": "Umgangssprache",
+          "goal": "Follow fast, casual native conversation.",
+          "grammar": [
+            "Contractions and elisions"
+          ],
+          "decks": [],
+          "sounds": []
+        },
+        {
+          "id": "c1-u7",
+          "title": "Intonation and rhythm",
+          "titleDe": "Intonation und Rhythmus",
+          "goal": "Sound native in stress, melody and pace.",
+          "grammar": [
+            "Sentence stress",
+            "Intonation patterns"
+          ],
+          "decks": [
+            "c1-u7-words"
+          ],
+          "sounds": []
+        },
+        {
+          "id": "c1-u8",
+          "title": "Debate",
+          "titleDe": "Debatte",
+          "goal": "Hold your own in a fast-moving discussion.",
+          "grammar": [
+            "Hedging and conceding"
+          ],
+          "decks": [
+            "c1-u8-words"
+          ],
+          "sounds": []
+        }
+      ]
+    }
   ]
 }

@@ -44,7 +44,7 @@ RAW = Path("/kaggle/working/raw")
 OUT.mkdir(exist_ok=True)
 RAW.mkdir(exist_ok=True)
 curriculum = json.loads((REPO / "content/curriculum.json").read_text(encoding="utf-8"))
-existing_units = {l["unit"] for l in json.loads((REPO / "content/lessons_a1.json").read_text(encoding="utf-8"))}
+existing_units = {l["unit"] for path in (REPO / "content").glob("lessons_*.json") for l in json.loads(path.read_text(encoding="utf-8"))}
 
 LEVEL_GUIDE = {
     "A1": "Very short, high-frequency sentences of 3 to 7 words, mostly present tense.",
@@ -100,13 +100,17 @@ PARA_SCHEMA = {"type": "object", "properties": {"texts": {"type": "array", "item
 
 
 def ask(prompt: str, schema: dict, tag: str) -> dict:
-    for attempt in range(3):
-        r = requests.post(
-            "http://127.0.0.1:11434/api/generate",
-            json={"model": MODEL, "prompt": prompt, "format": schema, "stream": False, "options": {"temperature": 0.5, "num_ctx": 8192, "num_predict": 6000}},
-            timeout=3600,
-        )
-        text = r.json().get("response", "")
+    for attempt in range(5):
+        try:
+            r = requests.post(
+                "http://127.0.0.1:11434/api/generate",
+                json={"model": MODEL, "prompt": prompt, "format": schema, "stream": False, "options": {"temperature": 0.4 + 0.1 * attempt, "num_ctx": 8192, "num_predict": 8000}},
+                timeout=3600,
+            )
+            text = r.json().get("response", "")
+        except Exception as exc:
+            print(tag, "request failure", attempt, exc, flush=True)
+            continue
         (RAW / f"{tag}-{attempt}.txt").write_text(text, encoding="utf-8")
         try:
             return json.loads(text)
@@ -248,7 +252,9 @@ def convert_lesson(raw: dict, lesson_id: str, unit_id: str) -> dict:
     for c in raw["choices"]:
         opts = [o.strip() for o in c["options"]]
         correct = c["correct"].strip()
-        if correct not in opts or len(set(opts)) != len(opts):
+        parts = re.split(r"_{3,}", c["prompt"], maxsplit=1)
+        repeated = len(parts) == 2 and correct.lower() in {w.lower() for w in re.findall(r"[A-Za-zÄÖÜäöüß]+", parts[1])}
+        if correct not in opts or len(set(opts)) != len(opts) or repeated:
             bump("choices_dropped")
             continue
         steps.append({"type": "choice", "prompt": c["prompt"], "options": opts, "answer": opts.index(correct), "explain": c["explain"]})
@@ -277,7 +283,8 @@ try:
 except Exception as exc:
     print("LanguageTool unavailable:", exc, flush=True)
 
-IGNORE_RULES = {"WHITESPACE_RULE", "DE_CASE", "UPPERCASE_SENTENCE_START", "COMMA_PARENTHESIS_WHITESPACE", "GERMAN_SPELLER_RULE", "DE_DOUBLE_PUNCTUATION"}
+IGNORE_RULES = {"WHITESPACE_RULE", "DE_CASE", "UPPERCASE_SENTENCE_START", "COMMA_PARENTHESIS_WHITESPACE", "GERMAN_SPELLER_RULE", "DE_DOUBLE_PUNCTUATION", "GERMAN_WORD_REPEAT_BEGINNING_RULE", "RAN_RUM_RAUF_REIN_RAUS_RUNTER_NEU"}
+IGNORE_CATEGORIES = {"STYLE", "TYPOGRAPHY", "COLLOQUIALISMS", "REDUNDANCY"}
 
 
 def rule_of(m) -> str:
@@ -289,10 +296,18 @@ def grammar_issues(text: str) -> list[str]:
         return []
     with lock:
         matches = tool.check(text)
-    return [f"{rule_of(m)}: {m.message}" for m in matches if rule_of(m) not in IGNORE_RULES]
+    return [f"{rule_of(m)}: {m.message}" for m in matches if rule_of(m) not in IGNORE_RULES and str(getattr(m, "category", "")).upper() not in IGNORE_CATEGORIES]
 
 
 def fix_sentence(text: str, issues: list[str]) -> str:
+    try:
+        return _fix_sentence(text, issues)
+    except Exception as exc:
+        print("fix failed:", exc, flush=True)
+        return text
+
+
+def _fix_sentence(text: str, issues: list[str]) -> str:
     r = requests.post(
         "http://127.0.0.1:11434/api/generate",
         json={
@@ -301,9 +316,10 @@ def fix_sentence(text: str, issues: list[str]) -> str:
             "stream": False,
             "options": {"temperature": 0},
         },
-        timeout=600,
+        timeout=1800,
     )
-    return r.json()["response"].strip().strip('"').splitlines()[0].strip()
+    lines = r.json().get("response", "").strip().strip('"').splitlines()
+    return lines[0].strip() if lines else text
 
 
 flagged_log: list[dict] = []
@@ -356,8 +372,20 @@ def process(level: str, unit: dict) -> None:
         except Exception as exc:
             bump("lessons_failed")
             print(unit["id"], "lesson", n, "failed:", exc, flush=True)
-    words = convert_words(ask(words_prompt(level, unit), WORDS_SCHEMA, f"{unit['id']}-words")["words"]) if not unit["decks"] else []
-    texts = ask(paragraphs_prompt(level, unit), PARA_SCHEMA, f"{unit['id']}-texts")["texts"]
+    words, texts = [], []
+    if not unit["decks"]:
+        try:
+            words = convert_words(ask(words_prompt(level, unit), WORDS_SCHEMA, f"{unit['id']}-words")["words"])
+        except Exception as exc:
+            bump("words_failed")
+            print(unit["id"], "words failed:", exc, flush=True)
+    try:
+        texts = ask(paragraphs_prompt(level, unit), PARA_SCHEMA, f"{unit['id']}-texts")["texts"]
+    except Exception as exc:
+        bump("texts_failed")
+        print(unit["id"], "texts failed:", exc, flush=True)
+    if not lessons:
+        raise RuntimeError(f"{unit['id']}: no lessons")
     data = {
         "unit": unit["id"],
         "level": level,
@@ -372,7 +400,7 @@ def process(level: str, unit: dict) -> None:
 
 jobs = [(lvl["id"], u) for lvl in curriculum["levels"] for u in lvl["units"] if u["id"] not in existing_units]
 print(f"{len(jobs)} units to write", flush=True)
-with ThreadPoolExecutor(max_workers=4) as pool:
+with ThreadPoolExecutor(max_workers=3) as pool:
     for f in [pool.submit(process, lvl, u) for lvl, u in jobs]:
         try:
             f.result()

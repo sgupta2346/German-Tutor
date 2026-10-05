@@ -1,203 +1,1870 @@
 [
-  {"id": "a1-basics", "level": "A1", "title": "First words", "titleDe": "Erste Wörter", "icon": "hand", "words": [
-    {"de": "hallo", "en": "hello", "pos": "phrase", "ex": {"de": "Hallo, ich bin Anna.", "en": "Hello, I am Anna."}},
-    {"de": "tschüss", "en": "bye", "pos": "phrase", "ex": {"de": "Tschüss, bis morgen!", "en": "Bye, see you tomorrow!"}},
-    {"de": "danke", "en": "thank you", "pos": "phrase", "ex": {"de": "Danke für den Kaffee.", "en": "Thanks for the coffee."}},
-    {"de": "bitte", "en": "please, you're welcome", "pos": "phrase", "ex": {"de": "Ein Wasser, bitte.", "en": "A water, please."}},
-    {"de": "ja", "en": "yes", "pos": "phrase", "ex": {"de": "Ja, das ist richtig.", "en": "Yes, that is right."}},
-    {"de": "nein", "en": "no", "pos": "phrase", "ex": {"de": "Nein, danke.", "en": "No, thank you."}},
-    {"de": "Entschuldigung", "en": "excuse me, sorry", "pos": "noun", "gender": "f", "plural": "Entschuldigungen", "ex": {"de": "Entschuldigung, wo ist der Bahnhof?", "en": "Excuse me, where is the station?"}},
-    {"de": "guten Morgen", "en": "good morning", "pos": "phrase", "ex": {"de": "Guten Morgen, Herr Weber!", "en": "Good morning, Mr Weber!"}},
-    {"de": "guten Tag", "en": "good day, hello", "pos": "phrase", "ex": {"de": "Guten Tag, wie geht es Ihnen?", "en": "Hello, how are you?"}},
-    {"de": "guten Abend", "en": "good evening", "pos": "phrase", "ex": {"de": "Guten Abend und willkommen!", "en": "Good evening and welcome!"}},
-    {"de": "gute Nacht", "en": "good night", "pos": "phrase", "ex": {"de": "Gute Nacht, schlaf gut!", "en": "Good night, sleep well!"}},
-    {"de": "auf Wiedersehen", "en": "goodbye", "pos": "phrase", "ex": {"de": "Auf Wiedersehen, Frau Klein.", "en": "Goodbye, Ms Klein."}},
-    {"de": "Wie geht's?", "en": "How are you?", "pos": "phrase", "ex": {"de": "Hallo Tom, wie geht's?", "en": "Hi Tom, how are you?"}},
-    {"de": "gut", "en": "good, well", "pos": "adj", "ex": {"de": "Mir geht es gut.", "en": "I am doing well."}},
-    {"de": "Herr", "en": "Mr, gentleman", "pos": "noun", "gender": "m", "plural": "Herren", "ex": {"de": "Das ist Herr Müller.", "en": "That is Mr Müller."}},
-    {"de": "Frau", "en": "Ms, woman, wife", "pos": "noun", "gender": "f", "plural": "Frauen", "ex": {"de": "Frau Schmidt wohnt hier.", "en": "Ms Schmidt lives here."}}
-  ]},
-  {"id": "a1-numbers", "level": "A1", "title": "Numbers", "titleDe": "Zahlen", "icon": "hash", "words": [
-    {"de": "null", "en": "zero", "pos": "num", "ex": {"de": "Die Nummer endet mit null.", "en": "The number ends with zero."}},
-    {"de": "eins", "en": "one", "pos": "num", "ex": {"de": "Eins, zwei, drei, los!", "en": "One, two, three, go!"}},
-    {"de": "zwei", "en": "two", "pos": "num", "ex": {"de": "Ich habe zwei Brüder.", "en": "I have two brothers."}},
-    {"de": "drei", "en": "three", "pos": "num", "ex": {"de": "Wir sind drei Personen.", "en": "We are three people."}},
-    {"de": "vier", "en": "four", "pos": "num", "ex": {"de": "Der Tisch hat vier Beine.", "en": "The table has four legs."}},
-    {"de": "fünf", "en": "five", "pos": "num", "ex": {"de": "Es ist fünf Uhr.", "en": "It is five o'clock."}},
-    {"de": "sechs", "en": "six", "pos": "num", "ex": {"de": "Ich stehe um sechs auf.", "en": "I get up at six."}},
-    {"de": "sieben", "en": "seven", "pos": "num", "ex": {"de": "Die Woche hat sieben Tage.", "en": "The week has seven days."}},
-    {"de": "acht", "en": "eight", "pos": "num", "ex": {"de": "Der Kurs beginnt um acht.", "en": "The course starts at eight."}},
-    {"de": "neun", "en": "nine", "pos": "num", "ex": {"de": "Mein Sohn ist neun.", "en": "My son is nine."}},
-    {"de": "zehn", "en": "ten", "pos": "num", "ex": {"de": "Das kostet zehn Euro.", "en": "That costs ten euros."}},
-    {"de": "elf", "en": "eleven", "pos": "num", "ex": {"de": "Ein Fußballteam hat elf Spieler.", "en": "A football team has eleven players."}},
-    {"de": "zwölf", "en": "twelve", "pos": "num", "ex": {"de": "Ein Jahr hat zwölf Monate.", "en": "A year has twelve months."}},
-    {"de": "zwanzig", "en": "twenty", "pos": "num", "ex": {"de": "Sie ist zwanzig Jahre alt.", "en": "She is twenty years old."}},
-    {"de": "hundert", "en": "hundred", "pos": "num", "ex": {"de": "Das sind hundert Meter.", "en": "That is a hundred metres."}}
-  ]},
-  {"id": "a1-family", "level": "A1", "title": "Family", "titleDe": "Familie", "icon": "users", "words": [
-    {"de": "Familie", "en": "family", "pos": "noun", "gender": "f", "plural": "Familien", "ex": {"de": "Meine Familie ist groß.", "en": "My family is big."}},
-    {"de": "Mutter", "en": "mother", "pos": "noun", "gender": "f", "plural": "Mütter", "ex": {"de": "Meine Mutter heißt Eva.", "en": "My mother is called Eva."}},
-    {"de": "Vater", "en": "father", "pos": "noun", "gender": "m", "plural": "Väter", "ex": {"de": "Mein Vater arbeitet viel.", "en": "My father works a lot."}},
-    {"de": "Eltern", "en": "parents", "pos": "noun", "gender": "pl", "ex": {"de": "Meine Eltern wohnen in Berlin.", "en": "My parents live in Berlin."}},
-    {"de": "Bruder", "en": "brother", "pos": "noun", "gender": "m", "plural": "Brüder", "ex": {"de": "Mein Bruder ist jünger.", "en": "My brother is younger."}},
-    {"de": "Schwester", "en": "sister", "pos": "noun", "gender": "f", "plural": "Schwestern", "ex": {"de": "Hast du eine Schwester?", "en": "Do you have a sister?"}},
-    {"de": "Sohn", "en": "son", "pos": "noun", "gender": "m", "plural": "Söhne", "ex": {"de": "Ihr Sohn spielt Fußball.", "en": "Her son plays football."}},
-    {"de": "Tochter", "en": "daughter", "pos": "noun", "gender": "f", "plural": "Töchter", "ex": {"de": "Seine Tochter ist Ärztin.", "en": "His daughter is a doctor."}},
-    {"de": "Kind", "en": "child", "pos": "noun", "gender": "n", "plural": "Kinder", "ex": {"de": "Das Kind schläft.", "en": "The child is sleeping."}},
-    {"de": "Großvater", "en": "grandfather", "pos": "noun", "gender": "m", "plural": "Großväter", "ex": {"de": "Mein Großvater ist achtzig.", "en": "My grandfather is eighty."}},
-    {"de": "Großmutter", "en": "grandmother", "pos": "noun", "gender": "f", "plural": "Großmütter", "ex": {"de": "Die Großmutter backt Kuchen.", "en": "Grandmother bakes cake."}},
-    {"de": "Mann", "en": "man, husband", "pos": "noun", "gender": "m", "plural": "Männer", "ex": {"de": "Ihr Mann kommt aus Wien.", "en": "Her husband is from Vienna."}},
-    {"de": "Freund", "en": "friend, boyfriend", "pos": "noun", "gender": "m", "plural": "Freunde", "ex": {"de": "Das ist mein Freund Max.", "en": "This is my friend Max."}},
-    {"de": "Freundin", "en": "friend (f), girlfriend", "pos": "noun", "gender": "f", "plural": "Freundinnen", "ex": {"de": "Meine Freundin lernt Englisch.", "en": "My friend is learning English."}},
-    {"de": "Baby", "en": "baby", "pos": "noun", "gender": "n", "plural": "Babys", "ex": {"de": "Das Baby lacht.", "en": "The baby is laughing."}}
-  ]},
-  {"id": "a1-food", "level": "A1", "title": "Food and drink", "titleDe": "Essen und Trinken", "icon": "coffee", "words": [
-    {"de": "Brot", "en": "bread", "pos": "noun", "gender": "n", "plural": "Brote", "ex": {"de": "Das Brot ist frisch.", "en": "The bread is fresh."}},
-    {"de": "Wasser", "en": "water", "pos": "noun", "gender": "n", "ex": {"de": "Ich trinke viel Wasser.", "en": "I drink a lot of water."}},
-    {"de": "Kaffee", "en": "coffee", "pos": "noun", "gender": "m", "plural": "Kaffees", "ex": {"de": "Einen Kaffee, bitte.", "en": "A coffee, please."}},
-    {"de": "Tee", "en": "tea", "pos": "noun", "gender": "m", "plural": "Tees", "ex": {"de": "Der Tee ist heiß.", "en": "The tea is hot."}},
-    {"de": "Milch", "en": "milk", "pos": "noun", "gender": "f", "ex": {"de": "Ohne Milch, bitte.", "en": "Without milk, please."}},
-    {"de": "Apfel", "en": "apple", "pos": "noun", "gender": "m", "plural": "Äpfel", "ex": {"de": "Der Apfel ist rot.", "en": "The apple is red."}},
-    {"de": "Kartoffel", "en": "potato", "pos": "noun", "gender": "f", "plural": "Kartoffeln", "ex": {"de": "Wir essen Kartoffeln.", "en": "We are eating potatoes."}},
-    {"de": "Ei", "en": "egg", "pos": "noun", "gender": "n", "plural": "Eier", "ex": {"de": "Ich esse ein Ei zum Frühstück.", "en": "I eat an egg for breakfast."}},
-    {"de": "Käse", "en": "cheese", "pos": "noun", "gender": "m", "ex": {"de": "Der Käse kommt aus der Schweiz.", "en": "The cheese comes from Switzerland."}},
-    {"de": "Fleisch", "en": "meat", "pos": "noun", "gender": "n", "ex": {"de": "Ich esse kein Fleisch.", "en": "I don't eat meat."}},
-    {"de": "Fisch", "en": "fish", "pos": "noun", "gender": "m", "plural": "Fische", "ex": {"de": "Heute gibt es Fisch.", "en": "Today there is fish."}},
-    {"de": "Bier", "en": "beer", "pos": "noun", "gender": "n", "plural": "Biere", "ex": {"de": "Zwei Bier, bitte.", "en": "Two beers, please."}},
-    {"de": "Wein", "en": "wine", "pos": "noun", "gender": "m", "plural": "Weine", "ex": {"de": "Der Wein ist trocken.", "en": "The wine is dry."}},
-    {"de": "Kuchen", "en": "cake", "pos": "noun", "gender": "m", "plural": "Kuchen", "ex": {"de": "Der Kuchen schmeckt gut.", "en": "The cake tastes good."}},
-    {"de": "Frühstück", "en": "breakfast", "pos": "noun", "gender": "n", "plural": "Frühstücke", "ex": {"de": "Das Frühstück ist um acht.", "en": "Breakfast is at eight."}},
-    {"de": "essen", "en": "to eat", "pos": "verb", "ex": {"de": "Wir essen um zwölf.", "en": "We eat at twelve."}},
-    {"de": "trinken", "en": "to drink", "pos": "verb", "ex": {"de": "Was möchtest du trinken?", "en": "What would you like to drink?"}}
-  ]},
-  {"id": "a1-home", "level": "A1", "title": "At home", "titleDe": "Zu Hause", "icon": "home", "words": [
-    {"de": "Haus", "en": "house", "pos": "noun", "gender": "n", "plural": "Häuser", "ex": {"de": "Das Haus hat einen Garten.", "en": "The house has a garden."}},
-    {"de": "Wohnung", "en": "flat, apartment", "pos": "noun", "gender": "f", "plural": "Wohnungen", "ex": {"de": "Die Wohnung ist klein.", "en": "The flat is small."}},
-    {"de": "Zimmer", "en": "room", "pos": "noun", "gender": "n", "plural": "Zimmer", "ex": {"de": "Mein Zimmer ist hell.", "en": "My room is bright."}},
-    {"de": "Küche", "en": "kitchen", "pos": "noun", "gender": "f", "plural": "Küchen", "ex": {"de": "Wir kochen in der Küche.", "en": "We cook in the kitchen."}},
-    {"de": "Bad", "en": "bathroom", "pos": "noun", "gender": "n", "plural": "Bäder", "ex": {"de": "Das Bad ist neu.", "en": "The bathroom is new."}},
-    {"de": "Tisch", "en": "table", "pos": "noun", "gender": "m", "plural": "Tische", "ex": {"de": "Der Tisch ist aus Holz.", "en": "The table is made of wood."}},
-    {"de": "Stuhl", "en": "chair", "pos": "noun", "gender": "m", "plural": "Stühle", "ex": {"de": "Der Stuhl ist bequem.", "en": "The chair is comfortable."}},
-    {"de": "Bett", "en": "bed", "pos": "noun", "gender": "n", "plural": "Betten", "ex": {"de": "Das Bett ist groß.", "en": "The bed is big."}},
-    {"de": "Tür", "en": "door", "pos": "noun", "gender": "f", "plural": "Türen", "ex": {"de": "Mach bitte die Tür zu.", "en": "Please close the door."}},
-    {"de": "Fenster", "en": "window", "pos": "noun", "gender": "n", "plural": "Fenster", "ex": {"de": "Das Fenster ist offen.", "en": "The window is open."}},
-    {"de": "Lampe", "en": "lamp", "pos": "noun", "gender": "f", "plural": "Lampen", "ex": {"de": "Die Lampe ist kaputt.", "en": "The lamp is broken."}},
-    {"de": "Sofa", "en": "sofa", "pos": "noun", "gender": "n", "plural": "Sofas", "ex": {"de": "Die Katze schläft auf dem Sofa.", "en": "The cat sleeps on the sofa."}},
-    {"de": "Schlüssel", "en": "key", "pos": "noun", "gender": "m", "plural": "Schlüssel", "ex": {"de": "Wo ist mein Schlüssel?", "en": "Where is my key?"}},
-    {"de": "Garten", "en": "garden", "pos": "noun", "gender": "m", "plural": "Gärten", "ex": {"de": "Die Kinder spielen im Garten.", "en": "The children play in the garden."}}
-  ]},
-  {"id": "a1-time", "level": "A1", "title": "Time and days", "titleDe": "Zeit und Tage", "icon": "clock", "words": [
-    {"de": "Tag", "en": "day", "pos": "noun", "gender": "m", "plural": "Tage", "ex": {"de": "Heute ist ein schöner Tag.", "en": "Today is a beautiful day."}},
-    {"de": "Woche", "en": "week", "pos": "noun", "gender": "f", "plural": "Wochen", "ex": {"de": "Nächste Woche habe ich Urlaub.", "en": "Next week I am on holiday."}},
-    {"de": "Monat", "en": "month", "pos": "noun", "gender": "m", "plural": "Monate", "ex": {"de": "Der Kurs dauert einen Monat.", "en": "The course lasts one month."}},
-    {"de": "Jahr", "en": "year", "pos": "noun", "gender": "n", "plural": "Jahre", "ex": {"de": "Frohes neues Jahr!", "en": "Happy new year!"}},
-    {"de": "Stunde", "en": "hour, lesson", "pos": "noun", "gender": "f", "plural": "Stunden", "ex": {"de": "Ich warte eine Stunde.", "en": "I wait an hour."}},
-    {"de": "Minute", "en": "minute", "pos": "noun", "gender": "f", "plural": "Minuten", "ex": {"de": "Der Bus kommt in fünf Minuten.", "en": "The bus comes in five minutes."}},
-    {"de": "heute", "en": "today", "pos": "adv", "ex": {"de": "Heute ist Montag.", "en": "Today is Monday."}},
-    {"de": "morgen", "en": "tomorrow", "pos": "adv", "ex": {"de": "Morgen arbeite ich nicht.", "en": "Tomorrow I am not working."}},
-    {"de": "gestern", "en": "yesterday", "pos": "adv", "ex": {"de": "Gestern war es kalt.", "en": "Yesterday it was cold."}},
-    {"de": "Morgen", "en": "morning", "pos": "noun", "gender": "m", "plural": "Morgen", "ex": {"de": "Am Morgen trinke ich Kaffee.", "en": "In the morning I drink coffee."}},
-    {"de": "Abend", "en": "evening", "pos": "noun", "gender": "m", "plural": "Abende", "ex": {"de": "Am Abend lese ich.", "en": "In the evening I read."}},
-    {"de": "Nacht", "en": "night", "pos": "noun", "gender": "f", "plural": "Nächte", "ex": {"de": "Die Nacht ist ruhig.", "en": "The night is quiet."}},
-    {"de": "Montag", "en": "Monday", "pos": "noun", "gender": "m", "plural": "Montage", "ex": {"de": "Am Montag habe ich Deutsch.", "en": "On Monday I have German."}},
-    {"de": "Mittwoch", "en": "Wednesday", "pos": "noun", "gender": "m", "plural": "Mittwoche", "ex": {"de": "Am Mittwoch gehe ich schwimmen.", "en": "On Wednesday I go swimming."}},
-    {"de": "Freitag", "en": "Friday", "pos": "noun", "gender": "m", "plural": "Freitage", "ex": {"de": "Freitag ist mein Lieblingstag.", "en": "Friday is my favourite day."}},
-    {"de": "Wochenende", "en": "weekend", "pos": "noun", "gender": "n", "plural": "Wochenenden", "ex": {"de": "Schönes Wochenende!", "en": "Have a nice weekend!"}}
-  ]},
-  {"id": "a1-colors", "level": "A1", "title": "Colours", "titleDe": "Farben", "icon": "palette", "words": [
-    {"de": "rot", "en": "red", "pos": "adj", "ex": {"de": "Die Ampel ist rot.", "en": "The traffic light is red."}},
-    {"de": "blau", "en": "blue", "pos": "adj", "ex": {"de": "Der Himmel ist blau.", "en": "The sky is blue."}},
-    {"de": "grün", "en": "green", "pos": "adj", "ex": {"de": "Das Gras ist grün.", "en": "The grass is green."}},
-    {"de": "gelb", "en": "yellow", "pos": "adj", "ex": {"de": "Die Banane ist gelb.", "en": "The banana is yellow."}},
-    {"de": "schwarz", "en": "black", "pos": "adj", "ex": {"de": "Ich trinke den Kaffee schwarz.", "en": "I drink my coffee black."}},
-    {"de": "weiß", "en": "white", "pos": "adj", "ex": {"de": "Der Schnee ist weiß.", "en": "The snow is white."}},
-    {"de": "grau", "en": "grey", "pos": "adj", "ex": {"de": "Heute ist der Himmel grau.", "en": "Today the sky is grey."}},
-    {"de": "braun", "en": "brown", "pos": "adj", "ex": {"de": "Der Hund ist braun.", "en": "The dog is brown."}},
-    {"de": "orange", "en": "orange", "pos": "adj", "ex": {"de": "Die Jacke ist orange.", "en": "The jacket is orange."}},
-    {"de": "rosa", "en": "pink", "pos": "adj", "ex": {"de": "Sie mag rosa Blumen.", "en": "She likes pink flowers."}},
-    {"de": "lila", "en": "purple", "pos": "adj", "ex": {"de": "Das Kleid ist lila.", "en": "The dress is purple."}},
-    {"de": "hell", "en": "light, bright", "pos": "adj", "ex": {"de": "Das Zimmer ist hell.", "en": "The room is bright."}},
-    {"de": "dunkel", "en": "dark", "pos": "adj", "ex": {"de": "Im Winter ist es früh dunkel.", "en": "In winter it gets dark early."}},
-    {"de": "bunt", "en": "colourful", "pos": "adj", "ex": {"de": "Die Stadt ist bunt.", "en": "The city is colourful."}}
-  ]},
-  {"id": "a1-city", "level": "A1", "title": "City and transport", "titleDe": "Stadt und Verkehr", "icon": "train", "words": [
-    {"de": "Stadt", "en": "city, town", "pos": "noun", "gender": "f", "plural": "Städte", "ex": {"de": "Hamburg ist eine große Stadt.", "en": "Hamburg is a big city."}},
-    {"de": "Straße", "en": "street", "pos": "noun", "gender": "f", "plural": "Straßen", "ex": {"de": "Ich wohne in der Goethestraße.", "en": "I live on Goethe Street."}},
-    {"de": "Bahnhof", "en": "train station", "pos": "noun", "gender": "m", "plural": "Bahnhöfe", "ex": {"de": "Der Bahnhof ist im Zentrum.", "en": "The station is in the centre."}},
-    {"de": "Zug", "en": "train", "pos": "noun", "gender": "m", "plural": "Züge", "ex": {"de": "Der Zug hat Verspätung.", "en": "The train is delayed."}},
-    {"de": "Bus", "en": "bus", "pos": "noun", "gender": "m", "plural": "Busse", "ex": {"de": "Ich fahre mit dem Bus.", "en": "I go by bus."}},
-    {"de": "Auto", "en": "car", "pos": "noun", "gender": "n", "plural": "Autos", "ex": {"de": "Das Auto ist neu.", "en": "The car is new."}},
-    {"de": "Fahrrad", "en": "bicycle", "pos": "noun", "gender": "n", "plural": "Fahrräder", "ex": {"de": "Ich fahre gern Fahrrad.", "en": "I like riding my bike."}},
-    {"de": "U-Bahn", "en": "underground, subway", "pos": "noun", "gender": "f", "plural": "U-Bahnen", "ex": {"de": "Die U-Bahn ist schnell.", "en": "The underground is fast."}},
-    {"de": "Flughafen", "en": "airport", "pos": "noun", "gender": "m", "plural": "Flughäfen", "ex": {"de": "Wie komme ich zum Flughafen?", "en": "How do I get to the airport?"}},
-    {"de": "Supermarkt", "en": "supermarket", "pos": "noun", "gender": "m", "plural": "Supermärkte", "ex": {"de": "Der Supermarkt ist um die Ecke.", "en": "The supermarket is around the corner."}},
-    {"de": "Apotheke", "en": "pharmacy", "pos": "noun", "gender": "f", "plural": "Apotheken", "ex": {"de": "Die Apotheke ist geschlossen.", "en": "The pharmacy is closed."}},
-    {"de": "Krankenhaus", "en": "hospital", "pos": "noun", "gender": "n", "plural": "Krankenhäuser", "ex": {"de": "Sie arbeitet im Krankenhaus.", "en": "She works in the hospital."}},
-    {"de": "Bank", "en": "bank, bench", "pos": "noun", "gender": "f", "plural": "Banken", "ex": {"de": "Die Bank öffnet um neun.", "en": "The bank opens at nine."}},
-    {"de": "links", "en": "left", "pos": "adv", "ex": {"de": "Gehen Sie hier links.", "en": "Go left here."}},
-    {"de": "rechts", "en": "right", "pos": "adv", "ex": {"de": "Das Café ist rechts.", "en": "The café is on the right."}},
-    {"de": "geradeaus", "en": "straight ahead", "pos": "adv", "ex": {"de": "Immer geradeaus, bitte.", "en": "Keep going straight ahead."}}
-  ]},
-  {"id": "a1-verbs", "level": "A1", "title": "Core verbs", "titleDe": "Wichtige Verben", "icon": "zap", "words": [
-    {"de": "sein", "en": "to be", "pos": "verb", "ex": {"de": "Ich bin müde.", "en": "I am tired."}},
-    {"de": "haben", "en": "to have", "pos": "verb", "ex": {"de": "Wir haben Zeit.", "en": "We have time."}},
-    {"de": "heißen", "en": "to be called", "pos": "verb", "ex": {"de": "Wie heißt du?", "en": "What is your name?"}},
-    {"de": "gehen", "en": "to go, to walk", "pos": "verb", "ex": {"de": "Ich gehe nach Hause.", "en": "I am going home."}},
-    {"de": "kommen", "en": "to come", "pos": "verb", "ex": {"de": "Woher kommst du?", "en": "Where are you from?"}},
-    {"de": "machen", "en": "to do, to make", "pos": "verb", "ex": {"de": "Was machst du heute?", "en": "What are you doing today?"}},
-    {"de": "sprechen", "en": "to speak", "pos": "verb", "ex": {"de": "Sprechen Sie Englisch?", "en": "Do you speak English?"}},
-    {"de": "verstehen", "en": "to understand", "pos": "verb", "ex": {"de": "Ich verstehe das nicht.", "en": "I don't understand that."}},
-    {"de": "lernen", "en": "to learn", "pos": "verb", "ex": {"de": "Ich lerne Deutsch.", "en": "I am learning German."}},
-    {"de": "wohnen", "en": "to live (reside)", "pos": "verb", "ex": {"de": "Wo wohnst du?", "en": "Where do you live?"}},
-    {"de": "arbeiten", "en": "to work", "pos": "verb", "ex": {"de": "Er arbeitet in München.", "en": "He works in Munich."}},
-    {"de": "spielen", "en": "to play", "pos": "verb", "ex": {"de": "Die Kinder spielen draußen.", "en": "The children are playing outside."}},
-    {"de": "kaufen", "en": "to buy", "pos": "verb", "ex": {"de": "Ich kaufe Brot.", "en": "I am buying bread."}},
-    {"de": "schlafen", "en": "to sleep", "pos": "verb", "ex": {"de": "Das Baby schläft.", "en": "The baby is sleeping."}},
-    {"de": "fahren", "en": "to drive, to travel", "pos": "verb", "ex": {"de": "Wir fahren nach Berlin.", "en": "We are going to Berlin."}},
-    {"de": "möchten", "en": "would like", "pos": "verb", "ex": {"de": "Ich möchte einen Tee.", "en": "I would like a tea."}}
-  ]},
-  {"id": "a1-adjectives", "level": "A1", "title": "Describing things", "titleDe": "Adjektive", "icon": "sparkles", "words": [
-    {"de": "groß", "en": "big, tall", "pos": "adj", "ex": {"de": "Mein Bruder ist groß.", "en": "My brother is tall."}},
-    {"de": "klein", "en": "small", "pos": "adj", "ex": {"de": "Die Katze ist klein.", "en": "The cat is small."}},
-    {"de": "neu", "en": "new", "pos": "adj", "ex": {"de": "Das Handy ist neu.", "en": "The phone is new."}},
-    {"de": "alt", "en": "old", "pos": "adj", "ex": {"de": "Das Haus ist sehr alt.", "en": "The house is very old."}},
-    {"de": "jung", "en": "young", "pos": "adj", "ex": {"de": "Sie ist noch jung.", "en": "She is still young."}},
-    {"de": "schön", "en": "beautiful, nice", "pos": "adj", "ex": {"de": "Das Wetter ist schön.", "en": "The weather is nice."}},
-    {"de": "teuer", "en": "expensive", "pos": "adj", "ex": {"de": "München ist teuer.", "en": "Munich is expensive."}},
-    {"de": "billig", "en": "cheap", "pos": "adj", "ex": {"de": "Das Ticket ist billig.", "en": "The ticket is cheap."}},
-    {"de": "schnell", "en": "fast", "pos": "adj", "ex": {"de": "Der Zug ist schnell.", "en": "The train is fast."}},
-    {"de": "langsam", "en": "slow", "pos": "adj", "ex": {"de": "Bitte sprechen Sie langsam.", "en": "Please speak slowly."}},
-    {"de": "warm", "en": "warm", "pos": "adj", "ex": {"de": "Heute ist es warm.", "en": "Today it is warm."}},
-    {"de": "kalt", "en": "cold", "pos": "adj", "ex": {"de": "Das Wasser ist kalt.", "en": "The water is cold."}},
-    {"de": "müde", "en": "tired", "pos": "adj", "ex": {"de": "Ich bin so müde.", "en": "I am so tired."}},
-    {"de": "glücklich", "en": "happy", "pos": "adj", "ex": {"de": "Wir sind sehr glücklich.", "en": "We are very happy."}},
-    {"de": "traurig", "en": "sad", "pos": "adj", "ex": {"de": "Warum bist du traurig?", "en": "Why are you sad?"}}
-  ]},
-  {"id": "a1-questions", "level": "A1", "title": "Question words", "titleDe": "W-Fragen", "icon": "help", "words": [
-    {"de": "wer", "en": "who", "pos": "pron", "ex": {"de": "Wer ist das?", "en": "Who is that?"}},
-    {"de": "was", "en": "what", "pos": "pron", "ex": {"de": "Was ist das?", "en": "What is that?"}},
-    {"de": "wo", "en": "where", "pos": "adv", "ex": {"de": "Wo ist die Toilette?", "en": "Where is the toilet?"}},
-    {"de": "woher", "en": "where from", "pos": "adv", "ex": {"de": "Woher kommen Sie?", "en": "Where are you from?"}},
-    {"de": "wohin", "en": "where to", "pos": "adv", "ex": {"de": "Wohin fährst du?", "en": "Where are you going?"}},
-    {"de": "wann", "en": "when", "pos": "adv", "ex": {"de": "Wann beginnt der Film?", "en": "When does the film start?"}},
-    {"de": "warum", "en": "why", "pos": "adv", "ex": {"de": "Warum lernst du Deutsch?", "en": "Why are you learning German?"}},
-    {"de": "wie", "en": "how", "pos": "adv", "ex": {"de": "Wie heißt du?", "en": "What is your name?"}},
-    {"de": "wie viel", "en": "how much", "pos": "adv", "ex": {"de": "Wie viel kostet das?", "en": "How much does that cost?"}},
-    {"de": "welche", "en": "which", "pos": "pron", "ex": {"de": "Welche Farbe magst du?", "en": "Which colour do you like?"}}
-  ]},
-  {"id": "a1-body", "level": "A1", "title": "The body", "titleDe": "Der Körper", "icon": "heart", "words": [
-    {"de": "Kopf", "en": "head", "pos": "noun", "gender": "m", "plural": "Köpfe", "ex": {"de": "Mein Kopf tut weh.", "en": "My head hurts."}},
-    {"de": "Auge", "en": "eye", "pos": "noun", "gender": "n", "plural": "Augen", "ex": {"de": "Sie hat blaue Augen.", "en": "She has blue eyes."}},
-    {"de": "Ohr", "en": "ear", "pos": "noun", "gender": "n", "plural": "Ohren", "ex": {"de": "Das Ohr tut weh.", "en": "The ear hurts."}},
-    {"de": "Nase", "en": "nose", "pos": "noun", "gender": "f", "plural": "Nasen", "ex": {"de": "Meine Nase ist kalt.", "en": "My nose is cold."}},
-    {"de": "Mund", "en": "mouth", "pos": "noun", "gender": "m", "plural": "Münder", "ex": {"de": "Mach den Mund auf.", "en": "Open your mouth."}},
-    {"de": "Zahn", "en": "tooth", "pos": "noun", "gender": "m", "plural": "Zähne", "ex": {"de": "Ich putze meine Zähne.", "en": "I brush my teeth."}},
-    {"de": "Hand", "en": "hand", "pos": "noun", "gender": "f", "plural": "Hände", "ex": {"de": "Wasch dir die Hände.", "en": "Wash your hands."}},
-    {"de": "Arm", "en": "arm", "pos": "noun", "gender": "m", "plural": "Arme", "ex": {"de": "Er hat starke Arme.", "en": "He has strong arms."}},
-    {"de": "Bein", "en": "leg", "pos": "noun", "gender": "n", "plural": "Beine", "ex": {"de": "Mein Bein ist gebrochen.", "en": "My leg is broken."}},
-    {"de": "Fuß", "en": "foot", "pos": "noun", "gender": "m", "plural": "Füße", "ex": {"de": "Ich gehe zu Fuß.", "en": "I am walking."}},
-    {"de": "Bauch", "en": "belly, stomach", "pos": "noun", "gender": "m", "plural": "Bäuche", "ex": {"de": "Ich habe Bauchschmerzen.", "en": "I have a stomach ache."}},
-    {"de": "Rücken", "en": "back", "pos": "noun", "gender": "m", "plural": "Rücken", "ex": {"de": "Mein Rücken tut weh.", "en": "My back hurts."}},
-    {"de": "Herz", "en": "heart", "pos": "noun", "gender": "n", "plural": "Herzen", "ex": {"de": "Das Herz schlägt schnell.", "en": "The heart beats fast."}}
-  ]}
+  {
+    "id": "a1-adjectives",
+    "level": "A1",
+    "title": "Describing things",
+    "titleDe": "Adjektive",
+    "icon": "sparkles",
+    "words": [
+      {
+        "de": "groß",
+        "en": "big, tall",
+        "pos": "adj",
+        "ex": {
+          "de": "Mein Bruder ist groß.",
+          "en": "My brother is tall."
+        }
+      },
+      {
+        "de": "klein",
+        "en": "small",
+        "pos": "adj",
+        "ex": {
+          "de": "Die Katze ist klein.",
+          "en": "The cat is small."
+        }
+      },
+      {
+        "de": "neu",
+        "en": "new",
+        "pos": "adj",
+        "ex": {
+          "de": "Das Handy ist neu.",
+          "en": "The phone is new."
+        }
+      },
+      {
+        "de": "alt",
+        "en": "old",
+        "pos": "adj",
+        "ex": {
+          "de": "Das Haus ist sehr alt.",
+          "en": "The house is very old."
+        }
+      },
+      {
+        "de": "jung",
+        "en": "young",
+        "pos": "adj",
+        "ex": {
+          "de": "Sie ist noch jung.",
+          "en": "She is still young."
+        }
+      },
+      {
+        "de": "schön",
+        "en": "beautiful, nice",
+        "pos": "adj",
+        "ex": {
+          "de": "Das Wetter ist schön.",
+          "en": "The weather is nice."
+        }
+      },
+      {
+        "de": "teuer",
+        "en": "expensive",
+        "pos": "adj",
+        "ex": {
+          "de": "München ist teuer.",
+          "en": "Munich is expensive."
+        }
+      },
+      {
+        "de": "billig",
+        "en": "cheap",
+        "pos": "adj",
+        "ex": {
+          "de": "Das Ticket ist billig.",
+          "en": "The ticket is cheap."
+        }
+      },
+      {
+        "de": "schnell",
+        "en": "fast",
+        "pos": "adj",
+        "ex": {
+          "de": "Der Zug ist schnell.",
+          "en": "The train is fast."
+        }
+      },
+      {
+        "de": "langsam",
+        "en": "slow",
+        "pos": "adj",
+        "ex": {
+          "de": "Bitte sprechen Sie langsam.",
+          "en": "Please speak slowly."
+        }
+      },
+      {
+        "de": "warm",
+        "en": "warm",
+        "pos": "adj",
+        "ex": {
+          "de": "Heute ist es warm.",
+          "en": "Today it is warm."
+        }
+      },
+      {
+        "de": "kalt",
+        "en": "cold",
+        "pos": "adj",
+        "ex": {
+          "de": "Das Wasser ist kalt.",
+          "en": "The water is cold."
+        }
+      },
+      {
+        "de": "müde",
+        "en": "tired",
+        "pos": "adj",
+        "ex": {
+          "de": "Ich bin so müde.",
+          "en": "I am so tired."
+        }
+      },
+      {
+        "de": "glücklich",
+        "en": "happy",
+        "pos": "adj",
+        "ex": {
+          "de": "Wir sind sehr glücklich.",
+          "en": "We are very happy."
+        }
+      },
+      {
+        "de": "traurig",
+        "en": "sad",
+        "pos": "adj",
+        "ex": {
+          "de": "Warum bist du traurig?",
+          "en": "Why are you sad?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "a1-basics",
+    "level": "A1",
+    "title": "First words",
+    "titleDe": "Erste Wörter",
+    "icon": "hand",
+    "words": [
+      {
+        "de": "hallo",
+        "en": "hello",
+        "pos": "phrase",
+        "ex": {
+          "de": "Hallo, ich bin Anna.",
+          "en": "Hello, I am Anna."
+        }
+      },
+      {
+        "de": "tschüss",
+        "en": "bye",
+        "pos": "phrase",
+        "ex": {
+          "de": "Tschüss, bis morgen!",
+          "en": "Bye, see you tomorrow!"
+        }
+      },
+      {
+        "de": "danke",
+        "en": "thank you",
+        "pos": "phrase",
+        "ex": {
+          "de": "Danke für den Kaffee.",
+          "en": "Thanks for the coffee."
+        }
+      },
+      {
+        "de": "bitte",
+        "en": "please, you're welcome",
+        "pos": "phrase",
+        "ex": {
+          "de": "Ein Wasser, bitte.",
+          "en": "A water, please."
+        }
+      },
+      {
+        "de": "ja",
+        "en": "yes",
+        "pos": "phrase",
+        "ex": {
+          "de": "Ja, das ist richtig.",
+          "en": "Yes, that is right."
+        }
+      },
+      {
+        "de": "nein",
+        "en": "no",
+        "pos": "phrase",
+        "ex": {
+          "de": "Nein, danke.",
+          "en": "No, thank you."
+        }
+      },
+      {
+        "de": "Entschuldigung",
+        "en": "excuse me, sorry",
+        "pos": "noun",
+        "gender": "f",
+        "plural": "Entschuldigungen",
+        "ex": {
+          "de": "Entschuldigung, wo ist der Bahnhof?",
+          "en": "Excuse me, where is the station?"
+        }
+      },
+      {
+        "de": "guten Morgen",
+        "en": "good morning",
+        "pos": "phrase",
+        "ex": {
+          "de": "Guten Morgen, Herr Weber!",
+          "en": "Good morning, Mr Weber!"
+        }
+      },
+      {
+        "de": "guten Tag",
+        "en": "good day, hello",
+        "pos": "phrase",
+        "ex": {
+          "de": "Guten Tag, wie geht es Ihnen?",
+          "en": "Hello, how are you?"
+        }
+      },
+      {
+        "de": "guten Abend",
+        "en": "good evening",
+        "pos": "phrase",
+        "ex": {
+          "de": "Guten Abend und willkommen!",
+          "en": "Good evening and welcome!"
+        }
+      },
+      {
+        "de": "gute Nacht",
+        "en": "good night",
+        "pos": "phrase",
+        "ex": {
+          "de": "Gute Nacht, schlaf gut!",
+          "en": "Good night, sleep well!"
+        }
+      },
+      {
+        "de": "auf Wiedersehen",
+        "en": "goodbye",
+        "pos": "phrase",
+        "ex": {
+          "de": "Auf Wiedersehen, Frau Klein.",
+          "en": "Goodbye, Ms Klein."
+        }
+      },
+      {
+        "de": "Wie geht's?",
+        "en": "How are you?",
+        "pos": "phrase",
+        "ex": {
+          "de": "Hallo Tom, wie geht's?",
+          "en": "Hi Tom, how are you?"
+        }
+      },
+      {
+        "de": "gut",
+        "en": "good, well",
+        "pos": "adj",
+        "ex": {
+          "de": "Mir geht es gut.",
+          "en": "I am doing well."
+        }
+      },
+      {
+        "de": "Herr",
+        "en": "Mr, gentleman",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Herren",
+        "ex": {
+          "de": "Das ist Herr Müller.",
+          "en": "That is Mr Müller."
+        }
+      },
+      {
+        "de": "Frau",
+        "en": "Ms, woman, wife",
+        "pos": "noun",
+        "gender": "f",
+        "plural": "Frauen",
+        "ex": {
+          "de": "Frau Schmidt wohnt hier.",
+          "en": "Ms Schmidt lives here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "a1-body",
+    "level": "A1",
+    "title": "The body",
+    "titleDe": "Der Körper",
+    "icon": "heart",
+    "words": [
+      {
+        "de": "Kopf",
+        "en": "head",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Köpfe",
+        "ex": {
+          "de": "Mein Kopf tut weh.",
+          "en": "My head hurts."
+        }
+      },
+      {
+        "de": "Auge",
+        "en": "eye",
+        "pos": "noun",
+        "gender": "n",
+        "plural": "Augen",
+        "ex": {
+          "de": "Sie hat blaue Augen.",
+          "en": "She has blue eyes."
+        }
+      },
+      {
+        "de": "Ohr",
+        "en": "ear",
+        "pos": "noun",
+        "gender": "n",
+        "plural": "Ohren",
+        "ex": {
+          "de": "Das Ohr tut weh.",
+          "en": "The ear hurts."
+        }
+      },
+      {
+        "de": "Nase",
+        "en": "nose",
+        "pos": "noun",
+        "gender": "f",
+        "plural": "Nasen",
+        "ex": {
+          "de": "Meine Nase ist kalt.",
+          "en": "My nose is cold."
+        }
+      },
+      {
+        "de": "Mund",
+        "en": "mouth",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Münder",
+        "ex": {
+          "de": "Mach den Mund auf.",
+          "en": "Open your mouth."
+        }
+      },
+      {
+        "de": "Zahn",
+        "en": "tooth",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Zähne",
+        "ex": {
+          "de": "Ich putze meine Zähne.",
+          "en": "I brush my teeth."
+        }
+      },
+      {
+        "de": "Hand",
+        "en": "hand",
+        "pos": "noun",
+        "gender": "f",
+        "plural": "Hände",
+        "ex": {
+          "de": "Wasch dir die Hände.",
+          "en": "Wash your hands."
+        }
+      },
+      {
+        "de": "Arm",
+        "en": "arm",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Arme",
+        "ex": {
+          "de": "Er hat starke Arme.",
+          "en": "He has strong arms."
+        }
+      },
+      {
+        "de": "Bein",
+        "en": "leg",
+        "pos": "noun",
+        "gender": "n",
+        "plural": "Beine",
+        "ex": {
+          "de": "Mein Bein ist gebrochen.",
+          "en": "My leg is broken."
+        }
+      },
+      {
+        "de": "Fuß",
+        "en": "foot",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Füße",
+        "ex": {
+          "de": "Ich gehe zu Fuß.",
+          "en": "I am walking."
+        }
+      },
+      {
+        "de": "Bauch",
+        "en": "belly, stomach",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Bäuche",
+        "ex": {
+          "de": "Ich habe Bauchschmerzen.",
+          "en": "I have a stomach ache."
+        }
+      },
+      {
+        "de": "Rücken",
+        "en": "back",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Rücken",
+        "ex": {
+          "de": "Mein Rücken tut weh.",
+          "en": "My back hurts."
+        }
+      },
+      {
+        "de": "Herz",
+        "en": "heart",
+        "pos": "noun",
+        "gender": "n",
+        "plural": "Herzen",
+        "ex": {
+          "de": "Das Herz schlägt schnell.",
+          "en": "The heart beats fast."
+        }
+      }
+    ]
+  },
+  {
+    "id": "a1-city",
+    "level": "A1",
+    "title": "City and transport",
+    "titleDe": "Stadt und Verkehr",
+    "icon": "train",
+    "words": [
+      {
+        "de": "Stadt",
+        "en": "city, town",
+        "pos": "noun",
+        "gender": "f",
+        "plural": "Städte",
+        "ex": {
+          "de": "Hamburg ist eine große Stadt.",
+          "en": "Hamburg is a big city."
+        }
+      },
+      {
+        "de": "Straße",
+        "en": "street",
+        "pos": "noun",
+        "gender": "f",
+        "plural": "Straßen",
+        "ex": {
+          "de": "Ich wohne in der Goethestraße.",
+          "en": "I live on Goethe Street."
+        }
+      },
+      {
+        "de": "Bahnhof",
+        "en": "train station",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Bahnhöfe",
+        "ex": {
+          "de": "Der Bahnhof ist im Zentrum.",
+          "en": "The station is in the centre."
+        }
+      },
+      {
+        "de": "Zug",
+        "en": "train",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Züge",
+        "ex": {
+          "de": "Der Zug hat Verspätung.",
+          "en": "The train is delayed."
+        }
+      },
+      {
+        "de": "Bus",
+        "en": "bus",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Busse",
+        "ex": {
+          "de": "Ich fahre mit dem Bus.",
+          "en": "I go by bus."
+        }
+      },
+      {
+        "de": "Auto",
+        "en": "car",
+        "pos": "noun",
+        "gender": "n",
+        "plural": "Autos",
+        "ex": {
+          "de": "Das Auto ist neu.",
+          "en": "The car is new."
+        }
+      },
+      {
+        "de": "Fahrrad",
+        "en": "bicycle",
+        "pos": "noun",
+        "gender": "n",
+        "plural": "Fahrräder",
+        "ex": {
+          "de": "Ich fahre gern Fahrrad.",
+          "en": "I like riding my bike."
+        }
+      },
+      {
+        "de": "U-Bahn",
+        "en": "underground, subway",
+        "pos": "noun",
+        "gender": "f",
+        "plural": "U-Bahnen",
+        "ex": {
+          "de": "Die U-Bahn ist schnell.",
+          "en": "The underground is fast."
+        }
+      },
+      {
+        "de": "Flughafen",
+        "en": "airport",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Flughäfen",
+        "ex": {
+          "de": "Wie komme ich zum Flughafen?",
+          "en": "How do I get to the airport?"
+        }
+      },
+      {
+        "de": "Supermarkt",
+        "en": "supermarket",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Supermärkte",
+        "ex": {
+          "de": "Der Supermarkt ist um die Ecke.",
+          "en": "The supermarket is around the corner."
+        }
+      },
+      {
+        "de": "Apotheke",
+        "en": "pharmacy",
+        "pos": "noun",
+        "gender": "f",
+        "plural": "Apotheken",
+        "ex": {
+          "de": "Die Apotheke ist geschlossen.",
+          "en": "The pharmacy is closed."
+        }
+      },
+      {
+        "de": "Krankenhaus",
+        "en": "hospital",
+        "pos": "noun",
+        "gender": "n",
+        "plural": "Krankenhäuser",
+        "ex": {
+          "de": "Sie arbeitet im Krankenhaus.",
+          "en": "She works in the hospital."
+        }
+      },
+      {
+        "de": "Bank",
+        "en": "bank, bench",
+        "pos": "noun",
+        "gender": "f",
+        "plural": "Banken",
+        "ex": {
+          "de": "Die Bank öffnet um neun.",
+          "en": "The bank opens at nine."
+        }
+      },
+      {
+        "de": "links",
+        "en": "left",
+        "pos": "adv",
+        "ex": {
+          "de": "Gehen Sie hier links.",
+          "en": "Go left here."
+        }
+      },
+      {
+        "de": "rechts",
+        "en": "right",
+        "pos": "adv",
+        "ex": {
+          "de": "Das Café ist rechts.",
+          "en": "The café is on the right."
+        }
+      },
+      {
+        "de": "geradeaus",
+        "en": "straight ahead",
+        "pos": "adv",
+        "ex": {
+          "de": "Immer geradeaus, bitte.",
+          "en": "Keep going straight ahead."
+        }
+      }
+    ]
+  },
+  {
+    "id": "a1-colors",
+    "level": "A1",
+    "title": "Colours",
+    "titleDe": "Farben",
+    "icon": "palette",
+    "words": [
+      {
+        "de": "rot",
+        "en": "red",
+        "pos": "adj",
+        "ex": {
+          "de": "Die Ampel ist rot.",
+          "en": "The traffic light is red."
+        }
+      },
+      {
+        "de": "blau",
+        "en": "blue",
+        "pos": "adj",
+        "ex": {
+          "de": "Der Himmel ist blau.",
+          "en": "The sky is blue."
+        }
+      },
+      {
+        "de": "grün",
+        "en": "green",
+        "pos": "adj",
+        "ex": {
+          "de": "Das Gras ist grün.",
+          "en": "The grass is green."
+        }
+      },
+      {
+        "de": "gelb",
+        "en": "yellow",
+        "pos": "adj",
+        "ex": {
+          "de": "Die Banane ist gelb.",
+          "en": "The banana is yellow."
+        }
+      },
+      {
+        "de": "schwarz",
+        "en": "black",
+        "pos": "adj",
+        "ex": {
+          "de": "Ich trinke den Kaffee schwarz.",
+          "en": "I drink my coffee black."
+        }
+      },
+      {
+        "de": "weiß",
+        "en": "white",
+        "pos": "adj",
+        "ex": {
+          "de": "Der Schnee ist weiß.",
+          "en": "The snow is white."
+        }
+      },
+      {
+        "de": "grau",
+        "en": "grey",
+        "pos": "adj",
+        "ex": {
+          "de": "Heute ist der Himmel grau.",
+          "en": "Today the sky is grey."
+        }
+      },
+      {
+        "de": "braun",
+        "en": "brown",
+        "pos": "adj",
+        "ex": {
+          "de": "Der Hund ist braun.",
+          "en": "The dog is brown."
+        }
+      },
+      {
+        "de": "orange",
+        "en": "orange",
+        "pos": "adj",
+        "ex": {
+          "de": "Die Jacke ist orange.",
+          "en": "The jacket is orange."
+        }
+      },
+      {
+        "de": "rosa",
+        "en": "pink",
+        "pos": "adj",
+        "ex": {
+          "de": "Sie mag rosa Blumen.",
+          "en": "She likes pink flowers."
+        }
+      },
+      {
+        "de": "lila",
+        "en": "purple",
+        "pos": "adj",
+        "ex": {
+          "de": "Das Kleid ist lila.",
+          "en": "The dress is purple."
+        }
+      },
+      {
+        "de": "hell",
+        "en": "light, bright",
+        "pos": "adj",
+        "ex": {
+          "de": "Das Zimmer ist hell.",
+          "en": "The room is bright."
+        }
+      },
+      {
+        "de": "dunkel",
+        "en": "dark",
+        "pos": "adj",
+        "ex": {
+          "de": "Im Winter ist es früh dunkel.",
+          "en": "In winter it gets dark early."
+        }
+      },
+      {
+        "de": "bunt",
+        "en": "colourful",
+        "pos": "adj",
+        "ex": {
+          "de": "Die Stadt ist bunt.",
+          "en": "The city is colourful."
+        }
+      }
+    ]
+  },
+  {
+    "id": "a1-family",
+    "level": "A1",
+    "title": "Family",
+    "titleDe": "Familie",
+    "icon": "users",
+    "words": [
+      {
+        "de": "Familie",
+        "en": "family",
+        "pos": "noun",
+        "gender": "f",
+        "plural": "Familien",
+        "ex": {
+          "de": "Meine Familie ist groß.",
+          "en": "My family is big."
+        }
+      },
+      {
+        "de": "Mutter",
+        "en": "mother",
+        "pos": "noun",
+        "gender": "f",
+        "plural": "Mütter",
+        "ex": {
+          "de": "Meine Mutter heißt Eva.",
+          "en": "My mother is called Eva."
+        }
+      },
+      {
+        "de": "Vater",
+        "en": "father",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Väter",
+        "ex": {
+          "de": "Mein Vater arbeitet viel.",
+          "en": "My father works a lot."
+        }
+      },
+      {
+        "de": "Eltern",
+        "en": "parents",
+        "pos": "noun",
+        "gender": "pl",
+        "ex": {
+          "de": "Meine Eltern wohnen in Berlin.",
+          "en": "My parents live in Berlin."
+        }
+      },
+      {
+        "de": "Bruder",
+        "en": "brother",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Brüder",
+        "ex": {
+          "de": "Mein Bruder ist jünger.",
+          "en": "My brother is younger."
+        }
+      },
+      {
+        "de": "Schwester",
+        "en": "sister",
+        "pos": "noun",
+        "gender": "f",
+        "plural": "Schwestern",
+        "ex": {
+          "de": "Hast du eine Schwester?",
+          "en": "Do you have a sister?"
+        }
+      },
+      {
+        "de": "Sohn",
+        "en": "son",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Söhne",
+        "ex": {
+          "de": "Ihr Sohn spielt Fußball.",
+          "en": "Her son plays football."
+        }
+      },
+      {
+        "de": "Tochter",
+        "en": "daughter",
+        "pos": "noun",
+        "gender": "f",
+        "plural": "Töchter",
+        "ex": {
+          "de": "Seine Tochter ist Ärztin.",
+          "en": "His daughter is a doctor."
+        }
+      },
+      {
+        "de": "Kind",
+        "en": "child",
+        "pos": "noun",
+        "gender": "n",
+        "plural": "Kinder",
+        "ex": {
+          "de": "Das Kind schläft.",
+          "en": "The child is sleeping."
+        }
+      },
+      {
+        "de": "Großvater",
+        "en": "grandfather",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Großväter",
+        "ex": {
+          "de": "Mein Großvater ist achtzig.",
+          "en": "My grandfather is eighty."
+        }
+      },
+      {
+        "de": "Großmutter",
+        "en": "grandmother",
+        "pos": "noun",
+        "gender": "f",
+        "plural": "Großmütter",
+        "ex": {
+          "de": "Die Großmutter backt Kuchen.",
+          "en": "Grandmother bakes cake."
+        }
+      },
+      {
+        "de": "Mann",
+        "en": "man, husband",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Männer",
+        "ex": {
+          "de": "Ihr Mann kommt aus Wien.",
+          "en": "Her husband is from Vienna."
+        }
+      },
+      {
+        "de": "Freund",
+        "en": "friend, boyfriend",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Freunde",
+        "ex": {
+          "de": "Das ist mein Freund Max.",
+          "en": "This is my friend Max."
+        }
+      },
+      {
+        "de": "Freundin",
+        "en": "friend (f), girlfriend",
+        "pos": "noun",
+        "gender": "f",
+        "plural": "Freundinnen",
+        "ex": {
+          "de": "Meine Freundin lernt Englisch.",
+          "en": "My friend is learning English."
+        }
+      },
+      {
+        "de": "Baby",
+        "en": "baby",
+        "pos": "noun",
+        "gender": "n",
+        "plural": "Babys",
+        "ex": {
+          "de": "Das Baby lacht.",
+          "en": "The baby is laughing."
+        }
+      }
+    ]
+  },
+  {
+    "id": "a1-food",
+    "level": "A1",
+    "title": "Food and drink",
+    "titleDe": "Essen und Trinken",
+    "icon": "coffee",
+    "words": [
+      {
+        "de": "Brot",
+        "en": "bread",
+        "pos": "noun",
+        "gender": "n",
+        "plural": "Brote",
+        "ex": {
+          "de": "Das Brot ist frisch.",
+          "en": "The bread is fresh."
+        }
+      },
+      {
+        "de": "Wasser",
+        "en": "water",
+        "pos": "noun",
+        "gender": "n",
+        "ex": {
+          "de": "Ich trinke viel Wasser.",
+          "en": "I drink a lot of water."
+        }
+      },
+      {
+        "de": "Kaffee",
+        "en": "coffee",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Kaffees",
+        "ex": {
+          "de": "Einen Kaffee, bitte.",
+          "en": "A coffee, please."
+        }
+      },
+      {
+        "de": "Tee",
+        "en": "tea",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Tees",
+        "ex": {
+          "de": "Der Tee ist heiß.",
+          "en": "The tea is hot."
+        }
+      },
+      {
+        "de": "Milch",
+        "en": "milk",
+        "pos": "noun",
+        "gender": "f",
+        "ex": {
+          "de": "Ohne Milch, bitte.",
+          "en": "Without milk, please."
+        }
+      },
+      {
+        "de": "Apfel",
+        "en": "apple",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Äpfel",
+        "ex": {
+          "de": "Der Apfel ist rot.",
+          "en": "The apple is red."
+        }
+      },
+      {
+        "de": "Kartoffel",
+        "en": "potato",
+        "pos": "noun",
+        "gender": "f",
+        "plural": "Kartoffeln",
+        "ex": {
+          "de": "Wir essen Kartoffeln.",
+          "en": "We are eating potatoes."
+        }
+      },
+      {
+        "de": "Ei",
+        "en": "egg",
+        "pos": "noun",
+        "gender": "n",
+        "plural": "Eier",
+        "ex": {
+          "de": "Ich esse ein Ei zum Frühstück.",
+          "en": "I eat an egg for breakfast."
+        }
+      },
+      {
+        "de": "Käse",
+        "en": "cheese",
+        "pos": "noun",
+        "gender": "m",
+        "ex": {
+          "de": "Der Käse kommt aus der Schweiz.",
+          "en": "The cheese comes from Switzerland."
+        }
+      },
+      {
+        "de": "Fleisch",
+        "en": "meat",
+        "pos": "noun",
+        "gender": "n",
+        "ex": {
+          "de": "Ich esse kein Fleisch.",
+          "en": "I don't eat meat."
+        }
+      },
+      {
+        "de": "Fisch",
+        "en": "fish",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Fische",
+        "ex": {
+          "de": "Heute gibt es Fisch.",
+          "en": "Today there is fish."
+        }
+      },
+      {
+        "de": "Bier",
+        "en": "beer",
+        "pos": "noun",
+        "gender": "n",
+        "plural": "Biere",
+        "ex": {
+          "de": "Zwei Bier, bitte.",
+          "en": "Two beers, please."
+        }
+      },
+      {
+        "de": "Wein",
+        "en": "wine",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Weine",
+        "ex": {
+          "de": "Der Wein ist trocken.",
+          "en": "The wine is dry."
+        }
+      },
+      {
+        "de": "Kuchen",
+        "en": "cake",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Kuchen",
+        "ex": {
+          "de": "Der Kuchen schmeckt gut.",
+          "en": "The cake tastes good."
+        }
+      },
+      {
+        "de": "Frühstück",
+        "en": "breakfast",
+        "pos": "noun",
+        "gender": "n",
+        "plural": "Frühstücke",
+        "ex": {
+          "de": "Das Frühstück ist um acht.",
+          "en": "Breakfast is at eight."
+        }
+      },
+      {
+        "de": "essen",
+        "en": "to eat",
+        "pos": "verb",
+        "ex": {
+          "de": "Wir essen um zwölf.",
+          "en": "We eat at twelve."
+        }
+      },
+      {
+        "de": "trinken",
+        "en": "to drink",
+        "pos": "verb",
+        "ex": {
+          "de": "Was möchtest du trinken?",
+          "en": "What would you like to drink?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "a1-home",
+    "level": "A1",
+    "title": "At home",
+    "titleDe": "Zu Hause",
+    "icon": "home",
+    "words": [
+      {
+        "de": "Haus",
+        "en": "house",
+        "pos": "noun",
+        "gender": "n",
+        "plural": "Häuser",
+        "ex": {
+          "de": "Das Haus hat einen Garten.",
+          "en": "The house has a garden."
+        }
+      },
+      {
+        "de": "Wohnung",
+        "en": "flat, apartment",
+        "pos": "noun",
+        "gender": "f",
+        "plural": "Wohnungen",
+        "ex": {
+          "de": "Die Wohnung ist klein.",
+          "en": "The flat is small."
+        }
+      },
+      {
+        "de": "Zimmer",
+        "en": "room",
+        "pos": "noun",
+        "gender": "n",
+        "plural": "Zimmer",
+        "ex": {
+          "de": "Mein Zimmer ist hell.",
+          "en": "My room is bright."
+        }
+      },
+      {
+        "de": "Küche",
+        "en": "kitchen",
+        "pos": "noun",
+        "gender": "f",
+        "plural": "Küchen",
+        "ex": {
+          "de": "Wir kochen in der Küche.",
+          "en": "We cook in the kitchen."
+        }
+      },
+      {
+        "de": "Bad",
+        "en": "bathroom",
+        "pos": "noun",
+        "gender": "n",
+        "plural": "Bäder",
+        "ex": {
+          "de": "Das Bad ist neu.",
+          "en": "The bathroom is new."
+        }
+      },
+      {
+        "de": "Tisch",
+        "en": "table",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Tische",
+        "ex": {
+          "de": "Der Tisch ist aus Holz.",
+          "en": "The table is made of wood."
+        }
+      },
+      {
+        "de": "Stuhl",
+        "en": "chair",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Stühle",
+        "ex": {
+          "de": "Der Stuhl ist bequem.",
+          "en": "The chair is comfortable."
+        }
+      },
+      {
+        "de": "Bett",
+        "en": "bed",
+        "pos": "noun",
+        "gender": "n",
+        "plural": "Betten",
+        "ex": {
+          "de": "Das Bett ist groß.",
+          "en": "The bed is big."
+        }
+      },
+      {
+        "de": "Tür",
+        "en": "door",
+        "pos": "noun",
+        "gender": "f",
+        "plural": "Türen",
+        "ex": {
+          "de": "Mach bitte die Tür zu.",
+          "en": "Please close the door."
+        }
+      },
+      {
+        "de": "Fenster",
+        "en": "window",
+        "pos": "noun",
+        "gender": "n",
+        "plural": "Fenster",
+        "ex": {
+          "de": "Das Fenster ist offen.",
+          "en": "The window is open."
+        }
+      },
+      {
+        "de": "Lampe",
+        "en": "lamp",
+        "pos": "noun",
+        "gender": "f",
+        "plural": "Lampen",
+        "ex": {
+          "de": "Die Lampe ist kaputt.",
+          "en": "The lamp is broken."
+        }
+      },
+      {
+        "de": "Sofa",
+        "en": "sofa",
+        "pos": "noun",
+        "gender": "n",
+        "plural": "Sofas",
+        "ex": {
+          "de": "Die Katze schläft auf dem Sofa.",
+          "en": "The cat sleeps on the sofa."
+        }
+      },
+      {
+        "de": "Schlüssel",
+        "en": "key",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Schlüssel",
+        "ex": {
+          "de": "Wo ist mein Schlüssel?",
+          "en": "Where is my key?"
+        }
+      },
+      {
+        "de": "Garten",
+        "en": "garden",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Gärten",
+        "ex": {
+          "de": "Die Kinder spielen im Garten.",
+          "en": "The children play in the garden."
+        }
+      }
+    ]
+  },
+  {
+    "id": "a1-numbers",
+    "level": "A1",
+    "title": "Numbers",
+    "titleDe": "Zahlen",
+    "icon": "hash",
+    "words": [
+      {
+        "de": "null",
+        "en": "zero",
+        "pos": "num",
+        "ex": {
+          "de": "Die Nummer endet mit null.",
+          "en": "The number ends with zero."
+        }
+      },
+      {
+        "de": "eins",
+        "en": "one",
+        "pos": "num",
+        "ex": {
+          "de": "Eins, zwei, drei, los!",
+          "en": "One, two, three, go!"
+        }
+      },
+      {
+        "de": "zwei",
+        "en": "two",
+        "pos": "num",
+        "ex": {
+          "de": "Ich habe zwei Brüder.",
+          "en": "I have two brothers."
+        }
+      },
+      {
+        "de": "drei",
+        "en": "three",
+        "pos": "num",
+        "ex": {
+          "de": "Wir sind drei Personen.",
+          "en": "We are three people."
+        }
+      },
+      {
+        "de": "vier",
+        "en": "four",
+        "pos": "num",
+        "ex": {
+          "de": "Der Tisch hat vier Beine.",
+          "en": "The table has four legs."
+        }
+      },
+      {
+        "de": "fünf",
+        "en": "five",
+        "pos": "num",
+        "ex": {
+          "de": "Es ist fünf Uhr.",
+          "en": "It is five o'clock."
+        }
+      },
+      {
+        "de": "sechs",
+        "en": "six",
+        "pos": "num",
+        "ex": {
+          "de": "Ich stehe um sechs auf.",
+          "en": "I get up at six."
+        }
+      },
+      {
+        "de": "sieben",
+        "en": "seven",
+        "pos": "num",
+        "ex": {
+          "de": "Die Woche hat sieben Tage.",
+          "en": "The week has seven days."
+        }
+      },
+      {
+        "de": "acht",
+        "en": "eight",
+        "pos": "num",
+        "ex": {
+          "de": "Der Kurs beginnt um acht.",
+          "en": "The course starts at eight."
+        }
+      },
+      {
+        "de": "neun",
+        "en": "nine",
+        "pos": "num",
+        "ex": {
+          "de": "Mein Sohn ist neun.",
+          "en": "My son is nine."
+        }
+      },
+      {
+        "de": "zehn",
+        "en": "ten",
+        "pos": "num",
+        "ex": {
+          "de": "Das kostet zehn Euro.",
+          "en": "That costs ten euros."
+        }
+      },
+      {
+        "de": "elf",
+        "en": "eleven",
+        "pos": "num",
+        "ex": {
+          "de": "Ein Fußballteam hat elf Spieler.",
+          "en": "A football team has eleven players."
+        }
+      },
+      {
+        "de": "zwölf",
+        "en": "twelve",
+        "pos": "num",
+        "ex": {
+          "de": "Ein Jahr hat zwölf Monate.",
+          "en": "A year has twelve months."
+        }
+      },
+      {
+        "de": "zwanzig",
+        "en": "twenty",
+        "pos": "num",
+        "ex": {
+          "de": "Sie ist zwanzig Jahre alt.",
+          "en": "She is twenty years old."
+        }
+      },
+      {
+        "de": "hundert",
+        "en": "hundred",
+        "pos": "num",
+        "ex": {
+          "de": "Das sind hundert Meter.",
+          "en": "That is a hundred metres."
+        }
+      }
+    ]
+  },
+  {
+    "id": "a1-questions",
+    "level": "A1",
+    "title": "Question words",
+    "titleDe": "W-Fragen",
+    "icon": "help",
+    "words": [
+      {
+        "de": "wer",
+        "en": "who",
+        "pos": "pron",
+        "ex": {
+          "de": "Wer ist das?",
+          "en": "Who is that?"
+        }
+      },
+      {
+        "de": "was",
+        "en": "what",
+        "pos": "pron",
+        "ex": {
+          "de": "Was ist das?",
+          "en": "What is that?"
+        }
+      },
+      {
+        "de": "wo",
+        "en": "where",
+        "pos": "adv",
+        "ex": {
+          "de": "Wo ist die Toilette?",
+          "en": "Where is the toilet?"
+        }
+      },
+      {
+        "de": "woher",
+        "en": "where from",
+        "pos": "adv",
+        "ex": {
+          "de": "Woher kommen Sie?",
+          "en": "Where are you from?"
+        }
+      },
+      {
+        "de": "wohin",
+        "en": "where to",
+        "pos": "adv",
+        "ex": {
+          "de": "Wohin fährst du?",
+          "en": "Where are you going?"
+        }
+      },
+      {
+        "de": "wann",
+        "en": "when",
+        "pos": "adv",
+        "ex": {
+          "de": "Wann beginnt der Film?",
+          "en": "When does the film start?"
+        }
+      },
+      {
+        "de": "warum",
+        "en": "why",
+        "pos": "adv",
+        "ex": {
+          "de": "Warum lernst du Deutsch?",
+          "en": "Why are you learning German?"
+        }
+      },
+      {
+        "de": "wie",
+        "en": "how",
+        "pos": "adv",
+        "ex": {
+          "de": "Wie heißt du?",
+          "en": "What is your name?"
+        }
+      },
+      {
+        "de": "wie viel",
+        "en": "how much",
+        "pos": "adv",
+        "ex": {
+          "de": "Wie viel kostet das?",
+          "en": "How much does that cost?"
+        }
+      },
+      {
+        "de": "welche",
+        "en": "which",
+        "pos": "pron",
+        "ex": {
+          "de": "Welche Farbe magst du?",
+          "en": "Which colour do you like?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "a1-time",
+    "level": "A1",
+    "title": "Time and days",
+    "titleDe": "Zeit und Tage",
+    "icon": "clock",
+    "words": [
+      {
+        "de": "Tag",
+        "en": "day",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Tage",
+        "ex": {
+          "de": "Heute ist ein schöner Tag.",
+          "en": "Today is a beautiful day."
+        }
+      },
+      {
+        "de": "Woche",
+        "en": "week",
+        "pos": "noun",
+        "gender": "f",
+        "plural": "Wochen",
+        "ex": {
+          "de": "Nächste Woche habe ich Urlaub.",
+          "en": "Next week I am on holiday."
+        }
+      },
+      {
+        "de": "Monat",
+        "en": "month",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Monate",
+        "ex": {
+          "de": "Der Kurs dauert einen Monat.",
+          "en": "The course lasts one month."
+        }
+      },
+      {
+        "de": "Jahr",
+        "en": "year",
+        "pos": "noun",
+        "gender": "n",
+        "plural": "Jahre",
+        "ex": {
+          "de": "Frohes neues Jahr!",
+          "en": "Happy new year!"
+        }
+      },
+      {
+        "de": "Stunde",
+        "en": "hour, lesson",
+        "pos": "noun",
+        "gender": "f",
+        "plural": "Stunden",
+        "ex": {
+          "de": "Ich warte eine Stunde.",
+          "en": "I wait an hour."
+        }
+      },
+      {
+        "de": "Minute",
+        "en": "minute",
+        "pos": "noun",
+        "gender": "f",
+        "plural": "Minuten",
+        "ex": {
+          "de": "Der Bus kommt in fünf Minuten.",
+          "en": "The bus comes in five minutes."
+        }
+      },
+      {
+        "de": "heute",
+        "en": "today",
+        "pos": "adv",
+        "ex": {
+          "de": "Heute ist Montag.",
+          "en": "Today is Monday."
+        }
+      },
+      {
+        "de": "morgen",
+        "en": "tomorrow",
+        "pos": "adv",
+        "ex": {
+          "de": "Morgen arbeite ich nicht.",
+          "en": "Tomorrow I am not working."
+        }
+      },
+      {
+        "de": "gestern",
+        "en": "yesterday",
+        "pos": "adv",
+        "ex": {
+          "de": "Gestern war es kalt.",
+          "en": "Yesterday it was cold."
+        }
+      },
+      {
+        "de": "Morgen",
+        "en": "morning",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Morgen",
+        "ex": {
+          "de": "Am Morgen trinke ich Kaffee.",
+          "en": "In the morning I drink coffee."
+        }
+      },
+      {
+        "de": "Abend",
+        "en": "evening",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Abende",
+        "ex": {
+          "de": "Am Abend lese ich.",
+          "en": "In the evening I read."
+        }
+      },
+      {
+        "de": "Nacht",
+        "en": "night",
+        "pos": "noun",
+        "gender": "f",
+        "plural": "Nächte",
+        "ex": {
+          "de": "Die Nacht ist ruhig.",
+          "en": "The night is quiet."
+        }
+      },
+      {
+        "de": "Montag",
+        "en": "Monday",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Montage",
+        "ex": {
+          "de": "Am Montag habe ich Deutsch.",
+          "en": "On Monday I have German."
+        }
+      },
+      {
+        "de": "Mittwoch",
+        "en": "Wednesday",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Mittwoche",
+        "ex": {
+          "de": "Am Mittwoch gehe ich schwimmen.",
+          "en": "On Wednesday I go swimming."
+        }
+      },
+      {
+        "de": "Freitag",
+        "en": "Friday",
+        "pos": "noun",
+        "gender": "m",
+        "plural": "Freitage",
+        "ex": {
+          "de": "Freitag ist mein Lieblingstag.",
+          "en": "Friday is my favourite day."
+        }
+      },
+      {
+        "de": "Wochenende",
+        "en": "weekend",
+        "pos": "noun",
+        "gender": "n",
+        "plural": "Wochenenden",
+        "ex": {
+          "de": "Schönes Wochenende!",
+          "en": "Have a nice weekend!"
+        }
+      }
+    ]
+  },
+  {
+    "id": "a1-verbs",
+    "level": "A1",
+    "title": "Core verbs",
+    "titleDe": "Wichtige Verben",
+    "icon": "zap",
+    "words": [
+      {
+        "de": "sein",
+        "en": "to be",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich bin müde.",
+          "en": "I am tired."
+        }
+      },
+      {
+        "de": "haben",
+        "en": "to have",
+        "pos": "verb",
+        "ex": {
+          "de": "Wir haben Zeit.",
+          "en": "We have time."
+        }
+      },
+      {
+        "de": "heißen",
+        "en": "to be called",
+        "pos": "verb",
+        "ex": {
+          "de": "Wie heißt du?",
+          "en": "What is your name?"
+        }
+      },
+      {
+        "de": "gehen",
+        "en": "to go, to walk",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich gehe nach Hause.",
+          "en": "I am going home."
+        }
+      },
+      {
+        "de": "kommen",
+        "en": "to come",
+        "pos": "verb",
+        "ex": {
+          "de": "Woher kommst du?",
+          "en": "Where are you from?"
+        }
+      },
+      {
+        "de": "machen",
+        "en": "to do, to make",
+        "pos": "verb",
+        "ex": {
+          "de": "Was machst du heute?",
+          "en": "What are you doing today?"
+        }
+      },
+      {
+        "de": "sprechen",
+        "en": "to speak",
+        "pos": "verb",
+        "ex": {
+          "de": "Sprechen Sie Englisch?",
+          "en": "Do you speak English?"
+        }
+      },
+      {
+        "de": "verstehen",
+        "en": "to understand",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich verstehe das nicht.",
+          "en": "I don't understand that."
+        }
+      },
+      {
+        "de": "lernen",
+        "en": "to learn",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich lerne Deutsch.",
+          "en": "I am learning German."
+        }
+      },
+      {
+        "de": "wohnen",
+        "en": "to live (reside)",
+        "pos": "verb",
+        "ex": {
+          "de": "Wo wohnst du?",
+          "en": "Where do you live?"
+        }
+      },
+      {
+        "de": "arbeiten",
+        "en": "to work",
+        "pos": "verb",
+        "ex": {
+          "de": "Er arbeitet in München.",
+          "en": "He works in Munich."
+        }
+      },
+      {
+        "de": "spielen",
+        "en": "to play",
+        "pos": "verb",
+        "ex": {
+          "de": "Die Kinder spielen draußen.",
+          "en": "The children are playing outside."
+        }
+      },
+      {
+        "de": "kaufen",
+        "en": "to buy",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich kaufe Brot.",
+          "en": "I am buying bread."
+        }
+      },
+      {
+        "de": "schlafen",
+        "en": "to sleep",
+        "pos": "verb",
+        "ex": {
+          "de": "Das Baby schläft.",
+          "en": "The baby is sleeping."
+        }
+      },
+      {
+        "de": "fahren",
+        "en": "to drive, to travel",
+        "pos": "verb",
+        "ex": {
+          "de": "Wir fahren nach Berlin.",
+          "en": "We are going to Berlin."
+        }
+      },
+      {
+        "de": "möchten",
+        "en": "would like",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich möchte einen Tee.",
+          "en": "I would like a tea."
+        }
+      }
+    ]
+  }
 ]

@@ -1,10 +1,394 @@
 [
-  {"id": "p-a1-1", "level": "A1", "title": "About me", "de": "Hallo! Ich heiße Sam und ich komme aus England. Ich bin dreißig Jahre alt und wohne in Berlin. Ich lerne Deutsch, weil ich hier arbeite.", "en": "Hello! My name is Sam and I'm from England. I'm thirty years old and live in Berlin. I'm learning German because I work here."},
-  {"id": "p-a1-2", "level": "A1", "title": "My family", "de": "Meine Familie ist nicht groß. Ich habe eine Schwester und einen Bruder. Meine Mutter ist Lehrerin und mein Vater ist Arzt. Am Wochenende essen wir zusammen.", "en": "My family isn't big. I have a sister and a brother. My mother is a teacher and my father is a doctor. At the weekend we eat together."},
-  {"id": "p-a1-3", "level": "A1", "title": "At the café", "de": "Guten Tag! Ich möchte einen Kaffee mit Milch und ein Stück Kuchen, bitte. Haben Sie auch Tee? Danke schön. Die Rechnung, bitte.", "en": "Hello! I'd like a coffee with milk and a piece of cake, please. Do you also have tea? Thank you very much. The bill, please."},
-  {"id": "p-a1-4", "level": "A1", "title": "My flat", "de": "Meine Wohnung ist klein, aber schön. Sie hat zwei Zimmer, eine Küche und ein Bad. Das Fenster ist groß und das Zimmer ist sehr hell.", "en": "My flat is small but nice. It has two rooms, a kitchen and a bathroom. The window is big and the room is very bright."},
-  {"id": "p-a2-1", "level": "A2", "title": "Last weekend", "de": "Letztes Wochenende bin ich mit Freunden nach Hamburg gefahren. Wir haben den Hafen besucht und Fischbrötchen gegessen. Am Abend sind wir in eine Bar gegangen. Es war wirklich schön.", "en": "Last weekend I went to Hamburg with friends. We visited the harbour and ate fish sandwiches. In the evening we went to a bar. It was really nice."},
-  {"id": "p-a2-2", "level": "A2", "title": "At the doctor", "de": "Ich fühle mich nicht gut. Ich habe seit zwei Tagen Kopfschmerzen und Fieber. Der Arzt sagt, ich soll viel trinken und im Bett bleiben. Morgen muss ich wieder zur Arbeit.", "en": "I don't feel well. I've had a headache and fever for two days. The doctor says I should drink a lot and stay in bed. Tomorrow I have to go back to work."},
-  {"id": "p-b1-1", "level": "B1", "title": "Working from home", "de": "Viele Menschen arbeiten heute von zu Hause. Das hat Vorteile, weil man keine Zeit im Verkehr verliert. Trotzdem fehlt mir manchmal der Kontakt zu meinen Kollegen. Ich finde, eine Mischung aus beidem ist am besten.", "en": "Many people work from home today. That has advantages, because you don't lose time in traffic. Still, I sometimes miss contact with my colleagues. I think a mix of both is best."},
-  {"id": "p-b1-2", "level": "B1", "title": "Learning German", "de": "Als ich angefangen habe, Deutsch zu lernen, war die Aussprache für mich am schwierigsten. Besonders das R und die Umlaute haben mich verwirrt. Inzwischen spreche ich jeden Tag ein bisschen, und es wird langsam besser.", "en": "When I started learning German, pronunciation was the hardest part for me. The R and the umlauts especially confused me. Now I speak a little every day, and it's slowly getting better."}
+  {
+    "id": "p-a1-1",
+    "level": "A1",
+    "title": "About me",
+    "de": "Hallo! Ich heiße Sam und ich komme aus England. Ich bin dreißig Jahre alt und wohne in Berlin. Ich lerne Deutsch, weil ich hier arbeite.",
+    "en": "Hello! My name is Sam and I'm from England. I'm thirty years old and live in Berlin. I'm learning German because I work here."
+  },
+  {
+    "id": "p-a1-2",
+    "level": "A1",
+    "title": "My family",
+    "de": "Meine Familie ist nicht groß. Ich habe eine Schwester und einen Bruder. Meine Mutter ist Lehrerin und mein Vater ist Arzt. Am Wochenende essen wir zusammen.",
+    "en": "My family isn't big. I have a sister and a brother. My mother is a teacher and my father is a doctor. At the weekend we eat together."
+  },
+  {
+    "id": "p-a1-3",
+    "level": "A1",
+    "title": "At the café",
+    "de": "Guten Tag! Ich möchte einen Kaffee mit Milch und ein Stück Kuchen, bitte. Haben Sie auch Tee? Danke schön. Die Rechnung, bitte.",
+    "en": "Hello! I'd like a coffee with milk and a piece of cake, please. Do you also have tea? Thank you very much. The bill, please."
+  },
+  {
+    "id": "p-a1-4",
+    "level": "A1",
+    "title": "My flat",
+    "de": "Meine Wohnung ist klein, aber schön. Sie hat zwei Zimmer, eine Küche und ein Bad. Das Fenster ist groß und das Zimmer ist sehr hell.",
+    "en": "My flat is small but nice. It has two rooms, a kitchen and a bathroom. The window is big and the room is very bright."
+  },
+  {
+    "id": "p-a1-u5-1",
+    "level": "A1",
+    "title": "Morning Routine",
+    "de": "Es ist sieben Uhr. Ich trinke einen Kaffee. Ich mache das Frühstück. Ich arbeite viel.",
+    "en": "It is seven o'clock. I drink a coffee. I make breakfast. I work a lot."
+  },
+  {
+    "id": "p-a1-u5-2",
+    "level": "A1",
+    "title": "Evening Routine",
+    "de": "Es ist achtzehn Uhr. Ich koche das Abendessen. Ich lerne jetzt Deutsch. Ich höre Musik.",
+    "en": "It is six p.m. I cook dinner. I am learning German now. I listen to music."
+  },
+  {
+    "id": "p-a1-u6-1",
+    "level": "A1",
+    "title": "The Living Room",
+    "de": "Es gibt ein Sofa. Es gibt zwei Stühle. Die Stühle sind groß. Das Wohnzimmer ist schön.",
+    "en": "There is a sofa. There are two chairs. The chairs are big. The living room is nice."
+  },
+  {
+    "id": "p-a1-u6-2",
+    "level": "A1",
+    "title": "Where is everything?",
+    "de": "Wo ist der Tisch? Der Tisch ist in der Küche. Wo sind die Tassen? Die Tassen sind hier.",
+    "en": "Where is the table? The table is in the kitchen. Where are the cups? The cups are here."
+  },
+  {
+    "id": "p-a1-u7-1",
+    "level": "A1",
+    "title": "Getting to the Station",
+    "de": "Entschuldigung, wie komme ich zum Bahnhof? Gehen Sie bitte geradeaus. Sie können mit dem Bus fahren. Das ist sehr einfach.",
+    "en": "Excuse me, how do I get to the station? Please go straight ahead. You can go by bus. That is very easy."
+  },
+  {
+    "id": "p-a1-u7-2",
+    "level": "A1",
+    "title": "Walking or Taking the Bus",
+    "de": "Können wir zum Park gehen? Gehen Sie bitte zu Fuß. Das ist sehr nah. Oder fahren Sie mit dem Bus.",
+    "en": "Can we go to the park? Please walk. It is very close. Or go by bus."
+  },
+  {
+    "id": "p-a2-1",
+    "level": "A2",
+    "title": "Last weekend",
+    "de": "Letztes Wochenende bin ich mit Freunden nach Hamburg gefahren. Wir haben den Hafen besucht und Fischbrötchen gegessen. Am Abend sind wir in eine Bar gegangen. Es war wirklich schön.",
+    "en": "Last weekend I went to Hamburg with friends. We visited the harbour and ate fish sandwiches. In the evening we went to a bar. It was really nice."
+  },
+  {
+    "id": "p-a2-2",
+    "level": "A2",
+    "title": "At the doctor",
+    "de": "Ich fühle mich nicht gut. Ich habe seit zwei Tagen Kopfschmerzen und Fieber. Der Arzt sagt, ich soll viel trinken und im Bett bleiben. Morgen muss ich wieder zur Arbeit.",
+    "en": "I don't feel well. I've had a headache and fever for two days. The doctor says I should drink a lot and stay in bed. Tomorrow I have to go back to work."
+  },
+  {
+    "id": "p-a2-u3-1",
+    "level": "A2",
+    "title": "Shopping for a Shirt",
+    "de": "Ich habe ein blaues Hemd gekauft. Es gefällt mir sehr gut. Ich möchte eine schwarze Jacke kaufen. Die Jacke ist sehr schön.",
+    "en": "I bought a blue shirt. I like it very much. I want to buy a black jacket. The jacket is very beautiful."
+  },
+  {
+    "id": "p-a2-u3-2",
+    "level": "A2",
+    "title": "An Opinion on a Sweater",
+    "de": "Der rote Pullover passt mir sehr gut. Ich finde, dass die Farbe schön ist. Er ist teuer, weil er aus Wolle ist.",
+    "en": "The red sweater fits me very well. I think that the color is beautiful. It is expensive because it is made of wool."
+  },
+  {
+    "id": "p-a2-u6-1",
+    "level": "A2",
+    "title": "Comparing the Seasons",
+    "de": "Der Sommer ist heißer als der Frühling. Der Winter ist die kälteste Jahreszeit. Ich mag den Sommer, weil er warm ist. Im Sommer kann man viel draußen machen.",
+    "en": "Summer is hotter than spring. Winter is the coldest season. I like summer because it is warm. In summer, you can do a lot outdoors."
+  },
+  {
+    "id": "p-a2-u6-2",
+    "level": "A2",
+    "title": "Today's Weather",
+    "de": "Heute ist es windiger als gestern. Der Herbst ist oft regnerischer als der Sommer. Ich finde, dass die Sonne schöner ist. Im Frühling ist das Wetter am besten.",
+    "en": "Today it is windier than yesterday. Autumn is often rainier than summer. I think that the sun is more beautiful. In spring, the weather is the best."
+  },
+  {
+    "id": "p-a2-u7-1",
+    "level": "A2",
+    "title": "My Birthday",
+    "de": "Mein Geburtstag war am fünfzehnten Mai. Ich hatte eine große Party mit Freunden. Das Wetter war wirklich sehr schön. Wir waren alle sehr glücklich.",
+    "en": "My birthday was on May 15th. I had a big party with friends. The weather was really very beautiful. We were all very happy."
+  },
+  {
+    "id": "p-a2-u7-2",
+    "level": "A2",
+    "title": "Christmas",
+    "de": "Weihnachten war am vierundzwanzigsten Dezember. Wir hatten ein leckeres Abendessen. Die Familie war bei mir zu Hause. Es war ein wunderbarer Tag.",
+    "en": "Christmas was on December 24th. We had a delicious dinner. The family was at my house. It was a wonderful day."
+  },
+  {
+    "id": "p-b1-1",
+    "level": "B1",
+    "title": "Working from home",
+    "de": "Viele Menschen arbeiten heute von zu Hause. Das hat Vorteile, weil man keine Zeit im Verkehr verliert. Trotzdem fehlt mir manchmal der Kontakt zu meinen Kollegen. Ich finde, eine Mischung aus beidem ist am besten.",
+    "en": "Many people work from home today. That has advantages, because you don't lose time in traffic. Still, I sometimes miss contact with my colleagues. I think a mix of both is best."
+  },
+  {
+    "id": "p-b1-2",
+    "level": "B1",
+    "title": "Learning German",
+    "de": "Als ich angefangen habe, Deutsch zu lernen, war die Aussprache für mich am schwierigsten. Besonders das R und die Umlaute haben mich verwirrt. Inzwischen spreche ich jeden Tag ein bisschen, und es wird langsam besser.",
+    "en": "When I started learning German, pronunciation was the hardest part for me. The R and the umlauts especially confused me. Now I speak a little every day, and it's slowly getting better."
+  },
+  {
+    "id": "p-b1-u1-1",
+    "level": "B1",
+    "title": "Working from Home",
+    "de": "Ich finde, dass Homeoffice viele Vorteile für die Work-Life-Balance hat. Obwohl man zu Hause arbeitet, fühlt man sich manchmal etwas einsam. Meiner Meinung nach ist der Kontakt zu Kollegen aber sehr wichtig. Deshalb sollten wir trotzdem mindestens zwei Tage pro Woche ins Büro gehen. Ich denke, dass eine Mischung aus beidem die beste Lösung ist.",
+    "en": "I think that working from home has many advantages for work-life balance. Although you work at home, you sometimes feel a bit lonely. In my opinion, however, contact with colleagues is very important. Therefore, we should nevertheless go to the office at least two days a week. I think that a mixture of both is the best solution."
+  },
+  {
+    "id": "p-b1-u1-2",
+    "level": "B1",
+    "title": "Healthy Eating",
+    "de": "Ich bin der Meinung, dass gesundes Essen oft sehr teuer ist. Obwohl Bio-Produkte gesund sind, kaufen viele Leute lieber günstiges Fast Food. Das Essen schmeckt zwar gut, aber es ist nicht wirklich gesund. Viele Menschen essen trotzdem zu viel Zucker und Fett im Alltag. Ich glaube, dass man beim Einkaufen einfach bewusster entscheiden muss.",
+    "en": "I am of the opinion that healthy food is often very expensive. Although organic products are healthy, many people prefer to buy cheap fast food. The food tastes good, but it isn't really healthy. Nevertheless, many people eat too much sugar and fat in everyday life. I believe that one simply has to make more conscious decisions when shopping."
+  },
+  {
+    "id": "p-b1-u2-1",
+    "level": "B1",
+    "title": "Reading the News",
+    "de": "Gestern las ich einen interessanten Artikel über die sozialen Medien. In dem Bericht stand, dass viele Menschen zu viel Zeit am Smartphone verbrachten. Ich fand diese Information ziemlich schockierend, obwohl sie sehr wichtig war. Der Journalist schrieb, dass digitale Medien unsere Kommunikation grundlegend veränderten. Ich dachte, dass die Geschichte sehr gut recherchiert war.",
+    "en": "Yesterday I read an interesting article about social media. The report stated that many people spent too much time on their smartphones. I found this information quite shocking, although it was very important. The journalist wrote that digital media fundamentally changed our communication. I thought that the story was very well researched."
+  },
+  {
+    "id": "p-b1-u2-2",
+    "level": "B1",
+    "title": "A Moving Documentary",
+    "de": "Letzte Woche sah ich eine spannende Dokumentation über die Tiefsee. Der Film handelte davon, wie Plastikmüll die Meeresbewohner gefährdete. Er zeigte viele schöne Bilder, aber auch sehr traurige Szenen. Ich fand das Thema wichtig, weil es unsere Zukunft beeinflusste. Die Dokumentation war sehr bewegend und ich lernte viel Neues.",
+    "en": "Last week I watched an exciting documentary about the deep sea. The film was about how plastic waste endangered marine life. It showed many beautiful images, but also very sad scenes. I thought the topic was important because it influenced our future. The documentary was very moving and I learned a lot of new things."
+  },
+  {
+    "id": "p-b1-u3-1",
+    "level": "B1",
+    "title": "The Cover Letter",
+    "de": "Ich schreibe Ihnen, weil ich mich sehr für die ausgeschriebene Stelle interessiere. Es wäre schön, wenn wir bald über meine Qualifikationen sprechen könnten. Ich glaube, dass meine bisherige Erfahrung sehr gut zu Ihrem Team passen würde. Könnten Sie mir bitte mitteilen, wann ein persönliches Gespräch stattfinden könnte? Ich würde mich sehr über eine positive Rückmeldung von Ihnen freuen.",
+    "en": "I am writing to you because I am very interested in the advertised position. It would be nice if we could speak about my qualifications soon. I believe that my previous experience would fit very well with your team. Could you please let me know when a personal interview could take place? I would be very happy to receive a positive response from you."
+  },
+  {
+    "id": "p-b1-u3-2",
+    "level": "B1",
+    "title": "During the Interview",
+    "de": "Vielen Dank für die freundliche Einladung zu diesem sehr interessanten Gespräch. Ich würde gerne wissen, ob es in Ihrer Firma Weiterbildungsmöglichkeiten gibt. Wenn ich mehr Zeit hätte, würde ich Ihnen mehr über meine Projekte erzählen. Wäre es eventuell möglich, einmal pro Woche im Homeoffice zu arbeiten? Ich glaube, dass diese neue Aufgabe eine spannende Herausforderung für mich wäre.",
+    "en": "Thank you very much for the kind invitation to this very interesting interview. I would like to know if there are opportunities for further training in your company. If I had more time, I would tell you more about my projects. Would it perhaps be possible to work from home once a week? I believe that this new task would be an exciting challenge for me."
+  },
+  {
+    "id": "p-b1-u5-1",
+    "level": "B1",
+    "title": "A Lifelong Friendship",
+    "de": "Ich habe einen besten Freund, den ich schon seit meiner Kindheit kenne. Er ist ein Mensch, der mir immer einen guten Rat gibt. Er ist die Person, die mich in schwierigen Zeiten immer unterstützt. Wir sprechen oft über Dinge, die uns beiden sehr wichtig sind. Er ist ein Freund, auf den ich mich immer verlassen kann.",
+    "en": "I have a best friend whom I have known since my childhood. He is a person who always gives me good advice. He is the person who always supports me during difficult times. We often talk about things that are very important to both of us. He is a friend whom I can always rely on."
+  },
+  {
+    "id": "p-b1-u5-2",
+    "level": "B1",
+    "title": "Building a Life Together",
+    "de": "Mein Partner ist jemand, der sehr gerne in der Ferne reist. Wir haben eine Beziehung, die auf viel Vertrauen basiert. Manchmal treffen wir Leute, die ganz andere Meinungen haben als wir. Das ist ein Thema, das wir immer offen besprechen können. Ich liebe das Leben, das wir gerade gemeinsam aufbauen.",
+    "en": "My partner is someone who loves to travel far away. We have a relationship that is based on a lot of trust. Sometimes we meet people who have completely different opinions than we do. That is a topic that we can always discuss openly. I love the life that we are currently building together."
+  },
+  {
+    "id": "p-b1-u6-1",
+    "level": "B1",
+    "title": "My Career Goals",
+    "de": "Ich habe mich dazu entschieden, Maschinenbau zu studieren, weil ich Technik liebe. Es ist mein großer Traum, später in einem internationalen Unternehmen zu arbeiten. Ich lerne jeden Tag fleißig Deutsch, um mich besser verständigen zu können. Es ist nicht immer leicht, die richtige Motivation zum Lernen zu finden. Trotzdem versuche ich immer, meine akademischen Ziele konsequent zu verfolgen.",
+    "en": "I decided to study mechanical engineering because I love technology. It is my big dream to work in an international company later on. I study German diligently every day in order to be able to communicate better. It is not always easy to find the right motivation for studying. Nevertheless, I always try to pursue my academic goals consistently."
+  },
+  {
+    "id": "p-b1-u6-2",
+    "level": "B1",
+    "title": "Lifelong Learning",
+    "de": "In meiner Schulzeit fand ich es wichtig, viel über die Geschichte zu lernen. Ich habe damals viel Zeit investiert, um meine Sprachkenntnisse zu verbessern. Heutzutage ist es sinnvoll, sich ständig weiterzubilden, um beruflich erfolgreich zu sein. Ich plane, nächstes Jahr einen Online-Kurs zu machen, um mehr über Marketing zu erfahren. Es macht mir viel Spaß, neue Dinge zu entdecken und zu verstehen.",
+    "en": "During my school days, I found it important to learn a lot about history. At that time, I invested a lot of time in order to improve my language skills. Nowadays, it makes sense to constantly pursue further education in order to be professionally successful. I plan to take an online course next year to learn more about marketing. I enjoy discovering and understanding new things."
+  },
+  {
+    "id": "p-b1-u7-1",
+    "level": "B1",
+    "title": "The Joy of Reading",
+    "de": "Ich lese in meiner Freizeit sehr gerne verschiedene Bücher der modernen Literatur. Trotz des stressigen Arbeitstages finde ich immer Zeit für einen spannenden Roman. Wegen der tiefgründigen Geschichte kann ich das Buch einfach nicht weglegen. Meiner Meinung nach sind gute Bücher oft viel besser als Filme. Obwohl Filme sehr beliebt sind, regen Bücher die Fantasie stärker an.",
+    "en": "I really enjoy reading various books of modern literature in my free time. Despite the stressful workday, I always find time for a thrilling novel. Because of the profound story, I simply cannot put the book down. In my opinion, good books are often much better than films. Although films are very popular, books stimulate the imagination more."
+  },
+  {
+    "id": "p-b1-u7-2",
+    "level": "B1",
+    "title": "Local Traditions",
+    "de": "Traditionen sind ein wichtiger Teil der kulturellen Identität eines Landes. Trotz des schlechten Wetters feiern die Menschen das traditionelle Volksfest. Wegen der lauten Musik ist die Stimmung auf dem Fest fantastisch. Ich glaube, dass wir diese alten Traditionen unbedingt bewahren sollten. Auch wenn das Leben heute sehr modern ist, verbinden uns diese Bräuche.",
+    "en": "Traditions are an important part of a country's cultural identity. Despite the bad weather, people are celebrating the traditional folk festival. Because of the loud music, the atmosphere at the festival is fantastic. I believe that we should definitely preserve these old traditions. Even if life today is very modern, these customs connect us."
+  },
+  {
+    "id": "p-b1-u8-1",
+    "level": "B1",
+    "title": "My Travel Plans",
+    "de": "Ich werde nächstes Jahr nach Japan reisen, weil ich die Kultur sehr liebe. Wenn ich genug Geld gespart habe, werde ich dort drei Monate bleiben. Ich glaube, dass das ein großes Abenteuer für mich werden wird. Außerdem werde ich ein bisschen Japanisch lernen, bevor ich dorthin fliege.",
+    "en": "I will travel to Japan next year because I love the culture very much. If I have saved enough money, I will stay there for three months. I believe that it will be a great adventure for me. Additionally, I will learn a little Japanese before I fly there."
+  },
+  {
+    "id": "p-b1-u8-2",
+    "level": "B1",
+    "title": "Old Dreams and New Beginnings",
+    "de": "Als ich ein Kind war, wollte ich unbedingt ein Pilot werden. Aber damals hatte ich leider nicht den Mut für diesen Traum. Wenn ich die Chance bekomme, werde ich mich für die Flugschule anmelden. Ich denke, dass ich diese Herausforderung endlich annehmen werde.",
+    "en": "When I was a child, I really wanted to become a pilot. But back then, I unfortunately didn't have the courage for this dream. If I get the chance, I will enroll in flight school. I think that I will finally take on this challenge."
+  },
+  {
+    "id": "p-b2-u1-1",
+    "level": "B2",
+    "title": "The Impact of Social Media",
+    "de": "Soziale Medien sind nicht nur ein wichtiges Werkzeug für die Kommunikation, sondern auch eine häufige Quelle für Fehlinformationen. Die Vorteile der digitalen Vernetzung sind zwar unbestreitbar, aber die Risiken für die Privatsphäre dürfen keinesfalls ignoriert werden. Wir müssten entweder die Regulierung dieser Plattformen verschärfen oder die Konsequenzen eines unkontrollierten Datenflusses einfach akzeptieren. Ein kritischer Umgang mit digitalen Inhalten sollte sowohl von den Nutzern als auch von den Anbietern gefordert werden.",
+    "en": "Social media is not only an important tool for communication, but also a frequent source of misinformation. The advantages of digital networking are indeed undeniable, but the risks to privacy must by no means be ignored. We would either have to tighten the regulation of these platforms or simply accept the consequences of uncontrolled data flow. A critical approach to digital content should be demanded from both users and providers."
+  },
+  {
+    "id": "p-b2-u1-2",
+    "level": "B2",
+    "title": "Modern Working Models",
+    "de": "In der modernen Arbeitswelt ist weder das klassische Büro noch das reine Homeoffice als ideale Lösung anzusehen. Das Arbeiten von zu Hause aus ist zwar sehr flexibel, aber der Mangel an sozialem Kontakt stellt eine Herausforderung dar. Hybride Modelle bieten nicht nur mehr persönliche Freiheit, sondern fördern auch die Produktivität durch konzentrierteres Arbeiten. Unternehmen müssen sich entscheiden, ob sie in die digitale Infrastruktur investieren oder ihre besten Mitarbeiter langfristig verlieren.",
+    "en": "In the modern working world, neither the classic office nor pure home office can be seen as an ideal solution. Working from home is indeed very flexible, but the lack of social contact poses a challenge. Hybrid models offer not only more personal freedom, but also promote productivity through more concentrated work. Companies must decide whether they invest in digital infrastructure or lose their best employees in the long term."
+  },
+  {
+    "id": "p-b2-u2-1",
+    "level": "B2",
+    "title": "Preparing for a Meeting",
+    "de": "Bevor die wichtige Besprechung beginnt, müssen alle relevanten Unterlagen von der Assistenz sorgfältig vorbereitet werden. Die notwendigen Dokumente sind bereits auf den Tischen im Konferenzraum bereitgestellt. Der Raum muss rechtzeitig im System gebucht werden, damit es keine organisatorischen Probleme gibt. Am Ende des Meetings muss eine endgültige Entscheidung über das neue Projekt getroffen werden. Sobald die Diskussion offiziell beendet ist, kann das Ergebnis direkt im Protokoll festgehalten werden.",
+    "en": "Before the important meeting begins, all relevant documents must be carefully prepared by the assistant. The necessary documents are already provided on the tables in the conference room. The room must be booked in the system in advance to avoid any organizational problems. At the end of the meeting, a final decision regarding the new project must be made. As soon as the discussion is officially concluded, the result can be recorded directly in the minutes."
+  },
+  {
+    "id": "p-b2-u2-2",
+    "level": "B2",
+    "title": "Project Status and Follow-up",
+    "de": "Das gesamte Projekt muss bis zum Ende der Woche erfolgreich abgeschlossen werden. Alle anfallenden Aufgaben sind bereits klar an die jeweiligen Teammitglieder verteilt. Der detaillierte Bericht muss bis morgen früh von der Projektleitung verfasst werden. Alle wichtigen Dateien sind sicher in der Cloud gespeichert, damit sie jederzeit abgerufen werden können. Um Fehler zu vermeiden, müssen die Ergebnisse noch einmal gründlich von der Qualitätssicherung überprüft werden.",
+    "en": "The entire project must be successfully completed by the end of the week. All arising tasks are already clearly distributed to the respective team members. The detailed report must be written by the project management by tomorrow morning. All important files are securely stored in the cloud so that they can be accessed at any time. To avoid mistakes, the results must be thoroughly checked once more by quality assurance."
+  },
+  {
+    "id": "p-b2-u3-1",
+    "level": "B2",
+    "title": "The Importance of Research",
+    "de": "Die kontinuierliche Untersuchung neuer Technologien ist für die Entwicklung der modernen Medizin von entscheidender Bedeutung. Durch die präzise Messung der Daten konnten viele Fehler in früheren Studien erfolgreich vermieden werden. Wäre eine schnellere Analyse der Ergebnisse möglich, würde sich der gesamte Forschungsprozess erheblich verkürzen. Die Veröffentlichung dieser Ergebnisse erfordert eine sorgfältige Bewertung durch die gesamte wissenschaftliche Gemeinschaft. Neue Theorien werden oft auf der Grundlage der Beobachtung komplexer biologischer Prozesse entwickelt.",
+    "en": "The continuous investigation of new technologies is of decisive importance for the development of modern medicine. Through the precise measurement of the data, many errors in previous studies could be successfully avoided. If a faster analysis of the results were possible, the entire research process would be significantly shortened. The publication of these results requires a careful evaluation by the entire scientific community. New theories are often developed based on the observation of complex biological processes."
+  },
+  {
+    "id": "p-b2-u3-2",
+    "level": "B2",
+    "title": "Discussing a Discovery",
+    "de": "Hast du schon von der jüngsten Entdeckung bezüglich der Veränderung des globalen Klimas gehört? Die Implementierung neuer Maßnahmen wird momentan intensiv in unserem Labor diskutiert. Es wäre besser, wenn die Erklärung des Phänomens etwas detaillierter ausfallen würde. Nach der Beendigung des Experiments sollten wir uns den Vergleich der beiden Versuchsgruppen ansehen. Die Ergebnisse der Studie werden gerade für die nächste große wissenschaftliche Konferenz vorbereitet.",
+    "en": "Have you already heard about the recent discovery regarding the change in the global climate? The implementation of new measures is currently being intensively discussed in our laboratory. It would be better if the explanation of the phenomenon were somewhat more detailed. After the completion of the experiment, we should look at the comparison of the two test groups. The results of the study are currently being prepared for the next large scientific conference."
+  },
+  {
+    "id": "p-b2-u4-1",
+    "level": "B2",
+    "title": "The Impact of Social Media",
+    "de": "Ein bekannter Soziologe behauptet, die ständige Nutzung sozialer Medien verändere das Kommunikationsverhalten der jüngeren Generation massiv. Viele Experten sagen, dass die Privatsphäre der Kinder durch diese digitalen Plattformen zunehmend verletzt werde. Kritiker fordern eine strengere Regulierung dieser Dienste, um die Sicherheit der Jugendlichen besser zu gewährleisten. Die Regierung erklärte zudem, man arbeite bereits an neuen Gesetzen zur Kontrolle des Online-Verhaltens. Es wurde jedoch angemerkt, dass die Situation ohne konsequente Maßnahmen kaum verbessert werden könne.",
+    "en": "A well-known sociologist claims that the constant use of social media is massively changing the communication behavior of the younger generation. Many experts say that children's privacy is increasingly being violated by these digital platforms. Critics demand stricter regulation of these services to better ensure the safety of young people. The government also stated that they are already working on new laws to control online behavior. However, it was noted that the situation could hardly be improved without consistent measures."
+  },
+  {
+    "id": "p-b2-u4-2",
+    "level": "B2",
+    "title": "The Future of Remote Work",
+    "de": "Ein Wirtschaftsexperte führt aus, dass die Arbeit im Homeoffice die Produktivität der Angestellten erheblich steigere. Dennoch wird oft kritisiert, dass die soziale Bindung innerhalb der Teams durch die Distanz geschwächt werde. Die Bedeutung einer ausgewogenen Work-Life-Balance wird in der aktuellen Debatte immer wieder hervorgehoben. Viele Arbeitnehmer gaben an, sie wünschten sich mehr Flexibilität bei der Gestaltung ihrer täglichen Arbeitszeiten. Arbeitgeber betonten hingegen, man müsse eine Balance zwischen individuellen Wünschen und betrieblichen Notwendigkeiten finden.",
+    "en": "An economic expert explains that working from home significantly increases the productivity of employees. Nevertheless, it is often criticized that social bonds within teams are being weakened by the distance. The importance of a balanced work-life balance is repeatedly emphasized in the current debate. Many employees stated that they wished for more flexibility in organizing their daily working hours. Employers, on the other hand, emphasized that a balance between individual wishes and operational necessities must be found."
+  },
+  {
+    "id": "p-b2-u7-1",
+    "level": "B2",
+    "title": "The Fall of the Berlin Wall",
+    "de": "Bevor die Mauer schließlich fiel, hatten viele Bürger bereits ihren Wunsch nach Freiheit lautstark geäußert. Nachdem die Grenzen in jener Nacht geöffnet worden waren, trafen sich die Menschen voller Freude auf den Straßen. Es wäre wohl schwer gewesen, sich eine solch plötzliche Veränderung nur wenige Jahre zuvor vorzustellen. Nach der Wiedervereinigung wurde der Wiederaufbau des Landes zu einer der größten politischen Aufgaben der Geschichte.",
+    "en": "Before the wall finally fell, many citizens had already loudly expressed their desire for freedom. After the borders had been opened on that night, people met in the streets full of joy. It would likely have been difficult to imagine such a sudden change just a few years before. After the reunification, the reconstruction of the country became one of the greatest political tasks in history."
+  },
+  {
+    "id": "p-b2-u7-2",
+    "level": "B2",
+    "title": "The Industrial Revolution",
+    "de": "Bevor die Industrielle Revolution begann, hatten die meisten Menschen in kleinen, ländlichen Gemeinden gelebt. Nachdem neue Maschinen erfunden worden waren, wurden die bisherigen Produktionsprozesse grundlegend und dauerhaft verändert. Hätte sich die Technologie langsamer entwickelt, wäre die soziale Struktur vermutlich stabiler geblieben. Nachdem die städtischen Gebiete rasant gewachsen waren, waren viele Arbeiter vom Land in die Städte gezogen.",
+    "en": "Before the Industrial Revolution began, most people had lived in small, rural communities. After new machines had been invented, the previous production processes were fundamentally and permanently changed. Had technology developed more slowly, the social structure would presumably have remained more stable. After the urban areas had grown rapidly, many workers had moved from the countryside to the cities."
+  },
+  {
+    "id": "p-b2-u8-1",
+    "level": "B2",
+    "title": "The Trap of Sensationalism",
+    "de": "Die Verbreitung von Falschinformationen wird oft durch komplexe Algorithmen in sozialen Netzwerken vorangetrieben. Je sensationeller die Schlagzeile gestaltet ist, desto häufiger klicken Nutzer auf den entsprechenden Artikel. Man könnte annehmen, dass sich die meisten Nutzer der Gefahr von Manipulation durchaus bewusst sind. Dennoch wird die objektive Wahrheit durch stark emotional aufgeladene Inhalte oft systematisch verschleiert. Es dürfte daher ratsam sein, die Glaubwürdigkeit einer Quelle vor jedem Teilen kritisch zu hinterfragen.",
+    "en": "The spread of misinformation is often driven by complex algorithms in social networks. The more sensational the headline is designed, the more frequently users click on the corresponding article. One might assume that most users are quite aware of the danger of manipulation. Nevertheless, objective truth is often systematically obscured by highly emotionally charged content. It would therefore be advisable to critically question the credibility of a source before sharing it."
+  },
+  {
+    "id": "p-b2-u8-2",
+    "level": "B2",
+    "title": "The Necessity of Media Literacy",
+    "de": "Die Relevanz einer fundierten Medienkompetenz kann in der heutigen digitalen Welt kaum überschätzt werden. Je mehr Informationen uns täglich präsentiert werden, desto schwieriger wird es, Wahrheit von Lüge zu unterscheiden. Es dürfte wohl sein, dass eine gezielte Förderung der Urteilskraft in den Lehrplänen stärker verankert werden sollte. Wenn Quellen konsequenter geprüft würden, könnte die Verbreitung von Desinformation deutlich reduziert werden. Nur durch ein kritisches Hinterfragen der Argumente lässt sich ein Schutz vor digitaler Manipulation gewährleisten.",
+    "en": "The relevance of sound media literacy can hardly be overstated in today's digital world. The more information is presented to us daily, the more difficult it becomes to distinguish truth from lies. It is likely that a targeted promotion of judgment should be more firmly anchored in school curricula. If sources were more consistently checked, the spread of disinformation could be significantly reduced. Only through a critical questioning of arguments can protection against digital manipulation be guaranteed."
+  },
+  {
+    "id": "p-c1-u1-1",
+    "level": "C1",
+    "title": "Office Frustrations",
+    "de": "Du hättest mir das doch einfach mal früher sagen können, damit wir rechtzeitig darauf reagieren könnten. Das ist halt nun mal so in dieser Firma, da kann man leider wenig ändern. Dabei ist ja völlig klar, dass wir durch diese ständigen Verzögerungen wertvolle Zeit verlieren. Schau dir doch bitte mal die aktuellen Zahlen an, dann erkennst du das Problem sofort. Man muss die Situation eben so akzeptieren, wie sie sich in diesem Moment darstellt.",
+    "en": "You could have just told me sooner so that we could have reacted in time. That is just how it is in this company; unfortunately, there isn't much one can change. Yet, it is quite obvious that we are losing valuable time due to these constant delays. Please just take a look at the current figures, then you will see the problem immediately. One simply has to accept the situation as it presents itself at the moment."
+  },
+  {
+    "id": "p-c1-u1-2",
+    "level": "C1",
+    "title": "The Missed Connection",
+    "de": "Ach, der Zug ist ja schon wieder weg, obwohl wir doch gerade erst angekommen sind! Tja, dann müssen wir jetzt eben auf den nächsten Anschluss warten, was auch sonst? Das ist halt einfach Pech, da lässt sich jetzt auch nicht mehr viel ausrichten. Setz dich doch erst mal in Ruhe hin und trink einen Kaffee mit mir. Es ist ja nicht gleich das Ende der Welt, wenn wir eine Stunde später ankommen.",
+    "en": "Oh, the train is already gone again, even though we just arrived! Well, then we will just have to wait for the next connection, what else can we do? That is just bad luck; there is not much that can be done about it now. Why don't you just sit down for a moment and have a coffee with me. It is not exactly the end of the world if we arrive an hour later."
+  },
+  {
+    "id": "p-c1-u2-1",
+    "level": "C1",
+    "title": "Business Nuances",
+    "de": "Ehrlich gesagt, das heutige Meeting war ja doch ziemlich intensiv, findest du nicht auch? Du hast mit deiner Analyse den Nagel wirklich auf den Kopf getroffen, was die aktuelle Marktsituation betrifft. Um langfristig erfolgreich zu sein, müssen wir wohl oder übel gewisse Risiken in Kauf nehmen. Lass uns das Thema am besten später mal unter vier Augen besprechen, wenn wir etwas mehr Ruhe haben. Ich werde dich auf jeden Fall auf dem Laufenden halten, sobald es Neuigkeiten gibt.",
+    "en": "To be honest, today's meeting was actually quite intense, don't you think? You really hit the nail on the head with your analysis regarding the current market situation. In order to be successful in the long run, we have to accept certain risks, whether we like it or not. It would be best if we discussed this matter privately later, once we have a bit more peace and quiet. I will certainly keep you up to date as soon as there is any news."
+  },
+  {
+    "id": "p-c1-u2-2",
+    "level": "C1",
+    "title": "Navigating Misunderstandings",
+    "de": "Ich dachte ja wirklich, ich hätte die Lösung längst gefunden, aber da lag ich wohl völlig auf dem Holzweg. Man muss in solchen Momenten einfach über den Tellerrand schauen, anstatt sich nur auf das Offensichtliche zu konzentrieren. Es fühlte sich ehrlich gesagt ein bisschen so an, als ob man mich in dieser schwierigen Phase einfach im Regen stehen gelassen hätte. Mach dir keine Sorgen, ich werde dir auf jeden Fall ganz fest die Daumen drücken, dass sich die Lage bald bessert. Am Ende wird sich schon alles zum Guten wenden, da bin ich mir ziemlich sicher.",
+    "en": "I really thought I had found the solution long ago, but I was clearly completely on the wrong track. In moments like these, one simply has to think outside the box instead of only concentrating on the obvious. To be honest, it felt a bit as if I had just been left in the lurch during this difficult phase. Don't worry, I will certainly keep my fingers crossed for you, hoping that the situation improves soon. In the end, everything will turn out for the best; I am quite sure of that."
+  },
+  {
+    "id": "p-c1-u4-1",
+    "level": "C1",
+    "title": "A Call to Action",
+    "de": "Es ist längst überfällig, dass wir endlich begreifen, dass uns die Zeit buchstäblich zwischen den Fingern zerrinnt. Nicht bloß um finanzielle Mittel geht es hierbei, sondern vielmehr um die Lebensgrundlage, die wir unseren Kindern hinterlassen. Wir können ja nicht einfach so abwarten und hoffen, dass sich die Dinge von ganz allein zum Guten wenden. Handeln müssen wir jetzt, und zwar entschlossen, ohne dabei in die gewohnten, verkrusteten Muster zurückzufallen. Am Ende des Tages ist es schlichtweg eine Frage des politischen Willens, ob wir diesen Wandel wirklich meistern.",
+    "en": "It is long overdue that we finally realize that time is literally slipping through our fingers. This is not merely about financial resources, but rather about the very foundation of life that we leave to our children. We can't just wait around and hope that things will turn out for the best all by themselves. We must act now, and decisively at that, without falling back into our habitual, crusty patterns. At the end of the day, it is quite simply a question of political will whether we truly master this change."
+  },
+  {
+    "id": "p-c1-u4-2",
+    "level": "C1",
+    "title": "The Strategic Pivot",
+    "de": "Der Markt, wie wir ihn kennen, befindet sich gerade in einem radikalen Umbruch, was wir keineswegs unterschätzen sollten. Anstatt uns von der Unsicherheit lähmen zu lassen, sollten wir die Chance ergreifen, die sich uns gerade bietet. Genau hier setzt unser neues Konzept an, das nicht nur effizienter, sondern auch weitaus nachhaltiger arbeitet. Das ist ja kein bloßes Wunschdenken, sondern eine Strategie, die auf harten Fakten und fundierten Analysen basiert. Lassen Sie uns diesen Weg gemeinsam beschreiten, um unsere Marktposition in diesem dynamischen Umfeld langfristig abzusichern.",
+    "en": "The market as we know it is currently undergoing a radical upheaval, which we should by no means underestimate. Instead of letting ourselves be paralyzed by uncertainty, we should seize the opportunity that is currently presenting itself. This is exactly where our new concept comes in, which works not only more efficiently but also far more sustainably. This is not mere wishful thinking, but rather a strategy based on hard facts and well-founded analyses. Let us embark on this path together to secure our market position in this dynamic environment in the long term."
+  },
+  {
+    "id": "p-c1-u7-1",
+    "level": "C1",
+    "title": "The Art of Nuance",
+    "de": "Ehrlich gesagt, ist es gar nicht so einfach, wie man auf den ersten Blick vielleicht vermuten würde. Man sollte es mit seinen Worten schon ein wenig vorsichtig angehen, um niemanden versehentlich vor den Kopf zu stoßen. Auch wenn es banal klingen mag, kommt es am Ende doch maßgeblich auf den richtigen Unterton an. Es ist eben diese feine Nuance, die darüber entscheidet, ob ein Gespräch harmonisch gestaltet wird oder am Ende doch völlig im Sande verläuft. So ist das eben, wenn man ständig versucht, es allen recht zu machen, ohne sich selbst dabei zu verlieren.",
+    "en": "To be honest, it is not at all as easy as one might perhaps assume at first glance. One should approach one's words a little cautiously to avoid accidentally offending anyone. Even if it may sound banal, in the end, it ultimately depends on the right undertone. It is precisely this fine nuance that decides whether a conversation is conducted harmoniously or ends up completely fizzling out. That is just how it is when one constantly tries to please everyone without losing oneself in the process."
+  },
+  {
+    "id": "p-c1-u7-2",
+    "level": "C1",
+    "title": "The Pace of Modern Life",
+    "de": "Heutzutage scheint alles nur noch in einem wahnsinnigen Tempo abzulaufen, als gäbe es kein Morgen mehr. Man ist ständig erreichbar, und irgendwie hat man das Gefühl, dass die nötige Ruhe dabei völlig auf der Strecke bleibt. Dabei wäre es doch eigentlich ganz wichtig, ab und zu mal einen Gang zurückzuschalten. Das ist ja kein bloßer Luxus, sondern eine absolute Notwendigkeit für die eigene mentale Gesundheit. Wenn man das dauerhaft ignoriert, läuft man am Ende doch nur Gefahr, völlig auszubrennen und den Halt zu verlieren.",
+    "en": "Nowadays, everything seems to be happening at a frantic pace, as if there were no tomorrow. One is constantly reachable, and somehow one gets the feeling that the necessary peace of mind is being completely lost in the process. Yet, it would actually be quite important to slow down every now and then. That is not just a mere luxury, but an absolute necessity for one's own mental health. If one ignores this permanently, one ultimately runs the risk of burning out completely and losing one's footing."
+  },
+  {
+    "id": "p-c1-u8-1",
+    "level": "C1",
+    "title": "The Remote Work Dilemma",
+    "de": "Es mag zwar sein, dass das Homeoffice die Flexibilität enorm steigert, doch man sollte dabei den sozialen Aspekt keinesfalls außer Acht lassen. Ich gebe durchaus zu, dass der tägliche Arbeitsweg eine Belastung darstellt, aber der persönliche Kontakt ist für den Teamgeist schlichtweg unersetzlich. Man könnte ja argumentieren, dass digitale Tools das Problem lösen, aber sie können den spontanen Austausch unter Kollegen wohl kaum vollumfänglich ersetzen. Vielleicht wäre es ja sinnvoll, nach einem Kompromiss zu suchen, der beide Seiten angemessen berücksichtigt, anstatt nur auf einer Position zu beharren.",
+    "en": "While it may be true that working from home increases flexibility enormously, one should by no means overlook the social aspect. I certainly concede that the daily commute is a burden, but personal contact is simply irreplaceable for team spirit. One could argue that digital tools solve the problem, but they can hardly replace the spontaneous exchange among colleagues in their entirety. Perhaps it would be sensible to seek a compromise that appropriately considers both sides, instead of merely insisting on a single position."
+  },
+  {
+    "id": "p-c1-u8-2",
+    "level": "C1",
+    "title": "Urban Mobility Debates",
+    "de": "Zwar ist es unbestreitbar, dass autofreie Zonen die Luftqualität verbessern, doch viele Bürger befürchten wohl eine drastische Einschränkung ihrer Mobilität. Es geht mir keineswegs darum, den Fortschritt zu blockieren, aber man muss wohl zugeben, dass die Infrastruktur für den ÖPNV momentan noch nicht ausreicht. Man könnte leicht glauben, das ließe sich über Nacht umsetzen, aber in der Realität ist die Umsetzung ein äußerst komplexes Unterfangen. In gewisser Weise sind die Argumente für eine Verkehrsberuhigung durchaus stichhaltig, allerdings fehlt es derzeit noch an einem wirklich durchdachten Gesamtkonzept.",
+    "en": "While it is indisputable that car-free zones improve air quality, many citizens likely fear a drastic restriction of their mobility. It is by no means my intention to block progress, but one must admit that the public transport infrastructure is currently still insufficient. One might easily believe that this could be implemented overnight, but in reality, the implementation is an extremely complex undertaking. To a certain extent, the arguments for traffic calming are quite valid, but there is currently still a lack of a truly well-thought-out overall concept."
+  }
 ]
