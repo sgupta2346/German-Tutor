@@ -40,7 +40,8 @@ export default function Home() {
 
   const newLeft = Math.max(0, settings.newPerDay - (newIntroduced[today()] ?? 0));
   const customCount = useStore((s) => s.customWords.length);
-  const queue = useMemo(() => buildQueue(srs, { newLimit: newLeft }), [srs, newLeft, customCount]);
+  const knownMap = useStore((s) => s.known);
+  const queue = useMemo(() => buildQueue(srs, { newLimit: newLeft }), [srs, newLeft, customCount, knownMap]);
   const mastered = cards.filter((c) => isMastered(srs[c.id])).length;
   const learned = Object.keys(srs).length;
 

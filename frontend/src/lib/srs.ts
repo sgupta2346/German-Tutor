@@ -4,6 +4,7 @@ import type { VocabCard } from "@/data/types";
 import { useStore } from "./store";
 
 export const TUTOR_DECK = "tutor";
+export const FLAGGED_DECK = "flagged";
 
 export function allCards(): VocabCard[] {
   return [...cards, ...useStore.getState().customWords.map((w) => ({ ...w, deckId: TUTOR_DECK }))];
@@ -70,7 +71,16 @@ export interface QueueOptions {
 }
 
 export function buildQueue(srs: Record<string, CardInput>, { deckId, newLimit, now = new Date() }: QueueOptions): VocabCard[] {
-  const every = allCards();
+  const { known, flagged } = useStore.getState();
+  const every = allCards().filter((c) => !known[c.id]);
+  if (deckId === FLAGGED_DECK) {
+    const marked = every.filter((c) => flagged[c.id]);
+    for (let i = marked.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [marked[i], marked[j]] = [marked[j], marked[i]];
+    }
+    return marked;
+  }
   const pool = deckId ? every.filter((c) => c.deckId === deckId) : every;
   const due = pool
     .filter((c) => isDue(srs[c.id], now))
@@ -88,11 +98,14 @@ export function buildQueue(srs: Record<string, CardInput>, { deckId, newLimit, n
 }
 
 export function deckStats(srs: Record<string, CardInput>, deckId: string, now = new Date()) {
-  const pool = allCards().filter((c) => c.deckId === deckId);
+  const { known } = useStore.getState();
+  const all = allCards().filter((c) => c.deckId === deckId);
+  const pool = all.filter((c) => !known[c.id]);
   return {
-    total: pool.length,
+    known: all.length - pool.length,
+    total: all.length,
     fresh: pool.filter((c) => isNew(srs[c.id])).length,
     due: pool.filter((c) => isDue(srs[c.id], now)).length,
-    mastered: pool.filter((c) => isMastered(srs[c.id])).length,
+    mastered: pool.filter((c) => isMastered(srs[c.id])).length + (all.length - pool.length),
   };
 }

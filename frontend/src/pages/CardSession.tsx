@@ -3,13 +3,13 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { AnimatePresence, animate, motion, useMotionTemplate, useMotionValue, useSpring, useTransform } from "motion/react";
 import clsx from "clsx";
 import confetti from "canvas-confetti";
-import { ArrowRight, Mic, RotateCcw, X } from "lucide-react";
+import { ArrowRight, Check, Flag, Mic, RotateCcw, X } from "lucide-react";
 import { Rating, type Grade } from "ts-fsrs";
 import { deckById, withArticle } from "@/data/content";
 import type { VocabCard } from "@/data/types";
 import { speak } from "@/lib/audio";
 import { today, useStore } from "@/lib/store";
-import { buildQueue, GRADES, isNew, preview, review, TUTOR_DECK } from "@/lib/srs";
+import { buildQueue, FLAGGED_DECK, GRADES, isNew, preview, review, TUTOR_DECK } from "@/lib/srs";
 import { PlayButton, ProgressBar } from "@/components/ui";
 import { SpeakPanel } from "@/components/SpeakPanel";
 import { Sheet } from "@/components/Sheet";
@@ -19,7 +19,7 @@ const SWIPE = 110;
 export default function CardSession() {
   const { deckId = "review" } = useParams();
   const navigate = useNavigate();
-  const deck = deckId === "review" ? null : deckId === TUTOR_DECK ? { id: TUTOR_DECK, title: "Saved words", titleDe: "Meine Wörter" } : deckById.get(deckId);
+  const deck = deckId === "review" ? null : deckId === TUTOR_DECK ? { id: TUTOR_DECK, title: "Saved words", titleDe: "Meine Wörter" } : deckId === FLAGGED_DECK ? { id: FLAGGED_DECK, title: "Flagged words", titleDe: "Schwierige Wörter" } : deckById.get(deckId);
   const srs = useStore((s) => s.srs);
   const saveCard = useStore((s) => s.saveCard);
   const addXp = useStore((s) => s.addXp);
@@ -73,6 +73,22 @@ export default function CardSession() {
     },
     [card, srs, saveCard, addXp],
   );
+
+  const flaggedMap = useStore((s) => s.flagged);
+  const markKnown = useStore((s) => s.markKnown);
+  const toggleFlag = useStore((s) => s.toggleFlag);
+  const [knownCount, setKnownCount] = useState(0);
+
+  const know = useCallback(() => {
+    if (!card) return;
+    markKnown(card.id);
+    setKnownCount((k) => k + 1);
+    setReviewed((r) => r + 1);
+    addXp(1);
+    setFlipped(false);
+    setPractice(false);
+    setQueue((q) => q.filter((c) => c.id !== card.id));
+  }, [card, markKnown, addXp]);
 
   if (!deck && deckId !== "review") {
     return (
@@ -132,6 +148,10 @@ export default function CardSession() {
                     <p className="font-display text-4xl font-extrabold">{reviewed}</p>
                     <p className="text-xs text-muted">reviewed</p>
                   </div>
+                  <div>
+                    <p className="font-display text-4xl font-extrabold text-das">{knownCount}</p>
+                    <p className="text-xs text-muted">known</p>
+                  </div>
                 </div>
                 <div className="mt-6 grid grid-cols-4 gap-2 text-center">
                   {GRADES.map(({ grade: g, label, tone }) => (
@@ -152,6 +172,9 @@ export default function CardSession() {
                 <p className="mt-1">
                   <kbd className="rounded bg-raised px-1.5 font-mono">←</kbd> again · <kbd className="rounded bg-raised px-1.5 font-mono">→</kbd> got it · <kbd className="rounded bg-raised px-1.5 font-mono">↑</kbd> easy
                 </p>
+                <p className="mt-1">
+                  <kbd className="rounded bg-raised px-1.5 font-mono">K</kbd> I know this · <kbd className="rounded bg-raised px-1.5 font-mono">F</kbd> flag
+                </p>
                 <p className="mt-1">or just drag the card</p>
               </div>
             </aside>
@@ -170,6 +193,9 @@ export default function CardSession() {
                     onFlip={() => setFlipped((f) => !f)}
                     onGrade={grade}
                     onPractice={() => setPractice(true)}
+                    onKnow={know}
+                    flagged={!!flaggedMap[card.id]}
+                    onFlag={() => toggleFlag(card.id)}
                   />
                 </AnimatePresence>
               </div>
@@ -223,7 +249,7 @@ export default function CardSession() {
               <div className="pr-10">{practicePanel}</div>
             </Sheet>
           </div>
-          <Keys flipped={flipped} onFlip={() => setFlipped((f) => !f)} onGrade={grade} />
+          <Keys flipped={flipped} onFlip={() => setFlipped((f) => !f)} onGrade={grade} onKnow={know} onFlag={() => card && toggleFlag(card.id)} />
         </>
       )}
     </div>
@@ -231,10 +257,12 @@ export default function CardSession() {
 }
 
 
-function Keys({ flipped, onFlip, onGrade }: { flipped: boolean; onFlip: () => void; onGrade: (g: Grade) => void }) {
+function Keys({ flipped, onFlip, onGrade, onKnow, onFlag }: { flipped: boolean; onFlip: () => void; onGrade: (g: Grade) => void; onKnow: () => void; onFlag: () => void }) {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if ((e.target as HTMLElement)?.tagName === "INPUT") return;
+      if (e.key === "k" || e.key === "K") return onKnow();
+      if (e.key === "f" || e.key === "F") return onFlag();
       if (e.code === "Space" || e.key === "Enter") {
         e.preventDefault();
         if (!flipped) onFlip();
@@ -250,7 +278,7 @@ function Keys({ flipped, onFlip, onGrade }: { flipped: boolean; onFlip: () => vo
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [flipped, onFlip, onGrade]);
+  }, [flipped, onFlip, onGrade, onKnow, onFlag]);
   return null;
 }
 
@@ -285,12 +313,18 @@ function SwipeCard({
   onFlip,
   onGrade,
   onPractice,
+  onKnow,
+  flagged,
+  onFlag,
 }: {
   card: VocabCard;
   flipped: boolean;
   onFlip: () => void;
   onGrade: (g: Grade) => void;
   onPractice: () => void;
+  onKnow: () => void;
+  flagged: boolean;
+  onFlag: () => void;
 }) {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -369,6 +403,29 @@ function SwipeCard({
         >
           <span className="pointer-events-none absolute -right-6 -top-10 font-display text-[11rem] font-extrabold leading-none text-white/10">{article ?? "Aa"}</span>
           <span className="pointer-events-none absolute -bottom-16 -left-10 h-48 w-48 rounded-full bg-white/10" />
+          <div className="relative flex items-center justify-between p-4" onPointerDownCapture={stop}>
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                onFlag();
+              }}
+              title={flagged ? "Remove flag" : "Flag as difficult (F)"}
+              className={`flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-bold transition-colors ${flagged ? "bg-white text-bad" : "bg-white/20 text-white hover:bg-white/30"}`}
+            >
+              <Flag size={13} fill={flagged ? "currentColor" : "none"} /> {flagged ? "Flagged" : "Flag"}
+            </button>
+            <button
+              onClick={async (e) => {
+                e.stopPropagation();
+                await animate(y, -900, { duration: 0.35, ease: "easeIn" });
+                onKnow();
+              }}
+              title="I know this, stop showing it (K)"
+              className="flex items-center gap-1.5 rounded-full bg-white/20 px-3 py-1.5 text-xs font-bold text-white hover:bg-white/30"
+            >
+              <Check size={13} /> I know this
+            </button>
+          </div>
           <div className="relative flex flex-1 flex-col items-center justify-center gap-5 p-8 text-center">
             {article && <span className="rounded-full bg-white/25 px-4 py-1 text-sm font-bold tracking-wide">{article}</span>}
             <p className="font-display text-5xl font-extrabold tracking-tight text-balance break-words drop-shadow-sm md:text-6xl">{card.de}</p>
@@ -387,7 +444,20 @@ function SwipeCard({
         >
           <div className="px-7 pb-5 pt-6 text-white" style={{ background: `linear-gradient(145deg, ${a}, ${b})` }}>
             <div className="flex items-center justify-between">
-              <span className="rounded-full bg-white/25 px-3 py-0.5 text-xs font-bold">{card.pos}</span>
+              <span className="flex items-center gap-2">
+                <span className="rounded-full bg-white/25 px-3 py-0.5 text-xs font-bold">{card.pos}</span>
+                <button
+                  onPointerDownCapture={stop}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onFlag();
+                  }}
+                  title={flagged ? "Remove flag" : "Flag as difficult (F)"}
+                  className={`rounded-full p-1.5 ${flagged ? "bg-white text-bad" : "bg-white/25 text-white"}`}
+                >
+                  <Flag size={12} fill={flagged ? "currentColor" : "none"} />
+                </button>
+              </span>
               <button
                 onPointerDownCapture={stop}
                 onClick={(e) => {

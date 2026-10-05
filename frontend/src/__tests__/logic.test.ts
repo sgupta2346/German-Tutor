@@ -137,3 +137,29 @@ describe("scoring calibration", () => {
     expect(scoreAttempt(["ich"], [["ɪ", "ç"]], ["ɪ", "k"], null).focus.map((f) => f.rule)).toEqual(["ich"]);
   });
 });
+
+import { useStore } from "@/lib/store";
+import { FLAGGED_DECK } from "@/lib/srs";
+
+describe("known and flagged words", () => {
+  it("drops known words from every card queue and clears their flag", () => {
+    const deckId = cards[0].deckId;
+    const target = cards[0].id;
+    useStore.getState().toggleFlag(target);
+    useStore.getState().markKnown(target);
+    expect(useStore.getState().flagged[target]).toBeUndefined();
+    expect(buildQueue({}, { deckId, newLimit: 50 }).some((c) => c.id === target)).toBe(false);
+    useStore.getState().unmarkKnown(target);
+    expect(buildQueue({}, { deckId, newLimit: 50 }).some((c) => c.id === target)).toBe(true);
+  });
+
+  it("builds the flagged deck from all flagged words regardless of due dates", () => {
+    const [a, b] = [cards[3].id, cards[40].id];
+    useStore.getState().toggleFlag(a);
+    useStore.getState().toggleFlag(b);
+    const q = buildQueue({}, { deckId: FLAGGED_DECK, newLimit: 0 });
+    expect(q.map((c) => c.id).sort()).toEqual([a, b].sort());
+    useStore.getState().toggleFlag(a);
+    expect(buildQueue({}, { deckId: FLAGGED_DECK, newLimit: 0 }).map((c) => c.id)).toEqual([b]);
+  });
+});

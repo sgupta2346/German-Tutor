@@ -54,11 +54,16 @@ interface State {
   attempts: Attempt[];
   soundStats: Record<string, SoundStat>;
   customWords: CustomWord[];
+  known: Record<string, number>;
+  flagged: Record<string, number>;
   settings: Settings;
   onboarded: boolean;
   recordSounds: (present: string[], missed: string[]) => void;
   addCustomWord: (word: Omit<CustomWord, "id" | "addedAt">) => boolean;
   removeCustomWord: (id: string) => void;
+  markKnown: (id: string) => void;
+  unmarkKnown: (id: string) => void;
+  toggleFlag: (id: string) => void;
   addXp: (amount: number) => void;
   completeLesson: (id: string, stars: number) => void;
   saveCard: (id: string, card: CardInput, wasNew: boolean) => void;
@@ -93,6 +98,8 @@ const initial = {
   attempts: [] as Attempt[],
   soundStats: {} as Record<string, SoundStat>,
   customWords: [] as CustomWord[],
+  known: {} as Record<string, number>,
+  flagged: {} as Record<string, number>,
   onboarded: false,
   settings: { theme: "light", rate: 1, voice: "thorsten", voiceURI: null, autoplay: true, dailyGoal: 50, newPerDay: 15 } as Settings,
 };
@@ -143,6 +150,22 @@ export const useStore = create<State>()(
         return true;
       },
       removeCustomWord: (id) => set({ customWords: get().customWords.filter((w) => w.id !== id) }),
+      markKnown: (id) => {
+        const flagged = { ...get().flagged };
+        delete flagged[id];
+        set({ known: { ...get().known, [id]: Date.now() }, flagged });
+      },
+      unmarkKnown: (id) => {
+        const known = { ...get().known };
+        delete known[id];
+        set({ known });
+      },
+      toggleFlag: (id) => {
+        const flagged = { ...get().flagged };
+        if (flagged[id]) delete flagged[id];
+        else flagged[id] = Date.now();
+        set({ flagged });
+      },
       logAttempt: (attempt) => set({ attempts: [attempt, ...get().attempts].slice(0, 300) }),
       updateSettings: (patch) => set({ settings: { ...get().settings, ...patch } }),
       setName: (name) => set({ name }),
@@ -183,6 +206,8 @@ export const useStore = create<State>()(
         attempts: s.attempts,
         soundStats: s.soundStats,
         customWords: s.customWords,
+        known: s.known,
+        flagged: s.flagged,
         settings: s.settings,
         onboarded: s.onboarded,
       }),
