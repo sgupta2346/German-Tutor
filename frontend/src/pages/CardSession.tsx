@@ -12,6 +12,7 @@ import { today, useStore } from "@/lib/store";
 import { buildQueue, GRADES, isNew, preview, review, TUTOR_DECK } from "@/lib/srs";
 import { PlayButton, ProgressBar } from "@/components/ui";
 import { SpeakPanel } from "@/components/SpeakPanel";
+import { Sheet } from "@/components/Sheet";
 
 const SWIPE = 110;
 
@@ -83,16 +84,33 @@ export default function CardSession() {
     );
   }
 
+  const spoken = card ? (card.gender ? withArticle(card) : card.de) : "";
+  const practicePanel = card && (
+    <>
+      <p className="text-sm font-bold uppercase tracking-[0.16em] text-ember">Say it out loud</p>
+      <div className="mt-3 flex items-center gap-3">
+        <PlayButton text={spoken} />
+        <div>
+          <p className="font-display text-2xl font-extrabold lg:text-3xl">{spoken}</p>
+          <p className="text-muted">{card.en}</p>
+        </div>
+      </div>
+      <div className="mt-5">
+        <SpeakPanel text={spoken} compact />
+      </div>
+    </>
+  );
+
   return (
-    <div className="flex min-h-screen flex-col overflow-hidden">
-      <header className="mx-auto flex w-full max-w-2xl items-center gap-4 px-4 pt-5 md:pt-8">
+    <div className="flex min-h-screen flex-col overflow-hidden lg:h-dvh">
+      <header className="mx-auto flex w-full max-w-6xl items-center gap-4 px-4 pt-5 md:pt-6">
         <button aria-label="Close" onClick={() => navigate("/cards")} className="rounded-full p-2 text-muted hover:bg-raised hover:text-ink">
           <X size={24} />
         </button>
-        <ProgressBar value={total.current ? reviewed / total.current : 1} className="h-3" color="var(--color-der)" />
-        <span className="w-10 text-right text-sm font-bold text-muted">{queue.length}</span>
+        <ProgressBar value={total.current ? reviewed / total.current : 1} className="h-3" color="var(--color-das)" />
+        <span className="w-10 text-right text-sm font-bold text-muted lg:hidden">{queue.length}</span>
       </header>
-      <p className="mx-auto mt-3 w-full max-w-2xl px-6 text-xs font-semibold uppercase tracking-[0.16em] text-muted">
+      <p className="mx-auto mt-3 w-full max-w-6xl px-6 text-xs font-semibold uppercase tracking-[0.16em] text-muted lg:hidden">
         {deck ? `${deck.title} · ${deck.titleDe}` : "Daily review"}
       </p>
 
@@ -100,41 +118,110 @@ export default function CardSession() {
         <Summary reviewed={reviewed} tally={tally} onAgain={() => navigate(0)} onBack={() => navigate("/cards")} />
       ) : (
         <>
-          <div className="relative mx-auto mt-4 flex w-full max-w-md flex-1 items-start justify-center px-6 md:mt-6">
-            <div className="relative aspect-[3/4] w-full" style={{ maxWidth: "min(24rem, calc((100dvh - 15rem) * 0.75))" }}>
-              {queue
-                .slice(1, 3)
-                .map((c, i) => <StackCard key={`${c.id}-behind-${i}`} card={c} depth={i + 1} />)
-                .reverse()}
-              <AnimatePresence>
-                <SwipeCard
-                  key={`${card.id}-${reviewed}`}
-                  card={card}
-                  flipped={flipped}
-                  onFlip={() => setFlipped((f) => !f)}
-                  onGrade={grade}
-                  onPractice={() => setPractice(true)}
-                />
+          <div className="mx-auto grid w-full max-w-6xl flex-1 gap-8 px-4 pt-4 lg:min-h-0 lg:grid-cols-[1fr_auto_1fr] lg:items-center lg:pb-6 lg:pt-2">
+            <aside className="hidden flex-col gap-4 lg:flex">
+              <div className="card p-6">
+                <p className="text-xs font-bold uppercase tracking-[0.16em] text-muted">{deck ? deck.titleDe : "Daily review"}</p>
+                <p className="mt-1 font-display text-2xl font-extrabold">{deck ? deck.title : "All decks"}</p>
+                <div className="mt-6 flex items-end gap-6">
+                  <div>
+                    <p className="font-display text-4xl font-extrabold">{queue.length}</p>
+                    <p className="text-xs text-muted">cards left</p>
+                  </div>
+                  <div>
+                    <p className="font-display text-4xl font-extrabold">{reviewed}</p>
+                    <p className="text-xs text-muted">reviewed</p>
+                  </div>
+                </div>
+                <div className="mt-6 grid grid-cols-4 gap-2 text-center">
+                  {GRADES.map(({ grade: g, label, tone }) => (
+                    <div key={label} className="rounded-xl bg-raised py-2">
+                      <p className="font-display text-lg font-extrabold" style={{ color: tone }}>
+                        {tally[g] ?? 0}
+                      </p>
+                      <p className="text-[10px] font-semibold text-muted">{label}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="card p-5 text-sm text-muted">
+                <p className="mb-2 font-semibold text-ink">Shortcuts</p>
+                <p>
+                  <kbd className="rounded bg-raised px-1.5 font-mono">space</kbd> flip · <kbd className="rounded bg-raised px-1.5 font-mono">1</kbd>–<kbd className="rounded bg-raised px-1.5 font-mono">4</kbd> grade
+                </p>
+                <p className="mt-1">
+                  <kbd className="rounded bg-raised px-1.5 font-mono">←</kbd> again · <kbd className="rounded bg-raised px-1.5 font-mono">→</kbd> got it · <kbd className="rounded bg-raised px-1.5 font-mono">↑</kbd> easy
+                </p>
+                <p className="mt-1">or just drag the card</p>
+              </div>
+            </aside>
+
+            <div className="flex justify-center">
+              <div className="relative aspect-[3/4] w-[min(24rem,calc((100dvh-15rem)*0.75),100%)] lg:w-[min(26rem,calc((100dvh-9rem)*0.75))]">
+                {queue
+                  .slice(1, 3)
+                  .map((c, i) => <StackCard key={`${c.id}-behind-${i}`} card={c} depth={i + 1} />)
+                  .reverse()}
+                <AnimatePresence>
+                  <SwipeCard
+                    key={`${card.id}-${reviewed}`}
+                    card={card}
+                    flipped={flipped}
+                    onFlip={() => setFlipped((f) => !f)}
+                    onGrade={grade}
+                    onPractice={() => setPractice(true)}
+                  />
+                </AnimatePresence>
+              </div>
+            </div>
+
+            <div className="hidden lg:block">
+              <AnimatePresence mode="wait">
+                {!flipped ? (
+                  <motion.div key="hint" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0 }} className="card p-6">
+                    <p className="font-display text-xl font-bold">Do you know it?</p>
+                    <p className="mt-1 text-sm text-muted">Say the meaning in your head, then check.</p>
+                    <button className="btn btn-primary mt-5 w-full" onClick={() => setFlipped(true)}>
+                      Show answer <kbd className="ml-1 rounded bg-white/20 px-1.5 text-xs">space</kbd>
+                    </button>
+                  </motion.div>
+                ) : practice ? (
+                  <motion.div key="practice" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0 }} className="card relative max-h-[calc(100dvh-8rem)] overflow-y-auto p-6">
+                    <button aria-label="Close practice" onClick={() => setPractice(false)} className="absolute right-4 top-4 rounded-full p-1.5 text-muted hover:bg-raised hover:text-ink">
+                      <X size={18} />
+                    </button>
+                    {practicePanel}
+                  </motion.div>
+                ) : (
+                  <motion.div key="grades" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0 }} className="card space-y-3 p-6">
+                    <p className="font-display text-xl font-bold">How well did you know it?</p>
+                    <GradeBar card={card} onGrade={grade} vertical />
+                    <button className="btn btn-ghost w-full text-sm" onClick={() => setPractice(true)}>
+                      <Mic size={15} /> Practise saying it
+                    </button>
+                  </motion.div>
+                )}
               </AnimatePresence>
             </div>
           </div>
 
-          <div className="mx-auto w-full max-w-2xl px-4 pb-[max(env(safe-area-inset-bottom),1.5rem)] pt-6">
+          <div className="mx-auto w-full max-w-2xl px-4 pb-[max(env(safe-area-inset-bottom),1.5rem)] pt-6 lg:hidden">
             <AnimatePresence mode="wait">
-              {practice && flipped ? (
-                <motion.div key="practice" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="card p-5">
-                  <SpeakPanel text={card.de} compact />
-                </motion.div>
-              ) : flipped ? (
+              {flipped ? (
                 <GradeBar key="grades" card={card} onGrade={grade} />
               ) : (
                 <motion.div key="hint" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="flex justify-center">
                   <button className="btn btn-primary w-full max-w-sm" onClick={() => setFlipped(true)}>
-                    Show answer <kbd className="ml-1 rounded bg-bg/20 px-1.5 text-xs">space</kbd>
+                    Show answer <kbd className="ml-1 rounded bg-white/20 px-1.5 text-xs">space</kbd>
                   </button>
                 </motion.div>
               )}
             </AnimatePresence>
+          </div>
+          <div className="lg:hidden">
+            <Sheet open={practice} onClose={() => setPractice(false)}>
+              <div className="pr-10">{practicePanel}</div>
+            </Sheet>
           </div>
           <Keys flipped={flipped} onFlip={() => setFlipped((f) => !f)} onGrade={grade} />
         </>
@@ -142,6 +229,7 @@ export default function CardSession() {
     </div>
   );
 }
+
 
 function Keys({ flipped, onFlip, onGrade }: { flipped: boolean; onFlip: () => void; onGrade: (g: Grade) => void }) {
   useEffect(() => {
@@ -374,17 +462,17 @@ function SwipeCard({
   );
 }
 
-function GradeBar({ card, onGrade }: { card: VocabCard; onGrade: (g: Grade) => void }) {
+function GradeBar({ card, onGrade, vertical = false }: { card: VocabCard; onGrade: (g: Grade) => void; vertical?: boolean }) {
   const srs = useStore((s) => s.srs);
   const intervals = useMemo(() => preview(srs[card.id]), [srs, card.id]);
   return (
-    <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="grid grid-cols-4 gap-2">
+    <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className={vertical ? "grid gap-2" : "grid grid-cols-4 gap-2"}>
       {GRADES.map(({ grade, label, tone, key }) => (
         <motion.button
           key={label}
           whileTap={{ scale: 0.94 }}
           onClick={() => onGrade(grade)}
-          className="flex flex-col items-center rounded-2xl border-2 bg-surface py-3 font-semibold"
+          className={vertical ? "flex items-center justify-between rounded-2xl border-2 bg-surface px-5 py-3 font-semibold" : "flex flex-col items-center rounded-2xl border-2 bg-surface py-3 font-semibold"}
           style={{ borderColor: `color-mix(in oklab, ${tone} 55%, transparent)`, boxShadow: `0 4px 0 color-mix(in oklab, ${tone} 55%, transparent)` }}
         >
           <span style={{ color: tone }}>{label}</span>

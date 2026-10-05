@@ -83,12 +83,24 @@ export function SpeakPanel({
     startedAt.current = performance.now();
     setPhase("recording");
     const limit = maxSeconds(text);
+    let heardSpeech = false;
+    let quietSince = 0;
     const tick = () => {
       const level = r.level();
       setLevels((prev) => [...prev.slice(1), level]);
-      const secs = (performance.now() - startedAt.current) / 1000;
+      const now = performance.now();
+      const secs = (now - startedAt.current) / 1000;
       setElapsed(secs);
-      if (secs >= limit) {
+      if (secs > 0.3 && level > 0.15) {
+        heardSpeech = true;
+        quietSince = 0;
+      } else if (heardSpeech && level < 0.08) {
+        quietSince ||= now;
+      } else {
+        quietSince = 0;
+      }
+      const doneTalking = heardSpeech && quietSince > 0 && now - quietSince > 1100;
+      if (secs >= limit || doneTalking) {
         finish();
         return;
       }
@@ -175,7 +187,7 @@ export function SpeakPanel({
 
         <p className="h-5 text-sm text-muted">
           {phase === "idle" && (model.status === "loading" ? `Preparing the pronunciation model (${Math.round(model.progress * 100)}% of ${MODEL_SIZE_MB} MB, first time only)` : "Tap the mic and read the text aloud")}
-          {phase === "recording" && `Listening… tap to finish (${Math.ceil(remaining)}s)`}
+          {phase === "recording" && `Listening… stops when you finish, or tap (${Math.ceil(remaining)}s)`}
           {phase === "processing" && (model.status === "loading" ? `Downloading the pronunciation model, first time only (${Math.round(model.progress * 100)}%)` : "Analysing your sounds…")}
           {phase === "result" && result?.mode === "basic" && "Basic check: word recognition only"}
         </p>
