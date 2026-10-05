@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { AppShell } from "@/components/AppShell";
 import { Onboarding } from "@/components/Onboarding";
+import { AudioErrorToast } from "@/components/ui";
 import Home from "@/pages/Home";
 
 const Learn = lazy(() => import("@/pages/Learn"));
@@ -41,6 +42,7 @@ export default function App() {
     <>
       <RouterProvider router={router} />
       <Onboarding />
+      <AudioErrorToast />
     </>
   );
 }

@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "motion/react";
 import clsx from "clsx";
 import { BookOpen, Flame, Headphones, Home, Layers, MessageCircle, Mic, Settings, Type } from "lucide-react";
 import { currentStreak, useStore } from "@/lib/store";
+import { preloadAudio } from "@/lib/audio";
 
 const NAV = [
   { to: "/", label: "Home", icon: Home, end: true },
@@ -50,6 +51,10 @@ export function Logo() {
 
 export function AppShell() {
   useTheme();
+  useEffect(() => {
+    const t = window.setTimeout(() => preloadAudio(), 1500);
+    return () => window.clearTimeout(t);
+  }, []);
   const location = useLocation();
   const streak = useStore((s) => currentStreak(s.streak, s.lastActive));
   const immersive = location.pathname.startsWith("/lesson/") || /^\/cards\/.+/.test(location.pathname);

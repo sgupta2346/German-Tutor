@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
 import clsx from "clsx";
 import {
   Clock,
@@ -13,11 +13,12 @@ import {
   Train,
   Users,
   Volume2,
+  VolumeX,
   Snail,
   Zap,
   type LucideIcon,
 } from "lucide-react";
-import { speak, useSpeaking } from "@/lib/audio";
+import { dismissAudioError, speak, useAudioError, useSpeaking } from "@/lib/audio";
 import { GENDER_COLOR, GENDER_LABEL, ARTICLE } from "@/data/content";
 import type { Gender } from "@/data/types";
 
@@ -49,7 +50,7 @@ export function PlayButton({
   className?: string;
   label?: string;
 }) {
-  const speaking = useSpeaking(text);
+  const speaking = useSpeaking(text, slow);
   const dims = { sm: "h-9 w-9", md: "h-12 w-12", lg: "h-16 w-16" }[size];
   const icon = { sm: 16, md: 20, lg: 28 }[size];
   const Icon = slow ? Snail : Volume2;
@@ -57,6 +58,7 @@ export function PlayButton({
     <button
       type="button"
       aria-label={label ?? (slow ? `Play slowly: ${text}` : `Play: ${text}`)}
+      title={slow ? "Play slowly" : "Play"}
       onClick={(e) => {
         e.stopPropagation();
         speak(text, { slow });
@@ -152,5 +154,28 @@ export function PageHeader({ eyebrow, title, children }: { eyebrow?: string; tit
       <h1 className="font-display text-4xl font-extrabold tracking-tight text-balance md:text-5xl">{title}</h1>
       {children && <div className="mt-3 max-w-2xl text-muted">{children}</div>}
     </header>
+  );
+}
+
+export function AudioErrorToast() {
+  const error = useAudioError();
+  return (
+    <AnimatePresence>
+      {error && (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 20 }}
+          role="alert"
+          className="fixed inset-x-4 bottom-24 z-[80] mx-auto flex max-w-lg items-start gap-3 rounded-2xl border border-line bg-surface p-4 text-sm shadow-2xl lg:bottom-8"
+        >
+          <VolumeX size={18} className="mt-0.5 shrink-0 text-ember" />
+          <span className="flex-1">{error}</span>
+          <button onClick={dismissAudioError} className="font-semibold text-muted hover:text-ink">
+            OK
+          </button>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 }
