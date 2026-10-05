@@ -77,7 +77,7 @@ evaluation in `kaggle/phoneme_eval/`.
 ## Audio
 
 German audio for every word and sentence is pre-generated with Piper
-(two voices, Thorsten and Kerstin) in `kaggle/audio_gen/` and served from a
+(the Thorsten voice) in `kaggle/audio_gen/` and served from a
 Hugging Face dataset. If a phrase has no recording, the browser's own German
 voice reads it.
 
