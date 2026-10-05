@@ -166,7 +166,9 @@ export const useStore = create<State>()(
       },
       merge: (persisted, current) => {
         const p = (persisted ?? {}) as Partial<State>;
-        return { ...current, ...p, settings: { ...current.settings, ...(p.settings ?? {}) } };
+        const settings = { ...current.settings, ...(p.settings ?? {}) };
+        if (settings.voice === "kerstin") settings.voice = "thorsten";
+        return { ...current, ...p, settings };
       },
       storage: createJSONStorage(() => localStorage),
       partialize: (s) => ({

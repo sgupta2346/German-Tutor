@@ -7,6 +7,7 @@ const AUDIO_BASE = ((import.meta.env.VITE_AUDIO_BASE as string | undefined) || D
 type Entry = [string, Record<string, [number, number]>];
 let manifest: { voices: string[]; files: Record<string, Entry> } | null = null;
 const PACK_CACHE = "klang-audio-v2";
+const RELIABLE_VOICES = ["thorsten"];
 const packs = new Map<string, Promise<ArrayBuffer>>();
 let manifestPromise: Promise<void> | null = null;
 let current: { text: string; slow: boolean; stop: () => void } | null = null;
@@ -26,7 +27,7 @@ function loadManifest(): Promise<void> {
   manifestPromise ??= import("@content/audio_manifest.json")
     .then((mod) => {
       const m = mod.default as unknown as { voices?: string[]; files?: Record<string, Entry> };
-      manifest = m?.files ? { voices: m.voices ?? [], files: m.files } : { voices: [], files: {} };
+      manifest = m?.files ? { voices: (m.voices ?? []).filter((v) => RELIABLE_VOICES.includes(v)), files: m.files } : { voices: [], files: {} };
       manifestFailed = !m?.files;
       emit();
     })
@@ -219,7 +220,7 @@ export async function speak(text: string, opts: { slow?: boolean; rate?: number;
     let played = false;
     if (file && voice !== "browser") {
       const [pack, offsets] = file;
-      const v = offsets[voice] ? voice : Object.keys(offsets)[0];
+      const v = RELIABLE_VOICES.includes(voice) && offsets[voice] ? voice : RELIABLE_VOICES.find((r) => offsets[r]) ?? Object.keys(offsets)[0];
       const buffer = await withTimeout(getPack(`${v}-${pack}`), 2500).catch(() => null);
       if (buffer && current === token) {
         const [offset, length] = offsets[v];

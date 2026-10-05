@@ -20,7 +20,6 @@ CONTENT = Path("/kaggle/working/repo/content")
 OUT = Path("/kaggle/working/audio")
 VOICES = {
     "thorsten": "de/de_DE/thorsten/high/de_DE-thorsten-high",
-    "kerstin": "de/de_DE/kerstin/low/de_DE-kerstin-low",
 }
 ARTICLE = {"m": "der", "f": "die", "n": "das", "pl": "die"}
 GERMANISH = re.compile(r"[äöüßÄÖÜ]|\b(der|die|das|ich|du|er|sie|wir|ein|eine|mein|meine)\b")
