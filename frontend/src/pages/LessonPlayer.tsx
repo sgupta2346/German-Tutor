@@ -127,7 +127,7 @@ export default function LessonPlayer() {
     const stars = mistakes === 0 ? 3 : mistakes <= 2 ? 2 : 1;
     const nextId = lessonOrder[lessonOrder.indexOf(id) + 1];
     return (
-      <div className="glow-bg grid min-h-screen place-items-center p-6">
+      <div className="grid min-h-screen place-items-center p-6">
         <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="w-full max-w-md text-center">
           <div className="flex justify-center gap-3">
             {[1, 2, 3].map((s) => (
@@ -169,7 +169,7 @@ export default function LessonPlayer() {
   const progress = Math.min(index, total) / total;
 
   return (
-    <div className="flex min-h-screen flex-col bg-bg">
+    <div className="flex min-h-screen flex-col">
       <header className="mx-auto flex w-full max-w-3xl items-center gap-4 px-4 pt-5 md:pt-8">
         <button aria-label="Quit lesson" onClick={() => navigate("/learn")} className="rounded-full p-2 text-muted hover:bg-raised hover:text-ink">
           <X size={24} />
@@ -206,7 +206,7 @@ export default function LessonPlayer() {
       <footer
         className={clsx(
           "sticky bottom-0 border-t transition-colors",
-          feedback ? (feedback.correct ? "border-good/30 bg-good/10" : "border-bad/30 bg-bad/10") : "border-line bg-bg",
+          feedback ? (feedback.correct ? "border-good/30 bg-good/10" : "border-bad/30 bg-bad/10") : "border-line bg-surface/70 backdrop-blur-xl",
         )}
       >
         <div className="mx-auto flex w-full max-w-3xl flex-col gap-4 px-4 py-5 pb-[max(env(safe-area-inset-bottom),1.25rem)] md:flex-row md:items-center">

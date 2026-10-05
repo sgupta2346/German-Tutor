@@ -56,6 +56,9 @@
   --mesh-b: rgba(244, 114, 182, 0.24);
   --mesh-c: rgba(56, 189, 248, 0.22);
   --mesh-d: rgba(45, 212, 191, 0.2);
+  --blob-opacity: 0.62;
+  --glyph: rgba(99, 102, 241, 0.09);
+  --vignette: rgba(251, 247, 255, 0.25);
   color-scheme: light;
 }
 
@@ -71,6 +74,9 @@
   --mesh-b: rgba(244, 114, 182, 0.16);
   --mesh-c: rgba(56, 189, 248, 0.14);
   --mesh-d: rgba(45, 212, 191, 0.12);
+  --blob-opacity: 0.32;
+  --glyph: rgba(255, 255, 255, 0.05);
+  --vignette: rgba(10, 8, 34, 0.55);
   color-scheme: dark;
 }
 

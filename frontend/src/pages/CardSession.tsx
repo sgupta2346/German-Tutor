@@ -84,7 +84,7 @@ export default function CardSession() {
   }
 
   return (
-    <div className="glow-bg flex min-h-screen flex-col overflow-hidden">
+    <div className="flex min-h-screen flex-col overflow-hidden">
       <header className="mx-auto flex w-full max-w-2xl items-center gap-4 px-4 pt-5 md:pt-8">
         <button aria-label="Close" onClick={() => navigate("/cards")} className="rounded-full p-2 text-muted hover:bg-raised hover:text-ink">
           <X size={24} />

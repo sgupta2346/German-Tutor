@@ -5,6 +5,7 @@ import clsx from "clsx";
 import { BookOpen, Flame, Headphones, Home, Layers, MessageCircle, Mic, Settings, Type } from "lucide-react";
 import { currentStreak, useStore } from "@/lib/store";
 import { preloadAudio } from "@/lib/audio";
+import { LiveBackground } from "./LiveBackground";
 
 const NAV = [
   { to: "/", label: "Home", icon: Home, end: true, color: "#f59e0b" },
@@ -29,6 +30,13 @@ function useTheme() {
     media.addEventListener("change", apply);
     return () => media.removeEventListener("change", apply);
   }, [theme]);
+}
+
+function sectionColor(path: string): string {
+  if (path.startsWith("/lesson")) return NAV[1].color;
+  if (path.startsWith("/settings")) return "#6366f1";
+  const hit = [...NAV].reverse().find((n) => (n.end ? path === n.to : path.startsWith(n.to)));
+  return hit?.color ?? NAV[0].color;
 }
 
 export function Logo() {
@@ -60,7 +68,8 @@ export function AppShell() {
   const immersive = location.pathname.startsWith("/lesson/") || /^\/cards\/.+/.test(location.pathname);
 
   return (
-    <div className="glow-bg grain min-h-full">
+    <div className="grain relative isolate min-h-full">
+      <LiveBackground color={sectionColor(location.pathname)} />
       {!immersive && (
         <aside className="fixed inset-y-0 left-0 z-30 hidden w-64 flex-col border-r border-line bg-surface/70 px-5 py-7 backdrop-blur-xl lg:flex">
           <Logo />
