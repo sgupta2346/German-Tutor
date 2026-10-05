@@ -43,8 +43,10 @@ export function PlayButton({
   slow = false,
   className,
   label,
+  gender,
 }: {
   text: string;
+  gender?: "female" | "male";
   size?: "sm" | "md" | "lg";
   slow?: boolean;
   className?: string;
@@ -61,7 +63,7 @@ export function PlayButton({
       title={slow ? "Play slowly" : "Play"}
       onClick={(e) => {
         e.stopPropagation();
-        speak(text, { slow });
+        speak(text, { slow, gender });
       }}
       className={clsx(
         "relative grid shrink-0 place-items-center rounded-full transition-colors",

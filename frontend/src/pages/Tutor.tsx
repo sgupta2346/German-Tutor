@@ -166,7 +166,7 @@ function Chat() {
       if (userId) patch(scenarioId, userId, { corrections: reply.corrections });
       append(scenarioId, { id: uid(), role: "tutor", text: reply.reply, reply, at: Date.now() });
       if (userText !== null) addXp(reply.corrections.length ? 2 : 3);
-      if (autoplay) speak(reply.reply);
+      if (autoplay) speak(reply.reply, { gender: "female" });
     } catch (e) {
       setError(e instanceof TutorError ? e : new TutorError("Something went wrong.", "other"));
     } finally {
@@ -406,8 +406,8 @@ function TutorBubble({
             )}
           </AnimatePresence>
           <div className="mt-2 flex items-center gap-2">
-            <PlayButton text={m.text} size="sm" />
-            <PlayButton text={m.text} size="sm" slow />
+            <PlayButton text={m.text} size="sm" gender="female" />
+            <PlayButton text={m.text} size="sm" slow gender="female" />
             <button onClick={onToggle} className={clsx("chip", showEn && "!bg-ink !text-bg")}>
               <Languages size={12} /> EN
             </button>

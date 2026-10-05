@@ -97,3 +97,24 @@ describe("tutor client", () => {
     expect(p).toContain("Sam");
   });
 });
+
+import { speakerGender } from "@/lib/speaker";
+
+describe("speaker gender", () => {
+  it("routes self-introductions to the matching voice", () => {
+    expect(speakerGender("Ich heiße Anna.")).toBe("female");
+    expect(speakerGender("Hallo, ich bin Max.")).toBe("male");
+    expect(speakerGender("Ich bin Frau Schmidt.")).toBe("female");
+    expect(speakerGender("Mein Name ist Herr Weber.")).toBe("male");
+    expect(speakerGender("Ich bin Lehrerin.")).toBe("female");
+    expect(speakerGender("Ich bin Student.")).toBe("male");
+    expect(speakerGender("Ich arbeite als Ärztin in Berlin.")).toBe("female");
+  });
+
+  it("leaves neutral sentences to the default voice", () => {
+    expect(speakerGender("Ich bin müde.")).toBeNull();
+    expect(speakerGender("Ich bin in Berlin.")).toBeNull();
+    expect(speakerGender("Das Brot ist frisch.")).toBeNull();
+    expect(speakerGender("Hallo! Ich heiße Sam und ich komme aus England.")).toBeNull();
+  });
+});

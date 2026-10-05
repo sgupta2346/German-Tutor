@@ -1,5 +1,6 @@
 import { useEffect, useState, useSyncExternalStore } from "react";
 import { useStore } from "./store";
+import { browserVoiceGender, speakerGender, type SpeakerGender } from "./speaker";
 
 const DEFAULT_AUDIO_BASE = "https://huggingface.co/datasets/Sgupta02/german-tutor-audio/resolve/main";
 const AUDIO_BASE = ((import.meta.env.VITE_AUDIO_BASE as string | undefined) || DEFAULT_AUDIO_BASE).replace(/\/$/, "");
@@ -7,7 +8,8 @@ const AUDIO_BASE = ((import.meta.env.VITE_AUDIO_BASE as string | undefined) || D
 type Entry = [string, Record<string, [number, number]>];
 let manifest: { voices: string[]; files: Record<string, Entry> } | null = null;
 const PACK_CACHE = "klang-audio-v2";
-const RELIABLE_VOICES = ["thorsten"];
+export const VOICE_GENDER: Record<string, SpeakerGender> = { thorsten: "male" };
+const RELIABLE_VOICES = Object.keys(VOICE_GENDER);
 const packs = new Map<string, Promise<ArrayBuffer>>();
 let manifestPromise: Promise<void> | null = null;
 let current: { text: string; slow: boolean; stop: () => void } | null = null;
@@ -96,8 +98,12 @@ export function germanVoices(): SpeechSynthesisVoice[] {
 
 const PREFERRED = ["Google Deutsch", "Microsoft Katja", "Microsoft Conrad", "Anna", "Petra", "Markus", "Microsoft Seraphina", "Microsoft Florian"];
 
-function pickVoice(uri: string | null): SpeechSynthesisVoice | undefined {
+function pickVoice(uri: string | null, gender: SpeakerGender | null = null): SpeechSynthesisVoice | undefined {
   const voices = germanVoices();
+  if (gender) {
+    const match = voices.find((v) => browserVoiceGender(v.name) === gender && v.voiceURI === uri) ?? voices.find((v) => browserVoiceGender(v.name) === gender);
+    if (match) return match;
+  }
   if (uri) {
     const chosen = voices.find((v) => v.voiceURI === uri);
     if (chosen) return chosen;
@@ -157,14 +163,14 @@ function playFile(url: string, rate: number, token: Token): Promise<void> {
 
 const liveUtterances = new Set<SpeechSynthesisUtterance>();
 
-function playSynth(text: string, rate: number, voiceURI: string | null, token: Token): Promise<boolean> {
+function playSynth(text: string, rate: number, voiceURI: string | null, token: Token, gender: SpeakerGender | null = null): Promise<boolean> {
   return new Promise((resolve) => {
     if (typeof speechSynthesis === "undefined") return resolve(false);
     speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
     u.lang = "de-DE";
     u.rate = rate;
-    const voice = pickVoice(voiceURI);
+    const voice = pickVoice(voiceURI, gender);
     if (voice) u.voice = voice;
     liveUtterances.add(u);
     let started = false;
@@ -198,9 +204,10 @@ function playSynth(text: string, rate: number, voiceURI: string | null, token: T
   });
 }
 
-export async function speak(text: string, opts: { slow?: boolean; rate?: number; voice?: string } = {}): Promise<void> {
+export async function speak(text: string, opts: { slow?: boolean; rate?: number; voice?: string; gender?: SpeakerGender } = {}): Promise<void> {
   const settings = useStore.getState().settings;
   const voiceURI = settings.voiceURI;
+  const gender = opts.voice ? null : opts.gender ?? speakerGender(text);
   const voice = opts.voice ?? settings.voice;
   const rate = opts.rate ?? settings.rate;
   const slow = !!opts.slow;
@@ -220,7 +227,8 @@ export async function speak(text: string, opts: { slow?: boolean; rate?: number;
     let played = false;
     if (file && voice !== "browser") {
       const [pack, offsets] = file;
-      const v = RELIABLE_VOICES.includes(voice) && offsets[voice] ? voice : RELIABLE_VOICES.find((r) => offsets[r]) ?? Object.keys(offsets)[0];
+      const byGender = gender ? RELIABLE_VOICES.find((r) => VOICE_GENDER[r] === gender && offsets[r]) : undefined;
+      const v = byGender ?? (RELIABLE_VOICES.includes(voice) && offsets[voice] ? voice : RELIABLE_VOICES.find((r) => offsets[r]) ?? Object.keys(offsets)[0]);
       const buffer = await withTimeout(getPack(`${v}-${pack}`), 2500).catch(() => null);
       if (buffer && current === token) {
         const [offset, length] = offsets[v];
@@ -232,7 +240,7 @@ export async function speak(text: string, opts: { slow?: boolean; rate?: number;
         URL.revokeObjectURL(url);
       }
     }
-    if (!played && current === token) played = await playSynth(text, finalRate, voiceURI, token);
+    if (!played && current === token) played = await playSynth(text, finalRate, voiceURI, token, gender);
     if (!played && current === token) {
       lastError = file || manifestFailed
         ? "Couldn't play audio. The recordings didn't load and the browser voice didn't speak. If you use Brave, turn Shields off for this site, or try Chrome or Edge."
