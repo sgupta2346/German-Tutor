@@ -16,7 +16,7 @@ export default function Learn() {
 
   return (
     <div>
-      <PageHeader eyebrow="Lernpfad" title="Your path to fluent German">
+      <PageHeader eyebrow="Your path" title="Your path to fluent German">
         Five levels, from your first Hallo to arguing about politics in a Berlin bar. Each unit pairs grammar with the vocabulary and the sounds you need for it.
       </PageHeader>
 

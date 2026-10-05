@@ -47,7 +47,7 @@ export default function Speak() {
 
   return (
     <div>
-      <PageHeader eyebrow="Sprechstudio" title="Speak, get scored, improve">
+      <PageHeader eyebrow="Speaking" title="Speak, get scored, improve">
         Record yourself and every sound is compared against standard German pronunciation. You see exactly which sounds slipped into an English accent, and how to fix them.
       </PageHeader>
 

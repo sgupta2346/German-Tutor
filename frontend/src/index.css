@@ -12,9 +12,13 @@
   --color-line: var(--line);
   --color-ink: var(--ink);
   --color-muted: var(--muted);
-  --color-gold: #ffcc33;
-  --color-ember: #ff5a3c;
+  --color-gold: #ffc533;
+  --color-ember: #ff6b4a;
   --color-plum: #8b5cf6;
+  --color-sky: #38bdf8;
+  --color-mint: #2dd4bf;
+  --color-pink: #f472b6;
+  --color-indigo: #6366f1;
   --color-good: #22c55e;
   --color-bad: #f43f5e;
   --color-der: #3b82f6;
@@ -23,11 +27,16 @@
   --color-plural: #a855f7;
 
   --animate-float: float 6s ease-in-out infinite;
+  --animate-drift: drift 18s ease-in-out infinite alternate;
   --animate-pulse-ring: pulse-ring 1.6s cubic-bezier(0.2, 0.6, 0.4, 1) infinite;
 
   @keyframes float {
     0%, 100% { transform: translateY(0) }
     50% { transform: translateY(-8px) }
+  }
+  @keyframes drift {
+    0% { transform: translate(0, 0) scale(1) }
+    100% { transform: translate(4%, -3%) scale(1.08) }
   }
   @keyframes pulse-ring {
     0% { transform: scale(1); opacity: 0.55 }
@@ -36,22 +45,32 @@
 }
 
 :root {
-  --bg: #faf6ee;
+  --bg: #fbf7ff;
   --surface: #ffffff;
-  --raised: #f3eee4;
-  --line: #e7dfd1;
-  --ink: #17141f;
-  --muted: #6f6879;
+  --raised: #f3effe;
+  --line: #e8e1fa;
+  --ink: #1f1b45;
+  --muted: #6c6890;
+  --shadow: 0 14px 34px -16px rgba(91, 33, 182, 0.28);
+  --mesh-a: rgba(255, 197, 51, 0.32);
+  --mesh-b: rgba(244, 114, 182, 0.24);
+  --mesh-c: rgba(56, 189, 248, 0.22);
+  --mesh-d: rgba(45, 212, 191, 0.2);
   color-scheme: light;
 }
 
 [data-theme="dark"] {
-  --bg: #0f0d14;
-  --surface: #17141f;
-  --raised: #211d2b;
-  --line: #2d2839;
-  --ink: #f6f2ea;
-  --muted: #a39cb0;
+  --bg: #15123a;
+  --surface: #1e1a4a;
+  --raised: #29245c;
+  --line: #352f6e;
+  --ink: #f5f3ff;
+  --muted: #b3aedb;
+  --shadow: 0 14px 34px -16px rgba(0, 0, 0, 0.5);
+  --mesh-a: rgba(255, 197, 51, 0.14);
+  --mesh-b: rgba(244, 114, 182, 0.16);
+  --mesh-c: rgba(56, 189, 248, 0.14);
+  --mesh-d: rgba(45, 212, 191, 0.12);
   color-scheme: dark;
 }
 
@@ -68,9 +87,12 @@ body {
 
 .glow-bg {
   background:
-    radial-gradient(60rem 40rem at 110% -10%, color-mix(in oklab, var(--color-gold) 16%, transparent), transparent 60%),
-    radial-gradient(50rem 36rem at -20% 110%, color-mix(in oklab, var(--color-ember) 12%, transparent), transparent 60%),
+    radial-gradient(48rem 34rem at 105% -5%, var(--mesh-a), transparent 60%),
+    radial-gradient(44rem 32rem at -10% 20%, var(--mesh-b), transparent 60%),
+    radial-gradient(50rem 36rem at 30% 115%, var(--mesh-c), transparent 60%),
+    radial-gradient(40rem 30rem at 110% 80%, var(--mesh-d), transparent 60%),
     var(--bg);
+  background-attachment: fixed;
 }
 
 .grain::after {
@@ -87,6 +109,7 @@ body {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 1.5rem;
+  box-shadow: var(--shadow);
 }
 
 .btn {
@@ -103,12 +126,12 @@ body {
 .btn:disabled { opacity: 0.45; pointer-events: none; }
 
 .btn-primary {
-  background: var(--ink);
-  color: var(--bg);
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #fff;
   padding: 0.85rem 1.5rem;
-  box-shadow: 0 6px 0 0 color-mix(in oklab, var(--ink) 55%, transparent);
+  box-shadow: 0 6px 0 0 #4338ca;
 }
-.btn-primary:active { box-shadow: 0 2px 0 0 color-mix(in oklab, var(--ink) 55%, transparent); transform: translateY(4px); }
+.btn-primary:active { box-shadow: 0 2px 0 0 #4338ca; transform: translateY(4px); }
 
 .btn-gold {
   background: var(--color-gold);
@@ -151,10 +174,23 @@ body {
 }
 
 .hero {
-  background: linear-gradient(135deg, #1a1624 0%, #2a2140 100%);
-  color: #f6f2ea;
+  background: linear-gradient(135deg, #7c3aed 0%, #db2777 55%, #f97316 100%);
+  color: #fff;
+  box-shadow: 0 22px 44px -20px rgba(124, 58, 237, 0.6);
 }
-[data-theme="dark"] .hero {
-  background: linear-gradient(135deg, #221c33 0%, #33264f 100%);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+.hero-sky {
+  background: linear-gradient(135deg, #2563eb 0%, #06b6d4 100%);
+  box-shadow: 0 22px 44px -20px rgba(37, 99, 235, 0.55);
+}
+.hero-mint {
+  background: linear-gradient(135deg, #0d9488 0%, #22c55e 100%);
+  box-shadow: 0 22px 44px -20px rgba(13, 148, 136, 0.55);
+}
+.hero-sunset {
+  background: linear-gradient(135deg, #f97316 0%, #ec4899 100%);
+  box-shadow: 0 22px 44px -20px rgba(236, 72, 153, 0.55);
+}
+.hero-night {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  box-shadow: 0 22px 44px -20px rgba(79, 70, 229, 0.55);
 }

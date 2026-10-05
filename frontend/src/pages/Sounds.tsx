@@ -23,7 +23,7 @@ export default function Sounds() {
 
   return (
     <div>
-      <PageHeader eyebrow="Aussprache" title="Every sound of German">
+      <PageHeader eyebrow="Pronunciation" title="Every sound of German">
         German is spelled almost exactly as it sounds. Learn these once and you can read any word aloud correctly, even ones you've never seen.
       </PageHeader>
 

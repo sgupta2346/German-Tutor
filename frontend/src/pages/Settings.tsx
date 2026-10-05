@@ -48,7 +48,7 @@ export default function Settings() {
 
   return (
     <div className="max-w-3xl">
-      <PageHeader eyebrow="Einstellungen" title="Settings" />
+      <PageHeader eyebrow="Preferences" title="Settings" />
 
       <div className="card divide-y divide-line px-6">
         <Row title="Your name" hint="Used for greetings.">

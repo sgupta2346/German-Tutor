@@ -94,7 +94,7 @@ const initial = {
   soundStats: {} as Record<string, SoundStat>,
   customWords: [] as CustomWord[],
   onboarded: false,
-  settings: { theme: "system", rate: 1, voice: "thorsten", voiceURI: null, autoplay: true, dailyGoal: 50, newPerDay: 15 } as Settings,
+  settings: { theme: "light", rate: 1, voice: "thorsten", voiceURI: null, autoplay: true, dailyGoal: 50, newPerDay: 15 } as Settings,
 };
 
 export const useStore = create<State>()(
@@ -158,7 +158,12 @@ export const useStore = create<State>()(
     }),
     {
       name: "klang-progress",
-      version: 1,
+      version: 2,
+      migrate: (persisted, version) => {
+        const p = (persisted ?? {}) as Partial<State>;
+        if (version < 2 && p.settings?.theme === "system") p.settings = { ...p.settings, theme: "light" };
+        return p as State;
+      },
       merge: (persisted, current) => {
         const p = (persisted ?? {}) as Partial<State>;
         return { ...current, ...p, settings: { ...current.settings, ...(p.settings ?? {}) } };

@@ -136,7 +136,7 @@ export default function LessonPlayer() {
               </motion.div>
             ))}
           </div>
-          <h1 className="mt-6 font-display text-5xl font-extrabold">{stars === 3 ? "Perfekt!" : stars === 2 ? "Super gemacht!" : "Geschafft!"}</h1>
+          <h1 className="mt-6 font-display text-5xl font-extrabold">{stars === 3 ? "Perfect!" : stars === 2 ? "Great job!" : "Lesson done!"}</h1>
           <p className="mt-2 text-muted">{lesson.title} complete</p>
           <div className="mt-8 grid grid-cols-2 gap-3">
             <div className="card p-4">
@@ -218,7 +218,7 @@ export default function LessonPlayer() {
                 </span>
                 <div>
                   <p className={clsx("font-display text-xl font-bold", feedback.correct ? "text-good" : "text-bad")}>
-                    {feedback.correct ? (feedback.close ? "Almost perfect" : ["Richtig!", "Genau!", "Super!", "Klasse!"][index % 4]) : "Not quite"}
+                    {feedback.correct ? (feedback.close ? "Almost perfect" : ["Correct!", "Nice!", "Great!", "Well done!"][index % 4]) : "Not quite"}
                   </p>
                   {feedback.answer && (
                     <p className="text-sm">

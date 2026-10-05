@@ -35,7 +35,7 @@ export default function Tutor() {
   const { apiKey } = useTutor();
   return (
     <div>
-      <PageHeader eyebrow="Gesprächspartnerin" title="Talk with Lena">
+      <PageHeader eyebrow="Conversation" title="Talk with Lena">
         A live tutor who chats with you in German at your level, plays out real situations, and corrects your mistakes as you go. Type or speak, and your pronunciation is scored too.
       </PageHeader>
       {apiKey ? <Chat /> : <KeySetup />}
@@ -63,7 +63,7 @@ function KeySetup() {
 
   return (
     <div className="grid gap-6 lg:grid-cols-[1.2fr_1fr]">
-      <div className="hero relative overflow-hidden rounded-[2rem] p-8">
+      <div className="hero hero-night relative overflow-hidden rounded-[2rem] p-8">
         <div className="absolute -right-10 -top-16 h-56 w-56 rounded-full bg-gold/25 blur-3xl" />
         <div className="relative">
           <span className="grid h-12 w-12 place-items-center rounded-2xl bg-white/10">
@@ -355,7 +355,7 @@ function Chat() {
                 }}
                 rows={1}
                 lang="de"
-                placeholder={recording ? "Listening…" : "Antworte auf Deutsch…"}
+                placeholder={recording ? "Listening…" : "Reply in German…"}
                 className="block max-h-32 w-full resize-none bg-transparent px-4 py-3 outline-none"
               />
               <div className="flex gap-1 px-2 pb-2">

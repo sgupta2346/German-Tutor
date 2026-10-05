@@ -31,7 +31,7 @@ export function WeakSoundPractice() {
   return (
     <div className="space-y-6">
       {noData ? (
-        <div className="hero relative overflow-hidden rounded-[2rem] p-8">
+        <div className="hero hero-sunset relative overflow-hidden rounded-[2rem] p-8">
           <div className="absolute -right-10 -top-16 h-56 w-56 rounded-full bg-ember/30 blur-3xl" />
           <div className="relative max-w-xl">
             <p className="chip !bg-white/10 !text-white/80">

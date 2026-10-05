@@ -232,11 +232,11 @@ export function SpeakPanel({
 }
 
 function verdict(score: number) {
-  if (score >= 92) return "Ausgezeichnet!";
-  if (score >= 80) return "Sehr gut!";
-  if (score >= 65) return "Gut, fast da";
-  if (score >= 45) return "Weiter üben";
-  return "Noch einmal";
+  if (score >= 92) return "Excellent!";
+  if (score >= 80) return "Very good!";
+  if (score >= 65) return "Good, almost there";
+  if (score >= 45) return "Keep practising";
+  return "Try again";
 }
 
 function ResultView({

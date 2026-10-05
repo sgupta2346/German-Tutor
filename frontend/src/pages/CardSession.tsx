@@ -1,16 +1,16 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { AnimatePresence, animate, motion, useMotionValue, useTransform } from "motion/react";
+import { AnimatePresence, animate, motion, useMotionTemplate, useMotionValue, useSpring, useTransform } from "motion/react";
 import clsx from "clsx";
 import confetti from "canvas-confetti";
 import { Mic, RotateCcw, X } from "lucide-react";
 import { Rating, type Grade } from "ts-fsrs";
-import { deckById, GENDER_COLOR, withArticle } from "@/data/content";
+import { deckById, withArticle } from "@/data/content";
 import type { VocabCard } from "@/data/types";
 import { speak } from "@/lib/audio";
 import { today, useStore } from "@/lib/store";
 import { buildQueue, GRADES, isNew, preview, review, TUTOR_DECK } from "@/lib/srs";
-import { GenderTag, PlayButton, ProgressBar } from "@/components/ui";
+import { PlayButton, ProgressBar } from "@/components/ui";
 import { SpeakPanel } from "@/components/SpeakPanel";
 
 const SWIPE = 110;
@@ -93,7 +93,7 @@ export default function CardSession() {
         <span className="w-10 text-right text-sm font-bold text-muted">{queue.length}</span>
       </header>
       <p className="mx-auto mt-3 w-full max-w-2xl px-6 text-xs font-semibold uppercase tracking-[0.16em] text-muted">
-        {deck ? `${deck.titleDe} · ${deck.title}` : "Daily review"}
+        {deck ? `${deck.title} · ${deck.titleDe}` : "Daily review"}
       </p>
 
       {done ? (
@@ -102,15 +102,10 @@ export default function CardSession() {
         <>
           <div className="relative mx-auto mt-6 flex w-full max-w-md flex-1 items-start justify-center px-6 md:mt-10">
             <div className="relative aspect-[3/4] w-full max-w-sm">
-              {queue.slice(1, 3).map((c, i) => (
-                <motion.div
-                  key={`${c.id}-behind-${i}`}
-                  className="absolute inset-0 rounded-3xl border border-line bg-raised shadow-lg"
-                  initial={false}
-                  animate={{ scale: 1 - (i + 1) * 0.05, y: (i + 1) * 30, opacity: 1 - (i + 1) * 0.3 }}
-                  transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                />
-              ))}
+              {queue
+                .slice(1, 3)
+                .map((c, i) => <StackCard key={`${c.id}-behind-${i}`} card={c} depth={i + 1} />)
+                .reverse()}
               <AnimatePresence>
                 <SwipeCard
                   key={`${card.id}-${reviewed}`}
@@ -171,6 +166,31 @@ function Keys({ flipped, onFlip, onGrade }: { flipped: boolean; onFlip: () => vo
   return null;
 }
 
+const FACE: Record<string, [string, string]> = {
+  m: ["#3b82f6", "#6366f1"],
+  f: ["#f43f5e", "#ec4899"],
+  n: ["#10b981", "#0d9488"],
+  pl: ["#a855f7", "#7c3aed"],
+  none: ["#f59e0b", "#f97316"],
+};
+
+function faceOf(card: VocabCard): [string, string] {
+  return FACE[card.gender ?? "none"];
+}
+
+function StackCard({ card, depth }: { card: VocabCard; depth: number }) {
+  const [a, b] = faceOf(card);
+  return (
+    <motion.div
+      className="absolute inset-0 rounded-[28px] border-4 border-white/70"
+      style={{ background: `linear-gradient(145deg, ${a}, ${b})`, boxShadow: "0 18px 40px -18px rgba(31,27,69,.45)" }}
+      initial={false}
+      animate={{ scale: 1 - depth * 0.05, y: depth * 22, rotate: depth % 2 ? -4 : 3, opacity: 1 - depth * 0.18 }}
+      transition={{ type: "spring", stiffness: 260, damping: 26 }}
+    />
+  );
+}
+
 function SwipeCard({
   card,
   flipped,
@@ -186,81 +206,124 @@ function SwipeCard({
 }) {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
-  const rotate = useTransform(x, [-300, 0, 300], [-18, 0, 18]);
+  const px = useMotionValue(0.5);
+  const py = useMotionValue(0.5);
+  const flip = useMotionValue(0);
+  const tiltX = useSpring(useTransform(py, [0, 1], [10, -10]), { stiffness: 220, damping: 20 });
+  const tiltY = useSpring(useTransform(px, [0, 1], [-12, 12]), { stiffness: 220, damping: 20 });
+  const rotateY = useTransform(() => flip.get() + (flip.get() > 90 ? -tiltY.get() : tiltY.get()));
+  const rotate = useTransform(x, [-300, 0, 300], [-20, 0, 20]);
+  const glareX = useTransform(px, (v) => v * 100);
+  const glareY = useTransform(py, (v) => v * 100);
+  const glare = useMotionTemplate`radial-gradient(circle at ${glareX}% ${glareY}%, rgba(255,255,255,.45), transparent 55%)`;
   const againOpacity = useTransform(x, [-SWIPE, -30], [1, 0]);
   const goodOpacity = useTransform(x, [30, SWIPE], [0, 1]);
   const easyOpacity = useTransform(y, [-SWIPE, -30], [1, 0]);
-  const accent = card.gender ? GENDER_COLOR[card.gender] : "var(--color-gold)";
+  const [a, b] = faceOf(card);
+  const spoken = card.gender ? withArticle(card) : card.de;
+  const article = card.gender ? withArticle(card).split(" ")[0] : null;
+
+  useEffect(() => {
+    const controls = animate(flip, flipped ? 180 : 0, { type: "spring", stiffness: 180, damping: 18 });
+    return () => controls.stop();
+  }, [flipped, flip]);
 
   async function fly(g: Grade, to: { x: number; y: number }) {
-    await Promise.all([animate(x, to.x, { duration: 0.28 }), animate(y, to.y, { duration: 0.28 })]);
+    await Promise.all([animate(x, to.x, { duration: 0.32, ease: "easeIn" }), animate(y, to.y, { duration: 0.32, ease: "easeIn" })]);
     onGrade(g);
   }
 
+  function track(e: React.PointerEvent<HTMLDivElement>) {
+    if (e.pointerType !== "mouse") return;
+    const r = e.currentTarget.getBoundingClientRect();
+    px.set((e.clientX - r.left) / r.width);
+    py.set((e.clientY - r.top) / r.height);
+  }
+
+  function rest() {
+    px.set(0.5);
+    py.set(0.5);
+  }
+
+  const stop = (e: React.PointerEvent) => e.stopPropagation();
+
   return (
     <motion.div
-      className="absolute inset-0 cursor-grab touch-none active:cursor-grabbing"
-      style={{ x, y, rotate, perspective: 1200 }}
-      initial={{ scale: 0.92, opacity: 0, y: 30 }}
-      animate={{ scale: 1, opacity: 1, y: 0 }}
-      exit={{ opacity: 0, transition: { duration: 0.15 } }}
-      drag={flipped}
+      className="absolute inset-0 cursor-grab touch-none select-none active:cursor-grabbing"
+      style={{ x, y, rotate, perspective: 1100 }}
+      initial={{ scale: 0.85, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 0.12 } }}
+      transition={{ type: "spring", stiffness: 260, damping: 22 }}
+      whileTap={{ scale: 1.03 }}
+      drag
       dragSnapToOrigin
-      dragElastic={0.7}
+      dragElastic={0.75}
+      dragTransition={{ bounceStiffness: 320, bounceDamping: 18 }}
+      onPointerMove={track}
+      onPointerLeave={rest}
       onDragEnd={(_, info) => {
-        if (info.offset.x > SWIPE) fly(Rating.Good, { x: 700, y: info.offset.y });
-        else if (info.offset.x < -SWIPE) fly(Rating.Again, { x: -700, y: info.offset.y });
-        else if (info.offset.y < -SWIPE) fly(Rating.Easy, { x: info.offset.x, y: -900 });
+        const dx = info.offset.x + info.velocity.x * 0.15;
+        const dy = info.offset.y + info.velocity.y * 0.15;
+        if (!flipped) {
+          if (Math.abs(dx) > SWIPE || dy < -SWIPE) onFlip();
+          return;
+        }
+        if (dx > SWIPE) fly(Rating.Good, { x: 760, y: info.offset.y + 80 });
+        else if (dx < -SWIPE) fly(Rating.Again, { x: -760, y: info.offset.y + 80 });
+        else if (dy < -SWIPE) fly(Rating.Easy, { x: info.offset.x, y: -1000 });
       }}
     >
-      <motion.div
-        className="preserve-3d relative h-full w-full"
-        animate={{ rotateY: flipped ? 180 : 0 }}
-        transition={{ type: "spring", stiffness: 260, damping: 26 }}
-        onClick={() => !flipped && onFlip()}
-      >
-        <div className="card backface-hidden absolute inset-0 flex flex-col overflow-hidden shadow-2xl">
-          <div className="h-2 w-full" style={{ background: accent }} />
-          <div className="flex flex-1 flex-col items-center justify-center gap-5 p-8 text-center">
-            {card.gender && <GenderTag gender={card.gender} className="!px-3 !py-1 !text-sm" />}
-            <p className="font-display text-5xl font-extrabold tracking-tight text-balance break-words md:text-6xl" style={{ color: card.gender ? accent : undefined }}>
-              {card.de}
-            </p>
-            <div className="flex gap-2">
-              <PlayButton text={card.gender ? withArticle(card) : card.de} />
-              <PlayButton text={card.gender ? withArticle(card) : card.de} slow />
+      <motion.div className="preserve-3d relative h-full w-full" style={{ rotateX: tiltX, rotateY }} onTap={() => !flipped && onFlip()}>
+        <div
+          className="backface-hidden absolute inset-0 flex flex-col overflow-hidden rounded-[28px] border-4 border-white/80 text-white"
+          style={{ background: `linear-gradient(145deg, ${a}, ${b})`, boxShadow: "0 30px 60px -24px rgba(31,27,69,.55)" }}
+        >
+          <span className="pointer-events-none absolute -right-6 -top-10 font-display text-[11rem] font-extrabold leading-none text-white/10">{article ?? "Aa"}</span>
+          <span className="pointer-events-none absolute -bottom-16 -left-10 h-48 w-48 rounded-full bg-white/10" />
+          <div className="relative flex flex-1 flex-col items-center justify-center gap-5 p-8 text-center">
+            {article && <span className="rounded-full bg-white/25 px-4 py-1 text-sm font-bold tracking-wide">{article}</span>}
+            <p className="font-display text-5xl font-extrabold tracking-tight text-balance break-words drop-shadow-sm md:text-6xl">{card.de}</p>
+            <div className="flex gap-2" onPointerDownCapture={stop}>
+              <PlayButton text={spoken} className="!bg-white/25 !text-white hover:!bg-white/40" />
+              <PlayButton text={spoken} slow className="!bg-white/25 !text-white hover:!bg-white/40" />
             </div>
           </div>
-          <p className="pb-6 text-center text-xs font-semibold uppercase tracking-[0.18em] text-muted">tap to flip</p>
+          <p className="relative pb-6 text-center text-xs font-semibold uppercase tracking-[0.18em] text-white/80">tap or swipe to flip</p>
+          <motion.div className="pointer-events-none absolute inset-0" style={{ background: glare }} />
         </div>
 
-        <div className="card backface-hidden absolute inset-0 flex flex-col overflow-hidden shadow-2xl [transform:rotateY(180deg)]">
-          <div className="h-2 w-full" style={{ background: accent }} />
-          <div className="flex flex-1 flex-col p-7">
+        <div
+          className="backface-hidden absolute inset-0 flex flex-col overflow-hidden rounded-[28px] border-4 bg-surface [transform:rotateY(180deg)]"
+          style={{ borderColor: a, boxShadow: "0 30px 60px -24px rgba(31,27,69,.55)" }}
+        >
+          <div className="px-7 pb-5 pt-6 text-white" style={{ background: `linear-gradient(145deg, ${a}, ${b})` }}>
             <div className="flex items-center justify-between">
-              <span className="chip">{card.pos}</span>
+              <span className="rounded-full bg-white/25 px-3 py-0.5 text-xs font-bold">{card.pos}</span>
               <button
+                onPointerDownCapture={stop}
                 onClick={(e) => {
                   e.stopPropagation();
                   onPractice();
                 }}
-                className="chip !bg-ember !text-white"
+                className="flex items-center gap-1 rounded-full bg-white px-3 py-1 text-xs font-bold"
+                style={{ color: a }}
               >
                 <Mic size={13} /> Say it
               </button>
             </div>
+            <p className="mt-4 font-display text-2xl font-bold">{withArticle(card)}</p>
+          </div>
+          <div className="flex flex-1 flex-col p-7">
             <div className="flex flex-1 flex-col justify-center">
-              <p className="font-display text-2xl font-bold" style={{ color: card.gender ? accent : undefined }}>
-                {withArticle(card)}
-              </p>
-              <p className="mt-2 font-display text-4xl font-extrabold tracking-tight text-balance">{card.en}</p>
+              <p className="font-display text-4xl font-extrabold tracking-tight text-balance">{card.en}</p>
               {card.plural && (
                 <p className="mt-3 text-sm text-muted">
                   Plural: <span className="font-semibold text-plural">die {card.plural}</span>
                 </p>
               )}
             </div>
-            <div className="rounded-2xl bg-raised p-4">
+            <div className="rounded-2xl p-4" style={{ background: `${a}18` }} onPointerDownCapture={stop}>
               <div className="flex items-start gap-3">
                 <PlayButton text={card.ex.de} size="sm" />
                 <div>
@@ -275,13 +338,13 @@ function SwipeCard({
 
       {flipped && (
         <>
-          <motion.span style={{ opacity: againOpacity }} className="pointer-events-none absolute left-6 top-8 -rotate-12 rounded-xl border-4 border-bad px-3 py-1 font-display text-2xl font-extrabold text-bad">
+          <motion.span style={{ opacity: againOpacity }} className="pointer-events-none absolute left-6 top-8 -rotate-12 rounded-xl border-4 border-bad bg-white/90 px-3 py-1 font-display text-2xl font-extrabold text-bad">
             AGAIN
           </motion.span>
-          <motion.span style={{ opacity: goodOpacity }} className="pointer-events-none absolute right-6 top-8 rotate-12 rounded-xl border-4 border-good px-3 py-1 font-display text-2xl font-extrabold text-good">
+          <motion.span style={{ opacity: goodOpacity }} className="pointer-events-none absolute right-6 top-8 rotate-12 rounded-xl border-4 border-good bg-white/90 px-3 py-1 font-display text-2xl font-extrabold text-good">
             GOOD
           </motion.span>
-          <motion.span style={{ opacity: easyOpacity }} className="pointer-events-none absolute inset-x-0 bottom-10 mx-auto w-fit rounded-xl border-4 border-der px-3 py-1 font-display text-2xl font-extrabold text-der">
+          <motion.span style={{ opacity: easyOpacity }} className="pointer-events-none absolute inset-x-0 bottom-10 mx-auto w-fit rounded-xl border-4 border-der bg-white/90 px-3 py-1 font-display text-2xl font-extrabold text-der">
             EASY
           </motion.span>
         </>
@@ -320,7 +383,7 @@ function Summary({ reviewed, tally, onAgain, onBack }: { reviewed: number; tally
       <motion.div initial={{ scale: 0.92, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="w-full max-w-md text-center">
         {reviewed ? (
           <>
-            <h1 className="font-display text-5xl font-extrabold">Fertig!</h1>
+            <h1 className="font-display text-5xl font-extrabold">Session done!</h1>
             <p className="mt-2 text-muted">
               {reviewed} reviews, {Math.round((correct / reviewed) * 100)}% recalled
             </p>

@@ -10,9 +10,9 @@ import { RuleTip } from "@/components/SpeakPanel";
 
 function greeting() {
   const h = new Date().getHours();
-  if (h < 11) return "Guten Morgen";
-  if (h < 18) return "Guten Tag";
-  return "Guten Abend";
+  if (h < 11) return { en: "Good morning", de: "Guten Morgen" };
+  if (h < 18) return { en: "Good afternoon", de: "Guten Tag" };
+  return { en: "Good evening", de: "Guten Abend" };
 }
 
 function soundOfTheDay() {
@@ -57,7 +57,7 @@ export default function Home() {
     const d = new Date();
     d.setDate(d.getDate() - (6 - i));
     const key = today(d);
-    return { key, xp: xpByDay[key] ?? 0, label: d.toLocaleDateString("de-DE", { weekday: "narrow" }) };
+    return { key, xp: xpByDay[key] ?? 0, label: d.toLocaleDateString("en-GB", { weekday: "narrow" }) };
   });
   const maxWeek = Math.max(goal, ...week.map((w) => w.xp));
 
@@ -65,11 +65,15 @@ export default function Home() {
     <div className="space-y-6">
       <motion.section {...fade(0)} className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-ember">{new Date().toLocaleDateString("de-DE", { weekday: "long", day: "numeric", month: "long" })}</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-ember">{new Date().toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" })}</p>
           <h1 className="mt-2 font-display text-5xl font-extrabold tracking-tight md:text-6xl">
-            {greeting()}
+            {greeting().en}
             {name ? `, ${name}` : ""}!
           </h1>
+          <p className="mt-3 flex items-center gap-2 text-muted">
+            <PlayButton text={`${greeting().de}!`} size="sm" />
+            In German: <span className="font-semibold text-ink">{greeting().de}!</span>
+          </p>
         </div>
         <div className="flex items-center gap-4">
           <Ring value={xpToday / goal} size={92} stroke={9}>

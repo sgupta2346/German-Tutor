@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import clsx from "clsx";
-import { speak } from "@/lib/audio";
 import { useStore } from "@/lib/store";
 import { Logo } from "./AppShell";
 
@@ -28,33 +27,32 @@ export function Onboarding() {
             </div>
             {step === 0 && (
               <>
-                <h1 className="mt-10 font-display text-5xl font-extrabold tracking-tight">Willkommen!</h1>
+                <h1 className="mt-10 font-display text-5xl font-extrabold tracking-tight">Welcome!</h1>
                 <p className="mt-3 text-lg text-muted">Learn German from the alphabet up, and learn to actually sound German while you do it.</p>
                 <button
                   className="btn btn-gold mt-10 w-full"
                   onClick={() => {
-                    speak("Willkommen! Schön, dass du da bist.");
                     setStep(1);
                   }}
                 >
-                  Los geht's
+                  Let's go
                 </button>
               </>
             )}
             {step === 1 && (
               <>
-                <h1 className="mt-10 font-display text-4xl font-extrabold">Wie heißt du?</h1>
-                <p className="mt-2 text-muted">What's your name?</p>
+                <h1 className="mt-10 font-display text-4xl font-extrabold">What's your name?</h1>
+                <p className="mt-2 text-muted">So we can greet you properly.</p>
                 <input
                   autoFocus
                   value={name}
                   onChange={(e) => setLocalName(e.target.value)}
                   onKeyDown={(e) => e.key === "Enter" && setStep(2)}
-                  placeholder="Ich heiße…"
+                  placeholder="Your name"
                   className="mt-8 w-full rounded-2xl border-2 border-line bg-surface px-5 py-4 text-center text-xl outline-none focus:border-ink"
                 />
                 <button className="btn btn-gold mt-6 w-full" onClick={() => setStep(2)}>
-                  Weiter
+                  Continue
                 </button>
               </>
             )}

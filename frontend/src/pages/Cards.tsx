@@ -19,11 +19,11 @@ export default function Cards() {
 
   return (
     <div>
-      <PageHeader eyebrow="Karteikarten" title="Words that stick">
+      <PageHeader eyebrow="Flashcards" title="Words that stick">
         Spaced repetition shows each word right before you'd forget it. Grade yourself honestly and the schedule adapts to your memory.
       </PageHeader>
 
-      <Link to="/cards/review" className="hero group relative mb-10 flex items-center gap-6 overflow-hidden rounded-[2rem] p-7">
+      <Link to="/cards/review" className="hero hero-sky group relative mb-10 flex items-center gap-6 overflow-hidden rounded-[2rem] p-7">
         <div className="absolute -right-6 -top-10 h-48 w-48 rounded-full bg-der/40 blur-3xl" />
         <div className="relative flex h-24 w-20 shrink-0 items-center justify-center">
           {[2, 1, 0].map((i) => (
@@ -60,9 +60,9 @@ export default function Cards() {
                   </span>
                   {s.due > 0 && <span className="chip !bg-ember !text-white">{s.due} due</span>}
                 </div>
-                <p className="mt-4 font-display text-xl font-bold">{deck.titleDe}</p>
+                <p className="mt-4 font-display text-xl font-bold">{deck.title}</p>
                 <p className="text-sm text-muted">
-                  {deck.title} · {deck.level}
+                  {deck.titleDe} · {deck.level}
                 </p>
                 <div className="mt-auto pt-5">
                   <ProgressBar value={seen / s.total} color={tint} className="h-2" />

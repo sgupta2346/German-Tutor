@@ -91,7 +91,7 @@ export default function Listen() {
 
   return (
     <div>
-      <PageHeader eyebrow="Hörverstehen" title="Train your ear">
+      <PageHeader eyebrow="Listening" title="Train your ear">
         Real conversations are fast. Listen to the same text at different speeds and with different voices until every word is clear, then write down exactly what you heard.
       </PageHeader>
 
@@ -124,7 +124,7 @@ export default function Listen() {
       {clip ? (
         <div className="grid gap-6 lg:grid-cols-[1fr_320px]">
           <section className="min-w-0 space-y-5">
-            <div className="hero relative overflow-hidden rounded-[2rem] p-7 md:p-9">
+            <div className="hero hero-mint relative overflow-hidden rounded-[2rem] p-7 md:p-9">
               <div className="absolute -right-10 -top-16 h-56 w-56 rounded-full bg-der/30 blur-3xl" />
               <div className="relative flex items-center justify-between">
                 <span className="chip !bg-white/10 !text-white/80">
