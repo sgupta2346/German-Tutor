@@ -98,10 +98,20 @@ export function germanVoices(): SpeechSynthesisVoice[] {
 
 const PREFERRED = ["Google Deutsch", "Microsoft Katja", "Microsoft Conrad", "Anna", "Petra", "Markus", "Microsoft Seraphina", "Microsoft Florian"];
 
+const naturalFirst = (a: SpeechSynthesisVoice, b: SpeechSynthesisVoice) => Number(/natural|online|neural/i.test(b.name)) - Number(/natural|online|neural/i.test(a.name));
+
+export function browserVoicesFor(gender: SpeakerGender): SpeechSynthesisVoice[] {
+  return germanVoices()
+    .filter((v) => browserVoiceGender(v.name) === gender)
+    .sort(naturalFirst);
+}
+
 function pickVoice(uri: string | null, gender: SpeakerGender | null = null): SpeechSynthesisVoice | undefined {
   const voices = germanVoices();
   if (gender) {
-    const match = voices.find((v) => browserVoiceGender(v.name) === gender && v.voiceURI === uri) ?? voices.find((v) => browserVoiceGender(v.name) === gender);
+    const preferred = gender === "female" ? useStore.getState().settings.femaleVoiceURI : null;
+    const candidates = browserVoicesFor(gender);
+    const match = candidates.find((v) => v.voiceURI === preferred) ?? candidates[0];
     if (match) return match;
   }
   if (uri) {
@@ -225,9 +235,11 @@ export async function speak(text: string, opts: { slow?: boolean; rate?: number;
     if (current !== token) return;
     const file = manifest?.files[normalizeKey(text)];
     let played = false;
-    if (file && voice !== "browser") {
+    const recordedForGender = gender && file ? RELIABLE_VOICES.find((r) => VOICE_GENDER[r] === gender && file[1][r]) : undefined;
+    const useBrowserForGender = !!gender && !recordedForGender && browserVoicesFor(gender).length > 0;
+    if (file && voice !== "browser" && !useBrowserForGender) {
       const [pack, offsets] = file;
-      const byGender = gender ? RELIABLE_VOICES.find((r) => VOICE_GENDER[r] === gender && offsets[r]) : undefined;
+      const byGender = recordedForGender;
       const v = byGender ?? (RELIABLE_VOICES.includes(voice) && offsets[voice] ? voice : RELIABLE_VOICES.find((r) => offsets[r]) ?? Object.keys(offsets)[0]);
       const buffer = await withTimeout(getPack(`${v}-${pack}`), 2500).catch(() => null);
       if (buffer && current === token) {

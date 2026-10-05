@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import clsx from "clsx";
 import { Download, Monitor, Moon, Sun, Trash2, Upload } from "lucide-react";
-import { speak, useGermanVoices, useNaturalVoices } from "@/lib/audio";
+import { browserVoicesFor, speak, useGermanVoices, useNaturalVoices } from "@/lib/audio";
 import { browserRecognitionAvailable } from "@/lib/scorer";
 import { loadRecognizer, MODEL_SIZE_MB, useRecognizer } from "@/lib/recognizer";
 import { useStore, type Theme } from "@/lib/store";
@@ -23,6 +23,7 @@ export default function Settings() {
   const { settings, updateSettings, name, setName, reset, importState } = useStore();
   const voices = useGermanVoices();
   const natural = useNaturalVoices();
+  const femaleVoices = voices.length ? browserVoicesFor("female") : [];
   const model = useRecognizer();
   const [message, setMessage] = useState<string | null>(null);
   const file = useRef<HTMLInputElement>(null);
@@ -130,6 +131,27 @@ export default function Settings() {
               </option>
             ))}
           </select>
+        </Row>
+        <Row title="Female voice" hint="Used for women's lines (Anna, Lisa…) and for Lena, the tutor. Comes from your browser; Edge's Natural voices sound best.">
+          {femaleVoices.length ? (
+            <select
+              value={settings.femaleVoiceURI ?? ""}
+              onChange={(e) => {
+                updateSettings({ femaleVoiceURI: e.target.value || null });
+                setTimeout(() => speak("Hallo, ich bin Anna.", { gender: "female" }), 50);
+              }}
+              className="w-64 rounded-xl border-2 border-line bg-bg px-3 py-2"
+            >
+              <option value="">Best available</option>
+              {femaleVoices.map((v) => (
+                <option key={v.voiceURI} value={v.voiceURI}>
+                  {v.name}
+                </option>
+              ))}
+            </select>
+          ) : (
+            <span className="chip !text-sm">None in this browser</span>
+          )}
         </Row>
         <Row title="Autoplay audio" hint="Play new words and phrases as soon as they appear.">
           <button

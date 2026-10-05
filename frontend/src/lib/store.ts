@@ -37,6 +37,7 @@ export interface Settings {
   rate: number;
   voice: string;
   voiceURI: string | null;
+  femaleVoiceURI: string | null;
   autoplay: boolean;
   dailyGoal: number;
   newPerDay: number;
@@ -101,7 +102,7 @@ const initial = {
   known: {} as Record<string, number>,
   flagged: {} as Record<string, number>,
   onboarded: false,
-  settings: { theme: "light", rate: 1, voice: "thorsten", voiceURI: null, autoplay: true, dailyGoal: 50, newPerDay: 15 } as Settings,
+  settings: { theme: "light", rate: 1, voice: "thorsten", voiceURI: null, femaleVoiceURI: null, autoplay: true, dailyGoal: 50, newPerDay: 15 } as Settings,
 };
 
 export const useStore = create<State>()(
