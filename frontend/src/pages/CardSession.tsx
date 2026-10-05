@@ -3,7 +3,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { AnimatePresence, animate, motion, useMotionTemplate, useMotionValue, useSpring, useTransform } from "motion/react";
 import clsx from "clsx";
 import confetti from "canvas-confetti";
-import { Mic, RotateCcw, X } from "lucide-react";
+import { ArrowRight, Mic, RotateCcw, X } from "lucide-react";
 import { Rating, type Grade } from "ts-fsrs";
 import { deckById, withArticle } from "@/data/content";
 import type { VocabCard } from "@/data/types";
@@ -100,8 +100,8 @@ export default function CardSession() {
         <Summary reviewed={reviewed} tally={tally} onAgain={() => navigate(0)} onBack={() => navigate("/cards")} />
       ) : (
         <>
-          <div className="relative mx-auto mt-6 flex w-full max-w-md flex-1 items-start justify-center px-6 md:mt-10">
-            <div className="relative aspect-[3/4] w-full max-w-sm">
+          <div className="relative mx-auto mt-4 flex w-full max-w-md flex-1 items-start justify-center px-6 md:mt-6">
+            <div className="relative aspect-[3/4] w-full" style={{ maxWidth: "min(24rem, calc((100dvh - 15rem) * 0.75))" }}>
               {queue
                 .slice(1, 3)
                 .map((c, i) => <StackCard key={`${c.id}-behind-${i}`} card={c} depth={i + 1} />)
@@ -314,9 +314,9 @@ function SwipeCard({
             </div>
             <p className="mt-4 font-display text-2xl font-bold">{withArticle(card)}</p>
           </div>
-          <div className="flex flex-1 flex-col p-7">
+          <div className="flex flex-1 flex-col p-5 md:p-6">
             <div className="flex flex-1 flex-col justify-center">
-              <p className="font-display text-4xl font-extrabold tracking-tight text-balance">{card.en}</p>
+              <p className="font-display text-3xl font-extrabold tracking-tight text-balance md:text-4xl">{card.en}</p>
               {card.plural && (
                 <p className="mt-3 text-sm text-muted">
                   Plural: <span className="font-semibold text-plural">die {card.plural}</span>
@@ -331,6 +331,27 @@ function SwipeCard({
                   <p className="text-sm text-muted">{card.ex.en}</p>
                 </div>
               </div>
+            </div>
+            <div className="mt-4 grid grid-cols-2 gap-2" onPointerDownCapture={stop}>
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  fly(Rating.Again, { x: -760, y: 80 });
+                }}
+                className="rounded-2xl border-2 border-bad/40 py-3 font-semibold text-bad transition-colors hover:bg-bad/10"
+              >
+                Didn't know
+              </button>
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  fly(Rating.Good, { x: 760, y: 80 });
+                }}
+                className="flex items-center justify-center gap-1 rounded-2xl py-3 font-semibold text-white shadow-md transition-transform active:scale-95"
+                style={{ background: `linear-gradient(135deg, ${a}, ${b})` }}
+              >
+                Got it <ArrowRight size={16} />
+              </button>
             </div>
           </div>
         </div>
