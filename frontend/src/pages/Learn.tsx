@@ -87,7 +87,7 @@ export default function Learn() {
                       {unitLessons.map((lesson, i) => {
                         const res = results[lesson.id];
                         const isNext = lesson.id === nextId;
-                        const locked = !res && !isNext && lessonOrder.indexOf(lesson.id) > lessonOrder.indexOf(nextId ?? "");
+                        const locked = !res && !isNext && i > 0 && !results[unitLessons[i - 1].id];
                         return (
                           <Link
                             key={lesson.id}
