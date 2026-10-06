@@ -83,8 +83,13 @@ voice reads it.
 
 ## Where it's at
 
-- A1 vocabulary (12 decks) and the first four A1 units are written. The
-  rest of the curriculum is outlined unit by unit and being filled in.
+- All 40 units from A1 to C1 have lessons: 120 lessons, 817 vocabulary
+  words and 80 reading texts. The first four A1 units are hand-written; the
+  rest were generated with an open model on Kaggle and then checked:
+  noun genders and plurals against a Wiktionary noun list, every German
+  sentence with LanguageTool, and `scripts/lint_content.py` for broken
+  questions and English that ended up in German fields. Generated content
+  can still contain mistakes those checks don't catch.
 - Progress is saved in the browser. You can export and import it from
   Settings.
 

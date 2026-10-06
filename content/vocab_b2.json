@@ -850,6 +850,426 @@
     ]
   },
   {
+    "id": "b2-u5-words",
+    "level": "B2",
+    "title": "Mind and health",
+    "titleDe": "Psyche und Gesundheit",
+    "icon": "train",
+    "words": [
+      {
+        "de": "Wohlbefinden",
+        "en": "wellbeing",
+        "pos": "noun",
+        "ex": {
+          "de": "Um das allgemeine Wohlbefinden zu steigern, sollten regelmäßig kleine Pausen in den stressigen Arbeitsalltag integriert werden.",
+          "en": "To increase general wellbeing, small breaks should be regularly integrated into the stressful daily work routine."
+        },
+        "gender": "n"
+      },
+      {
+        "de": "Belastung",
+        "en": "burden / stressor",
+        "pos": "noun",
+        "ex": {
+          "de": "Die ständige Belastung durch digitale Medien kann langfristig zu einer erheblichen Beeinträchtigung der mentalen Gesundheit führen.",
+          "en": "The constant burden of digital media can lead to a significant impairment of mental health in the long term."
+        },
+        "gender": "f",
+        "plural": "Belastungen"
+      },
+      {
+        "de": "Erschöpfung",
+        "en": "exhaustion",
+        "pos": "noun",
+        "ex": {
+          "de": "Wenn die körperliche und geistige Erschöpfung zunimmt, sollte man unbedingt professionelle Hilfe von einem Experten suchen.",
+          "en": "When physical and mental exhaustion increases, one should definitely seek professional help from an expert."
+        },
+        "gender": "f",
+        "plural": "Erschöpfungen"
+      },
+      {
+        "de": "Achtsamkeit",
+        "en": "mindfulness",
+        "pos": "noun",
+        "ex": {
+          "de": "Durch die Praxis der Achtsamkeit lässt sich die Fähigkeit verbessern, schwierige emotionale Situationen gelassener zu bewältigen.",
+          "en": "Through the practice of mindfulness, the ability to cope with difficult emotional situations more calmly can be improved."
+        },
+        "gender": "f",
+        "plural": "Achtsamkeiten"
+      },
+      {
+        "de": "Bewältigung",
+        "en": "coping / overcoming",
+        "pos": "noun",
+        "ex": {
+          "de": "Die erfolgreiche Bewältigung von Krisen hängt oft von der psychischen Resilienz einer einzelnen Person ab.",
+          "en": "The successful coping of crises often depends on the psychological resilience of an individual person."
+        },
+        "gender": "f",
+        "plural": "Bewältigungen"
+      },
+      {
+        "de": "Selbstfürsorge",
+        "en": "self-care",
+        "pos": "noun",
+        "ex": {
+          "de": "Es wird oft empfohlen, dass Selbstfürsorge nicht als Luxus, sondern als notwendige Voraussetzung für die Gesundheit betrachtet wird.",
+          "en": "It is often recommended that self-care be viewed not as a luxury, but as a necessary prerequisite for health."
+        },
+        "gender": "f"
+      },
+      {
+        "de": "Resilienz",
+        "en": "resilience",
+        "pos": "noun",
+        "ex": {
+          "de": "Eine hohe Resilienz ermöglicht es Menschen, auch nach schweren Rückschlägen wieder zu einer stabilen Lebensweise zu finden.",
+          "en": "High resilience enables people to find a stable way of life again, even after severe setbacks."
+        },
+        "gender": "f",
+        "plural": "Resilienzen"
+      },
+      {
+        "de": "Burnout-Syndrom",
+        "en": "burnout syndrome",
+        "pos": "noun",
+        "ex": {
+          "de": "Das Burnout-Syndrom wird heutzutage häufig durch eine ständige Erreichbarkeit und den hohen Leistungsdruck am Arbeitsplatz verursacht.",
+          "en": "Burnout syndrome is nowadays frequently caused by constant availability and high performance pressure in the workplace."
+        },
+        "gender": "n",
+        "plural": "Burnout-Syndrome"
+      },
+      {
+        "de": "Stressfaktor",
+        "en": "stress factor",
+        "pos": "noun",
+        "ex": {
+          "de": "Es ist wichtig, die einzelnen Stressfaktoren im Leben zu identifizieren, um gezielte Gegenmaßnahmen ergreifen zu können.",
+          "en": "It is important to identify the individual stress factors in life in order to be able to take targeted countermeasures."
+        },
+        "gender": "m",
+        "plural": "Stressfaktoren"
+      },
+      {
+        "de": "beeinflussen",
+        "en": "to influence",
+        "pos": "verb",
+        "ex": {
+          "de": "Die Schlafqualität kann die psychische Verfassung massiv beeinflussen, weshalb eine regelmäßige Routine sehr empfehlenswert ist.",
+          "en": "Sleep quality can massively influence mental state, which is why a regular routine is highly recommended."
+        }
+      },
+      {
+        "de": "vernachlässigen",
+        "en": "to neglect",
+        "pos": "verb",
+        "ex": {
+          "de": "Wer seine eigenen Bedürfnisse dauerhaft vernachlässigt, läuft Gefahr, irgendwann an seine emotionalen Grenzen zu stoßen.",
+          "en": "Anyone who permanently neglects their own needs runs the risk of eventually hitting their emotional limits."
+        }
+      },
+      {
+        "de": "fördern",
+        "en": "to promote / encourage",
+        "pos": "verb",
+        "ex": {
+          "de": "Regelmäßige Bewegung und eine gesunde Ernährung werden oft als Faktoren genannt, die die mentale Stabilität fördern.",
+          "en": "Regular exercise and a healthy diet are often cited as factors that promote mental stability."
+        }
+      },
+      {
+        "de": "leiden",
+        "en": "to suffer",
+        "pos": "verb",
+        "ex": {
+          "de": "Viele Menschen leiden unter dem Druck, in einer immer schneller werdenden Gesellschaft perfekt funktionieren zu müssen.",
+          "en": "Many people suffer from the pressure to function perfectly in an increasingly fast-paced society."
+        }
+      },
+      {
+        "de": "erschöpft",
+        "en": "exhausted",
+        "pos": "adj",
+        "ex": {
+          "de": "Wenn man sich nach der Arbeit völlig erschöpft fühlt, sollte man versuchen, den Abend ruhig ausklingen zu lassen.",
+          "en": "If you feel completely exhausted after work, you should try to let the evening end quietly."
+        }
+      },
+      {
+        "de": "beunruhigend",
+        "en": "disturbing / worrying",
+        "pos": "adj",
+        "ex": {
+          "de": "Die steigenden Zahlen von psychischen Erkrankungen unter Jugendlichen sind eine äußerst beunruhigende Entwicklung für unsere Gesellschaft.",
+          "en": "The rising numbers of mental illnesses among young people are an extremely disturbing development for our society."
+        }
+      },
+      {
+        "de": "motivierend",
+        "en": "motivating",
+        "pos": "adj",
+        "ex": {
+          "de": "Ein motivierendes Gespräch mit einem Therapeuten kann dabei helfen, neue Perspektiven auf die eigene Lebenssituation zu gewinnen.",
+          "en": "A motivating conversation with a therapist can help to gain new perspectives on one's own life situation."
+        }
+      },
+      {
+        "de": "ausgeglichen",
+        "en": "balanced",
+        "pos": "adj",
+        "ex": {
+          "de": "Um ein ausgeglichenes Leben zu führen, ist es ratsam, eine Balance zwischen Arbeit und Freizeit zu finden.",
+          "en": "To lead a balanced life, it is advisable to find a balance between work and leisure time."
+        }
+      },
+      {
+        "de": "verunsichern",
+        "en": "to unsettle / make insecure",
+        "pos": "verb",
+        "ex": {
+          "de": "Ständige Kritik am Arbeitsplatz kann einen Mitarbeiter nachhaltig verunsichern und das Selbstvertrauen massiv schwächen.",
+          "en": "Constant criticism in the workplace can sustainably unsettle an employee and massively weaken their self-confidence."
+        }
+      },
+      {
+        "de": "Verfassung",
+        "en": "state / condition",
+        "pos": "noun",
+        "ex": {
+          "de": "Die psychische Verfassung eines Menschen kann durch äußere Umstände ebenso stark beeinflusst werden wie durch innere Faktoren.",
+          "en": "A person's mental state can be influenced by external circumstances just as strongly as by internal factors."
+        },
+        "gender": "f",
+        "plural": "Verfassungen"
+      },
+      {
+        "de": "bewältigen",
+        "en": "to cope with / manage",
+        "pos": "verb",
+        "ex": {
+          "de": "Es ist eine wichtige Fähigkeit, schwierige Emotionen nicht zu unterdrücken, sondern sie aktiv zu bewältigen.",
+          "en": "It is an important skill not to suppress difficult emotions, but to actively cope with them."
+        }
+      }
+    ]
+  },
+  {
+    "id": "b2-u6-words",
+    "level": "B2",
+    "title": "Regions and dialects",
+    "titleDe": "Regionen und Dialekte",
+    "icon": "heart",
+    "words": [
+      {
+        "de": "Mundart",
+        "en": "dialect/vernacular",
+        "pos": "noun",
+        "ex": {
+          "de": "Obwohl Hochdeutsch die offizielle Sprache ist, wird im Alltag oft die lokale Mundart von den Bewohnern verwendet.",
+          "en": "Although Standard German is the official language, the local dialect is often used by residents in everyday life."
+        },
+        "gender": "f",
+        "plural": "Mundarten"
+      },
+      {
+        "de": "Umgangssprache",
+        "en": "colloquial language",
+        "pos": "noun",
+        "ex": {
+          "de": "Es wäre ratsam, wenn die Umgangssprache in formellen Briefen durch das korrekte Hochdeutsch ersetzt würde.",
+          "en": "It would be advisable if colloquial language were replaced by correct Standard German in formal letters."
+        },
+        "gender": "f",
+        "plural": "Umgangssprachen"
+      },
+      {
+        "de": "Sprachbarriere",
+        "en": "language barrier",
+        "pos": "noun",
+        "ex": {
+          "de": "Durch die starken Dialekte in der Schweiz könnten für manche Lernende erhebliche Sprachbarrieren entstehen.",
+          "en": "Due to the strong dialects in Switzerland, significant language barriers could arise for some learners."
+        },
+        "gender": "f",
+        "plural": "Sprachbarrieren"
+      },
+      {
+        "de": "Aussprache",
+        "en": "pronunciation",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Aussprache der österreichischen Dialekte wird oft als sehr charmant, aber auch etwas schwierig empfunden.",
+          "en": "The pronunciation of Austrian dialects is often perceived as very charming, but also somewhat difficult."
+        },
+        "gender": "f",
+        "plural": "Aussprachen"
+      },
+      {
+        "de": "Wortschatz",
+        "en": "vocabulary",
+        "pos": "noun",
+        "ex": {
+          "de": "Der regionale Wortschatz in Bayern unterscheidet sich deutlich von dem, was in Norddeutschland verwendet wird.",
+          "en": "The regional vocabulary in Bavaria differs significantly from that which is used in Northern Germany."
+        },
+        "gender": "m",
+        "plural": "Wortschätze"
+      },
+      {
+        "de": "Dialektsprecher",
+        "en": "dialect speaker",
+        "pos": "noun",
+        "ex": {
+          "de": "Wenn ein Dialektsprecher sehr schnell spricht, wird die Verständlichkeit für ausländische Lernende oft stark beeinträchtigt.",
+          "en": "When a dialect speaker speaks very quickly, the intelligibility is often greatly impaired for foreign learners."
+        },
+        "gender": "m",
+        "plural": "Dialektsprecher"
+      },
+      {
+        "de": "Besonderheit",
+        "en": "peculiarity/special feature",
+        "pos": "noun",
+        "ex": {
+          "de": "Eine Besonderheit der schweizerdeutschen Sprache ist die Verwendung von Begriffen, die im Hochdeutschen unbekannt sind.",
+          "en": "A peculiarity of Swiss German is the use of terms that are unknown in Standard German."
+        },
+        "gender": "f",
+        "plural": "Besonderheiten"
+      },
+      {
+        "de": "Unterschied",
+        "en": "difference",
+        "pos": "noun",
+        "ex": {
+          "de": "Es gibt viele Unterschiede zwischen dem Standarddeutschen und den verschiedenen regionalen Ausprägungen der Sprache.",
+          "en": "There are many differences between Standard German and the various regional expressions of the language."
+        },
+        "gender": "m",
+        "plural": "Unterschiede"
+      },
+      {
+        "de": "Verständlichkeit",
+        "en": "intelligibility/understandability",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Verständlichkeit der regionalen Akzente könnte durch intensives Hören der lokalen Radiosender verbessert werden.",
+          "en": "The intelligibility of regional accents could be improved through intensive listening to local radio stations."
+        },
+        "gender": "f"
+      },
+      {
+        "de": "Hochdeutsch",
+        "en": "Standard German",
+        "pos": "noun",
+        "ex": {
+          "de": "Es wird oft behauptet, dass Hochdeutsch als verbindendes Element zwischen den verschiedenen Regionen dient.",
+          "en": "It is often claimed that Standard German serves as a unifying element between the different regions."
+        },
+        "gender": "n"
+      },
+      {
+        "de": "Regiolekt",
+        "en": "regional accent/dialect",
+        "pos": "noun",
+        "ex": {
+          "de": "Ein Regiolekt wird oft als eine Mischung aus Standarddeutsch und einem starken regionalen Dialekt bezeichnet.",
+          "en": "A regiolect is often described as a mixture of Standard German and a strong regional dialect."
+        },
+        "gender": "m",
+        "plural": "Regiolekte"
+      },
+      {
+        "de": "Sprachregion",
+        "en": "language region",
+        "pos": "noun",
+        "ex": {
+          "de": "In jeder Sprachregion wird eine spezifische Art der Kommunikation gepflegt, die die Identität stärkt.",
+          "en": "In every language region, a specific type of communication is maintained that strengthens identity."
+        },
+        "gender": "f",
+        "plural": "Sprachregionen"
+      },
+      {
+        "de": "Abweichung",
+        "en": "deviation",
+        "pos": "noun",
+        "ex": {
+          "de": "Eine Abweichung von der Norm wird in informellen Gesprächen meistens als völlig akzeptabel angesehen.",
+          "en": "A deviation from the norm is usually considered to be completely acceptable in informal conversations."
+        },
+        "gender": "f",
+        "plural": "Abweichungen"
+      },
+      {
+        "de": "klingen",
+        "en": "to sound",
+        "pos": "verb",
+        "ex": {
+          "de": "Die Stimme eines Sprechers aus Wien könnte für jemanden aus Hamburg sehr ungewohnt klingen.",
+          "en": "The voice of a speaker from Vienna could sound very unusual to someone from Hamburg."
+        }
+      },
+      {
+        "de": "verstehen",
+        "en": "to understand",
+        "pos": "verb",
+        "ex": {
+          "de": "Es wäre wichtig, dass die Nuancen zwischen den verschiedenen Akzenten besser verstanden werden könnten.",
+          "en": "It would be important that the nuances between the different accents could be better understood."
+        }
+      },
+      {
+        "de": "prägen",
+        "en": "to shape/characterize",
+        "pos": "verb",
+        "ex": {
+          "de": "Die lokale Geschichte hat die Sprache und die damit verbundenen Dialekte über Jahrhunderte hinweg geprägt.",
+          "en": "Local history has shaped the language and the associated dialects over many centuries."
+        }
+      },
+      {
+        "de": "unterscheiden",
+        "en": "to distinguish",
+        "pos": "verb",
+        "ex": {
+          "de": "Es fällt vielen Lernenden schwer, die feinen Nuancen zwischen verschiedenen regionalen Akzenten zu unterscheiden.",
+          "en": "Many learners find it difficult to distinguish the fine nuances between different regional accents."
+        }
+      },
+      {
+        "de": "markant",
+        "en": "distinctive/striking",
+        "pos": "adj",
+        "ex": {
+          "de": "Die markanten Akzente der Alpenregionen werden von vielen Touristen als sehr charakteristisch wahrgenommen.",
+          "en": "The striking accents of the Alpine regions are perceived by many tourists as very characteristic."
+        }
+      },
+      {
+        "de": "vielfältig",
+        "en": "diverse",
+        "pos": "adj",
+        "ex": {
+          "de": "Die deutsche Sprache ist so vielfältig, dass man kaum eine einheitliche Form festlegen könnte.",
+          "en": "The German language is so diverse that one could hardly establish a uniform form."
+        }
+      },
+      {
+        "de": "einheitlich",
+        "en": "uniform",
+        "pos": "adj",
+        "ex": {
+          "de": "Obwohl eine einheitliche Sprache angestrebt wird, bleibt die regionale Vielfalt in Deutschland weiterhin bestehen.",
+          "en": "Although a uniform language is being aimed for, regional diversity continues to exist in Germany."
+        }
+      }
+    ]
+  },
+  {
     "id": "b2-u7-words",
     "level": "B2",
     "title": "History",

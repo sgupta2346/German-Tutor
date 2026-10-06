@@ -70,6 +70,20 @@
     "en": "Can we go to the park? Please walk. It is very close. Or go by bus."
   },
   {
+    "id": "p-a1-u8-1",
+    "level": "A1",
+    "title": "My Hobbies",
+    "de": "Ich spiele gern Fußball. Ich höre lieber Musik. Ich spiele kein Klavier.",
+    "en": "I like playing football. I prefer listening to music. I don't play the piano."
+  },
+  {
+    "id": "p-a1-u8-2",
+    "level": "A1",
+    "title": "Evening Plans",
+    "de": "Ich sehe heute fern. Ich gehe nicht aus. Ich kaufe lieber ein.",
+    "en": "I am watching TV today. I am not going out. I prefer to go shopping."
+  },
+  {
     "id": "p-a2-1",
     "level": "A2",
     "title": "Last weekend",
@@ -84,6 +98,34 @@
     "en": "I don't feel well. I've had a headache and fever for two days. The doctor says I should drink a lot and stay in bed. Tomorrow I have to go back to work."
   },
   {
+    "id": "p-a2-u1-1",
+    "level": "A2",
+    "title": "A Movie Night",
+    "de": "Ich habe gestern einen Film gesehen. Ich habe dabei viel Popcorn gegessen. Ich habe den Film sehr gut gefunden. Ich habe auch viel gelacht.",
+    "en": "I watched a movie yesterday. I ate a lot of popcorn while doing so. I thought the movie was very good. I also laughed a lot."
+  },
+  {
+    "id": "p-a2-u1-2",
+    "level": "A2",
+    "title": "Visiting a Friend",
+    "de": "Ich habe meine Freundin besucht. Wir haben zusammen eine Pizza gegessen. Wir haben viel über die Arbeit gesprochen. Wir haben einen schönen Abend gehabt.",
+    "en": "I visited my (female) friend. We ate a pizza together. We talked a lot about work. We had a lovely evening."
+  },
+  {
+    "id": "p-a2-u2-1",
+    "level": "A2",
+    "title": "A Trip to Berlin",
+    "de": "Ich bin nach Berlin geflogen. Ich bin in ein Museum gegangen. Ich bin viel im Park spazieren gegangen. Ich bin spät nach Hause gekommen.",
+    "en": "I flew to Berlin. I went into a museum. I went for a walk in the park a lot. I came home late."
+  },
+  {
+    "id": "p-a2-u2-2",
+    "level": "A2",
+    "title": "Traveling to Italy",
+    "de": "Letztes Jahr sind wir nach Italien gereist. Wir sind mit dem Zug gefahren. Wir haben die Taschen in das Auto gestellt. Wir sind am Abend angekommen.",
+    "en": "Last year we traveled to Italy. We went by train. We put the bags into the car. We arrived in the evening."
+  },
+  {
     "id": "p-a2-u3-1",
     "level": "A2",
     "title": "Shopping for a Shirt",
@@ -96,6 +138,34 @@
     "title": "An Opinion on a Sweater",
     "de": "Der rote Pullover passt mir sehr gut. Ich finde, dass die Farbe schön ist. Er ist teuer, weil er aus Wolle ist.",
     "en": "The red sweater fits me very well. I think that the color is beautiful. It is expensive because it is made of wool."
+  },
+  {
+    "id": "p-a2-u4-1",
+    "level": "A2",
+    "title": "At the Doctor",
+    "de": "Ich habe starke Kopfschmerzen und Fieber. Du musst heute im Bett bleiben. Du sollst viel warmen Tee trinken. Du darfst nicht zur Arbeit gehen.",
+    "en": "I have a bad headache and a fever. You must stay in bed today. You should drink a lot of warm tea. You are not allowed to go to work."
+  },
+  {
+    "id": "p-a2-u4-2",
+    "level": "A2",
+    "title": "Back Pain",
+    "de": "Mein Rücken tut heute sehr weh. Du musst sofort zum Arzt gehen. Ich denke, dass du Ruhe brauchst. Du sollst keine schweren Sachen heben.",
+    "en": "My back hurts a lot today. You must go to the doctor immediately. I think that you need rest. You should not lift heavy things."
+  },
+  {
+    "id": "p-a2-u5-1",
+    "level": "A2",
+    "title": "My Job",
+    "de": "Ich habe drei Jahre in einem Büro gearbeitet. Ich mag meinen Job, weil ich Menschen helfen kann. Ich finde, dass die Arbeit sehr interessant ist. Gestern habe ich mit meinem Chef gesprochen.",
+    "en": "I worked in an office for three years. I like my job because I can help people. I find that the work is very interesting. Yesterday, I spoke with my boss."
+  },
+  {
+    "id": "p-a2-u5-2",
+    "level": "A2",
+    "title": "Working in a Restaurant",
+    "de": "Ich habe in einem Restaurant gearbeitet. Ich mag den Job, weil ich viele Leute treffe. Ich weiß, dass die Arbeit manchmal stressig ist. Ich muss am Samstag arbeiten.",
+    "en": "I worked in a restaurant. I like the job because I meet many people. I know that the work is sometimes stressful. I have to work on Saturday."
   },
   {
     "id": "p-a2-u6-1",
@@ -124,6 +194,20 @@
     "title": "Christmas",
     "de": "Weihnachten war am vierundzwanzigsten Dezember. Wir hatten ein leckeres Abendessen. Die Familie war bei mir zu Hause. Es war ein wunderbarer Tag.",
     "en": "Christmas was on December 24th. We had a delicious dinner. The family was at my house. It was a wonderful day."
+  },
+  {
+    "id": "p-a2-u8-1",
+    "level": "A2",
+    "title": "Roommates and Cleaning",
+    "de": "Wir treffen uns jeden Samstag zum Putzen. Wir haben uns gestern über den Müll gestritten. Ich freue mich, dass wir zusammen wohnen.",
+    "en": "We meet every Saturday to clean. We argued about the trash yesterday. I am happy that we live together."
+  },
+  {
+    "id": "p-a2-u8-2",
+    "level": "A2",
+    "title": "Feeling at Home",
+    "de": "Ich fühle mich in der Wohnung sehr wohl. Ich muss mich nach der Arbeit entspannen. Ich interessiere mich für meine neuen Nachbarn.",
+    "en": "I feel very comfortable in the apartment. I must relax after work. I am interested in my new neighbors."
   },
   {
     "id": "p-b1-1",
@@ -180,6 +264,20 @@
     "title": "During the Interview",
     "de": "Vielen Dank für die freundliche Einladung zu diesem sehr interessanten Gespräch. Ich würde gerne wissen, ob es in Ihrer Firma Weiterbildungsmöglichkeiten gibt. Wenn ich mehr Zeit hätte, würde ich Ihnen mehr über meine Projekte erzählen. Wäre es eventuell möglich, einmal pro Woche im Homeoffice zu arbeiten? Ich glaube, dass diese neue Aufgabe eine spannende Herausforderung für mich wäre.",
     "en": "Thank you very much for the kind invitation to this very interesting interview. I would like to know if there are opportunities for further training in your company. If I had more time, I would tell you more about my projects. Would it perhaps be possible to work from home once a week? I believe that this new task would be an exciting challenge for me."
+  },
+  {
+    "id": "p-b1-u4-1",
+    "level": "B1",
+    "title": "The Plastic Problem",
+    "de": "Jeden Tag wird viel zu viel Plastik weggeworfen, was sehr problematisch ist. Weil der Müll nicht richtig getrennt wird, werden auch die Ozeane verschmutzt. Ich finde, dass in vielen Städten mehr für die Mülltrennung getan wird. In Supermärkten wird Plastik jetzt oft durch nachhaltige Materialien ersetzt. Das ist wichtig, damit unsere Natur langfristig geschützt wird.",
+    "en": "Every day, too much plastic is thrown away, which is very problematic. Because waste is not sorted correctly, the oceans are also being polluted. I think that more is being done for waste separation in many cities. In supermarkets, plastic is now often being replaced by sustainable materials. This is important so that our nature is protected in the long term."
+  },
+  {
+    "id": "p-b1-u4-2",
+    "level": "B1",
+    "title": "Energy and the Climate",
+    "de": "Heutzutage wird noch zu viel Energie aus fossilen Brennstoffen gewonnen. Dadurch wird das Klima massiv beeinflusst, was uns alle betrifft. Zum Glück wird immer mehr Strom durch Wind und Sonne erzeugt. Ich finde es gut, dass immer mehr Solaranlagen auf Dächern installiert werden. So wird die Umwelt entlastet und die Zukunft gesichert.",
+    "en": "Nowadays, too much energy is still being produced from fossil fuels. As a result, the climate is being massively influenced, which affects us all. Fortunately, more and more electricity is being generated through wind and sun. I think it is good that more and more solar panels are being installed on roofs. In this way, the environment is relieved and the future is secured."
   },
   {
     "id": "p-b1-u5-1",
@@ -294,6 +392,34 @@
     "en": "An economic expert explains that working from home significantly increases the productivity of employees. Nevertheless, it is often criticized that social bonds within teams are being weakened by the distance. The importance of a balanced work-life balance is repeatedly emphasized in the current debate. Many employees stated that they wished for more flexibility in organizing their daily working hours. Employers, on the other hand, emphasized that a balance between individual wishes and operational necessities must be found."
   },
   {
+    "id": "p-b2-u5-1",
+    "level": "B2",
+    "title": "Workplace Stress and Mental Health",
+    "de": "Viele Arbeitnehmer stehen vor einem stressigen Alltag, der häufig zu einem erschöpfenden Burnout führen kann. Die durch den hohen Leistungsdruck verursachten Probleme erfordern oft eine professionelle therapeutische Unterstützung. Regelmäßige, meditative Übungen können dabei helfen, die im Alltag entstehenden Spannungen effektiv zu reduzieren. Ein ausgewogenes Verhältnis zwischen Arbeit und Freizeit ist für ein langfristig stabiles Wohlbefinden unerlässlich.",
+    "en": "Many employees face a stressful daily routine that can frequently lead to an exhausting burnout. The problems caused by high performance pressure often require professional therapeutic support. Regular, meditative exercises can help to effectively reduce the tensions arising in everyday life. A balanced relationship between work and leisure is essential for long-term stable well-being."
+  },
+  {
+    "id": "p-b2-u5-2",
+    "level": "B2",
+    "title": "Personal Self-Care",
+    "de": "Manchmal fühle ich mich von den überwältigenden Erwartungen an mich selbst im Alltag ziemlich gestresst. Um mich zu entspannen, höre ich oft die beruhigende Musik, die ich vor kurzem entdeckt habe. Ein kurzer Spaziergang in der Natur hilft mir dabei, die belastenden Gedanken des Tages loszulassen. Vergiss bitte nicht, dir regelmäßig Zeit für die kleinen, belebenden Momente im Leben zu nehmen. Ein gepflegter Geist ist schließlich die wichtigste Grundlage für ein wirklich erfülltes Leben.",
+    "en": "Sometimes I feel quite stressed by the overwhelming expectations I have for myself in everyday life. To relax, I often listen to the soothing music that I discovered recently. A short walk in nature helps me to let go of the stressful thoughts of the day. Please don't forget to regularly take time for the small, invigorating moments in life. A nurtured mind is, after all, the most important foundation for a truly fulfilled life."
+  },
+  {
+    "id": "p-b2-u6-1",
+    "level": "B2",
+    "title": "Linguistic Diversity in German-Speaking Areas",
+    "de": "Obwohl Hochdeutsch als verbindendes Element dient, wird die sprachliche Vielfalt in den Alpenregionen durch verschiedene Dialekte stark geprägt. In der Schweiz wird oft bemerkt, dass die Kommunikation zwischen den verschiedenen Sprachregionen eine große Herausforderung darstellt. Es sollte berücksichtigt werden, dass regionale Besonderheiten nicht nur den Wortschatz, sondern auch die Aussprache maßgeblich beeinflussen. Durch die Nutzung von Dialekten wird die kulturelle Identität der jeweiligen Bevölkerungsgruppen innerhalb der deutschsprachigen Länder gestärkt.",
+    "en": "Although Standard German serves as a unifying element, the linguistic diversity in the Alpine regions is strongly shaped by various dialects. In Switzerland, it is often noted that communication between the different language regions presents a major challenge. It should be taken into account that regional peculiarities significantly influence not only the vocabulary but also the pronunciation. Through the use of dialects, the cultural identity of the respective population groups within German-speaking countries is strengthened."
+  },
+  {
+    "id": "p-b2-u6-2",
+    "level": "B2",
+    "title": "Learning Regional Nuances",
+    "de": "Wenn ich nach Wien reise, finde ich es total faszinierend, wie unterschiedlich die Leute dort eigentlich sprechen. Manchmal fällt es mir schwer, den Akzent zu verstehen, wenn die Leute sehr schnell und sehr dialektal reden. Ich hätte gerne gelernt, wie man die typischen österreichischen Ausdrücke benutzt, ohne dabei unnatürlich zu wirken. Vielleicht sollte ich mich weniger auf die Grammatik und mehr auf die Melodie der regionalen Sprache konzentrieren. Es wär' echt cool, wenn ich beim nächsten Mal in Wien direkt „Servus“ sagen könnte.",
+    "en": "When I travel to Vienna, I find it totally fascinating how differently the people there actually speak. Sometimes I find it difficult to understand the accent when people speak very quickly and very dialectally. I would have liked to have learned how to use typical Austrian expressions without sounding unnatural. Perhaps I should focus less on grammar and more on the melody of the regional language. It would be really cool if I could say \"Servus\" directly the next time I am in Vienna."
+  },
+  {
     "id": "p-b2-u7-1",
     "level": "B2",
     "title": "The Fall of the Berlin Wall",
@@ -350,6 +476,20 @@
     "en": "I really thought I had found the solution long ago, but I was clearly completely on the wrong track. In moments like these, one simply has to think outside the box instead of only concentrating on the obvious. To be honest, it felt a bit as if I had just been left in the lurch during this difficult phase. Don't worry, I will certainly keep my fingers crossed for you, hoping that the situation improves soon. In the end, everything will turn out for the best; I am quite sure of that."
   },
   {
+    "id": "p-c1-u3-1",
+    "level": "C1",
+    "title": "Formal Business Correspondence",
+    "de": "Ich wäre Ihnen sehr dankbar, wenn Sie sich kurz Zeit nehmen könnten, um die anstehenden Projektschritte gemeinsam zu erörtern. Es wäre äußerst zweckdienlich, wenn wir bis zum Ende der Woche eine fundierte Entscheidung bezüglich des weiteren Vorgehens treffen könnten. Anbei übersende ich Ihnen den aktuellen Entwurf zur gefälligen Durchsicht und stehe Ihnen für etwaige Rückfragen jederzeit gerne zur Verfügung. Über eine zeitnahe Rückmeldung Ihrerseits bezüglich dieses wichtigen Anliegens würde ich mich sehr freuen.",
+    "en": "I would be very grateful if you could take a moment to discuss the upcoming project steps together. It would be extremely beneficial if we could reach a well-founded decision regarding the further course of action by the end of the week. Attached, I am sending you the current draft for your kind review and remain at your disposal for any questions at any time. I would be very pleased to receive a prompt response from you regarding this important matter."
+  },
+  {
+    "id": "p-c1-u3-2",
+    "level": "C1",
+    "title": "Casual Colleague Chat",
+    "de": "Sag mal, hast du eigentlich schon mal kurz über den neuen Entwurf geschaut, den ich dir geschickt habe? Wir müssen das Ganze echt bald mal klarmachen, sonst wird das mit der Deadline am Freitag wohl nichts mehr. Lass uns doch später einfach mal kurz bequatschen, wie wir das Ding am besten angehen können. Sag mir halt einfach kurz Bescheid, wenn du mal 'ne Minute Zeit hast, dann setzen wir uns zusammen.",
+    "en": "Say, have you actually had a quick look at the new draft I sent you yet? We really need to get this sorted out soon, otherwise, the deadline on Friday probably won't work out. Let's just have a quick chat later about how we can best approach this thing. Just let me know when you have a minute, and then we'll sit down together."
+  },
+  {
     "id": "p-c1-u4-1",
     "level": "C1",
     "title": "A Call to Action",
@@ -362,6 +502,34 @@
     "title": "The Strategic Pivot",
     "de": "Der Markt, wie wir ihn kennen, befindet sich gerade in einem radikalen Umbruch, was wir keineswegs unterschätzen sollten. Anstatt uns von der Unsicherheit lähmen zu lassen, sollten wir die Chance ergreifen, die sich uns gerade bietet. Genau hier setzt unser neues Konzept an, das nicht nur effizienter, sondern auch weitaus nachhaltiger arbeitet. Das ist ja kein bloßes Wunschdenken, sondern eine Strategie, die auf harten Fakten und fundierten Analysen basiert. Lassen Sie uns diesen Weg gemeinsam beschreiten, um unsere Marktposition in diesem dynamischen Umfeld langfristig abzusichern.",
     "en": "The market as we know it is currently undergoing a radical upheaval, which we should by no means underestimate. Instead of letting ourselves be paralyzed by uncertainty, we should seize the opportunity that is currently presenting itself. This is exactly where our new concept comes in, which works not only more efficiently but also far more sustainably. This is not mere wishful thinking, but rather a strategy based on hard facts and well-founded analyses. Let us embark on this path together to secure our market position in this dynamic environment in the long term."
+  },
+  {
+    "id": "p-c1-u5-1",
+    "level": "C1",
+    "title": "The Challenges of Modern Research",
+    "de": "Die zunehmende Komplexität der modernen Forschung erfordert, dass Wissenschaftler ständig neue methodische Ansätze in Betracht ziehen. Die an den führenden Instituten entwickelten Modelle lassen oft nur wenig Spielraum für rein theoretische Überlegungen. Es ist ja eigentlich ganz offensichtlich, dass interdisziplinäre Ansätze einen entscheidenden Beitrag zum Erkenntnisgewinn leisten müssen. Dennoch kommen viele innovative Konzepte erst dann zur Anwendung, wenn sie auf die hiesigen bürokratischen Hürden stoßen. Letztlich müssen Forschende stets darauf Wert legen, ihre eigenen Hypothesen im Hinblick auf mögliche Verzerrungen kritisch zu hinterfragen.",
+    "en": "The increasing complexity of modern research requires scientists to constantly take new methodological approaches into consideration. The models developed at leading institutes often leave little room for purely theoretical considerations. It is, after all, quite obvious that interdisciplinary approaches must make a decisive contribution to the acquisition of knowledge. Nevertheless, many innovative concepts only come into application when they encounter local bureaucratic hurdles. Ultimately, researchers must always place importance on critically questioning their own hypotheses with regard to potential biases."
+  },
+  {
+    "id": "p-c1-u5-2",
+    "level": "C1",
+    "title": "Digitalization in Academia",
+    "de": "Die durch die fortschreitende Digitalisierung ausgelöste Transformation der akademischen Welt stellt viele Forschende vor enorme Herausforderungen. Es gilt nun, die Fähigkeit zur präzisen Analyse äußerst komplexer Datenmengen unter Beweis zu stellen. Dabei sollte man durchaus in Erwägung ziehen, dass eine rein quantitative Auswertung allein oft nicht ausreicht. In der aktuellen Debatte kommt immer wieder zur Sprache, wie die Integrität wissenschaftlicher Arbeiten langfristig gesichert werden kann. Eine sorgfältige Dokumentation der Prozesse ist daher unerlässlich, um die Validität der Ergebnisse zweifelsfrei zu gewährleisten.",
+    "en": "The transformation of the academic world, triggered by advancing digitalization, presents many researchers with enormous challenges. It is now necessary to prove the ability to precisely analyze extremely complex amounts of data. In doing so, one should certainly take into consideration that a purely quantitative evaluation alone is often insufficient. In the current debate, it is repeatedly brought up how the integrity of scientific papers can be secured in the long term. Careful documentation of the processes is therefore essential in order to ensure the validity of the results beyond doubt."
+  },
+  {
+    "id": "p-c1-u6-1",
+    "level": "C1",
+    "title": "Catching Up",
+    "de": "Haste eigentlich schon was vor für heute Abend, oder bist du noch voll im Stress? Ich dacht' mir, wir könnten uns vielleicht 'n Bierchen gönnen und mal wieder so richtig schön quatschen. Wenn's dir passt, könnten wir ja in die neue Bar um die Ecke gehen, die soll ja echt ganz gut sein. Aber mach dir keinen Kopf, falls es heute doch nicht klappt, wir können's ja jederzeit verschieben.",
+    "en": "Do you actually have plans for tonight, or are you still totally stressed out? I was thinking we could maybe treat ourselves to a beer and just have a proper chat again. If it suits you, we could go to that new bar around the corner; they say it's really quite good. But don't worry if it doesn't work out today; we can always postpone it."
+  },
+  {
+    "id": "p-c1-u6-2",
+    "level": "C1",
+    "title": "Commuter Frustration",
+    "de": "Mensch, ich hab' echt keine Lust mehr auf das ewige Hin und Her mit der Bahn, das nervt einfach nur noch. Jetzt steht die S-Bahn schon wieder auf der Strecke, und ich frag' mich echt, ob das heute noch was wird. Das ist halt echt nervig, wenn man's eilig hat und dann ständig auf Verspätungen warten muss. Eigentlich hätt' ich viel lieber direkt zu Hause auf der Couch gelegen, statt hier am Bahnsteig rumzustehen.",
+    "en": "Man, I really don't have the patience for this constant back and forth with the train anymore; it's just annoying. Now the S-Bahn is stuck on the tracks again, and I'm really wondering if anything's going to happen today. It's just really frustrating when you're in a hurry and constantly have to wait for delays. Actually, I'd much rather have been lying on the couch at home instead of standing around here on the platform."
   },
   {
     "id": "p-c1-u7-1",

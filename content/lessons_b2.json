@@ -606,11 +606,6 @@
         "en": "After the negotiations are concluded, we will analyze the result together."
       },
       {
-        "type": "phrase",
-        "de": "Note: Use the *Zustandspassiv* when you want to emphasize the current status or result rather than the process of change.",
-        "en": ""
-      },
-      {
         "type": "choice",
         "prompt": "Die neue Strategie ______ bereits von der Geschäftsleitung offiziell bekannt gegeben.",
         "options": [
@@ -1634,6 +1629,834 @@
         "type": "speak",
         "de": "Man sagt, die Digitalisierung verändere die gesamte Gesellschaft auf eine sehr tiefgreifende Weise.",
         "en": "It is said that digitalization changes the entire society in a very profound way."
+      }
+    ]
+  },
+  {
+    "id": "b2-u5-l1",
+    "unit": "b2-u5",
+    "title": "Participles as Adjectives: Describing States and Actions",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Participles as Adjectives",
+        "body": "In German, you can use participles as adjectives to describe nouns in more sophisticated ways. The Partizip I (Infinitive + 'd') functions like the English '-ing' form to describe an ongoing or active process. The Partizip II (the past participle) functions like the English '-ed' form to describe a completed action or a passive state. Crucially, unlike English, these participles must take adjective endings that change based on the gender, case, and number of the noun they modify.",
+        "table": [
+          [
+            "die erschöpfte Person",
+            "the exhausted person"
+          ],
+          [
+            "das steigende Stresslevel",
+            "the rising stress level"
+          ],
+          [
+            "die gelösten Probleme",
+            "the solved problems"
+          ],
+          [
+            "ein beunruhigendes Gefühl",
+            "a disturbing feeling"
+          ],
+          [
+            "die veränderte Lebensweise",
+            "the changed lifestyle"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ein ständiges Gefühl der Unruhe kann langfristig die psychische Gesundheit beeinträchtigen.",
+        "en": "A constant feeling of restlessness can impair mental health in the long term."
+      },
+      {
+        "type": "phrase",
+        "de": "Nach der erfolgreich absolvierten Therapie fühlte er sich endlich wieder als ein gefestigter Mensch.",
+        "en": "After successfully completing therapy, he finally felt like a stable person again."
+      },
+      {
+        "type": "phrase",
+        "de": "Es ist wichtig, die belastenden Faktoren im Alltag frühzeitig zu erkennen und zu reduzieren.",
+        "en": "It is important to recognize and reduce the stressful factors in everyday life early on."
+      },
+      {
+        "type": "choice",
+        "prompt": "Der ________ Mitarbeiter benötigt dringend eine Pause von der Arbeit.",
+        "options": [
+          "stressende",
+          "gestresste",
+          "stressig"
+        ],
+        "answer": 1,
+        "explain": "'Gestresste' is the Partizip II used as an adjective to describe a person who is in a state of being stressed."
+      },
+      {
+        "type": "choice",
+        "prompt": "Das ________ Stresslevel führt oft zu ernsthaften körperlichen Beschwerden.",
+        "options": [
+          "steigendes",
+          "gestiegen",
+          "gestiegenes"
+        ],
+        "answer": 0,
+        "explain": "'Steigendes' is the Partizip I (Infinitive + d) used to describe an ongoing process like a rising level."
+      },
+      {
+        "type": "choice",
+        "prompt": "Wir müssen die ________ Anzeichen einer Depression sehr ernst nehmen.",
+        "options": [
+          "beunruhigenden",
+          "beunruhigt",
+          "beunruhigend"
+        ],
+        "answer": 0,
+        "explain": "'Beunruhigenden' is the Partizip I used as an adjective to describe something that is actively causing anxiety."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "die erschöpfte Person",
+            "the exhausted person"
+          ],
+          [
+            "das beunruhigende Ereignis",
+            "the disturbing event"
+          ],
+          [
+            "die gelösten Konflikte",
+            "the resolved conflicts"
+          ],
+          [
+            "die steigenden Anforderungen",
+            "the rising demands"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "The problems caused by high pressure to perform should be discussed with an expert early on.",
+        "answer": [
+          "Die",
+          "durch",
+          "den",
+          "hohen",
+          "Leistungsdruck",
+          "verursachten",
+          "Probleme",
+          "sollten",
+          "frühzeitig",
+          "mit",
+          "einem",
+          "Experten",
+          "besprochen",
+          "werden."
+        ],
+        "extra": [
+          "Faktoren",
+          "psychische"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Ein dauerhaft belastendes Umfeld kann die psychische Widerstandskraft einer Person schwächen.",
+        "en": "A permanently stressful environment can weaken a person's mental resilience."
+      },
+      {
+        "type": "speak",
+        "de": "Ich versuche, die täglichen Herausforderungen mit einer gelassenen Einstellung zu meistern.",
+        "en": "I try to master the daily challenges with a calm attitude."
+      },
+      {
+        "type": "speak",
+        "de": "Ein ausgewogenes Leben ist entscheidend für die langfristige mentale Gesundheit und das allgemeine Wohlbefinden.",
+        "en": "A balanced life is crucial for long-term mental health and general well-being."
+      }
+    ]
+  },
+  {
+    "id": "b2-u5-l2",
+    "unit": "b2-u5",
+    "title": "Partizip II: Resultative States and Nominal Style",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Using Partizip II for Results",
+        "body": "While Partizip I describes an ongoing process, the Partizip II is used as an adjective to describe a completed action or a resulting state. In professional German, this allows you to use the 'Nominalstil' (nominal style), where you condense a complex relative clause into a single adjective phrase. Unlike English, where you might say 'the symptoms that were treated,' in German, you simply say 'die behandelten Symptome.' You must ensure the Partizip II receives the correct adjective ending based on the gender, case, and article of the noun.",
+        "table": [
+          [
+            "Die erschöpfte Patientin",
+            "The exhausted patient"
+          ],
+          [
+            "Das gelöste Problem",
+            "The solved problem"
+          ],
+          [
+            "Die enttäuschten Erwartungen",
+            "The disappointed expectations"
+          ],
+          [
+            "Die abgeschlossene Therapie",
+            "The completed therapy"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Die durch den Stress verursachten gesundheitlichen Probleme müssen unbedingt ernst genommen werden.",
+        "en": "The health problems caused by stress must absolutely be taken seriously."
+      },
+      {
+        "type": "phrase",
+        "de": "Es ist ratsam, die unter großem Druck stehenden Mitarbeiter zeitnah zu unterstützen.",
+        "en": "It is advisable to support employees who are under great pressure in a timely manner."
+      },
+      {
+        "type": "phrase",
+        "de": "Die durch mangelnde Hygiene verursachten Infektionen können schwerwiegende Folgen haben.",
+        "en": "The infections caused by lack of hygiene can have serious consequences."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die von dem erfahrenen Arzt ________ Diagnose war äußerst präzise.",
+        "options": [
+          "gestellte",
+          "stellende",
+          "gestellt"
+        ],
+        "answer": 0,
+        "explain": "The diagnosis was 'made' (completed action), so we use the Partizip II. Since 'Diagnose' is feminine nominative with a definite article, the adjective needs the '-e' ending."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die ________ Erwartungen führten zu einer tiefen psychischen Belastung.",
+        "options": [
+          "enttäuschten",
+          "enttäuschende",
+          "enttäuscht"
+        ],
+        "answer": 0,
+        "explain": "The expectations 'were disappointed' (resultative state). For plural nominative with a definite article, the Partizip II adjective takes the '-en' ending."
+      },
+      {
+        "type": "choice",
+        "prompt": "Man sollte die ________ Medikamente streng nach dem Plan einnehmen.",
+        "options": [
+          "verschriebenen",
+          "verschreibenden",
+          "verschrieben"
+        ],
+        "answer": 0,
+        "explain": "The medications 'were prescribed' (completed action). For plural accusative with a definite article, the adjective requires the '-en' ending."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Die gelöste Krise",
+            "The resolved crisis"
+          ],
+          [
+            "Die beunruhigte Stimmung",
+            "The disturbed mood"
+          ],
+          [
+            "Die abgeschlossene Behandlung",
+            "The completed treatment"
+          ],
+          [
+            "Die enttäuschte Hoffnung",
+            "The disappointed hope"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "The fatigue caused by chronic lack of sleep significantly affects daily performance.",
+        "answer": [
+          "Die",
+          "durch",
+          "den",
+          "chronischen",
+          "Schlafmangel",
+          "verursachte",
+          "Müdigkeit",
+          "beeinflusst",
+          "die",
+          "tägliche",
+          "Leistungsfähigkeit",
+          "erheblich."
+        ],
+        "extra": [
+          "unterstützen",
+          "schwerwiegende"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Die erfolgreich behandelten Symptome sind nun deutlich weniger belastend für den Patienten.",
+        "en": "The successfully treated symptoms are now significantly less burdensome for the patient."
+      },
+      {
+        "type": "speak",
+        "de": "Eine fundierte Diagnose ist der erste Schritt zur vollständigen Genesung des Patienten.",
+        "en": "A well-founded diagnosis is the first step to the patient's complete recovery."
+      },
+      {
+        "type": "speak",
+        "de": "Die durch Stress belasteten Menschen benötigen oft professionelle Unterstützung durch Experten.",
+        "en": "People burdened by stress often require professional support from experts."
+      }
+    ]
+  },
+  {
+    "id": "b2-u5-l3",
+    "unit": "b2-u5",
+    "title": "Advanced Participles: Nuance in Psychological Descriptions",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Advanced Participles: Nuance in Psychological Descriptions",
+        "body": "While previous lessons covered basic actions and results, B2 learners must use participles to add depth to descriptions of mental states. In English, we often rely on relative clauses like 'the feeling that is overwhelming,' but in German, a participle used as an adjective creates a more concise and professional tone. This is particularly useful in psychological discourse to describe ongoing stressors or the impact of past experiences.",
+        "table": [
+          [
+            "Die belastende Situation",
+            "The stressful situation"
+          ],
+          [
+            "Die überwältigenden Emotionen",
+            "The overwhelming emotions"
+          ],
+          [
+            "Ein tiefgreifendes Problem",
+            "A profound problem"
+          ],
+          [
+            "Die verunsichernde Nachricht",
+            "The unsettling news"
+          ],
+          [
+            "Die erschöpfenden Arbeitszeiten",
+            "The exhausting working hours"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Die überwältigenden Gefühle können in einer stressigen Phase oft zu einer psychischen Überlastung führen.",
+        "en": "The overwhelming feelings can often lead to psychological overload during a stressful phase."
+      },
+      {
+        "type": "phrase",
+        "de": "Es ist wichtig, die belastenden Faktoren in unserem Alltag frühzeitig zu erkennen.",
+        "en": "It is important to recognize the stressful factors in our daily lives early on."
+      },
+      {
+        "type": "phrase",
+        "de": "Man sollte die enttäuschenden Ergebnisse nicht als persönliches Versagen betrachten.",
+        "en": "One should not view the disappointing results as a personal failure.",
+        "note": "Use Participle I (e.g., belastend) for ongoing processes and Participle II (e.g., belastet) for completed states."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die ________ (überwältigen) Gefühle machten es ihm schwer, sich zu konzentrieren.",
+        "options": [
+          "überwältigenden",
+          "überwältigte",
+          "überwältigt"
+        ],
+        "answer": 0,
+        "explain": "The sentence requires the plural accusative form of the Participle I to describe an ongoing emotional state following the definite article 'Die'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Eine ________ (belasten) Situation erfordert oft professionelle Unterstützung.",
+        "options": [
+          "belastende",
+          "belastet",
+          "belastenden"
+        ],
+        "answer": 0,
+        "explain": "The sentence requires the singular nominative form of the Participle I to describe an ongoing state following the indefinite article 'Eine'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Nach dem ________ (beenden) Gespräch fühlte sie sich endlich erleichtert.",
+        "options": [
+          "beendeten",
+          "beendenden",
+          "beendete"
+        ],
+        "answer": 0,
+        "explain": "The sentence requires the Participle II (indicating a completed action) in the dative singular form following the definite article 'dem'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Die erschöpfende Arbeit",
+            "The exhausting work"
+          ],
+          [
+            "Das gelöste Problem",
+            "The solved problem"
+          ],
+          [
+            "Die verunsichernde Frage",
+            "The unsettling question"
+          ],
+          [
+            "Die enttäuschte Erwartung",
+            "The disappointed expectation"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "The constant fear of failure can be a very stressful experience.",
+        "answer": [
+          "Die",
+          "ständige",
+          "Angst",
+          "vor",
+          "dem",
+          "Versagen",
+          "kann",
+          "eine",
+          "sehr",
+          "belastende",
+          "Erfahrung",
+          "sein."
+        ],
+        "extra": [
+          "überwältigenden",
+          "zu"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Die überwältigende Freude über den großen Erfolg war in der Gruppe deutlich spürbar.",
+        "en": "The overwhelming joy over the great success was clearly palpable in the group."
+      },
+      {
+        "type": "speak",
+        "de": "Man sollte die belastenden Umstände im Alltag nicht ignorieren, sondern sie stattdessen aktiv angehen.",
+        "en": "One should not ignore the stressful circumstances in daily life, but rather tackle them actively."
+      }
+    ]
+  },
+  {
+    "id": "b2-u6-l1",
+    "unit": "b2-u6",
+    "title": "Regional Vocabulary: Exploring the German-speaking World",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Regional Vocabulary",
+        "body": "While the grammatical structure remains largely consistent across the German-speaking world, specific nouns often change depending on the country. Unlike English, where regional variations are frequently viewed as slang, these terms are often the standard vocabulary in Austria or Switzerland. Mastering these regional synonyms is essential for achieving true fluency and understanding local contexts.",
+        "table": [
+          [
+            "die Tomate / die Paradeiser (AT)",
+            "tomato"
+          ],
+          [
+            "die Kartoffel / der Erdapfel (AT)",
+            "potato"
+          ],
+          [
+            "das Brötchen / die Semmel (AT)",
+            "bread roll"
+          ],
+          [
+            "das Frühstück / das Zmorge (CH)",
+            "breakfast"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Könnten Sie mir bitte sagen, wo ich hier die besten Paradeiser kaufen kann?",
+        "en": "Could you please tell me where I can buy the best tomatoes here?",
+        "note": "Note: 'Paradeiser' is used primarily in Austria, whereas 'Tomate' is standard in Germany."
+      },
+      {
+        "type": "phrase",
+        "de": "Obwohl er in Berlin aufgewachsen ist, bestellt er in Wien immer eine Semmel zum Frühstück.",
+        "en": "Although he grew up in Berlin, he always orders a bread roll for breakfast in Vienna."
+      },
+      {
+        "type": "choice",
+        "prompt": "Könnten Sie mir sagen, welcher Begriff in Österreich normalerweise für Tomaten verwendet wird?",
+        "options": [
+          "die Tomate",
+          "die Paradeiser",
+          "der Erdapfel"
+        ],
+        "answer": 1,
+        "explain": "In Austria, 'Paradeiser' is the standard term used for tomatoes."
+      },
+      {
+        "type": "choice",
+        "prompt": "Wenn ein Schweizer von seinem 'Zmorge' spricht, was meint er dann eigentlich genau?",
+        "options": [
+          "das Frühstück",
+          "das Mittagessen",
+          "das Abendessen"
+        ],
+        "answer": 0,
+        "explain": "'Zmorge' is the Swiss German word for breakfast."
+      },
+      {
+        "type": "choice",
+        "prompt": "Welches Wort wird in Österreich am häufigsten als Synonym für die Kartoffel benutzt?",
+        "options": [
+          "die Semmel",
+          "der Erdapfel",
+          "die Paradeiser"
+        ],
+        "answer": 1,
+        "explain": "'Erdapfel' is the common regional term for potato in many Austrian dialects."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "die Semmel",
+            "bread roll"
+          ],
+          [
+            "der Erdapfel",
+            "potato"
+          ],
+          [
+            "die Paradeiser",
+            "tomato"
+          ],
+          [
+            "das Zmorge",
+            "breakfast"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "In Austria, tomatoes are often referred to as Paradeiser, which sometimes sounds very unusual to German tourists.",
+        "answer": [
+          "In",
+          "Österreich",
+          "werden",
+          "Tomaten",
+          "oft",
+          "als",
+          "Paradeiser",
+          "bezeichnet,",
+          "was",
+          "für",
+          "deutsche",
+          "Touristen",
+          "manchmal",
+          "sehr",
+          "ungewöhnlich",
+          "klingt."
+        ],
+        "extra": [
+          "er",
+          "Berlin"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Ich hätte gerne eine Semmel und einen Apfelsaft zum Frühstück, wenn das möglich wäre.",
+        "en": "I would like a bread roll and an apple juice for breakfast, if that would be possible."
+      },
+      {
+        "type": "speak",
+        "de": "Könnten Sie mir bitte erklären, warum man in der Schweiz oft das Wort 'parkieren' verwendet?",
+        "en": "Could you please explain to me why people in Switzerland often use the word 'parkieren'?"
+      }
+    ]
+  },
+  {
+    "id": "b2-u6-l2",
+    "unit": "b2-u6",
+    "title": "Mastering Colloquial Reductions",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Colloquial Reductions in Spoken German",
+        "body": "In spoken German, particularly in regional dialects or fast-paced conversation, certain unstressed vowels and endings are often omitted to increase speech flow. Unlike English, where reductions often create entirely new phonemes like 'gonna,' German reductions typically involve the elision of the final '-e' in verbs or the shortening of articles. Recognizing these patterns is essential for understanding native speakers who may not adhere strictly to formal grammatical rules.",
+        "table": [
+          [
+            "Ich hab' keine Zeit",
+            "I have no time"
+          ],
+          [
+            "Was is' das?",
+            "What is that?"
+          ],
+          [
+            "Haste mal 'ne Minute?",
+            "Do you have a minute?"
+          ],
+          [
+            "Geh' mal weg!",
+            "Go away!"
+          ],
+          [
+            "Wie geht's?",
+            "How are you?"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Haste vielleicht mal kurz Zeit, um mir bei diesem Projekt zu helfen?",
+        "en": "Do you perhaps have a moment to help me with this project?",
+        "note": "Note: 'Haste' is a common reduction of 'Hast du'."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich hab' das Gefühl, dass wir uns im Dialekt oft missverstehen könnten.",
+        "en": "I have the feeling that we might often misunderstand each other in dialect."
+      },
+      {
+        "type": "phrase",
+        "de": "Es wird oft gefragt, ob man die Reduktionen in formellen Briefen verwenden sollte.",
+        "en": "It is often asked whether one should use reductions in formal letters."
+      },
+      {
+        "type": "choice",
+        "prompt": "Which of the following is a common colloquial reduction of 'Ich habe'?",
+        "options": [
+          "Ich hab'",
+          "Ich habbe",
+          "Ich hab'n"
+        ],
+        "answer": 0,
+        "explain": "In casual speech, the final '-e' in the first-person singular is frequently dropped."
+      },
+      {
+        "type": "choice",
+        "prompt": "How would a native speaker likely shorten 'Hast du' in a quick question?",
+        "options": [
+          "Hast du",
+          "Haste",
+          "Hast'n"
+        ],
+        "answer": 1,
+        "explain": "The 'du' is often merged with the verb, resulting in the colloquial 'haste'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Which sentence uses a reduction of the feminine article 'eine'?",
+        "options": [
+          "Ich brauche 'ne Pause.",
+          "Ich brauche ein Pause.",
+          "Ich brauche eine Pause."
+        ],
+        "answer": 0,
+        "explain": "The feminine article 'eine' is frequently shortened to ''ne' in informal spoken German."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Haste",
+            "Have you"
+          ],
+          [
+            "'n",
+            "a (masculine)"
+          ],
+          [
+            "Wie geht's?",
+            "How's it going?"
+          ],
+          [
+            "'ne",
+            "a (feminine)"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "It is recommended that one only uses reductions in informal conversations.",
+        "answer": [
+          "Es",
+          "wird",
+          "empfohlen,",
+          "dass",
+          "man",
+          "die",
+          "Reduktionen",
+          "nur",
+          "in",
+          "informellen",
+          "Gesprächen",
+          "verwendet."
+        ],
+        "extra": [
+          "oft",
+          "uns"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Ich hab' das schon längst erledigt, aber es ist noch nicht fertig.",
+        "en": "I have already finished that long ago, but it is not yet finished."
+      },
+      {
+        "type": "speak",
+        "de": "Haste eigentlich schon gehört, was die Leute über den neuen Dialekt sagen?",
+        "en": "Have you actually heard what people are saying about the new dialect?"
+      },
+      {
+        "type": "speak",
+        "de": "Wenn ich mehr Zeit hätte, würde ich öfter versuchen, die Reduktionen zu verstehen.",
+        "en": "If I had more time, I would try to understand the reductions more often."
+      }
+    ]
+  },
+  {
+    "id": "b2-u6-l3",
+    "unit": "b2-u6",
+    "title": "Regional Vocabulary: Navigating Austrian and Swiss Nuances",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Regional Vocabulary",
+        "body": "Regional vocabulary often involves entirely different nouns for everyday objects rather than just variations in pronunciation. While English speakers might encounter 'soda' versus 'pop,' German learners must master distinct terms like 'Semmel' or 'Billett' to avoid confusion. Mastering these specific lexical differences is essential for achieving a natural flow in various German-speaking regions.",
+        "table": [
+          [
+            "Die Semmel (AT)",
+            "The bread roll"
+          ],
+          [
+            "Der Paradeiser (AT)",
+            "The tomato"
+          ],
+          [
+            "Das Billett (CH)",
+            "The ticket"
+          ],
+          [
+            "Grüezi (CH)",
+            "Hello (formal)"
+          ],
+          [
+            "Der Apéro (CH/AT)",
+            "The aperitif"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Könnten Sie mir bitte sagen, wo ich hier ein Billett für den Zug kaufen kann?",
+        "en": "Could you please tell me where I can buy a ticket for the train here?",
+        "note": "Uses Konjunktiv II for politeness."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich hätte gerne eine Semmel mit Käse und etwas Schinken zum Frühstück.",
+        "en": "I would like a bread roll with cheese and some ham for breakfast.",
+        "note": "Typical Austrian breakfast request."
+      },
+      {
+        "type": "phrase",
+        "de": "Es wäre sehr freundlich, wenn wir nach der Arbeit noch einen kleinen Apéro machen würden.",
+        "en": "It would be very kind if we were to have a small aperitif together after work.",
+        "note": "A formal social invitation."
+      },
+      {
+        "type": "choice",
+        "prompt": "In an Austrian bakery, what would you ask for if you wanted a bread roll?",
+        "options": [
+          "Ich möchte ein Brötchen bestellen.",
+          "Ich hätte gerne eine Semmel.",
+          "Ich brauche eine Tomate."
+        ],
+        "answer": 1,
+        "explain": "In Austria, 'die Semmel' is the standard term for a bread roll, whereas 'das Brötchen' is used in Northern and Central Germany."
+      },
+      {
+        "type": "choice",
+        "prompt": "If you are traveling in Switzerland and need a train ticket, which word will you most likely see on signs?",
+        "options": [
+          "Die Fahrkarte.",
+          "Das Ticket.",
+          "Das Billett."
+        ],
+        "answer": 2,
+        "explain": "'Das Billett' is the common Swiss term for a travel ticket, which differs from the German 'Fahrkarte'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Which greeting is appropriate for a formal encounter in a Swiss office?",
+        "options": [
+          "Grüezi.",
+          "Servus.",
+          "Moin."
+        ],
+        "answer": 0,
+        "explain": "'Grüezi' is the standard formal greeting in Switzerland, while 'Servus' is common in Bavaria/Austria and 'Moin' in Northern Germany."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Der Paradeiser",
+            "The tomato"
+          ],
+          [
+            "Das Billett",
+            "The ticket"
+          ],
+          [
+            "Die Semmel",
+            "The bread roll"
+          ],
+          [
+            "Grüezi",
+            "Hello (formal)"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "It is recommended that one uses the word Billett when buying tickets in Switzerland.",
+        "answer": [
+          "Es",
+          "wird",
+          "empfohlen,",
+          "dass",
+          "man",
+          "in",
+          "der",
+          "Schweiz",
+          "beim",
+          "Kauf",
+          "von",
+          "Fahrkarten",
+          "das",
+          "Wort",
+          "Billett",
+          "verwendet."
+        ],
+        "extra": [
+          "kann",
+          "mit"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Könnten Sie mir bitte erklären, wie man in Wien eine Semmel bestellt?",
+        "en": "Could you please explain to me how one orders a bread roll in Vienna?"
+      },
+      {
+        "type": "speak",
+        "de": "Ich würde gerne einen kleinen Apéro mit meinen neuen Kollegen in Zürich genießen.",
+        "en": "I would like to enjoy a small aperitif with my new colleagues in Zurich."
       }
     ]
   },

@@ -1182,6 +1182,405 @@
     ]
   },
   {
+    "id": "b1-u4-l1",
+    "unit": "b1-u4",
+    "title": "The Passive Voice: Focus on the Action",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "The Passive Voice: Focus on the Action",
+        "body": "In the passive voice, we focus on the action or the object rather than the person performing it. To form the present passive, you conjugate the verb *werden* and place the *Partizip II* (past participle) at the end of the sentence. While English uses \"to be\" (is/are), German uses \"to become\" (*werden*), which can feel slightly more dynamic. This structure is essential when discussing environmental processes where the actor is often unknown or unimportant.",
+        "table": [
+          [
+            "Der Müll wird gesammelt.",
+            "The trash is being collected."
+          ],
+          [
+            "Die Luft wird verschmutzt.",
+            "The air is being polluted."
+          ],
+          [
+            "Energie wird gespart.",
+            "Energy is being saved."
+          ],
+          [
+            "Bäume werden gepflanzt.",
+            "Trees are being planted."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich finde, dass der Müll in dieser Stadt besser getrennt wird.",
+        "en": "I think that the trash is being separated better in this city."
+      },
+      {
+        "type": "phrase",
+        "de": "Es ist wichtig, dass weniger Plastik in den Ozeanen gefunden wird.",
+        "en": "It is important that less plastic is being found in the oceans."
+      },
+      {
+        "type": "choice",
+        "prompt": "Der Müll ___ jeden Tag von der Stadt abgeholt.",
+        "options": [
+          "wird",
+          "ist",
+          "werden"
+        ],
+        "answer": 0,
+        "explain": "In the present passive, we conjugate *werden* to match the singular subject 'der Müll'."
+      },
+      {
+        "type": "choice",
+        "prompt": "In diesem Projekt ___ viele Bäume gepflanzt.",
+        "options": [
+          "wird",
+          "werden",
+          "ist"
+        ],
+        "answer": 1,
+        "explain": "Since 'viele Bäume' is plural, we must use the plural form of the verb, which is *werden*."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich denke, dass die Umwelt durch uns geschützt ___.",
+        "options": [
+          "wird",
+          "werden",
+          "ist"
+        ],
+        "answer": 0,
+        "explain": "In a subordinate clause starting with 'dass', the conjugated verb *wird* moves to the very end of the sentence."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Die Verschmutzung",
+            "The pollution"
+          ],
+          [
+            "Gepflanzt",
+            "Planted"
+          ],
+          [
+            "Verbraucht",
+            "Consumed"
+          ],
+          [
+            "Die Lösung",
+            "The solution"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I believe that nature is being protected by us.",
+        "answer": [
+          "Ich",
+          "glaube,",
+          "dass",
+          "die",
+          "Natur",
+          "durch",
+          "uns",
+          "geschützt",
+          "wird."
+        ],
+        "extra": [
+          "finde",
+          "Es"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Die Meere werden durch zu viel Plastik verschmutzt.",
+        "en": "The oceans are being polluted by too much plastic."
+      },
+      {
+        "type": "speak",
+        "de": "Es muss mehr für die Umwelt getan werden.",
+        "en": "More must be done for the environment."
+      }
+    ]
+  },
+  {
+    "id": "b1-u4-l2",
+    "unit": "b1-u4",
+    "title": "Mastering the Present Passive",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "The Present Passive (Das Passiv Präsens)",
+        "body": "To describe processes or actions where the focus is on the object rather than the person doing the work, we use the passive voice. While English uses the verb 'to be' (e.g., 'is recycled'), German uses the verb 'werden' (to become) combined with the past participle at the end of the sentence. This distinction is crucial because using 'sein' instead of 'werden' is a very common mistake for English speakers. In environmental discussions, this allows you to focus on the impact, such as how energy is produced or how waste is managed.",
+        "table": [
+          [
+            "Der Müll wird getrennt.",
+            "The trash is sorted."
+          ],
+          [
+            "Die Energie wird genutzt.",
+            "The energy is used."
+          ],
+          [
+            "Plastik wird vermieden.",
+            "Plastic is avoided."
+          ],
+          [
+            "Die Luft wird gereinigt.",
+            "The air is cleaned."
+          ],
+          [
+            "Regeln werden befolgt.",
+            "Rules are followed."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich finde gut, dass mehr Plastik recycelt wird.",
+        "en": "I think it's good that more plastic is being recycled."
+      },
+      {
+        "type": "phrase",
+        "de": "Es ist wichtig, dass die Umwelt geschützt wird.",
+        "en": "It is important that the environment is protected."
+      },
+      {
+        "type": "phrase",
+        "de": "Heutzutage wird viel Wert auf Nachhaltigkeit gelegt.",
+        "en": "Nowadays, a lot of importance is placed on sustainability.",
+        "note": "Note how 'wird' moves to the end in the subordinate clause starting with 'dass'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Der Wald ______ durch den Naturschutz geschützt.",
+        "options": [
+          "wird",
+          "ist",
+          "wurde"
+        ],
+        "answer": 0,
+        "explain": "In the present passive, we use the conjugated form of 'werden'. 'Ist' is the wrong verb, and 'wurde' is past tense."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich hoffe, dass weniger CO2 in die Luft ______.",
+        "options": [
+          "ausgestoßen wird",
+          "ausgestoßen werden",
+          "ausgestoßen ist"
+        ],
+        "answer": 0,
+        "explain": "In a subordinate clause, the conjugated verb 'wird' must go to the very end, following the past participle."
+      },
+      {
+        "type": "choice",
+        "prompt": "In diesem Projekt ______ viel für den Klimaschutz getan.",
+        "options": [
+          "wird",
+          "werden",
+          "ist"
+        ],
+        "answer": 0,
+        "explain": "The subject is 'viel' (much/a lot), which is singular, so we use the singular 'wird'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "die Umwelt schützen",
+            "to protect the environment"
+          ],
+          [
+            "der Klimawandel",
+            "climate change"
+          ],
+          [
+            "erneuerbare Energien",
+            "renewable energies"
+          ],
+          [
+            "die Verschmutzung",
+            "pollution"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I think it is important that less waste is produced.",
+        "answer": [
+          "Ich",
+          "finde",
+          "es",
+          "wichtig,",
+          "dass",
+          "weniger",
+          "Müll",
+          "produziert",
+          "wird."
+        ],
+        "extra": [
+          "Umwelt",
+          "recycelt"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Die Meere werden durch Plastikmüll stark belastet.",
+        "en": "The oceans are heavily burdened by plastic waste."
+      },
+      {
+        "type": "speak",
+        "de": "Es muss mehr für den Klimaschutz getan werden.",
+        "en": "More must be done for climate protection."
+      },
+      {
+        "type": "speak",
+        "de": "Ich finde, dass die Natur mehr geschützt werden sollte.",
+        "en": "I think that nature should be protected more."
+      }
+    ]
+  },
+  {
+    "id": "b1-u4-l3",
+    "unit": "b1-u4",
+    "title": "Using Passive for Environmental Processes",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Applying the Passive in Environmental Debates",
+        "body": "In environmental debates, the focus is often on the action rather than the actor. While English distinguishes between 'is done' and 'is being done,' German uses the present passive (werden + Partizip II) for both. This is perfect for describing ongoing environmental processes or general societal rules. By using the passive, you sound more objective and professional when discussing complex problems.",
+        "table": [
+          [
+            "Der Wald wird geschützt.",
+            "The forest is being protected."
+          ],
+          [
+            "Plastik wird recycelt.",
+            "Plastic is recycled."
+          ],
+          [
+            "CO2 wird reduziert.",
+            "CO2 is being reduced."
+          ],
+          [
+            "Die Meere werden verschmutzt.",
+            "The oceans are being polluted."
+          ],
+          [
+            "Neue Gesetze werden verabschiedet.",
+            "New laws are being passed."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "In vielen Städten wird mittlerweile viel mehr recycelt.",
+        "en": "In many cities, much more is being recycled nowadays."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich finde, dass mehr für den Klimaschutz getan werden muss.",
+        "en": "I think that more must be done for climate protection."
+      },
+      {
+        "type": "phrase",
+        "de": "Es wird oft darüber diskutiert, wie wir Müll vermeiden können.",
+        "en": "It is often discussed how we can avoid waste."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die Meere ______ durch den Plastikmüll immer stärker verschmutzt.",
+        "options": [
+          "werden",
+          "wird",
+          "werden worden"
+        ],
+        "answer": 0,
+        "explain": "The subject 'Die Meere' is plural, so you must use the plural form of 'werden'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich finde, dass in der Schule mehr über Nachhaltigkeit ______.",
+        "options": [
+          "gelernt wird",
+          "gelernt werden",
+          "lernen wird"
+        ],
+        "answer": 0,
+        "explain": "In a 'dass' clause, the conjugated verb 'wird' moves to the very end of the sentence, following the Partizip II."
+      },
+      {
+        "type": "choice",
+        "prompt": "Heutzutage ______ immer mehr Solarenergie in Deutschland genutzt.",
+        "options": [
+          "wird",
+          "werden",
+          "ist"
+        ],
+        "answer": 0,
+        "explain": "'Solarenergie' is a singular noun, so the verb must be 'wird'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Die Natur schützen",
+            "To protect nature"
+          ],
+          [
+            "Der Müll wird gesammelt",
+            "The trash is being collected"
+          ],
+          [
+            "Die Energie wird gespart",
+            "Energy is being saved"
+          ],
+          [
+            "Das Klima wird beeinflusst",
+            "The climate is being influenced"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "It is often discussed how the environment can be protected.",
+        "answer": [
+          "Es",
+          "wird",
+          "oft",
+          "diskutiert,",
+          "wie",
+          "die",
+          "Umwelt",
+          "geschützt",
+          "werden",
+          "kann."
+        ],
+        "extra": [
+          "für",
+          "den"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Der Wald wird durch den Klimawandel gefährdet.",
+        "en": "The forest is being endangered by climate change."
+      },
+      {
+        "type": "speak",
+        "de": "Ich finde, dass mehr für die Natur getan werden muss.",
+        "en": "I think that more must be done for nature."
+      },
+      {
+        "type": "speak",
+        "de": "In meiner Heimat wird viel recycelt.",
+        "en": "In my home country, a lot is recycled."
+      }
+    ]
+  },
+  {
     "id": "b1-u5-l1",
     "unit": "b1-u5",
     "title": "Describing People with Relative Clauses",

@@ -1,5 +1,778 @@
 [
   {
+    "id": "a2-u1-l1",
+    "unit": "a2-u1",
+    "title": "Talking About the Past: Using 'haben'",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "The Perfekt Tense with 'haben'",
+        "body": "To talk about the past in conversation, Germans use the Perfekt tense. This requires two parts: a conjugated form of 'haben' and a past participle. Unlike English, where we say 'I have eaten,' German places the past participle at the very end of the sentence. Most verbs use 'haben' as their helping verb.",
+        "table": [
+          [
+            "Ich habe eine Pizza gegessen",
+            "I have eaten a pizza"
+          ],
+          [
+            "Du hast das heute gemacht",
+            "You have done that today"
+          ],
+          [
+            "Er hat es gestern gesagt",
+            "He said it yesterday"
+          ],
+          [
+            "Wir haben frisches Brot gekauft",
+            "We have bought fresh bread"
+          ],
+          [
+            "Sie haben im Park gespielt",
+            "They played in the park"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich habe eine Pizza gegessen.",
+        "en": "I ate a pizza."
+      },
+      {
+        "type": "phrase",
+        "de": "Hast du das Buch gelesen?",
+        "en": "Did you read the book?"
+      },
+      {
+        "type": "phrase",
+        "de": "Wir haben laute Musik gehört.",
+        "en": "We listened to loud music.",
+        "note": "In spoken German, the Perfekt is much more common than the simple past."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich ___ einen Kaffee getrunken.",
+        "options": [
+          "habe",
+          "hast",
+          "hat"
+        ],
+        "answer": 0,
+        "explain": "The subject 'Ich' requires the first-person singular conjugation of 'haben', which is 'habe'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Wir haben ein Lied ___.",
+        "options": [
+          "gesungen",
+          "singen",
+          "gesungenen"
+        ],
+        "answer": 0,
+        "explain": "The past participle 'gesungen' must be placed at the very end of the sentence."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Ich habe",
+            "I have"
+          ],
+          [
+            "Du hast",
+            "You have"
+          ],
+          [
+            "Er hat",
+            "He has"
+          ],
+          [
+            "Wir haben",
+            "We have"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I played football yesterday.",
+        "answer": [
+          "Ich",
+          "habe",
+          "gestern",
+          "Fußball",
+          "gespielt."
+        ],
+        "extra": [
+          "Buch",
+          "Wir"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Er hat ein Auto gekauft.",
+        "en": "He bought a car."
+      },
+      {
+        "type": "speak",
+        "de": "Ich habe heute viel gearbeitet.",
+        "en": "I worked a lot today."
+      },
+      {
+        "type": "speak",
+        "de": "Hast du das gestern gesehen?",
+        "en": "Did you see that yesterday?"
+      }
+    ]
+  },
+  {
+    "id": "a2-u1-l2",
+    "unit": "a2-u1",
+    "title": "Forming the Past Participle",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Forming the Past Participle",
+        "body": "To use the Perfekt tense, you need the past participle (Partizip II). For regular verbs, you typically add the prefix ge- and the suffix -t to the verb stem. Irregular verbs often use the prefix ge- and the suffix -en, and the stem might change. Unlike English, which mostly uses -ed for regular verbs, German uses the ge- prefix to signal the past.",
+        "table": [
+          [
+            "gemacht",
+            "done/made"
+          ],
+          [
+            "gespielt",
+            "played"
+          ],
+          [
+            "gekauft",
+            "bought"
+          ],
+          [
+            "gesehen",
+            "seen"
+          ],
+          [
+            "gelesen",
+            "read"
+          ],
+          [
+            "gegessen",
+            "eaten"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich habe heute Musik gehört.",
+        "en": "I listened to music today."
+      },
+      {
+        "type": "phrase",
+        "de": "Er hat ein Buch gelesen.",
+        "en": "He read a book."
+      },
+      {
+        "type": "phrase",
+        "de": "Wir haben eine Pizza gegessen.",
+        "en": "We ate a pizza."
+      },
+      {
+        "type": "choice",
+        "prompt": "What is the correct past participle for 'kaufen'?",
+        "options": [
+          "kauft",
+          "gekauft",
+          "gekaufe"
+        ],
+        "answer": 1,
+        "explain": "Regular verbs add the prefix 'ge-' and the suffix '-t'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Which sentence is correct?",
+        "options": [
+          "Ich habe gestern Fußball gespielt.",
+          "Ich habe gestern Fußball spielen.",
+          "Ich habe gestern Fußball gespielt habe."
+        ],
+        "answer": 0,
+        "explain": "In the Perfekt tense, the conjugated verb 'habe' stays in the second position, while the participle 'gespielt' moves to the end."
+      },
+      {
+        "type": "choice",
+        "prompt": "How do you say 'seen' in German?",
+        "options": [
+          "sehte",
+          "gesehen",
+          "gesieht"
+        ],
+        "answer": 1,
+        "explain": "'Sehen' is an irregular verb that uses the 'ge-...-en' pattern."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "gesagt",
+            "said"
+          ],
+          [
+            "gehört",
+            "heard"
+          ],
+          [
+            "gefunden",
+            "found"
+          ],
+          [
+            "gesucht",
+            "searched"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "We ate pizza today.",
+        "answer": [
+          "Wir",
+          "haben",
+          "heute",
+          "Pizza",
+          "gegessen."
+        ],
+        "extra": [
+          "eine",
+          "habe"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Er hat ein neues Auto gekauft.",
+        "en": "He bought a new car."
+      },
+      {
+        "type": "speak",
+        "de": "Hast du den Film gesehen?",
+        "en": "Did you see the film?"
+      },
+      {
+        "type": "speak",
+        "de": "Ich habe meine Hausaufgaben gemacht.",
+        "en": "I did my homework."
+      }
+    ]
+  },
+  {
+    "id": "a2-u1-l3",
+    "unit": "a2-u1",
+    "title": "Putting it Together: The Sentence Bracket",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "The Sentence Bracket",
+        "body": "In English, we usually keep the auxiliary verb and the past participle close together (e.g., \"I have *seen* the film\"). In German, however, the past participle travels to the very end of the sentence. This creates a \"sentence bracket\" where the auxiliary verb (*haben*) stays in the second position and the participle closes the thought. Even if you add details like time or objects, the participle remains at the end.",
+        "table": [
+          [
+            "Ich habe gegessen.",
+            "I have eaten."
+          ],
+          [
+            "Er hat Musik gehört.",
+            "He has listened to music."
+          ],
+          [
+            "Wir haben Pizza gemacht.",
+            "We have made pizza."
+          ],
+          [
+            "Hast du das gesehen?",
+            "Have you seen that?"
+          ],
+          [
+            "Sie haben ein Buch gelesen.",
+            "They have read a book."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich habe gestern viel gearbeitet.",
+        "en": "I worked a lot yesterday."
+      },
+      {
+        "type": "phrase",
+        "de": "Hast du den Film gesehen?",
+        "en": "Did you see the movie?"
+      },
+      {
+        "type": "choice",
+        "prompt": "How do you say: 'I have played football'?",
+        "options": [
+          "Ich habe Fußball gespielt.",
+          "Ich habe gespielt Fußball.",
+          "Ich Fußball habe gespielt."
+        ],
+        "answer": 0,
+        "explain": "In a German sentence, the past participle must be placed at the very end."
+      },
+      {
+        "type": "choice",
+        "prompt": "How do you say: 'She has cooked soup'?",
+        "options": [
+          "Sie hat gekocht Suppe.",
+          "Sie hat Suppe gekocht.",
+          "Sie Suppe hat gekocht."
+        ],
+        "answer": 1,
+        "explain": "The past participle 'gekocht' must be placed at the end of the sentence, even after the object 'Suppe'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Ich habe...",
+            "I have..."
+          ],
+          [
+            "...gelernt.",
+            "...learned."
+          ],
+          [
+            "Hast du...?",
+            "Have you...?"
+          ],
+          [
+            "...gemacht.",
+            "...made."
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "We made a pizza yesterday.",
+        "answer": [
+          "Wir",
+          "haben",
+          "gestern",
+          "eine",
+          "Pizza",
+          "gemacht."
+        ],
+        "extra": [
+          "den",
+          "of"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Er hat ein Lied gesungen.",
+        "en": "He sang a song."
+      },
+      {
+        "type": "speak",
+        "de": "Ich habe heute viel gelernt.",
+        "en": "I learned a lot today."
+      }
+    ]
+  },
+  {
+    "id": "a2-u2-l1",
+    "unit": "a2-u2",
+    "title": "Using sein in the Past Tense",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Using sein in the Past Tense",
+        "body": "In English, you usually use \"have\" to form the past tense (e.g., \"I have gone\"). In German, verbs that describe movement from one place to another or a change of state use *sein* (to be) instead of *haben*. This means instead of saying \"I have traveled,\" you say \"I am traveled\" (*Ich bin gereist*). This is essential when discussing your travel history.",
+        "table": [
+          [
+            "Ich bin geflogen",
+            "I flew / I have flown"
+          ],
+          [
+            "Wir sind gekommen",
+            "We came / We have come"
+          ],
+          [
+            "Er ist gegangen",
+            "He went / He has gone"
+          ],
+          [
+            "Sie ist gereist",
+            "She traveled / She has traveled"
+          ],
+          [
+            "Ihr seid angekommen",
+            "You arrived / You have arrived"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich bin nach Berlin geflogen.",
+        "en": "I flew to Berlin."
+      },
+      {
+        "type": "phrase",
+        "de": "Wir sind mit dem Zug gekommen.",
+        "en": "We came by train."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich ___ nach München gefahren.",
+        "options": [
+          "habe",
+          "bin",
+          "seid"
+        ],
+        "answer": 1,
+        "explain": "\"Fahren\" indicates movement from one place to another, so we use the auxiliary verb *sein* (*bin*)."
+      },
+      {
+        "type": "choice",
+        "prompt": "Wir ___ gestern spät angekommen.",
+        "options": [
+          "sind",
+          "haben",
+          "seid"
+        ],
+        "answer": 0,
+        "explain": "\"Ankommen\" (to arrive) is a change of location, requiring *sein*."
+      },
+      {
+        "type": "choice",
+        "prompt": "___ du nach Italien gereist?",
+        "options": [
+          "Bist",
+          "Hast",
+          "Seid"
+        ],
+        "answer": 0,
+        "explain": "\"Reisen\" is a verb of movement, so the question uses the *sein* form *bist*."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "geflogen",
+            "flown"
+          ],
+          [
+            "gekommen",
+            "come"
+          ],
+          [
+            "gereist",
+            "traveled"
+          ],
+          [
+            "gefahren",
+            "driven"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "We traveled to Spain.",
+        "answer": [
+          "Wir",
+          "sind",
+          "nach",
+          "Spanien",
+          "gefahren."
+        ],
+        "extra": [
+          "for",
+          "dem"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Ich bin mit dem Bus gefahren.",
+        "en": "I went by bus."
+      },
+      {
+        "type": "speak",
+        "de": "Er ist nach Berlin gekommen.",
+        "en": "He came to Berlin."
+      },
+      {
+        "type": "speak",
+        "de": "Wir sind gestern spät angekommen.",
+        "en": "We arrived late yesterday."
+      }
+    ]
+  },
+  {
+    "id": "a2-u2-l2",
+    "unit": "a2-u2",
+    "title": "Two-Way Prepositions: Location vs. Movement",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Two-Way Prepositions (Wechselpräpositionen)",
+        "body": "In German, certain prepositions change their case depending on the context. If you are describing movement toward a destination (answering 'Where to?' or *Wohin?*), you must use the Accusative case. If you are describing a static location (answering 'Where?' or *Wo?*), you must use the Dative case. This is different from English, which often uses the same preposition for both movement and position.",
+        "table": [
+          [
+            "Ich gehe in den Park.",
+            "I am going into the park."
+          ],
+          [
+            "Ich bin in dem Park.",
+            "I am in the park."
+          ],
+          [
+            "Er legt das Buch auf den Tisch.",
+            "He puts the book on the table."
+          ],
+          [
+            "Das Buch liegt auf dem Tisch.",
+            "The book is lying on the table."
+          ],
+          [
+            "Wir fahren an den Strand.",
+            "We are driving to the beach."
+          ],
+          [
+            "Wir sind an dem Strand.",
+            "We are at the beach."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Wir stellen die Koffer in das Zimmer.",
+        "en": "We are putting the suitcases into the room."
+      },
+      {
+        "type": "phrase",
+        "de": "Die Koffer stehen in dem Zimmer.",
+        "en": "The suitcases are standing in the room."
+      },
+      {
+        "type": "phrase",
+        "de": "Hinweis: 'in das' becomes 'ins' and 'in dem' becomes 'im'.",
+        "en": "Note: 'in das' becomes 'ins' and 'in dem' becomes 'im'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Wohin stellst du die Tasche?",
+        "options": [
+          "in die Tasche",
+          "in der Tasche",
+          "in dem Tasche"
+        ],
+        "answer": 0,
+        "explain": "Movement toward a destination requires the Accusative case."
+      },
+      {
+        "type": "choice",
+        "prompt": "Wo ist jetzt dein Pass?",
+        "options": [
+          "auf den Tisch",
+          "auf dem Tisch",
+          "auf die Tisch"
+        ],
+        "answer": 1,
+        "explain": "A static location requires the Dative case."
+      },
+      {
+        "type": "choice",
+        "prompt": "Wir gehen ___ Strand.",
+        "options": [
+          "an den",
+          "an dem",
+          "an die"
+        ],
+        "answer": 0,
+        "explain": "Movement toward the beach uses the Accusative case."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "in den",
+            "into the (masculine)"
+          ],
+          [
+            "in dem",
+            "in the (masculine)"
+          ],
+          [
+            "auf den",
+            "onto the (masculine)"
+          ],
+          [
+            "auf dem",
+            "on the (masculine)"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I am laying the phone on the table.",
+        "answer": [
+          "Ich",
+          "lege",
+          "das",
+          "Handy",
+          "auf",
+          "den",
+          "Tisch."
+        ],
+        "extra": [
+          "die",
+          "in"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Wir sitzen in dem Café.",
+        "en": "We are sitting in the café."
+      },
+      {
+        "type": "speak",
+        "de": "Ich stelle die Kamera auf den Tisch.",
+        "en": "I am putting the camera on the table."
+      },
+      {
+        "type": "speak",
+        "de": "Die Kamera liegt auf dem Tisch.",
+        "en": "The camera is lying on the table."
+      }
+    ]
+  },
+  {
+    "id": "a2-u2-l3",
+    "unit": "a2-u2",
+    "title": "Talking About Where You've Been",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Using 'sein' in the Perfekt",
+        "body": "In English, we use 'have' for almost every past action. In German, however, we use 'sein' (to be) as an auxiliary verb if the action involves moving from point A to point B or a change of state. The conjugated form of *sein* stays in the second position, while the past participle moves to the very end. This is a key difference from English, which rarely uses 'to be' for the past tense.",
+        "table": [
+          [
+            "Ich bin geflogen",
+            "I have flown"
+          ],
+          [
+            "Du bist gekommen",
+            "You have come"
+          ],
+          [
+            "Er ist gegangen",
+            "He has gone"
+          ],
+          [
+            "Wir sind gereist",
+            "We have traveled"
+          ],
+          [
+            "Sie sind gefahren",
+            "They have driven"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich bin nach Berlin geflogen.",
+        "en": "I flew to Berlin."
+      },
+      {
+        "type": "phrase",
+        "de": "Wir sind im Hotel angekommen.",
+        "en": "We arrived at the hotel."
+      },
+      {
+        "type": "phrase",
+        "de": "Er ist gestern nach Hause gekommen.",
+        "en": "He came home yesterday."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich ___ nach München gefahren.",
+        "options": [
+          "habe",
+          "bin",
+          "seid"
+        ],
+        "answer": 1,
+        "explain": "\"Fahren\" is a verb of movement, so we use \"sein\" instead of \"haben.\""
+      },
+      {
+        "type": "choice",
+        "prompt": "Wir ___ gestern spät angekommen.",
+        "options": [
+          "sind",
+          "haben",
+          "seid"
+        ],
+        "answer": 0,
+        "explain": "\"Ankommen\" (to arrive) describes a change of location, which requires \"sein.\""
+      },
+      {
+        "type": "choice",
+        "prompt": "Er ___ nach Hause gegangen.",
+        "options": [
+          "ist",
+          "hat",
+          "sind"
+        ],
+        "answer": 0,
+        "explain": "\"Gehen\" is a movement verb, so we use the third-person singular of \"sein.\""
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "geflogen",
+            "flown"
+          ],
+          [
+            "gekommen",
+            "come"
+          ],
+          [
+            "gegangen",
+            "gone"
+          ],
+          [
+            "gereist",
+            "traveled"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "We traveled to Italy.",
+        "answer": [
+          "Wir",
+          "sind",
+          "nach",
+          "Italien",
+          "gereist."
+        ],
+        "extra": [
+          "Berlin",
+          "ist"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Sie ist mit dem Zug gekommen.",
+        "en": "She came by train."
+      },
+      {
+        "type": "speak",
+        "de": "Ich bin gestern spät angekommen.",
+        "en": "I arrived late yesterday."
+      },
+      {
+        "type": "speak",
+        "de": "Wir sind nach Spanien geflogen.",
+        "en": "We flew to Spain."
+      }
+    ]
+  },
+  {
     "id": "a2-u3-l1",
     "unit": "a2-u3",
     "title": "Shopping with Help: The Dative Case",
@@ -402,6 +1175,796 @@
         "type": "speak",
         "de": "Gefällt dir diese neue Farbe?",
         "en": "Do you like this new color?"
+      }
+    ]
+  },
+  {
+    "id": "a2-u4-l1",
+    "unit": "a2-u4",
+    "title": "Modal Verbs for Advice and Necessity",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Using Modal Verbs for Health",
+        "body": "In German, modal verbs like müssen (must), sollen (should), and dürfen (may) change the meaning of the main verb. Unlike English, where 'should' is often a general suggestion, sollen is frequently used when you are reporting advice given by someone else, like a doctor. The main verb always moves to the very end of the sentence in its infinitive form.",
+        "table": [
+          [
+            "Ich muss viel Wasser trinken.",
+            "I must drink a lot of water."
+          ],
+          [
+            "Du sollst viel Tee trinken.",
+            "You should drink a lot of tea."
+          ],
+          [
+            "Er darf hier nicht rauchen.",
+            "He is not allowed to smoke here."
+          ],
+          [
+            "Wir müssen zum Arzt gehen.",
+            "We have to go to the doctor."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Sie müssen viel Wasser trinken.",
+        "en": "You must drink a lot of water."
+      },
+      {
+        "type": "phrase",
+        "de": "Der Arzt sagt, ich soll Ruhe haben.",
+        "en": "The doctor says I should rest."
+      },
+      {
+        "type": "phrase",
+        "de": "Man darf hier nicht essen.",
+        "en": "One is not allowed to eat here."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich bin krank. Ich ___ zum Arzt gehen.",
+        "options": [
+          "muss",
+          "darf",
+          "sollst"
+        ],
+        "answer": 0,
+        "explain": "'muss' is the correct first-person singular conjugation for necessity."
+      },
+      {
+        "type": "choice",
+        "prompt": "Wir ___ heute zu Hause bleiben.",
+        "options": [
+          "müssen",
+          "muss",
+          "sollenst"
+        ],
+        "answer": 0,
+        "explain": "'müssen' is the correct first-person plural conjugation."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "müssen",
+            "to have to"
+          ],
+          [
+            "sollen",
+            "should"
+          ],
+          [
+            "dürfen",
+            "to be allowed to"
+          ],
+          [
+            "der Arzt",
+            "the doctor"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "You must sleep a lot today.",
+        "answer": [
+          "Du",
+          "musst",
+          "heute",
+          "viel",
+          "schlafen."
+        ],
+        "extra": [
+          "Arzt",
+          "hier"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Ich soll warmen Tee trinken.",
+        "en": "I should drink warm tea."
+      },
+      {
+        "type": "speak",
+        "de": "Ich muss zum Arzt gehen.",
+        "en": "I must go to the doctor."
+      },
+      {
+        "type": "speak",
+        "de": "Darf ich etwas Obst essen?",
+        "en": "May I eat some fruit?"
+      }
+    ]
+  },
+  {
+    "id": "a2-u4-l2",
+    "unit": "a2-u4",
+    "title": "Body Parts",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Body Parts",
+        "body": "In German, every body part has a specific gender (der, die, or das). When describing pain, you use the verb \"weh tun.\" If the body part is singular, use \"tut weh\"; if it is plural, use \"tun weh.\" This differs from English, where \"hurts\" stays the same regardless of whether one or multiple parts are hurting.",
+        "table": [
+          [
+            "der Kopf",
+            "the head"
+          ],
+          [
+            "der Rücken",
+            "the back"
+          ],
+          [
+            "der Bauch",
+            "the stomach"
+          ],
+          [
+            "die Hand",
+            "the hand"
+          ],
+          [
+            "die Augen",
+            "the eyes"
+          ],
+          [
+            "das Bein",
+            "the leg"
+          ],
+          [
+            "das Ohr",
+            "the ear"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Mein Kopf tut sehr weh.",
+        "en": "My head hurts a lot."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich habe Schmerzen im Rücken.",
+        "en": "I have pains in my back."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich habe meinen Arm verletzt.",
+        "en": "I injured my arm."
+      },
+      {
+        "type": "choice",
+        "prompt": "Mein ______ tut weh.",
+        "options": [
+          "Rücken",
+          "Augen",
+          "Beine"
+        ],
+        "answer": 0,
+        "explain": "Rücken is singular, which matches the singular verb \"tut weh.\" Augen and Beine are plural and would require \"tun weh.\""
+      },
+      {
+        "type": "choice",
+        "prompt": "Meine ______ tun weh.",
+        "options": [
+          "Hand",
+          "Ohren",
+          "Hals"
+        ],
+        "answer": 1,
+        "explain": "Ohren is plural, which matches the plural verb \"tun weh.\" Hand and Hals are singular."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich habe Schmerzen im ______.",
+        "options": [
+          "Bauch",
+          "Hände",
+          "Füße"
+        ],
+        "answer": 0,
+        "explain": "\"Im\" is a contraction of \"in dem,\" which is used for singular masculine or neuter nouns in the dative case. Bauch is masculine singular."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "der Arm",
+            "the arm"
+          ],
+          [
+            "die Schulter",
+            "the shoulder"
+          ],
+          [
+            "das Knie",
+            "the knee"
+          ],
+          [
+            "die Finger",
+            "the fingers"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "My stomach hurts a lot today.",
+        "answer": [
+          "Mein",
+          "Bauch",
+          "tut",
+          "heute",
+          "sehr",
+          "weh."
+        ],
+        "extra": [
+          "habe",
+          "Arm"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Mein Hals tut sehr weh.",
+        "en": "My throat hurts a lot."
+      },
+      {
+        "type": "speak",
+        "de": "Mein Rücken tut mir weh.",
+        "en": "My back hurts."
+      },
+      {
+        "type": "speak",
+        "de": "Ich muss meine Augen ausruhen.",
+        "en": "I must rest my eyes."
+      }
+    ]
+  },
+  {
+    "id": "a2-u4-l3",
+    "unit": "a2-u4",
+    "title": "Giving and Following Advice",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Giving and Following Advice",
+        "body": "In German, modal verbs change the meaning of a sentence to express necessity, advice, or permission. Use *müssen* for a strong necessity, *sollen* for advice or recommendations, and *dürfen* for permission or prohibition. Unlike English, where 'must' and 'should' are often used loosely, German maintains a strict distinction between an obligation and a suggestion. Remember that the modal verb is conjugated in the second position, while the main action verb moves to the end of the sentence in its infinitive form.",
+        "table": [
+          [
+            "Ich muss heute viel schlafen.",
+            "I must sleep a lot today."
+          ],
+          [
+            "Du sollst mehr Wasser trinken.",
+            "You should drink more water."
+          ],
+          [
+            "Man darf hier nicht rauchen.",
+            "One must not smoke here."
+          ],
+          [
+            "Wir dürfen heute Sport machen.",
+            "We are allowed to do sports today."
+          ],
+          [
+            "Er muss zum Arzt gehen.",
+            "He has to go to the doctor."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Du sollst viel Tee trinken.",
+        "en": "You should drink a lot of tea."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich darf keinen Alkohol trinken.",
+        "en": "I am not allowed to drink alcohol."
+      },
+      {
+        "type": "phrase",
+        "de": "Sie müssen im Bett bleiben.",
+        "en": "You must stay in bed."
+      },
+      {
+        "type": "choice",
+        "prompt": "Der Arzt sagt, du ___ mehr schlafen.",
+        "options": [
+          "musst",
+          "sollst",
+          "darfst"
+        ],
+        "answer": 1,
+        "explain": "Sollen is used when receiving advice or instructions from someone else, such as a doctor."
+      },
+      {
+        "type": "choice",
+        "prompt": "Hier ___ man nicht rauchen.",
+        "options": [
+          "darf",
+          "soll",
+          "muss"
+        ],
+        "answer": 0,
+        "explain": "Nicht dürfen is the standard way to express a prohibition (you are not allowed to)."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich habe Fieber. Ich ___ zum Arzt gehen.",
+        "options": [
+          "soll",
+          "darf",
+          "muss"
+        ],
+        "answer": 2,
+        "explain": "Müssen expresses a strong necessity or obligation caused by the situation."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "müssen",
+            "to have to"
+          ],
+          [
+            "sollen",
+            "should"
+          ],
+          [
+            "dürfen",
+            "to be allowed to"
+          ],
+          [
+            "das Verbot",
+            "the prohibition"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "You should drink a lot of water today.",
+        "answer": [
+          "Du",
+          "sollst",
+          "heute",
+          "viel",
+          "Wasser",
+          "trinken."
+        ],
+        "extra": [
+          "im",
+          "bleiben"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Du darfst keinen Zucker essen.",
+        "en": "You are not allowed to eat sugar."
+      },
+      {
+        "type": "speak",
+        "de": "Mein Kopf tut weh. Ich muss schlafen.",
+        "en": "My head hurts. I must sleep."
+      },
+      {
+        "type": "speak",
+        "de": "Soll ich die Medizin nehmen?",
+        "en": "Should I take the medicine?"
+      }
+    ]
+  },
+  {
+    "id": "a2-u5-l1",
+    "unit": "a2-u5",
+    "title": "Explaining Why and What",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Subordinating Conjunctions: weil and dass",
+        "body": "In English, when you use 'because' or 'that', the word order stays mostly the same. In German, the conjunctions 'weil' (because) and 'dass' (that) are special: they push the conjugated verb to the very end of the sentence. This means you cannot say 'Ich weiß, dass er kommt'; you must say 'Ich weiß, dass er kommt' (where 'kommt' is at the end). This change is essential for sounding like a natural speaker.",
+        "table": [
+          [
+            "Ich weiß, dass...",
+            "I know that..."
+          ],
+          [
+            "...er kommt.",
+            "...he is coming."
+          ],
+          [
+            "Ich arbeite, weil...",
+            "I work because..."
+          ],
+          [
+            "...ich Geld brauche.",
+            "...I need money."
+          ],
+          [
+            "Er sagt, dass...",
+            "He says that..."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich sage, dass ich viel arbeite.",
+        "en": "I say that I work a lot."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich bin müde, weil ich viel arbeite.",
+        "en": "I am tired because I work a lot."
+      },
+      {
+        "type": "phrase",
+        "de": "Er denkt, dass der Job gut ist.",
+        "en": "He thinks that the job is good."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich weiß, _______ der Chef heute kommt.",
+        "options": [
+          "dass",
+          "das",
+          "weil"
+        ],
+        "answer": 0,
+        "explain": "'dass' is the conjunction used to introduce a statement, and it correctly pushes the verb 'kommt' to the end."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich lerne Deutsch, _______ ich in Berlin arbeite.",
+        "options": [
+          "dass",
+          "weil",
+          "denn"
+        ],
+        "answer": 1,
+        "explain": "'weil' expresses a reason and correctly pushes the verb 'arbeite' to the end of the clause."
+      },
+      {
+        "type": "choice",
+        "prompt": "Er sagt, _______ er keine Zeit hat.",
+        "options": [
+          "weil",
+          "dass",
+          "das"
+        ],
+        "answer": 1,
+        "explain": "'dass' is used here to introduce the content of what he is saying."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "weil",
+            "because"
+          ],
+          [
+            "dass",
+            "that"
+          ],
+          [
+            "der Chef",
+            "the boss"
+          ],
+          [
+            "ich weiß",
+            "I know"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I believe that my job is fun.",
+        "answer": [
+          "Ich",
+          "glaube,",
+          "dass",
+          "mein",
+          "Job",
+          "Spaß",
+          "macht."
+        ],
+        "extra": [
+          "der",
+          "müde"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Ich arbeite, weil ich Geld brauche.",
+        "en": "I work because I need money."
+      },
+      {
+        "type": "speak",
+        "de": "Ich finde, dass der Job wichtig ist.",
+        "en": "I find that the job is important."
+      },
+      {
+        "type": "speak",
+        "de": "Ich bin froh, weil ich arbeite.",
+        "en": "I am happy because I work."
+      }
+    ]
+  },
+  {
+    "id": "a2-u5-l2",
+    "unit": "a2-u5",
+    "title": "Word Order: The Verb Moves!",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "The Verb at the End",
+        "body": "In English, we keep the verb in its usual place even after words like 'because' or 'that.' In German, when you use *weil* or *dass*, the conjugated verb must jump to the very end of the sentence. This can feel strange at first, but it is the golden rule for these types of clauses.",
+        "table": [
+          [
+            "Ich weiß, dass er arbeitet.",
+            "I know that he works."
+          ],
+          [
+            "Er kommt, weil er arbeitet.",
+            "He is coming because he works."
+          ],
+          [
+            "Ich sage, dass ich müde bin.",
+            "I say that I am tired."
+          ],
+          [
+            "Wir bleiben, weil wir arbeiten.",
+            "We are staying because we work."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich glaube, dass der Job Spaß macht.",
+        "en": "I believe that the job is fun."
+      },
+      {
+        "type": "phrase",
+        "de": "Er ist froh, weil er viel arbeitet.",
+        "en": "He is happy because he works a lot."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich sage, dass ich heute arbeite.",
+        "en": "I say that I am working today.",
+        "note": "Notice how 'arbeite' moves to the very end of the sentence."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich weiß, dass er ____.",
+        "options": [
+          "arbeitet",
+          "arbeitet er",
+          "er arbeitet"
+        ],
+        "answer": 0,
+        "explain": "In a 'dass' clause, the conjugated verb must move to the end of the sentence."
+      },
+      {
+        "type": "choice",
+        "prompt": "Sie ist glücklich, weil sie ____.",
+        "options": [
+          "arbeitet",
+          "arbeitet sie",
+          "sie arbeitet"
+        ],
+        "answer": 0,
+        "explain": "After 'weil', the conjugated verb must be the last word in the clause."
+      },
+      {
+        "type": "choice",
+        "prompt": "Wir glauben, dass der Job ____.",
+        "options": [
+          "gut ist",
+          "ist gut",
+          "gut ist er"
+        ],
+        "answer": 0,
+        "explain": "The verb 'ist' must be placed at the end of the 'dass' clause."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "der Chef",
+            "the boss"
+          ],
+          [
+            "der Job",
+            "the job"
+          ],
+          [
+            "die Arbeit",
+            "the work"
+          ],
+          [
+            "der Kollege",
+            "the colleague"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I find that the boss is nice.",
+        "answer": [
+          "Ich",
+          "finde,",
+          "dass",
+          "der",
+          "Chef",
+          "nett",
+          "ist."
+        ],
+        "extra": [
+          "ich",
+          "macht"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Ich weiß, dass er heute arbeitet.",
+        "en": "I know that he is working today."
+      },
+      {
+        "type": "speak",
+        "de": "Er sagt, dass er viel arbeitet.",
+        "en": "He says that he works a lot."
+      },
+      {
+        "type": "speak",
+        "de": "Ich bin müde, weil ich viel gearbeitet habe.",
+        "en": "I am tired because I have worked a lot."
+      }
+    ]
+  },
+  {
+    "id": "a2-u5-l3",
+    "unit": "a2-u5",
+    "title": "Connecting Your Thoughts",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Connecting Your Thoughts",
+        "body": "In English, when you use 'because' or 'that,' the word order usually stays the same. In German, *weil* (because) and *dass* (that) are special: they are subordinating conjunctions. This means they push the conjugated verb to the very end of the sentence. Instead of saying 'I know that he is here,' you say 'I know that he here is.'",
+        "table": [
+          [
+            "Ich weiß, dass er arbeitet.",
+            "I know that he works."
+          ],
+          [
+            "Er kommt, weil er arbeitet.",
+            "He is coming because he works."
+          ],
+          [
+            "Ich sage, dass ich müde bin.",
+            "I say that I am tired."
+          ],
+          [
+            "Sie lernt, weil sie arbeiten muss.",
+            "She learns because she must work."
+          ],
+          [
+            "Wir glauben, dass der Chef kommt.",
+            "We believe that the boss is coming."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich finde, dass der Job Spaß macht.",
+        "en": "I find that the job is fun."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich bleibe hier, weil ich viel lerne.",
+        "en": "I am staying here because I learn a lot."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich denke, _______ der Kollege nett ist.",
+        "options": [
+          "dass",
+          "weil",
+          "das"
+        ],
+        "answer": 0,
+        "explain": "'dass' is used to introduce a statement or thought (I think *that*...)."
+      },
+      {
+        "type": "choice",
+        "prompt": "Er arbeitet viel, _______ er Geld braucht.",
+        "options": [
+          "dass",
+          "weil",
+          "denn"
+        ],
+        "answer": 1,
+        "explain": "'weil' is used to provide a reason (He works because...)."
+      },
+      {
+        "type": "choice",
+        "prompt": "Sie sagt, _______ sie heute kommt.",
+        "options": [
+          "weil",
+          "dass",
+          "das"
+        ],
+        "answer": 1,
+        "explain": "'dass' is used to introduce the content of what someone is saying (She says *that*...)."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "weil",
+            "because"
+          ],
+          [
+            "dass",
+            "that"
+          ],
+          [
+            "der Kollege",
+            "the colleague"
+          ],
+          [
+            "die Arbeit",
+            "the work"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I hope that the boss is coming.",
+        "answer": [
+          "Ich",
+          "hoffe,",
+          "dass",
+          "der",
+          "Chef",
+          "kommt."
+        ],
+        "extra": [
+          "after",
+          "always"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Ich weiß, dass du arbeitest.",
+        "en": "I know that you are working."
+      },
+      {
+        "type": "speak",
+        "de": "Ich bin froh, dass ich hier arbeite.",
+        "en": "I am happy that I work here."
+      },
+      {
+        "type": "speak",
+        "de": "Ich komme später, weil ich viel zu tun habe.",
+        "en": "I am coming later because I have a lot to do."
       }
     ]
   },
@@ -1215,6 +2778,390 @@
         "type": "speak",
         "de": "Wir hatten viel Spaß beim Fest.",
         "en": "We had a lot of fun at the celebration."
+      }
+    ]
+  },
+  {
+    "id": "a2-u8-l1",
+    "unit": "a2-u8",
+    "title": "Reflexive Verbs: Daily Routines",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Reflexive Verbs",
+        "body": "In German, many verbs are reflexive, meaning the action reflects back to the subject. In English, we often omit the pronoun, saying 'I wash' or 'I hurry.' However, in German, you must include a reflexive pronoun like 'mich' or 'dich.' This pronoun changes to match the person performing the action.",
+        "table": [
+          [
+            "Ich freue mich",
+            "I am happy"
+          ],
+          [
+            "Du wäschst dich",
+            "You wash yourself"
+          ],
+          [
+            "Er ruht sich aus",
+            "He rests"
+          ],
+          [
+            "Wir treffen uns",
+            "We meet"
+          ],
+          [
+            "Ihr beeilt euch",
+            "You all hurry"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich muss mich beeilen.",
+        "en": "I have to hurry."
+      },
+      {
+        "type": "phrase",
+        "de": "Wir treffen uns im Flur.",
+        "en": "We meet in the hallway."
+      },
+      {
+        "type": "phrase",
+        "de": "Er muss sich ausruhen.",
+        "en": "He must rest."
+      },
+      {
+        "type": "choice",
+        "prompt": "Wir treffen ___ im Garten.",
+        "options": [
+          "uns",
+          "euch",
+          "sich"
+        ],
+        "answer": 0,
+        "explain": "The subject 'wir' (we) requires the reflexive pronoun 'uns'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Du musst ___ beeilen.",
+        "options": [
+          "dich",
+          "mich",
+          "sich"
+        ],
+        "answer": 0,
+        "explain": "The subject 'du' (you) requires the reflexive pronoun 'dich'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Er ruht ___ aus.",
+        "options": [
+          "sich",
+          "uns",
+          "mich"
+        ],
+        "answer": 0,
+        "explain": "The subject 'er' (he) requires the reflexive pronoun 'sich'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "sich beeilen",
+            "to hurry"
+          ],
+          [
+            "sich treffen",
+            "to meet"
+          ],
+          [
+            "sich ausruhen",
+            "to rest"
+          ],
+          [
+            "sich freuen",
+            "to be happy"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I must rest today.",
+        "answer": [
+          "Ich",
+          "muss",
+          "mich",
+          "heute",
+          "ausruhen."
+        ],
+        "extra": [
+          "im",
+          "Er"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Wir treffen uns in der Küche.",
+        "en": "We meet in the kitchen."
+      },
+      {
+        "type": "speak",
+        "de": "Ich freue mich auf die Wohnung.",
+        "en": "I am looking forward to the apartment."
+      },
+      {
+        "type": "speak",
+        "de": "Warum beeilst du dich so sehr?",
+        "en": "Why are you hurrying so much?"
+      }
+    ]
+  },
+  {
+    "id": "a2-u8-l2",
+    "unit": "a2-u8",
+    "title": "Reflexive Verbs: Socializing and Conflict",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Reflexive Verbs: Socializing and Conflict",
+        "body": "Reflexive verbs use a pronoun to show that the action is directed back at the subject. While English often omits these (e.g., 'I meet'), German frequently requires them. A key rule: if you are performing the action on a specific body part or object, the reflexive pronoun changes from the Accusative (mich, dich, sich) to the Dative (mir, dir, sich).",
+        "table": [
+          [
+            "Wir treffen uns.",
+            "We meet up."
+          ],
+          [
+            "Er beschwert sich.",
+            "He complains."
+          ],
+          [
+            "Sie streiten sich.",
+            "They argue."
+          ],
+          [
+            "Ich wasche mir die Hände.",
+            "I wash my hands."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Wir treffen uns im Flur.",
+        "en": "We meet in the hallway."
+      },
+      {
+        "type": "phrase",
+        "de": "Die Nachbarn streiten sich oft.",
+        "en": "The neighbors argue often."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich muss mich beim Vermieter beschweren.",
+        "en": "I have to complain to the landlord.",
+        "note": "Use 'sich beschweren bei' when complaining to a person."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die Nachbarn streiten ___ oft.",
+        "options": [
+          "sich",
+          "uns",
+          "mich"
+        ],
+        "answer": 0,
+        "explain": "For the third person plural (die Nachbarn), the reflexive pronoun is 'sich'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich muss ___ beschweren.",
+        "options": [
+          "mich",
+          "mir",
+          "dich"
+        ],
+        "answer": 0,
+        "explain": "For the first person singular (ich), the accusative reflexive pronoun is 'mich'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich putze ___ die Zähne.",
+        "options": [
+          "mir",
+          "mich",
+          "dir"
+        ],
+        "answer": 0,
+        "explain": "When you specify the object (the teeth), the reflexive pronoun changes to the dative 'mir'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "sich streiten",
+            "to argue"
+          ],
+          [
+            "sich treffen",
+            "to meet"
+          ],
+          [
+            "sich beschweren",
+            "to complain"
+          ],
+          [
+            "sich helfen",
+            "to help each other"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "We must meet today.",
+        "answer": [
+          "Wir",
+          "müssen",
+          "uns",
+          "heute",
+          "treffen."
+        ],
+        "extra": [
+          "sich",
+          "oft"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Die Nachbarn streiten sich immer.",
+        "en": "The neighbors always argue."
+      },
+      {
+        "type": "speak",
+        "de": "Ich treffe mich mit dem Nachbarn.",
+        "en": "I am meeting with the neighbor."
+      }
+    ]
+  },
+  {
+    "id": "a2-u8-l3",
+    "unit": "a2-u8",
+    "title": "Organizing the Home with Reflexive Verbs",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Reflexive Verbs: Managing the Household",
+        "body": "In English, we often say \"I prepare,\" but in German, many actions require a reflexive pronoun, meaning \"I prepare *myself*.\" While most reflexive verbs use the accusative (mich, dich, sich), some use the dative (mir, dir, sich) when you are performing an action on a specific part of yourself. This unit focuses on using these pronouns to describe household responsibilities and how you feel in your living space.",
+        "table": [
+          [
+            "sich freuen",
+            "to be happy / look forward"
+          ],
+          [
+            "sich kümmern",
+            "to take care of"
+          ],
+          [
+            "sich fühlen",
+            "to feel"
+          ],
+          [
+            "sich vorbereiten",
+            "to prepare"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich muss mich um die Küche kümmern.",
+        "en": "I have to take care of the kitchen."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich freue mich, dass die Nachbarn nett sind.",
+        "en": "I am happy that the neighbors are nice."
+      },
+      {
+        "type": "phrase",
+        "de": "Er hat sich gestern sehr gefreut.",
+        "en": "He was very happy yesterday."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich muss ___ auf die Party vorbereiten.",
+        "options": [
+          "mich",
+          "mir",
+          "dich"
+        ],
+        "answer": 0,
+        "explain": "The verb 'sich vorbereiten' takes an accusative reflexive pronoun when you are preparing yourself."
+      },
+      {
+        "type": "choice",
+        "prompt": "Wir freuen ___ über das Geschenk.",
+        "options": [
+          "uns",
+          "euch",
+          "sich"
+        ],
+        "answer": 0,
+        "explain": "The reflexive pronoun for 'wir' (we) is always 'uns'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Er hat ___ sehr gefreut.",
+        "options": [
+          "sich",
+          "mich",
+          "dir"
+        ],
+        "answer": 0,
+        "explain": "The third-person singular reflexive pronoun (he/she/it) is 'sich'."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "sich freuen",
+            "to look forward"
+          ],
+          [
+            "sich kümmern",
+            "to take care of"
+          ],
+          [
+            "sich fühlen",
+            "to feel"
+          ],
+          [
+            "sich vorbereiten",
+            "to prepare"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I have to take care of the kitchen.",
+        "answer": [
+          "Ich",
+          "muss",
+          "mich",
+          "um",
+          "die",
+          "Küche",
+          "kümmern."
+        ],
+        "extra": [
+          "freue",
+          "hat"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Wir freuen uns auf die Nachbarn.",
+        "en": "We are looking forward to the neighbors."
+      },
+      {
+        "type": "speak",
+        "de": "Fühlst du dich hier wohl?",
+        "en": "Do you feel comfortable here?"
       }
     ]
   }

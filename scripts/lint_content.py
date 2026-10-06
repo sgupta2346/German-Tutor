@@ -17,6 +17,16 @@ def broken_choice(step: dict) -> str | None:
     return None
 
 
+ENGLISH = re.compile(r"\b(the|and|is|are|always|word|sentence|note|you|this|with|for|which|when)\b", re.I)
+GERMAN_HINT = re.compile(r"[äöüß]|\b(der|die|das|ist|und|ich|nicht|ein|eine|sie|wir|zu|mit)\b", re.I)
+
+
+def english_in_german(text: str) -> bool:
+    english = len(ENGLISH.findall(text))
+    german = len(GERMAN_HINT.findall(text))
+    return english >= 2 and english > german
+
+
 def main() -> None:
     dropped = []
     for path in sorted(CONTENT.glob("lessons_*.json")):
@@ -25,8 +35,10 @@ def main() -> None:
             kept = []
             for step in lesson["steps"]:
                 reason = broken_choice(step) if step["type"] == "choice" else None
+                if not reason and "de" in step and english_in_german(step["de"]):
+                    reason = "English text in a German field"
                 if reason:
-                    dropped.append((lesson["id"], step["prompt"], reason))
+                    dropped.append((lesson["id"], step.get("prompt") or step.get("de"), reason))
                 else:
                     kept.append(step)
             lesson["steps"] = kept

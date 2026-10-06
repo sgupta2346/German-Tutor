@@ -1,5 +1,414 @@
 [
   {
+    "id": "a2-u1-words",
+    "level": "A2",
+    "title": "What happened?",
+    "titleDe": "Was ist passiert?",
+    "icon": "users",
+    "words": [
+      {
+        "de": "machen",
+        "en": "to do / to make",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich habe meine Hausaufgaben gemacht.",
+          "en": "I did my homework."
+        }
+      },
+      {
+        "de": "essen",
+        "en": "to eat",
+        "pos": "verb",
+        "ex": {
+          "de": "Er hat einen Apfel gegessen.",
+          "en": "He ate an apple."
+        }
+      },
+      {
+        "de": "trinken",
+        "en": "to drink",
+        "pos": "verb",
+        "ex": {
+          "de": "Wir haben Wasser getrunken.",
+          "en": "We drank water."
+        }
+      },
+      {
+        "de": "sehen",
+        "en": "to see",
+        "pos": "verb",
+        "ex": {
+          "de": "Hast du den Film gesehen?",
+          "en": "Did you see the movie?"
+        }
+      },
+      {
+        "de": "kaufen",
+        "en": "to buy",
+        "pos": "verb",
+        "ex": {
+          "de": "Sie hat ein neues Auto gekauft.",
+          "en": "She bought a new car."
+        }
+      },
+      {
+        "de": "finden",
+        "en": "to find",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich habe meinen Schlüssel gefunden.",
+          "en": "I found my key."
+        }
+      },
+      {
+        "de": "besuchen",
+        "en": "to visit",
+        "pos": "verb",
+        "ex": {
+          "de": "Wir haben meine Oma besucht.",
+          "en": "We visited my grandma."
+        }
+      },
+      {
+        "de": "kochen",
+        "en": "to cook",
+        "pos": "verb",
+        "ex": {
+          "de": "Er hat eine Suppe gekocht.",
+          "en": "He cooked a soup."
+        }
+      },
+      {
+        "de": "spielen",
+        "en": "to play",
+        "pos": "verb",
+        "ex": {
+          "de": "Die Kinder haben Fußball gespielt.",
+          "en": "The children played football."
+        }
+      },
+      {
+        "de": "sagen",
+        "en": "to say",
+        "pos": "verb",
+        "ex": {
+          "de": "Was hast du gesagt?",
+          "en": "What did you say?"
+        }
+      },
+      {
+        "de": "Unfall",
+        "en": "accident",
+        "pos": "noun",
+        "ex": {
+          "de": "Er hat den Unfall gesehen.",
+          "en": "He saw the accident."
+        },
+        "gender": "m",
+        "plural": "Unfälle"
+      },
+      {
+        "de": "Party",
+        "en": "party",
+        "pos": "noun",
+        "ex": {
+          "de": "Wir haben eine Party gemacht.",
+          "en": "We had a party."
+        },
+        "gender": "f",
+        "plural": "Partys"
+      },
+      {
+        "de": "Urlaub",
+        "en": "vacation",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich habe Urlaub gemacht.",
+          "en": "I took a vacation."
+        },
+        "gender": "m",
+        "plural": "Urlaube"
+      },
+      {
+        "de": "Geschenk",
+        "en": "gift",
+        "pos": "noun",
+        "ex": {
+          "de": "Sie hat ein Geschenk gekauft.",
+          "en": "She bought a gift."
+        },
+        "gender": "n",
+        "plural": "Geschenke"
+      },
+      {
+        "de": "Freund",
+        "en": "friend",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich habe einen Freund besucht.",
+          "en": "I visited a friend."
+        },
+        "gender": "m",
+        "plural": "Freunde"
+      },
+      {
+        "de": "Fehler",
+        "en": "mistake",
+        "pos": "noun",
+        "ex": {
+          "de": "Er hat einen Fehler gemacht.",
+          "en": "He made a mistake."
+        },
+        "gender": "m",
+        "plural": "Fehler"
+      },
+      {
+        "de": "toll",
+        "en": "great",
+        "pos": "adj",
+        "ex": {
+          "de": "Wir haben eine tolle Party gemacht.",
+          "en": "We had a great party."
+        }
+      },
+      {
+        "de": "langweilig",
+        "en": "boring",
+        "pos": "adj",
+        "ex": {
+          "de": "Ich habe einen langweiligen Film gesehen.",
+          "en": "I saw a boring movie."
+        }
+      },
+      {
+        "de": "lecker",
+        "en": "delicious",
+        "pos": "adj",
+        "ex": {
+          "de": "Er hat lecker gekocht.",
+          "en": "He cooked deliciously."
+        }
+      },
+      {
+        "de": "kaputt",
+        "en": "broken",
+        "pos": "adj",
+        "ex": {
+          "de": "Er hat das Handy kaputt gemacht.",
+          "en": "He broke the phone."
+        }
+      }
+    ]
+  },
+  {
+    "id": "a2-u2-words",
+    "level": "A2",
+    "title": "Travel",
+    "titleDe": "Reisen",
+    "icon": "coffee",
+    "words": [
+      {
+        "de": "Urlaub",
+        "en": "vacation",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich mache bald einen schönen Urlaub.",
+          "en": "I am going on a nice vacation soon."
+        },
+        "gender": "m",
+        "plural": "Urlaube"
+      },
+      {
+        "de": "Reise",
+        "en": "trip/journey",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Reise nach Berlin war toll.",
+          "en": "The trip to Berlin was great."
+        },
+        "gender": "f",
+        "plural": "Reisen"
+      },
+      {
+        "de": "Koffer",
+        "en": "suitcase",
+        "pos": "noun",
+        "ex": {
+          "de": "Er packt seinen Koffer für die Reise.",
+          "en": "He is packing his suitcase for the trip."
+        },
+        "gender": "m",
+        "plural": "Koffer"
+      },
+      {
+        "de": "Zug",
+        "en": "train",
+        "pos": "noun",
+        "ex": {
+          "de": "Der Zug fährt heute sehr spät.",
+          "en": "The train is running very late today."
+        },
+        "gender": "m",
+        "plural": "Züge"
+      },
+      {
+        "de": "Flugzeug",
+        "en": "airplane",
+        "pos": "noun",
+        "ex": {
+          "de": "Wir fliegen mit einem großen Flugzeug.",
+          "en": "We are flying with a large airplane."
+        },
+        "gender": "n",
+        "plural": "Flugzeuge"
+      },
+      {
+        "de": "Hotel",
+        "en": "hotel",
+        "pos": "noun",
+        "ex": {
+          "de": "Das Hotel ist direkt am Meer.",
+          "en": "The hotel is directly by the sea."
+        },
+        "gender": "n",
+        "plural": "Hotels"
+      },
+      {
+        "de": "Bahnhof",
+        "en": "train station",
+        "pos": "noun",
+        "ex": {
+          "de": "Wir treffen uns am großen Bahnhof.",
+          "en": "We are meeting at the large station."
+        },
+        "gender": "m",
+        "plural": "Bahnhöfe"
+      },
+      {
+        "de": "Ziel",
+        "en": "destination",
+        "pos": "noun",
+        "ex": {
+          "de": "Unser Ziel ist eine kleine Stadt.",
+          "en": "Our destination is a small town."
+        },
+        "gender": "n",
+        "plural": "Ziele"
+      },
+      {
+        "de": "Gepäck",
+        "en": "luggage",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich habe mein Gepäck im Auto.",
+          "en": "I have my luggage in the car."
+        },
+        "gender": "n"
+      },
+      {
+        "de": "Fähre",
+        "en": "ferry",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Fähre fährt über das Meer.",
+          "en": "The ferry travels across the sea."
+        },
+        "gender": "f",
+        "plural": "Fähren"
+      },
+      {
+        "de": "reisen",
+        "en": "to travel",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich reise gerne mit dem Zug.",
+          "en": "I like traveling by train."
+        }
+      },
+      {
+        "de": "fliegen",
+        "en": "to fly",
+        "pos": "verb",
+        "ex": {
+          "de": "Wir sind nach Italien geflogen.",
+          "en": "We flew to Italy."
+        }
+      },
+      {
+        "de": "fahren",
+        "en": "to drive/go",
+        "pos": "verb",
+        "ex": {
+          "de": "Er ist mit dem Auto gefahren.",
+          "en": "He drove by car."
+        }
+      },
+      {
+        "de": "ankommen",
+        "en": "to arrive",
+        "pos": "verb",
+        "ex": {
+          "de": "Der Zug ist pünktlich angekommen.",
+          "en": "The train arrived on time."
+        }
+      },
+      {
+        "de": "umsteigen",
+        "en": "to change (trains/buses)",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich muss in Frankfurt umsteigen.",
+          "en": "I have to change in Frankfurt."
+        }
+      },
+      {
+        "de": "wandern",
+        "en": "to hike",
+        "pos": "verb",
+        "ex": {
+          "de": "Wir sind im Gebirge gewandert.",
+          "en": "We hiked in the mountains."
+        }
+      },
+      {
+        "de": "schön",
+        "en": "beautiful",
+        "pos": "adj",
+        "ex": {
+          "de": "Die Landschaft dort ist sehr schön.",
+          "en": "The landscape there is very beautiful."
+        }
+      },
+      {
+        "de": "teuer",
+        "en": "expensive",
+        "pos": "adj",
+        "ex": {
+          "de": "Das Hotel war leider sehr teuer.",
+          "en": "The hotel was unfortunately very expensive."
+        }
+      },
+      {
+        "de": "müde",
+        "en": "tired",
+        "pos": "adj",
+        "ex": {
+          "de": "Ich bin nach der Fahrt müde.",
+          "en": "I am tired after the journey."
+        }
+      },
+      {
+        "de": "bereit",
+        "en": "ready",
+        "pos": "adj",
+        "ex": {
+          "de": "Bist du bereit für die Reise?",
+          "en": "Are you ready for the trip?"
+        }
+      }
+    ]
+  },
+  {
     "id": "a2-u3-words",
     "level": "A2",
     "title": "Shopping and clothes",
@@ -204,6 +613,429 @@
         "ex": {
           "de": "Das ist ein schönes Kleid.",
           "en": "That is a beautiful dress."
+        }
+      }
+    ]
+  },
+  {
+    "id": "a2-u4-words",
+    "level": "A2",
+    "title": "Health",
+    "titleDe": "Gesundheit",
+    "icon": "clock",
+    "words": [
+      {
+        "de": "Kopf",
+        "en": "head",
+        "pos": "noun",
+        "ex": {
+          "de": "Mein Kopf tut heute sehr weh.",
+          "en": "My head hurts a lot today."
+        },
+        "gender": "m",
+        "plural": "Köpfe"
+      },
+      {
+        "de": "Bauch",
+        "en": "stomach",
+        "pos": "noun",
+        "ex": {
+          "de": "Er hat Schmerzen im Bauch.",
+          "en": "He has pains in his stomach."
+        },
+        "gender": "m",
+        "plural": "Bäuche"
+      },
+      {
+        "de": "Rücken",
+        "en": "back",
+        "pos": "noun",
+        "ex": {
+          "de": "Mein Rücken tut mir weh.",
+          "en": "My back hurts."
+        },
+        "gender": "m",
+        "plural": "Rücken"
+      },
+      {
+        "de": "Hals",
+        "en": "throat",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich habe Schmerzen im Hals.",
+          "en": "I have pains in my throat."
+        },
+        "gender": "m",
+        "plural": "Hälse"
+      },
+      {
+        "de": "Schmerzen",
+        "en": "pains",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Schmerzen sind gestern schlimmer geworden.",
+          "en": "The pains became worse yesterday."
+        },
+        "gender": "pl"
+      },
+      {
+        "de": "Fieber",
+        "en": "fever",
+        "pos": "noun",
+        "ex": {
+          "de": "Du musst bleiben, weil du Fieber hast.",
+          "en": "You must stay because you have a fever."
+        },
+        "gender": "n",
+        "plural": "Fieber"
+      },
+      {
+        "de": "Husten",
+        "en": "cough",
+        "pos": "noun",
+        "ex": {
+          "de": "Er hat seit gestern starken Husten.",
+          "en": "He has had a strong cough since yesterday."
+        },
+        "gender": "m",
+        "plural": "Husten"
+      },
+      {
+        "de": "Schnupfen",
+        "en": "cold/runny nose",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich habe einen sehr starken Schnupfen.",
+          "en": "I have a very strong cold."
+        },
+        "gender": "m",
+        "plural": "Schnupfen"
+      },
+      {
+        "de": "krank",
+        "en": "sick",
+        "pos": "adj",
+        "ex": {
+          "de": "Ich bin heute leider krank.",
+          "en": "I am unfortunately sick today."
+        }
+      },
+      {
+        "de": "gesund",
+        "en": "healthy",
+        "pos": "adj",
+        "ex": {
+          "de": "Ich hoffe, dass du gesund wirst.",
+          "en": "I hope that you get well."
+        }
+      },
+      {
+        "de": "wehtun",
+        "en": "to hurt",
+        "pos": "verb",
+        "ex": {
+          "de": "Mein Bein tut mir sehr weh.",
+          "en": "My leg hurts a lot."
+        }
+      },
+      {
+        "de": "fühlen",
+        "en": "to feel",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich fühle mich heute nicht gut.",
+          "en": "I don't feel well today."
+        }
+      },
+      {
+        "de": "nehmen",
+        "en": "to take",
+        "pos": "verb",
+        "ex": {
+          "de": "Du sollst die Tabletten nehmen.",
+          "en": "You should take the tablets."
+        }
+      },
+      {
+        "de": "müssen",
+        "en": "must/to have to",
+        "pos": "verb",
+        "ex": {
+          "de": "Wir müssen zum Arzt gehen.",
+          "en": "We must go to the doctor."
+        }
+      },
+      {
+        "de": "sollen",
+        "en": "should",
+        "pos": "verb",
+        "ex": {
+          "de": "Der Arzt sagt, ich soll schlafen.",
+          "en": "The doctor says I should sleep."
+        }
+      },
+      {
+        "de": "dürfen",
+        "en": "may/to be allowed to",
+        "pos": "verb",
+        "ex": {
+          "de": "Hier darf man nicht rauchen.",
+          "en": "You are not allowed to smoke here."
+        }
+      },
+      {
+        "de": "Arzt",
+        "en": "doctor",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich habe einen Termin beim Arzt.",
+          "en": "I have an appointment at the doctor's."
+        },
+        "gender": "m",
+        "plural": "Ärzte"
+      },
+      {
+        "de": "Medikament",
+        "en": "medication",
+        "pos": "noun",
+        "ex": {
+          "de": "Er hat das Medikament gestern genommen.",
+          "en": "He took the medication yesterday."
+        },
+        "gender": "n",
+        "plural": "Medikamente"
+      },
+      {
+        "de": "Apotheke",
+        "en": "pharmacy",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich muss in die Apotheke gehen.",
+          "en": "I have to go to the pharmacy."
+        },
+        "gender": "f",
+        "plural": "Apotheken"
+      },
+      {
+        "de": "Schmerzmittel",
+        "en": "painkiller",
+        "pos": "noun",
+        "ex": {
+          "de": "Du sollst ein Schmerzmittel nehmen.",
+          "en": "You should take a painkiller."
+        },
+        "gender": "n",
+        "plural": "Schmerzmittel"
+      }
+    ]
+  },
+  {
+    "id": "a2-u5-words",
+    "level": "A2",
+    "title": "Work",
+    "titleDe": "Arbeit",
+    "icon": "train",
+    "words": [
+      {
+        "de": "Arbeit",
+        "en": "work",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich finde meine Arbeit sehr wichtig.",
+          "en": "I find my work very important."
+        },
+        "gender": "f",
+        "plural": "Arbeiten"
+      },
+      {
+        "de": "Job",
+        "en": "job",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich sage, dass mein Job Spaß macht.",
+          "en": "I say that my job is fun."
+        },
+        "gender": "m",
+        "plural": "Jobs"
+      },
+      {
+        "de": "Kollege",
+        "en": "colleague",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich mag es, weil die Kollegen nett sind.",
+          "en": "I like it because the colleagues are nice."
+        },
+        "gender": "m",
+        "plural": "Kollegen"
+      },
+      {
+        "de": "Chef",
+        "en": "boss",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich glaube, dass mein Chef freundlich ist.",
+          "en": "I believe that my boss is friendly."
+        },
+        "gender": "m",
+        "plural": "Chefs"
+      },
+      {
+        "de": "Büro",
+        "en": "office",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich arbeite, weil mein Büro groß ist.",
+          "en": "I work because my office is big."
+        },
+        "gender": "n",
+        "plural": "Büros"
+      },
+      {
+        "de": "Firma",
+        "en": "company",
+        "pos": "noun",
+        "ex": {
+          "de": "Er sagt, dass die Firma groß ist.",
+          "en": "He says that the company is big."
+        },
+        "gender": "f",
+        "plural": "Firmen"
+      },
+      {
+        "de": "Aufgabe",
+        "en": "task",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich mache das, weil die Aufgabe wichtig ist.",
+          "en": "I do that because the task is important."
+        },
+        "gender": "f",
+        "plural": "Aufgaben"
+      },
+      {
+        "de": "Gehalt",
+        "en": "salary",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich finde, dass das Gehalt gut ist.",
+          "en": "I find that the salary is good."
+        },
+        "gender": "m",
+        "plural": "Gehalte"
+      },
+      {
+        "de": "Termin",
+        "en": "appointment",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich habe keine Zeit, weil ich einen Termin habe.",
+          "en": "I have no time because I have an appointment."
+        },
+        "gender": "m",
+        "plural": "Termine"
+      },
+      {
+        "de": "Pause",
+        "en": "break",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich brauche eine Pause, weil ich müde bin.",
+          "en": "I need a break because I am tired."
+        },
+        "gender": "f",
+        "plural": "Pausen"
+      },
+      {
+        "de": "Beruf",
+        "en": "profession",
+        "pos": "noun",
+        "ex": {
+          "de": "Er sagt, dass sein Beruf interessant ist.",
+          "en": "He says that his profession is interesting."
+        },
+        "gender": "m",
+        "plural": "Berufe"
+      },
+      {
+        "de": "arbeiten",
+        "en": "to work",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich arbeite, weil ich Geld brauche.",
+          "en": "I work because I need money."
+        }
+      },
+      {
+        "de": "verdienen",
+        "en": "to earn",
+        "pos": "verb",
+        "ex": {
+          "de": "Er sagt, dass er viel verdient.",
+          "en": "He says that he earns a lot."
+        }
+      },
+      {
+        "de": "machen",
+        "en": "to do",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich mache das, weil es Spaß macht.",
+          "en": "I do that because it is fun."
+        }
+      },
+      {
+        "de": "helfen",
+        "en": "to help",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich helfe, weil mein Kollege Hilfe braucht.",
+          "en": "I help because my colleague needs help."
+        }
+      },
+      {
+        "de": "suchen",
+        "en": "to look for",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich suche einen Job, weil ich arbeitslos bin.",
+          "en": "I am looking for a job because I am unemployed."
+        }
+      },
+      {
+        "de": "finden",
+        "en": "to find",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich finde, dass der Job stressig ist.",
+          "en": "I find that the job is stressful."
+        }
+      },
+      {
+        "de": "anstrengend",
+        "en": "exhausting",
+        "pos": "adj",
+        "ex": {
+          "de": "Die Arbeit ist schwer, weil sie anstrengend ist.",
+          "en": "The work is hard because it is exhausting."
+        }
+      },
+      {
+        "de": "interessant",
+        "en": "interesting",
+        "pos": "adj",
+        "ex": {
+          "de": "Ich sage, dass die Arbeit interessant ist.",
+          "en": "I say that the work is interesting."
+        }
+      },
+      {
+        "de": "stressig",
+        "en": "stressful",
+        "pos": "adj",
+        "ex": {
+          "de": "Er sagt, dass sein Alltag stressig ist.",
+          "en": "He says that his everyday life is stressful."
         }
       }
     ]
@@ -623,6 +1455,212 @@
         "ex": {
           "de": "Das Wetter war am Fest sehr schön.",
           "en": "The weather was very nice at the festival."
+        }
+      }
+    ]
+  },
+  {
+    "id": "a2-u8-words",
+    "level": "A2",
+    "title": "Living together",
+    "titleDe": "Zusammen wohnen",
+    "icon": "palette",
+    "words": [
+      {
+        "de": "Mitbewohner",
+        "en": "roommate",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich mag meine Mitbewohner sehr.",
+          "en": "I like my roommates very much."
+        },
+        "gender": "m",
+        "plural": "Mitbewohner"
+      },
+      {
+        "de": "Nachbar",
+        "en": "neighbor",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich finde, dass der Nachbar nett ist.",
+          "en": "I think that the neighbor is nice."
+        },
+        "gender": "m",
+        "plural": "Nachbarn"
+      },
+      {
+        "de": "Haushalt",
+        "en": "household",
+        "pos": "noun",
+        "ex": {
+          "de": "Wir teilen uns den Haushalt.",
+          "en": "We share the household."
+        },
+        "gender": "m",
+        "plural": "Haushalte"
+      },
+      {
+        "de": "Müll",
+        "en": "trash",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich habe den Müll rausgebracht.",
+          "en": "I took out the trash."
+        },
+        "gender": "m"
+      },
+      {
+        "de": "Geschirr",
+        "en": "dishes",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich muss das Geschirr spülen.",
+          "en": "I have to wash the dishes."
+        },
+        "gender": "n",
+        "plural": "Geschirre"
+      },
+      {
+        "de": "Wohnung",
+        "en": "apartment",
+        "pos": "noun",
+        "ex": {
+          "de": "Unsere Wohnung ist sehr groß.",
+          "en": "Our apartment is very large."
+        },
+        "gender": "f",
+        "plural": "Wohnungen"
+      },
+      {
+        "de": "Zimmer",
+        "en": "room",
+        "pos": "noun",
+        "ex": {
+          "de": "Er hat sein Zimmer aufgeräumt.",
+          "en": "He tidied up his room."
+        },
+        "gender": "n",
+        "plural": "Zimmer"
+      },
+      {
+        "de": "Miete",
+        "en": "rent",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Miete ist leider teuer.",
+          "en": "The rent is unfortunately expensive."
+        },
+        "gender": "f",
+        "plural": "Mieten"
+      },
+      {
+        "de": "Hausordnung",
+        "en": "house rules",
+        "pos": "noun",
+        "ex": {
+          "de": "Wir müssen die Hausordnung beachten.",
+          "en": "We must follow the house rules."
+        },
+        "gender": "f",
+        "plural": "Hausordnungen"
+      },
+      {
+        "de": "sauber",
+        "en": "clean",
+        "pos": "adj",
+        "ex": {
+          "de": "Die Küche ist heute sauber.",
+          "en": "The kitchen is clean today."
+        }
+      },
+      {
+        "de": "schmutzig",
+        "en": "dirty",
+        "pos": "adj",
+        "ex": {
+          "de": "Das Bad ist sehr schmutzig.",
+          "en": "The bathroom is very dirty."
+        }
+      },
+      {
+        "de": "laut",
+        "en": "loud",
+        "pos": "adj",
+        "ex": {
+          "de": "Die Musik ist zu laut.",
+          "en": "The music is too loud."
+        }
+      },
+      {
+        "de": "ruhig",
+        "en": "quiet",
+        "pos": "adj",
+        "ex": {
+          "de": "Es ist hier sehr ruhig.",
+          "en": "It is very quiet here."
+        }
+      },
+      {
+        "de": "ordentlich",
+        "en": "tidy",
+        "pos": "adj",
+        "ex": {
+          "de": "Mein Mitbewohner ist sehr ordentlich.",
+          "en": "My roommate is very tidy."
+        }
+      },
+      {
+        "de": "sich streiten",
+        "en": "to argue",
+        "pos": "verb",
+        "ex": {
+          "de": "Wir streiten uns, weil es laut ist.",
+          "en": "We argue because it is loud."
+        }
+      },
+      {
+        "de": "sich treffen",
+        "en": "to meet",
+        "pos": "verb",
+        "ex": {
+          "de": "Wir treffen uns im Flur.",
+          "en": "We meet in the hallway."
+        }
+      },
+      {
+        "de": "aufräumen",
+        "en": "to tidy up",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich habe das Wohnzimmer aufgeräumt.",
+          "en": "I tidied up the living room."
+        }
+      },
+      {
+        "de": "spülen",
+        "en": "to wash (dishes)",
+        "pos": "verb",
+        "ex": {
+          "de": "Kannst du bitte das Geschirr spülen?",
+          "en": "Can you please wash the dishes?"
+        }
+      },
+      {
+        "de": "teilen",
+        "en": "to share",
+        "pos": "verb",
+        "ex": {
+          "de": "Wir teilen uns die Kosten.",
+          "en": "We share the costs."
+        }
+      },
+      {
+        "de": "helfen",
+        "en": "to help",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich helfe meinem Mitbewohner gerne.",
+          "en": "I like helping my roommate."
         }
       }
     ]

@@ -1610,11 +1610,6 @@
         "en": "Many lamps are standing there."
       },
       {
-        "type": "phrase",
-        "de": "Note: In German, the verb must change to plural (sind/stehen) when the subject is plural.",
-        "en": ""
-      },
-      {
         "type": "choice",
         "prompt": "How do you say \"the tables\"?",
         "options": [
@@ -2221,6 +2216,393 @@
         "type": "speak",
         "de": "Wir gehen zu Fuß.",
         "en": "We are walking."
+      }
+    ]
+  },
+  {
+    "id": "a1-u8-l1",
+    "unit": "a1-u8",
+    "title": "Separable Verbs",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Separable Verbs (Trennbare Verben)",
+        "body": "In German, some verbs have a prefix that 'splits off' and moves to the end of the sentence. While English uses phrasal verbs like 'to turn off,' German keeps the main verb in the second position and pushes the prefix to the very last spot. This separation is a key part of many common German verbs.",
+        "table": [
+          [
+            "fernsehen",
+            "to watch TV"
+          ],
+          [
+            "ich sehe fern",
+            "I watch TV"
+          ],
+          [
+            "einkaufen",
+            "to shop"
+          ],
+          [
+            "ich kaufe ein",
+            "I shop"
+          ],
+          [
+            "anrufen",
+            "to call"
+          ],
+          [
+            "ich rufe an",
+            "I call"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich sehe heute fern.",
+        "en": "I am watching TV today."
+      },
+      {
+        "type": "phrase",
+        "de": "Wir kaufen am Samstag ein.",
+        "en": "We shop on Saturday."
+      },
+      {
+        "type": "phrase",
+        "de": "Er ruft mich an.",
+        "en": "He calls me.",
+        "note": "The prefix 'an' always moves to the very end of the clause."
+      },
+      {
+        "type": "choice",
+        "prompt": "How do you say 'I watch TV'?",
+        "options": [
+          "Ich sehe fern.",
+          "Ich fernsehe.",
+          "Ich sehe."
+        ],
+        "answer": 0,
+        "explain": "The prefix 'fern-' must move to the end of the sentence."
+      },
+      {
+        "type": "choice",
+        "prompt": "How do you say 'We shop'?",
+        "options": [
+          "Wir kaufen ein.",
+          "Wir einkaufen.",
+          "Wir kaufen."
+        ],
+        "answer": 0,
+        "explain": "The prefix 'ein-' must move to the end of the sentence."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "anrufen",
+            "to call"
+          ],
+          [
+            "fernsehen",
+            "to watch TV"
+          ],
+          [
+            "einkaufen",
+            "to shop"
+          ],
+          [
+            "aufstehen",
+            "to get up"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "He calls today.",
+        "answer": [
+          "Er",
+          "ruft",
+          "heute",
+          "an."
+        ],
+        "extra": [
+          "sehe",
+          "am"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Ich kaufe ein.",
+        "en": "I am shopping."
+      },
+      {
+        "type": "speak",
+        "de": "Ich sehe fern.",
+        "en": "I watch TV."
+      },
+      {
+        "type": "speak",
+        "de": "Wir kaufen ein.",
+        "en": "We shop."
+      }
+    ]
+  },
+  {
+    "id": "a1-u8-l2",
+    "unit": "a1-u8",
+    "title": "Expressing Preferences",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Using gern and lieber",
+        "body": "In English, we often use the verb 'to like' (e.g., I like to swim). In German, you do not use a separate verb for 'like' when describing an action. Instead, you use the adverb *gern* placed directly after the verb. To say you prefer one activity over another, use *lieber* instead of *gern*.",
+        "table": [
+          [
+            "Ich spiele gern.",
+            "I like playing."
+          ],
+          [
+            "Ich tanze gern.",
+            "I like dancing."
+          ],
+          [
+            "Ich koche lieber.",
+            "I prefer cooking."
+          ],
+          [
+            "Ich lese lieber.",
+            "I prefer reading."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Was machst du gern?",
+        "en": "What do you like doing?"
+      },
+      {
+        "type": "phrase",
+        "de": "Ich schwimme lieber.",
+        "en": "I prefer swimming."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich höre gern Musik.",
+        "en": "I like listening to music.",
+        "note": "Place 'gern' after the conjugated verb."
+      },
+      {
+        "type": "choice",
+        "prompt": "How do you say 'I like to sing'?",
+        "options": [
+          "Ich singe gern.",
+          "Ich mag singen.",
+          "Ich singe lieber."
+        ],
+        "answer": 0,
+        "explain": "In German, you express liking an activity by adding 'gern' after the verb."
+      },
+      {
+        "type": "choice",
+        "prompt": "How do you say 'I prefer to play'?",
+        "options": [
+          "Ich spiele gern.",
+          "Ich spiele lieber.",
+          "Ich spiele nicht."
+        ],
+        "answer": 1,
+        "explain": "'Lieber' is used to express a preference for one thing over another."
+      },
+      {
+        "type": "choice",
+        "prompt": "What does 'Ich koche lieber' mean?",
+        "options": [
+          "I like cooking.",
+          "I don't cook.",
+          "I prefer cooking."
+        ],
+        "answer": 2,
+        "explain": "'Lieber' indicates a preference, whereas 'gern' would mean you simply like it."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "gern",
+            "like to"
+          ],
+          [
+            "lieber",
+            "prefer"
+          ],
+          [
+            "machen",
+            "to do"
+          ],
+          [
+            "hören",
+            "to listen"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I like playing very much.",
+        "answer": [
+          "Ich",
+          "spiele",
+          "sehr",
+          "gern."
+        ],
+        "extra": [
+          "du",
+          "machst"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Ich tanze sehr gern.",
+        "en": "I like dancing very much."
+      },
+      {
+        "type": "speak",
+        "de": "Ich schwimme gern.",
+        "en": "I like swimming."
+      },
+      {
+        "type": "speak",
+        "de": "Ich lese lieber.",
+        "en": "I prefer reading."
+      }
+    ]
+  },
+  {
+    "id": "a1-u8-l3",
+    "unit": "a1-u8",
+    "title": "Not vs. No",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Negation: nicht vs. kein",
+        "body": "To say \"not\" in German, you must choose between *nicht* and *kein*. Use *kein* to negate nouns, such as when you would say \"no\" or \"not a\" in English. Use *nicht* to negate verbs, adjectives, or adverbs. Think of *kein* as meaning \"zero\" of a thing.",
+        "table": [
+          [
+            "kein Hobby",
+            "no hobby"
+          ],
+          [
+            "keine Zeit",
+            "no time"
+          ],
+          [
+            "nicht gut",
+            "not good"
+          ],
+          [
+            "nicht heute",
+            "not today"
+          ],
+          [
+            "kein Sport",
+            "no sport"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Ich habe keine Zeit.",
+        "en": "I have no time."
+      },
+      {
+        "type": "phrase",
+        "de": "Das ist nicht gut.",
+        "en": "That is not good."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich spiele kein Tennis.",
+        "en": "I don't play tennis."
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich habe ___ Zeit.",
+        "options": [
+          "nicht",
+          "kein",
+          "keine"
+        ],
+        "answer": 2,
+        "explain": "\"Zeit\" is a noun, so we use \"kein.\" Because \"Zeit\" is feminine, it becomes \"keine.\""
+      },
+      {
+        "type": "choice",
+        "prompt": "Das ist ___ gut.",
+        "options": [
+          "nicht",
+          "kein",
+          "keine"
+        ],
+        "answer": 0,
+        "explain": "\"gut\" is an adjective, so we use \"nicht.\""
+      },
+      {
+        "type": "choice",
+        "prompt": "Ich spiele ___ Fußball.",
+        "options": [
+          "nicht",
+          "kein",
+          "keine"
+        ],
+        "answer": 1,
+        "explain": "\"Fußball\" is a noun, so we use \"kein.\""
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "nicht",
+            "not"
+          ],
+          [
+            "kein",
+            "no"
+          ],
+          [
+            "keine Zeit",
+            "no time"
+          ],
+          [
+            "nicht heute",
+            "not today"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I have no hobby.",
+        "answer": [
+          "Ich",
+          "habe",
+          "kein",
+          "Hobby."
+        ],
+        "extra": [
+          "Tennis",
+          "gut"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Ich habe keine Zeit.",
+        "en": "I have no time."
+      },
+      {
+        "type": "speak",
+        "de": "Das ist nicht gut.",
+        "en": "That is not good."
+      },
+      {
+        "type": "speak",
+        "de": "Ich habe kein Hobby.",
+        "en": "I have no hobby."
       }
     ]
   }

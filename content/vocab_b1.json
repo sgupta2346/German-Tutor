@@ -639,6 +639,214 @@
     ]
   },
   {
+    "id": "b1-u4-words",
+    "level": "B1",
+    "title": "Environment",
+    "titleDe": "Umwelt",
+    "icon": "clock",
+    "words": [
+      {
+        "de": "Umwelt",
+        "en": "environment",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich finde, dass wir die Umwelt viel besser schützen müssen.",
+          "en": "I think that we must protect the environment much better."
+        },
+        "gender": "f",
+        "plural": "Umwelten"
+      },
+      {
+        "de": "Klimawandel",
+        "en": "climate change",
+        "pos": "noun",
+        "ex": {
+          "de": "Weil der Klimawandel gefährlich ist, müssen wir sofort handeln.",
+          "en": "Because climate change is dangerous, we must act immediately."
+        },
+        "gender": "m",
+        "plural": "Klimawandel"
+      },
+      {
+        "de": "Verschmutzung",
+        "en": "pollution",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Verschmutzung der Meere wird durch Plastik immer schlimmer.",
+          "en": "The pollution of the oceans is getting worse due to plastic."
+        },
+        "gender": "f",
+        "plural": "Verschmutzungen"
+      },
+      {
+        "de": "Müll",
+        "en": "trash/garbage",
+        "pos": "noun",
+        "ex": {
+          "de": "Es ist wichtig, dass wir weniger Müll produzieren.",
+          "en": "It is important that we produce less trash."
+        },
+        "gender": "m"
+      },
+      {
+        "de": "Abfall",
+        "en": "waste",
+        "pos": "noun",
+        "ex": {
+          "de": "Der Abfall wird in Deutschland oft sehr gut getrennt.",
+          "en": "The waste is often separated very well in Germany."
+        },
+        "gender": "m",
+        "plural": "Abfälle"
+      },
+      {
+        "de": "Plastik",
+        "en": "plastic",
+        "pos": "noun",
+        "ex": {
+          "de": "Ich denke, dass Plastik in vielen Produkten vermieden werden sollte.",
+          "en": "I think that plastic should be avoided in many products."
+        },
+        "gender": "f",
+        "plural": "Plastiken"
+      },
+      {
+        "de": "CO2-Ausstoß",
+        "en": "CO2 emissions",
+        "pos": "noun",
+        "ex": {
+          "de": "Der CO2-Ausstoß muss reduziert werden, um das Klima zu retten.",
+          "en": "CO2 emissions must be reduced in order to save the climate."
+        },
+        "gender": "m",
+        "plural": "CO2-Ausstöße"
+      },
+      {
+        "de": "Lösung",
+        "en": "solution",
+        "pos": "noun",
+        "ex": {
+          "de": "Wir brauchen eine Lösung, damit die Natur wieder gesund wird.",
+          "en": "We need a solution so that nature becomes healthy again."
+        },
+        "gender": "f",
+        "plural": "Lösungen"
+      },
+      {
+        "de": "Ressource",
+        "en": "resource",
+        "pos": "noun",
+        "ex": {
+          "de": "Da Ressourcen begrenzt sind, müssen wir sie sparsamer nutzen.",
+          "en": "Since resources are limited, we must use them more sparingly."
+        },
+        "gender": "f",
+        "plural": "Ressourcen"
+      },
+      {
+        "de": "Energie",
+        "en": "energy",
+        "pos": "noun",
+        "ex": {
+          "de": "Erneuerbare Energien werden heute immer häufiger im Land genutzt.",
+          "en": "Renewable energies are being used more and more frequently in the country today."
+        },
+        "gender": "f",
+        "plural": "Energien"
+      },
+      {
+        "de": "schützen",
+        "en": "to protect",
+        "pos": "verb",
+        "ex": {
+          "de": "Wir sollten die Natur schützen, bevor es zu spät ist.",
+          "en": "We should protect nature before it is too late."
+        }
+      },
+      {
+        "de": "reduzieren",
+        "en": "to reduce",
+        "pos": "verb",
+        "ex": {
+          "de": "Es ist notwendig, dass der Plastikverbrauch schnell reduziert wird.",
+          "en": "It is necessary that plastic consumption is reduced quickly."
+        }
+      },
+      {
+        "de": "vermeiden",
+        "en": "to avoid",
+        "pos": "verb",
+        "ex": {
+          "de": "Man sollte unnötigen Müll im Alltag konsequent vermeiden.",
+          "en": "One should consistently avoid unnecessary trash in everyday life."
+        }
+      },
+      {
+        "de": "recyceln",
+        "en": "to recycle",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich glaube, dass Glas und Papier immer recycelt werden sollten.",
+          "en": "I believe that glass and paper should always be recycled."
+        }
+      },
+      {
+        "de": "trennen",
+        "en": "to separate",
+        "pos": "verb",
+        "ex": {
+          "de": "Der Müll wird in verschiedenen Tonnen richtig getrennt.",
+          "en": "The trash is correctly separated into different bins."
+        }
+      },
+      {
+        "de": "nutzen",
+        "en": "to use",
+        "pos": "verb",
+        "ex": {
+          "de": "Wir müssen nachhaltige Technologien nutzen, um die Umwelt zu bewahren.",
+          "en": "We must use sustainable technologies to preserve the environment."
+        }
+      },
+      {
+        "de": "umweltfreundlich",
+        "en": "environmentally friendly",
+        "pos": "adj",
+        "ex": {
+          "de": "Ich versuche, so umweltfreundlich wie möglich zu leben.",
+          "en": "I try to live as environmentally friendly as possible."
+        }
+      },
+      {
+        "de": "nachhaltig",
+        "en": "sustainable",
+        "pos": "adj",
+        "ex": {
+          "de": "Es ist wichtig, dass wir eine nachhaltige Zukunft planen.",
+          "en": "It is important that we plan a sustainable future."
+        }
+      },
+      {
+        "de": "gefährlich",
+        "en": "dangerous",
+        "pos": "adj",
+        "ex": {
+          "de": "Ich finde es gefährlich, wie wenig wir über das Klima wissen.",
+          "en": "I find it dangerous how little we know about the climate."
+        }
+      },
+      {
+        "de": "wichtig",
+        "en": "important",
+        "pos": "adj",
+        "ex": {
+          "de": "Es ist wichtig, dass die Umweltprobleme ernst genommen werden.",
+          "en": "It is important that environmental problems are taken seriously."
+        }
+      }
+    ]
+  },
+  {
     "id": "b1-u5-words",
     "level": "B1",
     "title": "Relationships",

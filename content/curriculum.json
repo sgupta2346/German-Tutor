@@ -173,7 +173,9 @@
             "Perfekt with haben",
             "Past participles"
           ],
-          "decks": [],
+          "decks": [
+            "a2-u1-words"
+          ],
           "sounds": [
             "ig",
             "devoicing"
@@ -188,7 +190,9 @@
             "Perfekt with sein",
             "Two-way prepositions"
           ],
-          "decks": [],
+          "decks": [
+            "a2-u2-words"
+          ],
           "sounds": [
             "r",
             "er"
@@ -220,7 +224,9 @@
             "müssen, sollen, dürfen",
             "Body vocabulary"
           ],
-          "decks": [],
+          "decks": [
+            "a2-u4-words"
+          ],
           "sounds": [
             "ach",
             "ich"
@@ -235,7 +241,9 @@
             "weil and dass",
             "Verb at the end"
           ],
-          "decks": [],
+          "decks": [
+            "a2-u5-words"
+          ],
           "sounds": [
             "z",
             "sp-st"
@@ -282,7 +290,9 @@
           "grammar": [
             "Reflexive verbs"
           ],
-          "decks": [],
+          "decks": [
+            "a2-u8-words"
+          ],
           "sounds": [
             "glottal",
             "schwa"
@@ -343,7 +353,9 @@
           "grammar": [
             "Passive in the present"
           ],
-          "decks": [],
+          "decks": [
+            "b1-u4-words"
+          ],
           "sounds": []
         },
         {
@@ -469,7 +481,9 @@
           "grammar": [
             "Participles as adjectives"
           ],
-          "decks": [],
+          "decks": [
+            "b2-u5-words"
+          ],
           "sounds": []
         },
         {
@@ -481,7 +495,9 @@
             "Regional vocabulary",
             "Common colloquial reductions"
           ],
-          "decks": [],
+          "decks": [
+            "b2-u6-words"
+          ],
           "sounds": []
         },
         {
@@ -553,7 +569,9 @@
           "grammar": [
             "Formal versus colloquial structures"
           ],
-          "decks": [],
+          "decks": [
+            "c1-u3-words"
+          ],
           "sounds": []
         },
         {
@@ -578,7 +596,9 @@
             "Extended attributes",
             "Functional verb structures"
           ],
-          "decks": [],
+          "decks": [
+            "c1-u5-words"
+          ],
           "sounds": []
         },
         {
@@ -589,7 +609,9 @@
           "grammar": [
             "Contractions and elisions"
           ],
-          "decks": [],
+          "decks": [
+            "c1-u6-words"
+          ],
           "sounds": []
         },
         {

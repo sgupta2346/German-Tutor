@@ -421,6 +421,212 @@
     ]
   },
   {
+    "id": "c1-u3-words",
+    "level": "C1",
+    "title": "Register",
+    "titleDe": "Stil und Register",
+    "icon": "home",
+    "words": [
+      {
+        "de": "Register",
+        "en": "register",
+        "pos": "noun",
+        "ex": {
+          "de": "Man muss das Register ständig anpassen, je nachdem, ob man mit dem Chef oder mit Freunden spricht.",
+          "en": "You have to constantly adjust the register, depending on whether you are speaking with your boss or with friends."
+        },
+        "gender": "n",
+        "plural": "Register"
+      },
+      {
+        "de": "Umgangssprache",
+        "en": "colloquial language",
+        "pos": "noun",
+        "ex": {
+          "de": "In der Umgangssprache werden Wörter oft verschluckt, was in einem formellen Brief natürlich völlig unangebracht wäre.",
+          "en": "In colloquial language, words are often swallowed, which would of course be completely inappropriate in a formal letter."
+        },
+        "gender": "f",
+        "plural": "Umgangssprachen"
+      },
+      {
+        "de": "Hochdeutsch",
+        "en": "standard German",
+        "pos": "noun",
+        "ex": {
+          "de": "Obwohl er Dialekt spricht, bemüht er sich in beruflichen Situationen stets um ein einwandfreies Hochdeutsch.",
+          "en": "Even though he speaks a dialect, he always strives for flawless standard German in professional situations."
+        },
+        "gender": "n"
+      },
+      {
+        "de": "Anrede",
+        "en": "form of address",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Wahl der richtigen Anrede ist entscheidend, um nicht versehentlich unhöflich oder zu distanziert zu wirken.",
+          "en": "Choosing the right form of address is crucial so as not to accidentally appear rude or too distant."
+        },
+        "gender": "f",
+        "plural": "Anreden"
+      },
+      {
+        "de": "Amtssprache",
+        "en": "official language",
+        "pos": "noun",
+        "ex": {
+          "de": "Die bürokratische Amtssprache kann für Außenstehende oft ziemlich schwer verständlich und zudem unnötig kompliziert sein.",
+          "en": "Bureaucratic official language can often be quite difficult for outsiders to understand and also unnecessarily complicated."
+        },
+        "gender": "f",
+        "plural": "Amtssprachen"
+      },
+      {
+        "de": "gehoben",
+        "en": "sophisticated / elevated",
+        "pos": "adj",
+        "ex": {
+          "de": "Er verwendet einen sehr gehobenen Wortschatz, um seine intellektuelle Kompetenz in der Diskussion zu unterstreichen.",
+          "en": "He uses a very sophisticated vocabulary to emphasize his intellectual competence in the discussion."
+        }
+      },
+      {
+        "de": "umgangssprachlich",
+        "en": "colloquial",
+        "pos": "adj",
+        "ex": {
+          "de": "Der Ausdruck 'das ist mir egal' ist zwar umgangssprachlich, aber in einem offiziellen Schreiben sollte man es besser lassen.",
+          "en": "The expression 'I don't care' is colloquial, but in an official letter, one should probably avoid it."
+        }
+      },
+      {
+        "de": "wechseln",
+        "en": "to switch / to change",
+        "pos": "verb",
+        "ex": {
+          "de": "Es fällt mir manchmal schwer, zwischen dem privaten und dem beruflichen Tonfall schnell zu wechseln.",
+          "en": "I sometimes find it difficult to switch quickly between a private and a professional tone."
+        }
+      },
+      {
+        "de": "anpassen",
+        "en": "to adapt / to adjust",
+        "pos": "verb",
+        "ex": {
+          "de": "Man sollte seinen Sprachstil der jeweiligen Situation und dem Gegenüber stets ganz geschickt anpassen.",
+          "en": "One should always skillfully adapt one's linguistic style to the respective situation and the interlocutor."
+        }
+      },
+      {
+        "de": "vermeiden",
+        "en": "to avoid",
+        "pos": "verb",
+        "ex": {
+          "de": "In einem formellen Kontext sollte man es unbedingt vermeiden, zu viele Füllwörter oder Slangbegriffe zu benutzen.",
+          "en": "In a formal context, one should definitely avoid using too many filler words or slang terms."
+        }
+      },
+      {
+        "de": "Ausdruck",
+        "en": "expression",
+        "pos": "noun",
+        "ex": {
+          "de": "Ein präziser Ausdruck hilft dabei, potenzielle Missverständnisse in schwierigen Verhandlungen von vornherein auszuschließen.",
+          "en": "Precise expression helps to rule out potential misunderstandings in difficult negotiations from the outset."
+        },
+        "gender": "m",
+        "plural": "Ausdrücke"
+      },
+      {
+        "de": "Nuance",
+        "en": "nuance",
+        "pos": "noun",
+        "ex": {
+          "de": "Oft entscheiden winzige Nuancen in der Wortwahl darüber, ob eine Bemerkung höflich oder herablassend wirkt.",
+          "en": "Often, tiny nuances in word choice determine whether a remark sounds polite or condescending."
+        },
+        "gender": "f",
+        "plural": "Nuancen"
+      },
+      {
+        "de": "Höflichkeit",
+        "en": "politeness",
+        "pos": "noun",
+        "ex": {
+          "de": "Ein gewisses Maß an Höflichkeit ist in der deutschen Geschäftswelt unerlässlich, um professionell zu wirken.",
+          "en": "A certain degree of politeness is essential in the German business world to appear professional."
+        },
+        "gender": "f",
+        "plural": "Höflichkeiten"
+      },
+      {
+        "de": "Slang",
+        "en": "slang",
+        "pos": "noun",
+        "ex": {
+          "de": "Jugendlicher Slang ist zwar kreativ, passt aber so gar nicht in eine akademische Hausarbeit.",
+          "en": "Youth slang is creative, but it doesn't fit into an academic paper at all."
+        },
+        "gender": "m",
+        "plural": "Slangs"
+      },
+      {
+        "de": "distanziert",
+        "en": "distant / aloof",
+        "pos": "adj",
+        "ex": {
+          "de": "Wenn man jemanden siezt, wirkt das manchmal etwas distanziert, ist aber oft die sicherere Variante.",
+          "en": "When you address someone with 'Sie', it sometimes seems a bit distant, but it is often the safer option."
+        }
+      },
+      {
+        "de": "locker",
+        "en": "relaxed / casual",
+        "pos": "adj",
+        "ex": {
+          "de": "Die Atmosphäre bei der Party war sehr locker, weshalb die Gespräche auch sehr ungezwungen verliefen.",
+          "en": "The atmosphere at the party was very relaxed, which is why the conversations proceeded very casually."
+        }
+      },
+      {
+        "de": "ausdrücken",
+        "en": "to express",
+        "pos": "verb",
+        "ex": {
+          "de": "Es ist gar nicht so leicht, seine Gefühle in einer so förmlichen Umgebung angemessen auszudrücken.",
+          "en": "It is not at all easy to express one's feelings appropriately in such a formal setting."
+        }
+      },
+      {
+        "de": "bevorzugen",
+        "en": "to prefer",
+        "pos": "verb",
+        "ex": {
+          "de": "In offiziellen E-Mails bevorzugen viele Deutsche eine eher sachliche und auch sehr direkte Ausdrucksweise.",
+          "en": "In official emails, many Germans prefer a rather factual and also very direct way of expressing themselves."
+        }
+      },
+      {
+        "de": "formell",
+        "en": "formal",
+        "pos": "adj",
+        "ex": {
+          "de": "Ein formeller Brief erfordert eine ganz andere Struktur als eine kurze Nachricht per WhatsApp.",
+          "en": "A formal letter requires a completely different structure than a short WhatsApp message."
+        }
+      },
+      {
+        "de": "unverbindlich",
+        "en": "non-binding / casual",
+        "pos": "adj",
+        "ex": {
+          "de": "Das Gespräch war erst einmal nur ganz unverbindlich, um die aktuelle Lage vorsichtig auszuloten.",
+          "en": "The conversation was initially just quite non-binding, in order to cautiously test the waters."
+        }
+      }
+    ]
+  },
+  {
     "id": "c1-u4-words",
     "level": "C1",
     "title": "Rhetoric",
@@ -630,6 +836,416 @@
         },
         "gender": "f",
         "plural": "Argumentationen"
+      }
+    ]
+  },
+  {
+    "id": "c1-u5-words",
+    "level": "C1",
+    "title": "Academic German",
+    "titleDe": "Wissenschaftssprache",
+    "icon": "train",
+    "words": [
+      {
+        "de": "Hypothese",
+        "en": "hypothesis",
+        "pos": "noun",
+        "ex": {
+          "de": "Die vorliegende Hypothese, die auf bisherigen Beobachtungen basiert, muss durch weitere empirische Studien dringend validiert werden.",
+          "en": "The present hypothesis, which is based on previous observations, must be urgently validated through further empirical studies."
+        },
+        "gender": "f",
+        "plural": "Hypothesen"
+      },
+      {
+        "de": "Forschungsstand",
+        "en": "state of research",
+        "pos": "noun",
+        "ex": {
+          "de": "Der aktuelle Forschungsstand lässt darauf schließen, dass die bisherigen Annahmen in diesem Bereich durchaus kritisch hinterfragt werden sollten.",
+          "en": "The current state of research suggests that the previous assumptions in this field should indeed be critically questioned."
+        },
+        "gender": "m",
+        "plural": "Forschungsstände"
+      },
+      {
+        "de": "Erkenntnis",
+        "en": "finding/insight",
+        "pos": "noun",
+        "ex": {
+          "de": "Eine wesentliche Erkenntnis dieser Untersuchung liegt darin, dass die Korrelation zwischen den Variablen keineswegs so eindeutig ist wie vermutet.",
+          "en": "A key finding of this investigation lies in the fact that the correlation between the variables is by no means as clear as assumed."
+        },
+        "gender": "f",
+        "plural": "Erkenntnisse"
+      },
+      {
+        "de": "Methodik",
+        "en": "methodology",
+        "pos": "noun",
+        "ex": {
+          "de": "Die angewandte Methodik, die sowohl qualitative als auch quantitative Ansätze kombiniert, stellt einen entscheidenden Vorteil für die Validität der Ergebnisse dar.",
+          "en": "The applied methodology, which combines both qualitative and quantitative approaches, represents a decisive advantage for the validity of the results."
+        },
+        "gender": "f",
+        "plural": "Methodiken"
+      },
+      {
+        "de": "Schlussfolgerung",
+        "en": "conclusion",
+        "pos": "noun",
+        "ex": {
+          "de": "Aus den vorliegenden Daten lässt sich die Schlussfolgerung ziehen, dass die ursprüngliche Theorie einer grundlegenden Revision bedarf.",
+          "en": "From the available data, the conclusion can be drawn that the original theory requires a fundamental revision."
+        },
+        "gender": "f",
+        "plural": "Schlussfolgerungen"
+      },
+      {
+        "de": "Zusammenhang",
+        "en": "connection/correlation",
+        "pos": "noun",
+        "ex": {
+          "de": "Es besteht ein komplexer Zusammenhang zwischen der sozioökonomischen Lage und dem Bildungserfolg, den man nicht einfach ignorieren darf.",
+          "en": "There is a complex connection between the socioeconomic situation and educational success that one simply cannot ignore."
+        },
+        "gender": "m",
+        "plural": "Zusammenhänge"
+      },
+      {
+        "de": "Untersuchung",
+        "en": "investigation/study",
+        "pos": "noun",
+        "ex": {
+          "de": "Die umfassende Untersuchung der Auswirkungen des Klimawandels auf die Biodiversität liefert uns leider nur sehr lückenhafte Informationen.",
+          "en": "The comprehensive investigation into the effects of climate change on biodiversity unfortunately provides us with very fragmentary information."
+        },
+        "gender": "f",
+        "plural": "Untersuchungen"
+      },
+      {
+        "de": "Beweis",
+        "en": "proof/evidence",
+        "pos": "noun",
+        "ex": {
+          "de": "Ein eindeutiger Beweis für die Wirksamkeit der neuen Therapie konnte bisher trotz intensiver Bemühungen der Forscher noch nicht erbracht werden.",
+          "en": "Clear proof of the effectiveness of the new therapy has not yet been provided, despite the intensive efforts of the researchers."
+        },
+        "gender": "m",
+        "plural": "Beweise"
+      },
+      {
+        "de": "Diskrepanz",
+        "en": "discrepancy",
+        "pos": "noun",
+        "ex": {
+          "de": "Die auffällige Diskrepanz zwischen der Theorie und der praktischen Anwendung führt in der Fachwelt zu einer hitzigen Debatte.",
+          "en": "The striking discrepancy between theory and practical application is leading to a heated debate in the specialist community."
+        },
+        "gender": "f",
+        "plural": "Diskrepanzen"
+      },
+      {
+        "de": "Anforderung",
+        "en": "requirement",
+        "pos": "noun",
+        "ex": {
+          "de": "Die hohen Anforderungen an die wissenschaftliche Genauigkeit erfordern eine äußerst präzise und sorgfältige Dokumentation aller Arbeitsschritte.",
+          "en": "The high requirements for scientific accuracy necessitate an extremely precise and careful documentation of all work steps."
+        },
+        "gender": "f",
+        "plural": "Anforderungen"
+      },
+      {
+        "de": "untermauern",
+        "en": "to substantiate/support",
+        "pos": "verb",
+        "ex": {
+          "de": "Die neuen Daten untermauern die These, dass die bisherigen Annahmen über die Zellteilung zumindest teilweise falsch waren.",
+          "en": "The new data substantiate the thesis that the previous assumptions about cell division were at least partially incorrect."
+        }
+      },
+      {
+        "de": "erörtern",
+        "en": "to discuss/examine",
+        "pos": "verb",
+        "ex": {
+          "de": "In der folgenden Abhandlung wird die Frage erörtert, inwieweit die Digitalisierung die traditionellen Lernmethoden tatsächlich verändern wird.",
+          "en": "In the following treatise, the question is examined as to the extent to which digitalization will actually change traditional learning methods."
+        }
+      },
+      {
+        "de": "implizieren",
+        "en": "to imply",
+        "pos": "verb",
+        "ex": {
+          "de": "Die Ergebnisse implizieren, dass die bisherigen Maßnahmen zur Emissionsreduktion wohl kaum ausreichen werden, um die Klimaziele zu erreichen.",
+          "en": "The results imply that the previous measures for emission reduction will hardly be sufficient to achieve the climate goals."
+        }
+      },
+      {
+        "de": "validieren",
+        "en": "to validate",
+        "pos": "verb",
+        "ex": {
+          "de": "Es ist unerlässlich, die erhobenen Daten durch eine unabhängige Instanz validieren zu lassen, bevor man endgültige Schlüsse zieht.",
+          "en": "It is essential to have the collected data validated by an independent body before drawing final conclusions."
+        }
+      },
+      {
+        "de": "konstatieren",
+        "en": "to state/observe",
+        "pos": "verb",
+        "ex": {
+          "de": "Der Professor konnte konstatieren, dass die statistische Signifikanz der Ergebnisse trotz der kleinen Stichprobe durchaus gegeben ist.",
+          "en": "The professor was able to state that the statistical significance of the results is indeed present despite the small sample size."
+        }
+      },
+      {
+        "de": "fundiert",
+        "en": "well-founded/sound",
+        "pos": "adj",
+        "ex": {
+          "de": "Eine fundierte Argumentation setzt voraus, dass man sich intensiv mit der bestehenden Literatur und den aktuellen Debatten auseinandergesetzt hat.",
+          "en": "A sound argument presupposes that one has engaged intensively with the existing literature and current debates."
+        }
+      },
+      {
+        "de": "empirisch",
+        "en": "empirical",
+        "pos": "adj",
+        "ex": {
+          "de": "Nur durch empirisch belegbare Fakten lässt sich eine wissenschaftliche Theorie aufbauen, die auch langfristig Bestand haben kann.",
+          "en": "Only through empirically verifiable facts can a scientific theory be built that can also endure in the long term."
+        }
+      },
+      {
+        "de": "plausibel",
+        "en": "plausible",
+        "pos": "adj",
+        "ex": {
+          "de": "Es erscheint durchaus plausibel, dass die beobachteten Phänomene auf eine bisher unbekannte chemische Reaktion zurückzuführen sind.",
+          "en": "It seems quite plausible that the observed phenomena are attributable to a hitherto unknown chemical reaction."
+        }
+      },
+      {
+        "de": "signifikant",
+        "en": "significant",
+        "pos": "adj",
+        "ex": {
+          "de": "Die Studie zeigt einen signifikanten Unterschied zwischen den Kontrollgruppen auf, was die Hypothese der Forscher maßgeblich stützt.",
+          "en": "The study reveals a significant difference between the control groups, which significantly supports the researchers' hypothesis."
+        }
+      },
+      {
+        "de": "widersprüchlich",
+        "en": "contradictory",
+        "pos": "adj",
+        "ex": {
+          "de": "Die bisherigen Befunde zur Wirksamkeit des Medikaments sind äußerst widersprüchlich, weshalb weitere klinische Studien absolut notwendig sind.",
+          "en": "The previous findings regarding the effectiveness of the medication are extremely contradictory, which is why further clinical studies are absolutely necessary."
+        }
+      }
+    ]
+  },
+  {
+    "id": "c1-u6-words",
+    "level": "C1",
+    "title": "Everyday speech",
+    "titleDe": "Umgangssprache",
+    "icon": "heart",
+    "words": [
+      {
+        "de": "quatschen",
+        "en": "to chat/gossip",
+        "pos": "verb",
+        "ex": {
+          "de": "Wir ham' uns gestern eigentlich stundenlang über den neuen Chef gequatscht, das war echt intensiv.",
+          "en": "We actually chatted about the new boss for hours yesterday; it was really intense."
+        }
+      },
+      {
+        "de": "abhängen",
+        "en": "to hang out",
+        "pos": "verb",
+        "ex": {
+          "de": "Hast'e heute eigentlich schon was vor oder hängste einfach nur irgendwo mit deinen Freunden ab?",
+          "en": "Do you actually have plans today, or are you just hanging out somewhere with your friends?"
+        }
+      },
+      {
+        "de": "klarkommen",
+        "en": "to manage/get along",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich komm' mit der neuen Software echt nicht klar, das ist momentan einfach nur total nervig.",
+          "en": "I really can't manage with the new software; it's just totally annoying at the moment."
+        }
+      },
+      {
+        "de": "hinkriegen",
+        "en": "to manage/fix/accomplish",
+        "pos": "verb",
+        "ex": {
+          "de": "Keine Sorge, das krieg'n wir schon irgendwie hin, mach' dir bloß keinen Kopf deswegen.",
+          "en": "Don't worry, we'll manage somehow; just don't stress about it."
+        }
+      },
+      {
+        "de": "vorbeikommen",
+        "en": "to drop by",
+        "pos": "verb",
+        "ex": {
+          "de": "Komm'ste heute Abend mal kurz bei mir vorbei, um den ganzen Kram hier abzuholen?",
+          "en": "Are you dropping by my place briefly tonight to pick up all this stuff?"
+        }
+      },
+      {
+        "de": "besorgen",
+        "en": "to get/procure",
+        "pos": "verb",
+        "ex": {
+          "de": "Ich hab' erst mal noch schnell ein paar Getränke für die Party besorgen müssen, bevor alles leer ist.",
+          "en": "I had to quickly get some drinks for the party before everything ran out."
+        }
+      },
+      {
+        "de": "erledigen",
+        "en": "to take care of/finish",
+        "pos": "verb",
+        "ex": {
+          "de": "Hast'e die Sache mit dem Vermieter eigentlich schon endlich mal erledigt, wie wir's besprochen hatten?",
+          "en": "Have you actually finally taken care of that matter with the landlord, like we discussed?"
+        }
+      },
+      {
+        "de": "abhauen",
+        "en": "to leave/get out",
+        "pos": "verb",
+        "ex": {
+          "de": "Lass' uns einfach abhauen, bevor die ganze Menge hier noch irgendwie anstrengender für uns wird.",
+          "en": "Let's just get out of here before the whole crowd becomes even more exhausting for us."
+        }
+      },
+      {
+        "de": "Kram",
+        "en": "stuff/junk",
+        "pos": "noun",
+        "ex": {
+          "de": "Räum' doch mal bitte deinen ganzen Kram weg, hier kann man ja gar nicht mehr laufen!",
+          "en": "Please just clear all your stuff away; you can't even walk here anymore!"
+        },
+        "gender": "m"
+      },
+      {
+        "de": "Zeug",
+        "en": "stuff/things",
+        "pos": "noun",
+        "ex": {
+          "de": "Was'n das eigentlich für ein komisches Zeug, das du da ständig mit dir rumschleppst?",
+          "en": "What kind of weird stuff is that which you are constantly lugging around with you?"
+        },
+        "gender": "n",
+        "plural": "Zeuge"
+      },
+      {
+        "de": "Quatsch",
+        "en": "nonsense",
+        "pos": "noun",
+        "ex": {
+          "de": "Erzähl doch keinen Quatsch, das hab' ich so bestimmt nicht gesagt, das weiß ich genau!",
+          "en": "Don't talk nonsense; I definitely didn't say it like that, I know for sure!"
+        },
+        "gender": "m"
+      },
+      {
+        "de": "Bescheid",
+        "en": "information/notice",
+        "pos": "noun",
+        "ex": {
+          "de": "Sag' mir bitte einfach Bescheid, wenn's dir zeitlich mal wieder ein bisschen besser passt.",
+          "en": "Please just let me know when the timing works a bit better for you again."
+        },
+        "gender": "m",
+        "plural": "Bescheide"
+      },
+      {
+        "de": "Stimmung",
+        "en": "mood/atmosphere",
+        "pos": "noun",
+        "ex": {
+          "de": "Die Stimmung auf der Feier war echt total entspannt, da war's einfach richtig gemütlich.",
+          "en": "The atmosphere at the party was really totally relaxed; it was just really cozy."
+        },
+        "gender": "f",
+        "plural": "Stimmungen"
+      },
+      {
+        "de": "Typ",
+        "en": "guy/type",
+        "pos": "noun",
+        "ex": {
+          "de": "Der Typ, der da drüben steht, wirkt auf mich irgendwie echt schräg und ziemlich unhöflich.",
+          "en": "That guy standing over there seems really weird and quite rude to me."
+        },
+        "gender": "m",
+        "plural": "Typen"
+      },
+      {
+        "de": "Plan",
+        "en": "plan",
+        "pos": "noun",
+        "ex": {
+          "de": "Hast'e eigentlich schon 'nen Plan, was wir am Wochenende so unternehmen wollen, oder nicht?",
+          "en": "Do you actually already have a plan for what we want to do this weekend, or not?"
+        },
+        "gender": "m",
+        "plural": "Pläne"
+      },
+      {
+        "de": "krass",
+        "en": "intense/crazy/extreme",
+        "pos": "adj",
+        "ex": {
+          "de": "Das ist ja echt krass, wie schnell die Zeit heutzutage einfach so an uns vorbeizieht.",
+          "en": "It's really crazy how fast time just flies by us these days."
+        }
+      },
+      {
+        "de": "bescheuert",
+        "en": "stupid/crazy",
+        "pos": "adj",
+        "ex": {
+          "de": "Ich find' die Idee echt bescheuert, dass wir bei dem schlechten Wetter nach draußen gehen.",
+          "en": "I think the idea of us going outside in this bad weather is really stupid."
+        }
+      },
+      {
+        "de": "entspannt",
+        "en": "relaxed",
+        "pos": "adj",
+        "ex": {
+          "de": "Nach der Arbeit muss ich erst mal so richtig entspannt auf der Couch liegen und nichts tun.",
+          "en": "After work, I first need to just lie on the couch in a totally relaxed way and do nothing."
+        }
+      },
+      {
+        "de": "stressig",
+        "en": "stressful",
+        "pos": "adj",
+        "ex": {
+          "de": "Der ganze Alltag ist momentan einfach nur wahnsinnig stressig, da kommt man kaum noch zum Durchatmen.",
+          "en": "Everyday life is just incredibly stressful at the moment; you hardly get a chance to catch your breath."
+        }
+      },
+      {
+        "de": "schräg",
+        "en": "weird/odd",
+        "pos": "adj",
+        "ex": {
+          "de": "Das war 'ne echt schräge Situation, die mir gestern Abend in der vollen U-Bahn passiert ist.",
+          "en": "That was a really weird situation that happened to me in the crowded subway last night."
+        }
       }
     ]
   },

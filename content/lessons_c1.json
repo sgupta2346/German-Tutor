@@ -814,6 +814,414 @@
     ]
   },
   {
+    "id": "c1-u3-l1",
+    "unit": "c1-u3",
+    "title": "Formal vs. Colloquial: Passive vs. 'Man' Constructions",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Formal vs. Colloquial: Passive vs. 'Man' Constructions",
+        "body": "In formal German, the passive voice (*Vorgangspassiv*) is used to create an objective, impersonal tone, which is essential for professional writing. In contrast, colloquial German frequently replaces these structures with the indefinite pronoun *man* or active constructions to sound more direct and personal. While English uses the passive similarly, German distinguishes more sharply between the formal distance of the passive and the casual involvement of *man*.",
+        "table": [
+          [
+            "Es ist zu beachten, dass...",
+            "It is to be noted that..."
+          ],
+          [
+            "Man muss beachten, dass...",
+            "One must note that..."
+          ],
+          [
+            "Die Daten werden analysiert.",
+            "The data are being analyzed."
+          ],
+          [
+            "Man analysiert die Daten.",
+            "They are analyzing the data."
+          ],
+          [
+            "Es wird empfohlen...",
+            "It is recommended..."
+          ],
+          [
+            "Ich würde empfehlen...",
+            "I would recommend..."
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Es wäre äußerst ratsam, die gesetzten Fristen strikt einzuhalten, um unnötige Unannehmlichkeiten oder gar rechtliche Konsequenzen zu vermeiden.",
+        "en": "It would be extremely advisable to strictly adhere to the set deadlines to avoid unnecessary inconveniences or even legal consequences."
+      },
+      {
+        "type": "phrase",
+        "de": "Pass bloß auf, man sollte so etwas nicht einfach so im Raum stehen lassen, sonst versteht das am Ende keiner mehr.",
+        "en": "Just watch out, you shouldn't just leave something like that hanging, otherwise nobody will understand it in the end."
+      },
+      {
+        "type": "choice",
+        "prompt": "Which sentence is most appropriate for a formal business report?",
+        "options": [
+          "Man muss die Strategie halt sofort ändern.",
+          "Die Strategie muss sofort geändert werden.",
+          "Man sollte die Strategie einfach mal ändern."
+        ],
+        "answer": 1,
+        "explain": "The passive voice is the standard for formal business communication to maintain an objective tone, whereas 'man' and particles like 'halt' or 'einfach mal' are too casual."
+      },
+      {
+        "type": "choice",
+        "prompt": "Which sentence is a typical example of colloquial, spoken German?",
+        "options": [
+          "Man sollte das nicht einfach so stehen lassen.",
+          "Es sollte vermieden werden, dies stehen zu lassen.",
+          "Es ist zu vermeiden, dies stehen zu lassen."
+        ],
+        "answer": 0,
+        "explain": "The use of the particle 'einfach so' and the indefinite pronoun 'man' is characteristic of casual, spoken German."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Vorgangspassiv",
+            "Passive voice"
+          ],
+          [
+            "Indefinitpronomen",
+            "Indefinite pronoun"
+          ],
+          [
+            "Registerwechsel",
+            "Register shift"
+          ],
+          [
+            "Sachlich",
+            "Objective/Factual"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "It is absolutely necessary that all minutes are kept properly and without gaps during the meeting.",
+        "answer": [
+          "Es",
+          "ist",
+          "absolut",
+          "erforderlich,",
+          "dass",
+          "sämtliche",
+          "Protokolle",
+          "während",
+          "der",
+          "Sitzung",
+          "ordnungsgemäß",
+          "und",
+          "lückenlos",
+          "geführt",
+          "werden."
+        ],
+        "extra": [
+          "Ende",
+          "wäre"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Man kann so ein wichtiges Problem nicht einfach so ignorieren, das hat doch weitreichende Folgen.",
+        "en": "You can't just ignore such an important problem, it has far-reaching consequences."
+      },
+      {
+        "type": "speak",
+        "de": "Es wird dringend empfohlen, die Sicherheitsvorschriften vor dem Betreten der Anlage ganz genau zu lesen.",
+        "en": "It is urgently recommended to read the safety regulations very carefully before entering the facility."
+      }
+    ]
+  },
+  {
+    "id": "c1-u3-l2",
+    "unit": "c1-u3",
+    "title": "Formal vs. Colloquial: Tense and Mood Nuances",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Tense and Mood Shifts",
+        "body": "The distinction between formal and colloquial German often lies in the choice of tense and mood. While the *Präteritum* is the hallmark of formal written narratives and professional reports, the *Perfekt* dominates spoken, everyday conversation. Additionally, high-register speech utilizes the *Konjunktiv II* to soften requests and express politeness, whereas colloquial speech often relies on the more direct *Indikativ*. Mastering these shifts allows you to navigate professional and social environments with precision.",
+        "table": [
+          [
+            "Ich ging.",
+            "I went. (Formal/Written)"
+          ],
+          [
+            "Ich bin gegangen.",
+            "I went. (Colloquial/Spoken)"
+          ],
+          [
+            "Könnten Sie mir helfen?",
+            "Could you help me? (Formal/Polite)"
+          ],
+          [
+            "Kannst du mir helfen?",
+            "Can you help me? (Casual/Direct)"
+          ],
+          [
+            "Es wäre schön...",
+            "It would be nice... (Formal/Polite)"
+          ],
+          [
+            "Das ist echt super.",
+            "That is really great. (Casual/Direct)"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Hätten Sie eventuell einen Moment Zeit, um mit mir über die anstehenden Änderungen zu sprechen?",
+        "en": "Would you perhaps have a moment to speak with me about the upcoming changes?"
+      },
+      {
+        "type": "phrase",
+        "de": "Ich hab' das eigentlich schon längst erledigt, also müsstest du dir darüber gar keine Sorgen machen.",
+        "en": "I actually took care of that a long time ago, so you really don't need to worry about it.",
+        "note": "Note the use of 'hab'' (elided 'habe') and modal particles like 'eigentlich' and 'gar keine' to create a natural, colloquial flow."
+      },
+      {
+        "type": "choice",
+        "prompt": "Which sentence is most appropriate for a formal business email regarding a missed meeting?",
+        "options": [
+          "Ich bin nicht gekommen.",
+          "Ich erschien nicht zum Termin.",
+          "Ich hab' nicht geschafft es."
+        ],
+        "answer": 1,
+        "explain": "In formal written correspondence, the Präteritum ('erschien') is preferred over the spoken Perfekt ('bin gekommen')."
+      },
+      {
+        "type": "choice",
+        "prompt": "Which expression best conveys a polite, high-register request to a superior?",
+        "options": [
+          "Kannst du mir das bitte geben?",
+          "Würdest du mir das bitte geben?",
+          "Könnten Sie mir das bitte geben?"
+        ],
+        "answer": 2,
+        "explain": "The combination of Konjunktiv II ('Könnten') and the formal address ('Sie') is the standard for high-register politeness."
+      },
+      {
+        "type": "choice",
+        "prompt": "In a formal written report, which past tense usage is most standard?",
+        "options": [
+          "Wir haben die Ergebnisse analysiert.",
+          "Wir analysierten die Ergebnisse.",
+          "Wir haben die Ergebnisse analysiert gehabt."
+        ],
+        "answer": 1,
+        "explain": "Formal written reports rely on the Präteritum ('analysierten') rather than the spoken Perfekt."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Präteritum",
+            "Simple Past (Formal/Written)"
+          ],
+          [
+            "Perfekt",
+            "Present Perfect (Colloquial/Spoken)"
+          ],
+          [
+            "Konjunktiv II",
+            "Subjunctive II (Polite/Hypothetical)"
+          ],
+          [
+            "Indikativ",
+            "Indicative (Direct/Factual)"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "It would certainly be much better if we were to revise the entire project thoroughly once more.",
+        "answer": [
+          "Es",
+          "wäre",
+          "sicherlich",
+          "wesentlich",
+          "besser,",
+          "wenn",
+          "wir",
+          "das",
+          "gesamte",
+          "Projekt",
+          "doch",
+          "noch",
+          "einmal",
+          "gründlich",
+          "überarbeiten",
+          "würden."
+        ],
+        "extra": [
+          "müsstest",
+          "mit"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Wäre es Ihnen eventuell möglich, mir die benötigten Unterlagen bis morgen Abend zuzusenden?",
+        "en": "Would it perhaps be possible for you to send me the required documents by tomorrow evening?"
+      },
+      {
+        "type": "speak",
+        "de": "Ich hätte wirklich sehr gerne eine ausführliche Information zu diesem ganz speziellen Angebot.",
+        "en": "I would really very much like detailed information regarding this very special offer."
+      }
+    ]
+  },
+  {
+    "id": "c1-u3-l3",
+    "unit": "c1-u3",
+    "title": "Formal vs. Colloquial: Connectors and Sentence Structure",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Elevating Register through Conjunctions",
+        "body": "In formal German, register is often signaled by the choice of subordinating conjunctions and the use of infinitive constructions. While colloquial speech relies heavily on 'weil' (because) and 'obwohl' (although), formal registers prefer 'da' (since/as) and 'obgleich' (although/notwithstanding). Additionally, using 'um...zu' (in order to) creates a more concise and professional tone compared to using 'damit' (so that) with a full subordinate clause. Unlike English, which often uses the same conjunctions across registers, German provides distinct lexical choices to elevate the level of discourse.",
+        "table": [
+          [
+            "Da es regnet...",
+            "Since it is raining... (Formal)"
+          ],
+          [
+            "Weil es regnet...",
+            "Because it is raining... (Colloquial)"
+          ],
+          [
+            "Obgleich er müde war...",
+            "Although he was tired... (Formal)"
+          ],
+          [
+            "Obwohl er müde war...",
+            "Although he was tired... (Standard/Colloquial)"
+          ],
+          [
+            "Um den Erfolg zu sichern...",
+            "In order to ensure success... (Formal/Infinitive)"
+          ],
+          [
+            "Damit der Erfolg gesichert wird...",
+            "So that success is ensured... (Standard/Subordinate)"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Insofern wir sämtliche vertraglichen Bedingungen erfüllen, ist die zeitnahe Umsetzung des Projekts absolut machbar.",
+        "en": "Insofar as we fulfill all contractual conditions, the timely implementation of the project is absolutely feasible."
+      },
+      {
+        "type": "phrase",
+        "de": "Es wäre äußerst ratsam, diese Angelegenheit erst nach eingehender Rücksprache mit der Geschäftsleitung zu besprechen.",
+        "en": "It would be extremely advisable to discuss this matter only after thorough consultation with the management."
+      },
+      {
+        "type": "phrase",
+        "de": "Was mich betrifft, so bin ich mit den vorgeschlagenen Änderungen in vollem Umfang einverstanden.",
+        "en": "As far as I am concerned, I am in full agreement with the proposed changes."
+      },
+      {
+        "type": "choice",
+        "prompt": "Which is the most formal way to express a reason?",
+        "options": [
+          "Weil wir wenig Zeit haben...",
+          "Da wir über begrenzte Zeitressourcen verfügen...",
+          "Da wir wenig Zeit haben..."
+        ],
+        "answer": 1,
+        "explain": "While 'da' is more formal than 'weil', the use of sophisticated vocabulary like 'begrenzte Zeitressourcen' (limited time resources) instead of 'wenig Zeit' (little time) completes the formal register shift."
+      },
+      {
+        "type": "choice",
+        "prompt": "Which sentence uses a formal conjunction to express a concession (although)?",
+        "options": [
+          "Obwohl es regnete, gingen wir spazieren.",
+          "Obgleich es regnete, gingen wir spazieren.",
+          "Trotzdem es regnete, gingen wir spazieren."
+        ],
+        "answer": 1,
+        "explain": "'Obgleich' is a high-register alternative to 'obwohl'. Note that 'trotzdem' cannot be used as a subordinating conjunction in this way; it is an adverb."
+      },
+      {
+        "type": "choice",
+        "prompt": "Select the most professional way to express purpose.",
+        "options": [
+          "Damit wir Erfolg haben...",
+          "Um den Erfolg zu gewährleisten...",
+          "Weil wir Erfolg haben wollen..."
+        ],
+        "answer": 1,
+        "explain": "The 'um...zu' construction is more concise and elegant in professional writing than a 'damit' clause, especially when paired with a formal verb like 'gewährleisten' (to ensure/guarantee)."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Insofern",
+            "Insofar as"
+          ],
+          [
+            "Obgleich",
+            "Although"
+          ],
+          [
+            "Unabdingbar",
+            "Indispensable"
+          ],
+          [
+            "Gewährleisten",
+            "To ensure/guarantee"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "Insofar as the current results are clear, we can now proceed with the next phase of the project.",
+        "answer": [
+          "Insofern",
+          "die",
+          "vorliegenden",
+          "Ergebnisse",
+          "eindeutig",
+          "sind,",
+          "können",
+          "wir",
+          "nun",
+          "mit",
+          "der",
+          "nächsten",
+          "Phase",
+          "des",
+          "Projekts",
+          "fortfahren."
+        ],
+        "extra": [
+          "bin",
+          "besprechen"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Es ist von entscheidender Bedeutung, dass wir die gesetzlich vorgeschriebenen Fristen strikt und ohne Verzug einhalten.",
+        "en": "It is of decisive importance that we strictly adhere to the legally prescribed deadlines without delay."
+      },
+      {
+        "type": "speak",
+        "de": "Angesichts der aktuellen wirtschaftlichen Lage müssen wir unsere langfristige Strategie grundlegend und nachhaltig überdenken.",
+        "en": "In view of the current economic situation, we must fundamentally and sustainably rethink our long-term strategy."
+      }
+    ]
+  },
+  {
     "id": "c1-u4-l1",
     "unit": "c1-u4",
     "title": "Mastering Emphasis through Word Order",
@@ -1192,6 +1600,835 @@
         "type": "speak",
         "de": "Wir sollten uns nicht auf alte Gewohnheiten verlassen, sondern mutig neue Wege in der Kommunikation beschreiten.",
         "en": "We should not rely on old habits, but rather bravely tread new paths in communication."
+      }
+    ]
+  },
+  {
+    "id": "c1-u5-l1",
+    "unit": "c1-u5",
+    "title": "Mastering Extended Attributes in Academic Writing",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "The Power of the Extended Attribute",
+        "body": "In academic German, information that English typically places in a relative clause after the noun is often compressed into an extended attribute placed *before* the noun. This involves using participles (Partizip I or II) combined with prepositional phrases to create dense, information-rich noun phrases. While English relies on 'which' or 'that' clauses, German uses these pre-nominal structures to maintain a formal, sophisticated register.",
+        "table": [
+          [
+            "Die zu untersuchenden Daten",
+            "The data to be examined"
+          ],
+          [
+            "Die bereits veröffentlichte Studie",
+            "The study already published"
+          ],
+          [
+            "Ein weitreichendes, die Gesellschaft beeinflussendes Phänomen",
+            "A far-reaching phenomenon influencing society"
+          ],
+          [
+            "Die unter schwierigen Bedingungen durchgeführten Experimente",
+            "The experiments conducted under difficult conditions"
+          ],
+          [
+            "Die ständig wachsende Zahl der Probanden",
+            "The constantly increasing number of subjects"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Die im Rahmen dieser Untersuchung gewonnenen Erkenntnisse lassen tiefgreifende Rückschlüsse auf die zugrunde liegenden Ursachen zu.",
+        "en": "The insights gained within the framework of this investigation allow for profound conclusions regarding the underlying causes."
+      },
+      {
+        "type": "phrase",
+        "de": "Es ist unerlässlich, die von den Fachleuten eingebrachten Argumente in ihrem Kontext zu bewerten.",
+        "en": "It is essential to evaluate the arguments brought forward by the experts within their context."
+      },
+      {
+        "type": "phrase",
+        "de": "Die von der Forschungsgruppe entwickelten Methoden weisen eine bemerkenswerte Präzision auf.",
+        "en": "The methods developed by the research group exhibit remarkable precision.",
+        "note": "Note the use of 'weisen ... auf' (to exhibit/point to), a common academic verb collocation."
+      },
+      {
+        "type": "choice",
+        "prompt": "Which sentence correctly uses an extended attribute to describe the research?",
+        "options": [
+          "Die Forschung, die gestern durchgeführt wurde, ist wichtig.",
+          "Die gestern durchgeführte Forschung ist wichtig.",
+          "Die gestern durchführen Forschung ist wichtig."
+        ],
+        "answer": 1,
+        "explain": "In academic German, the past participle 'durchgeführte' is used as an attribute before the noun to create a more concise and formal structure than a relative clause."
+      },
+      {
+        "type": "choice",
+        "prompt": "Choose the most sophisticated way to describe the results in a formal paper.",
+        "options": [
+          "Die Ergebnisse, die wir gefunden haben, sind klar.",
+          "Die von uns gefundenen Ergebnisse sind klar.",
+          "Die wir gefunden haben Ergebnisse sind klar."
+        ],
+        "answer": 1,
+        "explain": "The prepositional phrase 'von uns gefundenen' is correctly placed before the noun 'Ergebnisse' to form an extended attribute."
+      },
+      {
+        "type": "choice",
+        "prompt": "How would you correctly form the attribute 'the theory to be proven'?",
+        "options": [
+          "Die zu beweisende Theorie.",
+          "Die beweisen zu Theorie.",
+          "Die zu beweisen Theorie."
+        ],
+        "answer": 0,
+        "explain": "The construction 'zu + infinitive' functions as an extended attribute to express necessity or a future action."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Die zu lösenden Aufgaben",
+            "The tasks to be solved"
+          ],
+          [
+            "Die viel diskutierte These",
+            "The widely discussed thesis"
+          ],
+          [
+            "Die wissenschaftlich fundierte Analyse",
+            "The scientifically sound analysis"
+          ],
+          [
+            "Die im Labor getesteten Proben",
+            "The samples tested in the lab"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "The social changes triggered by advancing digitalization can hardly be overestimated.",
+        "answer": [
+          "Die",
+          "durch",
+          "die",
+          "fortschreitende",
+          "Digitalisierung",
+          "ausgelösten",
+          "gesellschaftlichen",
+          "Veränderungen",
+          "sind",
+          "kaum",
+          "noch",
+          "zu",
+          "überschätzen."
+        ],
+        "extra": [
+          "tiefgreifende",
+          "eingebrachten"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Die im letzten Jahrzehnt beobachteten Trends sind äußerst besorgniserregend.",
+        "en": "The trends observed in the last decade are extremely worrying."
+      },
+      {
+        "type": "speak",
+        "de": "Die von der Regierung beschlossenen Maßnahmen müssen dringend evaluiert werden.",
+        "en": "The measures decided by the government must be urgently evaluated."
+      }
+    ]
+  },
+  {
+    "id": "c1-u5-l2",
+    "unit": "c1-u5",
+    "title": "Functional Verb Structures: Elevating Academic Precision",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mastering Funktionsverbgefüge",
+        "body": "In academic German, instead of using a single, simple verb, we often use \"functional verb structures\" (\\textit{Funktionsverbgefüge}), which pair a noun with a \"light\" verb to convey a specific nuance. While English might use a single verb like \"to consider,\" German academic style prefers \\textit{in Betracht ziehen}. This shift allows for greater precision and helps maintain the formal, objective tone required in research papers. Unlike English, where these might feel wordy, in German, they are a hallmark of sophisticated, high-level discourse.",
+        "table": [
+          [
+            "in Betracht ziehen",
+            "to take into consideration"
+          ],
+          [
+            "zur Anwendung kommen",
+            "to be applied"
+          ],
+          [
+            "einen Entschluss fassen",
+            "to make a decision"
+          ],
+          [
+            "unter Beweis stellen",
+            "to prove / to demonstrate"
+          ],
+          [
+            "Maßnahmen ergreifen",
+            "to take measures"
+          ],
+          [
+            "in Aussicht stellen",
+            "to suggest the possibility of"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Angesichts der aktuellen Datenlage muss die vorliegende Hypothese dringend in Betracht gezogen werden, um Fehlinterpretationen zu vermeiden.",
+        "en": "Given the current state of data, the present hypothesis must urgently be taken into consideration to avoid misinterpretations."
+      },
+      {
+        "type": "phrase",
+        "de": "Es gilt, die methodischen Schwächen der vorliegenden Studie kritisch zu hinterfragen und umgehend neue Maßnahmen zu ergreifen.",
+        "en": "It is necessary to critically question the methodological weaknesses of the present study and to take new measures immediately."
+      },
+      {
+        "type": "phrase",
+        "de": "Die Ergebnisse der umfangreichen Untersuchung konnten bisher leider noch nicht abschließend unter Beweis gestellt werden.",
+        "en": "Unfortunately, the results of the extensive investigation could not yet be conclusively proven."
+      },
+      {
+        "type": "choice",
+        "prompt": "Which structure is most appropriate for a formal research paper when discussing a decision?",
+        "options": [
+          "eine Entscheidung machen",
+          "eine Entscheidung treffen",
+          "eine Entscheidung tun"
+        ],
+        "answer": 1,
+        "explain": "In formal German, 'treffen' is the standard verb paired with 'Entscheidung' to form a functional verb structure; 'machen' is too colloquial."
+      },
+      {
+        "type": "choice",
+        "prompt": "Complete the sentence: 'Die neue Software muss in der Praxis _________.'",
+        "options": [
+          "zur Anwendung kommen",
+          "zur Anwendung führen",
+          "zur Anwendung geben"
+        ],
+        "answer": 0,
+        "explain": "'Zur Anwendung kommen' is the standard way to express that something 'is applied' or 'comes into use' in a formal context."
+      },
+      {
+        "type": "choice",
+        "prompt": "If a researcher wants to say they \"proved\" something using a high-level academic register, they would say:",
+        "options": [
+          "etwas beweisen",
+          "etwas unter Beweis stellen",
+          "etwas unter Beweis bringen"
+        ],
+        "answer": 1,
+        "explain": "While 'beweisen' is grammatically correct, 'etwas unter Beweis stellen' is the preferred functional verb structure for high-level academic writing."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "in Erwägung ziehen",
+            "to consider"
+          ],
+          [
+            "einen Antrag stellen",
+            "to submit an application"
+          ],
+          [
+            "Bezug nehmen auf",
+            "to refer to"
+          ],
+          [
+            "zur Sprache bringen",
+            "to bring up"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "In light of the completely new findings, the researchers had to make an extremely far-reaching and consequential decision.",
+        "answer": [
+          "Die",
+          "Forscher",
+          "mussten",
+          "angesichts",
+          "der",
+          "völlig",
+          "neuen",
+          "Erkenntnisse",
+          "eine",
+          "äußerst",
+          "weitreichende",
+          "und",
+          "folgenschwere",
+          "Entscheidung",
+          "treffen."
+        ],
+        "extra": [
+          "werden",
+          "Schwächen"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Die theoretische Annahme muss in der praktischen Anwendung erst noch abschließend unter Beweis gestellt werden.",
+        "en": "The theoretical assumption still has to be conclusively proven in practical application."
+      },
+      {
+        "type": "speak",
+        "de": "Es ist unerlässlich, alle verfügbaren Faktoren in die Analyse einzubeziehen und in Betracht zu ziehen.",
+        "en": "It is essential to include all available factors in the analysis and to take them into consideration."
+      }
+    ]
+  },
+  {
+    "id": "c1-u5-l3",
+    "unit": "c1-u5",
+    "title": "Syntactic Density: Mastering the Passive Participle Attribute",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Advanced Participle Attributes in Academic Contexts",
+        "body": "In academic German, information density is achieved by embedding entire clauses into an attribute before the noun. While English often relies on relative clauses (e.g., \"the results that were obtained\"), German uses the Participle II to create a compact, pre-nominal structure (e.g., \"die erzielten Ergebnisse\"). This allows for a more formal, objective tone by compressing time and action directly into the noun phrase. This lesson focuses on using these passive attributes to describe completed actions or states within complex scientific descriptions.",
+        "table": [
+          [
+            "Die zu untersuchenden Proben",
+            "The samples to be examined"
+          ],
+          [
+            "Die bereits veröffentlichten Daten",
+            "The data already published"
+          ],
+          [
+            "Die durch die Hitze veränderten Strukturen",
+            "The structures changed by the heat"
+          ],
+          [
+            "Die im Experiment beobachteten Phänomene",
+            "The phenomena observed in the experiment"
+          ],
+          [
+            "Die von der Theorie widerlegten Annahmen",
+            "The assumptions refuted by the theory"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Die im Rahmen dieser umfassenden Studie untersuchten Variablen unterliegen einer gewissen Komplexität, die eine sorgfältige statistische Auswertung erfordert.",
+        "en": "The variables investigated within the framework of this comprehensive study are subject to a certain complexity that requires careful statistical evaluation."
+      },
+      {
+        "type": "phrase",
+        "de": "Es gilt, die durch den rasanten Klimawandel verursachten Verschiebungen in den globalen Ökosystemen mit höchster Präzision zu analysieren.",
+        "en": "It is necessary to analyze the shifts in global ecosystems caused by rapid climate change with the utmost precision.",
+        "note": "Usage Note: The 'zu + infinitive' construction (e.g., 'die zu untersuchenden Proben') functions as a passive attribute, meaning 'the samples that must be examined'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die von den Forschern ______ Hypothese wurde schließlich bestätigt.",
+        "options": [
+          "aufstellende",
+          "aufgestellte",
+          "aufstellen"
+        ],
+        "answer": 1,
+        "explain": "The Participle II (aufgestellte) is required here to express a completed action in a passive sense (the hypothesis that was proposed)."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die ______ Ergebnisse lassen auf eine signifikante Korrelation schließen.",
+        "options": [
+          "erhaltenen",
+          "erhalten",
+          "erhaltend"
+        ],
+        "answer": 0,
+        "explain": "The Participle II (erhaltenen) is used to describe the state of the results that have already been obtained."
+      },
+      {
+        "type": "choice",
+        "prompt": "Die ______ Methode ermöglicht eine präzisere Messung.",
+        "options": [
+          "angewendet",
+          "anwenden",
+          "anwendende"
+        ],
+        "answer": 0,
+        "explain": "The Participle II (angewendet) describes a method that has been applied, creating a passive attribute."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Die zu lösenden Probleme",
+            "The problems to be solved"
+          ],
+          [
+            "Die nachgewiesenen Fakten",
+            "The proven facts"
+          ],
+          [
+            "Die zu prüfenden Hypothesen",
+            "The hypotheses to be tested"
+          ],
+          [
+            "Die beschriebenen Methoden",
+            "The described methods"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "The changes triggered by the chemical reaction are hard to overlook in this specific experimental setup.",
+        "answer": [
+          "Die",
+          "durch",
+          "die",
+          "chemische",
+          "Reaktion",
+          "ausgelösten",
+          "Veränderungen",
+          "sind",
+          "in",
+          "diesem",
+          "speziellen",
+          "Versuchsaufbau",
+          "kaum",
+          "zu",
+          "übersehen."
+        ],
+        "extra": [
+          "im",
+          "Rahmen"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Die im Labor durchgeführten Tests lieferten keine eindeutigen Beweise.",
+        "en": "The tests conducted in the lab yielded no clear evidence."
+      },
+      {
+        "type": "speak",
+        "de": "Die von der Fachwelt kritisierten Ergebnisse müssen im Hinblick auf die methodische Genauigkeit wohl noch einmal gründlich überprüft werden.",
+        "en": "The results criticized by the specialist community must probably be thoroughly re-examined with regard to methodological accuracy."
+      }
+    ]
+  },
+  {
+    "id": "c1-u6-l1",
+    "unit": "c1-u6",
+    "title": "Mastering the Flow: Contractions and Elisions",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "The Rhythm of Real German",
+        "body": "In casual German, speakers frequently merge prepositions with articles or drop unstressed vowels, particularly the terminal *-e*, to maintain a rhythmic flow. While English uses contractions like 'don't' or 'I'm,' German elisions often involve shortening indefinite articles or merging pronouns with verbs. Mastering these allows you to transition from formal 'textbook' German to the rapid-fire, nuanced pace of native conversation.",
+        "table": [
+          [
+            "im",
+            "in dem"
+          ],
+          [
+            "am",
+            "an dem"
+          ],
+          [
+            "ins",
+            "in das"
+          ],
+          [
+            "hab'",
+            "habe"
+          ],
+          [
+            "'ne",
+            "eine"
+          ],
+          [
+            "'n",
+            "einen/ein"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Haste eigentlich schon mal überlegt, ob du dir 'ne Auszeit nehmen solltest, bevor alles im Chaos versinkt?",
+        "en": "Have you actually ever considered whether you should take a break before everything sinks into chaos?",
+        "note": "'Haste' is a common contraction of 'Hast du'."
+      },
+      {
+        "type": "phrase",
+        "de": "Ich hab' zwar keine Lust, aber wenn's unbedingt sein muss, dann mach ich's halt.",
+        "en": "I don't really feel like it, but if it absolutely has to be, then I'll just do it.",
+        "note": "Note the use of modal particles 'zwar' and 'halt' to add nuance."
+      },
+      {
+        "type": "choice",
+        "prompt": "How would a native speaker most likely say 'Ich habe einen...' in a very casual setting?",
+        "options": [
+          "Ich hab' 'n",
+          "Ich habe einen",
+          "Ich hab' einen"
+        ],
+        "answer": 0,
+        "explain": "In rapid, casual speech, the final '-e' of the verb is dropped and the indefinite article 'einen' is reduced to ''n'."
+      },
+      {
+        "type": "choice",
+        "prompt": "Which of these represents the most natural elision for 'Wie geht es dir?'",
+        "options": [
+          "Wie geht's dir?",
+          "Wie geht es dir?",
+          "Wie geht' dir?"
+        ],
+        "answer": 0,
+        "explain": "The pronoun 'es' is contracted with the verb 'geht' to form 'geht's', which is the standard way to ask 'How are you?' informally."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "ans",
+            "to the (neuter)"
+          ],
+          [
+            "zum",
+            "to the (masc/neut)"
+          ],
+          [
+            "'ne",
+            "a (feminine)"
+          ],
+          [
+            "geht's",
+            "it's going"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I thought that we could maybe order a pizza if you feel like it.",
+        "answer": [
+          "Ich",
+          "hab'",
+          "mir",
+          "gedacht,",
+          "dass",
+          "wir",
+          "uns",
+          "vielleicht",
+          "'ne",
+          "Pizza",
+          "bestellen",
+          "könnten,",
+          "wenn",
+          "du",
+          "Lust",
+          "hast."
+        ],
+        "extra": [
+          "versinkt",
+          "Chaos"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Wenn's nicht gerade super dringend ist, können wir das Ganze auch ganz entspannt morgen besprechen.",
+        "en": "If it's not super urgent, we can also discuss the whole thing quite relaxed tomorrow."
+      },
+      {
+        "type": "speak",
+        "de": "Ich hab' zwar gerade keine Zeit, aber ich schau' einfach mal, was ich machen kann.",
+        "en": "I don't have time right now, but I'll just see what I can do."
+      },
+      {
+        "type": "speak",
+        "de": "War's eigentlich wirklich so teuer, wie die Leute da in der Nachbarschaft immer behauptet haben?",
+        "en": "Was it actually really that expensive, as the people there in the neighborhood always claimed?"
+      }
+    ]
+  },
+  {
+    "id": "c1-u6-l2",
+    "unit": "c1-u6",
+    "title": "Beyond the Basics: Casual Elisions and Flow",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Mastering Casual Elisions",
+        "body": "While basic contractions like 'im' are standard, spoken German frequently employs elisions to maintain a rhythmic flow in fast conversation. Unlike English, where 'gonna' or 'wanna' are often viewed as non-standard, these German elisions (like 'haste' or 'gibt's') are ubiquitous in standard everyday speech. They often involve dropping the final '-e' of verbs or merging pronouns with verbs to reduce syllable counts. Mastering these allows you to transition from sounding like a textbook to sounding like a local.",
+        "table": [
+          [
+            "Haste mal kurz Zeit?",
+            "Do you have a moment? (from: Hast du...)"
+          ],
+          [
+            "Wie geht's dir eigentlich so?",
+            "How are you doing, actually? (from: Wie geht es...)"
+          ],
+          [
+            "Was'n das für ein Ding?",
+            "What kind of thing is that? (from: Was ist denn...)"
+          ],
+          [
+            "Ich hab' das echt vergessen.",
+            "I really forgot that. (from: Ich habe...)"
+          ],
+          [
+            "Geht's noch?",
+            "Are you crazy? / Is that even possible? (from: Geht es...)"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Na, wie läuft's bei dir eigentlich so im Job, klappt eigentlich alles so wie geplant?",
+        "en": "So, how's it going with your job, is everything actually working out as planned?"
+      },
+      {
+        "type": "phrase",
+        "de": "Ich hab' mir echt gedacht, dass du heute wohl eher nicht so Lust drauf hast.",
+        "en": "I really thought that you probably didn't feel like doing it today."
+      },
+      {
+        "type": "phrase",
+        "de": "Gibt's da eigentlich was ganz Neues, von dem ich jetzt unbedingt mal von dir hören sollte?",
+        "en": "Is there actually anything quite new that I should definitely hear about from you now?"
+      },
+      {
+        "type": "choice",
+        "prompt": "Wie klingt die umgangssprachliche Form von 'Hast du eigentlich Lust?'",
+        "options": [
+          "Haste eigentlich Lust?",
+          "Hast'e eigentlich Lust?",
+          "Hasst'e eigentlich Lust?"
+        ],
+        "answer": 0,
+        "explain": "In casual speech, 'hast du' often contracts to 'haste,' merging the 'st' and 'du' into a single syllable for better flow."
+      },
+      {
+        "type": "choice",
+        "prompt": "Welche Elision ist in einem schnellen Gespräch am wahrscheinlichsten?",
+        "options": [
+          "Ich habe es gesehen.",
+          "Ich hab's gesehen.",
+          "Ich hab es gesehen."
+        ],
+        "answer": 1,
+        "explain": "'Hab's' is a very common contraction of 'habe es,' which is much more natural in rapid, casual conversation than the full form."
+      },
+      {
+        "type": "choice",
+        "prompt": "Was bedeutet die verkürzte Form 'Was'n...'?",
+        "options": [
+          "Was ist denn...",
+          "Was ist ein...",
+          "Was ist nur..."
+        ],
+        "answer": 0,
+        "explain": "'Was'n' is a very common contraction of 'Was ist denn,' used to introduce a question with a slight sense of curiosity or surprise."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Gibt's",
+            "Is there"
+          ],
+          [
+            "Haste",
+            "Do you have"
+          ],
+          [
+            "Was'n",
+            "What is (then)"
+          ],
+          [
+            "Geht's",
+            "Is it going / Does it work"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "I actually really thought that it might not work out so well for us today.",
+        "answer": [
+          "Ich",
+          "hab'",
+          "eigentlich",
+          "echt",
+          "gedacht,",
+          "dass",
+          "es",
+          "heute",
+          "vielleicht",
+          "doch",
+          "nicht",
+          "so",
+          "gut",
+          "für",
+          "uns",
+          "passt."
+        ],
+        "extra": [
+          "Job",
+          "Lust"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Geht's eigentlich schon wieder klar bei dir oder brauchst du vielleicht noch 'ne kleine Pause?",
+        "en": "Are you actually okay again or do you maybe still need a little break?"
+      },
+      {
+        "type": "speak",
+        "de": "Haste eigentlich schon mal ganz in Ruhe über das neue Projekt nachgedacht, das wir besprochen haben?",
+        "en": "Have you actually had a chance to think calmly about the new project we discussed?"
+      },
+      {
+        "type": "speak",
+        "de": "Wie geht's dir heute eigentlich so, ist bei dir im Moment alles im grünen Bereich?",
+        "en": "How are you doing today, is everything in the green zone (all good) with you at the moment?"
+      }
+    ]
+  },
+  {
+    "id": "c1-u6-l3",
+    "unit": "c1-u6",
+    "title": "Advanced Elisions: The Speed of Native Speech",
+    "steps": [
+      {
+        "type": "intro",
+        "title": "The Rhythm of Rapid Speech",
+        "body": "In rapid, everyday German, unstressed pronouns and auxiliary verbs often merge with the preceding verb to maintain a rhythmic flow. Unlike English, where elisions like 'gonna' can sometimes feel like distinct slang, German elisions like 'haste' or 'wär's' are natural linguistic tools used across various social registers to facilitate speed. This process typically involves dropping the unstressed 'e' at the end of a verb or merging a pronoun into the verb's final syllable. Mastering these allows you to bridge the gap between textbook German and the fluid cadence of a native speaker.",
+        "table": [
+          [
+            "Haste",
+            "Hast du"
+          ],
+          [
+            "Geht's",
+            "Geht es"
+          ],
+          [
+            "Wär's",
+            "Wäre es"
+          ],
+          [
+            "Ham'mer",
+            "Haben wir"
+          ],
+          [
+            "Gib's",
+            "Gib es"
+          ]
+        ]
+      },
+      {
+        "type": "phrase",
+        "de": "Haste eigentlich schon mal drüber nachgedacht, ob das wirklich so klappt, wie wir uns das vorgestellt haben?",
+        "en": "Did you actually ever think about whether that's really going to work the way we imagined?"
+      },
+      {
+        "type": "phrase",
+        "de": "Gib's doch mal zu, dass du eigentlich schon längst wusstest, dass das so kommen muss!",
+        "en": "Just admit it, that you actually knew for a long time that it had to turn out this way!"
+      },
+      {
+        "type": "choice",
+        "prompt": "Wie würde man 'Hast du' in einem sehr schnellen, lockeren Gespräch zusammenziehen?",
+        "options": [
+          "Haste",
+          "Hast'e",
+          "Hast du"
+        ],
+        "answer": 0,
+        "explain": "In fast speech, the unstressed 'du' often merges with the verb, becoming 'haste' without an apostrophe in common writing."
+      },
+      {
+        "type": "choice",
+        "prompt": "Welche Form ist die typische umgangssprachliche Verkürzung von 'Wäre es'?",
+        "options": [
+          "Wär es",
+          "Wär's",
+          "Wär's'"
+        ],
+        "answer": 1,
+        "explain": "The 'e' in 'wäre' and the pronoun 'es' are elided into a single syllable, typically marked with an apostrophe."
+      },
+      {
+        "type": "choice",
+        "prompt": "In der Umgangssprache verschmilzt 'Haben wir' oft zu...",
+        "options": [
+          "Ham wir",
+          "Haben wir",
+          "Ham'mer"
+        ],
+        "answer": 2,
+        "explain": "This is a common double elision where the 'en' is dropped and 'wir' merges into a 'mer' sound for maximum speed."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            "Wär's",
+            "Wäre es"
+          ],
+          [
+            "Haste",
+            "Hast du"
+          ],
+          [
+            "Gib's",
+            "Gib es"
+          ],
+          [
+            "Ham'mer",
+            "Haben wir"
+          ]
+        ]
+      },
+      {
+        "type": "build",
+        "en": "Wouldn't it be much better if we just had a quick chat about it in peace?",
+        "answer": [
+          "Wär's",
+          "nicht",
+          "viel",
+          "besser,",
+          "wenn",
+          "wir",
+          "uns",
+          "einfach",
+          "mal",
+          "kurz",
+          "in",
+          "Ruhe",
+          "darüber",
+          "unterhalten",
+          "würden?"
+        ],
+        "extra": [
+          "das",
+          "eigentlich"
+        ]
+      },
+      {
+        "type": "listen",
+        "de": "Gib's mir einfach, ich mach' das schon.",
+        "en": "Just give it to me, I'll take care of it."
+      },
+      {
+        "type": "speak",
+        "de": "Haste eigentlich schon mal drüber nachgedacht?",
+        "en": "Have you actually ever thought about it?"
+      },
+      {
+        "type": "speak",
+        "de": "Geht's dir heute wirklich so schlecht?",
+        "en": "Are you really feeling that bad today?"
       }
     ]
   },
