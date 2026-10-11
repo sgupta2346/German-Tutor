@@ -7,7 +7,7 @@ const AUDIO_BASE = ((import.meta.env.VITE_AUDIO_BASE as string | undefined) || D
 
 type Entry = [string, Record<string, [number, number]>];
 let manifest: { voices: string[]; files: Record<string, Entry> } | null = null;
-const PACK_CACHE = "klang-audio-v3";
+const PACK_CACHE = "klang-audio-v4";
 export const VOICE_GENDER: Record<string, SpeakerGender> = { thorsten: "male" };
 const RELIABLE_VOICES = Object.keys(VOICE_GENDER);
 const packs = new Map<string, Promise<ArrayBuffer>>();
