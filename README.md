@@ -5,6 +5,8 @@ pronunciation were paid. So I made this AI-based German tutor. It takes you
 from the alphabet up to full sentences and paragraphs, and it listens to you
 speak and tells you which sounds you got wrong and how to fix them.
 
+**Try it out now:** https://german-tutor-iota.vercel.app/
+
 ## What it does
 
 - **Alphabet and sounds.** Every letter with audio, plus a guide to the
@@ -81,7 +83,7 @@ German audio for every word and sentence is pre-generated with Piper
 Hugging Face dataset. If a phrase has no recording, the browser's own German
 voice reads it.
 
-## Where it's at
+## Current scope
 
 - All 40 units from A1 to C1 have lessons: 120 lessons, 817 vocabulary
   words and 80 reading texts. The first four A1 units are hand-written; the
