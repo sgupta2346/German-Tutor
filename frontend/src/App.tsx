@@ -13,6 +13,7 @@ const CardSession = lazy(() => import("@/pages/CardSession"));
 const Speak = lazy(() => import("@/pages/Speak"));
 const Listen = lazy(() => import("@/pages/Listen"));
 const Tutor = lazy(() => import("@/pages/Tutor"));
+const Quiz = lazy(() => import("@/pages/Quiz"));
 const Settings = lazy(() => import("@/pages/Settings"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
 
@@ -31,6 +32,7 @@ const router = createBrowserRouter([
       { path: "/speak", element: wrap(<Speak />) },
       { path: "/listen", element: wrap(<Listen />) },
       { path: "/tutor", element: wrap(<Tutor />) },
+      { path: "/quiz/:deckId", element: wrap(<Quiz />) },
       { path: "/settings", element: wrap(<Settings />) },
       { path: "*", element: wrap(<NotFound />) },
     ],

@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
-import { ArrowRight, CheckCircle2, Flag, Layers, Undo2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, Flag, Layers, Undo2, Zap } from "lucide-react";
 import { decks, withArticle } from "@/data/content";
 import { Sheet } from "@/components/Sheet";
 import { today, useStore } from "@/lib/store";
@@ -56,6 +56,17 @@ export default function Cards() {
         <ArrowRight className="relative shrink-0 transition-transform group-hover:translate-x-1" />
       </Link>
 
+      <Link to="/quiz/review" className="hero hero-night group relative mb-8 flex items-center gap-5 overflow-hidden rounded-[2rem] p-6">
+        <span className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-white/15">
+          <Zap size={26} />
+        </span>
+        <div className="flex-1">
+          <p className="font-display text-2xl font-extrabold">Quick quiz</p>
+          <p className="text-white/75">10 rapid questions on words you've studied: meanings, der/die/das, listening and spelling, then a timed match round.</p>
+        </div>
+        <ArrowRight className="shrink-0 transition-transform group-hover:translate-x-1" />
+      </Link>
+
       <div className="mb-8 grid gap-4 sm:grid-cols-2">
         <Link
           to={flaggedCount ? "/cards/flagged" : "#"}
@@ -107,7 +118,13 @@ export default function Cards() {
           const tint = TINTS[i % TINTS.length];
           const seen = s.total - s.fresh;
           return (
-            <motion.div key={deck.id} initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.03 }}>
+            <motion.div key={deck.id} className="relative" initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.03 }}>
+              <Link
+                to={`/quiz/${deck.id}`}
+                className="absolute bottom-5 right-5 z-10 flex items-center gap-1 rounded-full bg-plum/15 px-3 py-1 text-xs font-bold text-plum transition-colors hover:bg-plum hover:text-white"
+              >
+                <Zap size={12} /> Quiz
+              </Link>
               <Link to={`/cards/${deck.id}`} className="card group flex h-full flex-col p-5 transition-all hover:-translate-y-1 hover:shadow-xl">
                 <div className="flex items-start justify-between">
                   <span className="grid h-12 w-12 place-items-center rounded-2xl" style={{ background: `color-mix(in oklab, ${tint} 22%, transparent)`, color: tint }}>

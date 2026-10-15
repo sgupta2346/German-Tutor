@@ -34,6 +34,7 @@ function useTheme() {
 
 function sectionColor(path: string): string {
   if (path.startsWith("/lesson")) return NAV[1].color;
+  if (path.startsWith("/quiz")) return "#8b5cf6";
   if (path.startsWith("/settings")) return "#6366f1";
   const hit = [...NAV].reverse().find((n) => (n.end ? path === n.to : path.startsWith(n.to)));
   return hit?.color ?? NAV[0].color;
@@ -66,7 +67,7 @@ export function AppShell() {
   }, []);
   const location = useLocation();
   const streak = useStore((s) => currentStreak(s.streak, s.lastActive));
-  const immersive = location.pathname.startsWith("/lesson/") || /^\/cards\/.+/.test(location.pathname);
+  const immersive = location.pathname.startsWith("/lesson/") || location.pathname.startsWith("/quiz/") || /^\/cards\/.+/.test(location.pathname);
 
   return (
     <div className="grain relative isolate min-h-full">
