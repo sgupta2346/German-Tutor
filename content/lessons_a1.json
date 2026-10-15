@@ -8,11 +8,23 @@
         "type": "intro",
         "title": "Saying hello",
         "body": "German greetings change with the time of day and with how well you know someone. Hallo works almost anywhere with people your age. Guten Tag is the safe, neutral choice with strangers.",
-        "points": [
-          "Guten Morgen until about 10 or 11 am",
-          "Guten Tag during the day",
-          "Guten Abend from about 6 pm",
-          "Gute Nacht only when someone is going to bed"
+        "table": [
+          [
+            "Guten Morgen",
+            "Good morning (until about 10 or 11 am)"
+          ],
+          [
+            "Guten Tag",
+            "Hello, good day (during the day)"
+          ],
+          [
+            "Guten Abend",
+            "Good evening (from about 6 pm)"
+          ],
+          [
+            "Gute Nacht",
+            "Good night (only when someone is going to bed)"
+          ]
         ]
       },
       {
@@ -186,11 +198,23 @@
         "type": "intro",
         "title": "kommen aus, wohnen in",
         "body": "Say where you are from with kommen aus and where you live with wohnen in. Most countries take no article, but a few do, and then aus changes the article.",
-        "points": [
-          "Ich komme aus England.",
-          "Ich komme aus der Schweiz.",
-          "Ich komme aus den USA.",
-          "Ich wohne in Berlin."
+        "table": [
+          [
+            "Ich komme aus England.",
+            "I'm from England."
+          ],
+          [
+            "Ich komme aus der Schweiz.",
+            "I'm from Switzerland."
+          ],
+          [
+            "Ich komme aus den USA.",
+            "I'm from the USA."
+          ],
+          [
+            "Ich wohne in Berlin.",
+            "I live in Berlin."
+          ]
         ]
       },
       {
@@ -741,10 +765,19 @@
         "type": "intro",
         "title": "Adjectives after sein",
         "body": "After sein an adjective needs no ending: Er ist groß. Sie ist nett. Endings only appear when the adjective comes before the noun, which you will meet later.",
-        "points": [
-          "sehr = very",
-          "ziemlich = quite",
-          "aber = but"
+        "table": [
+          [
+            "sehr",
+            "very"
+          ],
+          [
+            "ziemlich",
+            "quite"
+          ],
+          [
+            "aber",
+            "but"
+          ]
         ]
       },
       {
@@ -989,11 +1022,23 @@
         "type": "intro",
         "title": "kein and gern",
         "body": "kein means no or not any, and takes the same endings as ein. Put gern after the verb to say you like doing something.",
-        "points": [
-          "Ich esse kein Fleisch.",
-          "Ich trinke keinen Kaffee.",
-          "Ich trinke gern Tee.",
-          "Ich mag Käse."
+        "table": [
+          [
+            "Ich esse kein Fleisch.",
+            "I don't eat meat."
+          ],
+          [
+            "Ich trinke keinen Kaffee.",
+            "I don't drink coffee."
+          ],
+          [
+            "Ich trinke gern Tee.",
+            "I like drinking tea."
+          ],
+          [
+            "Ich mag Käse.",
+            "I like cheese."
+          ]
         ]
       },
       {

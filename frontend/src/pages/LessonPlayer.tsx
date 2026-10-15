@@ -290,7 +290,30 @@ function StepView({
 }
 
 function hasGerman(s: string) {
-  return /[äöüßÄÖÜ]|\b(der|die|das|ich|du|er|sie|wir|ein|eine|mein|meine)\b/.test(s);
+  return /[äöüßÄÖÜ]|\b(der|die|das|ich|du|er|sie|wir|ein|eine|mein|meine|ist|bin|und|nicht|kein|keine)\b/i.test(s);
+}
+
+function RichText({ text }: { text: string }) {
+  const parts = text.split(/(\*[^*]+\*)/g);
+  return (
+    <>
+      {parts.map((part, i) =>
+        part.startsWith("*") && part.endsWith("*") && part.length > 2 ? (
+          <button
+            key={i}
+            type="button"
+            onClick={() => speak(part.slice(1, -1))}
+            title="Hear it"
+            className="mx-0.5 rounded-md bg-gold/20 px-1 font-semibold italic text-ink transition-colors hover:bg-gold/40"
+          >
+            {part.slice(1, -1)}
+          </button>
+        ) : (
+          <span key={i}>{part}</span>
+        ),
+      )}
+    </>
+  );
 }
 
 function IntroStep({ step, setReady }: { step: Extract<Step, { type: "intro" }>; setReady: (b: boolean) => void }) {
@@ -299,7 +322,9 @@ function IntroStep({ step, setReady }: { step: Extract<Step, { type: "intro" }>;
     <div>
       <p className="text-sm font-bold uppercase tracking-[0.18em] text-ember">New idea</p>
       <h2 className="mt-2 font-display text-4xl font-extrabold tracking-tight">{step.title}</h2>
-      <p className="mt-4 text-lg leading-relaxed">{step.body}</p>
+      <p className="mt-4 text-lg leading-relaxed">
+        <RichText text={step.body} />
+      </p>
       {step.points && (
         <ul className="mt-6 space-y-2">
           {step.points.map((p) => (
